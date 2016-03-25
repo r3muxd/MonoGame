@@ -145,6 +145,7 @@
     <Compile Include="Framework\Input\GamePadTest.cs" />
     <Compile Include="Framework\Input\KeyboardTest.cs" />
     <Compile Include="Framework\Input\MouseTest.cs" />
+    <Compile Include="Framework\FrameworkDispatcherTest.cs" />
     <Compile Include="Framework\MatrixTest.cs" />
     <Compile Include="Framework\PackedVectorTest.cs" />
     <Compile Include="Framework\PlaneTest.cs" />
