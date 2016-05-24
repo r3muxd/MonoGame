@@ -576,8 +576,8 @@ namespace OpenGL
         [System.Security.SuppressUnmanagedCodeSecurity()]
         [MonoNativeFunctionWrapper]
         [UnmanagedFunctionPointer (CallingConvention.Cdecl)]
-        public delegate void DisableVertexAttribArrayDelegte (int attrib);
-        public static DisableVertexAttribArrayDelegte DisableVertexAttribArray;
+        public delegate void DisableVertexAttribArrayDelegate (int attrib);
+        public static DisableVertexAttribArrayDelegate DisableVertexAttribArray;
 
         [System.Security.SuppressUnmanagedCodeSecurity()]
         [MonoNativeFunctionWrapper]
@@ -1171,6 +1171,20 @@ namespace OpenGL
             int stride, IntPtr data);
         public static VertexAttribPointerDelegate VertexAttribPointer;
 
+        [System.Security.SuppressUnmanagedCodeSecurity()]
+        [MonoNativeFunctionWrapper]
+        [UnmanagedFunctionPointer (CallingConvention.Cdecl)]
+        public delegate void DrawElementsInstancedDelegate(GLPrimitiveType primitiveType, int count, DrawElementsType elementType, 
+            IntPtr offset, int instanceCount);
+        public static DrawElementsInstancedDelegate DrawElementsInstanced;
+
+
+        [System.Security.SuppressUnmanagedCodeSecurity()]
+        [MonoNativeFunctionWrapper]
+        [UnmanagedFunctionPointer (CallingConvention.Cdecl)]
+        public delegate void VertexAttribDivisorDelegate(int location, int frequency);
+        public static VertexAttribDivisorDelegate VertexAttribDivisor;
+
         public static int SwapInterval { get; set; }
 
         public static void LoadEntryPoints()
@@ -1188,7 +1202,7 @@ namespace OpenGL
             TexParameteri = (TexParameterIntDelegate)LoadEntryPoint<TexParameterIntDelegate>("glTexParameteri");
 
             EnableVertexAttribArray = (EnableVertexAttribArrayDelegate)LoadEntryPoint<EnableVertexAttribArrayDelegate>("glEnableVertexAttribArray");
-            DisableVertexAttribArray = (DisableVertexAttribArrayDelegte)LoadEntryPoint<DisableVertexAttribArrayDelegte>("glDisableVertexAttribArray");
+            DisableVertexAttribArray = (DisableVertexAttribArrayDelegate)LoadEntryPoint<DisableVertexAttribArrayDelegate>("glDisableVertexAttribArray");
             //MakeCurrent = (MakeCurrentDelegate)LoadEntryPoint<MakeCurrentDelegate>("glMakeCurrent");
             GetIntegerv = (GetIntegerDelegate)LoadEntryPoint<GetIntegerDelegate>("glGetIntegerv");
             GetStringInternal = (GetStringDelegate)LoadEntryPoint<GetStringDelegate>("glGetString");
@@ -1309,6 +1323,18 @@ namespace OpenGL
             DeleteBuffers = (DeleteBuffersDelegate)LoadEntryPoint<DeleteBuffersDelegate>("glDeleteBuffers");
 
             VertexAttribPointer = (VertexAttribPointerDelegate)LoadEntryPoint<VertexAttribPointerDelegate>("glVertexAttribPointer");
+
+            // Instanced drawing requires GL 3.2 or up, if the either of the following entry points can not be loaded 
+            // this will get flagged by setting SupportsInstancing in GraphicsCapabilities to false.
+            try
+            {
+                DrawElementsInstanced = (DrawElementsInstancedDelegate)LoadEntryPoint<DrawElementsInstancedDelegate>("glDrawElementsInstanced");
+                VertexAttribDivisor = (VertexAttribDivisorDelegate)LoadEntryPoint<VertexAttribDivisorDelegate>("glVertexAttribDivisor");
+            }
+            catch (EntryPointNotFoundException)
+            {
+                // this will be detected in the initialization of GraphicsCapabilities
+            }
         }
 
         public static System.Delegate LoadEntryPoint<T>(string proc)

@@ -114,6 +114,12 @@ namespace Microsoft.Xna.Framework.Graphics
 
         internal bool SupportsVertexTextures { get; private set; }
 
+        /// <summary>
+        /// True if instanced geometry is supported; false otherwise. This is always <code>true</code>
+        /// on Direct3D platforms. On OpenGL platforms it requires at least OpenGL 3.2
+        /// </summary>
+        internal bool SupportsInstancing { get; private set; }
+
         internal void Initialize(GraphicsDevice device)
         {
 			SupportsNonPowerOfTwo = GetNonPowerOfTwo(device);
@@ -208,6 +214,11 @@ namespace Microsoft.Xna.Framework.Graphics
             SupportsVertexTextures = device.GraphicsProfile == GraphicsProfile.HiDef;
 #elif OPENGL
             SupportsVertexTextures = false; // For now, until we implement vertex textures in OpenGL.
+#endif
+#if DIRECTX
+            SupportsInstancing = true;
+#elif OPENGL
+            SupportsInstancing = GL.VertexAttribDivisor != null;
 #endif
         }
 

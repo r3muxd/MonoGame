@@ -54,6 +54,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
         static readonly float[] _posFixup = new float[4];
 
+        private static bool[] _newEnabledVertexAttributes;
         internal static readonly List<int> _enabledVertexAttributes = new List<int>();
 
         internal FramebufferHelper framebufferHelper;
@@ -91,6 +92,43 @@ namespace Microsoft.Xna.Framework.Graphics
                     GraphicsExtensions.CheckGLError();
                 }
             }
+        }
+
+        private void ApplyAttribs(Shader shader, int baseVertex)
+        {
+            Array.Clear(_newEnabledVertexAttributes, 0, _newEnabledVertexAttributes.Length);
+            for (int slot = 0; slot < _vertexBuffers.Count; slot++)
+            {
+                var vertexBufferBinding = _vertexBuffers.Get(slot);
+                var vertexDeclaration = vertexBufferBinding.VertexBuffer.VertexDeclaration;
+                var attrInfo = vertexDeclaration.GetAttributeInfo(shader);
+
+                GL.BindBuffer(BufferTarget.ArrayBuffer, vertexBufferBinding.VertexBuffer.vbo);
+                GraphicsExtensions.CheckGLError();
+
+                var vertexStride = vertexDeclaration.VertexStride;
+                var offset = (IntPtr)(vertexDeclaration.VertexStride * baseVertex);
+
+                // If instancing is not supported, but InstanceFrequency of the buffer is not zero, throw an exception
+                if (!GraphicsCapabilities.SupportsInstancing && vertexBufferBinding.InstanceFrequency > 0)
+                    throw new PlatformNotSupportedException("Instanced geometry drawing requires at least OpenGL 3.2. Try upgrading your graphics drivers.");
+
+                foreach (var element in attrInfo.Elements)
+                {
+                    GL.VertexAttribPointer(element.AttributeLocation,
+                        element.NumberOfElements,
+                        element.VertexAttribPointerType,
+                        element.Normalized,
+                        vertexStride,
+                        (IntPtr) (offset.ToInt64() + element.Offset));
+
+                    GL.VertexAttribDivisor(element.AttributeLocation, vertexBufferBinding.InstanceFrequency);
+                    GraphicsExtensions.CheckGLError();
+
+                    _newEnabledVertexAttributes[element.AttributeLocation] = true;
+                }
+            }
+            SetVertexAttributeArray(_newEnabledVertexAttributes);
         }
 
         private void PlatformSetup()
@@ -193,12 +231,16 @@ namespace Microsoft.Xna.Framework.Graphics
 
             GL.GetInteger(GetPName.MaxTextureImageUnits, out MaxTextureSlots);
             GraphicsExtensions.CheckGLError();
+                        
+            GL.GetInteger(GetPName.MaxTextureSize, out _maxTextureSize);
+            GraphicsExtensions.CheckGLError();
 
             GL.GetInteger(GetPName.MaxVertexAttribs, out MaxVertexAttributes);
             GraphicsExtensions.CheckGLError();
-            
-            GL.GetInteger(GetPName.MaxTextureSize, out _maxTextureSize);
-            GraphicsExtensions.CheckGLError();
+
+            _maxVertexBufferSlots = MaxVertexAttributes;
+            _newEnabledVertexAttributes = new bool[MaxVertexAttributes];
+
 
             SpriteBatch.NeedsHalfPixelOffset = true;
 
@@ -273,10 +315,7 @@ namespace Microsoft.Xna.Framework.Graphics
             // Force reseting states
             this.BlendState.PlatformApplyState(this, true);
             this.DepthStencilState.PlatformApplyState(this, true);
-            this.RasterizerState.PlatformApplyState(this, true);            
-
-            // TODO: Add support for multiple vertex buffers (SetVertexBuffers).
-            _maxVertexBufferSlots = 1;
+            this.RasterizerState.PlatformApplyState(this, true);
         }
         
         private DepthStencilState clearDepthStencilState = new DepthStencilState { StencilEnable = true };
@@ -844,11 +883,8 @@ namespace Microsoft.Xna.Framework.Graphics
 
             if (_vertexBuffersDirty)
             {
-                if (_vertexBuffers.Count > 0)
-                {
-                    GL.BindBuffer(BufferTarget.ArrayBuffer, _vertexBuffers.Get(0).VertexBuffer.vbo);
-                    GraphicsExtensions.CheckGLError();
-                }
+                // Don't bind a buffer here because we won't bind attributes yet since we don't know base vertex.
+                // Buffers only need to be bound when binding attributes.
                 _vertexBuffersDirty = false;
             }
 
@@ -889,6 +925,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
         private void PlatformDrawIndexedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount)
         {
+            var shouldApplyAttribs = _vertexBuffersDirty;
             ApplyState(true);
 
             var shortIndices = _indexBuffer.IndexElementSize == IndexElementSize.SixteenBits;
@@ -898,10 +935,9 @@ namespace Microsoft.Xna.Framework.Graphics
 			var indexOffsetInBytes = (IntPtr)(startIndex * indexElementSize);
 			var indexElementCount = GetElementCountArray(primitiveType, primitiveCount);
 			var target = PrimitiveTypeGL(primitiveType);
-            var vertexDeclaration = _vertexBuffers.Get(0).VertexBuffer.VertexDeclaration;
-            var vertexOffset = (IntPtr)(vertexDeclaration.VertexStride * baseVertex);
 
-            vertexDeclaration.Apply(_vertexShader, vertexOffset);
+            if (shouldApplyAttribs)
+                ApplyAttribs(_vertexShader, baseVertex);
 
             GL.DrawElements(target,
                                      indexElementCount,
@@ -940,9 +976,11 @@ namespace Microsoft.Xna.Framework.Graphics
 
         private void PlatformDrawPrimitives(PrimitiveType primitiveType, int vertexStart, int vertexCount)
         {
-            ApplyState(true);
+            var shouldApplyAttribs = _vertexBuffersDirty;
+            ApplyState(true);   
 
-            _vertexBuffers.Get(0).VertexBuffer.VertexDeclaration.Apply(_vertexShader, IntPtr.Zero);
+            if (shouldApplyAttribs)
+                ApplyAttribs(_vertexShader, 0);
 
 			GL.DrawArrays(PrimitiveTypeGL(primitiveType),
 			              vertexStart,
@@ -1018,7 +1056,28 @@ namespace Microsoft.Xna.Framework.Graphics
 
         private void PlatformDrawInstancedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount, int instanceCount)
         {
-            throw new NotImplementedException("GraphicsDevice.DrawInstancedPrimitives is not yet implemented for OpenGL.");
+            if (!GraphicsCapabilities.SupportsInstancing)
+                throw new PlatformNotSupportedException("Instanced geometry drawing requires at least OpenGL 3.2. Try upgrading your graphics card drivers.");
+            var shouldApplyAttribs = _vertexBuffersDirty;
+            ApplyState(true);
+
+            var shortIndices = _indexBuffer.IndexElementSize == IndexElementSize.SixteenBits;
+
+            var indexElementType = shortIndices ? DrawElementsType.UnsignedShort : DrawElementsType.UnsignedInt;
+            var indexElementSize = shortIndices ? 2 : 4;
+            var indexOffsetInBytes = (IntPtr)(startIndex * indexElementSize);
+            var indexElementCount = GetElementCountArray(primitiveType, primitiveCount);
+            var target = PrimitiveTypeGL(primitiveType);
+
+            if (shouldApplyAttribs)
+                ApplyAttribs(_vertexShader, baseVertex);
+
+            GL.DrawElementsInstanced(target,
+                                     indexElementCount,
+                                     indexElementType,
+                                     indexOffsetInBytes,
+                                     instanceCount);
+            GraphicsExtensions.CheckGLError();
         }
 
         private static GraphicsProfile PlatformGetHighestSupportedGraphicsProfile(GraphicsDevice graphicsDevice)
