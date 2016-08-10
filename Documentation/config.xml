@@ -28,7 +28,11 @@
         <topic id="MonoGame_FAQ" name="MonoGame FAQ" filename="monogame_faq.md"/>
         <topic id="Help_and_Support" name="Help and Support" filename="help_and_support.md"/>
     </topic>
-    <topic id="Getting_Started" name="Getting Started" filename="getting_started.md"/>
+    
+    <topic id="Getting_Started" name="Getting Started" filename="getting_started.md">
+        <topic id="The_Basics" name="The Basics" filename="the_basics.md"/>
+    </topic>
+    
     <topic id="Tutorials" name="Tutorials" filename="tutorials.md"/>
     
     <topic id="Adding_Art_Sounds_and_More" name="Adding Art, Sounds, and More" filename="content_intro.md">
