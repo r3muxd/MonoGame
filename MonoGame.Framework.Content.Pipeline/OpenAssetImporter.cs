@@ -286,6 +286,9 @@ namespace Microsoft.Xna.Framework.Content.Pipeline
                     //PostProcessSteps.ValidateDataStructure |
                     );
 
+                if (_scene == null)
+                    throw new InvalidContentException(string.Format("Something went wrong importing model {0}!", filename));
+
                 FindSkeleton();     // Find _rootBone, _bones, _deformationBones.
                 ImportMaterials();  // Create _materials.
                 ImportNodes();      // Create _pivots and _rootNode (incl. children).
