@@ -4,6 +4,7 @@ using System.IO;
 
 namespace MonoGame.Tests.Framework
 {
+    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
     class UtilitiesTest
     {
         [TestCase(  @"C:\Game\Content\file",            @"file.extension",          @"C:\Game\Content\file.extension")]

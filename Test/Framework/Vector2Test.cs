@@ -5,6 +5,7 @@ using System.Globalization;
 
 namespace MonoGame.Tests.Framework
 {
+    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
     class Vector2Test
     {
         [Test]

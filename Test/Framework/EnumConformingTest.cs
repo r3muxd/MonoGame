@@ -8,6 +8,7 @@ namespace MonoGame.Tests.Framework
     /// <summary>
     /// Tests for enum compatibility with XNA(here is only XNA enum members, extensions are not included).
     /// </summary>
+    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
     class EnumConformingTest
     {
         #region MonoGame.Framework

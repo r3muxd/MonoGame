@@ -3,6 +3,7 @@ using NUnit.Framework;
 
 namespace MonoGame.Tests.Framework
 {
+    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
     class ColorTest
     {
         // Contains a test case for each constructor type

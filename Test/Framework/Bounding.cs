@@ -9,6 +9,7 @@ using NUnit.Framework;
 namespace MonoGame.Tests.Framework
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
     class Bounding
     {
         [Test]
