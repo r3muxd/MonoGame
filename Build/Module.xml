@@ -12,8 +12,8 @@
     <Package Uri="https-git://github.com/OutOfOrder/MonoKickstart.git" Folder="ThirdParty/Kickstart" GitRef="master" />
     <Package Uri="https-git://github.com/MonoGame/MonoGame.Dependencies.git" Folder="ThirdParty/Dependencies" GitRef="master" />
     <Package Uri="https-git://github.com/ioctlLR/NVorbis.git" Folder="ThirdParty/NVorbis" GitRef="master" />
-    <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnit" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
-    <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnitLite" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
-    <Package Uri="https-nuget://api.nuget.org/v3/index.json|Mono.Options" Folder="ThirdParty/Mono.Options" GitRef="4.4.0" />
+    <Package Repository="https://api.nuget.org/v3/index.json" Package="NUnit" Folder="ThirdParty/NUnit" Version="3.5.0" />
+    <Package Repository="https://api.nuget.org/v3/index.json" Package="NUnitLite" Folder="ThirdParty/NUnit" Version="3.5.0" />
+    <Package Repository="https://api.nuget.org/v3/index.json" Package="Mono.Options" Folder="ThirdParty/Mono.Options" Version="4.4.0" />
   </Packages>
 </Module>
