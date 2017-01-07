@@ -133,7 +133,7 @@ namespace MonoGame.Tests {
 
 		[TestFixture]
 		public class Behaviors : FixtureBase {
-			[Test, RequiresSTA, Ignore]
+			[Test, RequiresSTA, Ignore("Initialization needs to be fixed to check for null on GraphicsDevice and GraphicsDeviceManager everywhere.")]
 			public void Nongraphical_run_succeeds ()
 			{
 				Game.Run ();
@@ -142,7 +142,7 @@ namespace MonoGame.Tests {
 				Assert.That (Game, Has.Property ("DrawCount").EqualTo (0));
 			}
 
-			[Test, Ignore, RequiresSTA]
+			[Test, RequiresSTA]
 			public void Fixed_time_step_skips_draw_when_update_is_slow ()
 			{
 				Game.MakeGraphical ();

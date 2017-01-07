@@ -270,7 +270,7 @@ namespace MonoGame.Tests.Audio
         }
 
         // TODO creating/disposing a Game should not create/dispose the master voice
-        [Test, Ignore]
+        [Test, Ignore("First fix https://github.com/MonoGame/MonoGame/issues/5153")]
         public void InstanceNotDisposedWhenGameDisposed()
         {
             var game = new Game();

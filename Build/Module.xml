@@ -12,5 +12,7 @@
     <Package Uri="https-git://github.com/OutOfOrder/MonoKickstart.git" Folder="ThirdParty/Kickstart" GitRef="master" />
     <Package Uri="https-git://github.com/MonoGame/MonoGame.Dependencies.git" Folder="ThirdParty/Dependencies" GitRef="master" />
     <Package Uri="https-git://github.com/ioctlLR/NVorbis.git" Folder="ThirdParty/NVorbis" GitRef="master" />
+    <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnit" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
+    <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnit.Console" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
   </Packages>
 </Module>
