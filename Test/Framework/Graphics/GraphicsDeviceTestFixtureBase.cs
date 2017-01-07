@@ -12,6 +12,7 @@ using NUnit.Framework;
 
 namespace MonoGame.Tests.Graphics
 {
+    [Parallelizable(ParallelScope.None)]
     internal class GraphicsDeviceTestFixtureBase
     {
         protected TestGameBase game;

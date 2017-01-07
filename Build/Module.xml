@@ -7,12 +7,13 @@
   <DefaultWindowsPlatforms>Android,Angle,Linux,Windows8,Windows,WindowsGL,WindowsPhone81,WindowsUniversal,iOS,tvOS</DefaultWindowsPlatforms>
   <SupportedPlatforms>Android,Angle,Linux,Windows8,Windows,WindowsGL,WindowsPhone81,WindowsUniversal,iOS,MacOS,Web,tvOS,PSVita,XBoxOne</SupportedPlatforms>
   <DisableSynchronisation>true</DisableSynchronisation>
-  <GenerateNuGetRepositories>false</GenerateNuGetRepositories>
+  <GenerateNuGetRepositories>true</GenerateNuGetRepositories>
   <Packages>
     <Package Uri="https-git://github.com/OutOfOrder/MonoKickstart.git" Folder="ThirdParty/Kickstart" GitRef="master" />
     <Package Uri="https-git://github.com/MonoGame/MonoGame.Dependencies.git" Folder="ThirdParty/Dependencies" GitRef="master" />
     <Package Uri="https-git://github.com/ioctlLR/NVorbis.git" Folder="ThirdParty/NVorbis" GitRef="master" />
     <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnit" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
-    <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnit.Console" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
+    <Package Uri="https-nuget://api.nuget.org/v3/index.json|NUnitLite" Folder="ThirdParty/NUnit" GitRef="3.5.0" />
+    <Package Uri="https-nuget://api.nuget.org/v3/index.json|Mono.Options" Folder="ThirdParty/Mono.Options" GitRef="4.4.0" />
   </Packages>
 </Module>

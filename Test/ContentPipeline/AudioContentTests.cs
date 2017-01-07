@@ -7,11 +7,12 @@ using System.IO;
 using System.Linq;
 using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Audio;
+using MonoGame.Tests.Utilities;
 using NUnit.Framework;
 
 namespace MonoGame.Tests.ContentPipeline
 {
-    class AudioContentTests
+    class AudioContentTests : SetWorkingDirFixture
     {
         [Test]
         public void Ctors()

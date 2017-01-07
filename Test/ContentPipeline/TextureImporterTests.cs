@@ -3,11 +3,12 @@ using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Graphics;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Graphics.PackedVector;
+using MonoGame.Tests.Utilities;
 using NUnit.Framework;
 
 namespace MonoGame.Tests.ContentPipeline
 {
-    class TextureImporterTests
+    class TextureImporterTests : SetWorkingDirFixture
     {
         const string intermediateDirectory = "TestObj";
         const string outputDirectory = "TestBin";

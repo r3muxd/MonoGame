@@ -4,85 +4,39 @@
   <Platform Type="Windows">
     <Reference Include="System.Drawing" />
     <Reference Include="NUnit" />
+    <Reference Include="NUnitLite" />
+    <Reference Include="Mono.Options" />
   </Platform>
 
   <Platform Type="WindowsGL">
     <Reference Include="System.Drawing" />
 
-    <Binary
-      Name="NDesk.Options"
-      Path="ThirdParty/Dependencies/Tests/NDesk.Options.dll" />
-    <Binary
-      Name="nunit.core"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.dll" />
-    <Binary
-      Name="nunit.core.interfaces"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.interfaces.dll" />
-    <Binary
-      Name="nunit.framework"
-      Path="ThirdParty/Dependencies/Tests/nunit.framework.dll" />
-    <Binary
-      Name="nunit.util"
-      Path="ThirdParty/Dependencies/Tests/nunit.util.dll" />
+    <Reference Include="NUnit" />
+    <Reference Include="NUnitLite" />
+    <Reference Include="Mono.Options" />
   </Platform>
 
   <Platform Type="MacOS">
     <Reference Include="System.Drawing" />
     <Reference Include="OpenTK" />
 
-    <Binary
-      Name="NDesk.Options"
-      Path="ThirdParty/Dependencies/Tests/NDesk.Options.dll" />
-    <Binary
-      Name="nunit.core"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.dll" />
-    <Binary
-      Name="nunit.core.interfaces"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.interfaces.dll" />
-    <Binary
-      Name="nunit.framework"
-      Path="ThirdParty/Dependencies/Tests/nunit.framework.dll" />
-    <Binary
-      Name="nunit.util"
-      Path="ThirdParty/Dependencies/Tests/nunit.util.dll" />
+    <Reference Include="NUnit" />
+    <Reference Include="NUnitLite" />
+    <Reference Include="Mono.Options" />
   </Platform>
 
   <Platform Type="Linux">
     <Reference Include="System.Drawing" />
 
-    <Binary
-      Name="NDesk.Options"
-      Path="ThirdParty/Dependencies/Tests/NDesk.Options.dll" />
-    <Binary
-      Name="nunit.core"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.dll" />
-    <Binary
-      Name="nunit.core.interfaces"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.interfaces.dll" />
-    <Binary
-      Name="nunit.framework"
-      Path="ThirdParty/Dependencies/Tests/nunit.framework.dll" />
-    <Binary
-      Name="nunit.util"
-      Path="ThirdParty/Dependencies/Tests/nunit.util.dll" />
+    <Reference Include="NUnit" />
+    <Reference Include="NUnitLite" />
+    <Reference Include="Mono.Options" />
   </Platform>
 
   <Platform Type="iOS">
-    <Binary
-      Name="NDesk.Options"
-      Path="ThirdParty/Dependencies/Tests/NDesk.Options.dll" />
-    <Binary
-      Name="nunit.core"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.dll" />
-    <Binary
-      Name="nunit.core.interfaces"
-      Path="ThirdParty/Dependencies/Tests/nunit.core.interfaces.dll" />
-    <Binary
-      Name="nunit.framework"
-      Path="ThirdParty/Dependencies/Tests/nunit.framework.dll" />
-    <Binary
-      Name="nunit.util"
-      Path="ThirdParty/Dependencies/Tests/nunit.util.dll" />
+    <Reference Include="NUnit" />
+    <Reference Include="NUnitLite" />
+    <Reference Include="Mono.Options" />
   </Platform>
 
 </ExternalProject>

@@ -1,57 +1,32 @@
 using System;
 using System.Text.RegularExpressions;
 
-using NUnit.Core;
+using NUnit.Framework.Interfaces;
+using NUnit.Framework.Internal.Filters;
 
-namespace MonoGame.Tests {
-	class RegexTestFilter : ITestFilter {
-		private readonly Regex _regex;
-		private readonly TestFilterAction _action;
+namespace MonoGame.Tests
+{
+    internal class RegexTestFilter : FullNameFilter
+    {
+        private readonly Regex _regex;
+        private readonly TestFilterAction _action;
 
-		public RegexTestFilter (Regex regex, TestFilterAction action)
-		{
-			if (regex == null)
-				throw new ArgumentNullException ("regex");
-			_regex = regex;
-			_action = action;
-		}
+        public RegexTestFilter (string regex, TestFilterAction action) : base(regex)
+        {
+            if (regex == null)
+                throw new ArgumentNullException ("regex");
+            IsRegex = true;
+            _action = action;
+        }
 
-		public static RegexTestFilter Parse (string s, TestFilterAction filterAction)
-		{
-			if (string.IsNullOrEmpty (s))
-				throw new ArgumentException ("Filter string cannot be null or empty", "s");
-	
-			string pattern;
-			if (s.Length > 1 && s.StartsWith ("/") && s.EndsWith ("/")) {
-				pattern = s.Substring (1, s.Length - 2);
-			} else {
-				pattern = string.Join ("", ".*", s, ".*");
-			}
-	
-			var regex = new Regex (pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-			return new RegexTestFilter (regex, filterAction);
-		}
+        #region ITestFilter Members
 
-		#region ITestFilter Members
-		public bool Pass(ITest test)
-		{
-			var match = _regex.Match (test.TestName.FullName);
+        public override bool Pass(ITest test)
+        {
+            return _action == TestFilterAction.Exclude ^ base.Match(test);
+        }
 
-			if (_action == TestFilterAction.Exclude)
-				return !match.Success;
-			return match.Success;
-		}
-
-		public bool Match(ITest test)
-		{
-			throw new NotImplementedException();
-		}
-
-		public bool IsEmpty
-		{
-			get { return false; }
-		}
-		#endregion
-	}
+        #endregion
+    }
 }
 

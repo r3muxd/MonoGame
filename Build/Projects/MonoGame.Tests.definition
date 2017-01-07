@@ -42,7 +42,6 @@
     <Compile Include="Runner\Extensions.cs" />
     <Compile Include="Runner\FrameInfo.cs" />
     <Compile Include="Runner\FramePixelData.cs" />
-    <Compile Include="Runner\Interface\AggregateTestFilter.cs" />
     <Compile Include="Runner\Interface\CommandLineInterface.cs" />
     <Compile Include="Runner\Interface\RegexTestFilter.cs" />
     <Compile Include="Runner\Interface\RunOptions.cs" />
@@ -88,6 +87,7 @@
 
     <Compile Include="Framework\ByteBufferPoolTest.cs" />
     <Compile Include="Utilities\ActionDaemon.cs" />
+    <Compile Include="Utilities\SetWorkingDirFixture.cs" />
     <Compile Include="Framework\Bounding.cs" />
     <Compile Include="Framework\ColorTest.cs" />
 	<Compile Include="Framework\CurveKeyCollectionTest.cs" />

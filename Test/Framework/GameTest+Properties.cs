@@ -44,7 +44,6 @@ namespace MonoGame.Tests
 					: base (g => g.Content)
 				{
 					AddLegalValue (new ContentManager (new GameServiceContainer ()));
-
 					AddIllegalValue<ArgumentNullException> (null);
 				}
 
@@ -362,30 +361,30 @@ namespace MonoGame.Tests
 						Assert.Fail ("Property {0} is not writeable.", PropertyInfo.Name);
 				}
 
-				protected void AddLegalValue (PropertyT value)
+				protected static void AddLegalValue (PropertyT value)
 				{
 					_legalValues.Add (value);
 				}
 
-				protected void AddIllegalValue<ExceptionT> (PropertyT value)
+				protected static void AddIllegalValue<ExceptionT> (PropertyT value)
 				{
 					_illegalValues.Add (Tuple.Create (value, typeof (ExceptionT)));
 				}
 
-				private List<PropertyT> _legalValues = new List<PropertyT> ();
+				private static List<PropertyT> _legalValues = new List<PropertyT> ();
 
-				protected List<PropertyT> LegalValues {
+				protected static List<PropertyT> LegalValues {
 					get { return _legalValues; }
 				}
 
-				private List<Tuple<PropertyT, Type>> _illegalValues =
+				private static List<Tuple<PropertyT, Type>> _illegalValues =
 					new List<Tuple<PropertyT, Type>> ();
 
-				protected List<Tuple<PropertyT, Type>> IllegalValues {
+				protected static List<Tuple<PropertyT, Type>> IllegalValues {
 					get { return _illegalValues; }
 				}
 
-				[Test, TestCaseSource ("LegalValues")]
+				[Test, TestCaseSource("LegalValues")]
 				public virtual void Can_set_legal_value (PropertyT value)
 				{
 					Assert.DoesNotThrow (() => ThisProperty = value);

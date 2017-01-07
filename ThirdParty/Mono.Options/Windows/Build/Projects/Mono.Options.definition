@@ -1,0 +1,3 @@
+<ExternalProject Name="Mono.Options">
+  <Binary Name="Mono.Options" Path="lib\net4-client\Mono.Options.dll" />
+</ExternalProject>

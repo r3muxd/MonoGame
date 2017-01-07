@@ -1,99 +1,72 @@
 using System;
 using System.IO;
-using NUnit.Core;
+using NUnit.Framework.Interfaces;
 
-namespace MonoGame.Tests {
-	public class TestEventListenerBase : EventListener {
-		private readonly TextWriter _stdoutStandin;
-		protected TextWriter StdoutStandin { get { return _stdoutStandin; } }
+namespace MonoGame.Tests
+{
+    public class TestEventListenerBase : ITestListener
+    {
+        private readonly TextWriter _stdoutStandin;
+        protected TextWriter StdoutStandin { get { return _stdoutStandin; } }
 
-		private readonly StreamWriter _stdout;
+        private readonly StreamWriter _stdout;
 
-		public TestEventListenerBase ()
-		{
-			_stdoutStandin = new StringWriter ();
-			Console.SetOut (_stdoutStandin);
-			_stdout = new StreamWriter (Console.OpenStandardOutput ());
-			_stdout.AutoFlush = true;
-		}
+        public TestEventListenerBase ()
+        {
+            _stdoutStandin = new StringWriter ();
+            Console.SetOut (_stdoutStandin);
+            _stdout = new StreamWriter (Console.OpenStandardOutput ());
+            _stdout.AutoFlush = true;
+        }
 
-		public virtual void RunStarted (string name, int testCount)
-		{
-			_stdout.WriteLine("Run Started: {0}", name);
-		}
+        public virtual void RunStarted(string name, int testCount)
+        {
+            _stdout.WriteLine("Run Started: {0}; {1} tests", name, testCount);
+        }
 
-		public virtual void RunFinished (Exception exception)
-		{
-			_stdout.WriteLine ();
-		}
+        public virtual void RunFinished(Exception exception)
+        {
+            _stdout.WriteLine();
+        }
 
-		public virtual void RunFinished (TestResult result)
-		{
-			_stdout.WriteLine ();
-		}
+        public virtual void RunFinished(ITestResult result)
+        {
+            _stdout.WriteLine();
+            StdoutStandin.WriteLine(string.Format("Total run time was {0} seconds\n", result.Duration));
+        }
 
-		public void SuiteFinished (TestResult result)
-		{
-			// Console.WriteLine("SuiteFinished");
-		}
+        public void TestStarted(ITest test)
+        {
+            _stdoutStandin.WriteLine(test.FullName);
+        }
 
-		public void SuiteStarted (TestName testName)
-		{
-			// Console.WriteLine("SuiteStarted");
-		}
+        public void TestFinished(ITestResult result)
+        {
+            char output;
+            switch (result.ResultState.Status)
+            {
+                case TestStatus.Failed:
+                    output = 'F';
+                    break;
+                case TestStatus.Inconclusive:
+                    output = '?';
+                    break;
+                case TestStatus.Skipped:
+                    output = 'S';
+                    break;
+                default:
+                    output = '.';
+                    break;
+            }
 
-		public void TestStarted (TestName testName)
-		{
-			_stdoutStandin.WriteLine(testName.FullName);
-			// Console.WriteLine("Test {0}", testName.FullName);
-		}
+            _stdout.Write (output);
 
-		public void TestFinished (TestResult result)
-		{
-			char output;
-			switch (result.ResultState) {
-			case ResultState.Cancelled:
-				output = 'C';
-				break;
-			case ResultState.Error:
-				output = 'E';
-				break;
-			case ResultState.Failure:
-				output = 'F';
-				break;
-			case ResultState.Ignored:
-				output = 'I';
-				break;
-			case ResultState.Inconclusive:
-				output = '?';
-				break;
-			case ResultState.NotRunnable:
-				output = 'N';
-				break;
-			case ResultState.Skipped:
-				output = 'S';
-				break;
-			default:
-			case ResultState.Success:
-				output = '.';
-				break;
-			}
+            _stdoutStandin.WriteLine("Finished: " + result.FullName);
+            _stdoutStandin.WriteLine();
+        }
 
-			_stdout.Write (output);
-
-			_stdoutStandin.WriteLine("Finished: " + result.FullName);
-			_stdoutStandin.WriteLine();
-		}
-
-		public void TestOutput (TestOutput testOutput)
-		{
-			// Console.WriteLine("TestOutput");
-		}
-
-		public void UnhandledException (Exception exception)
-		{
-			// Console.WriteLine("UnhandledException");
-		}
-	}
+        public void TestOutput(TestOutput output)
+        {
+        }
+    }
 }
-

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-using NDesk.Options;
-using NUnit.Core;
 using System.IO;
+using Mono.Options;
+using NUnit.Framework.Interfaces;
 
-namespace MonoGame.Tests {
-	public class RunOptions {
+namespace MonoGame.Tests
+{
+	public class RunOptions
+    {
 		public RunOptions (
 			OptionSet optionSet,
 			bool shouldLaunchResults, bool shouldPerformXslTransform, bool shouldShowHelp,
@@ -57,7 +59,7 @@ namespace MonoGame.Tests {
 		public string StdoutPath { get { return _stdoutPath; } }
 
 		private readonly ITestFilter[] _filters;
-		public IEnumerable<ITestFilter> Filters { get { return _filters; } }
+		public ITestFilter[] Filters { get { return _filters; } }
 
 		public void ShowHelp ()
 		{
@@ -87,9 +89,9 @@ namespace MonoGame.Tests {
 			string stdoutPath = Path.Combine (directory, "stdout.txt");
 
 			var filters = new List<ITestFilter>();
-			var optionSet = new OptionSet () {
-				{ "i|include=", x => filters.Add(RegexTestFilter.Parse(x, TestFilterAction.Include)) },
-				{ "x|exclude=", x => filters.Add(RegexTestFilter.Parse(x, TestFilterAction.Exclude)) },
+			var optionSet = new OptionSet {
+				{ "i|include=", x => filters.Add(new RegexTestFilter(x, TestFilterAction.Include)) },
+				{ "x|exclude=", x => filters.Add(new RegexTestFilter(x, TestFilterAction.Exclude)) },
 				{ "no-launch-results", x => shouldLaunchResults = false },
 				{ "no-xsl-transform", x => shouldPerformXslTransform = false },
 				{ "xml-results=", x => xmlResultsPath = x },
@@ -100,7 +102,7 @@ namespace MonoGame.Tests {
 				{ "h|?|help",   x => shouldShowHelp = true },
 			};
 
-			List<string> extra = optionSet.Parse (args);
+			List<string> extra = optionSet.Parse(args);
 			if (extra.Count > 0)
 				Console.WriteLine (
 					"Ignoring {0} unrecognized argument(s): {1}",

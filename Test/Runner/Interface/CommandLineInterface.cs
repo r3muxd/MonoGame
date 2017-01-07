@@ -67,11 +67,15 @@ non-infringement
 #endregion License
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Xml.Xsl;
-using NUnit.Core;
-using NUnit.Util;
+using NUnit.Framework.Api;
+using NUnit.Framework.Interfaces;
+using NUnit.Framework.Internal;
+using NUnit.Framework.Internal.Filters;
+using NUnitLite;
 
 namespace MonoGame.Tests
 {
@@ -79,63 +83,63 @@ namespace MonoGame.Tests
 	{
 		public static int RunMain (string [] args)
 		{
-			var runOptions = RunOptions.Parse (args);
+            var runOptions = RunOptions.Parse (args);
 
-			if (runOptions.ShouldShowHelp) {
-				runOptions.ShowHelp ();
-				return 0;
-			}
+            if (runOptions.ShouldShowHelp) {
+                runOptions.ShowHelp ();
+                return 0;
+            }
 
-			CoreExtensions.Host.InitializeService ();
+            var assembly = Assembly.GetExecutingAssembly ();
 
-			var assembly = Assembly.GetExecutingAssembly ();
+            var assemblyBuilder = new DefaultTestAssemblyBuilder();
+            var runner = new NUnitTestAssemblyRunner(assemblyBuilder);
 
-			var runner = new SimpleTestRunner ();
-			TestPackage package = new TestPackage (assembly.GetName ().Name);
-			package.Assemblies.Add (assembly.Location);
-			if (!runner.Load (package)) {
-				Console.WriteLine ("Could not find the tests.");
-				return -1;
-			}
+            // todo options?
+            var options = new Dictionary<string, object>();
+            runner.Load(assembly, options);
 
-			var listener = new CommandLineTestEventListener(runOptions);
-			var filter = new AggregateTestFilter (runOptions.Filters);
-			var results = runner.Run (listener, filter, false, LoggingThreshold.Off);
-		    return results.IsFailure ? 1 : 0;
-		}
+            var listener = new CommandLineTestEventListener(runOptions);
+            var filter = new AndFilter(runOptions.Filters);
+            var results = runner.Run(listener, filter);
 
-		private class CommandLineTestEventListener : TestEventListenerBase {
-			private readonly RunOptions _runOptions;
-			public CommandLineTestEventListener (RunOptions runOptions)
-			{
-				if (runOptions == null)
-					throw new ArgumentNullException("runOptions");
-				_runOptions = runOptions;
-			}
+            listener.RunFinished((TestSuiteResult) runner.Result);
 
-			public override void RunFinished(TestResult result)
-			{
-				base.RunFinished(result);
+            return results.ResultState.Status == TestStatus.Failed ? 1 : 0;
+        }
 
-				var resultWriter = new XmlResultWriter (_runOptions.XmlResultsPath);
-				resultWriter.SaveTestResult (result);
+        private class CommandLineTestEventListener : TestEventListenerBase
+        {
+            private readonly RunOptions _runOptions;
+            public CommandLineTestEventListener (RunOptions runOptions)
+            {
+                if (runOptions == null)
+                    throw new ArgumentNullException("runOptions");
+                _runOptions = runOptions;
+            }
 
-				if (_runOptions.PerformXslTransform) {
-					var transform = new XslCompiledTransform();
-					transform.Load (_runOptions.XslTransformPath);
-					transform.Transform (_runOptions.XmlResultsPath, _runOptions.TransformedResultsPath);
-				}
+            public override void RunFinished(ITestResult result)
+            {
+                base.RunFinished(result);
 
-				File.WriteAllText (_runOptions.StdoutPath, StdoutStandin.ToString ());
+                using (var writer = new StreamWriter(_runOptions.XmlResultsPath))
+                {
+                    var outputWriter = new NUnit2XmlOutputWriter();
+                    outputWriter.WriteResultFile(result, writer, null, null);
+                }
 
-				if (_runOptions.PerformXslTransform && _runOptions.ShouldLaunchResults)
-					System.Diagnostics.Process.Start (_runOptions.TransformedResultsPath);
-			}
+                if (_runOptions.PerformXslTransform)
+                {
+                    var transform = new XslCompiledTransform();
+                    transform.Load(_runOptions.XslTransformPath);
+                    transform.Transform(_runOptions.XmlResultsPath, _runOptions.TransformedResultsPath);
+                }
 
-			public override void RunFinished(Exception exception)
-			{
-				base.RunFinished(exception);
-			}
-		}
-	}
+                File.WriteAllText (_runOptions.StdoutPath, StdoutStandin.ToString ());
+
+                if (_runOptions.PerformXslTransform && _runOptions.ShouldLaunchResults)
+                    System.Diagnostics.Process.Start (_runOptions.TransformedResultsPath);
+            }
+        }
+    }
 }

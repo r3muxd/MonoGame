@@ -6,11 +6,12 @@ using System;
 using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
+using MonoGame.Tests.Utilities;
 using NUnit.Framework;
 
 namespace MonoGame.Tests.Audio
 {
-    public class SoundEffectTests
+    public class SoundEffectTests : SetWorkingDirFixture
     {
         [Test]
         public void Statics()

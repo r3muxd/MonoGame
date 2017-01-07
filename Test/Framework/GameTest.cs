@@ -143,6 +143,7 @@ namespace MonoGame.Tests {
 			}
 
 			[Test, RequiresSTA]
+            [Ignore("This is really slow")]
 			public void Fixed_time_step_skips_draw_when_update_is_slow ()
 			{
 				Game.MakeGraphical ();

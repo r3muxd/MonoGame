@@ -6,7 +6,7 @@ namespace MonoGame.Tests.Framework
     class ColorTest
     {
         // Contains a test case for each constructor type
-        private object[] _ctorTestCases =
+        private static object[] _ctorTestCases =
         {
 #if !XNA
             new object[] { new Color(new Color(64, 128, 192), 32), 64, 128, 192, 32 },

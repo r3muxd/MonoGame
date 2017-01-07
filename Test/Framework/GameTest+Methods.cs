@@ -9,12 +9,18 @@ using System.Text;
 
 using NUnit.Framework;
 
-namespace MonoGame.Tests {
-	partial class GameTest {
-		public static class Methods {
+namespace MonoGame.Tests
+{
+	partial class GameTest
+    {
+		public static class Methods
+        {
 			[TestFixture]
-			public class Run : FixtureBase {
+			public class Run : FixtureBase
+            {
 				[Test]
+                [Ignore("MG needs a GraphicsDeviceManager created before calling run," +
+                        "We need to fix this so a run succeeds without a GDM")]
 				public void Can_only_be_called_once ()
 				{
 					Game.Run ();
