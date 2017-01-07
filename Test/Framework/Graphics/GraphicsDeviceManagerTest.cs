@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace MonoGame.Tests.Graphics
 {
-    [TestFixture]
+    [Parallelizable(ParallelScope.Self)]
     internal class GraphicsDeviceManagerTest
     {
         [Test]
@@ -69,7 +69,10 @@ namespace MonoGame.Tests.Graphics
             game.Run();
             game.Dispose();
         }
+    }
 
+    internal class GraphicsDeviceManagerVisualTest
+    {
         [TestCase(false)]
         [TestCase(true)]
         public void MSAAEnabled(bool enabled)

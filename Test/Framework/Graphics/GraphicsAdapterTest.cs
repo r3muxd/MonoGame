@@ -14,7 +14,8 @@ using NUnit.Framework;
 
 namespace MonoGame.Tests.Graphics
 {
-    class GraphicsAdapterTest
+    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
+    internal class GraphicsAdapterTest
     {
         private static bool Equals(DisplayMode m1, DisplayMode m2)
         {
