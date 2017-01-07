@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
-
+using System.Threading;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using NUnit.Framework;
@@ -51,7 +51,7 @@ namespace MonoGame.Tests
 			[TestCase ("Services")]
 			[TestCase ("TargetElapsedTime")]
 			[TestCase ("Window")]
-			[RequiresSTA]
+			[Apartment(ApartmentState.STA)]
 			public void Property_does_not_throws_after_Dispose (string propertyName)
 			{
 				var propertyInfo = Game.GetType ().GetProperty (propertyName);
@@ -70,7 +70,7 @@ namespace MonoGame.Tests
 			[TestCase ("RunOneFrame")]
 			[TestCase ("SuppressDraw")]
 			[TestCase ("Tick")]
-			[RequiresSTA]
+			[Apartment(ApartmentState.STA)]
 			public void Method_does_not_throw_after_Dispose (string methodName)
 			{
 				var methodInfo = Game.GetType ().GetMethod (methodName, new Type [0]);
@@ -136,7 +136,7 @@ namespace MonoGame.Tests
 
 		[TestFixture]
 		public class Behaviors : FixtureBase {
-			[Test, RequiresSTA, Ignore("Initialization needs to be fixed to check for null on GraphicsDevice and GraphicsDeviceManager everywhere.")]
+			[Test, Apartment(ApartmentState.STA), Ignore("Initialization needs to be fixed to check for null on GraphicsDevice and GraphicsDeviceManager everywhere.")]
 			public void Nongraphical_run_succeeds ()
 			{
 				Game.Run ();
@@ -145,7 +145,7 @@ namespace MonoGame.Tests
 				Assert.That (Game, Has.Property ("DrawCount").EqualTo (0));
 			}
 
-			[Test, RequiresSTA]
+			[Test, Apartment(ApartmentState.STA)]
             [Ignore("This is really slow")]
 			public void Fixed_time_step_skips_draw_when_update_is_slow ()
 			{

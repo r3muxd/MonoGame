@@ -67,9 +67,7 @@ non-infringement
 #endregion License
 
 using System;
-using NUnit.Framework;
 
-[assembly: RequiresSTA]
 namespace MonoGame.Tests
 {
 	static class Program
