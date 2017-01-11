@@ -1348,7 +1348,7 @@
       <Platforms>Windows8,WindowsPhone81</Platforms>
     </Compile>
     <Compile Include="Windows8\MetroHelper.cs">
-      <Platforms>Windows8,WindowsPhone81,WindowsUniversal</Platforms>
+      <Platforms>Windows8,WindowsPhone81</Platforms>
     </Compile>
     <Compile Include="Windows8\SharpDXHelper.cs">
       <Platforms>Windows8,Windows,WindowsPhone81,WindowsUniversal</Platforms>
