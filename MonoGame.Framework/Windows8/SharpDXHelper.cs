@@ -2,6 +2,8 @@
 // This file is subject to the terms and conditions defined in
 // file 'LICENSE.txt', which is part of this source code package.
 
+using SharpDX.Mathematics.Interop;
+
 namespace Microsoft.Xna.Framework
 {
     using System;
@@ -127,29 +129,25 @@ namespace Microsoft.Xna.Framework
             }
         }
 
-#if !WINDOWS_UAP
-
-		static public SharpDX.Vector2 ToVector2(this Vector2 vec)
+		static public RawVector2 ToVector2(this Vector2 vec)
         {
-            return new SharpDX.Vector2(vec.X, vec.Y);
+            return new RawVector2(vec.X, vec.Y);
         }
 
-        static public SharpDX.Vector3 ToVector3(this Vector3 vec)
+        static public RawVector3 ToVector3(this Vector3 vec)
         {
-            return new SharpDX.Vector3(vec.X, vec.Y, vec.Z);
+            return new RawVector3(vec.X, vec.Y, vec.Z);
         }
 
-        static public SharpDX.Vector4 ToVector4(this Vector4 vec)
+        static public RawVector4 ToVector4(this Vector4 vec)
         {
-            return new SharpDX.Vector4(vec.X, vec.Y, vec.Z, vec.W);
+            return new RawVector4(vec.X, vec.Y, vec.Z, vec.W);
         }
 
-        static public SharpDX.Color4 ToColor4(this Color color)
+        static public RawColor4 ToColor4(this Color color)
         {
-            return new SharpDX.Color4(color.R / 255.0f, color.G / 255.0f, color.B / 255.0f, color.A / 255.0f);
+            return new RawColor4(color.R / 255.0f, color.G / 255.0f, color.B / 255.0f, color.A / 255.0f);
         }
-
-#endif // !WINDOWS_UAP
 
 		static public SharpDX.X3DAudio.Emitter ToEmitter(this Audio.AudioEmitter emitter)
         {           
@@ -180,18 +178,11 @@ namespace Microsoft.Xna.Framework
 
             return new SharpDX.X3DAudio.Emitter()
             {
-#if WINDOWS_UAP
-				Position = new SharpDX.Mathematics.Interop.RawVector3 { X = pos.X, Y = pos.Y, Z = pos.Z },
-				Velocity = new SharpDX.Mathematics.Interop.RawVector3 { X = vel.X, Y = vel.Y, Z = vel.Z },
-				OrientFront = new SharpDX.Mathematics.Interop.RawVector3 { X = forward.X, Y = forward.Y, Z = forward.Z },
-				OrientTop = new SharpDX.Mathematics.Interop.RawVector3 { X = up.X, Y = up.Y, Z = up.Z },
-#else
-				Position = new SharpDX.Vector3( pos.X, pos.Y, pos.Z ),
-                Velocity = new SharpDX.Vector3( vel.X, vel.Y, vel.Z ),
-                OrientFront = new SharpDX.Vector3( forward.X, forward.Y, forward.Z ),
-                OrientTop = new SharpDX.Vector3( up.X, up.Y, up.Z ),
+				Position = new RawVector3( pos.X, pos.Y, pos.Z ),
+                Velocity = new RawVector3( vel.X, vel.Y, vel.Z ),
+                OrientFront = new RawVector3( forward.X, forward.Y, forward.Z ),
+                OrientTop = new RawVector3( up.X, up.Y, up.Z ),
                 DopplerScaler = emitter.DopplerScale,                   
-#endif
 			};
         }
 
@@ -224,17 +215,10 @@ namespace Microsoft.Xna.Framework
 
             return new SharpDX.X3DAudio.Listener()
             {
-#if WINDOWS_UAP
-				Position = new SharpDX.Mathematics.Interop.RawVector3 { X = pos.X, Y = pos.Y, Z = pos.Z },
-				Velocity = new SharpDX.Mathematics.Interop.RawVector3 { X = vel.X, Y = vel.Y, Z = vel.Z },
-				OrientFront = new SharpDX.Mathematics.Interop.RawVector3 { X = forward.X, Y = forward.Y, Z = forward.Z },
-				OrientTop = new SharpDX.Mathematics.Interop.RawVector3 { X = up.X, Y = up.Y, Z = up.Z },
-#else
-				Position = new SharpDX.Vector3(pos.X, pos.Y, pos.Z),
-                Velocity = new SharpDX.Vector3(vel.X, vel.Y, vel.Z),
-                OrientFront = new SharpDX.Vector3(forward.X, forward.Y, forward.Z),
-                OrientTop = new SharpDX.Vector3(up.X, up.Y, up.Z),                
-#endif
+				Position = new RawVector3(pos.X, pos.Y, pos.Z),
+                Velocity = new RawVector3(vel.X, vel.Y, vel.Z),
+                OrientFront = new RawVector3(forward.X, forward.Y, forward.Z),
+                OrientTop = new RawVector3(up.X, up.Y, up.Z),                
 			};
         }
 

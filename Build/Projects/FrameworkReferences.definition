@@ -69,9 +69,6 @@
         Name="SharpDX.DXGI"
         Path="ThirdParty/Dependencies/SharpDX/Windows/SharpDX.DXGI.dll" />
       <Binary
-        Name="SharpDX.Mathematics"
-        Path="ThirdParty/Dependencies/SharpDX/Windows/SharpDX.Mathematics.dll" />
-      <Binary
         Name="SharpDX.MediaFoundation"
         Path="ThirdParty/Dependencies/SharpDX/Windows/SharpDX.MediaFoundation.dll" />
       <Binary
@@ -111,9 +108,6 @@
     <Binary
       Name="SharpDX.DXGI"
       Path="ThirdParty/Dependencies/SharpDX/StoreApp/SharpDX.DXGI.dll" />
-      <Binary
-        Name="SharpDX.Mathematics"
-        Path="ThirdParty/Dependencies/SharpDX/StoreApp/SharpDX.Mathematics.dll" />
     <Binary
       Name="SharpDX.MediaFoundation"
       Path="ThirdParty/Dependencies/SharpDX/StoreApp/SharpDX.MediaFoundation.dll" />
@@ -158,9 +152,6 @@
     <Binary
       Name="SharpDX.DXGI"
       Path="ThirdParty/Dependencies/SharpDX/StoreApp/SharpDX.DXGI.dll" />
-      <Binary
-        Name="SharpDX.Mathematics"
-        Path="ThirdParty/Dependencies/SharpDX/StoreApp/SharpDX.Mathematics.dll" />
     <Binary
       Name="SharpDX.MediaFoundation"
       Path="ThirdParty/Dependencies/SharpDX/StoreApp/SharpDX.MediaFoundation.dll" />
