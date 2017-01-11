@@ -21,6 +21,27 @@ namespace MonoGame.Tests.Framework
         }
 
         [Test]
+        public void InitializeMustNotBeCalledonMainThread()
+        {
+            _callOnAnotherThreadResult = CallOnAnotherThreadTestResult.NotRun;
+
+            var thread = new Thread(() => {
+                _callOnAnotherThreadResult = CallOnAnotherThreadTestResult.Exception;
+                FrameworkDispatcher.Update();
+
+                // If executing this line, no exception was thrown.
+                _callOnAnotherThreadResult = CallOnAnotherThreadTestResult.NoException;
+
+            });
+
+            thread.Start();
+            if (!thread.Join(1000))
+                Assert.Fail("Secondary thread did not terminate in time.");
+
+            Assert.AreEqual(CallOnAnotherThreadTestResult.NoException, _callOnAnotherThreadResult);
+        }
+
+        [Test]
         public void CallOnAnotherThread()
         {
             // Ensure that FrameworkDispatcher is initialized on the main thread.

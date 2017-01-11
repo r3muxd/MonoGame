@@ -12,13 +12,42 @@ namespace MonoGame.Tests.Audio
 {
     class DynamicSoundEffectInstanceTest
     {
-        [SetUp]
-        public void SetUp()
+        [Test]
+#if !XNA
+        [Ignore]
+#endif
+        public void XnaCanCreateAudioDeviceNotOnMainThread()
         {
-            FrameworkDispatcher.Update();
-        }
-        
+            // XNA allow you to create an audio device on a thread that is not 
+            var thread = new Thread(() =>
+            {
+                using (var instance = new DynamicSoundEffectInstance(8000, AudioChannels.Mono))
+                {
+                    Assert.NotNull(instance);
+                    instance.SubmitBuffer(GenerateSineWave(880, 8000, 1, 0.1f));
+                    instance.SubmitBuffer(GenerateSineWave(880, 8000, 1, 0.1f));
+                    instance.SubmitBuffer(GenerateSineWave(880, 8000, 1, 0.1f));
 
+                    instance.Play();
+                    SleepWhileDispatching(350);
+                }
+            });
+
+            thread.Start();
+            using (var instance = new DynamicSoundEffectInstance(8000, AudioChannels.Mono))
+            {
+                Assert.NotNull(instance);
+                instance.SubmitBuffer(GenerateSineWave(880, 8000, 1, 0.1f));
+                instance.SubmitBuffer(GenerateSineWave(880, 8000, 1, 0.1f));
+                instance.SubmitBuffer(GenerateSineWave(880, 8000, 1, 0.1f));
+
+                instance.Play();
+                SleepWhileDispatching(350);
+            }
+            // make sure it can't block
+            if (!thread.Join(1000))
+                Assert.Fail("Secondary thread did not terminate in time.");
+        }
 
         [Test]
         public void BufferNeeded_DuringPlayback()

@@ -70,6 +70,11 @@ namespace Microsoft.Xna.Framework.Audio
         private AudioChannels _channels;
         private SoundState _state;
 
+        static DynamicSoundEffectInstance()
+        {
+            FrameworkDispatcher.Initialize();
+        }
+
         #region Public Constructor
 
         /// <param name="sampleRate">Sample rate, in Hertz (Hz).</param>

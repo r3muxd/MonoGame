@@ -16,16 +16,14 @@ namespace Microsoft.Xna.Framework
     /// </remarks>
     public static class FrameworkDispatcher
     {
-        private static bool _initialized = false;
+        private static bool _initialized;
 
         /// <summary>
         /// Processes framework events.
         /// </summary>
         public static void Update()
         {
-            if (!_initialized)
-                Initialize();
-
+            Initialize();
             DoUpdate();
         }
 
@@ -35,10 +33,13 @@ namespace Microsoft.Xna.Framework
             SoundEffectInstancePool.Update();
         }
 
-        private static void Initialize()
+        internal static void Initialize()
         {
-            // Initialize sound system
-            SoundEffect.InitializeSoundEffect();
+            if (!_initialized)
+            {
+                // Initialize sound system
+                SoundEffect.InitializeSoundEffect();
+            }
 
             _initialized = true;
         }

@@ -76,6 +76,15 @@ namespace Microsoft.Xna.Framework.Audio
 
         #endregion
 
+        #region Static Constructor
+
+        static SoundEffect()
+        {
+            FrameworkDispatcher.Initialize();
+        }
+
+        #endregion
+
         #region Public Constructors
 
         /// <summary>
