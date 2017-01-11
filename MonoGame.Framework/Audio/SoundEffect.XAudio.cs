@@ -77,7 +77,7 @@ namespace Microsoft.Xna.Framework.Audio
                     var details = MasterVoice.VoiceDetails;
                     _reverbVoice = new SubmixVoice(Device, details.InputChannelCount, details.InputSampleRate);
 
-                    var reverb = new SharpDX.XAudio2.Fx.Reverb();
+                    var reverb = new SharpDX.XAudio2.Fx.Reverb(Device);
                     var desc = new EffectDescriptor(reverb);
                     desc.InitialState = true;
                     desc.OutputChannelCount = details.InputChannelCount;

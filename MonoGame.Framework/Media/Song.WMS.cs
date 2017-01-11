@@ -5,6 +5,7 @@
 using System;
 using System.IO;
 using SharpDX;
+using SharpDX.Mathematics.Interop;
 using SharpDX.MediaFoundation;
 
 namespace Microsoft.Xna.Framework.Media
@@ -39,7 +40,7 @@ namespace Microsoft.Xna.Framework.Media
 
             for (var i = 0; i < presDesc.StreamDescriptorCount; i++)
             {
-                Bool selected;
+                RawBool selected;
                 StreamDescriptor desc;
                 presDesc.GetStreamDescriptorByIndex(i, out selected, out desc);
 
