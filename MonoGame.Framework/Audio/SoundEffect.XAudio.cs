@@ -97,10 +97,6 @@ namespace Microsoft.Xna.Framework.Audio
 
         #region Initialization
 
-        static SoundEffect()
-        {
-        }
-
         /// <devdoc>
         /// This is called by <see cref="FrameworkDispatcher.Initialize()"/>
         /// to ensure that XAudio is initialized on main thread.
@@ -136,15 +132,18 @@ namespace Microsoft.Xna.Framework.Audio
                 if (MasterVoice == null)
                 {
                     // Let windows autodetect number of channels and sample rate.
-                    MasterVoice = new MasteringVoice(Device, XAudio2.DefaultChannels, XAudio2.DefaultSampleRate, deviceId);
+                    MasterVoice = new MasteringVoice(Device, XAudio2.DefaultChannels, XAudio2.DefaultSampleRate);
                 }
 
                 // The autodetected value of MasterVoice.ChannelMask corresponds to the speaker layout.
 #if WINRT
                 Speakers = (Speakers)MasterVoice.ChannelMask;
 #else
-                var deviceDetails = Device.GetDeviceDetails(deviceId);
-                Speakers = deviceDetails.OutputFormat.ChannelMask;
+                
+                var deviceDetails = Device.Version == XAudio2Version.Version27 ?
+                    Device.GetDeviceDetails(deviceId).OutputFormat.ChannelMask :
+                    (Speakers) MasterVoice.ChannelMask;
+                Speakers = deviceDetails;
 #endif
             }
             catch
