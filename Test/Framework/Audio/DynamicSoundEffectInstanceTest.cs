@@ -106,6 +106,8 @@ namespace MonoGame.Tests.Audio
         [Test]
         public void BufferNeeded_Play_NoneSubmitted()
         {
+            // for some reason XNA botches this test without an Update call here when it's run with the others
+            FrameworkDispatcher.Update();
             using (var instance = new DynamicSoundEffectInstance(8000, AudioChannels.Mono))
             {
                 instance.BufferNeeded += BufferNeededEventHandler;
