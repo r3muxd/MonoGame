@@ -98,7 +98,6 @@ namespace MonoGame.Tests.Graphics
 
     }
 
-    [Parallelizable(ParallelScope.Children | ParallelScope.Self)]
     internal class BlendStateTest
     {
 

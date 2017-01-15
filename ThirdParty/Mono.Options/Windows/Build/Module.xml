@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Module>
-  <Name>Mono.Options</Name>
-  <DefaultAction>resync</DefaultAction>
-  <GenerateNuGetRepositories>true</GenerateNuGetRepositories>
-</Module>
