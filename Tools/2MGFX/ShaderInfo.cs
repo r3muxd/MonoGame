@@ -5,6 +5,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using TwoMGFX.EffectParsing;
 
 namespace TwoMGFX
 {
@@ -54,58 +56,56 @@ namespace TwoMGFX
 
 		    // Use the D3DCompiler to pre-process the file resolving 
 			// all #includes and macros.... this even works for GLSL.
-			string newFile;
 		    var fullPath = Path.GetFullPath(filePath);
 		    var dependencies = new List<string>();
-		    newFile = Preprocessor.Preprocess(effectSource, fullPath, macros, dependencies, output);
+		    var newFile = Preprocessor.Preprocess(effectSource, fullPath, macros, dependencies, output);
 
 			// Parse the resulting file for techniques and passes.
-            var tree = new Parser(new Scanner()).Parse(newFile, fullPath);
-			if (tree.Errors.Count > 0)
-			{
-                var errors = String.Empty;
-                foreach (var error in tree.Errors)
-                    errors += string.Format("{0}({1},{2}) : {3}\r\n", error.File, error.Line, error.Column, error.Message);
+		    ParseResult result;
 
-				throw new Exception(errors);
-			}
+		    if (!EffectParser.Parse(options.Profile, newFile, out result))
+		    {
+                var errors = new StringBuilder();
+                errors.AppendLine(string.Format("Errors parsing {0}:", fullPath));
+		        foreach (var error in result.Errors)
+                    errors.AppendLine(string.Format("- ({0}, {1}) -> {2}", error.Line, error.Column, error.Message));
 
-            // Evaluate the results of the parse tree.
-            var result = tree.Eval() as ShaderInfo;
+				throw new Exception(errors.ToString());
+		    }
+
+		    var shaderInfo = result.ShaderInfo;
 
             // Remove the samplers and techniques so that the shader compiler
             // gets a clean file without any FX file syntax in it.
-            var cleanFile = newFile;
-            ParseTreeTools.WhitespaceNodes(TokenType.Technique_Declaration, tree.Nodes, ref cleanFile);
-            ParseTreeTools.WhitespaceNodes(TokenType.Sampler_Declaration_States, tree.Nodes, ref cleanFile);
+		    var cleanFile = EffectParser.GetCleanedFiled(result);
 
             // Setup the rest of the shader info.
-            result.Dependencies = dependencies;
-            result.FilePath = fullPath;
-            result.FileContent = cleanFile;
+            shaderInfo.Dependencies = dependencies;
+            shaderInfo.FilePath = fullPath;
+            shaderInfo.FileContent = cleanFile;
             if (!string.IsNullOrEmpty(options.OutputFile))
-                result.OutputFilePath = Path.GetFullPath(options.OutputFile);
-            result.AdditionalOutputFiles = new List<string>();
+                shaderInfo.OutputFilePath = Path.GetFullPath(options.OutputFile);
+            shaderInfo.AdditionalOutputFiles = new List<string>();
 
             // Remove empty techniques.
-            for (var i=0; i < result.Techniques.Count; i++)
+            for (var i=0; i < shaderInfo.Techniques.Count; i++)
             {
-                var tech = result.Techniques[i];
+                var tech = shaderInfo.Techniques[i];
                 if (tech.Passes.Count <= 0)
                 {
-                    result.Techniques.RemoveAt(i);
+                    shaderInfo.Techniques.RemoveAt(i);
                     i--;
                 }
             }
 
             // We must have at least one technique.
-            if (result.Techniques.Count <= 0)
+            if (shaderInfo.Techniques.Count <= 0)
                 throw new Exception("The effect must contain at least one technique and pass!");
 
-			result.Profile = options.Profile;
-			result.Debug = options.Debug;
+			shaderInfo.Profile = options.Profile;
+			shaderInfo.Debug = options.Debug;
 
-			return result;
+			return shaderInfo;
 		}
 
 	}
