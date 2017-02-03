@@ -50,11 +50,11 @@ namespace TwoMGFX.EffectParsing
         private void AddSamplerClasses()
         {
             _parser.AddClass(StatementClass.Sampler, s =>
+                s.FirstWordIs("SamplerState") ||
                 (s.FirstWordIs("sampler1D") ||
                  s.FirstWordIs("sampler2D") ||
                  s.FirstWordIs("sampler3D") ||
                  s.FirstWordIs("samplerCUBE") ||
-                 s.FirstWordIs("SamplerState") ||
                  s.FirstWordIs("sampler")) &&
                 s.AfterEqualsIs("sampler_state"));
 
