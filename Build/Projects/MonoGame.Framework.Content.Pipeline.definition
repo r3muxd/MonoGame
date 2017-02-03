@@ -249,18 +249,6 @@
       <Platforms>Windows</Platforms>
       <Link>Processors\MGFX\Options.cs</Link>
     </Compile>
-    <Compile Include="..\Tools\2MGFX\Parser.cs">
-      <Platforms>Windows</Platforms>
-      <Link>Processors\MGFX\Parser.cs</Link>
-    </Compile>
-    <Compile Include="..\Tools\2MGFX\ParseTree.cs">
-      <Platforms>Windows</Platforms>
-      <Link>Processors\MGFX\ParseTree.cs</Link>
-    </Compile>
-    <Compile Include="..\Tools\2MGFX\ParseTreeTools.cs">
-      <Platforms>Windows</Platforms>
-      <Link>Processors\MGFX\ParseTreeTools.cs</Link>
-    </Compile>
     <Compile Include="..\Tools\2MGFX\PassInfo.cs">
       <Platforms>Windows</Platforms>
       <Link>Processors\MGFX\PassInfo.cs</Link>
@@ -272,10 +260,6 @@
     <Compile Include="..\Tools\2MGFX\SamplerStateInfo.cs">
       <Platforms>Windows</Platforms>
       <Link>Processors\MGFX\SamplerStateInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\Tools\2MGFX\Scanner.cs">
-      <Platforms>Windows</Platforms>
-      <Link>Processors\MGFX\Scanner.cs</Link>
     </Compile>
     <Compile Include="..\Tools\2MGFX\ShaderInfo.cs">
       <Platforms>Windows</Platforms>
@@ -300,6 +284,72 @@
     <Compile Include="..\Tools\2MGFX\TextureFilterType.cs">
       <Platforms>Windows</Platforms>
       <Link>Processors\MGFX\TextureFilterType.cs</Link>
+    </Compile>
+
+    <!-- Effect parsing -->
+    <Compile Include="..\Tools\2MGFX\EffectParsing\BlockDelimiter.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\BlockDelimiter.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\BlockStatement.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\BlockStatement.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\EffectParser.Common.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\EffectParser.Common.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\EffectParser.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\EffectParser.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\EffectParser.hlsl.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\EffectParser.hlsl.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\LineStatement.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\LineStatement.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\MismatchedBlockDelimiterException.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\MismatchedBlockDelimiterException.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\OpenedBlockInfo.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\OpenedBlockInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\ParentStatement.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\ParentStatement.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\ParseError.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\ParseError.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\Parser.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\ParseResult.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\ParseResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\Statement.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\Statement.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\StatementClass.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\StatementClass.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\StatementCollection.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\StatementCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Tools\2MGFX\EffectParsing\StringEx.cs">
+      <Platforms>Windows</Platforms>
+      <Link>Processors\MGFX\EffectParsing\StringEx.cs</Link>
     </Compile>
 
 

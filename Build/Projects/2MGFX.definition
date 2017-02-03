@@ -205,12 +205,23 @@
     <Compile Include="MojoShader.cs" />
 
     <!-- The MGFX parser -->
-    <None Include="MGFX.tpg" />
-    <Compile Include="Parser.cs" />
-    <Compile Include="ParseTree.cs" />
-    <Compile Include="Scanner.cs" />
-    <Compile Include="ParseTreeTools.cs" />
-    
+    <Compile Include="EffectParsing\BlockDelimiter.cs" />
+    <Compile Include="EffectParsing\BlockStatement.cs" />
+    <Compile Include="EffectParsing\EffectParser.Common.cs" />
+    <Compile Include="EffectParsing\EffectParser.cs" />
+    <Compile Include="EffectParsing\EffectParser.hlsl.cs" />
+    <Compile Include="EffectParsing\LineStatement.cs" />
+    <Compile Include="EffectParsing\MismatchedBlockDelimiterException.cs" />
+    <Compile Include="EffectParsing\OpenedBlockInfo.cs" />
+    <Compile Include="EffectParsing\ParentStatement.cs" />
+    <Compile Include="EffectParsing\ParseError.cs" />
+    <Compile Include="EffectParsing\Parser.cs" />
+    <Compile Include="EffectParsing\ParseResult.cs" />
+    <Compile Include="EffectParsing\Statement.cs" />
+    <Compile Include="EffectParsing\StatementClass.cs" />
+    <Compile Include="EffectParsing\StatementCollection.cs" />
+    <Compile Include="EffectParsing\StringEx.cs" />
+
     <!-- The MGFX preprocessor -->
     <Compile Include="Preprocessor.cs" />
     
