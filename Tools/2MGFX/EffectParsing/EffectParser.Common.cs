@@ -50,7 +50,7 @@ namespace TwoMGFX.EffectParsing
         private void AddSamplerClasses()
         {
             _parser.AddClass(StatementClass.Sampler, s =>
-                s.FirstWordIs("SamplerState") ||
+                 s.FirstWordIs("SamplerState") ||
                 (s.FirstWordIs("sampler1D") ||
                  s.FirstWordIs("sampler2D") ||
                  s.FirstWordIs("sampler3D") ||
@@ -85,7 +85,7 @@ namespace TwoMGFX.EffectParsing
         {
             var tinfo = new TechniqueInfo();
             var parts = ts.HeaderText.Split();
-            if (!Check(parts.Length > 2, ts, "Syntax Error: Expected 'technique [<techniqueName>]'"))
+            if (!Check(parts.Length <= 2, ts, "Syntax Error: Expected 'technique [<techniqueName>]'"))
                 return null;
             if (parts.Length == 2)
             {
@@ -123,7 +123,7 @@ namespace TwoMGFX.EffectParsing
             var pinfo = new PassInfo();
 
             var parts = ps.HeaderText.Split();
-            if (!Check(parts.Length > 2, ps, "Syntax Error: Expected 'pass [<passName>]'"))
+            if (!Check(parts.Length <= 2, ps, "Syntax Error: Expected 'pass [<passName>]'"))
                 return null;
             if (parts.Length == 2)
             {
@@ -276,6 +276,20 @@ namespace TwoMGFX.EffectParsing
         private SamplerStateInfo ProcessSampler(BlockStatement ss)
         {
             var sinfo = new SamplerStateInfo();
+
+            var words = ss.HeaderText.Split();
+            for (var i = 0; i < words.Length - 1; i++)
+            {
+                if (words[i].IsEqualTo("SamplerState") || words[i].IsEqualTo("sampler1D") || words[i].IsEqualTo("sampler2D") ||
+                    words[i].IsEqualTo("sampler3D") || words[i].IsEqualTo("samplerCUBE") || words[i].IsEqualTo("sampler"))
+                {
+                    sinfo.Name = words[i + 1];
+                    break;
+                }
+            }
+
+            if (sinfo.Name == null)
+                return null;
 
             foreach (var s in ss)
             {

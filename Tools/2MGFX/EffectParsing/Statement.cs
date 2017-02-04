@@ -8,7 +8,7 @@ namespace TwoMGFX.EffectParsing
 {
     public abstract class Statement
     {
-        protected internal readonly StringBuilder StringBuilder;
+        protected readonly StringBuilder StringBuilder;
 
         public int Start { get; }
         public int Line { get; }
@@ -54,14 +54,18 @@ namespace TwoMGFX.EffectParsing
             return Text;
         }
 
-        public void ToWhitespace()
+        public void ToWhitespace(int startIndex = 0)
         {
-            for (var i = Start; i <= End; i++)
+            ToWhitespace(Start + startIndex, End);
+        }
+
+        protected void ToWhitespace(int start, int end)
+        {
+            for (var i = start; i <= end; i++)
             {
                 if (!char.IsWhiteSpace(StringBuilder[i]))
                     StringBuilder[i] = ' ';
             }
-                
         }
     }
 }

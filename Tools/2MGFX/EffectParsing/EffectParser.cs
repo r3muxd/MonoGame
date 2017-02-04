@@ -27,10 +27,27 @@ namespace TwoMGFX.EffectParsing
 
         public static string GetCleanedFiled(ParseResult parseResult)
         {
-            // TODO
-            return string.Empty;
-        }
+            foreach (var s in parseResult.TopLevelStatement)
+            {
+                if (s.Class == StatementClass.Technique)
+                {
+                    s.ToWhitespace();
+                }
+                else if (s.Class == StatementClass.Sampler)
+                {
+                    var bs = s as BlockStatement;
+                    if (bs == null)
+                        continue;
 
+                    var spaceLoc = bs.HeaderText.IndexOf("=", StringComparison.InvariantCulture);
+                    if (spaceLoc != -1)
+                        bs.ToWhitespace(spaceLoc);
+                    else
+                        bs.BodyToWhitespace();
+                }
+            }
+            return parseResult.Content;
+        }
 
         private readonly ShaderProfile _profile;
         private readonly StringBuilder _text;
@@ -64,13 +81,13 @@ namespace TwoMGFX.EffectParsing
             catch (MismatchedBlockDelimiterException e)
             {
                 _errors.Add(new ParseError(e.Line, e.Column, e.Message));
-                parseResult =  new ParseResult(_text, _profile, null, null, _errors);
+                parseResult =  new ParseResult(_profile, null, null, _errors);
                 return false;
             }
 
             var shaderInfo = ProcessStatements(statements);
 
-            parseResult = new ParseResult(_text, _profile, statements, shaderInfo, _errors);
+            parseResult = new ParseResult(_profile, statements, shaderInfo, _errors);
             return !_errors.Any();
         }
 
@@ -294,14 +311,14 @@ namespace TwoMGFX.EffectParsing
 
         private static bool TryParseShaderAssignment(Statement s, out string func, out string target)
         {
-            var parts = s.Text.GetAfterEquals().TrimEnd(')').TrimEnd('(').Split();
+            var parts = s.Text.GetAfterEquals().TrimEnd(')').TrimEnd().TrimEnd('(').Split((char[]) null, StringSplitOptions.RemoveEmptyEntries);
             func = string.Empty;
             target = string.Empty;
 
             if (parts.Length == 3 && parts[0].IsEqualTo("compile"))
             {
-                func = parts[1];
-                target = parts[2];
+                target = parts[1];
+                func = parts[2];
                 return true;
             }
 

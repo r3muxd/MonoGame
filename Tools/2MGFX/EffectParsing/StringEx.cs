@@ -42,7 +42,7 @@ namespace TwoMGFX.EffectParsing
             if (length == -1)
                 return false;
 
-            return text.Substring(0, length).IsEqualTo(expected, ignoreCase);
+            return text.Substring(0, length).Trim().IsEqualTo(expected, ignoreCase);
         }
 
         public static bool AfterEqualsIs(this string text, string expected, bool ignoreCase = true)

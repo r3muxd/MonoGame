@@ -17,13 +17,18 @@ namespace TwoMGFX.EffectParsing
         public BlockStatement(StringBuilder stringBuilder, int start, int line, int column, int headerEnd, ParentStatement parent, StatementClass cls)
             : base(stringBuilder, start, line, column, parent, cls)
         {
-            Curly = headerEnd - 1;
+            Curly = headerEnd;
             End = headerEnd;
         }
 
         public override string ToString()
         {
             return $"{HeaderText} {{";
+        }
+
+        public void BodyToWhitespace()
+        {
+            ToWhitespace(Curly);
         }
     }
 }
