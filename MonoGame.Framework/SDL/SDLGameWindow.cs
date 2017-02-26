@@ -7,6 +7,7 @@ using System.IO;
 using System.Reflection;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using OpenGL;
 
 namespace Microsoft.Xna.Framework
 {
@@ -17,10 +18,14 @@ namespace Microsoft.Xna.Framework
             get { return !IsBorderless && _resizable; }
             set
             {
-                if (Sdl.Patch > 4)
-                    Sdl.Window.SetResizable(_handle, value);
-                else
-                    throw new Exception("SDL 2.0.4 does not support changing resizable parameter of the window after it's already been created, please use a newer version of it.");
+                if (_handle != IntPtr.Zero)
+                {
+                    if (Sdl.Patch > 4)
+                        Sdl.Window.SetResizable(_handle, value);
+                    else
+                        throw new Exception(
+                            "SDL 2.0.4 does not support changing resizable parameter of the window after it's already been created, please use a newer version of it.");
+                }
 
                 _resizable = value;
             }
@@ -30,9 +35,10 @@ namespace Microsoft.Xna.Framework
         {
             get
             {
-                int x = 0, y = 0;
+                int x, y, width, height;
                 Sdl.Window.GetPosition(Handle, out x, out y);
-                return new Rectangle(x, y, _width, _height);
+                Sdl.Window.GetSize(Handle, out width, out height);
+                return new Rectangle(x, y, width, height);
             }
         }
 
@@ -49,8 +55,11 @@ namespace Microsoft.Xna.Framework
             }
             set
             {
-                Sdl.Window.SetPosition(Handle, value.X, value.Y);
-                _wasMoved = true;
+                _position = value;
+                if (_handle != IntPtr.Zero)
+                    Sdl.Window.SetPosition(Handle, value.X, value.Y);
+
+                _userMoved = true;
             }
         }
 
@@ -79,36 +88,36 @@ namespace Microsoft.Xna.Framework
             }
         }
 
-        public static GameWindow Instance;
-        public bool IsFullScreen;
+        public bool IsFullScreen { get; private set; }
 
-        internal readonly Game _game;
         private IntPtr _handle, _icon;
         private bool _disposed;
-        private bool _resizable, _borderless, _willBeFullScreen, _mouseVisible, _hardwareSwitch;
-        private string _screenDeviceName;
-        private int _winx, _winy, _width, _height;
-        private bool _wasMoved, _supressMoved;
+        private bool _resizable, _borderless, _mouseVisible, _hardwareSwitch;
+        private string _screenDeviceName = string.Empty;
+        private int _storedWidth;
+        private int _storedHeight;
+        private Point _position;
+        private bool _supressMove;
+        private bool _userMoved;
 
-        public SdlGameWindow(Game game)
+        private ColorFormat _surfaceFormat;
+        private DepthFormat _depthStencilFormat;
+
+        public SdlGameWindow()
         {
-            _game = game;
-            _screenDeviceName = "";
-
-            Instance = this;
-
-            _winx = Sdl.Window.PosUndefined;
-            _winy = Sdl.Window.PosUndefined;
-            _width = GraphicsDeviceManager.DefaultBackBufferWidth;
-            _height = GraphicsDeviceManager.DefaultBackBufferHeight;
-
-            if (Sdl.Patch >= 4)
+            var display = GetMouseDisplay();
+            if (display != -1)
             {
-                var display = GetMouseDisplay();
-                _winx = display.X + display.Width / 2;
-                _winy = display.Y + display.Height / 2;
+                _screenDeviceName = Sdl.Display.GetDisplayName(display);
+
+                Sdl.Rectangle bounds;
+                Sdl.Display.GetBounds(display, out bounds);
+
+                var x = bounds.X + (bounds.Width - GraphicsDeviceManager.DefaultBackBufferWidth) / 2;
+                var y = bounds.Y + (bounds.Height - GraphicsDeviceManager.DefaultBackBufferHeight) / 2;
+                _position = new Point(x, y);
             }
-            
+
             Sdl.SetHint("SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS", "0");
             Sdl.SetHint("SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS", "1");
 
@@ -129,26 +138,66 @@ namespace Microsoft.Xna.Framework
                         catch { }
                     }
             }
-
-            _handle = Sdl.Window.Create("", _winx, _winy,
-                GraphicsDeviceManager.DefaultBackBufferWidth, GraphicsDeviceManager.DefaultBackBufferHeight,
-                Sdl.Window.State.Hidden);
         }
 
-        internal void CreateWindow()
+        protected override void CreateWindow(PresentationParameters pp)
         {
-            var initflags =
-                Sdl.Window.State.OpenGL |
-                Sdl.Window.State.Hidden |
-                Sdl.Window.State.InputFocus |
-                Sdl.Window.State.MouseFocus;
+            _supressMove = true;
 
             if (_handle != IntPtr.Zero)
                 Sdl.Window.Destroy(_handle);
 
-            _handle = Sdl.Window.Create(MonoGame.Utilities.AssemblyHelper.GetDefaultWindowTitle(),
-                _winx - _width / 2, _winy - _height / 2,
-                _width, _height, initflags);
+            _surfaceFormat = pp.BackBufferFormat.GetColorFormat();
+            _depthStencilFormat = pp.DepthStencilFormat;
+
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.RedSize, _surfaceFormat.R);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.GreenSize, _surfaceFormat.G);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.BlueSize, _surfaceFormat.B);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.AlphaSize, _surfaceFormat.A);
+
+            switch (_depthStencilFormat)
+            {
+                case DepthFormat.None:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 0);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 0);
+                    break;
+                case DepthFormat.Depth16:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 16);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 0);
+                    break;
+                case DepthFormat.Depth24:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 24);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 0);
+                    break;
+                case DepthFormat.Depth24Stencil8:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 24);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 8);
+                    break;
+            }
+
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.DoubleBuffer, 1);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.ContextMajorVersion, 2);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.ContextMinorVersion, 1);
+
+            var initflags =
+                Sdl.Window.State.OpenGL |
+                Sdl.Window.State.InputFocus |
+                Sdl.Window.State.MouseFocus;
+
+            if (pp.IsFullScreen)
+            {
+                if (pp.HardwareModeSwitch)
+                    initflags |= Sdl.Window.State.Fullscreen;
+                else
+                    initflags |= Sdl.Window.State.FullscreenDesktop;
+                IsFullScreen = true;
+                _hardwareSwitch = pp.HardwareModeSwitch;
+            }
+
+            _handle = Sdl.Window.Create(Title,
+                                        _position.X, _position.Y,
+                                        pp.BackBufferWidth, pp.BackBufferHeight,
+                                        initflags);
 
             if (_icon != IntPtr.Zero)
                 Sdl.Window.SetIcon(_handle, _icon);
@@ -157,6 +206,10 @@ namespace Microsoft.Xna.Framework
             Sdl.Window.SetResizable(_handle, _resizable);
 
             SetCursorVisible(_mouseVisible);
+            if (!_userMoved)
+                CenterWindow();
+
+            _supressMove = true;
         }
 
         ~SdlGameWindow()
@@ -164,26 +217,25 @@ namespace Microsoft.Xna.Framework
             Dispose(false);
         }
 
-        private static Sdl.Rectangle GetMouseDisplay()
+        private static int GetMouseDisplay()
         {
-            var rect = new Sdl.Rectangle();
-
             int x, y;
             Sdl.Mouse.GetGlobalState(out x, out y);
 
             var displayCount = Sdl.Display.GetNumVideoDisplays();
             for (var i = 0; i < displayCount; i++)
             {
+                Sdl.Rectangle rect;
                 Sdl.Display.GetBounds(i, out rect);
 
                 if (x >= rect.X && x < rect.X + rect.Width &&
                     y >= rect.Y && y < rect.Y + rect.Height)
                 {
-                    return rect;
+                    return i;
                 }
             }
 
-            return rect;
+            return -1;
         }
 
         public void SetCursorVisible(bool visible)
@@ -192,92 +244,100 @@ namespace Microsoft.Xna.Framework
             Sdl.Mouse.ShowCursor(visible ? 1 : 0);
         }
 
-        public override void BeginScreenDeviceChange(bool willBeFullScreen)
+        public override void OnPresentationChanged(PresentationParameters pp)
         {
-            _willBeFullScreen = willBeFullScreen;
+            _supressMove = true;
+            // TODO we need to check if multisamplecount
+            // changed and recreate the window if it did
+
+            var width = pp.BackBufferWidth;
+            var height = pp.BackBufferHeight;
+
+            if (pp.DepthStencilFormat != _depthStencilFormat ||
+                pp.BackBufferFormat.GetColorFormat() != _surfaceFormat)
+            {
+                CreateWindow(pp);
+                return;
+            }
+            if (!IsFullScreen && pp.IsFullScreen ||
+                IsFullScreen && pp.IsFullScreen && _hardwareSwitch != pp.HardwareModeSwitch)
+            {
+                IsFullScreen = true;
+                // store width and height for recovering later
+                _storedWidth = pp.BackBufferWidth;
+                _storedHeight = pp.BackBufferHeight;
+                // enter full screen
+                var fullscreenFlag = pp.HardwareModeSwitch ? Sdl.Window.State.Fullscreen : Sdl.Window.State.FullscreenDesktop;
+                Sdl.Window.SetFullscreen(Handle, fullscreenFlag);
+                _hardwareSwitch = pp.HardwareModeSwitch;
+            }
+            else if (IsFullScreen && !pp.IsFullScreen)
+            {
+                // exit full screen
+                IsFullScreen = false;
+                Sdl.Window.SetFullscreen(Handle, 0);
+                Sdl.Window.SetPosition(Handle, _position.X, _position.Y);
+                width = _storedWidth;
+                height = _storedHeight;
+            }
+
+            if (!IsFullScreen)
+            {
+                Sdl.Window.SetSize(Handle, width, height);
+                if (!_userMoved)
+                    CenterWindow();
+            }
+            _supressMove = true;
         }
 
-        public override void EndScreenDeviceChange(string screenDeviceName, int clientWidth, int clientHeight)
+        private void CenterWindow()
         {
-            _screenDeviceName = screenDeviceName;
-
-            var prevBounds = ClientBounds;
-            var displayIndex = Sdl.Window.GetDisplayIndex(Handle);
-
-            Sdl.Rectangle displayRect;
-            Sdl.Display.GetBounds(displayIndex, out displayRect);
-
-            if (_willBeFullScreen != IsFullScreen || _hardwareSwitch != _game.graphicsDeviceManager.HardwareModeSwitch)
-            {
-                var fullscreenFlag = _game.graphicsDeviceManager.HardwareModeSwitch ? Sdl.Window.State.Fullscreen : Sdl.Window.State.FullscreenDesktop;
-                Sdl.Window.SetFullscreen(Handle, (_willBeFullScreen) ? fullscreenFlag : 0);
-                _hardwareSwitch = _game.graphicsDeviceManager.HardwareModeSwitch;
-            }
-
-            if (!_willBeFullScreen || _game.graphicsDeviceManager.HardwareModeSwitch)
-            {
-                Sdl.Window.SetSize(Handle, clientWidth, clientHeight);
-                _width = clientWidth;
-                _height = clientHeight;
-            }
-            else
-            {
-                _width = displayRect.Width;
-                _height = displayRect.Height;
-            }
-
-            var centerX = Math.Max(prevBounds.X + ((prevBounds.Width - clientWidth) / 2), 0);
-            var centerY = Math.Max(prevBounds.Y + ((prevBounds.Height - clientHeight) / 2), 0);
-
-            if (IsFullScreen && !_willBeFullScreen)
-            {
-                // We need to get the display information again in case
-                // the resolution of it was changed.
-                Sdl.Display.GetBounds (displayIndex, out displayRect);
-
-                // This centering only occurs when exiting fullscreen
-                // so it should center the window on the current display.
-                centerX = displayRect.X + displayRect.Width / 2 - clientWidth / 2;
-                centerY = displayRect.Y + displayRect.Height / 2 - clientHeight / 2;
-            }
-
             // If this window is resizable, there is a bug in SDL 2.0.4 where
             // after the window gets resized, window position information
             // becomes wrong (for me it always returned 10 8). Solution is
             // to not try and set the window position because it will be wrong.
-            if ((Sdl.Patch > 4 || !AllowUserResizing) && !_wasMoved)
-                Sdl.Window.SetPosition(Handle, centerX, centerY);
+            if (Sdl.Patch <= 4 && AllowUserResizing)
+                return;
 
-            IsFullScreen = _willBeFullScreen;
-            OnClientSizeChanged();
+            var di = Sdl.Window.GetDisplayIndex(_handle);
+            Sdl.Rectangle displayBounds;
+            Sdl.Display.GetBounds(di, out displayBounds);
 
-            _supressMoved = true;
+            int w, h;
+            Sdl.Window.GetSize(_handle, out w, out h);
+
+            var x = displayBounds.X + (displayBounds.Width - w) / 2;
+            var y = displayBounds.Y + (displayBounds.Height - h) / 2;
+            _supressMove = true;
+            Sdl.Window.SetPosition(Handle, x, y);
         }
 
         internal void Moved()
         {
-            if (_supressMoved)
+            if (_supressMove)
             {
-                _supressMoved = false;
+                _supressMove = false;
                 return;
             }
-
-            _wasMoved = true;
+            _userMoved = true;
+            int x, y;
+            Sdl.Window.GetPosition(_handle, out x, out y);
+            _position = new Point(x, y);
         }
 
         public void ClientResize(int width, int height)
         {
-            // SDL reports many resize events even if the Size didn't change.
-            // Only call the code below if it actually changed.
-            if (_game.GraphicsDevice.PresentationParameters.BackBufferWidth == width &&
-                _game.GraphicsDevice.PresentationParameters.BackBufferHeight == height) {
-                return;
-            }
-            _game.GraphicsDevice.PresentationParameters.BackBufferWidth = width;
-            _game.GraphicsDevice.PresentationParameters.BackBufferHeight = height;
-            _game.GraphicsDevice.Viewport = new Viewport(0, 0, width, height);
+            // TODO detect somehow if the user resize ended, if not don't do anything yet
+            //      this however does not seem to be possible with the SDL API :(
 
-            Sdl.Window.GetSize(Handle, out _width, out _height);
+            var pp = GraphicsDeviceManager.GraphicsDevice.PresentationParameters;
+            if (pp.BackBufferWidth == width && pp.BackBufferHeight == height)
+                return;
+
+            GraphicsDeviceManager.PreferredBackBufferWidth = width;
+            GraphicsDeviceManager.PreferredBackBufferHeight = height;
+            GraphicsDeviceManager.GraphicsDevice.Viewport = new Viewport(0, 0, width, height);
+            GraphicsDeviceManager.ApplyChanges();
 
             OnClientSizeChanged();
         }
@@ -294,7 +354,8 @@ namespace Microsoft.Xna.Framework
 
         protected override void SetTitle(string title)
         {
-            Sdl.Window.SetTitle(_handle, title);
+            if (_handle != IntPtr.Zero)
+                Sdl.Window.SetTitle(_handle, title);
         }
 
         public void Dispose()

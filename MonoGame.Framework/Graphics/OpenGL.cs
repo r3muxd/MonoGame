@@ -468,6 +468,41 @@ namespace OpenGL
         public int G { get; private set; }
         public int B { get; private set; }
         public int A { get; private set; }
+
+        protected bool Equals(ColorFormat other)
+        {
+            return R == other.R && G == other.G && B == other.B && A == other.A;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((ColorFormat) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                var hashCode = R;
+                hashCode = (hashCode * 397) ^ G;
+                hashCode = (hashCode * 397) ^ B;
+                hashCode = (hashCode * 397) ^ A;
+                return hashCode;
+            }
+        }
+
+        public static bool operator ==(ColorFormat left, ColorFormat right)
+        {
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(ColorFormat left, ColorFormat right)
+        {
+            return !Equals(left, right);
+        }
     }
 
     [CLSCompliant (false)]

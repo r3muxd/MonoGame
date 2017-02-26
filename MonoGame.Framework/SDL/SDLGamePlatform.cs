@@ -7,8 +7,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Runtime.InteropServices;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Utilities;
 
@@ -21,22 +19,18 @@ namespace Microsoft.Xna.Framework
             get { return GameRunBehavior.Synchronous; }
         }
 
-        private readonly Game _game;
-        private readonly OpenALSoundController _soundControllerInstance;
         private readonly List<Keys> _keys;
 
         private int _isExiting;
         private SdlGameWindow _view;
 
-        public SdlGamePlatform(Game game)
-            : base(game)
+        public SdlGamePlatform(Game game) : base(game)
         {
             // if we're on Windows, we need to detect the CPU arch and load the correct dlls
             // on other system, the MonoGame.Framework.dll.config handles this
             if (PlatformParameters.DetectWindowsArchitecture)
                 NativeHelper.InitDllDirectory();
 
-            _game = game;
             _keys = new List<Keys>();
             Keyboard.SetKeys(_keys);
 
@@ -66,16 +60,7 @@ namespace Microsoft.Xna.Framework
             Sdl.DisableScreenSaver();
 
             GamePad.InitDatabase();
-            Window = _view = new SdlGameWindow(_game);
-
-            try
-            {
-                _soundControllerInstance = OpenALSoundController.GetInstance;
-            }
-            catch (DllNotFoundException ex)
-            {
-                throw (new NoAudioHardwareException("Failed to init OpenALSoundController", ex));
-            }
+            Window = _view = new SdlGameWindow();
         }
 
         public override void BeforeInitialize ()
@@ -85,18 +70,9 @@ namespace Microsoft.Xna.Framework
             base.BeforeInitialize ();
         }
 
-        protected override void OnIsMouseVisibleChanged()
+        protected override void OnIsMouseVisibleChanged(bool visible)
         {
-            _view.SetCursorVisible(_game.IsMouseVisible);
-        }
-
-        internal override void OnPresentationChanged()
-        {
-            var displayIndex = Sdl.Window.GetDisplayIndex(Window.Handle);
-            var displayName = Sdl.Display.GetDisplayName(displayIndex);
-            var pp = _game.GraphicsDevice.PresentationParameters;
-            BeginScreenDeviceChange(pp.IsFullScreen);
-            EndScreenDeviceChange(displayName, pp.BackBufferWidth, pp.BackBufferHeight);
+            _view.SetCursorVisible(visible);
         }
 
         public override void RunLoop()
@@ -196,24 +172,6 @@ namespace Microsoft.Xna.Framework
         public override bool BeforeDraw(GameTime gameTime)
         {
             return true;
-        }
-
-        public override void EnterFullScreen()
-        {
-        }
-
-        public override void ExitFullScreen()
-        {
-        }
-
-        public override void BeginScreenDeviceChange(bool willBeFullScreen)
-        {
-            _view.BeginScreenDeviceChange(willBeFullScreen);
-        }
-
-        public override void EndScreenDeviceChange(string screenDeviceName, int clientWidth, int clientHeight)
-        {
-            _view.EndScreenDeviceChange(screenDeviceName, clientWidth, clientHeight);
         }
 
         public override void Log(string message)
