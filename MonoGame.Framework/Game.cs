@@ -58,8 +58,6 @@ namespace Microsoft.Xna.Framework
         
         public Game()
         {
-            _instance = this;
-
             LaunchParameters = new LaunchParameters();
             _services = new GameServiceContainer();
             _components = new GameComponentCollection();
@@ -122,7 +120,7 @@ namespace Microsoft.Xna.Framework
 
                     if (_graphicsDeviceManager != null)
                     {
-                        (_graphicsDeviceManager as GraphicsDeviceManager).Dispose();
+                        ((GraphicsDeviceManager) _graphicsDeviceManager).Dispose();
                         _graphicsDeviceManager = null;
                     }
 
@@ -146,7 +144,6 @@ namespace Microsoft.Xna.Framework
                 Activity = null;
 #endif
                 _isDisposed = true;
-                _instance = null;
             }
         }
 
@@ -169,8 +166,6 @@ namespace Microsoft.Xna.Framework
         [CLSCompliant(false)]
         public static AndroidGameActivity Activity { get; internal set; }
 #endif
-        private static Game _instance = null;
-        internal static Game Instance { get { return Game._instance; } }
 
         public LaunchParameters LaunchParameters { get; private set; }
 
@@ -320,6 +315,32 @@ namespace Microsoft.Xna.Framework
         #endregion
 
         #region Public Methods
+
+        /// <summary>
+        /// Creates a new <see cref="GraphicsDeviceManager"/> and binds it to this <see cref="Game"/>.
+        /// </summary>
+        public GraphicsDeviceManager BindGraphicsDeviceManager()
+        {
+            var gdm = new GraphicsDeviceManager();
+            BindGraphicsDeviceManager(gdm);
+            return gdm;
+        }
+
+        /// <summary>
+        /// Binds the given <see cref="GraphicsDeviceManager"/> to this <see cref="Game"/>.
+        /// </summary>
+        /// <param name="gdm">The <see cref="GraphicsDeviceManager"/> to bind to this <see cref="Game"/>.</param>
+        public void BindGraphicsDeviceManager(GraphicsDeviceManager gdm)
+        {
+            if (Services.GetService(typeof(IGraphicsDeviceManager)) != null)
+                throw new ArgumentException("A graphics device manager is already registered.  The graphics device manager cannot be changed once it is set.");
+
+            if (Window != null)
+                Window.BindGraphicsDeviceManager(gdm);
+
+            Services.AddService(typeof(IGraphicsDeviceManager), gdm);
+            Services.AddService(typeof(IGraphicsDeviceService), gdm);
+        }
 
 #if IOS || WINDOWS_STOREAPP && !WINDOWS_PHONE81
         [Obsolete("This platform's policy does not allow programmatically closing.", true)]
@@ -531,9 +552,6 @@ namespace Microsoft.Xna.Framework
 
         protected virtual void Initialize()
         {
-            // TODO: This should be removed once all platforms use the new GraphicsDeviceManager
-            applyChanges(graphicsDeviceManager);
-
             // According to the information given on MSDN (see link below), all
             // GameComponents in Components at the time Initialize() is called
             // are initialized.
@@ -626,29 +644,6 @@ namespace Microsoft.Xna.Framework
 
         #region Internal Methods
 
-        // FIXME: We should work toward eliminating internal methods.  They
-        //        break entirely the possibility that additional platforms could
-        //        be added by third parties without changing MonoGame itself.
-
-        internal void applyChanges(GraphicsDeviceManager manager)
-        {
-			Platform.BeginScreenDeviceChange(GraphicsDevice.PresentationParameters.IsFullScreen);
-
-#if !(WINDOWS && DIRECTX)
-
-            if (GraphicsDevice.PresentationParameters.IsFullScreen)
-                Platform.EnterFullScreen();
-            else
-                Platform.ExitFullScreen();
-#endif
-            var viewport = new Viewport(0, 0,
-			                            GraphicsDevice.PresentationParameters.BackBufferWidth,
-			                            GraphicsDevice.PresentationParameters.BackBufferHeight);
-
-            GraphicsDevice.Viewport = viewport;
-			Platform.EndScreenDeviceChange(string.Empty, viewport.Width, viewport.Height);
-        }
-
         internal void DoUpdate(GameTime gameTime)
         {
             AssertNotDisposed();
@@ -679,7 +674,8 @@ namespace Microsoft.Xna.Framework
         internal void DoInitialize()
         {
             AssertNotDisposed();
-            if (GraphicsDevice == null && graphicsDeviceManager != null)
+
+            if (graphicsDeviceManager != null)
                 _graphicsDeviceManager.CreateDevice();
 
             Platform.BeforeInitialize();

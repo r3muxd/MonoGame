@@ -98,13 +98,6 @@ namespace Microsoft.Xna.Framework.Graphics
 #elif ANDROID
                 View view = ((AndroidGameWindow)Game.Instance.Window).GameView;
                 return new DisplayMode(view.Width, view.Height, SurfaceFormat.Color);
-#elif DESKTOPGL
-                var displayIndex = Sdl.Display.GetWindowDisplayIndex(SdlGameWindow.Instance.Handle);
-
-                Sdl.Display.Mode mode;
-                Sdl.Display.GetCurrentDisplayMode(displayIndex, out mode);
-
-                return new DisplayMode(mode.Width, mode.Height, SurfaceFormat.Color);
 #elif WINDOWS
                 using (var graphics = System.Drawing.Graphics.FromHwnd(IntPtr.Zero))
                 {
@@ -290,32 +283,11 @@ namespace Microsoft.Xna.Framework.Graphics
             get
             {
                 bool displayChanged = false;
-#if DESKTOPGL
-                var displayIndex = Sdl.Display.GetWindowDisplayIndex (SdlGameWindow.Instance.Handle);
-                displayChanged = displayIndex != _displayIndex;
-#endif
                 if (_supportedDisplayModes == null || displayChanged)
                 {
                     var modes = new List<DisplayMode>(new[] { CurrentDisplayMode, });
 
-#if DESKTOPGL
-                    _displayIndex = displayIndex;
-                    modes.Clear();
-                    
-                    var modeCount = Sdl.Display.GetNumDisplayModes(displayIndex);
-
-                    for (int i = 0;i < modeCount;i++)
-                    {
-                        Sdl.Display.Mode mode;
-                        Sdl.Display.GetDisplayMode(displayIndex, i, out mode);
-
-                        // We are only using one format, Color
-                        // mode.Format gets the Color format from SDL
-                        var displayMode = new DisplayMode(mode.Width, mode.Height, SurfaceFormat.Color);
-                        if (!modes.Contains(displayMode))
-                            modes.Add(displayMode);
-                    }
-#elif DIRECTX && !WINDOWS_PHONE
+#if DIRECTX && !WINDOWS_PHONE
                     var dxgiFactory = new SharpDX.DXGI.Factory1();
                     var adapter = dxgiFactory.GetAdapter(0);
                     var output = adapter.Outputs[0];

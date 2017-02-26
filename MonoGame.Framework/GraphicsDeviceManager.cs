@@ -13,21 +13,22 @@ namespace Microsoft.Xna.Framework
     /// </summary>
     public partial class GraphicsDeviceManager : IGraphicsDeviceService, IDisposable, IGraphicsDeviceManager
     {
-        private readonly Game _game;
         private GraphicsDevice _graphicsDevice;
         private bool _initialized = false;
 
-        private int _preferredBackBufferHeight;
-        private int _preferredBackBufferWidth;
+        private int _preferredBackBufferHeight = DefaultBackBufferHeight;
+        private int _preferredBackBufferWidth = DefaultBackBufferWidth;
         private SurfaceFormat _preferredBackBufferFormat;
         private DepthFormat _preferredDepthStencilFormat;
         private bool _preferMultiSampling;
         private DisplayOrientation _supportedOrientations;
+        private DisplayOrientation _currentOrientation;
         private bool _synchronizedWithVerticalRetrace = true;
         private bool _drawBegun;
         private bool _disposed;
         private bool _hardwareModeSwitch = true;
         private bool _wantFullScreen;
+        private IntPtr _windowHandle;
         private GraphicsProfile _graphicsProfile;
         // dirty flag for ApplyChanges
         private bool _shouldApplyChanges;
@@ -51,31 +52,23 @@ namespace Microsoft.Xna.Framework
         /// Associates this graphics device manager to a game instances.
         /// </summary>
         /// <param name="game">The game instance to attach.</param>
+        [Obsolete("This method will be removed in a future version of MonoGame. " +
+                  "Use Game.RegisterGraphicsDeviceManager instead.")]
         public GraphicsDeviceManager(Game game)
+            : this()
         {
             if (game == null)
                 throw new ArgumentNullException("game", "Game cannot be null.");
 
-            _game = game;
+            game.BindGraphicsDeviceManager(this);
+        }
 
+        public GraphicsDeviceManager()
+        {
             _supportedOrientations = DisplayOrientation.Default;
             _preferredBackBufferFormat = SurfaceFormat.Color;
             _preferredDepthStencilFormat = DepthFormat.Depth24;
             _synchronizedWithVerticalRetrace = true;
-
-            // Assume the window client size as the default back 
-            // buffer resolution in the landscape orientation.
-            var clientBounds = _game.Window.ClientBounds;
-            if (clientBounds.Width >= clientBounds.Height)
-            {
-                _preferredBackBufferWidth = clientBounds.Width;
-                _preferredBackBufferHeight = clientBounds.Height;
-            }
-            else
-            {
-                _preferredBackBufferWidth = clientBounds.Height;
-                _preferredBackBufferHeight = clientBounds.Width;
-            }
 
             // Default to windowed mode... this is ignored on platforms that don't support it.
             _wantFullScreen = false;
@@ -86,12 +79,6 @@ namespace Microsoft.Xna.Framework
 
             // Let the plaform optionally overload construction defaults.
             PlatformConstruct();
-
-            if (_game.Services.GetService(typeof(IGraphicsDeviceManager)) != null)
-                throw new ArgumentException("A graphics device manager is already registered.  The graphics device manager cannot be changed once it is set.");
-
-            _game.Services.AddService(typeof(IGraphicsDeviceManager), this);
-            _game.Services.AddService(typeof(IGraphicsDeviceService), this);
         }
 
         ~GraphicsDeviceManager()
@@ -127,6 +114,9 @@ namespace Microsoft.Xna.Framework
             if (_graphicsDevice != null)
                 return;
 
+            if (CreatingDevice != null)
+                CreatingDevice(this, new PresentationChangedEventArgs(gdi.PresentationParameters));
+
             _graphicsDevice = new GraphicsDevice(gdi);
             _shouldApplyChanges = false;
 
@@ -135,7 +125,6 @@ namespace Microsoft.Xna.Framework
             GraphicsDevice.DeviceResetting += (sender, args) => OnDeviceResetting(args);
 
             // update the touchpanel display size when the graphicsdevice is reset
-            _graphicsDevice.DeviceReset += UpdateTouchPanel;
             _graphicsDevice.PresentationChanged += OnPresentationChanged;
 
             OnDeviceCreated(EventArgs.Empty);
@@ -163,6 +152,9 @@ namespace Microsoft.Xna.Framework
                 _graphicsDevice.Present();
             }
         }
+
+        internal event EventHandler<PresentationChangedEventArgs> CreatingDevice;
+        internal event EventHandler<PresentationChangedEventArgs> PresentationChanged;
 
         #region IGraphicsDeviceService Members
 
@@ -198,7 +190,7 @@ namespace Microsoft.Xna.Framework
         /// allow users to change the settings. Then returns that GraphicsDeviceInformation.
         /// Throws NullReferenceException if users set GraphicsDeviceInformation.PresentationParameters to null.
         /// </summary>
-        private GraphicsDeviceInformation DoPreparingDeviceSettings()
+        internal GraphicsDeviceInformation DoPreparingDeviceSettings()
         {
             var gdi = new GraphicsDeviceInformation();
             PrepareGraphicsDeviceInformation(gdi);
@@ -286,9 +278,10 @@ namespace Microsoft.Xna.Framework
             presentationParameters.BackBufferHeight = _preferredBackBufferHeight;
             presentationParameters.DepthStencilFormat = _preferredDepthStencilFormat;
             presentationParameters.IsFullScreen = _wantFullScreen;
+            presentationParameters.HardwareModeSwitch = HardwareModeSwitch;
             presentationParameters.PresentationInterval = _synchronizedWithVerticalRetrace ? PresentInterval.One : PresentInterval.Immediate;
-            presentationParameters.DisplayOrientation = _game.Window.CurrentOrientation;
-            presentationParameters.DeviceWindowHandle = _game.Window.Handle;
+            presentationParameters.DisplayOrientation = _currentOrientation;
+            presentationParameters.DeviceWindowHandle = _windowHandle;
 
             if (_preferMultiSampling)
             {
@@ -328,8 +321,6 @@ namespace Microsoft.Xna.Framework
             if (!_shouldApplyChanges)
                 return;
 
-            _game.Window.SetSupportedOrientations(_supportedOrientations);
-
             // Allow for optional platform specific behavior.
             PlatformApplyChanges();
 
@@ -362,10 +353,15 @@ namespace Microsoft.Xna.Framework
 
         partial void PlatformInitialize(PresentationParameters presentationParameters);
 
+        private void OnPresentationChanged(object sender, PresentationChangedEventArgs args)
+        {
+            UpdateTouchPanel();
+            if (PresentationChanged != null)
+                PresentationChanged(this, new PresentationChangedEventArgs(args.Parameters));
+        }
+
         private void Initialize()
         {
-            _game.Window.SetSupportedOrientations(_supportedOrientations);
-
             var presentationParameters = new PresentationParameters();
             PreparePresentationParameters(presentationParameters);
 
@@ -375,7 +371,7 @@ namespace Microsoft.Xna.Framework
             _initialized = true;
         }
 
-        private void UpdateTouchPanel(object sender, EventArgs eventArgs)
+        private void UpdateTouchPanel()
         {
             TouchPanel.DisplayWidth = _graphicsDevice.PresentationParameters.BackBufferWidth;
             TouchPanel.DisplayHeight = _graphicsDevice.PresentationParameters.BackBufferHeight;
@@ -392,11 +388,6 @@ namespace Microsoft.Xna.Framework
         {
             IsFullScreen = !IsFullScreen;
             ApplyChanges();
-        }
-
-        private void OnPresentationChanged(object sender, EventArgs args)
-        {
-            _game.Platform.OnPresentationChanged();
         }
 
         /// <summary>
@@ -599,6 +590,34 @@ namespace Microsoft.Xna.Framework
             {
                 _shouldApplyChanges = true;
                 _supportedOrientations = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the current screen orientation.
+        /// </summary>
+        /// <value>The current orientation.</value>
+        public DisplayOrientation CurrentOrientation
+        {
+            get { return _currentOrientation; }
+            set
+            {
+                _shouldApplyChanges = true;
+                _currentOrientation = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the window handle of the window that this GraphicsDeviceManager is bound to.
+        /// </summary>
+        /// <value>The window handle.</value>
+        public IntPtr WindowHandle
+        {
+            get { return _windowHandle; }
+            set
+            {
+                _shouldApplyChanges = true;
+                _windowHandle = value;
             }
         }
     }

@@ -3,15 +3,17 @@
 // file 'LICENSE.txt', which is part of this source code package.
 
 using System;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
-
 
 namespace Microsoft.Xna.Framework
 {
     abstract partial class GamePlatform : IDisposable
     {
         #region Fields
+
+        protected readonly Game Game;
 
         protected TimeSpan _inactiveSleepTime = TimeSpan.FromMilliseconds(20.0);
         protected bool _needsToResetElapsedTime = false;
@@ -23,10 +25,8 @@ namespace Microsoft.Xna.Framework
 
         #region Construction/Destruction
 
-		protected GamePlatform(Game game)
+        public GamePlatform(Game game)
         {
-            if (game == null)
-                throw new ArgumentNullException("game");
             Game = game;
         }
 
@@ -44,14 +44,6 @@ namespace Microsoft.Xna.Framework
         /// GameRunBehavior for this platform.
         /// </summary>
         public abstract GameRunBehavior DefaultRunBehavior { get; }
-
-        /// <summary>
-        /// Gets the Game instance that owns this GamePlatform instance.
-        /// </summary>
-        public Game Game
-        {
-            get; private set;
-        }
 
         private bool _isActive;
         public bool IsActive
@@ -76,7 +68,7 @@ namespace Microsoft.Xna.Framework
                 if (_isMouseVisible != value)
                 {
                     _isMouseVisible = value;
-                    OnIsMouseVisibleChanged();
+                    OnIsMouseVisibleChanged(value);
                 }
             }
         }
@@ -186,18 +178,6 @@ namespace Microsoft.Xna.Framework
         public abstract bool BeforeDraw(GameTime gameTime);
 
         /// <summary>
-        /// When implemented in a derived class, causes the game to enter
-        /// full-screen mode.
-        /// </summary>
-        public abstract void EnterFullScreen();
-
-        /// <summary>
-        /// When implemented in a derived class, causes the game to exit
-        /// full-screen mode.
-        /// </summary>
-        public abstract void ExitFullScreen();
-
-        /// <summary>
         /// Gives derived classes an opportunity to modify
         /// Game.TargetElapsedTime before it is set.
         /// </summary>
@@ -207,33 +187,6 @@ namespace Microsoft.Xna.Framework
         {
             return value;
         }
-        /// <summary>
-        /// Starts a device transition (windowed to full screen or vice versa).
-        /// </summary>
-        /// <param name='willBeFullScreen'>
-        /// Specifies whether the device will be in full-screen mode upon completion of the change.
-        /// </param>
-        public abstract void BeginScreenDeviceChange (
-                 bool willBeFullScreen
-        );
-
-        /// <summary>
-        /// Completes a device transition.
-        /// </summary>
-        /// <param name='screenDeviceName'>
-        /// Screen device name.
-        /// </param>
-        /// <param name='clientWidth'>
-        /// The new width of the game's client window.
-        /// </param>
-        /// <param name='clientHeight'>
-        /// The new height of the game's client window.
-        /// </param>
-        public abstract void EndScreenDeviceChange (
-                 string screenDeviceName,
-                 int clientWidth,
-                 int clientHeight
-        );
 
         /// <summary>
         /// Gives derived classes an opportunity to take action after
@@ -250,15 +203,7 @@ namespace Microsoft.Xna.Framework
 
         public virtual void Present() { }
 
-        protected virtual void OnIsMouseVisibleChanged() {}
-
-        /// <summary>
-        /// Used by the GraphicsDeviceManager to update the platform window
-        /// after the graphics device has changed the presentation.
-        /// </summary>
-        internal virtual void OnPresentationChanged()
-        {            
-        }
+        protected virtual void OnIsMouseVisibleChanged(bool visible) {}
 
         #endregion Methods
 

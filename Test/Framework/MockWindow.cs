@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace MonoGame.Tests.Framework
 {
@@ -37,22 +38,22 @@ namespace MonoGame.Tests.Framework
             get { throw new NotImplementedException(); }
         }
 
-        public override void BeginScreenDeviceChange(bool willBeFullScreen)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void EndScreenDeviceChange(string screenDeviceName, int clientWidth, int clientHeight)
-        {
-            throw new NotImplementedException();
-        }
-
         protected internal override void SetSupportedOrientations(DisplayOrientation orientations)
         {
             throw new NotImplementedException();
         }
 
         protected override void SetTitle(string title)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void CreateWindow(PresentationParameters pp)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void OnPresentationChanged(PresentationParameters pp)
         {
             throw new NotImplementedException();
         }

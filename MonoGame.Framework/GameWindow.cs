@@ -4,19 +4,21 @@
 
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.ComponentModel;
 
 namespace Microsoft.Xna.Framework {
-	public abstract class GameWindow {
-		#region Properties
+    public abstract partial class GameWindow
+    {
+        #region Properties
 
-		[DefaultValue(false)]
-		public abstract bool AllowUserResizing { get; set; }
+        [DefaultValue(false)]
+        public abstract bool AllowUserResizing { get; set; }
 
-		public abstract Rectangle ClientBounds { get; }
+        public abstract Rectangle ClientBounds { get; }
 
-	    internal bool _allowAltF4 = true;
+        internal bool _allowAltF4 = true;
 
         /// <summary>
         /// Gets or sets a bool that enables usage of Alt+F4 for window closing on desktop platforms. Value is true by default.
@@ -31,13 +33,19 @@ namespace Microsoft.Xna.Framework {
         public abstract Point Position { get; set; }
 #endif
 
-		public abstract DisplayOrientation CurrentOrientation { get; }
+        public abstract DisplayOrientation CurrentOrientation { get; }
 
-		public abstract IntPtr Handle { get; }
+        public abstract IntPtr Handle { get; }
 
-		public abstract string ScreenDeviceName { get; }
+        protected bool CreatedWindow
+        {
+            get { return Handle != IntPtr.Zero; }
+        }
 
-		private string _title;
+        public abstract string ScreenDeviceName { get; }
+
+        private string _title = MonoGame.Utilities.AssemblyHelper.GetDefaultWindowTitle();
+
         /// <summary>
         /// Gets or sets the title of the game window.
         /// </summary>
@@ -45,15 +53,18 @@ namespace Microsoft.Xna.Framework {
         /// For Windows 8 and Windows 10 UWP this has no effect. For these platforms the title should be
         /// set by using the DisplayName property found in the app manifest file.
         /// </remarks>
-        public string Title {
-			get { return _title; }
-			set {
-				if (_title != value) {
-					SetTitle(value);
-					_title = value;
-				}
-			}
-		}
+        public string Title
+        {
+            get { return _title; }
+            set
+            {
+                if (_title != value)
+                {
+                    SetTitle(value);
+                    _title = value;
+                }
+            }
+        }
 
         /// <summary>
         /// Determines whether the border of the window is visible. Currently only supported on the WinDX and WinGL/Linux platforms.
@@ -73,6 +84,8 @@ namespace Microsoft.Xna.Framework {
             }
         }
 
+        protected GraphicsDeviceManager GraphicsDeviceManager { get; private set; }
+
         internal MouseState MouseState;
 	    internal TouchPanelState TouchPanelState;
 
@@ -81,11 +94,11 @@ namespace Microsoft.Xna.Framework {
             TouchPanelState = new TouchPanelState(this);
         }
 
-		#endregion Properties
+        #endregion Properties
 
-		#region Events
+        #region Events
 
-		public event EventHandler<EventArgs> ClientSizeChanged;
+        public event EventHandler<EventArgs> ClientSizeChanged;
 		public event EventHandler<EventArgs> OrientationChanged;
 		public event EventHandler<EventArgs> ScreenDeviceNameChanged;
 
@@ -104,23 +117,57 @@ namespace Microsoft.Xna.Framework {
 		public event EventHandler<TextInputEventArgs> TextInput;
 #endif
 
-		#endregion Events
+        #endregion Events
 
-		public abstract void BeginScreenDeviceChange (bool willBeFullScreen);
+        /// <summary>
+        /// Binds the given graphics device manager to this <see cref="GameWindow"/>.
+        /// </summary>
+        public void BindGraphicsDeviceManager(GraphicsDeviceManager gdm)
+        {
+            if (GraphicsDeviceManager != null)
+            {
+                GraphicsDeviceManager.CreatingDevice -= CreatingDeviceHandler;
+                GraphicsDeviceManager.PresentationChanged -= PresentationChangedHandler;
+            }
 
-		public abstract void EndScreenDeviceChange (
-			string screenDeviceName, int clientWidth, int clientHeight);
+            GraphicsDeviceManager = gdm;
+            GraphicsDeviceManager.CreatingDevice += CreatingDeviceHandler;
+            GraphicsDeviceManager.PresentationChanged += PresentationChangedHandler;
+        }
 
-		public void EndScreenDeviceChange (string screenDeviceName)
-		{
-			EndScreenDeviceChange(screenDeviceName, ClientBounds.Width, ClientBounds.Height);
-		}
+        private void CreatingDeviceHandler(object sender, PresentationChangedEventArgs e)
+        {
+            if (CreatedWindow)
+                return;
+
+            CreateWindow(e.Parameters);
+            ((GraphicsDeviceManager) sender).WindowHandle = Handle;
+            e.Parameters.DeviceWindowHandle = Handle;
+        }
+
+        /// <summary>
+        /// Create the native window.
+        /// </summary>
+        /// <param name="pp">The PresentationParameters for the window creation.</param>
+        protected abstract void CreateWindow(PresentationParameters pp);
+
+        private void PresentationChangedHandler(object sender, PresentationChangedEventArgs args)
+        {
+            OnPresentationChanged(args.Parameters);
+        }
+
+        /// <summary>
+        /// Called when <see cref="GraphicsDevice"/> <see cref="PresentationParameters"/> changed
+        /// to update the <see cref="GameWindow"/> accordingly.
+        /// </summary>
+        /// <param name="pp">The updated <see cref="PresentationParameters"/>.</param>
+        public abstract void OnPresentationChanged(PresentationParameters pp);
 
 		protected void OnActivated ()
 		{
 		}
 
-		internal void OnClientSizeChanged ()
+		protected void OnClientSizeChanged ()
 		{
 			if (ClientSizeChanged != null)
 				ClientSizeChanged (this, EventArgs.Empty);
