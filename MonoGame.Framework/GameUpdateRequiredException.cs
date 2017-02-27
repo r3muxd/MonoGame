@@ -6,6 +6,9 @@ using System;
 
 namespace Microsoft.Xna.Framework
 {
+    /// <summary>
+    /// This is currently unused in MonoGame.
+    /// </summary>
     public class GameUpdateRequiredException : Exception
     {
 
