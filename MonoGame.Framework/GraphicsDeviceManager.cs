@@ -17,8 +17,8 @@ namespace Microsoft.Xna.Framework
         private GraphicsDevice _graphicsDevice;
         private bool _initialized = false;
 
-        private int _preferredBackBufferHeight;
-        private int _preferredBackBufferWidth;
+        private int _preferredBackBufferHeight = DefaultBackBufferHeight;
+        private int _preferredBackBufferWidth = DefaultBackBufferWidth;
         private SurfaceFormat _preferredBackBufferFormat;
         private DepthFormat _preferredDepthStencilFormat;
         private bool _preferMultiSampling;
@@ -63,6 +63,7 @@ namespace Microsoft.Xna.Framework
             _preferredDepthStencilFormat = DepthFormat.Depth24;
             _synchronizedWithVerticalRetrace = true;
 
+#if !DESKTOPGL
             // Assume the window client size as the default back 
             // buffer resolution in the landscape orientation.
             var clientBounds = _game.Window.ClientBounds;
@@ -76,6 +77,7 @@ namespace Microsoft.Xna.Framework
                 _preferredBackBufferWidth = clientBounds.Height;
                 _preferredBackBufferHeight = clientBounds.Width;
             }
+#endif
 
             // Default to windowed mode... this is ignored on platforms that don't support it.
             _wantFullScreen = false;
@@ -106,10 +108,11 @@ namespace Microsoft.Xna.Framework
 
             try
             {
-                if (!_initialized)
-                    Initialize();
-
                 var gdi = DoPreparingDeviceSettings();
+
+                if (!_initialized)
+                    Initialize(gdi.PresentationParameters);
+
                 CreateDevice(gdi);
             }
             catch (NoSuitableGraphicsDeviceException)
@@ -128,6 +131,7 @@ namespace Microsoft.Xna.Framework
                 return;
 
             _graphicsDevice = new GraphicsDevice(gdi);
+
             _shouldApplyChanges = false;
 
             // hook up reset events
@@ -286,6 +290,7 @@ namespace Microsoft.Xna.Framework
             presentationParameters.BackBufferHeight = _preferredBackBufferHeight;
             presentationParameters.DepthStencilFormat = _preferredDepthStencilFormat;
             presentationParameters.IsFullScreen = _wantFullScreen;
+            presentationParameters.HardwareModeSwitch = _hardwareModeSwitch;
             presentationParameters.PresentationInterval = _synchronizedWithVerticalRetrace ? PresentInterval.One : PresentInterval.Immediate;
             presentationParameters.DisplayOrientation = _game.Window.CurrentOrientation;
             presentationParameters.DeviceWindowHandle = _game.Window.Handle;
@@ -362,15 +367,12 @@ namespace Microsoft.Xna.Framework
 
         partial void PlatformInitialize(PresentationParameters presentationParameters);
 
-        private void Initialize()
+        private void Initialize(PresentationParameters pp)
         {
             _game.Window.SetSupportedOrientations(_supportedOrientations);
 
-            var presentationParameters = new PresentationParameters();
-            PreparePresentationParameters(presentationParameters);
-
             // Allow for any per-platform changes to the presentation.
-            PlatformInitialize(presentationParameters);
+            PlatformInitialize(pp);
 
             _initialized = true;
         }

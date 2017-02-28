@@ -104,7 +104,6 @@ namespace Microsoft.Xna.Framework.Graphics
                 Context = GL.CreateContext(windowInfo);
             }
 
-            Context.MakeCurrent(windowInfo);
             Context.SwapInterval = PresentationParameters.PresentationInterval.GetSwapInterval();
 
             /*if (Threading.BackgroundContext == null)
@@ -185,8 +184,6 @@ namespace Microsoft.Xna.Framework.Graphics
                 Threading.BackgroundContext.MakeCurrent(null);
             }
             Context.MakeCurrent(wnd);*/
-
-
 #endif
 
             MaxTextureSlots = 16;
@@ -1074,9 +1071,58 @@ namespace Microsoft.Xna.Framework.Graphics
             quality = 0;
         }
 
+        /// <summary>
+        /// Called by the GameWindow when it has to recreate the native window.
+        /// </summary>
+        /// <param name="windowHandle">The new window handle.</param>
+        internal void RecreateContext(IntPtr windowHandle)
+        {
+            // TODO back up and recreate all graphics resources
+            Context.Dispose();
+            Context = GL.CreateContext(new WindowInfo(windowHandle));
+        }
+
         internal void OnPresentationChanged()
         {
+            SetGlPresentationAttributes();
             ApplyRenderTargets(null);
+        }
+
+        private void SetGlPresentationAttributes()
+        {
+            var surfaceFormat = PresentationParameters.BackBufferFormat.GetColorFormat();
+            var depthStencilFormat = PresentationParameters.DepthStencilFormat;
+            // TODO this should have been clamped at this point, but that's not yet the case
+            // We should apply the fix from https://github.com/MonoGame/MonoGame/pull/5477 to DesktopGL too
+            var msCount = PresentationParameters.MultiSampleCount;
+
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.RedSize, surfaceFormat.R);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.GreenSize, surfaceFormat.G);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.BlueSize, surfaceFormat.B);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.AlphaSize, surfaceFormat.A);
+
+            switch (depthStencilFormat)
+            {
+                case DepthFormat.None:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 0);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 0);
+                    break;
+                case DepthFormat.Depth16:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 16);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 0);
+                    break;
+                case DepthFormat.Depth24:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 24);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 0);
+                    break;
+                case DepthFormat.Depth24Stencil8:
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.DepthSize, 24);
+                    Sdl.GL.SetAttribute(Sdl.GL.Attribute.StencilSize, 8);
+                    break;
+            }
+
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.MultiSampleBuffers, msCount > 1 ? 1 : 0);
+            Sdl.GL.SetAttribute(Sdl.GL.Attribute.MultiSampleSamples, msCount);
         }
     }
 }
