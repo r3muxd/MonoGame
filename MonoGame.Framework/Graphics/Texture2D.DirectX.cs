@@ -36,7 +36,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
         private bool _shared;
         private bool _mipmap;
-        private SampleDescription _sampleDescription;
+        protected SampleDescription _sampleDescription;
 
         private SharpDX.Direct3D11.Texture2D _cachedStagingTexture;
 
@@ -44,6 +44,7 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             _shared = shared;
             _mipmap = mipmap;
+            _sampleDescription = new SampleDescription(1, 0);
         }
 
         private void PlatformSetData<T>(int level, T[] data, int startIndex, int elementCount) where T : struct
@@ -132,9 +133,6 @@ namespace Microsoft.Xna.Framework.Graphics
                 desc.Usage = ResourceUsage.Staging;
                 desc.OptionFlags = ResourceOptionFlags.None;
 
-                // Save sampling description.
-                _sampleDescription = CreateSampleDescription();
-
                 _cachedStagingTexture = new SharpDX.Direct3D11.Texture2D(GraphicsDevice._d3dDevice, desc);
             }
 
@@ -148,7 +146,7 @@ namespace Microsoft.Xna.Framework.Graphics
                 var elementsInRow = rect.Width;
                 var rows = rect.Height;
                 var region = new ResourceRegion(rect.Left, rect.Top, 0, rect.Right, rect.Bottom, 1);
-                d3dContext.CopySubresourceRegion(GetTexture(), subresourceIndex, region, _cachedStagingTexture, 0);
+                d3dContext.CopySubresourceRegion(GetTextureForGetData(), subresourceIndex, region, _cachedStagingTexture, 0);
 
                 // Copy the data to the array.
                 DataStream stream = null;
@@ -413,7 +411,7 @@ namespace Microsoft.Xna.Framework.Graphics
             desc.Format = SharpDXHelper.ToFormat(_format);
             desc.BindFlags = BindFlags.ShaderResource;
             desc.CpuAccessFlags = CpuAccessFlags.None;
-            desc.SampleDescription = CreateSampleDescription();
+            desc.SampleDescription = SampleDescription;
             desc.Usage = ResourceUsage.Default;
             desc.OptionFlags = ResourceOptionFlags.None;
 
@@ -426,21 +424,7 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             // TODO: Move this to SetData() if we want to make Immutable textures!
             var desc = GetTexture2DDescription();
-
-            // Save sampling description.
-            _sampleDescription = desc.SampleDescription;
-
             return new SharpDX.Direct3D11.Texture2D(GraphicsDevice._d3dDevice, desc);
-        }
-
-        protected internal virtual SampleDescription CreateSampleDescription()
-        {
-            return new SampleDescription(1, 0);
-        }
-
-        internal SampleDescription GetTextureSampleDescription()
-        {
-            return _sampleDescription;
         }
 
         private void PlatformReload(Stream textureStream)
