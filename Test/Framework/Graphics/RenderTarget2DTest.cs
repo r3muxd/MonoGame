@@ -104,5 +104,27 @@ namespace MonoGame.Tests.Graphics
             spriteBatch.Dispose();
             renderTarget.Dispose();
         }
+
+        [Test]
+        public void GetDataMSAA()
+        {
+            const int size = 100;
+            const int size2 = size * size;
+            var rt = new RenderTarget2D(gd, size, size, false, SurfaceFormat.Color, DepthFormat.None, 8, RenderTargetUsage.DiscardContents);
+            var data = new Color[size2];
+            // create some arbitrary data here
+            for (var i = 0; i < size2; i++)
+                data[i] = new Color(new Vector3(1f / (i + 1)));
+
+            rt.SetData(data);
+
+            var returnedData = new Color[size2];
+            rt.GetData(returnedData);
+            // verify that the gotten data is the same as the data we attempt to set
+            for (var i = 0; i < size2; i++)
+                Assert.AreEqual(data[i], returnedData[i]);
+
+            rt.Dispose();
+        }
     }
 }
