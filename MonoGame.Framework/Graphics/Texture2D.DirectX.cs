@@ -30,13 +30,11 @@ namespace Microsoft.Xna.Framework.Graphics
 {
     public partial class Texture2D : Texture
     {
-        protected bool Shared { get { return _shared; } }
-        protected bool Mipmap { get { return _mipmap; } }
-        protected SampleDescription SampleDescription { get { return _sampleDescription; } }
+        internal bool Shared { get { return _shared; } }
+        internal bool Mipmap { get { return _mipmap; } }
 
         private bool _shared;
         private bool _mipmap;
-        protected SampleDescription _sampleDescription;
 
         private SharpDX.Direct3D11.Texture2D _cachedStagingTexture;
 
@@ -44,7 +42,6 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             _shared = shared;
             _mipmap = mipmap;
-            _sampleDescription = new SampleDescription(1, 0);
         }
 
         private void PlatformSetData<T>(int level, T[] data, int startIndex, int elementCount) where T : struct
@@ -146,7 +143,7 @@ namespace Microsoft.Xna.Framework.Graphics
                 var elementsInRow = rect.Width;
                 var rows = rect.Height;
                 var region = new ResourceRegion(rect.Left, rect.Top, 0, rect.Right, rect.Bottom, 1);
-                d3dContext.CopySubresourceRegion(GetTextureForGetData(), subresourceIndex, region, _cachedStagingTexture, 0);
+                d3dContext.CopySubresourceRegion(GetTexture(), subresourceIndex, region, _cachedStagingTexture, 0);
 
                 // Copy the data to the array.
                 DataStream stream = null;
@@ -401,7 +398,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
 #endif
 
-        protected internal virtual Texture2DDescription GetTexture2DDescription()
+        internal virtual Texture2DDescription GetTexture2DDescription()
         {
             var desc = new Texture2DDescription();
             desc.Width = width;
@@ -411,7 +408,7 @@ namespace Microsoft.Xna.Framework.Graphics
             desc.Format = SharpDXHelper.ToFormat(_format);
             desc.BindFlags = BindFlags.ShaderResource;
             desc.CpuAccessFlags = CpuAccessFlags.None;
-            desc.SampleDescription = SampleDescription;
+            desc.SampleDescription = new SampleDescription(1, 0);
             desc.Usage = ResourceUsage.Default;
             desc.OptionFlags = ResourceOptionFlags.None;
 
