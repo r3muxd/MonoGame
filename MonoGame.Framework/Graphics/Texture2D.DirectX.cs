@@ -398,7 +398,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
 #endif
 
-        internal virtual Texture2DDescription GetTexture2DDescription()
+        internal Texture2DDescription GetTexture2DDescription()
         {
             var desc = new Texture2DDescription();
             desc.Width = width;
@@ -417,11 +417,11 @@ namespace Microsoft.Xna.Framework.Graphics
 
             return desc;
         }
-        internal override Resource CreateTexture()
+        internal override void CreateTexture()
         {
             // TODO: Move this to SetData() if we want to make Immutable textures!
             var desc = GetTexture2DDescription();
-            return new SharpDX.Direct3D11.Texture2D(GraphicsDevice._d3dDevice, desc);
+            _texture = new SharpDX.Direct3D11.Texture2D(GraphicsDevice._d3dDevice, desc);
         }
 
         private void PlatformReload(Stream textureStream)
