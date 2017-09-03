@@ -42,7 +42,6 @@ namespace Microsoft.Xna.Framework.Utilities
         /// <summary>
         /// Return the given buffer to the pool.
         /// </summary>
-        /// <param name="buffer"></param>
         public void Return(byte[] buffer)
         {
             lock (_freeBuffers)
