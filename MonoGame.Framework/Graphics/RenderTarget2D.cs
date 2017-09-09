@@ -46,6 +46,19 @@ namespace Microsoft.Xna.Framework.Graphics
 			: this(graphicsDevice, width, height, false, SurfaceFormat.Color, DepthFormat.None, 0, RenderTargetUsage.DiscardContents) 
 		{}
 
+        internal RenderTarget2D(GraphicsDevice graphicsDevice,
+                        int width,
+                        int height,
+                        bool mipMap,
+                        SurfaceFormat format,
+                        DepthFormat depthFormat,
+                        int preferredMultiSampleCount,
+                        RenderTargetUsage usage,
+                        SurfaceType surfaceType)
+            : this(graphicsDevice, width, height, mipMap, format, depthFormat, preferredMultiSampleCount, usage, surfaceType, false, 1)
+        {
+        }
+
         /// <summary>
         /// Allows child class to specify the surface type, eg: a swap chain.
         /// </summary>        
@@ -58,8 +71,8 @@ namespace Microsoft.Xna.Framework.Graphics
                         int preferredMultiSampleCount,
                         RenderTargetUsage usage,
                         SurfaceType surfaceType,
-                        bool shared = false,
-                        int arraySize = 1)
+                        bool shared,
+                        int arraySize)
             : base(graphicsDevice, width, height, mipMap, format, surfaceType, shared, arraySize)
         {
             DepthStencilFormat = depthFormat;
