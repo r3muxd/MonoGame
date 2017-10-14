@@ -30,7 +30,7 @@ namespace TwoMGFX
 
             // Write the rest to a memory stream.
             using(MemoryStream memStream = new MemoryStream())
-            using(BinaryWriter memWriter = new BinaryWriter(memStream))
+            using(BinaryWriterEx memWriter = new BinaryWriterEx(memStream))
             {
             // Write all the constant buffers.
                 memWriter.Write((byte)ConstantBuffers.Count);
@@ -138,14 +138,14 @@ namespace TwoMGFX
             }
         }
 
-        private static void WriteParameters(BinaryWriter writer, d3dx_parameter[] parameters, int count)
+        private static void WriteParameters(BinaryWriterEx writer, d3dx_parameter[] parameters, int count)
         {
-            writer.Write((short) count);
+            writer.Write7BitEncodedInt(count);
             for (var i = 0; i < count; i++)
                 WriteParameter(writer, parameters[i]);
         }
 
-        private static void WriteParameter(BinaryWriter writer, d3dx_parameter param)
+        private static void WriteParameter(BinaryWriterEx writer, d3dx_parameter param)
         {
             var class_ = ToXNAParameterClass(param.class_);
             var type = ToXNAParameterType(param.type);
@@ -176,7 +176,7 @@ namespace TwoMGFX
             }
         }
 
-        private static void WriteAnnotations(BinaryWriter writer, d3dx_parameter[] annotations)
+        private static void WriteAnnotations(BinaryWriterEx writer, d3dx_parameter[] annotations)
         {
             var count = annotations == null ? 0 : annotations.Length;
             writer.Write((byte)count);

@@ -1172,6 +1172,7 @@
     <Compile Include="Utilities\AssemblyHelper.cs">
       <Platforms>Angle,Linux,MacOS,Windows,WindowsGL</Platforms>
     </Compile>
+    <Compile Include="Utilities\BinaryReaderEx.cs" />
     <Compile Include="Utilities\CurrentPlatform.cs">
       <Platforms>Windows,MacOS,WindowsGL,Linux</Platforms>
     </Compile>
