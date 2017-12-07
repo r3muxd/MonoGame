@@ -1,0 +1,462 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities
+  commentId: T:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities
+  id: TouchPanelCapabilities
+  parent: Microsoft.Xna.Framework.Input.Touch
+  children:
+  - Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure
+  - Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected
+  - Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount
+  langs:
+  - csharp
+  - vb
+  name: TouchPanelCapabilities
+  nameWithType: TouchPanelCapabilities
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TouchPanelCapabilities
+    path: ../MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  summary: "\nAllows retrieval of capabilities information from touch panel device.\n"
+  example: []
+  syntax:
+    content: public struct TouchPanelCapabilities
+    content.vb: Public Structure TouchPanelCapabilities
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure
+  id: HasPressure
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities
+  langs:
+  - csharp
+  - vb
+  name: HasPressure
+  nameWithType: TouchPanelCapabilities.HasPressure
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: HasPressure
+    path: ../MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+    startLine: 74
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public bool HasPressure { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasPressure As Boolean
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected
+  id: IsConnected
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: TouchPanelCapabilities.IsConnected
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsConnected
+    path: ../MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+    startLine: 85
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  summary: "\nReturns true if a device is available for use.\n"
+  example: []
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount
+  id: MaximumTouchCount
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities
+  langs:
+  - csharp
+  - vb
+  name: MaximumTouchCount
+  nameWithType: TouchPanelCapabilities.MaximumTouchCount
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MaximumTouchCount
+    path: ../MonoGame.Framework/Input/Touch/TouchPanelCapabilities.cs
+    startLine: 96
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  summary: "\nReturns the maximum number of touch locations tracked by the touch panel device.\n"
+  example: []
+  syntax:
+    content: public int MaximumTouchCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaximumTouchCount As Integer
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Xna.Framework.Input.Touch
+  commentId: N:Microsoft.Xna.Framework.Input.Touch
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input.Touch
+  nameWithType: Microsoft.Xna.Framework.Input.Touch
+  fullName: Microsoft.Xna.Framework.Input.Touch
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure
+  isExternal: false
+  name: HasPressure
+  nameWithType: TouchPanelCapabilities.HasPressure
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.HasPressure
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected
+  isExternal: false
+  name: IsConnected
+  nameWithType: TouchPanelCapabilities.IsConnected
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.IsConnected
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount
+  isExternal: false
+  name: MaximumTouchCount
+  nameWithType: TouchPanelCapabilities.MaximumTouchCount
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchPanelCapabilities.MaximumTouchCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

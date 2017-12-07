@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: MonoGame.Utilities.FlushType
+  commentId: T:MonoGame.Utilities.FlushType
+  id: FlushType
+  parent: MonoGame.Utilities
+  children:
+  - MonoGame.Utilities.FlushType.Finish
+  - MonoGame.Utilities.FlushType.Full
+  - MonoGame.Utilities.FlushType.None
+  - MonoGame.Utilities.FlushType.Partial
+  - MonoGame.Utilities.FlushType.Sync
+  langs:
+  - csharp
+  - vb
+  name: FlushType
+  nameWithType: FlushType
+  fullName: MonoGame.Utilities.FlushType
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: FlushType
+    path: ../MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+    startLine: 2067
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities
+  summary: "\nDescribes how to flush the current deflate operation.\n"
+  remarks: "\nThe different FlushType values are useful when using a Deflate in a streaming application.\n"
+  example: []
+  syntax:
+    content: public enum FlushType
+    content.vb: Public Enum FlushType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: MonoGame.Utilities.FlushType.None
+  commentId: F:MonoGame.Utilities.FlushType.None
+  id: None
+  parent: MonoGame.Utilities.FlushType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: FlushType.None
+  fullName: MonoGame.Utilities.FlushType.None
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: None
+    path: ../MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+    startLine: 2070
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities
+  summary: No flush at all.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: MonoGame.Utilities.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MonoGame.Utilities.FlushType.Partial
+  commentId: F:MonoGame.Utilities.FlushType.Partial
+  id: Partial
+  parent: MonoGame.Utilities.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Partial
+  nameWithType: FlushType.Partial
+  fullName: MonoGame.Utilities.FlushType.Partial
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Partial
+    path: ../MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+    startLine: 2077
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities
+  summary: >
+    Closes the current block, but doesn&apos;t flush it to
+
+    the output. Used internally only in hypothetical
+
+    scenarios.  This was supposed to be removed by Zlib, but it is
+
+    still in use in some edge cases.
+  example: []
+  syntax:
+    content: Partial = 1
+    return:
+      type: MonoGame.Utilities.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MonoGame.Utilities.FlushType.Sync
+  commentId: F:MonoGame.Utilities.FlushType.Sync
+  id: Sync
+  parent: MonoGame.Utilities.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Sync
+  nameWithType: FlushType.Sync
+  fullName: MonoGame.Utilities.FlushType.Sync
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Sync
+    path: ../MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+    startLine: 2088
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities
+  summary: "\nUse this during compression to specify that all pending output should be\nflushed to the output buffer and the output should be aligned on a byte\nboundary.  You might use this in a streaming communication scenario, so that\nthe decompressor can get all input data available so far.  When using this\nwith a ZlibCodec, <code>AvailableBytesIn</code> will be zero after the call if\nenough output space has been provided before the call.  Flushing will\ndegrade compression and so it should be used only when necessary.\n"
+  example: []
+  syntax:
+    content: Sync = 2
+    return:
+      type: MonoGame.Utilities.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MonoGame.Utilities.FlushType.Full
+  commentId: F:MonoGame.Utilities.FlushType.Full
+  id: Full
+  parent: MonoGame.Utilities.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: FlushType.Full
+  fullName: MonoGame.Utilities.FlushType.Full
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Full
+    path: ../MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+    startLine: 2097
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities
+  summary: "\nUse this during compression to specify that all output should be flushed, as\nwith <code>FlushType.Sync</code>, but also, the compression state should be reset\nso that decompression can restart from this point if previous compressed\ndata has been damaged or if random access is desired.  Using\n<code>FlushType.Full</code> too often can significantly degrade the compression.\n"
+  example: []
+  syntax:
+    content: Full = 3
+    return:
+      type: MonoGame.Utilities.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MonoGame.Utilities.FlushType.Finish
+  commentId: F:MonoGame.Utilities.FlushType.Finish
+  id: Finish
+  parent: MonoGame.Utilities.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Finish
+  nameWithType: FlushType.Finish
+  fullName: MonoGame.Utilities.FlushType.Finish
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Finish
+    path: ../MonoGame.Framework/Utilities/ZLibStream/ZlibStream.cs
+    startLine: 2100
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities
+  summary: Signals the end of the compression/decompression stream.
+  example: []
+  syntax:
+    content: Finish = 4
+    return:
+      type: MonoGame.Utilities.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MonoGame.Utilities
+  commentId: N:MonoGame.Utilities
+  isExternal: false
+  name: MonoGame.Utilities
+  nameWithType: MonoGame.Utilities
+  fullName: MonoGame.Utilities
+- uid: MonoGame.Utilities.FlushType
+  commentId: T:MonoGame.Utilities.FlushType
+  parent: MonoGame.Utilities
+  isExternal: false
+  name: FlushType
+  nameWithType: FlushType
+  fullName: MonoGame.Utilities.FlushType

@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  commentId: T:Microsoft.Xna.Framework.Graphics.IndexElementSize
+  id: IndexElementSize
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.IndexElementSize.SixteenBits
+  - Microsoft.Xna.Framework.Graphics.IndexElementSize.ThirtyTwoBits
+  langs:
+  - csharp
+  - vb
+  name: IndexElementSize
+  nameWithType: IndexElementSize
+  fullName: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/IndexElementSize.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IndexElementSize
+    path: ../MonoGame.Framework/Graphics/Vertices/IndexElementSize.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines size for index in <xref href=\"Microsoft.Xna.Framework.Graphics.IndexBuffer\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public enum IndexElementSize
+    content.vb: Public Enum IndexElementSize
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.IndexElementSize.SixteenBits
+  commentId: F:Microsoft.Xna.Framework.Graphics.IndexElementSize.SixteenBits
+  id: SixteenBits
+  parent: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  langs:
+  - csharp
+  - vb
+  name: SixteenBits
+  nameWithType: IndexElementSize.SixteenBits
+  fullName: Microsoft.Xna.Framework.Graphics.IndexElementSize.SixteenBits
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/IndexElementSize.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SixteenBits
+    path: ../MonoGame.Framework/Graphics/Vertices/IndexElementSize.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\n16-bit short/ushort value been used.\n"
+  example: []
+  syntax:
+    content: SixteenBits = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.IndexElementSize.ThirtyTwoBits
+  commentId: F:Microsoft.Xna.Framework.Graphics.IndexElementSize.ThirtyTwoBits
+  id: ThirtyTwoBits
+  parent: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  langs:
+  - csharp
+  - vb
+  name: ThirtyTwoBits
+  nameWithType: IndexElementSize.ThirtyTwoBits
+  fullName: Microsoft.Xna.Framework.Graphics.IndexElementSize.ThirtyTwoBits
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/IndexElementSize.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ThirtyTwoBits
+    path: ../MonoGame.Framework/Graphics/Vertices/IndexElementSize.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\n32-bit int/uint value been used.\n"
+  example: []
+  syntax:
+    content: ThirtyTwoBits = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  commentId: T:Microsoft.Xna.Framework.Graphics.IndexBuffer
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IndexBuffer
+  nameWithType: IndexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  commentId: T:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  isExternal: false
+  name: DynamicIndexBuffer
+  nameWithType: DynamicIndexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  commentId: T:Microsoft.Xna.Framework.Graphics.IndexElementSize
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IndexElementSize
+  nameWithType: IndexElementSize
+  fullName: Microsoft.Xna.Framework.Graphics.IndexElementSize

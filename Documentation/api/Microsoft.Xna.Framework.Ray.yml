@@ -1,0 +1,1241 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Ray
+  commentId: T:Microsoft.Xna.Framework.Ray
+  id: Ray
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.Ray.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  - Microsoft.Xna.Framework.Ray.Direction
+  - Microsoft.Xna.Framework.Ray.Equals(Microsoft.Xna.Framework.Ray)
+  - Microsoft.Xna.Framework.Ray.Equals(System.Object)
+  - Microsoft.Xna.Framework.Ray.GetHashCode
+  - Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Nullable{System.Single}@)
+  - Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  - Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Nullable{System.Single}@)
+  - Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane)
+  - Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane@,System.Nullable{System.Single}@)
+  - Microsoft.Xna.Framework.Ray.op_Equality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  - Microsoft.Xna.Framework.Ray.op_Inequality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  - Microsoft.Xna.Framework.Ray.Position
+  - Microsoft.Xna.Framework.Ray.ToString
+  langs:
+  - csharp
+  - vb
+  name: Ray
+  nameWithType: Ray
+  fullName: Microsoft.Xna.Framework.Ray
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Ray
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 10
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataContract]
+
+      public struct Ray : IEquatable<Ray>
+    content.vb: >-
+      <DataContract>
+
+      Public Structure Ray
+          Implements IEquatable(Of Ray)
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Ray}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Ray.Direction
+  commentId: F:Microsoft.Xna.Framework.Ray.Direction
+  id: Direction
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: Ray.Direction
+  fullName: Microsoft.Xna.Framework.Ray.Direction
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Direction
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Direction
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Direction As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.Position
+  commentId: F:Microsoft.Xna.Framework.Ray.Position
+  id: Position
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Ray.Position
+  fullName: Microsoft.Xna.Framework.Ray.Position
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Position
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 20
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Position
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Position As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  commentId: M:Microsoft.Xna.Framework.Ray.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  id: '#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)'
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Ray(Vector3, Vector3)
+  nameWithType: Ray.Ray(Vector3, Vector3)
+  fullName: Microsoft.Xna.Framework.Ray.Ray(Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 27
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Ray(Vector3 position, Vector3 direction)
+    parameters:
+    - id: position
+      type: Microsoft.Xna.Framework.Vector3
+    - id: direction
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Sub New(position As Vector3, direction As Vector3)
+  overload: Microsoft.Xna.Framework.Ray.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Ray.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Ray.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Ray.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Ray.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Ray.Equals(Microsoft.Xna.Framework.Ray)
+  commentId: M:Microsoft.Xna.Framework.Ray.Equals(Microsoft.Xna.Framework.Ray)
+  id: Equals(Microsoft.Xna.Framework.Ray)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equals(Ray)
+  nameWithType: Ray.Equals(Ray)
+  fullName: Microsoft.Xna.Framework.Ray.Equals(Microsoft.Xna.Framework.Ray)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Equals(Ray other)
+    parameters:
+    - id: other
+      type: Microsoft.Xna.Framework.Ray
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Ray) As Boolean
+  overload: Microsoft.Xna.Framework.Ray.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Ray}.Equals(Microsoft.Xna.Framework.Ray)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Ray.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Ray.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Ray.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 50
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Ray.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  id: Intersects(Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingBox)
+  nameWithType: Ray.Intersects(BoundingBox)
+  fullName: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 56
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float ? Intersects(BoundingBox box)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: System.Nullable{System.Single}
+    content.vb: Public Function Intersects(box As BoundingBox) As Single?
+  overload: Microsoft.Xna.Framework.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Nullable{System.Single}@)
+  commentId: M:Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Nullable{System.Single}@)
+  id: Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Nullable{System.Single}@)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingBox, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref BoundingBox, out Nullable<Single>)
+  fullName: Microsoft.Xna.Framework.Ray.Intersects(ref Microsoft.Xna.Framework.BoundingBox, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 140
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref BoundingBox box, out float ? result)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: result
+      type: System.Nullable{System.Single}
+    content.vb: Public Sub Intersects(ByRef box As BoundingBox, ByRef result As Single?)
+  overload: Microsoft.Xna.Framework.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef BoundingBox, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Ray.Intersects(ByRef Microsoft.Xna.Framework.BoundingBox, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef BoundingBox, ByRef Nullable(Of Single))
+- uid: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  commentId: M:Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  id: Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingSphere)
+  nameWithType: Ray.Intersects(BoundingSphere)
+  fullName: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 157
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float ? Intersects(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    return:
+      type: System.Nullable{System.Single}
+    content.vb: Public Function Intersects(sphere As BoundingSphere) As Single?
+  overload: Microsoft.Xna.Framework.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane)
+  commentId: M:Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane)
+  id: Intersects(Microsoft.Xna.Framework.Plane)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Plane)
+  nameWithType: Ray.Intersects(Plane)
+  fullName: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 164
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float ? Intersects(Plane plane)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+    return:
+      type: System.Nullable{System.Single}
+    content.vb: Public Function Intersects(plane As Plane) As Single?
+  overload: Microsoft.Xna.Framework.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane@,System.Nullable{System.Single}@)
+  commentId: M:Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.Plane@,System.Nullable{System.Single}@)
+  id: Intersects(Microsoft.Xna.Framework.Plane@,System.Nullable{System.Single}@)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref Plane, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref Plane, out Nullable<Single>)
+  fullName: Microsoft.Xna.Framework.Ray.Intersects(ref Microsoft.Xna.Framework.Plane, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 171
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref Plane plane, out float ? result)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+    - id: result
+      type: System.Nullable{System.Single}
+    content.vb: Public Sub Intersects(ByRef plane As Plane, ByRef result As Single?)
+  overload: Microsoft.Xna.Framework.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef Plane, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Ray.Intersects(ByRef Microsoft.Xna.Framework.Plane, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef Plane, ByRef Nullable(Of Single))
+- uid: Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Nullable{System.Single}@)
+  commentId: M:Microsoft.Xna.Framework.Ray.Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Nullable{System.Single}@)
+  id: Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Nullable{System.Single}@)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingSphere, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref BoundingSphere, out Nullable<Single>)
+  fullName: Microsoft.Xna.Framework.Ray.Intersects(ref Microsoft.Xna.Framework.BoundingSphere, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 194
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref BoundingSphere sphere, out float ? result)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    - id: result
+      type: System.Nullable{System.Single}
+    content.vb: Public Sub Intersects(ByRef sphere As BoundingSphere, ByRef result As Single?)
+  overload: Microsoft.Xna.Framework.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef BoundingSphere, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Ray.Intersects(ByRef Microsoft.Xna.Framework.BoundingSphere, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef BoundingSphere, ByRef Nullable(Of Single))
+- uid: Microsoft.Xna.Framework.Ray.op_Inequality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  commentId: M:Microsoft.Xna.Framework.Ray.op_Inequality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  id: op_Inequality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Ray, Ray)
+  nameWithType: Ray.Inequality(Ray, Ray)
+  fullName: Microsoft.Xna.Framework.Ray.Inequality(Microsoft.Xna.Framework.Ray, Microsoft.Xna.Framework.Ray)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 231
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static bool operator !=(Ray a, Ray b)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.Ray
+    - id: b
+      type: Microsoft.Xna.Framework.Ray
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Ray, b As Ray) As Boolean
+  overload: Microsoft.Xna.Framework.Ray.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Ray.op_Equality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  commentId: M:Microsoft.Xna.Framework.Ray.op_Equality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  id: op_Equality(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Ray)
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equality(Ray, Ray)
+  nameWithType: Ray.Equality(Ray, Ray)
+  fullName: Microsoft.Xna.Framework.Ray.Equality(Microsoft.Xna.Framework.Ray, Microsoft.Xna.Framework.Ray)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 237
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static bool operator ==(Ray a, Ray b)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.Ray
+    - id: b
+      type: Microsoft.Xna.Framework.Ray
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Ray, b As Ray) As Boolean
+  overload: Microsoft.Xna.Framework.Ray.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Ray.ToString
+  commentId: M:Microsoft.Xna.Framework.Ray.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Ray
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Ray.ToString()
+  fullName: Microsoft.Xna.Framework.Ray.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Ray.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Ray.cs
+    startLine: 253
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Ray.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.IEquatable{Microsoft.Xna.Framework.Ray}
+  commentId: T:System.IEquatable{Microsoft.Xna.Framework.Ray}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Ray>
+  nameWithType: IEquatable<Ray>
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Ray>
+  nameWithType.vb: IEquatable(Of Ray)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Ray)
+  name.vb: IEquatable(Of Ray)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: Microsoft.Xna.Framework.Ray
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: Microsoft.Xna.Framework.Ray
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework.Ray.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.#ctor
+  isExternal: false
+  name: Ray
+  nameWithType: Ray.Ray
+  fullName: Microsoft.Xna.Framework.Ray.Ray
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Ray.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: Ray.Equals
+  fullName: Microsoft.Xna.Framework.Ray.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Microsoft.Xna.Framework.Ray}.Equals(Microsoft.Xna.Framework.Ray)
+  commentId: M:System.IEquatable{Microsoft.Xna.Framework.Ray}.Equals(Microsoft.Xna.Framework.Ray)
+  parent: System.IEquatable{Microsoft.Xna.Framework.Ray}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Ray)
+  nameWithType: IEquatable<Ray>.Equals(Ray)
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Ray>.Equals(Microsoft.Xna.Framework.Ray)
+  nameWithType.vb: IEquatable(Of Ray).Equals(Ray)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Ray).Equals(Microsoft.Xna.Framework.Ray)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Ray>.Equals
+    fullName: System.IEquatable<Microsoft.Xna.Framework.Ray>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: Microsoft.Xna.Framework.Ray
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Ray).Equals
+    fullName: System.IEquatable(Of Microsoft.Xna.Framework.Ray).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: Microsoft.Xna.Framework.Ray
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Ray
+  commentId: T:Microsoft.Xna.Framework.Ray
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Ray
+  nameWithType: Ray
+  fullName: Microsoft.Xna.Framework.Ray
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Ray.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Ray.GetHashCode
+  fullName: Microsoft.Xna.Framework.Ray.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Ray.Intersects*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.Intersects
+  isExternal: false
+  name: Intersects
+  nameWithType: Ray.Intersects
+  fullName: Microsoft.Xna.Framework.Ray.Intersects
+- uid: Microsoft.Xna.Framework.BoundingBox
+  commentId: T:Microsoft.Xna.Framework.BoundingBox
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Microsoft.Xna.Framework.BoundingBox
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Single>
+  nameWithType: Nullable<Single>
+  fullName: System.Nullable<System.Single>
+  nameWithType.vb: Nullable(Of Single)
+  fullName.vb: System.Nullable(Of System.Single)
+  name.vb: Nullable(Of Single)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.BoundingSphere
+  commentId: T:Microsoft.Xna.Framework.BoundingSphere
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingSphere
+  nameWithType: BoundingSphere
+  fullName: Microsoft.Xna.Framework.BoundingSphere
+- uid: Microsoft.Xna.Framework.Plane
+  commentId: T:Microsoft.Xna.Framework.Plane
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Plane
+  nameWithType: Plane
+  fullName: Microsoft.Xna.Framework.Plane
+- uid: Microsoft.Xna.Framework.Ray.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: Ray.Inequality
+  fullName: Microsoft.Xna.Framework.Ray.Inequality
+- uid: Microsoft.Xna.Framework.Ray.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: Ray.Equality
+  fullName: Microsoft.Xna.Framework.Ray.Equality
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Ray.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Ray.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: Ray.ToString
+  fullName: Microsoft.Xna.Framework.Ray.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

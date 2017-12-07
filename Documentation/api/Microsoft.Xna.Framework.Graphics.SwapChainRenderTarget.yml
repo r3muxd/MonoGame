@@ -1,0 +1,2825 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  commentId: T:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  id: SwapChainRenderTarget
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.DepthFormat,System.Int32,Microsoft.Xna.Framework.Graphics.RenderTargetUsage,Microsoft.Xna.Framework.Graphics.PresentInterval)
+  - Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present
+  - Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.PresentInterval
+  langs:
+  - csharp
+  - vb
+  name: SwapChainRenderTarget
+  nameWithType: SwapChainRenderTarget
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SwapChainRenderTarget
+    path: ../MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+    startLine: 19
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nA swap chain used for rendering to a secondary GameWindow.\n"
+  remarks: "\nThis is an extension and not part of stock XNA.\nIt is currently implemented for Windows and DirectX only.\n"
+  example: []
+  syntax:
+    content: 'public class SwapChainRenderTarget : RenderTarget2D, IDisposable, IRenderTarget'
+    content.vb: >-
+      Public Class SwapChainRenderTarget
+          Inherits RenderTarget2D
+          Implements IDisposable, IRenderTarget
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource
+  - Microsoft.Xna.Framework.Graphics.Texture
+  - Microsoft.Xna.Framework.Graphics.Texture2D
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.DepthStencilFormat
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.MultiSampleCount
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.RenderTargetUsage
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.IsContentLost
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.ContentLost
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1({T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1({T}[])
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1({T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1({T}[])
+  - Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Shared
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Mipmap
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SampleDescription
+  - Microsoft.Xna.Framework.Graphics.Texture.Format
+  - Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+  - Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.PresentInterval
+  commentId: F:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.PresentInterval
+  id: PresentInterval
+  parent: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  langs:
+  - csharp
+  - vb
+  name: PresentInterval
+  nameWithType: SwapChainRenderTarget.PresentInterval
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.PresentInterval
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PresentInterval
+    path: ../MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+    startLine: 23
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public PresentInterval PresentInterval
+    return:
+      type: Microsoft.Xna.Framework.Graphics.PresentInterval
+    content.vb: Public PresentInterval As PresentInterval
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32)'
+  parent: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SwapChainRenderTarget(GraphicsDevice, IntPtr, Int32, Int32)
+  nameWithType: SwapChainRenderTarget.SwapChainRenderTarget(GraphicsDevice, IntPtr, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.SwapChainRenderTarget(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.IntPtr, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+    startLine: 25
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public SwapChainRenderTarget(GraphicsDevice graphicsDevice, IntPtr windowHandle, int width, int height)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    - id: windowHandle
+      type: System.IntPtr
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, windowHandle As IntPtr, width As Integer, height As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.DepthFormat,System.Int32,Microsoft.Xna.Framework.Graphics.RenderTargetUsage,Microsoft.Xna.Framework.Graphics.PresentInterval)
+  commentId: M:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.DepthFormat,System.Int32,Microsoft.Xna.Framework.Graphics.RenderTargetUsage,Microsoft.Xna.Framework.Graphics.PresentInterval)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IntPtr,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.DepthFormat,System.Int32,Microsoft.Xna.Framework.Graphics.RenderTargetUsage,Microsoft.Xna.Framework.Graphics.PresentInterval)'
+  parent: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SwapChainRenderTarget(GraphicsDevice, IntPtr, Int32, Int32, Boolean, SurfaceFormat, DepthFormat, Int32, RenderTargetUsage, PresentInterval)
+  nameWithType: SwapChainRenderTarget.SwapChainRenderTarget(GraphicsDevice, IntPtr, Int32, Int32, Boolean, SurfaceFormat, DepthFormat, Int32, RenderTargetUsage, PresentInterval)
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.SwapChainRenderTarget(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.IntPtr, System.Int32, System.Int32, System.Boolean, Microsoft.Xna.Framework.Graphics.SurfaceFormat, Microsoft.Xna.Framework.Graphics.DepthFormat, System.Int32, Microsoft.Xna.Framework.Graphics.RenderTargetUsage, Microsoft.Xna.Framework.Graphics.PresentInterval)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public SwapChainRenderTarget(GraphicsDevice graphicsDevice, IntPtr windowHandle, int width, int height, bool mipMap, SurfaceFormat surfaceFormat, DepthFormat depthFormat, int preferredMultiSampleCount, RenderTargetUsage usage, PresentInterval presentInterval)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    - id: windowHandle
+      type: System.IntPtr
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: mipMap
+      type: System.Boolean
+    - id: surfaceFormat
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+    - id: depthFormat
+      type: Microsoft.Xna.Framework.Graphics.DepthFormat
+    - id: preferredMultiSampleCount
+      type: System.Int32
+    - id: usage
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+    - id: presentInterval
+      type: Microsoft.Xna.Framework.Graphics.PresentInterval
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, windowHandle As IntPtr, width As Integer, height As Integer, mipMap As Boolean, surfaceFormat As SurfaceFormat, depthFormat As DepthFormat, preferredMultiSampleCount As Integer, usage As RenderTargetUsage, presentInterval As PresentInterval)
+  overload: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present
+  commentId: M:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present
+  id: Present
+  parent: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  langs:
+  - csharp
+  - vb
+  name: Present()
+  nameWithType: SwapChainRenderTarget.Present()
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Present
+    path: ../MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+    startLine: 152
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDisplays the contents of the active back buffer to the screen.\n"
+  example: []
+  syntax:
+    content: public void Present()
+    content.vb: Public Sub Present
+  overload: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: SwapChainRenderTarget.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Graphics/SwapChainRenderTarget.cs
+    startLine: 166
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overridden: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose(System.Boolean)
+  overload: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsResource
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsResource
+  nameWithType: GraphicsResource
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource
+- uid: Microsoft.Xna.Framework.Graphics.Texture
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture
+  nameWithType: Texture
+  fullName: Microsoft.Xna.Framework.Graphics.Texture
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: RenderTarget2D
+  nameWithType: RenderTarget2D
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.DepthStencilFormat
+  commentId: P:Microsoft.Xna.Framework.Graphics.RenderTarget2D.DepthStencilFormat
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: DepthStencilFormat
+  nameWithType: RenderTarget2D.DepthStencilFormat
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.DepthStencilFormat
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.MultiSampleCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.RenderTarget2D.MultiSampleCount
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: MultiSampleCount
+  nameWithType: RenderTarget2D.MultiSampleCount
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.MultiSampleCount
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.RenderTargetUsage
+  commentId: P:Microsoft.Xna.Framework.Graphics.RenderTarget2D.RenderTargetUsage
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: RenderTargetUsage
+  nameWithType: RenderTarget2D.RenderTargetUsage
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.RenderTargetUsage
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.IsContentLost
+  commentId: P:Microsoft.Xna.Framework.Graphics.RenderTarget2D.IsContentLost
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: IsContentLost
+  nameWithType: RenderTarget2D.IsContentLost
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.IsContentLost
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.ContentLost
+  commentId: E:Microsoft.Xna.Framework.Graphics.RenderTarget2D.ContentLost
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: ContentLost
+  nameWithType: RenderTarget2D.ContentLost
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.ContentLost
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+  commentId: M:Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: GraphicsDeviceResetting()
+  nameWithType: RenderTarget2D.GraphicsDeviceResetting()
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: RenderTarget2D.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: RenderTarget2D.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+  commentId: M:Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: CreateSampleDescription()
+  nameWithType: RenderTarget2D.CreateSampleDescription()
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+    name: CreateSampleDescription
+    nameWithType: RenderTarget2D.CreateSampleDescription
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+    name: CreateSampleDescription
+    nameWithType: RenderTarget2D.CreateSampleDescription
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateSampleDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+  commentId: M:Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: CreateShaderResourceView()
+  nameWithType: RenderTarget2D.CreateShaderResourceView()
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+    name: CreateShaderResourceView
+    nameWithType: RenderTarget2D.CreateShaderResourceView
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+    name: CreateShaderResourceView
+    nameWithType: RenderTarget2D.CreateShaderResourceView
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.CreateShaderResourceView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+  commentId: M:Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: false
+  name: GetTexture2DDescription()
+  nameWithType: RenderTarget2D.GetTexture2DDescription()
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+    name: GetTexture2DDescription
+    nameWithType: RenderTarget2D.GetTexture2DDescription
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+    name: GetTexture2DDescription
+    nameWithType: RenderTarget2D.GetTexture2DDescription
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.GetTexture2DDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: false
+  name: Bounds
+  nameWithType: Texture2D.Bounds
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: false
+  name: Width
+  nameWithType: Texture2D.Width
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Width
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: false
+  name: Height
+  nameWithType: Texture2D.Height
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Height
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  name: SetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(System.Int32, System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.SetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(System.Int32, System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  name: SetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.SetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1({T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  name: SetData<T>(T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.SetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1({T}[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  name: SetData<T>(T[])
+  nameWithType: Texture2D.SetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(T[])
+  nameWithType.vb: Texture2D.SetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(T())
+  name.vb: SetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  name: GetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(System.Int32, System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.GetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(System.Int32, System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},{T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  name: GetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.GetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1({T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  name: GetData<T>(T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.GetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1({T}[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  definition: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  name: GetData<T>(T[])
+  nameWithType: Texture2D.GetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(T[])
+  nameWithType.vb: Texture2D.GetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(T())
+  name.vb: GetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: true
+  name: FromStream(GraphicsDevice, Stream)
+  nameWithType: Texture2D.FromStream(GraphicsDevice, Stream)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.IO.Stream)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+    name: FromStream
+    nameWithType: Texture2D.FromStream
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+    name: FromStream
+    nameWithType: Texture2D.FromStream
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: true
+  name: SaveAsJpeg(Stream, Int32, Int32)
+  nameWithType: Texture2D.SaveAsJpeg(Stream, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+    name: SaveAsJpeg
+    nameWithType: Texture2D.SaveAsJpeg
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+    name: SaveAsJpeg
+    nameWithType: Texture2D.SaveAsJpeg
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: true
+  name: SaveAsPng(Stream, Int32, Int32)
+  nameWithType: Texture2D.SaveAsPng(Stream, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+    name: SaveAsPng
+    nameWithType: Texture2D.SaveAsPng
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+    name: SaveAsPng
+    nameWithType: Texture2D.SaveAsPng
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: true
+  name: Reload(Stream)
+  nameWithType: Texture2D.Reload(Stream)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+    name: Reload
+    nameWithType: Texture2D.Reload
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Reload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+    name: Reload
+    nameWithType: Texture2D.Reload
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Reload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Shared
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Shared
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: false
+  name: Shared
+  nameWithType: Texture2D.Shared
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Shared
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Mipmap
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Mipmap
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: false
+  name: Mipmap
+  nameWithType: Texture2D.Mipmap
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Mipmap
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SampleDescription
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.SampleDescription
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  isExternal: false
+  name: SampleDescription
+  nameWithType: Texture2D.SampleDescription
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SampleDescription
+- uid: Microsoft.Xna.Framework.Graphics.Texture.Format
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture.Format
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: false
+  name: Format
+  nameWithType: Texture.Format
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.Format
+- uid: Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: false
+  name: LevelCount
+  nameWithType: Texture.LevelCount
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+- uid: Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: false
+  name: GetSharedHandle()
+  nameWithType: Texture.GetSharedHandle()
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+    name: GetSharedHandle
+    nameWithType: Texture.GetSharedHandle
+    fullName: Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+    name: GetSharedHandle
+    nameWithType: Texture.GetSharedHandle
+    fullName: Microsoft.Xna.Framework.Graphics.Texture.GetSharedHandle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Dispose()
+  nameWithType: GraphicsResource.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Disposing
+  nameWithType: GraphicsResource.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsResource.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsResource.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Name
+  nameWithType: GraphicsResource.Name
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Tag
+  nameWithType: GraphicsResource.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: ToString()
+  nameWithType: GraphicsResource.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: SetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(System.Int32, System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.SetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(System.Int32, System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: SetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.SetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: SetData<T>(T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.SetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  isExternal: false
+  name: SetData<T>(T[])
+  nameWithType: Texture2D.SetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(T[])
+  nameWithType.vb: Texture2D.SetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(T())
+  name.vb: SetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+    name: SetData<T>
+    nameWithType: Texture2D.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+    name: SetData(Of T)
+    nameWithType: Texture2D.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: GetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(System.Int32, System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.GetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(System.Int32, System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: GetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.GetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: GetData<T>(T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: Texture2D.GetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  isExternal: false
+  name: GetData<T>(T[])
+  nameWithType: Texture2D.GetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(T[])
+  nameWithType.vb: Texture2D.GetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(T())
+  name.vb: GetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+    name: GetData<T>
+    nameWithType: Texture2D.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+    name: GetData(Of T)
+    nameWithType: Texture2D.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PresentInterval
+  commentId: T:Microsoft.Xna.Framework.Graphics.PresentInterval
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: PresentInterval
+  nameWithType: PresentInterval
+  fullName: Microsoft.Xna.Framework.Graphics.PresentInterval
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.#ctor
+  isExternal: false
+  name: SwapChainRenderTarget
+  nameWithType: SwapChainRenderTarget.SwapChainRenderTarget
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.SwapChainRenderTarget
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  commentId: T:Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SurfaceFormat
+  nameWithType: SurfaceFormat
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+- uid: Microsoft.Xna.Framework.Graphics.DepthFormat
+  commentId: T:Microsoft.Xna.Framework.Graphics.DepthFormat
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: DepthFormat
+  nameWithType: DepthFormat
+  fullName: Microsoft.Xna.Framework.Graphics.DepthFormat
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  commentId: T:Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: RenderTargetUsage
+  nameWithType: RenderTargetUsage
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present
+  isExternal: false
+  name: Present
+  nameWithType: SwapChainRenderTarget.Present
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Present
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: RenderTarget2D.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: RenderTarget2D.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: RenderTarget2D.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: SwapChainRenderTarget.Dispose
+  fullName: Microsoft.Xna.Framework.Graphics.SwapChainRenderTarget.Dispose

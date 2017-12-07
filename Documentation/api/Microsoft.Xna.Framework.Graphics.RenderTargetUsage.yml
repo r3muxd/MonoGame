@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  commentId: T:Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  id: RenderTargetUsage
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.RenderTargetUsage.DiscardContents
+  - Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PlatformContents
+  - Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PreserveContents
+  langs:
+  - csharp
+  - vb
+  name: RenderTargetUsage
+  nameWithType: RenderTargetUsage
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/RenderTargetUsage.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RenderTargetUsage
+    path: ../MonoGame.Framework/Graphics/RenderTargetUsage.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines if the previous content in a render target is preserved when it set on the graphics device.\n"
+  example: []
+  syntax:
+    content: public enum RenderTargetUsage
+    content.vb: Public Enum RenderTargetUsage
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetUsage.DiscardContents
+  commentId: F:Microsoft.Xna.Framework.Graphics.RenderTargetUsage.DiscardContents
+  id: DiscardContents
+  parent: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  langs:
+  - csharp
+  - vb
+  name: DiscardContents
+  nameWithType: RenderTargetUsage.DiscardContents
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetUsage.DiscardContents
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/RenderTargetUsage.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DiscardContents
+    path: ../MonoGame.Framework/Graphics/RenderTargetUsage.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe render target content will not be preserved.\n"
+  example: []
+  syntax:
+    content: DiscardContents = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PreserveContents
+  commentId: F:Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PreserveContents
+  id: PreserveContents
+  parent: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  langs:
+  - csharp
+  - vb
+  name: PreserveContents
+  nameWithType: RenderTargetUsage.PreserveContents
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PreserveContents
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/RenderTargetUsage.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PreserveContents
+    path: ../MonoGame.Framework/Graphics/RenderTargetUsage.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe render target content will be preserved even if it is slow or requires extra memory.\n"
+  example: []
+  syntax:
+    content: PreserveContents = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PlatformContents
+  commentId: F:Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PlatformContents
+  id: PlatformContents
+  parent: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  langs:
+  - csharp
+  - vb
+  name: PlatformContents
+  nameWithType: RenderTargetUsage.PlatformContents
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetUsage.PlatformContents
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/RenderTargetUsage.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PlatformContents
+    path: ../MonoGame.Framework/Graphics/RenderTargetUsage.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe render target content might be preserved if the platform can do so without a penalty in performance or memory usage.\n"
+  example: []
+  syntax:
+    content: PlatformContents = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  commentId: T:Microsoft.Xna.Framework.Graphics.RenderTargetUsage
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: RenderTargetUsage
+  nameWithType: RenderTargetUsage
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetUsage

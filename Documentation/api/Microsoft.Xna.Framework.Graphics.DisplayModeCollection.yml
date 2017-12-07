@@ -1,0 +1,769 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.DisplayModeCollection
+  id: DisplayModeCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator
+  - Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item(Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  - Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: DisplayModeCollection
+  nameWithType: DisplayModeCollection
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/DisplayModeCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DisplayModeCollection
+    path: ../MonoGame.Framework/Graphics/DisplayModeCollection.cs
+    startLine: 35
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public class DisplayModeCollection : IEnumerable<DisplayMode>, IEnumerable'
+    content.vb: >-
+      Public Class DisplayModeCollection
+          Implements IEnumerable(Of DisplayMode), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item(Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  commentId: P:Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item(Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  id: Item(Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  parent: Microsoft.Xna.Framework.Graphics.DisplayModeCollection
+  langs:
+  - csharp
+  - vb
+  name: Item[SurfaceFormat]
+  nameWithType: DisplayModeCollection.Item[SurfaceFormat]
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item[Microsoft.Xna.Framework.Graphics.SurfaceFormat]
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/DisplayModeCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: this[]
+    path: ../MonoGame.Framework/Graphics/DisplayModeCollection.cs
+    startLine: 39
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public IEnumerable<DisplayMode> this[SurfaceFormat format] { get; }
+    parameters:
+    - id: format
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}
+    content.vb: Public ReadOnly Property Item(format As SurfaceFormat) As IEnumerable(Of DisplayMode)
+  overload: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item*
+  nameWithType.vb: DisplayModeCollection.Item(SurfaceFormat)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item(Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  name.vb: Item(SurfaceFormat)
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator
+  commentId: M:Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Xna.Framework.Graphics.DisplayModeCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: DisplayModeCollection.GetEnumerator()
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/DisplayModeCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetEnumerator
+    path: ../MonoGame.Framework/Graphics/DisplayModeCollection.cs
+    startLine: 53
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public IEnumerator<DisplayMode> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.Xna.Framework.Graphics.DisplayMode}
+    content.vb: Public Function GetEnumerator As IEnumerator(Of DisplayMode)
+  overload: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: Microsoft.Xna.Framework.Graphics.DisplayModeCollection
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: DisplayModeCollection.IEnumerable.GetEnumerator()
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/DisplayModeCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: ../MonoGame.Framework/Graphics/DisplayModeCollection.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: DisplayModeCollection.System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<DisplayMode>
+  nameWithType: IEnumerable<DisplayMode>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.Graphics.DisplayMode>
+  nameWithType.vb: IEnumerable(Of DisplayMode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.Graphics.DisplayMode)
+  name.vb: IEnumerable(Of DisplayMode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.DisplayMode
+    name: DisplayMode
+    nameWithType: DisplayMode
+    fullName: Microsoft.Xna.Framework.Graphics.DisplayMode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.DisplayMode
+    name: DisplayMode
+    nameWithType: DisplayMode
+    fullName: Microsoft.Xna.Framework.Graphics.DisplayMode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item
+  isExternal: false
+  name: Item
+  nameWithType: DisplayModeCollection.Item
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.Item
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  commentId: T:Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SurfaceFormat
+  nameWithType: SurfaceFormat
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator
+  isExternal: false
+  name: GetEnumerator
+  nameWithType: DisplayModeCollection.GetEnumerator
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.DisplayMode}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<DisplayMode>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.Graphics.DisplayMode>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of DisplayMode).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.Graphics.DisplayMode).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<DisplayMode>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.Graphics.DisplayMode>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of DisplayMode).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.Graphics.DisplayMode).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{Microsoft.Xna.Framework.Graphics.DisplayMode}
+  commentId: T:System.Collections.Generic.IEnumerator{Microsoft.Xna.Framework.Graphics.DisplayMode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<DisplayMode>
+  nameWithType: IEnumerator<DisplayMode>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.Xna.Framework.Graphics.DisplayMode>
+  nameWithType.vb: IEnumerator(Of DisplayMode)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Microsoft.Xna.Framework.Graphics.DisplayMode)
+  name.vb: IEnumerator(Of DisplayMode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.DisplayMode
+    name: DisplayMode
+    nameWithType: DisplayMode
+    fullName: Microsoft.Xna.Framework.Graphics.DisplayMode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.DisplayMode
+    name: DisplayMode
+    nameWithType: DisplayMode
+    fullName: Microsoft.Xna.Framework.Graphics.DisplayMode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System#Collections#IEnumerable#GetEnumerator
+  isExternal: false
+  name: IEnumerable.GetEnumerator
+  nameWithType: DisplayModeCollection.IEnumerable.GetEnumerator
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayModeCollection.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: DisplayModeCollection.System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator

@@ -1,0 +1,289 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  commentId: T:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  id: IGraphicsDeviceService
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceCreated
+  - Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceDisposing
+  - Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceReset
+  - Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceResetting
+  - Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: IGraphicsDeviceService
+  nameWithType: IGraphicsDeviceService
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  type: Interface
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IGraphicsDeviceService
+    path: ../MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public interface IGraphicsDeviceService
+    content.vb: Public Interface IGraphicsDeviceService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice
+  id: GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDevice
+  nameWithType: IGraphicsDeviceService.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDevice
+    path: ../MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+    startLine: 46
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: GraphicsDevice GraphicsDevice { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    content.vb: ReadOnly Property GraphicsDevice As GraphicsDevice
+  overload: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceCreated
+  commentId: E:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceCreated
+  id: DeviceCreated
+  parent: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  langs:
+  - csharp
+  - vb
+  name: DeviceCreated
+  nameWithType: IGraphicsDeviceService.DeviceCreated
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceCreated
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceCreated
+    path: ../MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: event EventHandler<EventArgs> DeviceCreated
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event DeviceCreated As EventHandler(Of EventArgs)
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceDisposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceDisposing
+  id: DeviceDisposing
+  parent: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  langs:
+  - csharp
+  - vb
+  name: DeviceDisposing
+  nameWithType: IGraphicsDeviceService.DeviceDisposing
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceDisposing
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceDisposing
+    path: ../MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+    startLine: 49
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: event EventHandler<EventArgs> DeviceDisposing
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event DeviceDisposing As EventHandler(Of EventArgs)
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceReset
+  commentId: E:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceReset
+  id: DeviceReset
+  parent: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  langs:
+  - csharp
+  - vb
+  name: DeviceReset
+  nameWithType: IGraphicsDeviceService.DeviceReset
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceReset
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceReset
+    path: ../MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+    startLine: 50
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: event EventHandler<EventArgs> DeviceReset
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event DeviceReset As EventHandler(Of EventArgs)
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceResetting
+  commentId: E:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceResetting
+  id: DeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService
+  langs:
+  - csharp
+  - vb
+  name: DeviceResetting
+  nameWithType: IGraphicsDeviceService.DeviceResetting
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.DeviceResetting
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceResetting
+    path: ../MonoGame.Framework/Graphics/IGraphicsDeviceService.cs
+    startLine: 51
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: event EventHandler<EventArgs> DeviceResetting
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event DeviceResetting As EventHandler(Of EventArgs)
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: IGraphicsDeviceService.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

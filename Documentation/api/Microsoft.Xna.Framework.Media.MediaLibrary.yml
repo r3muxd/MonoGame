@@ -1,0 +1,820 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary
+  commentId: T:Microsoft.Xna.Framework.Media.MediaLibrary
+  id: MediaLibrary
+  parent: Microsoft.Xna.Framework.Media
+  children:
+  - Microsoft.Xna.Framework.Media.MediaLibrary.#ctor
+  - Microsoft.Xna.Framework.Media.MediaLibrary.#ctor(Microsoft.Xna.Framework.Media.MediaSource)
+  - Microsoft.Xna.Framework.Media.MediaLibrary.Albums
+  - Microsoft.Xna.Framework.Media.MediaLibrary.Dispose
+  - Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed
+  - Microsoft.Xna.Framework.Media.MediaLibrary.Load(System.Action{System.Int32})
+  - Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource
+  - Microsoft.Xna.Framework.Media.MediaLibrary.Songs
+  langs:
+  - csharp
+  - vb
+  name: MediaLibrary
+  nameWithType: MediaLibrary
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.Default.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MediaLibrary
+    path: ../MonoGame.Framework/Media/MediaLibrary.Default.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: 'public class MediaLibrary : IDisposable'
+    content.vb: >-
+      Public Class MediaLibrary
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Albums
+  commentId: P:Microsoft.Xna.Framework.Media.MediaLibrary.Albums
+  id: Albums
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: Albums
+  nameWithType: MediaLibrary.Albums
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Albums
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Albums
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 10
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public AlbumCollection Albums { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Media.AlbumCollection
+    content.vb: Public ReadOnly Property Albums As AlbumCollection
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.Albums*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed
+  id: IsDisposed
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: MediaLibrary.IsDisposed
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsDisposed
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 13
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource
+  commentId: P:Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource
+  id: MediaSource
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: MediaSource
+  nameWithType: MediaLibrary.MediaSource
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MediaSource
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public MediaSource MediaSource { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Media.MediaSource
+    content.vb: Public ReadOnly Property MediaSource As MediaSource
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Songs
+  commentId: P:Microsoft.Xna.Framework.Media.MediaLibrary.Songs
+  id: Songs
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: Songs
+  nameWithType: MediaLibrary.Songs
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Songs
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Songs
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 16
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public SongCollection Songs { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Media.SongCollection
+    content.vb: Public ReadOnly Property Songs As SongCollection
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.Songs*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.#ctor
+  commentId: M:Microsoft.Xna.Framework.Media.MediaLibrary.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: MediaLibrary()
+  nameWithType: MediaLibrary.MediaLibrary()
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.MediaLibrary()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public MediaLibrary()
+    content.vb: Public Sub New
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Load(System.Action{System.Int32})
+  commentId: M:Microsoft.Xna.Framework.Media.MediaLibrary.Load(System.Action{System.Int32})
+  id: Load(System.Action{System.Int32})
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: Load(Action<Int32>)
+  nameWithType: MediaLibrary.Load(Action<Int32>)
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Load(System.Action<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Load
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  summary: "\nLoad the contents of MediaLibrary. This blocking call might take up to a few minutes depending on the platform and the size of the user&apos;s music library.\n"
+  example: []
+  syntax:
+    content: public void Load(Action<int> progressCallback = null)
+    parameters:
+    - id: progressCallback
+      type: System.Action{System.Int32}
+      description: Callback that reports back the progress of the music library loading in percents (0-100).
+    content.vb: Public Sub Load(progressCallback As Action(Of Integer) = Nothing)
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.Load*
+  nameWithType.vb: MediaLibrary.Load(Action(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Media.MediaLibrary.Load(System.Action(Of System.Int32))
+  name.vb: Load(Action(Of Int32))
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.#ctor(Microsoft.Xna.Framework.Media.MediaSource)
+  commentId: M:Microsoft.Xna.Framework.Media.MediaLibrary.#ctor(Microsoft.Xna.Framework.Media.MediaSource)
+  id: '#ctor(Microsoft.Xna.Framework.Media.MediaSource)'
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: MediaLibrary(MediaSource)
+  nameWithType: MediaLibrary.MediaLibrary(MediaSource)
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.MediaLibrary(Microsoft.Xna.Framework.Media.MediaSource)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 31
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public MediaLibrary(MediaSource mediaSource)
+    parameters:
+    - id: mediaSource
+      type: Microsoft.Xna.Framework.Media.MediaSource
+    content.vb: Public Sub New(mediaSource As MediaSource)
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Dispose
+  commentId: M:Microsoft.Xna.Framework.Media.MediaLibrary.Dispose
+  id: Dispose
+  parent: Microsoft.Xna.Framework.Media.MediaLibrary
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MediaLibrary.Dispose()
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Dispose()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Media/MediaLibrary.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Media/MediaLibrary.cs
+    startLine: 36
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Media
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Xna.Framework.Media.MediaLibrary.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Media
+  commentId: N:Microsoft.Xna.Framework.Media
+  isExternal: false
+  name: Microsoft.Xna.Framework.Media
+  nameWithType: Microsoft.Xna.Framework.Media
+  fullName: Microsoft.Xna.Framework.Media
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Albums*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.Albums
+  isExternal: false
+  name: Albums
+  nameWithType: MediaLibrary.Albums
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Albums
+- uid: Microsoft.Xna.Framework.Media.AlbumCollection
+  commentId: T:Microsoft.Xna.Framework.Media.AlbumCollection
+  parent: Microsoft.Xna.Framework.Media
+  isExternal: false
+  name: AlbumCollection
+  nameWithType: AlbumCollection
+  fullName: Microsoft.Xna.Framework.Media.AlbumCollection
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed
+  isExternal: false
+  name: IsDisposed
+  nameWithType: MediaLibrary.IsDisposed
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource
+  isExternal: false
+  name: MediaSource
+  nameWithType: MediaLibrary.MediaSource
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.MediaSource
+- uid: Microsoft.Xna.Framework.Media.MediaSource
+  commentId: T:Microsoft.Xna.Framework.Media.MediaSource
+  parent: Microsoft.Xna.Framework.Media
+  isExternal: false
+  name: MediaSource
+  nameWithType: MediaSource
+  fullName: Microsoft.Xna.Framework.Media.MediaSource
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Songs*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.Songs
+  isExternal: false
+  name: Songs
+  nameWithType: MediaLibrary.Songs
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Songs
+- uid: Microsoft.Xna.Framework.Media.SongCollection
+  commentId: T:Microsoft.Xna.Framework.Media.SongCollection
+  parent: Microsoft.Xna.Framework.Media
+  isExternal: false
+  name: SongCollection
+  nameWithType: SongCollection
+  fullName: Microsoft.Xna.Framework.Media.SongCollection
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.#ctor
+  isExternal: false
+  name: MediaLibrary
+  nameWithType: MediaLibrary.MediaLibrary
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.MediaLibrary
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Load*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.Load
+  isExternal: false
+  name: Load
+  nameWithType: MediaLibrary.Load
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Load
+- uid: System.Action{System.Int32}
+  commentId: T:System.Action{System.Int32}
+  parent: System
+  definition: System.Action`1
+  name: Action<Int32>
+  nameWithType: Action<Int32>
+  fullName: System.Action<System.Int32>
+  nameWithType.vb: Action(Of Int32)
+  fullName.vb: System.Action(Of System.Int32)
+  name.vb: Action(Of Int32)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Media.MediaLibrary.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Media.MediaLibrary.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: MediaLibrary.Dispose
+  fullName: Microsoft.Xna.Framework.Media.MediaLibrary.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

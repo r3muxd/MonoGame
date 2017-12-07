@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.IUpdateable
+  commentId: T:Microsoft.Xna.Framework.IUpdateable
+  id: IUpdateable
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.IUpdateable.Enabled
+  - Microsoft.Xna.Framework.IUpdateable.EnabledChanged
+  - Microsoft.Xna.Framework.IUpdateable.Update(Microsoft.Xna.Framework.GameTime)
+  - Microsoft.Xna.Framework.IUpdateable.UpdateOrder
+  - Microsoft.Xna.Framework.IUpdateable.UpdateOrderChanged
+  langs:
+  - csharp
+  - vb
+  name: IUpdateable
+  nameWithType: IUpdateable
+  fullName: Microsoft.Xna.Framework.IUpdateable
+  type: Interface
+  source:
+    remote:
+      path: MonoGame.Framework/IUpdateable.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IUpdateable
+    path: ../MonoGame.Framework/IUpdateable.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public interface IUpdateable
+    content.vb: Public Interface IUpdateable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Xna.Framework.IUpdateable.Update(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Microsoft.Xna.Framework.IUpdateable.Update(Microsoft.Xna.Framework.GameTime)
+  id: Update(Microsoft.Xna.Framework.GameTime)
+  parent: Microsoft.Xna.Framework.IUpdateable
+  langs:
+  - csharp
+  - vb
+  name: Update(GameTime)
+  nameWithType: IUpdateable.Update(GameTime)
+  fullName: Microsoft.Xna.Framework.IUpdateable.Update(Microsoft.Xna.Framework.GameTime)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/IUpdateable.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Update
+    path: ../MonoGame.Framework/IUpdateable.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: void Update(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: Microsoft.Xna.Framework.GameTime
+    content.vb: Sub Update(gameTime As GameTime)
+  overload: Microsoft.Xna.Framework.IUpdateable.Update*
+- uid: Microsoft.Xna.Framework.IUpdateable.EnabledChanged
+  commentId: E:Microsoft.Xna.Framework.IUpdateable.EnabledChanged
+  id: EnabledChanged
+  parent: Microsoft.Xna.Framework.IUpdateable
+  langs:
+  - csharp
+  - vb
+  name: EnabledChanged
+  nameWithType: IUpdateable.EnabledChanged
+  fullName: Microsoft.Xna.Framework.IUpdateable.EnabledChanged
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/IUpdateable.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: EnabledChanged
+    path: ../MonoGame.Framework/IUpdateable.cs
+    startLine: 15
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: event EventHandler<EventArgs> EnabledChanged
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event EnabledChanged As EventHandler(Of EventArgs)
+- uid: Microsoft.Xna.Framework.IUpdateable.UpdateOrderChanged
+  commentId: E:Microsoft.Xna.Framework.IUpdateable.UpdateOrderChanged
+  id: UpdateOrderChanged
+  parent: Microsoft.Xna.Framework.IUpdateable
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderChanged
+  nameWithType: IUpdateable.UpdateOrderChanged
+  fullName: Microsoft.Xna.Framework.IUpdateable.UpdateOrderChanged
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/IUpdateable.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: UpdateOrderChanged
+    path: ../MonoGame.Framework/IUpdateable.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: event EventHandler<EventArgs> UpdateOrderChanged
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event UpdateOrderChanged As EventHandler(Of EventArgs)
+- uid: Microsoft.Xna.Framework.IUpdateable.Enabled
+  commentId: P:Microsoft.Xna.Framework.IUpdateable.Enabled
+  id: Enabled
+  parent: Microsoft.Xna.Framework.IUpdateable
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: IUpdateable.Enabled
+  fullName: Microsoft.Xna.Framework.IUpdateable.Enabled
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/IUpdateable.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Enabled
+    path: ../MonoGame.Framework/IUpdateable.cs
+    startLine: 21
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: bool Enabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Enabled As Boolean
+  overload: Microsoft.Xna.Framework.IUpdateable.Enabled*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.IUpdateable.UpdateOrder
+  commentId: P:Microsoft.Xna.Framework.IUpdateable.UpdateOrder
+  id: UpdateOrder
+  parent: Microsoft.Xna.Framework.IUpdateable
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrder
+  nameWithType: IUpdateable.UpdateOrder
+  fullName: Microsoft.Xna.Framework.IUpdateable.UpdateOrder
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/IUpdateable.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: UpdateOrder
+    path: ../MonoGame.Framework/IUpdateable.cs
+    startLine: 23
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: int UpdateOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property UpdateOrder As Integer
+  overload: Microsoft.Xna.Framework.IUpdateable.UpdateOrder*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.IUpdateable.Update*
+  commentId: Overload:Microsoft.Xna.Framework.IUpdateable.Update
+  isExternal: false
+  name: Update
+  nameWithType: IUpdateable.Update
+  fullName: Microsoft.Xna.Framework.IUpdateable.Update
+- uid: Microsoft.Xna.Framework.GameTime
+  commentId: T:Microsoft.Xna.Framework.GameTime
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Microsoft.Xna.Framework.GameTime
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.IUpdateable.Enabled*
+  commentId: Overload:Microsoft.Xna.Framework.IUpdateable.Enabled
+  isExternal: false
+  name: Enabled
+  nameWithType: IUpdateable.Enabled
+  fullName: Microsoft.Xna.Framework.IUpdateable.Enabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.IUpdateable.UpdateOrder*
+  commentId: Overload:Microsoft.Xna.Framework.IUpdateable.UpdateOrder
+  isExternal: false
+  name: UpdateOrder
+  nameWithType: IUpdateable.UpdateOrder
+  fullName: Microsoft.Xna.Framework.IUpdateable.UpdateOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

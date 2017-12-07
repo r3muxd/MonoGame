@@ -1,0 +1,1281 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Audio.Cue
+  commentId: T:Microsoft.Xna.Framework.Audio.Cue
+  id: Cue
+  parent: Microsoft.Xna.Framework.Audio
+  children:
+  - Microsoft.Xna.Framework.Audio.Cue.Apply3D(Microsoft.Xna.Framework.Audio.AudioListener,Microsoft.Xna.Framework.Audio.AudioEmitter)
+  - Microsoft.Xna.Framework.Audio.Cue.Dispose
+  - Microsoft.Xna.Framework.Audio.Cue.Disposing
+  - Microsoft.Xna.Framework.Audio.Cue.GetVariable(System.String)
+  - Microsoft.Xna.Framework.Audio.Cue.IsCreated
+  - Microsoft.Xna.Framework.Audio.Cue.IsDisposed
+  - Microsoft.Xna.Framework.Audio.Cue.IsPaused
+  - Microsoft.Xna.Framework.Audio.Cue.IsPlaying
+  - Microsoft.Xna.Framework.Audio.Cue.IsPrepared
+  - Microsoft.Xna.Framework.Audio.Cue.IsPreparing
+  - Microsoft.Xna.Framework.Audio.Cue.IsStopped
+  - Microsoft.Xna.Framework.Audio.Cue.IsStopping
+  - Microsoft.Xna.Framework.Audio.Cue.Name
+  - Microsoft.Xna.Framework.Audio.Cue.Pause
+  - Microsoft.Xna.Framework.Audio.Cue.Play
+  - Microsoft.Xna.Framework.Audio.Cue.Resume
+  - Microsoft.Xna.Framework.Audio.Cue.SetVariable(System.String,System.Single)
+  - Microsoft.Xna.Framework.Audio.Cue.Stop(Microsoft.Xna.Framework.Audio.AudioStopOptions)
+  langs:
+  - csharp
+  - vb
+  name: Cue
+  nameWithType: Cue
+  fullName: Microsoft.Xna.Framework.Audio.Cue
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Cue
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Manages the playback of a sound or set of sounds.
+  remarks: "\n<p>Cues are comprised of one or more sounds.</p>\n<p>Cues also define specific properties such as pitch or volume.</p>\n<p>Cues are referenced through SoundBank objects.</p>\n"
+  example: []
+  syntax:
+    content: 'public class Cue : IDisposable'
+    content.vb: >-
+      Public Class Cue
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPaused
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsPaused
+  id: IsPaused
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsPaused
+  nameWithType: Cue.IsPaused
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPaused
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsPaused
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Indicates whether or not the cue is currently paused.
+  remarks: IsPlaying and IsPaused both return true if a cue is paused while playing.
+  example: []
+  syntax:
+    content: public bool IsPaused { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPaused As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsPaused*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPlaying
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsPlaying
+  id: IsPlaying
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsPlaying
+  nameWithType: Cue.IsPlaying
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPlaying
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsPlaying
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Indicates whether or not the cue is currently playing.
+  remarks: IsPlaying and IsPaused both return true if a cue is paused while playing.
+  example: []
+  syntax:
+    content: public bool IsPlaying { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPlaying As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsPlaying*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsStopped
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsStopped
+  id: IsStopped
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsStopped
+  nameWithType: Cue.IsStopped
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsStopped
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsStopped
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 55
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Indicates whether or not the cue is currently stopped.
+  example: []
+  syntax:
+    content: public bool IsStopped { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsStopped As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsStopped*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsStopping
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsStopping
+  id: IsStopping
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsStopping
+  nameWithType: Cue.IsStopping
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsStopping
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsStopping
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  syntax:
+    content: public bool IsStopping { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsStopping As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsStopping*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPreparing
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsPreparing
+  id: IsPreparing
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsPreparing
+  nameWithType: Cue.IsPreparing
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPreparing
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsPreparing
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 75
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  syntax:
+    content: public bool IsPreparing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPreparing As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsPreparing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPrepared
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsPrepared
+  id: IsPrepared
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsPrepared
+  nameWithType: Cue.IsPrepared
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPrepared
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsPrepared
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 80
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  syntax:
+    content: public bool IsPrepared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPrepared As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsPrepared*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsCreated
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsCreated
+  id: IsCreated
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsCreated
+  nameWithType: Cue.IsCreated
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsCreated
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsCreated
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 82
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  syntax:
+    content: public bool IsCreated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCreated As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsCreated*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.Name
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.Name
+  id: Name
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Cue.Name
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Name
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Name
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 86
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets the friendly name of the cue.
+  remarks: The friendly name is a value set from the designer.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Microsoft.Xna.Framework.Audio.Cue.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.Pause
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.Pause
+  id: Pause
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: Cue.Pause()
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Pause()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Pause
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 120
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Pauses playback.
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause
+  overload: Microsoft.Xna.Framework.Audio.Cue.Pause*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.Play
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.Play
+  id: Play
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: Cue.Play()
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Play()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Play
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 131
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Requests playback of a prepared or preparing Cue.
+  remarks: Calling Play when the Cue already is playing can result in an InvalidOperationException.
+  example: []
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play
+  overload: Microsoft.Xna.Framework.Audio.Cue.Play*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.Resume
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.Resume
+  id: Resume
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: Cue.Resume()
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Resume()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Resume
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 152
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Resumes playback of a paused Cue.
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub Resume
+  overload: Microsoft.Xna.Framework.Audio.Cue.Resume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.Stop(Microsoft.Xna.Framework.Audio.AudioStopOptions)
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.Stop(Microsoft.Xna.Framework.Audio.AudioStopOptions)
+  id: Stop(Microsoft.Xna.Framework.Audio.AudioStopOptions)
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Stop(AudioStopOptions)
+  nameWithType: Cue.Stop(AudioStopOptions)
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Stop(Microsoft.Xna.Framework.Audio.AudioStopOptions)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Stop
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 163
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Stops playback of a Cue.
+  example: []
+  syntax:
+    content: public void Stop(AudioStopOptions options)
+    parameters:
+    - id: options
+      type: Microsoft.Xna.Framework.Audio.AudioStopOptions
+      description: Specifies if the sound should play any pending release phases or transitions before stopping.
+    content.vb: Public Sub Stop(options As AudioStopOptions)
+  overload: Microsoft.Xna.Framework.Audio.Cue.Stop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.SetVariable(System.String,System.Single)
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.SetVariable(System.String,System.Single)
+  id: SetVariable(System.String,System.Single)
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: SetVariable(String, Single)
+  nameWithType: Cue.SetVariable(String, Single)
+  fullName: Microsoft.Xna.Framework.Audio.Cue.SetVariable(System.String, System.Single)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetVariable
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 195
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: "\nSets the value of a cue-instance variable based on its friendly name.\n"
+  remarks: The friendly name is a value set from the designer.
+  example: []
+  syntax:
+    content: public void SetVariable(string name, float value)
+    parameters:
+    - id: name
+      type: System.String
+      description: Friendly name of the variable to set.
+    - id: value
+      type: System.Single
+      description: Value to assign to the variable.
+    content.vb: Public Sub SetVariable(name As String, value As Single)
+  overload: Microsoft.Xna.Framework.Audio.Cue.SetVariable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.GetVariable(System.String)
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.GetVariable(System.String)
+  id: GetVariable(System.String)
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: GetVariable(String)
+  nameWithType: Cue.GetVariable(String)
+  fullName: Microsoft.Xna.Framework.Audio.Cue.GetVariable(System.String)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetVariable
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 214
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets a cue-instance variable value based on its friendly name.
+  remarks: "\n<p>Cue-instance variables are useful when multiple instantiations of a single cue (and its associated sounds) are required (for example, a &quot;car&quot; cue where there may be more than one car at any given time). While a global variable allows multiple audio elements to be controlled in unison, a cue instance variable grants discrete control of each instance of a cue, even for each copy of the same cue.</p>\n<p>The friendly name is a value set from the designer.</p>\n"
+  example: []
+  syntax:
+    content: public float GetVariable(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Friendly name of the variable.
+    return:
+      type: System.Single
+      description: Value of the variable.
+    content.vb: Public Function GetVariable(name As String) As Single
+  overload: Microsoft.Xna.Framework.Audio.Cue.GetVariable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.Apply3D(Microsoft.Xna.Framework.Audio.AudioListener,Microsoft.Xna.Framework.Audio.AudioEmitter)
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.Apply3D(Microsoft.Xna.Framework.Audio.AudioListener,Microsoft.Xna.Framework.Audio.AudioEmitter)
+  id: Apply3D(Microsoft.Xna.Framework.Audio.AudioListener,Microsoft.Xna.Framework.Audio.AudioEmitter)
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Apply3D(AudioListener, AudioEmitter)
+  nameWithType: Cue.Apply3D(AudioListener, AudioEmitter)
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Apply3D(Microsoft.Xna.Framework.Audio.AudioListener, Microsoft.Xna.Framework.Audio.AudioEmitter)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Apply3D
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 233
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Updates the simulated 3D Audio settings calculated between an AudioEmitter and AudioListener.
+  remarks: "\n<p>This must be called before Play().</p>\n<p>Calling this method automatically converts the sound to monoaural and sets the speaker mix for any sound played by this cue to a value calculated with the listener&apos;s and emitter&apos;s positions. Any stereo information in the sound will be discarded.</p>\n"
+  example: []
+  syntax:
+    content: public void Apply3D(AudioListener listener, AudioEmitter emitter)
+    parameters:
+    - id: listener
+      type: Microsoft.Xna.Framework.Audio.AudioListener
+      description: The listener to calculate.
+    - id: emitter
+      type: Microsoft.Xna.Framework.Audio.AudioEmitter
+      description: The emitter to calculate.
+    content.vb: Public Sub Apply3D(listener As AudioListener, emitter As AudioEmitter)
+  overload: Microsoft.Xna.Framework.Audio.Cue.Apply3D*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.Disposing
+  commentId: E:Microsoft.Xna.Framework.Audio.Cue.Disposing
+  id: Disposing
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Disposing
+  nameWithType: Cue.Disposing
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Disposing
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Disposing
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 346
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: "\nThis event is triggered when the Cue is disposed.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<EventArgs> Disposing
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event Disposing As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Audio.Cue.IsDisposed
+  id: IsDisposed
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: Cue.IsDisposed
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsDisposed
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsDisposed
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 351
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: "\nIs true if the Cue has been disposed.\n"
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: Microsoft.Xna.Framework.Audio.Cue.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Audio.Cue.Dispose
+  commentId: M:Microsoft.Xna.Framework.Audio.Cue.Dispose
+  id: Dispose
+  parent: Microsoft.Xna.Framework.Audio.Cue
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Cue.Dispose()
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Dispose()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/Xact/Cue.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Audio/Xact/Cue.cs
+    startLine: 356
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: "\nDisposes the Cue.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Xna.Framework.Audio.Cue.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Audio
+  commentId: N:Microsoft.Xna.Framework.Audio
+  isExternal: false
+  name: Microsoft.Xna.Framework.Audio
+  nameWithType: Microsoft.Xna.Framework.Audio
+  fullName: Microsoft.Xna.Framework.Audio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPaused*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsPaused
+  isExternal: false
+  name: IsPaused
+  nameWithType: Cue.IsPaused
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPaused
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPlaying*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsPlaying
+  isExternal: false
+  name: IsPlaying
+  nameWithType: Cue.IsPlaying
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPlaying
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsStopped*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsStopped
+  isExternal: false
+  name: IsStopped
+  nameWithType: Cue.IsStopped
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsStopped
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsStopping*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsStopping
+  isExternal: false
+  name: IsStopping
+  nameWithType: Cue.IsStopping
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsStopping
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPreparing*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsPreparing
+  isExternal: false
+  name: IsPreparing
+  nameWithType: Cue.IsPreparing
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPreparing
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsPrepared*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsPrepared
+  isExternal: false
+  name: IsPrepared
+  nameWithType: Cue.IsPrepared
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsPrepared
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsCreated*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsCreated
+  isExternal: false
+  name: IsCreated
+  nameWithType: Cue.IsCreated
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsCreated
+- uid: Microsoft.Xna.Framework.Audio.Cue.Name*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Name
+  isExternal: false
+  name: Name
+  nameWithType: Cue.Name
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Audio.Cue.Pause*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Pause
+  isExternal: false
+  name: Pause
+  nameWithType: Cue.Pause
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Pause
+- uid: Microsoft.Xna.Framework.Audio.Cue.Play*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Play
+  isExternal: false
+  name: Play
+  nameWithType: Cue.Play
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Play
+- uid: Microsoft.Xna.Framework.Audio.Cue.Resume*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Resume
+  isExternal: false
+  name: Resume
+  nameWithType: Cue.Resume
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Resume
+- uid: Microsoft.Xna.Framework.Audio.Cue.Stop*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Stop
+  isExternal: false
+  name: Stop
+  nameWithType: Cue.Stop
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Stop
+- uid: Microsoft.Xna.Framework.Audio.AudioStopOptions
+  commentId: T:Microsoft.Xna.Framework.Audio.AudioStopOptions
+  parent: Microsoft.Xna.Framework.Audio
+  isExternal: false
+  name: AudioStopOptions
+  nameWithType: AudioStopOptions
+  fullName: Microsoft.Xna.Framework.Audio.AudioStopOptions
+- uid: Microsoft.Xna.Framework.Audio.Cue.SetVariable*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.SetVariable
+  isExternal: false
+  name: SetVariable
+  nameWithType: Cue.SetVariable
+  fullName: Microsoft.Xna.Framework.Audio.Cue.SetVariable
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Audio.Cue.GetVariable*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.GetVariable
+  isExternal: false
+  name: GetVariable
+  nameWithType: Cue.GetVariable
+  fullName: Microsoft.Xna.Framework.Audio.Cue.GetVariable
+- uid: Microsoft.Xna.Framework.Audio.Cue.Apply3D*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Apply3D
+  isExternal: false
+  name: Apply3D
+  nameWithType: Cue.Apply3D
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Apply3D
+- uid: Microsoft.Xna.Framework.Audio.AudioListener
+  commentId: T:Microsoft.Xna.Framework.Audio.AudioListener
+  parent: Microsoft.Xna.Framework.Audio
+  isExternal: false
+  name: AudioListener
+  nameWithType: AudioListener
+  fullName: Microsoft.Xna.Framework.Audio.AudioListener
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter
+  commentId: T:Microsoft.Xna.Framework.Audio.AudioEmitter
+  parent: Microsoft.Xna.Framework.Audio
+  isExternal: false
+  name: AudioEmitter
+  nameWithType: AudioEmitter
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Audio.Cue.IsDisposed*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.IsDisposed
+  isExternal: false
+  name: IsDisposed
+  nameWithType: Cue.IsDisposed
+  fullName: Microsoft.Xna.Framework.Audio.Cue.IsDisposed
+- uid: Microsoft.Xna.Framework.Audio.Cue.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.Cue.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: Cue.Dispose
+  fullName: Microsoft.Xna.Framework.Audio.Cue.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

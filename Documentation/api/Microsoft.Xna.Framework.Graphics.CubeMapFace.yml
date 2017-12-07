@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  commentId: T:Microsoft.Xna.Framework.Graphics.CubeMapFace
+  id: CubeMapFace
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeX
+  - Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeY
+  - Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeZ
+  - Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveX
+  - Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveY
+  - Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveZ
+  langs:
+  - csharp
+  - vb
+  name: CubeMapFace
+  nameWithType: CubeMapFace
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CubeMapFace
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines the faces in a cube map for the <xref href=\"Microsoft.Xna.Framework.Graphics.TextureCube\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public enum CubeMapFace
+    content.vb: Public Enum CubeMapFace
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveX
+  commentId: F:Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveX
+  id: PositiveX
+  parent: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  langs:
+  - csharp
+  - vb
+  name: PositiveX
+  nameWithType: CubeMapFace.PositiveX
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveX
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PositiveX
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPositive X face in the cube map.\n"
+  example: []
+  syntax:
+    content: PositiveX = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeX
+  commentId: F:Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeX
+  id: NegativeX
+  parent: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  langs:
+  - csharp
+  - vb
+  name: NegativeX
+  nameWithType: CubeMapFace.NegativeX
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeX
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NegativeX
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNegative X face in the cube map.\n"
+  example: []
+  syntax:
+    content: NegativeX = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveY
+  commentId: F:Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveY
+  id: PositiveY
+  parent: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  langs:
+  - csharp
+  - vb
+  name: PositiveY
+  nameWithType: CubeMapFace.PositiveY
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveY
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PositiveY
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPositive Y face in the cube map.\n"
+  example: []
+  syntax:
+    content: PositiveY = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeY
+  commentId: F:Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeY
+  id: NegativeY
+  parent: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  langs:
+  - csharp
+  - vb
+  name: NegativeY
+  nameWithType: CubeMapFace.NegativeY
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeY
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NegativeY
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNegative Y face in the cube map.\n"
+  example: []
+  syntax:
+    content: NegativeY = 3
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveZ
+  commentId: F:Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveZ
+  id: PositiveZ
+  parent: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  langs:
+  - csharp
+  - vb
+  name: PositiveZ
+  nameWithType: CubeMapFace.PositiveZ
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace.PositiveZ
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PositiveZ
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPositive Z face in the cube map.\n"
+  example: []
+  syntax:
+    content: PositiveZ = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeZ
+  commentId: F:Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeZ
+  id: NegativeZ
+  parent: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  langs:
+  - csharp
+  - vb
+  name: NegativeZ
+  nameWithType: CubeMapFace.NegativeZ
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace.NegativeZ
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/CubeMapFace.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NegativeZ
+    path: ../MonoGame.Framework/Graphics/CubeMapFace.cs
+    startLine: 34
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNegative Z face in the cube map.\n"
+  example: []
+  syntax:
+    content: NegativeZ = 5
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics.TextureCube
+  commentId: T:Microsoft.Xna.Framework.Graphics.TextureCube
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: TextureCube
+  nameWithType: TextureCube
+  fullName: Microsoft.Xna.Framework.Graphics.TextureCube
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  commentId: T:Microsoft.Xna.Framework.Graphics.CubeMapFace
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: CubeMapFace
+  nameWithType: CubeMapFace
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace

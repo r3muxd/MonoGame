@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  commentId: T:Microsoft.Xna.Framework.Graphics.TargetBlendState
+  id: TargetBlendState
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend
+  - Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: TargetBlendState
+  nameWithType: TargetBlendState
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TargetBlendState
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public class TargetBlendState
+    content.vb: Public Class TargetBlendState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction
+  id: AlphaBlendFunction
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: AlphaBlendFunction
+  nameWithType: TargetBlendState.AlphaBlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AlphaBlendFunction
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 45
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public BlendFunction AlphaBlendFunction { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+    content.vb: Public Property AlphaBlendFunction As BlendFunction
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend
+  id: AlphaDestinationBlend
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: AlphaDestinationBlend
+  nameWithType: TargetBlendState.AlphaDestinationBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AlphaDestinationBlend
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 55
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Blend AlphaDestinationBlend { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+    content.vb: Public Property AlphaDestinationBlend As Blend
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend
+  id: AlphaSourceBlend
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: AlphaSourceBlend
+  nameWithType: TargetBlendState.AlphaSourceBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AlphaSourceBlend
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 65
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Blend AlphaSourceBlend { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+    content.vb: Public Property AlphaSourceBlend As Blend
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction
+  id: ColorBlendFunction
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: ColorBlendFunction
+  nameWithType: TargetBlendState.ColorBlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColorBlendFunction
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 75
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public BlendFunction ColorBlendFunction { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+    content.vb: Public Property ColorBlendFunction As BlendFunction
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend
+  id: ColorDestinationBlend
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: ColorDestinationBlend
+  nameWithType: TargetBlendState.ColorDestinationBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColorDestinationBlend
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 85
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Blend ColorDestinationBlend { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+    content.vb: Public Property ColorDestinationBlend As Blend
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend
+  id: ColorSourceBlend
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: ColorSourceBlend
+  nameWithType: TargetBlendState.ColorSourceBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColorSourceBlend
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 95
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Blend ColorSourceBlend { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+    content.vb: Public Property ColorSourceBlend As Blend
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels
+  commentId: P:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels
+  id: ColorWriteChannels
+  parent: Microsoft.Xna.Framework.Graphics.TargetBlendState
+  langs:
+  - csharp
+  - vb
+  name: ColorWriteChannels
+  nameWithType: TargetBlendState.ColorWriteChannels
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/TargetBlendState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColorWriteChannels
+    path: ../MonoGame.Framework/Graphics/States/TargetBlendState.cs
+    startLine: 105
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ColorWriteChannels ColorWriteChannels { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+    content.vb: Public Property ColorWriteChannels As ColorWriteChannels
+  overload: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction
+  isExternal: false
+  name: AlphaBlendFunction
+  nameWithType: TargetBlendState.AlphaBlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaBlendFunction
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction
+  commentId: T:Microsoft.Xna.Framework.Graphics.BlendFunction
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: BlendFunction
+  nameWithType: BlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend
+  isExternal: false
+  name: AlphaDestinationBlend
+  nameWithType: TargetBlendState.AlphaDestinationBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaDestinationBlend
+- uid: Microsoft.Xna.Framework.Graphics.Blend
+  commentId: T:Microsoft.Xna.Framework.Graphics.Blend
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Blend
+  nameWithType: Blend
+  fullName: Microsoft.Xna.Framework.Graphics.Blend
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend
+  isExternal: false
+  name: AlphaSourceBlend
+  nameWithType: TargetBlendState.AlphaSourceBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.AlphaSourceBlend
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction
+  isExternal: false
+  name: ColorBlendFunction
+  nameWithType: TargetBlendState.ColorBlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorBlendFunction
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend
+  isExternal: false
+  name: ColorDestinationBlend
+  nameWithType: TargetBlendState.ColorDestinationBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorDestinationBlend
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend
+  isExternal: false
+  name: ColorSourceBlend
+  nameWithType: TargetBlendState.ColorSourceBlend
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorSourceBlend
+- uid: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels
+  isExternal: false
+  name: ColorWriteChannels
+  nameWithType: TargetBlendState.ColorWriteChannels
+  fullName: Microsoft.Xna.Framework.Graphics.TargetBlendState.ColorWriteChannels
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  commentId: T:Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ColorWriteChannels
+  nameWithType: ColorWriteChannels
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels

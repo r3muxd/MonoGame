@@ -1,0 +1,2225 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Content.ContentReader
+  commentId: T:Microsoft.Xna.Framework.Content.ContentReader
+  id: ContentReader
+  parent: Microsoft.Xna.Framework.Content
+  children:
+  - Microsoft.Xna.Framework.Content.ContentReader.AssetName
+  - Microsoft.Xna.Framework.Content.ContentReader.ContentManager
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadColor
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference``1
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(``0)
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(``0)
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource``1(System.Action{``0})
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadVector2
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadVector3
+  - Microsoft.Xna.Framework.Content.ContentReader.ReadVector4
+  langs:
+  - csharp
+  - vb
+  name: ContentReader
+  nameWithType: ContentReader
+  fullName: Microsoft.Xna.Framework.Content.ContentReader
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ContentReader
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: 'public sealed class ContentReader : BinaryReader, IDisposable'
+    content.vb: >-
+      Public NotInheritable Class ContentReader
+          Inherits BinaryReader
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.IO.BinaryReader
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.BinaryReader.Close
+  - System.IO.BinaryReader.Dispose(System.Boolean)
+  - System.IO.BinaryReader.Dispose
+  - System.IO.BinaryReader.PeekChar
+  - System.IO.BinaryReader.Read
+  - System.IO.BinaryReader.ReadBoolean
+  - System.IO.BinaryReader.ReadByte
+  - System.IO.BinaryReader.ReadSByte
+  - System.IO.BinaryReader.ReadChar
+  - System.IO.BinaryReader.ReadInt16
+  - System.IO.BinaryReader.ReadUInt16
+  - System.IO.BinaryReader.ReadInt32
+  - System.IO.BinaryReader.ReadUInt32
+  - System.IO.BinaryReader.ReadInt64
+  - System.IO.BinaryReader.ReadUInt64
+  - System.IO.BinaryReader.ReadSingle
+  - System.IO.BinaryReader.ReadDouble
+  - System.IO.BinaryReader.ReadDecimal
+  - System.IO.BinaryReader.ReadString
+  - System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+  - System.IO.BinaryReader.ReadChars(System.Int32)
+  - System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.BinaryReader.ReadBytes(System.Int32)
+  - System.IO.BinaryReader.FillBuffer(System.Int32)
+  - System.IO.BinaryReader.Read7BitEncodedInt
+  - System.IO.BinaryReader.BaseStream
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ContentManager
+  commentId: P:Microsoft.Xna.Framework.Content.ContentReader.ContentManager
+  id: ContentManager
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ContentManager
+  nameWithType: ContentReader.ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ContentManager
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ContentManager
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 50
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public ContentManager ContentManager { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Content.ContentManager
+    content.vb: Public ReadOnly Property ContentManager As ContentManager
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ContentManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Content.ContentReader.AssetName
+  commentId: P:Microsoft.Xna.Framework.Content.ContentReader.AssetName
+  id: AssetName
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: AssetName
+  nameWithType: ContentReader.AssetName
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.AssetName
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AssetName
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public string AssetName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AssetName As String
+  overload: Microsoft.Xna.Framework.Content.ContentReader.AssetName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference``1
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference``1
+  id: ReadExternalReference``1
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadExternalReference<T>()
+  nameWithType: ContentReader.ReadExternalReference<T>()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference<T>()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadExternalReference
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 114
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadExternalReference<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadExternalReference(Of T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference*
+  nameWithType.vb: ContentReader.ReadExternalReference(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference(Of T)()
+  name.vb: ReadExternalReference(Of T)()
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix
+  id: ReadMatrix
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadMatrix()
+  nameWithType: ContentReader.ReadMatrix()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadMatrix
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 126
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public Matrix ReadMatrix()
+    return:
+      type: Microsoft.Xna.Framework.Matrix
+    content.vb: Public Function ReadMatrix As Matrix
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1
+  id: ReadObject``1
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadObject<T>()
+  nameWithType: ContentReader.ReadObject<T>()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadObject<T>()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 160
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadObject<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadObject(Of T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadObject*
+  nameWithType.vb: ContentReader.ReadObject(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadObject(Of T)()
+  name.vb: ReadObject(Of T)()
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  id: ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadObject<T>(ContentTypeReader)
+  nameWithType: ContentReader.ReadObject<T>(ContentTypeReader)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadObject<T>(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 165
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadObject<T>(ContentTypeReader typeReader)
+    parameters:
+    - id: typeReader
+      type: Microsoft.Xna.Framework.Content.ContentTypeReader
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadObject(Of T)(typeReader As ContentTypeReader) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadObject*
+  nameWithType.vb: ContentReader.ReadObject(Of T)(ContentTypeReader)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadObject(Of T)(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  name.vb: ReadObject(Of T)(ContentTypeReader)
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(``0)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(``0)
+  id: ReadObject``1(``0)
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadObject<T>(T)
+  nameWithType: ContentReader.ReadObject<T>(T)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadObject<T>(T)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 172
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadObject<T>(T existingInstance)
+    parameters:
+    - id: existingInstance
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadObject(Of T)(existingInstance As T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadObject*
+  nameWithType.vb: ContentReader.ReadObject(Of T)(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadObject(Of T)(T)
+  name.vb: ReadObject(Of T)(T)
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  id: ReadObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadObject<T>(ContentTypeReader, T)
+  nameWithType: ContentReader.ReadObject<T>(ContentTypeReader, T)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadObject<T>(Microsoft.Xna.Framework.Content.ContentTypeReader, T)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 194
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadObject<T>(ContentTypeReader typeReader, T existingInstance)
+    parameters:
+    - id: typeReader
+      type: Microsoft.Xna.Framework.Content.ContentTypeReader
+    - id: existingInstance
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadObject(Of T)(typeReader As ContentTypeReader, existingInstance As T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadObject*
+  nameWithType.vb: ContentReader.ReadObject(Of T)(ContentTypeReader, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadObject(Of T)(Microsoft.Xna.Framework.Content.ContentTypeReader, T)
+  name.vb: ReadObject(Of T)(ContentTypeReader, T)
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion
+  id: ReadQuaternion
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadQuaternion()
+  nameWithType: ContentReader.ReadQuaternion()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadQuaternion
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 206
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public Quaternion ReadQuaternion()
+    return:
+      type: Microsoft.Xna.Framework.Quaternion
+    content.vb: Public Function ReadQuaternion As Quaternion
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1
+  id: ReadRawObject``1
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadRawObject<T>()
+  nameWithType: ContentReader.ReadRawObject<T>()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject<T>()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadRawObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 216
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadRawObject<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadRawObject(Of T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject*
+  nameWithType.vb: ContentReader.ReadRawObject(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject(Of T)()
+  name.vb: ReadRawObject(Of T)()
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  id: ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadRawObject<T>(ContentTypeReader)
+  nameWithType: ContentReader.ReadRawObject<T>(ContentTypeReader)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject<T>(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadRawObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 221
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadRawObject<T>(ContentTypeReader typeReader)
+    parameters:
+    - id: typeReader
+      type: Microsoft.Xna.Framework.Content.ContentTypeReader
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadRawObject(Of T)(typeReader As ContentTypeReader) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject*
+  nameWithType.vb: ContentReader.ReadRawObject(Of T)(ContentTypeReader)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject(Of T)(Microsoft.Xna.Framework.Content.ContentTypeReader)
+  name.vb: ReadRawObject(Of T)(ContentTypeReader)
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(``0)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(``0)
+  id: ReadRawObject``1(``0)
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadRawObject<T>(T)
+  nameWithType: ContentReader.ReadRawObject<T>(T)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject<T>(T)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadRawObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 226
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadRawObject<T>(T existingInstance)
+    parameters:
+    - id: existingInstance
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadRawObject(Of T)(existingInstance As T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject*
+  nameWithType.vb: ContentReader.ReadRawObject(Of T)(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject(Of T)(T)
+  name.vb: ReadRawObject(Of T)(T)
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  id: ReadRawObject``1(Microsoft.Xna.Framework.Content.ContentTypeReader,``0)
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadRawObject<T>(ContentTypeReader, T)
+  nameWithType: ContentReader.ReadRawObject<T>(ContentTypeReader, T)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject<T>(Microsoft.Xna.Framework.Content.ContentTypeReader, T)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadRawObject
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 237
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public T ReadRawObject<T>(ContentTypeReader typeReader, T existingInstance)
+    parameters:
+    - id: typeReader
+      type: Microsoft.Xna.Framework.Content.ContentTypeReader
+    - id: existingInstance
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function ReadRawObject(Of T)(typeReader As ContentTypeReader, existingInstance As T) As T
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject*
+  nameWithType.vb: ContentReader.ReadRawObject(Of T)(ContentTypeReader, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject(Of T)(Microsoft.Xna.Framework.Content.ContentTypeReader, T)
+  name.vb: ReadRawObject(Of T)(ContentTypeReader, T)
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource``1(System.Action{``0})
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource``1(System.Action{``0})
+  id: ReadSharedResource``1(System.Action{``0})
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSharedResource<T>(Action<T>)
+  nameWithType: ContentReader.ReadSharedResource<T>(Action<T>)
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource<T>(System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadSharedResource
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 242
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public void ReadSharedResource<T>(Action<T> fixup)
+    parameters:
+    - id: fixup
+      type: System.Action{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Public Sub ReadSharedResource(Of T)(fixup As Action(Of T))
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource*
+  nameWithType.vb: ContentReader.ReadSharedResource(Of T)(Action(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource(Of T)(System.Action(Of T))
+  name.vb: ReadSharedResource(Of T)(Action(Of T))
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadVector2
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadVector2
+  id: ReadVector2
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadVector2()
+  nameWithType: ContentReader.ReadVector2()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadVector2()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadVector2
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 258
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public Vector2 ReadVector2()
+    return:
+      type: Microsoft.Xna.Framework.Vector2
+    content.vb: Public Function ReadVector2 As Vector2
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadVector2*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadVector3
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadVector3
+  id: ReadVector3
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadVector3()
+  nameWithType: ContentReader.ReadVector3()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadVector3()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadVector3
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 266
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public Vector3 ReadVector3()
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Function ReadVector3 As Vector3
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadVector3*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadVector4
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadVector4
+  id: ReadVector4
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadVector4()
+  nameWithType: ContentReader.ReadVector4()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadVector4()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadVector4
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 275
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public Vector4 ReadVector4()
+    return:
+      type: Microsoft.Xna.Framework.Vector4
+    content.vb: Public Function ReadVector4 As Vector4
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadVector4*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadColor
+  commentId: M:Microsoft.Xna.Framework.Content.ContentReader.ReadColor
+  id: ReadColor
+  parent: Microsoft.Xna.Framework.Content.ContentReader
+  langs:
+  - csharp
+  - vb
+  name: ReadColor()
+  nameWithType: ContentReader.ReadColor()
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadColor()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadColor
+    path: ../MonoGame.Framework/Content/ContentReader.cs
+    startLine: 285
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public Color ReadColor()
+    return:
+      type: Microsoft.Xna.Framework.Color
+    content.vb: Public Function ReadColor As Color
+  overload: Microsoft.Xna.Framework.Content.ContentReader.ReadColor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Content
+  commentId: N:Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: Microsoft.Xna.Framework.Content
+  nameWithType: Microsoft.Xna.Framework.Content
+  fullName: Microsoft.Xna.Framework.Content
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  parent: System.IO
+  isExternal: true
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IO.BinaryReader.Close
+  commentId: M:System.IO.BinaryReader.Close
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Close()
+  nameWithType: BinaryReader.Close()
+  fullName: System.IO.BinaryReader.Close()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Close
+    name: Close
+    nameWithType: BinaryReader.Close
+    fullName: System.IO.BinaryReader.Close
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Close
+    name: Close
+    nameWithType: BinaryReader.Close
+    fullName: System.IO.BinaryReader.Close
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.Dispose(System.Boolean)
+  commentId: M:System.IO.BinaryReader.Dispose(System.Boolean)
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: BinaryReader.Dispose(Boolean)
+  fullName: System.IO.BinaryReader.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: BinaryReader.Dispose
+    fullName: System.IO.BinaryReader.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: BinaryReader.Dispose
+    fullName: System.IO.BinaryReader.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.Dispose
+  commentId: M:System.IO.BinaryReader.Dispose
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Dispose()
+  nameWithType: BinaryReader.Dispose()
+  fullName: System.IO.BinaryReader.Dispose()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Dispose
+    name: Dispose
+    nameWithType: BinaryReader.Dispose
+    fullName: System.IO.BinaryReader.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Dispose
+    name: Dispose
+    nameWithType: BinaryReader.Dispose
+    fullName: System.IO.BinaryReader.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.PeekChar
+  commentId: M:System.IO.BinaryReader.PeekChar
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: PeekChar()
+  nameWithType: BinaryReader.PeekChar()
+  fullName: System.IO.BinaryReader.PeekChar()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.PeekChar
+    name: PeekChar
+    nameWithType: BinaryReader.PeekChar
+    fullName: System.IO.BinaryReader.PeekChar
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.PeekChar
+    name: PeekChar
+    nameWithType: BinaryReader.PeekChar
+    fullName: System.IO.BinaryReader.PeekChar
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.Read
+  commentId: M:System.IO.BinaryReader.Read
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Read()
+  nameWithType: BinaryReader.Read()
+  fullName: System.IO.BinaryReader.Read()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Read
+    name: Read
+    nameWithType: BinaryReader.Read
+    fullName: System.IO.BinaryReader.Read
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Read
+    name: Read
+    nameWithType: BinaryReader.Read
+    fullName: System.IO.BinaryReader.Read
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadBoolean
+  commentId: M:System.IO.BinaryReader.ReadBoolean
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadBoolean()
+  nameWithType: BinaryReader.ReadBoolean()
+  fullName: System.IO.BinaryReader.ReadBoolean()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadBoolean
+    name: ReadBoolean
+    nameWithType: BinaryReader.ReadBoolean
+    fullName: System.IO.BinaryReader.ReadBoolean
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadBoolean
+    name: ReadBoolean
+    nameWithType: BinaryReader.ReadBoolean
+    fullName: System.IO.BinaryReader.ReadBoolean
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadByte
+  commentId: M:System.IO.BinaryReader.ReadByte
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadByte()
+  nameWithType: BinaryReader.ReadByte()
+  fullName: System.IO.BinaryReader.ReadByte()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadByte
+    name: ReadByte
+    nameWithType: BinaryReader.ReadByte
+    fullName: System.IO.BinaryReader.ReadByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadByte
+    name: ReadByte
+    nameWithType: BinaryReader.ReadByte
+    fullName: System.IO.BinaryReader.ReadByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadSByte
+  commentId: M:System.IO.BinaryReader.ReadSByte
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadSByte()
+  nameWithType: BinaryReader.ReadSByte()
+  fullName: System.IO.BinaryReader.ReadSByte()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadSByte
+    name: ReadSByte
+    nameWithType: BinaryReader.ReadSByte
+    fullName: System.IO.BinaryReader.ReadSByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadSByte
+    name: ReadSByte
+    nameWithType: BinaryReader.ReadSByte
+    fullName: System.IO.BinaryReader.ReadSByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadChar
+  commentId: M:System.IO.BinaryReader.ReadChar
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadChar()
+  nameWithType: BinaryReader.ReadChar()
+  fullName: System.IO.BinaryReader.ReadChar()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadChar
+    name: ReadChar
+    nameWithType: BinaryReader.ReadChar
+    fullName: System.IO.BinaryReader.ReadChar
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadChar
+    name: ReadChar
+    nameWithType: BinaryReader.ReadChar
+    fullName: System.IO.BinaryReader.ReadChar
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadInt16
+  commentId: M:System.IO.BinaryReader.ReadInt16
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadInt16()
+  nameWithType: BinaryReader.ReadInt16()
+  fullName: System.IO.BinaryReader.ReadInt16()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadInt16
+    name: ReadInt16
+    nameWithType: BinaryReader.ReadInt16
+    fullName: System.IO.BinaryReader.ReadInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadInt16
+    name: ReadInt16
+    nameWithType: BinaryReader.ReadInt16
+    fullName: System.IO.BinaryReader.ReadInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadUInt16
+  commentId: M:System.IO.BinaryReader.ReadUInt16
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadUInt16()
+  nameWithType: BinaryReader.ReadUInt16()
+  fullName: System.IO.BinaryReader.ReadUInt16()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadUInt16
+    name: ReadUInt16
+    nameWithType: BinaryReader.ReadUInt16
+    fullName: System.IO.BinaryReader.ReadUInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadUInt16
+    name: ReadUInt16
+    nameWithType: BinaryReader.ReadUInt16
+    fullName: System.IO.BinaryReader.ReadUInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadInt32
+  commentId: M:System.IO.BinaryReader.ReadInt32
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadInt32()
+  nameWithType: BinaryReader.ReadInt32()
+  fullName: System.IO.BinaryReader.ReadInt32()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadInt32
+    name: ReadInt32
+    nameWithType: BinaryReader.ReadInt32
+    fullName: System.IO.BinaryReader.ReadInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadInt32
+    name: ReadInt32
+    nameWithType: BinaryReader.ReadInt32
+    fullName: System.IO.BinaryReader.ReadInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadUInt32
+  commentId: M:System.IO.BinaryReader.ReadUInt32
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadUInt32()
+  nameWithType: BinaryReader.ReadUInt32()
+  fullName: System.IO.BinaryReader.ReadUInt32()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadUInt32
+    name: ReadUInt32
+    nameWithType: BinaryReader.ReadUInt32
+    fullName: System.IO.BinaryReader.ReadUInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadUInt32
+    name: ReadUInt32
+    nameWithType: BinaryReader.ReadUInt32
+    fullName: System.IO.BinaryReader.ReadUInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadInt64
+  commentId: M:System.IO.BinaryReader.ReadInt64
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadInt64()
+  nameWithType: BinaryReader.ReadInt64()
+  fullName: System.IO.BinaryReader.ReadInt64()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadInt64
+    name: ReadInt64
+    nameWithType: BinaryReader.ReadInt64
+    fullName: System.IO.BinaryReader.ReadInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadInt64
+    name: ReadInt64
+    nameWithType: BinaryReader.ReadInt64
+    fullName: System.IO.BinaryReader.ReadInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadUInt64
+  commentId: M:System.IO.BinaryReader.ReadUInt64
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadUInt64()
+  nameWithType: BinaryReader.ReadUInt64()
+  fullName: System.IO.BinaryReader.ReadUInt64()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadUInt64
+    name: ReadUInt64
+    nameWithType: BinaryReader.ReadUInt64
+    fullName: System.IO.BinaryReader.ReadUInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadUInt64
+    name: ReadUInt64
+    nameWithType: BinaryReader.ReadUInt64
+    fullName: System.IO.BinaryReader.ReadUInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadSingle
+  commentId: M:System.IO.BinaryReader.ReadSingle
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadSingle()
+  nameWithType: BinaryReader.ReadSingle()
+  fullName: System.IO.BinaryReader.ReadSingle()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadSingle
+    name: ReadSingle
+    nameWithType: BinaryReader.ReadSingle
+    fullName: System.IO.BinaryReader.ReadSingle
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadSingle
+    name: ReadSingle
+    nameWithType: BinaryReader.ReadSingle
+    fullName: System.IO.BinaryReader.ReadSingle
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadDouble
+  commentId: M:System.IO.BinaryReader.ReadDouble
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadDouble()
+  nameWithType: BinaryReader.ReadDouble()
+  fullName: System.IO.BinaryReader.ReadDouble()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadDouble
+    name: ReadDouble
+    nameWithType: BinaryReader.ReadDouble
+    fullName: System.IO.BinaryReader.ReadDouble
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadDouble
+    name: ReadDouble
+    nameWithType: BinaryReader.ReadDouble
+    fullName: System.IO.BinaryReader.ReadDouble
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadDecimal
+  commentId: M:System.IO.BinaryReader.ReadDecimal
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadDecimal()
+  nameWithType: BinaryReader.ReadDecimal()
+  fullName: System.IO.BinaryReader.ReadDecimal()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadDecimal
+    name: ReadDecimal
+    nameWithType: BinaryReader.ReadDecimal
+    fullName: System.IO.BinaryReader.ReadDecimal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadDecimal
+    name: ReadDecimal
+    nameWithType: BinaryReader.ReadDecimal
+    fullName: System.IO.BinaryReader.ReadDecimal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadString
+  commentId: M:System.IO.BinaryReader.ReadString
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadString()
+  nameWithType: BinaryReader.ReadString()
+  fullName: System.IO.BinaryReader.ReadString()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadString
+    name: ReadString
+    nameWithType: BinaryReader.ReadString
+    fullName: System.IO.BinaryReader.ReadString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadString
+    name: ReadString
+    nameWithType: BinaryReader.ReadString
+    fullName: System.IO.BinaryReader.ReadString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+  commentId: M:System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Read(Char[], Int32, Int32)
+  nameWithType: BinaryReader.Read(Char[], Int32, Int32)
+  fullName: System.IO.BinaryReader.Read(System.Char[], System.Int32, System.Int32)
+  nameWithType.vb: BinaryReader.Read(Char(), Int32, Int32)
+  fullName.vb: System.IO.BinaryReader.Read(System.Char(), System.Int32, System.Int32)
+  name.vb: Read(Char(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+    name: Read
+    nameWithType: BinaryReader.Read
+    fullName: System.IO.BinaryReader.Read
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+    name: Read
+    nameWithType: BinaryReader.Read
+    fullName: System.IO.BinaryReader.Read
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadChars(System.Int32)
+  commentId: M:System.IO.BinaryReader.ReadChars(System.Int32)
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadChars(Int32)
+  nameWithType: BinaryReader.ReadChars(Int32)
+  fullName: System.IO.BinaryReader.ReadChars(System.Int32)
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadChars(System.Int32)
+    name: ReadChars
+    nameWithType: BinaryReader.ReadChars
+    fullName: System.IO.BinaryReader.ReadChars
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadChars(System.Int32)
+    name: ReadChars
+    nameWithType: BinaryReader.ReadChars
+    fullName: System.IO.BinaryReader.ReadChars
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Read(Byte[], Int32, Int32)
+  nameWithType: BinaryReader.Read(Byte[], Int32, Int32)
+  fullName: System.IO.BinaryReader.Read(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: BinaryReader.Read(Byte(), Int32, Int32)
+  fullName.vb: System.IO.BinaryReader.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    nameWithType: BinaryReader.Read
+    fullName: System.IO.BinaryReader.Read
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    nameWithType: BinaryReader.Read
+    fullName: System.IO.BinaryReader.Read
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.ReadBytes(System.Int32)
+  commentId: M:System.IO.BinaryReader.ReadBytes(System.Int32)
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: ReadBytes(Int32)
+  nameWithType: BinaryReader.ReadBytes(Int32)
+  fullName: System.IO.BinaryReader.ReadBytes(System.Int32)
+  spec.csharp:
+  - uid: System.IO.BinaryReader.ReadBytes(System.Int32)
+    name: ReadBytes
+    nameWithType: BinaryReader.ReadBytes
+    fullName: System.IO.BinaryReader.ReadBytes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.ReadBytes(System.Int32)
+    name: ReadBytes
+    nameWithType: BinaryReader.ReadBytes
+    fullName: System.IO.BinaryReader.ReadBytes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.FillBuffer(System.Int32)
+  commentId: M:System.IO.BinaryReader.FillBuffer(System.Int32)
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: FillBuffer(Int32)
+  nameWithType: BinaryReader.FillBuffer(Int32)
+  fullName: System.IO.BinaryReader.FillBuffer(System.Int32)
+  spec.csharp:
+  - uid: System.IO.BinaryReader.FillBuffer(System.Int32)
+    name: FillBuffer
+    nameWithType: BinaryReader.FillBuffer
+    fullName: System.IO.BinaryReader.FillBuffer
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.FillBuffer(System.Int32)
+    name: FillBuffer
+    nameWithType: BinaryReader.FillBuffer
+    fullName: System.IO.BinaryReader.FillBuffer
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.Read7BitEncodedInt
+  commentId: M:System.IO.BinaryReader.Read7BitEncodedInt
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: Read7BitEncodedInt()
+  nameWithType: BinaryReader.Read7BitEncodedInt()
+  fullName: System.IO.BinaryReader.Read7BitEncodedInt()
+  spec.csharp:
+  - uid: System.IO.BinaryReader.Read7BitEncodedInt
+    name: Read7BitEncodedInt
+    nameWithType: BinaryReader.Read7BitEncodedInt
+    fullName: System.IO.BinaryReader.Read7BitEncodedInt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.BinaryReader.Read7BitEncodedInt
+    name: Read7BitEncodedInt
+    nameWithType: BinaryReader.Read7BitEncodedInt
+    fullName: System.IO.BinaryReader.Read7BitEncodedInt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.BinaryReader.BaseStream
+  commentId: P:System.IO.BinaryReader.BaseStream
+  parent: System.IO.BinaryReader
+  isExternal: true
+  name: BaseStream
+  nameWithType: BinaryReader.BaseStream
+  fullName: System.IO.BinaryReader.BaseStream
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ContentManager*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ContentManager
+  isExternal: false
+  name: ContentManager
+  nameWithType: ContentReader.ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ContentManager
+- uid: Microsoft.Xna.Framework.Content.ContentManager
+  commentId: T:Microsoft.Xna.Framework.Content.ContentManager
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentManager
+  nameWithType: ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentManager
+- uid: Microsoft.Xna.Framework.Content.ContentReader.AssetName*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.AssetName
+  isExternal: false
+  name: AssetName
+  nameWithType: ContentReader.AssetName
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.AssetName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference
+  isExternal: false
+  name: ReadExternalReference
+  nameWithType: ContentReader.ReadExternalReference
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadExternalReference
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix
+  isExternal: false
+  name: ReadMatrix
+  nameWithType: ContentReader.ReadMatrix
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadMatrix
+- uid: Microsoft.Xna.Framework.Matrix
+  commentId: T:Microsoft.Xna.Framework.Matrix
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Matrix
+  nameWithType: Matrix
+  fullName: Microsoft.Xna.Framework.Matrix
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadObject*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadObject
+  isExternal: false
+  name: ReadObject
+  nameWithType: ContentReader.ReadObject
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadObject
+- uid: Microsoft.Xna.Framework.Content.ContentTypeReader
+  commentId: T:Microsoft.Xna.Framework.Content.ContentTypeReader
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentTypeReader
+  nameWithType: ContentTypeReader
+  fullName: Microsoft.Xna.Framework.Content.ContentTypeReader
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion
+  isExternal: false
+  name: ReadQuaternion
+  nameWithType: ContentReader.ReadQuaternion
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadQuaternion
+- uid: Microsoft.Xna.Framework.Quaternion
+  commentId: T:Microsoft.Xna.Framework.Quaternion
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Microsoft.Xna.Framework.Quaternion
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject
+  isExternal: false
+  name: ReadRawObject
+  nameWithType: ContentReader.ReadRawObject
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadRawObject
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource
+  isExternal: false
+  name: ReadSharedResource
+  nameWithType: ContentReader.ReadSharedResource
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadSharedResource
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadVector2*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadVector2
+  isExternal: false
+  name: ReadVector2
+  nameWithType: ContentReader.ReadVector2
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadVector2
+- uid: Microsoft.Xna.Framework.Vector2
+  commentId: T:Microsoft.Xna.Framework.Vector2
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Microsoft.Xna.Framework.Vector2
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadVector3*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadVector3
+  isExternal: false
+  name: ReadVector3
+  nameWithType: ContentReader.ReadVector3
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadVector3
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadVector4*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadVector4
+  isExternal: false
+  name: ReadVector4
+  nameWithType: ContentReader.ReadVector4
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadVector4
+- uid: Microsoft.Xna.Framework.Vector4
+  commentId: T:Microsoft.Xna.Framework.Vector4
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector4
+  nameWithType: Vector4
+  fullName: Microsoft.Xna.Framework.Vector4
+- uid: Microsoft.Xna.Framework.Content.ContentReader.ReadColor*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentReader.ReadColor
+  isExternal: false
+  name: ReadColor
+  nameWithType: ContentReader.ReadColor
+  fullName: Microsoft.Xna.Framework.Content.ContentReader.ReadColor
+- uid: Microsoft.Xna.Framework.Color
+  commentId: T:Microsoft.Xna.Framework.Color
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Color
+  nameWithType: Color
+  fullName: Microsoft.Xna.Framework.Color

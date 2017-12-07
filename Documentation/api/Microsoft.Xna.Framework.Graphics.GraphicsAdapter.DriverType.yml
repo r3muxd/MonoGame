@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  id: GraphicsAdapter.DriverType
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.FastSoftware
+  - Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware
+  - Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Reference
+  langs:
+  - csharp
+  - vb
+  name: GraphicsAdapter.DriverType
+  nameWithType: GraphicsAdapter.DriverType
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DriverType
+    path: ../MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines the driver type for graphics adapter. Usable only on DirectX platforms for now.\n"
+  example: []
+  syntax:
+    content: public enum DriverType
+    content.vb: Public Enum DriverType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware
+  id: Hardware
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  langs:
+  - csharp
+  - vb
+  name: Hardware
+  nameWithType: GraphicsAdapter.DriverType.Hardware
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Hardware
+    path: ../MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+    startLine: 31
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nHardware device been used for rendering. Maximum speed and performance.\n"
+  example: []
+  syntax:
+    content: Hardware = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Reference
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Reference
+  id: Reference
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: GraphicsAdapter.DriverType.Reference
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Reference
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Reference
+    path: ../MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+    startLine: 35
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEmulates the hardware device on CPU. Slowly, only for testing.\n"
+  example: []
+  syntax:
+    content: Reference = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.FastSoftware
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.FastSoftware
+  id: FastSoftware
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  langs:
+  - csharp
+  - vb
+  name: FastSoftware
+  nameWithType: GraphicsAdapter.DriverType.FastSoftware
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.FastSoftware
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: FastSoftware
+    path: ../MonoGame.Framework/Graphics/GraphicsAdapter.Legacy.cs
+    startLine: 39
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUseful when <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware\" data-throw-if-not-resolved=\"false\"></xref> acceleration does not work.\n"
+  example: []
+  syntax:
+    content: FastSoftware = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsAdapter.DriverType
+  nameWithType: GraphicsAdapter.DriverType
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DriverType.Hardware

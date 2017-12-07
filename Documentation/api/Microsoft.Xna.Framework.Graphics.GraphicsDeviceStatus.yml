@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  id: GraphicsDeviceStatus
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Lost
+  - Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Normal
+  - Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.NotReset
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDeviceStatus
+  nameWithType: GraphicsDeviceStatus
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDeviceStatus
+    path: ../MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDescribes the status of the <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsDevice\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public enum GraphicsDeviceStatus
+    content.vb: Public Enum GraphicsDeviceStatus
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Normal
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Normal
+  id: Normal
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: GraphicsDeviceStatus.Normal
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Normal
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Normal
+    path: ../MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe device is normal.\n"
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Lost
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Lost
+  id: Lost
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  langs:
+  - csharp
+  - vb
+  name: Lost
+  nameWithType: GraphicsDeviceStatus.Lost
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.Lost
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Lost
+    path: ../MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe device has been lost.\n"
+  example: []
+  syntax:
+    content: Lost = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.NotReset
+  commentId: F:Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.NotReset
+  id: NotReset
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  langs:
+  - csharp
+  - vb
+  name: NotReset
+  nameWithType: GraphicsDeviceStatus.NotReset
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus.NotReset
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NotReset
+    path: ../MonoGame.Framework/Graphics/GraphicsDeviceStatus.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe device has not been reset.\n"
+  example: []
+  syntax:
+    content: NotReset = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDeviceStatus
+  nameWithType: GraphicsDeviceStatus
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus

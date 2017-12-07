@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction
+  commentId: T:Microsoft.Xna.Framework.Graphics.BlendFunction
+  id: BlendFunction
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.BlendFunction.Add
+  - Microsoft.Xna.Framework.Graphics.BlendFunction.Max
+  - Microsoft.Xna.Framework.Graphics.BlendFunction.Min
+  - Microsoft.Xna.Framework.Graphics.BlendFunction.ReverseSubtract
+  - Microsoft.Xna.Framework.Graphics.BlendFunction.Subtract
+  langs:
+  - csharp
+  - vb
+  name: BlendFunction
+  nameWithType: BlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/BlendFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BlendFunction
+    path: ../MonoGame.Framework/Graphics/States/BlendFunction.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines a function for color blending.\n"
+  example: []
+  syntax:
+    content: public enum BlendFunction
+    content.vb: Public Enum BlendFunction
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction.Add
+  commentId: F:Microsoft.Xna.Framework.Graphics.BlendFunction.Add
+  id: Add
+  parent: Microsoft.Xna.Framework.Graphics.BlendFunction
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: BlendFunction.Add
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction.Add
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/BlendFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Add
+    path: ../MonoGame.Framework/Graphics/States/BlendFunction.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe function will adds destination to the source. (srcColor * srcBlend) + (destColor * destBlend)\n"
+  example: []
+  syntax:
+    content: Add = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction.Subtract
+  commentId: F:Microsoft.Xna.Framework.Graphics.BlendFunction.Subtract
+  id: Subtract
+  parent: Microsoft.Xna.Framework.Graphics.BlendFunction
+  langs:
+  - csharp
+  - vb
+  name: Subtract
+  nameWithType: BlendFunction.Subtract
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction.Subtract
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/BlendFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Subtract
+    path: ../MonoGame.Framework/Graphics/States/BlendFunction.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe function will subtracts destination from source. (srcColor * srcBlend) − (destColor * destBlend)\n"
+  example: []
+  syntax:
+    content: Subtract = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction.ReverseSubtract
+  commentId: F:Microsoft.Xna.Framework.Graphics.BlendFunction.ReverseSubtract
+  id: ReverseSubtract
+  parent: Microsoft.Xna.Framework.Graphics.BlendFunction
+  langs:
+  - csharp
+  - vb
+  name: ReverseSubtract
+  nameWithType: BlendFunction.ReverseSubtract
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction.ReverseSubtract
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/BlendFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReverseSubtract
+    path: ../MonoGame.Framework/Graphics/States/BlendFunction.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe function will subtracts source from destination. (destColor * destBlend) - (srcColor * srcBlend) \n"
+  example: []
+  syntax:
+    content: ReverseSubtract = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction.Min
+  commentId: F:Microsoft.Xna.Framework.Graphics.BlendFunction.Min
+  id: Min
+  parent: Microsoft.Xna.Framework.Graphics.BlendFunction
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: BlendFunction.Min
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction.Min
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/BlendFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Min
+    path: ../MonoGame.Framework/Graphics/States/BlendFunction.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe function will extracts minimum of the source and destination. min((srcColor * srcBlend),(destColor * destBlend))\n"
+  example: []
+  syntax:
+    content: Min = 3
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction.Max
+  commentId: F:Microsoft.Xna.Framework.Graphics.BlendFunction.Max
+  id: Max
+  parent: Microsoft.Xna.Framework.Graphics.BlendFunction
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: BlendFunction.Max
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction.Max
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/BlendFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Max
+    path: ../MonoGame.Framework/Graphics/States/BlendFunction.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe function will extracts maximum of the source and destination. max((srcColor * srcBlend),(destColor * destBlend))\n"
+  example: []
+  syntax:
+    content: Max = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.BlendFunction
+  commentId: T:Microsoft.Xna.Framework.Graphics.BlendFunction
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: BlendFunction
+  nameWithType: BlendFunction
+  fullName: Microsoft.Xna.Framework.Graphics.BlendFunction

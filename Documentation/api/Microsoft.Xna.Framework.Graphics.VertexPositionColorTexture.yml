@@ -1,0 +1,837 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  id: VertexPositionColorTexture
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Vector2)
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Color
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals(System.Object)
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Equality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Inequality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Position
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.TextureCoordinate
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString
+  - Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: VertexPositionColorTexture
+  nameWithType: VertexPositionColorTexture
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexPositionColorTexture
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 4
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public struct VertexPositionColorTexture : IVertexType'
+    content.vb: >-
+      Public Structure VertexPositionColorTexture
+          Implements IVertexType
+  implements:
+  - Microsoft.Xna.Framework.Graphics.IVertexType
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Position
+  commentId: F:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Position
+  id: Position
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: VertexPositionColorTexture.Position
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Position
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Position
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 7
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Vector3 Position
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Position As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Color
+  commentId: F:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Color
+  id: Color
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: VertexPositionColorTexture.Color
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Color
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Color
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Color Color
+    return:
+      type: Microsoft.Xna.Framework.Color
+    content.vb: Public Color As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.TextureCoordinate
+  commentId: F:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.TextureCoordinate
+  id: TextureCoordinate
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: TextureCoordinate
+  nameWithType: VertexPositionColorTexture.TextureCoordinate
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.TextureCoordinate
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TextureCoordinate
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Vector2 TextureCoordinate
+    return:
+      type: Microsoft.Xna.Framework.Vector2
+    content.vb: Public TextureCoordinate As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.VertexDeclaration
+  commentId: F:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.VertexDeclaration
+  id: VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: VertexDeclaration
+  nameWithType: VertexPositionColorTexture.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.VertexDeclaration
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexDeclaration
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 10
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public static readonly VertexDeclaration VertexDeclaration
+    return:
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    content.vb: Public Shared ReadOnly VertexDeclaration As VertexDeclaration
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Vector2)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Vector2)
+  id: '#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Vector2)'
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: VertexPositionColorTexture(Vector3, Color, Vector2)
+  nameWithType: VertexPositionColorTexture.VertexPositionColorTexture(Vector3, Color, Vector2)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.VertexPositionColorTexture(Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public VertexPositionColorTexture(Vector3 position, Color color, Vector2 textureCoordinate)
+    parameters:
+    - id: position
+      type: Microsoft.Xna.Framework.Vector3
+    - id: color
+      type: Microsoft.Xna.Framework.Color
+    - id: textureCoordinate
+      type: Microsoft.Xna.Framework.Vector2
+    content.vb: Public Sub New(position As Vector3, color As Color, textureCoordinate As Vector2)
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration
+  commentId: P:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration
+  id: Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration
+  isEii: true
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: IVertexType.VertexDeclaration
+  nameWithType: VertexPositionColorTexture.IVertexType.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 19
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: VertexDeclaration IVertexType.VertexDeclaration { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    content.vb: ReadOnly WriteOnly Property Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration As VertexDeclaration Implements IVertexType.VertexDeclaration
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration*
+  implements:
+  - Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  nameWithType.vb: VertexPositionColorTexture.Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: VertexPositionColorTexture.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 27
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: VertexPositionColorTexture.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Equality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Equality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  id: op_Equality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: Equality(VertexPositionColorTexture, VertexPositionColorTexture)
+  nameWithType: VertexPositionColorTexture.Equality(VertexPositionColorTexture, VertexPositionColorTexture)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture, Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public static bool operator ==(VertexPositionColorTexture left, VertexPositionColorTexture right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+    - id: right
+      type: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As VertexPositionColorTexture, right As VertexPositionColorTexture) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Inequality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Inequality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  id: op_Inequality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture,Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: Inequality(VertexPositionColorTexture, VertexPositionColorTexture)
+  nameWithType: VertexPositionColorTexture.Inequality(VertexPositionColorTexture, VertexPositionColorTexture)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Inequality(Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture, Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public static bool operator !=(VertexPositionColorTexture left, VertexPositionColorTexture right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+    - id: right
+      type: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As VertexPositionColorTexture, right As VertexPositionColorTexture) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: VertexPositionColorTexture.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexPositionColorTexture.cs
+    startLine: 53
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType
+  commentId: T:Microsoft.Xna.Framework.Graphics.IVertexType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IVertexType
+  nameWithType: IVertexType
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Color
+  commentId: T:Microsoft.Xna.Framework.Color
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Color
+  nameWithType: Color
+  fullName: Microsoft.Xna.Framework.Color
+- uid: Microsoft.Xna.Framework.Vector2
+  commentId: T:Microsoft.Xna.Framework.Vector2
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Microsoft.Xna.Framework.Vector2
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.#ctor
+  isExternal: false
+  name: VertexPositionColorTexture
+  nameWithType: VertexPositionColorTexture.VertexPositionColorTexture
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.VertexPositionColorTexture
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft#Xna#Framework#Graphics#IVertexType#VertexDeclaration
+  isExternal: false
+  name: IVertexType.VertexDeclaration
+  nameWithType: VertexPositionColorTexture.IVertexType.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  nameWithType.vb: VertexPositionColorTexture.Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  name.vb: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  commentId: P:Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics.IVertexType
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: IVertexType.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: VertexPositionColorTexture.GetHashCode
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: VertexPositionColorTexture.ToString
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: VertexPositionColorTexture.Equality
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equality
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexPositionColorTexture
+  nameWithType: VertexPositionColorTexture
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: VertexPositionColorTexture.Inequality
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Inequality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: VertexPositionColorTexture.Equals
+  fullName: Microsoft.Xna.Framework.Graphics.VertexPositionColorTexture.Equals

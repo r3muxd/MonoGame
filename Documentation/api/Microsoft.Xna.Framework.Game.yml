@@ -1,0 +1,2099 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Game
+  commentId: T:Microsoft.Xna.Framework.Game
+  id: Game
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.Game.#ctor
+  - Microsoft.Xna.Framework.Game.Activated
+  - Microsoft.Xna.Framework.Game.BeginDraw
+  - Microsoft.Xna.Framework.Game.BeginRun
+  - Microsoft.Xna.Framework.Game.Components
+  - Microsoft.Xna.Framework.Game.Content
+  - Microsoft.Xna.Framework.Game.Deactivated
+  - Microsoft.Xna.Framework.Game.Dispose
+  - Microsoft.Xna.Framework.Game.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Game.Disposed
+  - Microsoft.Xna.Framework.Game.Draw(Microsoft.Xna.Framework.GameTime)
+  - Microsoft.Xna.Framework.Game.EndDraw
+  - Microsoft.Xna.Framework.Game.EndRun
+  - Microsoft.Xna.Framework.Game.Exit
+  - Microsoft.Xna.Framework.Game.Exiting
+  - Microsoft.Xna.Framework.Game.Finalize
+  - Microsoft.Xna.Framework.Game.GraphicsDevice
+  - Microsoft.Xna.Framework.Game.InactiveSleepTime
+  - Microsoft.Xna.Framework.Game.Initialize
+  - Microsoft.Xna.Framework.Game.IsActive
+  - Microsoft.Xna.Framework.Game.IsFixedTimeStep
+  - Microsoft.Xna.Framework.Game.IsMouseVisible
+  - Microsoft.Xna.Framework.Game.LaunchParameters
+  - Microsoft.Xna.Framework.Game.LoadContent
+  - Microsoft.Xna.Framework.Game.MaxElapsedTime
+  - Microsoft.Xna.Framework.Game.OnActivated(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.Game.OnDeactivated(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.Game.OnExiting(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.Game.ResetElapsedTime
+  - Microsoft.Xna.Framework.Game.Run
+  - Microsoft.Xna.Framework.Game.Run(Microsoft.Xna.Framework.GameRunBehavior)
+  - Microsoft.Xna.Framework.Game.RunOneFrame
+  - Microsoft.Xna.Framework.Game.Services
+  - Microsoft.Xna.Framework.Game.SuppressDraw
+  - Microsoft.Xna.Framework.Game.TargetElapsedTime
+  - Microsoft.Xna.Framework.Game.Tick
+  - Microsoft.Xna.Framework.Game.UnloadContent
+  - Microsoft.Xna.Framework.Game.Update(Microsoft.Xna.Framework.GameTime)
+  - Microsoft.Xna.Framework.Game.Window
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: Game
+  fullName: Microsoft.Xna.Framework.Game
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Game
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 19
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: 'public class Game : IDisposable'
+    content.vb: >-
+      Public Class Game
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Game.#ctor
+  commentId: M:Microsoft.Xna.Framework.Game.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Game()
+  nameWithType: Game.Game()
+  fullName: Microsoft.Xna.Framework.Game.Game()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 60
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Game()
+    content.vb: Public Sub New
+  overload: Microsoft.Xna.Framework.Game.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Finalize
+  commentId: M:Microsoft.Xna.Framework.Game.Finalize
+  id: Finalize
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: Game.Finalize()
+  fullName: Microsoft.Xna.Framework.Game.Finalize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Finalize
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 82
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: Microsoft.Xna.Framework.Game.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Xna.Framework.Game.Dispose
+  commentId: M:Microsoft.Xna.Framework.Game.Dispose
+  id: Dispose
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Game.Dispose()
+  fullName: Microsoft.Xna.Framework.Game.Dispose()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 96
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Xna.Framework.Game.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Game.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: Game.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Game.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 103
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Microsoft.Xna.Framework.Game.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.LaunchParameters
+  commentId: P:Microsoft.Xna.Framework.Game.LaunchParameters
+  id: LaunchParameters
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: LaunchParameters
+  nameWithType: Game.LaunchParameters
+  fullName: Microsoft.Xna.Framework.Game.LaunchParameters
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LaunchParameters
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 174
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public LaunchParameters LaunchParameters { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.LaunchParameters
+    content.vb: Public ReadOnly Property LaunchParameters As LaunchParameters
+  overload: Microsoft.Xna.Framework.Game.LaunchParameters*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Game.Components
+  commentId: P:Microsoft.Xna.Framework.Game.Components
+  id: Components
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Components
+  nameWithType: Game.Components
+  fullName: Microsoft.Xna.Framework.Game.Components
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Components
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 176
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GameComponentCollection Components { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.GameComponentCollection
+    content.vb: Public ReadOnly Property Components As GameComponentCollection
+  overload: Microsoft.Xna.Framework.Game.Components*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Game.InactiveSleepTime
+  commentId: P:Microsoft.Xna.Framework.Game.InactiveSleepTime
+  id: InactiveSleepTime
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: InactiveSleepTime
+  nameWithType: Game.InactiveSleepTime
+  fullName: Microsoft.Xna.Framework.Game.InactiveSleepTime
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: InactiveSleepTime
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 181
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public TimeSpan InactiveSleepTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property InactiveSleepTime As TimeSpan
+  overload: Microsoft.Xna.Framework.Game.InactiveSleepTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.MaxElapsedTime
+  commentId: P:Microsoft.Xna.Framework.Game.MaxElapsedTime
+  id: MaxElapsedTime
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: MaxElapsedTime
+  nameWithType: Game.MaxElapsedTime
+  fullName: Microsoft.Xna.Framework.Game.MaxElapsedTime
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MaxElapsedTime
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 197
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe maximum amount of time we will frameskip over and only perform Update calls with no Draw calls.\nMonoGame extension.\n"
+  example: []
+  syntax:
+    content: public TimeSpan MaxElapsedTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property MaxElapsedTime As TimeSpan
+  overload: Microsoft.Xna.Framework.Game.MaxElapsedTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.IsActive
+  commentId: P:Microsoft.Xna.Framework.Game.IsActive
+  id: IsActive
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: Game.IsActive
+  fullName: Microsoft.Xna.Framework.Game.IsActive
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsActive
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 211
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsActive As Boolean
+  overload: Microsoft.Xna.Framework.Game.IsActive*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Game.IsMouseVisible
+  commentId: P:Microsoft.Xna.Framework.Game.IsMouseVisible
+  id: IsMouseVisible
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: IsMouseVisible
+  nameWithType: Game.IsMouseVisible
+  fullName: Microsoft.Xna.Framework.Game.IsMouseVisible
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsMouseVisible
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 216
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool IsMouseVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsMouseVisible As Boolean
+  overload: Microsoft.Xna.Framework.Game.IsMouseVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.TargetElapsedTime
+  commentId: P:Microsoft.Xna.Framework.Game.TargetElapsedTime
+  id: TargetElapsedTime
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: TargetElapsedTime
+  nameWithType: Game.TargetElapsedTime
+  fullName: Microsoft.Xna.Framework.Game.TargetElapsedTime
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TargetElapsedTime
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 222
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public TimeSpan TargetElapsedTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property TargetElapsedTime As TimeSpan
+  overload: Microsoft.Xna.Framework.Game.TargetElapsedTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.IsFixedTimeStep
+  commentId: P:Microsoft.Xna.Framework.Game.IsFixedTimeStep
+  id: IsFixedTimeStep
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: IsFixedTimeStep
+  nameWithType: Game.IsFixedTimeStep
+  fullName: Microsoft.Xna.Framework.Game.IsFixedTimeStep
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsFixedTimeStep
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 243
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool IsFixedTimeStep { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsFixedTimeStep As Boolean
+  overload: Microsoft.Xna.Framework.Game.IsFixedTimeStep*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Services
+  commentId: P:Microsoft.Xna.Framework.Game.Services
+  id: Services
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: Game.Services
+  fullName: Microsoft.Xna.Framework.Game.Services
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Services
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 249
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GameServiceContainer Services { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.GameServiceContainer
+    content.vb: Public ReadOnly Property Services As GameServiceContainer
+  overload: Microsoft.Xna.Framework.Game.Services*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Game.Content
+  commentId: P:Microsoft.Xna.Framework.Game.Content
+  id: Content
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: Game.Content
+  fullName: Microsoft.Xna.Framework.Game.Content
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Content
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 253
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public ContentManager Content { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Content.ContentManager
+    content.vb: Public Property Content As ContentManager
+  overload: Microsoft.Xna.Framework.Game.Content*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Game.GraphicsDevice
+  id: GraphicsDevice
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDevice
+  nameWithType: Game.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Game.GraphicsDevice
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDevice
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 265
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GraphicsDevice GraphicsDevice { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    content.vb: Public ReadOnly Property GraphicsDevice As GraphicsDevice
+  overload: Microsoft.Xna.Framework.Game.GraphicsDevice*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Game.Window
+  commentId: P:Microsoft.Xna.Framework.Game.Window
+  id: Window
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Window
+  nameWithType: Game.Window
+  fullName: Microsoft.Xna.Framework.Game.Window
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Window
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 281
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public GameWindow Window { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.GameWindow
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public ReadOnly Property Window As GameWindow
+  overload: Microsoft.Xna.Framework.Game.Window*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Game.Activated
+  commentId: E:Microsoft.Xna.Framework.Game.Activated
+  id: Activated
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Activated
+  nameWithType: Game.Activated
+  fullName: Microsoft.Xna.Framework.Game.Activated
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Activated
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 304
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public event EventHandler<EventArgs> Activated
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event Activated As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Deactivated
+  commentId: E:Microsoft.Xna.Framework.Game.Deactivated
+  id: Deactivated
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Deactivated
+  nameWithType: Game.Deactivated
+  fullName: Microsoft.Xna.Framework.Game.Deactivated
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Deactivated
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 305
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public event EventHandler<EventArgs> Deactivated
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event Deactivated As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Disposed
+  commentId: E:Microsoft.Xna.Framework.Game.Disposed
+  id: Disposed
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Disposed
+  nameWithType: Game.Disposed
+  fullName: Microsoft.Xna.Framework.Game.Disposed
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Disposed
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 306
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public event EventHandler<EventArgs> Disposed
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event Disposed As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Exiting
+  commentId: E:Microsoft.Xna.Framework.Game.Exiting
+  id: Exiting
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Exiting
+  nameWithType: Game.Exiting
+  fullName: Microsoft.Xna.Framework.Game.Exiting
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Exiting
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 307
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public event EventHandler<EventArgs> Exiting
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event Exiting As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Exit
+  commentId: M:Microsoft.Xna.Framework.Game.Exit
+  id: Exit
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: Game.Exit()
+  fullName: Microsoft.Xna.Framework.Game.Exit()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Exit
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 321
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Exit()
+    content.vb: Public Sub Exit
+  overload: Microsoft.Xna.Framework.Game.Exit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.ResetElapsedTime
+  commentId: M:Microsoft.Xna.Framework.Game.ResetElapsedTime
+  id: ResetElapsedTime
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: ResetElapsedTime()
+  nameWithType: Game.ResetElapsedTime()
+  fullName: Microsoft.Xna.Framework.Game.ResetElapsedTime()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ResetElapsedTime
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 327
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void ResetElapsedTime()
+    content.vb: Public Sub ResetElapsedTime
+  overload: Microsoft.Xna.Framework.Game.ResetElapsedTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.SuppressDraw
+  commentId: M:Microsoft.Xna.Framework.Game.SuppressDraw
+  id: SuppressDraw
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: SuppressDraw()
+  nameWithType: Game.SuppressDraw()
+  fullName: Microsoft.Xna.Framework.Game.SuppressDraw()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SuppressDraw
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 337
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void SuppressDraw()
+    content.vb: Public Sub SuppressDraw
+  overload: Microsoft.Xna.Framework.Game.SuppressDraw*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.RunOneFrame
+  commentId: M:Microsoft.Xna.Framework.Game.RunOneFrame
+  id: RunOneFrame
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: RunOneFrame()
+  nameWithType: Game.RunOneFrame()
+  fullName: Microsoft.Xna.Framework.Game.RunOneFrame()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RunOneFrame
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 342
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void RunOneFrame()
+    content.vb: Public Sub RunOneFrame
+  overload: Microsoft.Xna.Framework.Game.RunOneFrame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Run
+  commentId: M:Microsoft.Xna.Framework.Game.Run
+  id: Run
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: Game.Run()
+  fullName: Microsoft.Xna.Framework.Game.Run()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Run
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 366
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Run()
+    content.vb: Public Sub Run
+  overload: Microsoft.Xna.Framework.Game.Run*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Run(Microsoft.Xna.Framework.GameRunBehavior)
+  commentId: M:Microsoft.Xna.Framework.Game.Run(Microsoft.Xna.Framework.GameRunBehavior)
+  id: Run(Microsoft.Xna.Framework.GameRunBehavior)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Run(GameRunBehavior)
+  nameWithType: Game.Run(GameRunBehavior)
+  fullName: Microsoft.Xna.Framework.Game.Run(Microsoft.Xna.Framework.GameRunBehavior)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Run
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 371
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Run(GameRunBehavior runBehavior)
+    parameters:
+    - id: runBehavior
+      type: Microsoft.Xna.Framework.GameRunBehavior
+    content.vb: Public Sub Run(runBehavior As GameRunBehavior)
+  overload: Microsoft.Xna.Framework.Game.Run*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.Tick
+  commentId: M:Microsoft.Xna.Framework.Game.Tick
+  id: Tick
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: Game.Tick()
+  fullName: Microsoft.Xna.Framework.Game.Tick()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Tick
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 414
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Tick()
+    content.vb: Public Sub Tick
+  overload: Microsoft.Xna.Framework.Game.Tick*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Game.BeginDraw
+  commentId: M:Microsoft.Xna.Framework.Game.BeginDraw
+  id: BeginDraw
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: BeginDraw()
+  nameWithType: Game.BeginDraw()
+  fullName: Microsoft.Xna.Framework.Game.BeginDraw()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BeginDraw
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 514
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual bool BeginDraw()
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function BeginDraw As Boolean
+  overload: Microsoft.Xna.Framework.Game.BeginDraw*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.EndDraw
+  commentId: M:Microsoft.Xna.Framework.Game.EndDraw
+  id: EndDraw
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: EndDraw()
+  nameWithType: Game.EndDraw()
+  fullName: Microsoft.Xna.Framework.Game.EndDraw()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: EndDraw
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 515
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void EndDraw()
+    content.vb: Protected Overridable Sub
+  overload: Microsoft.Xna.Framework.Game.EndDraw*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.BeginRun
+  commentId: M:Microsoft.Xna.Framework.Game.BeginRun
+  id: BeginRun
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: BeginRun()
+  nameWithType: Game.BeginRun()
+  fullName: Microsoft.Xna.Framework.Game.BeginRun()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BeginRun
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 520
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void BeginRun()
+    content.vb: Protected Overridable Sub BeginRun
+  overload: Microsoft.Xna.Framework.Game.BeginRun*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.EndRun
+  commentId: M:Microsoft.Xna.Framework.Game.EndRun
+  id: EndRun
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: EndRun()
+  nameWithType: Game.EndRun()
+  fullName: Microsoft.Xna.Framework.Game.EndRun()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: EndRun
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 521
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void EndRun()
+    content.vb: Protected Overridable Sub
+  overload: Microsoft.Xna.Framework.Game.EndRun*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.LoadContent
+  commentId: M:Microsoft.Xna.Framework.Game.LoadContent
+  id: LoadContent
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: LoadContent()
+  nameWithType: Game.LoadContent()
+  fullName: Microsoft.Xna.Framework.Game.LoadContent()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LoadContent
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 523
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void LoadContent()
+    content.vb: Protected Overridable Sub LoadContent
+  overload: Microsoft.Xna.Framework.Game.LoadContent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.UnloadContent
+  commentId: M:Microsoft.Xna.Framework.Game.UnloadContent
+  id: UnloadContent
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: UnloadContent()
+  nameWithType: Game.UnloadContent()
+  fullName: Microsoft.Xna.Framework.Game.UnloadContent()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: UnloadContent
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 524
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void UnloadContent()
+    content.vb: Protected Overridable Sub UnloadContent
+  overload: Microsoft.Xna.Framework.Game.UnloadContent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.Initialize
+  commentId: M:Microsoft.Xna.Framework.Game.Initialize
+  id: Initialize
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Game.Initialize()
+  fullName: Microsoft.Xna.Framework.Game.Initialize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Initialize
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 526
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void Initialize()
+    content.vb: Protected Overridable Sub Initialize
+  overload: Microsoft.Xna.Framework.Game.Initialize*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.Draw(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Microsoft.Xna.Framework.Game.Draw(Microsoft.Xna.Framework.GameTime)
+  id: Draw(Microsoft.Xna.Framework.GameTime)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Draw(GameTime)
+  nameWithType: Game.Draw(GameTime)
+  fullName: Microsoft.Xna.Framework.Game.Draw(Microsoft.Xna.Framework.GameTime)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Draw
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 553
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void Draw(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: Microsoft.Xna.Framework.GameTime
+    content.vb: Protected Overridable Sub Draw(gameTime As GameTime)
+  overload: Microsoft.Xna.Framework.Game.Draw*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.Update(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Microsoft.Xna.Framework.Game.Update(Microsoft.Xna.Framework.GameTime)
+  id: Update(Microsoft.Xna.Framework.GameTime)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: Update(GameTime)
+  nameWithType: Game.Update(GameTime)
+  fullName: Microsoft.Xna.Framework.Game.Update(Microsoft.Xna.Framework.GameTime)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Update
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 562
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void Update(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: Microsoft.Xna.Framework.GameTime
+    content.vb: Protected Overridable Sub Update(gameTime As GameTime)
+  overload: Microsoft.Xna.Framework.Game.Update*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.OnExiting(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.Game.OnExiting(System.Object,System.EventArgs)
+  id: OnExiting(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: OnExiting(Object, EventArgs)
+  nameWithType: Game.OnExiting(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.Game.OnExiting(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OnExiting
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 567
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void OnExiting(object sender, EventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: System.EventArgs
+    content.vb: Protected Overridable Sub OnExiting(sender As Object, args As EventArgs)
+  overload: Microsoft.Xna.Framework.Game.OnExiting*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.OnActivated(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.Game.OnActivated(System.Object,System.EventArgs)
+  id: OnActivated(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: OnActivated(Object, EventArgs)
+  nameWithType: Game.OnActivated(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.Game.OnActivated(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OnActivated
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 572
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void OnActivated(object sender, EventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: System.EventArgs
+    content.vb: Protected Overridable Sub OnActivated(sender As Object, args As EventArgs)
+  overload: Microsoft.Xna.Framework.Game.OnActivated*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Game.OnDeactivated(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.Game.OnDeactivated(System.Object,System.EventArgs)
+  id: OnDeactivated(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.Game
+  langs:
+  - csharp
+  - vb
+  name: OnDeactivated(Object, EventArgs)
+  nameWithType: Game.OnDeactivated(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.Game.OnDeactivated(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Game.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OnDeactivated
+    path: ../MonoGame.Framework/Game.cs
+    startLine: 578
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void OnDeactivated(object sender, EventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: System.EventArgs
+    content.vb: Protected Overridable Sub OnDeactivated(sender As Object, args As EventArgs)
+  overload: Microsoft.Xna.Framework.Game.OnDeactivated*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Game.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Game.#ctor
+  isExternal: false
+  name: Game
+  nameWithType: Game.Game
+  fullName: Microsoft.Xna.Framework.Game.Game
+- uid: Microsoft.Xna.Framework.Game.Finalize*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Finalize
+  isExternal: false
+  name: Finalize
+  nameWithType: Game.Finalize
+  fullName: Microsoft.Xna.Framework.Game.Finalize
+- uid: Microsoft.Xna.Framework.Game.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: Game.Dispose
+  fullName: Microsoft.Xna.Framework.Game.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Game.LaunchParameters*
+  commentId: Overload:Microsoft.Xna.Framework.Game.LaunchParameters
+  isExternal: false
+  name: LaunchParameters
+  nameWithType: Game.LaunchParameters
+  fullName: Microsoft.Xna.Framework.Game.LaunchParameters
+- uid: Microsoft.Xna.Framework.LaunchParameters
+  commentId: T:Microsoft.Xna.Framework.LaunchParameters
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: LaunchParameters
+  nameWithType: LaunchParameters
+  fullName: Microsoft.Xna.Framework.LaunchParameters
+- uid: Microsoft.Xna.Framework.Game.Components*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Components
+  isExternal: false
+  name: Components
+  nameWithType: Game.Components
+  fullName: Microsoft.Xna.Framework.Game.Components
+- uid: Microsoft.Xna.Framework.GameComponentCollection
+  commentId: T:Microsoft.Xna.Framework.GameComponentCollection
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameComponentCollection
+  nameWithType: GameComponentCollection
+  fullName: Microsoft.Xna.Framework.GameComponentCollection
+- uid: Microsoft.Xna.Framework.Game.InactiveSleepTime*
+  commentId: Overload:Microsoft.Xna.Framework.Game.InactiveSleepTime
+  isExternal: false
+  name: InactiveSleepTime
+  nameWithType: Game.InactiveSleepTime
+  fullName: Microsoft.Xna.Framework.Game.InactiveSleepTime
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.Xna.Framework.Game.MaxElapsedTime*
+  commentId: Overload:Microsoft.Xna.Framework.Game.MaxElapsedTime
+  isExternal: false
+  name: MaxElapsedTime
+  nameWithType: Game.MaxElapsedTime
+  fullName: Microsoft.Xna.Framework.Game.MaxElapsedTime
+- uid: Microsoft.Xna.Framework.Game.IsActive*
+  commentId: Overload:Microsoft.Xna.Framework.Game.IsActive
+  isExternal: false
+  name: IsActive
+  nameWithType: Game.IsActive
+  fullName: Microsoft.Xna.Framework.Game.IsActive
+- uid: Microsoft.Xna.Framework.Game.IsMouseVisible*
+  commentId: Overload:Microsoft.Xna.Framework.Game.IsMouseVisible
+  isExternal: false
+  name: IsMouseVisible
+  nameWithType: Game.IsMouseVisible
+  fullName: Microsoft.Xna.Framework.Game.IsMouseVisible
+- uid: Microsoft.Xna.Framework.Game.TargetElapsedTime*
+  commentId: Overload:Microsoft.Xna.Framework.Game.TargetElapsedTime
+  isExternal: false
+  name: TargetElapsedTime
+  nameWithType: Game.TargetElapsedTime
+  fullName: Microsoft.Xna.Framework.Game.TargetElapsedTime
+- uid: Microsoft.Xna.Framework.Game.IsFixedTimeStep*
+  commentId: Overload:Microsoft.Xna.Framework.Game.IsFixedTimeStep
+  isExternal: false
+  name: IsFixedTimeStep
+  nameWithType: Game.IsFixedTimeStep
+  fullName: Microsoft.Xna.Framework.Game.IsFixedTimeStep
+- uid: Microsoft.Xna.Framework.Game.Services*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Services
+  isExternal: false
+  name: Services
+  nameWithType: Game.Services
+  fullName: Microsoft.Xna.Framework.Game.Services
+- uid: Microsoft.Xna.Framework.GameServiceContainer
+  commentId: T:Microsoft.Xna.Framework.GameServiceContainer
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameServiceContainer
+  nameWithType: GameServiceContainer
+  fullName: Microsoft.Xna.Framework.GameServiceContainer
+- uid: Microsoft.Xna.Framework.Game.Content*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Content
+  isExternal: false
+  name: Content
+  nameWithType: Game.Content
+  fullName: Microsoft.Xna.Framework.Game.Content
+- uid: Microsoft.Xna.Framework.Content.ContentManager
+  commentId: T:Microsoft.Xna.Framework.Content.ContentManager
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentManager
+  nameWithType: ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentManager
+- uid: Microsoft.Xna.Framework.Content
+  commentId: N:Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: Microsoft.Xna.Framework.Content
+  nameWithType: Microsoft.Xna.Framework.Content
+  fullName: Microsoft.Xna.Framework.Content
+- uid: Microsoft.Xna.Framework.Game.GraphicsDevice*
+  commentId: Overload:Microsoft.Xna.Framework.Game.GraphicsDevice
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: Game.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Game.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Game.Window*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Window
+  isExternal: false
+  name: Window
+  nameWithType: Game.Window
+  fullName: Microsoft.Xna.Framework.Game.Window
+- uid: Microsoft.Xna.Framework.GameWindow
+  commentId: T:Microsoft.Xna.Framework.GameWindow
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameWindow
+  nameWithType: GameWindow
+  fullName: Microsoft.Xna.Framework.GameWindow
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Game.Exit*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Exit
+  isExternal: false
+  name: Exit
+  nameWithType: Game.Exit
+  fullName: Microsoft.Xna.Framework.Game.Exit
+- uid: Microsoft.Xna.Framework.Game.ResetElapsedTime*
+  commentId: Overload:Microsoft.Xna.Framework.Game.ResetElapsedTime
+  isExternal: false
+  name: ResetElapsedTime
+  nameWithType: Game.ResetElapsedTime
+  fullName: Microsoft.Xna.Framework.Game.ResetElapsedTime
+- uid: Microsoft.Xna.Framework.Game.SuppressDraw*
+  commentId: Overload:Microsoft.Xna.Framework.Game.SuppressDraw
+  isExternal: false
+  name: SuppressDraw
+  nameWithType: Game.SuppressDraw
+  fullName: Microsoft.Xna.Framework.Game.SuppressDraw
+- uid: Microsoft.Xna.Framework.Game.RunOneFrame*
+  commentId: Overload:Microsoft.Xna.Framework.Game.RunOneFrame
+  isExternal: false
+  name: RunOneFrame
+  nameWithType: Game.RunOneFrame
+  fullName: Microsoft.Xna.Framework.Game.RunOneFrame
+- uid: Microsoft.Xna.Framework.Game.Run*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Run
+  isExternal: false
+  name: Run
+  nameWithType: Game.Run
+  fullName: Microsoft.Xna.Framework.Game.Run
+- uid: Microsoft.Xna.Framework.GameRunBehavior
+  commentId: T:Microsoft.Xna.Framework.GameRunBehavior
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameRunBehavior
+  nameWithType: GameRunBehavior
+  fullName: Microsoft.Xna.Framework.GameRunBehavior
+- uid: Microsoft.Xna.Framework.Game.Tick*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Tick
+  isExternal: false
+  name: Tick
+  nameWithType: Game.Tick
+  fullName: Microsoft.Xna.Framework.Game.Tick
+- uid: Microsoft.Xna.Framework.Game.BeginDraw*
+  commentId: Overload:Microsoft.Xna.Framework.Game.BeginDraw
+  isExternal: false
+  name: BeginDraw
+  nameWithType: Game.BeginDraw
+  fullName: Microsoft.Xna.Framework.Game.BeginDraw
+- uid: Microsoft.Xna.Framework.Game.EndDraw*
+  commentId: Overload:Microsoft.Xna.Framework.Game.EndDraw
+  isExternal: false
+  name: EndDraw
+  nameWithType: Game.EndDraw
+  fullName: Microsoft.Xna.Framework.Game.EndDraw
+- uid: Microsoft.Xna.Framework.Game.BeginRun*
+  commentId: Overload:Microsoft.Xna.Framework.Game.BeginRun
+  isExternal: false
+  name: BeginRun
+  nameWithType: Game.BeginRun
+  fullName: Microsoft.Xna.Framework.Game.BeginRun
+- uid: Microsoft.Xna.Framework.Game.EndRun*
+  commentId: Overload:Microsoft.Xna.Framework.Game.EndRun
+  isExternal: false
+  name: EndRun
+  nameWithType: Game.EndRun
+  fullName: Microsoft.Xna.Framework.Game.EndRun
+- uid: Microsoft.Xna.Framework.Game.LoadContent*
+  commentId: Overload:Microsoft.Xna.Framework.Game.LoadContent
+  isExternal: false
+  name: LoadContent
+  nameWithType: Game.LoadContent
+  fullName: Microsoft.Xna.Framework.Game.LoadContent
+- uid: Microsoft.Xna.Framework.Game.UnloadContent*
+  commentId: Overload:Microsoft.Xna.Framework.Game.UnloadContent
+  isExternal: false
+  name: UnloadContent
+  nameWithType: Game.UnloadContent
+  fullName: Microsoft.Xna.Framework.Game.UnloadContent
+- uid: Microsoft.Xna.Framework.Game.Initialize*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: Game.Initialize
+  fullName: Microsoft.Xna.Framework.Game.Initialize
+- uid: Microsoft.Xna.Framework.Game.Draw*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Draw
+  isExternal: false
+  name: Draw
+  nameWithType: Game.Draw
+  fullName: Microsoft.Xna.Framework.Game.Draw
+- uid: Microsoft.Xna.Framework.GameTime
+  commentId: T:Microsoft.Xna.Framework.GameTime
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Microsoft.Xna.Framework.GameTime
+- uid: Microsoft.Xna.Framework.Game.Update*
+  commentId: Overload:Microsoft.Xna.Framework.Game.Update
+  isExternal: false
+  name: Update
+  nameWithType: Game.Update
+  fullName: Microsoft.Xna.Framework.Game.Update
+- uid: Microsoft.Xna.Framework.Game.OnExiting*
+  commentId: Overload:Microsoft.Xna.Framework.Game.OnExiting
+  isExternal: false
+  name: OnExiting
+  nameWithType: Game.OnExiting
+  fullName: Microsoft.Xna.Framework.Game.OnExiting
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: Microsoft.Xna.Framework.Game.OnActivated*
+  commentId: Overload:Microsoft.Xna.Framework.Game.OnActivated
+  isExternal: false
+  name: OnActivated
+  nameWithType: Game.OnActivated
+  fullName: Microsoft.Xna.Framework.Game.OnActivated
+- uid: Microsoft.Xna.Framework.Game.OnDeactivated*
+  commentId: Overload:Microsoft.Xna.Framework.Game.OnDeactivated
+  isExternal: false
+  name: OnDeactivated
+  nameWithType: Game.OnDeactivated
+  fullName: Microsoft.Xna.Framework.Game.OnDeactivated

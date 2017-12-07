@@ -1,0 +1,5650 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.Keys
+  commentId: T:Microsoft.Xna.Framework.Input.Keys
+  id: Keys
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.Keys.A
+  - Microsoft.Xna.Framework.Input.Keys.Add
+  - Microsoft.Xna.Framework.Input.Keys.Apps
+  - Microsoft.Xna.Framework.Input.Keys.Attn
+  - Microsoft.Xna.Framework.Input.Keys.B
+  - Microsoft.Xna.Framework.Input.Keys.Back
+  - Microsoft.Xna.Framework.Input.Keys.BrowserBack
+  - Microsoft.Xna.Framework.Input.Keys.BrowserFavorites
+  - Microsoft.Xna.Framework.Input.Keys.BrowserForward
+  - Microsoft.Xna.Framework.Input.Keys.BrowserHome
+  - Microsoft.Xna.Framework.Input.Keys.BrowserRefresh
+  - Microsoft.Xna.Framework.Input.Keys.BrowserSearch
+  - Microsoft.Xna.Framework.Input.Keys.BrowserStop
+  - Microsoft.Xna.Framework.Input.Keys.C
+  - Microsoft.Xna.Framework.Input.Keys.CapsLock
+  - Microsoft.Xna.Framework.Input.Keys.ChatPadGreen
+  - Microsoft.Xna.Framework.Input.Keys.ChatPadOrange
+  - Microsoft.Xna.Framework.Input.Keys.Crsel
+  - Microsoft.Xna.Framework.Input.Keys.D
+  - Microsoft.Xna.Framework.Input.Keys.D0
+  - Microsoft.Xna.Framework.Input.Keys.D1
+  - Microsoft.Xna.Framework.Input.Keys.D2
+  - Microsoft.Xna.Framework.Input.Keys.D3
+  - Microsoft.Xna.Framework.Input.Keys.D4
+  - Microsoft.Xna.Framework.Input.Keys.D5
+  - Microsoft.Xna.Framework.Input.Keys.D6
+  - Microsoft.Xna.Framework.Input.Keys.D7
+  - Microsoft.Xna.Framework.Input.Keys.D8
+  - Microsoft.Xna.Framework.Input.Keys.D9
+  - Microsoft.Xna.Framework.Input.Keys.Decimal
+  - Microsoft.Xna.Framework.Input.Keys.Delete
+  - Microsoft.Xna.Framework.Input.Keys.Divide
+  - Microsoft.Xna.Framework.Input.Keys.Down
+  - Microsoft.Xna.Framework.Input.Keys.E
+  - Microsoft.Xna.Framework.Input.Keys.End
+  - Microsoft.Xna.Framework.Input.Keys.Enter
+  - Microsoft.Xna.Framework.Input.Keys.EraseEof
+  - Microsoft.Xna.Framework.Input.Keys.Escape
+  - Microsoft.Xna.Framework.Input.Keys.Execute
+  - Microsoft.Xna.Framework.Input.Keys.Exsel
+  - Microsoft.Xna.Framework.Input.Keys.F
+  - Microsoft.Xna.Framework.Input.Keys.F1
+  - Microsoft.Xna.Framework.Input.Keys.F10
+  - Microsoft.Xna.Framework.Input.Keys.F11
+  - Microsoft.Xna.Framework.Input.Keys.F12
+  - Microsoft.Xna.Framework.Input.Keys.F13
+  - Microsoft.Xna.Framework.Input.Keys.F14
+  - Microsoft.Xna.Framework.Input.Keys.F15
+  - Microsoft.Xna.Framework.Input.Keys.F16
+  - Microsoft.Xna.Framework.Input.Keys.F17
+  - Microsoft.Xna.Framework.Input.Keys.F18
+  - Microsoft.Xna.Framework.Input.Keys.F19
+  - Microsoft.Xna.Framework.Input.Keys.F2
+  - Microsoft.Xna.Framework.Input.Keys.F20
+  - Microsoft.Xna.Framework.Input.Keys.F21
+  - Microsoft.Xna.Framework.Input.Keys.F22
+  - Microsoft.Xna.Framework.Input.Keys.F23
+  - Microsoft.Xna.Framework.Input.Keys.F24
+  - Microsoft.Xna.Framework.Input.Keys.F3
+  - Microsoft.Xna.Framework.Input.Keys.F4
+  - Microsoft.Xna.Framework.Input.Keys.F5
+  - Microsoft.Xna.Framework.Input.Keys.F6
+  - Microsoft.Xna.Framework.Input.Keys.F7
+  - Microsoft.Xna.Framework.Input.Keys.F8
+  - Microsoft.Xna.Framework.Input.Keys.F9
+  - Microsoft.Xna.Framework.Input.Keys.G
+  - Microsoft.Xna.Framework.Input.Keys.H
+  - Microsoft.Xna.Framework.Input.Keys.Help
+  - Microsoft.Xna.Framework.Input.Keys.Home
+  - Microsoft.Xna.Framework.Input.Keys.I
+  - Microsoft.Xna.Framework.Input.Keys.ImeConvert
+  - Microsoft.Xna.Framework.Input.Keys.ImeNoConvert
+  - Microsoft.Xna.Framework.Input.Keys.Insert
+  - Microsoft.Xna.Framework.Input.Keys.J
+  - Microsoft.Xna.Framework.Input.Keys.K
+  - Microsoft.Xna.Framework.Input.Keys.Kana
+  - Microsoft.Xna.Framework.Input.Keys.Kanji
+  - Microsoft.Xna.Framework.Input.Keys.L
+  - Microsoft.Xna.Framework.Input.Keys.LaunchApplication1
+  - Microsoft.Xna.Framework.Input.Keys.LaunchApplication2
+  - Microsoft.Xna.Framework.Input.Keys.LaunchMail
+  - Microsoft.Xna.Framework.Input.Keys.Left
+  - Microsoft.Xna.Framework.Input.Keys.LeftAlt
+  - Microsoft.Xna.Framework.Input.Keys.LeftControl
+  - Microsoft.Xna.Framework.Input.Keys.LeftShift
+  - Microsoft.Xna.Framework.Input.Keys.LeftWindows
+  - Microsoft.Xna.Framework.Input.Keys.M
+  - Microsoft.Xna.Framework.Input.Keys.MediaNextTrack
+  - Microsoft.Xna.Framework.Input.Keys.MediaPlayPause
+  - Microsoft.Xna.Framework.Input.Keys.MediaPreviousTrack
+  - Microsoft.Xna.Framework.Input.Keys.MediaStop
+  - Microsoft.Xna.Framework.Input.Keys.Multiply
+  - Microsoft.Xna.Framework.Input.Keys.N
+  - Microsoft.Xna.Framework.Input.Keys.None
+  - Microsoft.Xna.Framework.Input.Keys.NumLock
+  - Microsoft.Xna.Framework.Input.Keys.NumPad0
+  - Microsoft.Xna.Framework.Input.Keys.NumPad1
+  - Microsoft.Xna.Framework.Input.Keys.NumPad2
+  - Microsoft.Xna.Framework.Input.Keys.NumPad3
+  - Microsoft.Xna.Framework.Input.Keys.NumPad4
+  - Microsoft.Xna.Framework.Input.Keys.NumPad5
+  - Microsoft.Xna.Framework.Input.Keys.NumPad6
+  - Microsoft.Xna.Framework.Input.Keys.NumPad7
+  - Microsoft.Xna.Framework.Input.Keys.NumPad8
+  - Microsoft.Xna.Framework.Input.Keys.NumPad9
+  - Microsoft.Xna.Framework.Input.Keys.O
+  - Microsoft.Xna.Framework.Input.Keys.Oem8
+  - Microsoft.Xna.Framework.Input.Keys.OemAuto
+  - Microsoft.Xna.Framework.Input.Keys.OemBackslash
+  - Microsoft.Xna.Framework.Input.Keys.OemClear
+  - Microsoft.Xna.Framework.Input.Keys.OemCloseBrackets
+  - Microsoft.Xna.Framework.Input.Keys.OemComma
+  - Microsoft.Xna.Framework.Input.Keys.OemCopy
+  - Microsoft.Xna.Framework.Input.Keys.OemEnlW
+  - Microsoft.Xna.Framework.Input.Keys.OemMinus
+  - Microsoft.Xna.Framework.Input.Keys.OemOpenBrackets
+  - Microsoft.Xna.Framework.Input.Keys.OemPeriod
+  - Microsoft.Xna.Framework.Input.Keys.OemPipe
+  - Microsoft.Xna.Framework.Input.Keys.OemPlus
+  - Microsoft.Xna.Framework.Input.Keys.OemQuestion
+  - Microsoft.Xna.Framework.Input.Keys.OemQuotes
+  - Microsoft.Xna.Framework.Input.Keys.OemSemicolon
+  - Microsoft.Xna.Framework.Input.Keys.OemTilde
+  - Microsoft.Xna.Framework.Input.Keys.P
+  - Microsoft.Xna.Framework.Input.Keys.Pa1
+  - Microsoft.Xna.Framework.Input.Keys.PageDown
+  - Microsoft.Xna.Framework.Input.Keys.PageUp
+  - Microsoft.Xna.Framework.Input.Keys.Pause
+  - Microsoft.Xna.Framework.Input.Keys.Play
+  - Microsoft.Xna.Framework.Input.Keys.Print
+  - Microsoft.Xna.Framework.Input.Keys.PrintScreen
+  - Microsoft.Xna.Framework.Input.Keys.ProcessKey
+  - Microsoft.Xna.Framework.Input.Keys.Q
+  - Microsoft.Xna.Framework.Input.Keys.R
+  - Microsoft.Xna.Framework.Input.Keys.Right
+  - Microsoft.Xna.Framework.Input.Keys.RightAlt
+  - Microsoft.Xna.Framework.Input.Keys.RightControl
+  - Microsoft.Xna.Framework.Input.Keys.RightShift
+  - Microsoft.Xna.Framework.Input.Keys.RightWindows
+  - Microsoft.Xna.Framework.Input.Keys.S
+  - Microsoft.Xna.Framework.Input.Keys.Scroll
+  - Microsoft.Xna.Framework.Input.Keys.Select
+  - Microsoft.Xna.Framework.Input.Keys.SelectMedia
+  - Microsoft.Xna.Framework.Input.Keys.Separator
+  - Microsoft.Xna.Framework.Input.Keys.Sleep
+  - Microsoft.Xna.Framework.Input.Keys.Space
+  - Microsoft.Xna.Framework.Input.Keys.Subtract
+  - Microsoft.Xna.Framework.Input.Keys.T
+  - Microsoft.Xna.Framework.Input.Keys.Tab
+  - Microsoft.Xna.Framework.Input.Keys.U
+  - Microsoft.Xna.Framework.Input.Keys.Up
+  - Microsoft.Xna.Framework.Input.Keys.V
+  - Microsoft.Xna.Framework.Input.Keys.VolumeDown
+  - Microsoft.Xna.Framework.Input.Keys.VolumeMute
+  - Microsoft.Xna.Framework.Input.Keys.VolumeUp
+  - Microsoft.Xna.Framework.Input.Keys.W
+  - Microsoft.Xna.Framework.Input.Keys.X
+  - Microsoft.Xna.Framework.Input.Keys.Y
+  - Microsoft.Xna.Framework.Input.Keys.Z
+  - Microsoft.Xna.Framework.Input.Keys.Zoom
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: Keys
+  fullName: Microsoft.Xna.Framework.Input.Keys
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Keys
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDefines the keys on a keyboard.\n"
+  example: []
+  syntax:
+    content: public enum Keys
+    content.vb: Public Enum Keys
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Input.Keys.None
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.None
+  id: None
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Keys.None
+  fullName: Microsoft.Xna.Framework.Input.Keys.None
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: None
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReserved.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Back
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Back
+  id: Back
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: Keys.Back
+  fullName: Microsoft.Xna.Framework.Input.Keys.Back
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Back
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBACKSPACE key.\n"
+  example: []
+  syntax:
+    content: Back = 8
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Tab
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Tab
+  id: Tab
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Tab
+  nameWithType: Keys.Tab
+  fullName: Microsoft.Xna.Framework.Input.Keys.Tab
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Tab
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nTAB key.\n"
+  example: []
+  syntax:
+    content: Tab = 9
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Enter
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Enter
+  id: Enter
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Enter
+  nameWithType: Keys.Enter
+  fullName: Microsoft.Xna.Framework.Input.Keys.Enter
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Enter
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nENTER key.\n"
+  example: []
+  syntax:
+    content: Enter = 13
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.CapsLock
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.CapsLock
+  id: CapsLock
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: CapsLock
+  nameWithType: Keys.CapsLock
+  fullName: Microsoft.Xna.Framework.Input.Keys.CapsLock
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CapsLock
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCAPS LOCK key.\n"
+  example: []
+  syntax:
+    content: CapsLock = 20
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Escape
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Escape
+  id: Escape
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Escape
+  nameWithType: Keys.Escape
+  fullName: Microsoft.Xna.Framework.Input.Keys.Escape
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Escape
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 34
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nESC key.\n"
+  example: []
+  syntax:
+    content: Escape = 27
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Space
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Space
+  id: Space
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: Keys.Space
+  fullName: Microsoft.Xna.Framework.Input.Keys.Space
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Space
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSPACEBAR key.\n"
+  example: []
+  syntax:
+    content: Space = 32
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.PageUp
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.PageUp
+  id: PageUp
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: PageUp
+  nameWithType: Keys.PageUp
+  fullName: Microsoft.Xna.Framework.Input.Keys.PageUp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PageUp
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 42
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPAGE UP key.\n"
+  example: []
+  syntax:
+    content: PageUp = 33
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.PageDown
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.PageDown
+  id: PageDown
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: PageDown
+  nameWithType: Keys.PageDown
+  fullName: Microsoft.Xna.Framework.Input.Keys.PageDown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PageDown
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 46
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPAGE DOWN key.\n"
+  example: []
+  syntax:
+    content: PageDown = 34
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.End
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.End
+  id: End
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: Keys.End
+  fullName: Microsoft.Xna.Framework.Input.Keys.End
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: End
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 50
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nEND key.\n"
+  example: []
+  syntax:
+    content: End = 35
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Home
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Home
+  id: Home
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Home
+  nameWithType: Keys.Home
+  fullName: Microsoft.Xna.Framework.Input.Keys.Home
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Home
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 54
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nHOME key.\n"
+  example: []
+  syntax:
+    content: Home = 36
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Left
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Left
+  id: Left
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: Keys.Left
+  fullName: Microsoft.Xna.Framework.Input.Keys.Left
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Left
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLEFT ARROW key.\n"
+  example: []
+  syntax:
+    content: Left = 37
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Up
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Up
+  id: Up
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: Keys.Up
+  fullName: Microsoft.Xna.Framework.Input.Keys.Up
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Up
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUP ARROW key.\n"
+  example: []
+  syntax:
+    content: Up = 38
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Right
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Right
+  id: Right
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Keys.Right
+  fullName: Microsoft.Xna.Framework.Input.Keys.Right
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Right
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRIGHT ARROW key.\n"
+  example: []
+  syntax:
+    content: Right = 39
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Down
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Down
+  id: Down
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: Keys.Down
+  fullName: Microsoft.Xna.Framework.Input.Keys.Down
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Down
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 70
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDOWN ARROW key.\n"
+  example: []
+  syntax:
+    content: Down = 40
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Select
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Select
+  id: Select
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Select
+  nameWithType: Keys.Select
+  fullName: Microsoft.Xna.Framework.Input.Keys.Select
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Select
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 74
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSELECT key.\n"
+  example: []
+  syntax:
+    content: Select = 41
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Print
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Print
+  id: Print
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Print
+  nameWithType: Keys.Print
+  fullName: Microsoft.Xna.Framework.Input.Keys.Print
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Print
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 78
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPRINT key.\n"
+  example: []
+  syntax:
+    content: Print = 42
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Execute
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Execute
+  id: Execute
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Execute
+  nameWithType: Keys.Execute
+  fullName: Microsoft.Xna.Framework.Input.Keys.Execute
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Execute
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 82
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nEXECUTE key.\n"
+  example: []
+  syntax:
+    content: Execute = 43
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.PrintScreen
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.PrintScreen
+  id: PrintScreen
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: PrintScreen
+  nameWithType: Keys.PrintScreen
+  fullName: Microsoft.Xna.Framework.Input.Keys.PrintScreen
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PrintScreen
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 86
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPRINT SCREEN key.\n"
+  example: []
+  syntax:
+    content: PrintScreen = 44
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Insert
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Insert
+  id: Insert
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Insert
+  nameWithType: Keys.Insert
+  fullName: Microsoft.Xna.Framework.Input.Keys.Insert
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Insert
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 90
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nINS key.\n"
+  example: []
+  syntax:
+    content: Insert = 45
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Delete
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Delete
+  id: Delete
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: Keys.Delete
+  fullName: Microsoft.Xna.Framework.Input.Keys.Delete
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Delete
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 94
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDEL key.\n"
+  example: []
+  syntax:
+    content: Delete = 46
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Help
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Help
+  id: Help
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Help
+  nameWithType: Keys.Help
+  fullName: Microsoft.Xna.Framework.Input.Keys.Help
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Help
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 98
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nHELP key.\n"
+  example: []
+  syntax:
+    content: Help = 47
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D0
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D0
+  id: D0
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D0
+  nameWithType: Keys.D0
+  fullName: Microsoft.Xna.Framework.Input.Keys.D0
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D0
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 102
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D0 = 48
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D1
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D1
+  id: D1
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D1
+  nameWithType: Keys.D1
+  fullName: Microsoft.Xna.Framework.Input.Keys.D1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D1
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 106
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D1 = 49
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D2
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D2
+  id: D2
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D2
+  nameWithType: Keys.D2
+  fullName: Microsoft.Xna.Framework.Input.Keys.D2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D2
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 110
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D2 = 50
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D3
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D3
+  id: D3
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D3
+  nameWithType: Keys.D3
+  fullName: Microsoft.Xna.Framework.Input.Keys.D3
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D3
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 114
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D3 = 51
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D4
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D4
+  id: D4
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D4
+  nameWithType: Keys.D4
+  fullName: Microsoft.Xna.Framework.Input.Keys.D4
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D4
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 118
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D4 = 52
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D5
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D5
+  id: D5
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D5
+  nameWithType: Keys.D5
+  fullName: Microsoft.Xna.Framework.Input.Keys.D5
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D5
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 122
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D5 = 53
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D6
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D6
+  id: D6
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D6
+  nameWithType: Keys.D6
+  fullName: Microsoft.Xna.Framework.Input.Keys.D6
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D6
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 126
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D6 = 54
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D7
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D7
+  id: D7
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D7
+  nameWithType: Keys.D7
+  fullName: Microsoft.Xna.Framework.Input.Keys.D7
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D7
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 130
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D7 = 55
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D8
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D8
+  id: D8
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D8
+  nameWithType: Keys.D8
+  fullName: Microsoft.Xna.Framework.Input.Keys.D8
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D8
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 134
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D8 = 56
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D9
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D9
+  id: D9
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D9
+  nameWithType: Keys.D9
+  fullName: Microsoft.Xna.Framework.Input.Keys.D9
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D9
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 138
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: D9 = 57
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.A
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.A
+  id: A
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: Keys.A
+  fullName: Microsoft.Xna.Framework.Input.Keys.A
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: A
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 142
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nA key.\n"
+  example: []
+  syntax:
+    content: A = 65
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.B
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.B
+  id: B
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: Keys.B
+  fullName: Microsoft.Xna.Framework.Input.Keys.B
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: B
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 146
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nB key.\n"
+  example: []
+  syntax:
+    content: B = 66
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.C
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.C
+  id: C
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: C
+  nameWithType: Keys.C
+  fullName: Microsoft.Xna.Framework.Input.Keys.C
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: C
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 150
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nC key.\n"
+  example: []
+  syntax:
+    content: C = 67
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.D
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.D
+  id: D
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: D
+  nameWithType: Keys.D
+  fullName: Microsoft.Xna.Framework.Input.Keys.D
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 154
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nD key.\n"
+  example: []
+  syntax:
+    content: D = 68
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.E
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.E
+  id: E
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: E
+  nameWithType: Keys.E
+  fullName: Microsoft.Xna.Framework.Input.Keys.E
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: E
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 158
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nE key.\n"
+  example: []
+  syntax:
+    content: E = 69
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F
+  id: F
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F
+  nameWithType: Keys.F
+  fullName: Microsoft.Xna.Framework.Input.Keys.F
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 162
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF key.\n"
+  example: []
+  syntax:
+    content: F = 70
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.G
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.G
+  id: G
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: Keys.G
+  fullName: Microsoft.Xna.Framework.Input.Keys.G
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: G
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 166
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nG key.\n"
+  example: []
+  syntax:
+    content: G = 71
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.H
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.H
+  id: H
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: H
+  nameWithType: Keys.H
+  fullName: Microsoft.Xna.Framework.Input.Keys.H
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: H
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 170
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nH key.\n"
+  example: []
+  syntax:
+    content: H = 72
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.I
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.I
+  id: I
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: I
+  nameWithType: Keys.I
+  fullName: Microsoft.Xna.Framework.Input.Keys.I
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: I
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 174
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nI key.\n"
+  example: []
+  syntax:
+    content: I = 73
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.J
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.J
+  id: J
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: J
+  nameWithType: Keys.J
+  fullName: Microsoft.Xna.Framework.Input.Keys.J
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: J
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 178
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nJ key.\n"
+  example: []
+  syntax:
+    content: J = 74
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.K
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.K
+  id: K
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: K
+  nameWithType: Keys.K
+  fullName: Microsoft.Xna.Framework.Input.Keys.K
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: K
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 182
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nK key.\n"
+  example: []
+  syntax:
+    content: K = 75
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.L
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.L
+  id: L
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: L
+  nameWithType: Keys.L
+  fullName: Microsoft.Xna.Framework.Input.Keys.L
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: L
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 186
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nL key.\n"
+  example: []
+  syntax:
+    content: L = 76
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.M
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.M
+  id: M
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: M
+  nameWithType: Keys.M
+  fullName: Microsoft.Xna.Framework.Input.Keys.M
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: M
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 190
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nM key.\n"
+  example: []
+  syntax:
+    content: M = 77
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.N
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.N
+  id: N
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: Keys.N
+  fullName: Microsoft.Xna.Framework.Input.Keys.N
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: N
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 194
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nN key.\n"
+  example: []
+  syntax:
+    content: N = 78
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.O
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.O
+  id: O
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: O
+  nameWithType: Keys.O
+  fullName: Microsoft.Xna.Framework.Input.Keys.O
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: O
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 198
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nO key.\n"
+  example: []
+  syntax:
+    content: O = 79
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.P
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.P
+  id: P
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: P
+  nameWithType: Keys.P
+  fullName: Microsoft.Xna.Framework.Input.Keys.P
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: P
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 202
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nP key.\n"
+  example: []
+  syntax:
+    content: P = 80
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Q
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Q
+  id: Q
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Q
+  nameWithType: Keys.Q
+  fullName: Microsoft.Xna.Framework.Input.Keys.Q
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Q
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 206
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nQ key.\n"
+  example: []
+  syntax:
+    content: Q = 81
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.R
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.R
+  id: R
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: Keys.R
+  fullName: Microsoft.Xna.Framework.Input.Keys.R
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: R
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 210
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nR key.\n"
+  example: []
+  syntax:
+    content: R = 82
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.S
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.S
+  id: S
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: S
+  nameWithType: Keys.S
+  fullName: Microsoft.Xna.Framework.Input.Keys.S
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: S
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 214
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nS key.\n"
+  example: []
+  syntax:
+    content: S = 83
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.T
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.T
+  id: T
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: T
+  nameWithType: Keys.T
+  fullName: Microsoft.Xna.Framework.Input.Keys.T
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: T
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 218
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nT key.\n"
+  example: []
+  syntax:
+    content: T = 84
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.U
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.U
+  id: U
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: U
+  nameWithType: Keys.U
+  fullName: Microsoft.Xna.Framework.Input.Keys.U
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: U
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 222
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nU key.\n"
+  example: []
+  syntax:
+    content: U = 85
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.V
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.V
+  id: V
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: V
+  nameWithType: Keys.V
+  fullName: Microsoft.Xna.Framework.Input.Keys.V
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: V
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 226
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nV key.\n"
+  example: []
+  syntax:
+    content: V = 86
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.W
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.W
+  id: W
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: W
+  nameWithType: Keys.W
+  fullName: Microsoft.Xna.Framework.Input.Keys.W
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: W
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 230
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nW key.\n"
+  example: []
+  syntax:
+    content: W = 87
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.X
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.X
+  id: X
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Keys.X
+  fullName: Microsoft.Xna.Framework.Input.Keys.X
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: X
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 234
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nX key.\n"
+  example: []
+  syntax:
+    content: X = 88
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Y
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Y
+  id: Y
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Keys.Y
+  fullName: Microsoft.Xna.Framework.Input.Keys.Y
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Y
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 238
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nY key.\n"
+  example: []
+  syntax:
+    content: Y = 89
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Z
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Z
+  id: Z
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: Keys.Z
+  fullName: Microsoft.Xna.Framework.Input.Keys.Z
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Z
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 242
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nZ key.\n"
+  example: []
+  syntax:
+    content: Z = 90
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LeftWindows
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LeftWindows
+  id: LeftWindows
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LeftWindows
+  nameWithType: Keys.LeftWindows
+  fullName: Microsoft.Xna.Framework.Input.Keys.LeftWindows
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftWindows
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 246
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft Windows key.\n"
+  example: []
+  syntax:
+    content: LeftWindows = 91
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.RightWindows
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.RightWindows
+  id: RightWindows
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: RightWindows
+  nameWithType: Keys.RightWindows
+  fullName: Microsoft.Xna.Framework.Input.Keys.RightWindows
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightWindows
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 250
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight Windows key.\n"
+  example: []
+  syntax:
+    content: RightWindows = 92
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Apps
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Apps
+  id: Apps
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Apps
+  nameWithType: Keys.Apps
+  fullName: Microsoft.Xna.Framework.Input.Keys.Apps
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Apps
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 254
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nApplications key.\n"
+  example: []
+  syntax:
+    content: Apps = 93
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Sleep
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Sleep
+  id: Sleep
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Sleep
+  nameWithType: Keys.Sleep
+  fullName: Microsoft.Xna.Framework.Input.Keys.Sleep
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Sleep
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 258
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nComputer Sleep key.\n"
+  example: []
+  syntax:
+    content: Sleep = 95
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad0
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad0
+  id: NumPad0
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad0
+  nameWithType: Keys.NumPad0
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad0
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad0
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 262
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 0 key.\n"
+  example: []
+  syntax:
+    content: NumPad0 = 96
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad1
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad1
+  id: NumPad1
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad1
+  nameWithType: Keys.NumPad1
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad1
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 266
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 1 key.\n"
+  example: []
+  syntax:
+    content: NumPad1 = 97
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad2
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad2
+  id: NumPad2
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad2
+  nameWithType: Keys.NumPad2
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad2
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 270
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 2 key.\n"
+  example: []
+  syntax:
+    content: NumPad2 = 98
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad3
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad3
+  id: NumPad3
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad3
+  nameWithType: Keys.NumPad3
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad3
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad3
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 274
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 3 key.\n"
+  example: []
+  syntax:
+    content: NumPad3 = 99
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad4
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad4
+  id: NumPad4
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad4
+  nameWithType: Keys.NumPad4
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad4
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad4
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 278
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 4 key.\n"
+  example: []
+  syntax:
+    content: NumPad4 = 100
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad5
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad5
+  id: NumPad5
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad5
+  nameWithType: Keys.NumPad5
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad5
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad5
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 282
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 5 key.\n"
+  example: []
+  syntax:
+    content: NumPad5 = 101
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad6
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad6
+  id: NumPad6
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad6
+  nameWithType: Keys.NumPad6
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad6
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad6
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 286
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 6 key.\n"
+  example: []
+  syntax:
+    content: NumPad6 = 102
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad7
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad7
+  id: NumPad7
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad7
+  nameWithType: Keys.NumPad7
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad7
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad7
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 290
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 7 key.\n"
+  example: []
+  syntax:
+    content: NumPad7 = 103
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad8
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad8
+  id: NumPad8
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad8
+  nameWithType: Keys.NumPad8
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad8
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad8
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 294
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 8 key.\n"
+  example: []
+  syntax:
+    content: NumPad8 = 104
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumPad9
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumPad9
+  id: NumPad9
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumPad9
+  nameWithType: Keys.NumPad9
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumPad9
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumPad9
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 298
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNumeric keypad 9 key.\n"
+  example: []
+  syntax:
+    content: NumPad9 = 105
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Multiply
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Multiply
+  id: Multiply
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Multiply
+  nameWithType: Keys.Multiply
+  fullName: Microsoft.Xna.Framework.Input.Keys.Multiply
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Multiply
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 302
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nMultiply key.\n"
+  example: []
+  syntax:
+    content: Multiply = 106
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Add
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Add
+  id: Add
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: Keys.Add
+  fullName: Microsoft.Xna.Framework.Input.Keys.Add
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Add
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 306
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nAdd key.\n"
+  example: []
+  syntax:
+    content: Add = 107
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Separator
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Separator
+  id: Separator
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Separator
+  nameWithType: Keys.Separator
+  fullName: Microsoft.Xna.Framework.Input.Keys.Separator
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Separator
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 310
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSeparator key.\n"
+  example: []
+  syntax:
+    content: Separator = 108
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Subtract
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Subtract
+  id: Subtract
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Subtract
+  nameWithType: Keys.Subtract
+  fullName: Microsoft.Xna.Framework.Input.Keys.Subtract
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Subtract
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 314
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSubtract key.\n"
+  example: []
+  syntax:
+    content: Subtract = 109
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Decimal
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Decimal
+  id: Decimal
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Decimal
+  nameWithType: Keys.Decimal
+  fullName: Microsoft.Xna.Framework.Input.Keys.Decimal
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Decimal
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 318
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDecimal key.\n"
+  example: []
+  syntax:
+    content: Decimal = 110
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Divide
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Divide
+  id: Divide
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Divide
+  nameWithType: Keys.Divide
+  fullName: Microsoft.Xna.Framework.Input.Keys.Divide
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Divide
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 322
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDivide key.\n"
+  example: []
+  syntax:
+    content: Divide = 111
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F1
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F1
+  id: F1
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F1
+  nameWithType: Keys.F1
+  fullName: Microsoft.Xna.Framework.Input.Keys.F1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F1
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 326
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF1 key.\n"
+  example: []
+  syntax:
+    content: F1 = 112
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F2
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F2
+  id: F2
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F2
+  nameWithType: Keys.F2
+  fullName: Microsoft.Xna.Framework.Input.Keys.F2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F2
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 330
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF2 key.\n"
+  example: []
+  syntax:
+    content: F2 = 113
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F3
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F3
+  id: F3
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F3
+  nameWithType: Keys.F3
+  fullName: Microsoft.Xna.Framework.Input.Keys.F3
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F3
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 334
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF3 key.\n"
+  example: []
+  syntax:
+    content: F3 = 114
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F4
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F4
+  id: F4
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F4
+  nameWithType: Keys.F4
+  fullName: Microsoft.Xna.Framework.Input.Keys.F4
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F4
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 338
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF4 key.\n"
+  example: []
+  syntax:
+    content: F4 = 115
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F5
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F5
+  id: F5
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F5
+  nameWithType: Keys.F5
+  fullName: Microsoft.Xna.Framework.Input.Keys.F5
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F5
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 342
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF5 key.\n"
+  example: []
+  syntax:
+    content: F5 = 116
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F6
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F6
+  id: F6
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F6
+  nameWithType: Keys.F6
+  fullName: Microsoft.Xna.Framework.Input.Keys.F6
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F6
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 346
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF6 key.\n"
+  example: []
+  syntax:
+    content: F6 = 117
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F7
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F7
+  id: F7
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F7
+  nameWithType: Keys.F7
+  fullName: Microsoft.Xna.Framework.Input.Keys.F7
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F7
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 350
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF7 key.\n"
+  example: []
+  syntax:
+    content: F7 = 118
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F8
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F8
+  id: F8
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F8
+  nameWithType: Keys.F8
+  fullName: Microsoft.Xna.Framework.Input.Keys.F8
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F8
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 354
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF8 key.\n"
+  example: []
+  syntax:
+    content: F8 = 119
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F9
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F9
+  id: F9
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F9
+  nameWithType: Keys.F9
+  fullName: Microsoft.Xna.Framework.Input.Keys.F9
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F9
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 358
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF9 key.\n"
+  example: []
+  syntax:
+    content: F9 = 120
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F10
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F10
+  id: F10
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F10
+  nameWithType: Keys.F10
+  fullName: Microsoft.Xna.Framework.Input.Keys.F10
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F10
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 362
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF10 key.\n"
+  example: []
+  syntax:
+    content: F10 = 121
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F11
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F11
+  id: F11
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F11
+  nameWithType: Keys.F11
+  fullName: Microsoft.Xna.Framework.Input.Keys.F11
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F11
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 366
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF11 key.\n"
+  example: []
+  syntax:
+    content: F11 = 122
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F12
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F12
+  id: F12
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F12
+  nameWithType: Keys.F12
+  fullName: Microsoft.Xna.Framework.Input.Keys.F12
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F12
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 370
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF12 key.\n"
+  example: []
+  syntax:
+    content: F12 = 123
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F13
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F13
+  id: F13
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F13
+  nameWithType: Keys.F13
+  fullName: Microsoft.Xna.Framework.Input.Keys.F13
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F13
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 374
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF13 key.\n"
+  example: []
+  syntax:
+    content: F13 = 124
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F14
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F14
+  id: F14
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F14
+  nameWithType: Keys.F14
+  fullName: Microsoft.Xna.Framework.Input.Keys.F14
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F14
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 378
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF14 key.\n"
+  example: []
+  syntax:
+    content: F14 = 125
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F15
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F15
+  id: F15
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F15
+  nameWithType: Keys.F15
+  fullName: Microsoft.Xna.Framework.Input.Keys.F15
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F15
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 382
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF15 key.\n"
+  example: []
+  syntax:
+    content: F15 = 126
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F16
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F16
+  id: F16
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F16
+  nameWithType: Keys.F16
+  fullName: Microsoft.Xna.Framework.Input.Keys.F16
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F16
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 386
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF16 key.\n"
+  example: []
+  syntax:
+    content: F16 = 127
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F17
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F17
+  id: F17
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F17
+  nameWithType: Keys.F17
+  fullName: Microsoft.Xna.Framework.Input.Keys.F17
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F17
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 390
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF17 key.\n"
+  example: []
+  syntax:
+    content: F17 = 128
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F18
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F18
+  id: F18
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F18
+  nameWithType: Keys.F18
+  fullName: Microsoft.Xna.Framework.Input.Keys.F18
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F18
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 394
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF18 key.\n"
+  example: []
+  syntax:
+    content: F18 = 129
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F19
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F19
+  id: F19
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F19
+  nameWithType: Keys.F19
+  fullName: Microsoft.Xna.Framework.Input.Keys.F19
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F19
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 398
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF19 key.\n"
+  example: []
+  syntax:
+    content: F19 = 130
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F20
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F20
+  id: F20
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F20
+  nameWithType: Keys.F20
+  fullName: Microsoft.Xna.Framework.Input.Keys.F20
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F20
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 402
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF20 key.\n"
+  example: []
+  syntax:
+    content: F20 = 131
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F21
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F21
+  id: F21
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F21
+  nameWithType: Keys.F21
+  fullName: Microsoft.Xna.Framework.Input.Keys.F21
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F21
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 406
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF21 key.\n"
+  example: []
+  syntax:
+    content: F21 = 132
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F22
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F22
+  id: F22
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F22
+  nameWithType: Keys.F22
+  fullName: Microsoft.Xna.Framework.Input.Keys.F22
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F22
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 410
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF22 key.\n"
+  example: []
+  syntax:
+    content: F22 = 133
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F23
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F23
+  id: F23
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F23
+  nameWithType: Keys.F23
+  fullName: Microsoft.Xna.Framework.Input.Keys.F23
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F23
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 414
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF23 key.\n"
+  example: []
+  syntax:
+    content: F23 = 134
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.F24
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.F24
+  id: F24
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: F24
+  nameWithType: Keys.F24
+  fullName: Microsoft.Xna.Framework.Input.Keys.F24
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: F24
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 418
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nF24 key.\n"
+  example: []
+  syntax:
+    content: F24 = 135
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.NumLock
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.NumLock
+  id: NumLock
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: NumLock
+  nameWithType: Keys.NumLock
+  fullName: Microsoft.Xna.Framework.Input.Keys.NumLock
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumLock
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 422
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNUM LOCK key.\n"
+  example: []
+  syntax:
+    content: NumLock = 144
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Scroll
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Scroll
+  id: Scroll
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Scroll
+  nameWithType: Keys.Scroll
+  fullName: Microsoft.Xna.Framework.Input.Keys.Scroll
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Scroll
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 426
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSCROLL LOCK key.\n"
+  example: []
+  syntax:
+    content: Scroll = 145
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LeftShift
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LeftShift
+  id: LeftShift
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LeftShift
+  nameWithType: Keys.LeftShift
+  fullName: Microsoft.Xna.Framework.Input.Keys.LeftShift
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftShift
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 430
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft SHIFT key.\n"
+  example: []
+  syntax:
+    content: LeftShift = 160
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.RightShift
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.RightShift
+  id: RightShift
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: RightShift
+  nameWithType: Keys.RightShift
+  fullName: Microsoft.Xna.Framework.Input.Keys.RightShift
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightShift
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 434
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight SHIFT key.\n"
+  example: []
+  syntax:
+    content: RightShift = 161
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LeftControl
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LeftControl
+  id: LeftControl
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LeftControl
+  nameWithType: Keys.LeftControl
+  fullName: Microsoft.Xna.Framework.Input.Keys.LeftControl
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftControl
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 438
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft CONTROL key.\n"
+  example: []
+  syntax:
+    content: LeftControl = 162
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.RightControl
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.RightControl
+  id: RightControl
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: RightControl
+  nameWithType: Keys.RightControl
+  fullName: Microsoft.Xna.Framework.Input.Keys.RightControl
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightControl
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 442
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight CONTROL key.\n"
+  example: []
+  syntax:
+    content: RightControl = 163
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LeftAlt
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LeftAlt
+  id: LeftAlt
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LeftAlt
+  nameWithType: Keys.LeftAlt
+  fullName: Microsoft.Xna.Framework.Input.Keys.LeftAlt
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftAlt
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 446
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft ALT key.\n"
+  example: []
+  syntax:
+    content: LeftAlt = 164
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.RightAlt
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.RightAlt
+  id: RightAlt
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: RightAlt
+  nameWithType: Keys.RightAlt
+  fullName: Microsoft.Xna.Framework.Input.Keys.RightAlt
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightAlt
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 450
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight ALT key.\n"
+  example: []
+  syntax:
+    content: RightAlt = 165
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserBack
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserBack
+  id: BrowserBack
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserBack
+  nameWithType: Keys.BrowserBack
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserBack
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserBack
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 454
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Back key.\n"
+  example: []
+  syntax:
+    content: BrowserBack = 166
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserForward
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserForward
+  id: BrowserForward
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserForward
+  nameWithType: Keys.BrowserForward
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserForward
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserForward
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 458
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Forward key.\n"
+  example: []
+  syntax:
+    content: BrowserForward = 167
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserRefresh
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserRefresh
+  id: BrowserRefresh
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserRefresh
+  nameWithType: Keys.BrowserRefresh
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserRefresh
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserRefresh
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 462
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Refresh key.\n"
+  example: []
+  syntax:
+    content: BrowserRefresh = 168
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserStop
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserStop
+  id: BrowserStop
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserStop
+  nameWithType: Keys.BrowserStop
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserStop
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserStop
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 466
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Stop key.\n"
+  example: []
+  syntax:
+    content: BrowserStop = 169
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserSearch
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserSearch
+  id: BrowserSearch
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserSearch
+  nameWithType: Keys.BrowserSearch
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserSearch
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserSearch
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 470
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Search key.\n"
+  example: []
+  syntax:
+    content: BrowserSearch = 170
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserFavorites
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserFavorites
+  id: BrowserFavorites
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserFavorites
+  nameWithType: Keys.BrowserFavorites
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserFavorites
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserFavorites
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 474
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Favorites key.\n"
+  example: []
+  syntax:
+    content: BrowserFavorites = 171
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.BrowserHome
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.BrowserHome
+  id: BrowserHome
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: BrowserHome
+  nameWithType: Keys.BrowserHome
+  fullName: Microsoft.Xna.Framework.Input.Keys.BrowserHome
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BrowserHome
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 478
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBrowser Start and Home key.\n"
+  example: []
+  syntax:
+    content: BrowserHome = 172
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.VolumeMute
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.VolumeMute
+  id: VolumeMute
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: VolumeMute
+  nameWithType: Keys.VolumeMute
+  fullName: Microsoft.Xna.Framework.Input.Keys.VolumeMute
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VolumeMute
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 482
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nVolume Mute key.\n"
+  example: []
+  syntax:
+    content: VolumeMute = 173
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.VolumeDown
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.VolumeDown
+  id: VolumeDown
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: VolumeDown
+  nameWithType: Keys.VolumeDown
+  fullName: Microsoft.Xna.Framework.Input.Keys.VolumeDown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VolumeDown
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 486
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nVolume Down key.\n"
+  example: []
+  syntax:
+    content: VolumeDown = 174
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.VolumeUp
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.VolumeUp
+  id: VolumeUp
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: VolumeUp
+  nameWithType: Keys.VolumeUp
+  fullName: Microsoft.Xna.Framework.Input.Keys.VolumeUp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VolumeUp
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 490
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nVolume Up key.\n"
+  example: []
+  syntax:
+    content: VolumeUp = 175
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.MediaNextTrack
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.MediaNextTrack
+  id: MediaNextTrack
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: MediaNextTrack
+  nameWithType: Keys.MediaNextTrack
+  fullName: Microsoft.Xna.Framework.Input.Keys.MediaNextTrack
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MediaNextTrack
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 494
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nNext Track key.\n"
+  example: []
+  syntax:
+    content: MediaNextTrack = 176
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.MediaPreviousTrack
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.MediaPreviousTrack
+  id: MediaPreviousTrack
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: MediaPreviousTrack
+  nameWithType: Keys.MediaPreviousTrack
+  fullName: Microsoft.Xna.Framework.Input.Keys.MediaPreviousTrack
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MediaPreviousTrack
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 498
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPrevious Track key.\n"
+  example: []
+  syntax:
+    content: MediaPreviousTrack = 177
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.MediaStop
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.MediaStop
+  id: MediaStop
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: MediaStop
+  nameWithType: Keys.MediaStop
+  fullName: Microsoft.Xna.Framework.Input.Keys.MediaStop
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MediaStop
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 502
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nStop Media key.\n"
+  example: []
+  syntax:
+    content: MediaStop = 178
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.MediaPlayPause
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.MediaPlayPause
+  id: MediaPlayPause
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: MediaPlayPause
+  nameWithType: Keys.MediaPlayPause
+  fullName: Microsoft.Xna.Framework.Input.Keys.MediaPlayPause
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MediaPlayPause
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 506
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPlay/Pause Media key.\n"
+  example: []
+  syntax:
+    content: MediaPlayPause = 179
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LaunchMail
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LaunchMail
+  id: LaunchMail
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LaunchMail
+  nameWithType: Keys.LaunchMail
+  fullName: Microsoft.Xna.Framework.Input.Keys.LaunchMail
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LaunchMail
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 510
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nStart Mail key.\n"
+  example: []
+  syntax:
+    content: LaunchMail = 180
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.SelectMedia
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.SelectMedia
+  id: SelectMedia
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: SelectMedia
+  nameWithType: Keys.SelectMedia
+  fullName: Microsoft.Xna.Framework.Input.Keys.SelectMedia
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SelectMedia
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 514
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSelect Media key.\n"
+  example: []
+  syntax:
+    content: SelectMedia = 181
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LaunchApplication1
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LaunchApplication1
+  id: LaunchApplication1
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LaunchApplication1
+  nameWithType: Keys.LaunchApplication1
+  fullName: Microsoft.Xna.Framework.Input.Keys.LaunchApplication1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LaunchApplication1
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 518
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nStart Application 1 key.\n"
+  example: []
+  syntax:
+    content: LaunchApplication1 = 182
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.LaunchApplication2
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.LaunchApplication2
+  id: LaunchApplication2
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: LaunchApplication2
+  nameWithType: Keys.LaunchApplication2
+  fullName: Microsoft.Xna.Framework.Input.Keys.LaunchApplication2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LaunchApplication2
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 522
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nStart Application 2 key.\n"
+  example: []
+  syntax:
+    content: LaunchApplication2 = 183
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemSemicolon
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemSemicolon
+  id: OemSemicolon
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemSemicolon
+  nameWithType: Keys.OemSemicolon
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemSemicolon
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemSemicolon
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 526
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM Semicolon key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemSemicolon = 186
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemPlus
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemPlus
+  id: OemPlus
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemPlus
+  nameWithType: Keys.OemPlus
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemPlus
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemPlus
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 530
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nFor any country/region, the &apos;+&apos; key.\n"
+  example: []
+  syntax:
+    content: OemPlus = 187
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemComma
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemComma
+  id: OemComma
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemComma
+  nameWithType: Keys.OemComma
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemComma
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemComma
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 534
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nFor any country/region, the &apos;,&apos; key.\n"
+  example: []
+  syntax:
+    content: OemComma = 188
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemMinus
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemMinus
+  id: OemMinus
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemMinus
+  nameWithType: Keys.OemMinus
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemMinus
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemMinus
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 538
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nFor any country/region, the &apos;-&apos; key.\n"
+  example: []
+  syntax:
+    content: OemMinus = 189
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemPeriod
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemPeriod
+  id: OemPeriod
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemPeriod
+  nameWithType: Keys.OemPeriod
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemPeriod
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemPeriod
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 542
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nFor any country/region, the &apos;.&apos; key.\n"
+  example: []
+  syntax:
+    content: OemPeriod = 190
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemQuestion
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemQuestion
+  id: OemQuestion
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemQuestion
+  nameWithType: Keys.OemQuestion
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemQuestion
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemQuestion
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 546
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM question mark key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemQuestion = 191
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemTilde
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemTilde
+  id: OemTilde
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemTilde
+  nameWithType: Keys.OemTilde
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemTilde
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemTilde
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 550
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM tilde key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemTilde = 192
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemOpenBrackets
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemOpenBrackets
+  id: OemOpenBrackets
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemOpenBrackets
+  nameWithType: Keys.OemOpenBrackets
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemOpenBrackets
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemOpenBrackets
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 554
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM open bracket key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemOpenBrackets = 219
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemPipe
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemPipe
+  id: OemPipe
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemPipe
+  nameWithType: Keys.OemPipe
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemPipe
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemPipe
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 558
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM pipe key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemPipe = 220
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemCloseBrackets
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemCloseBrackets
+  id: OemCloseBrackets
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemCloseBrackets
+  nameWithType: Keys.OemCloseBrackets
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemCloseBrackets
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemCloseBrackets
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 562
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM close bracket key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemCloseBrackets = 221
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemQuotes
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemQuotes
+  id: OemQuotes
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemQuotes
+  nameWithType: Keys.OemQuotes
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemQuotes
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemQuotes
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 566
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM singled/double quote key on a US standard keyboard.\n"
+  example: []
+  syntax:
+    content: OemQuotes = 222
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Oem8
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Oem8
+  id: Oem8
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Oem8
+  nameWithType: Keys.Oem8
+  fullName: Microsoft.Xna.Framework.Input.Keys.Oem8
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Oem8
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 570
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nUsed for miscellaneous characters; it can vary by keyboard.\n"
+  example: []
+  syntax:
+    content: Oem8 = 223
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemBackslash
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemBackslash
+  id: OemBackslash
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemBackslash
+  nameWithType: Keys.OemBackslash
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemBackslash
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemBackslash
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 574
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe OEM angle bracket or backslash key on the RT 102 key keyboard.\n"
+  example: []
+  syntax:
+    content: OemBackslash = 226
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.ProcessKey
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.ProcessKey
+  id: ProcessKey
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: ProcessKey
+  nameWithType: Keys.ProcessKey
+  fullName: Microsoft.Xna.Framework.Input.Keys.ProcessKey
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ProcessKey
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 578
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nIME PROCESS key.\n"
+  example: []
+  syntax:
+    content: ProcessKey = 229
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Attn
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Attn
+  id: Attn
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Attn
+  nameWithType: Keys.Attn
+  fullName: Microsoft.Xna.Framework.Input.Keys.Attn
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Attn
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 582
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nAttn key.\n"
+  example: []
+  syntax:
+    content: Attn = 246
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Crsel
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Crsel
+  id: Crsel
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Crsel
+  nameWithType: Keys.Crsel
+  fullName: Microsoft.Xna.Framework.Input.Keys.Crsel
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Crsel
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 586
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCrSel key.\n"
+  example: []
+  syntax:
+    content: Crsel = 247
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Exsel
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Exsel
+  id: Exsel
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Exsel
+  nameWithType: Keys.Exsel
+  fullName: Microsoft.Xna.Framework.Input.Keys.Exsel
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Exsel
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 590
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nExSel key.\n"
+  example: []
+  syntax:
+    content: Exsel = 248
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.EraseEof
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.EraseEof
+  id: EraseEof
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: EraseEof
+  nameWithType: Keys.EraseEof
+  fullName: Microsoft.Xna.Framework.Input.Keys.EraseEof
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: EraseEof
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 594
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nErase EOF key.\n"
+  example: []
+  syntax:
+    content: EraseEof = 249
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Play
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Play
+  id: Play
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Play
+  nameWithType: Keys.Play
+  fullName: Microsoft.Xna.Framework.Input.Keys.Play
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Play
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 598
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPlay key.\n"
+  example: []
+  syntax:
+    content: Play = 250
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Zoom
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Zoom
+  id: Zoom
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Zoom
+  nameWithType: Keys.Zoom
+  fullName: Microsoft.Xna.Framework.Input.Keys.Zoom
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Zoom
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 602
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nZoom key.\n"
+  example: []
+  syntax:
+    content: Zoom = 251
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Pa1
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Pa1
+  id: Pa1
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Pa1
+  nameWithType: Keys.Pa1
+  fullName: Microsoft.Xna.Framework.Input.Keys.Pa1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Pa1
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 606
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPA1 key.\n"
+  example: []
+  syntax:
+    content: Pa1 = 253
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemClear
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemClear
+  id: OemClear
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemClear
+  nameWithType: Keys.OemClear
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemClear
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemClear
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 610
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCLEAR key.\n"
+  example: []
+  syntax:
+    content: OemClear = 254
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.ChatPadGreen
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.ChatPadGreen
+  id: ChatPadGreen
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: ChatPadGreen
+  nameWithType: Keys.ChatPadGreen
+  fullName: Microsoft.Xna.Framework.Input.Keys.ChatPadGreen
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ChatPadGreen
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 614
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGreen ChatPad key.\n"
+  example: []
+  syntax:
+    content: ChatPadGreen = 202
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.ChatPadOrange
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.ChatPadOrange
+  id: ChatPadOrange
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: ChatPadOrange
+  nameWithType: Keys.ChatPadOrange
+  fullName: Microsoft.Xna.Framework.Input.Keys.ChatPadOrange
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ChatPadOrange
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 618
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nOrange ChatPad key.\n"
+  example: []
+  syntax:
+    content: ChatPadOrange = 203
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Pause
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Pause
+  id: Pause
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Pause
+  nameWithType: Keys.Pause
+  fullName: Microsoft.Xna.Framework.Input.Keys.Pause
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Pause
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 622
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nPAUSE key.\n"
+  example: []
+  syntax:
+    content: Pause = 19
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.ImeConvert
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.ImeConvert
+  id: ImeConvert
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: ImeConvert
+  nameWithType: Keys.ImeConvert
+  fullName: Microsoft.Xna.Framework.Input.Keys.ImeConvert
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ImeConvert
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 626
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nIME Convert key.\n"
+  example: []
+  syntax:
+    content: ImeConvert = 28
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.ImeNoConvert
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.ImeNoConvert
+  id: ImeNoConvert
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: ImeNoConvert
+  nameWithType: Keys.ImeNoConvert
+  fullName: Microsoft.Xna.Framework.Input.Keys.ImeNoConvert
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ImeNoConvert
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 630
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nIME NoConvert key.\n"
+  example: []
+  syntax:
+    content: ImeNoConvert = 29
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Kana
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Kana
+  id: Kana
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Kana
+  nameWithType: Keys.Kana
+  fullName: Microsoft.Xna.Framework.Input.Keys.Kana
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Kana
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 634
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nKana key on Japanese keyboards.\n"
+  example: []
+  syntax:
+    content: Kana = 21
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.Kanji
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.Kanji
+  id: Kanji
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: Kanji
+  nameWithType: Keys.Kanji
+  fullName: Microsoft.Xna.Framework.Input.Keys.Kanji
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Kanji
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 638
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nKanji key on Japanese keyboards.\n"
+  example: []
+  syntax:
+    content: Kanji = 25
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemAuto
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemAuto
+  id: OemAuto
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemAuto
+  nameWithType: Keys.OemAuto
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemAuto
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemAuto
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 642
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nOEM Auto key.\n"
+  example: []
+  syntax:
+    content: OemAuto = 243
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemCopy
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemCopy
+  id: OemCopy
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemCopy
+  nameWithType: Keys.OemCopy
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemCopy
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemCopy
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 646
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nOEM Copy key.\n"
+  example: []
+  syntax:
+    content: OemCopy = 242
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Keys.OemEnlW
+  commentId: F:Microsoft.Xna.Framework.Input.Keys.OemEnlW
+  id: OemEnlW
+  parent: Microsoft.Xna.Framework.Input.Keys
+  langs:
+  - csharp
+  - vb
+  name: OemEnlW
+  nameWithType: Keys.OemEnlW
+  fullName: Microsoft.Xna.Framework.Input.Keys.OemEnlW
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keys.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OemEnlW
+    path: ../MonoGame.Framework/Input/Keys.cs
+    startLine: 650
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nOEM Enlarge Window key.\n"
+  example: []
+  syntax:
+    content: OemEnlW = 244
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: Microsoft.Xna.Framework.Input.Keys
+  commentId: T:Microsoft.Xna.Framework.Input.Keys
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Keys
+  nameWithType: Keys
+  fullName: Microsoft.Xna.Framework.Input.Keys

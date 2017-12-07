@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType
+  commentId: T:Microsoft.Xna.Framework.Graphics.IVertexType
+  id: IVertexType
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: IVertexType
+  nameWithType: IVertexType
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType
+  type: Interface
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/IVertexType.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IVertexType
+    path: ../MonoGame.Framework/Graphics/Vertices/IVertexType.cs
+    startLine: 2
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public interface IVertexType
+    content.vb: Public Interface IVertexType
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  commentId: P:Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  id: VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics.IVertexType
+  langs:
+  - csharp
+  - vb
+  name: VertexDeclaration
+  nameWithType: IVertexType.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/IVertexType.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexDeclaration
+    path: ../MonoGame.Framework/Graphics/Vertices/IVertexType.cs
+    startLine: 4
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: VertexDeclaration VertexDeclaration { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    content.vb: ReadOnly Property VertexDeclaration As VertexDeclaration
+  overload: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: IVertexType.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration

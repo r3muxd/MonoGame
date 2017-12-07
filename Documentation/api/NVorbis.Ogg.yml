@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: NVorbis.Ogg
+  commentId: N:NVorbis.Ogg
+  id: NVorbis.Ogg
+  children:
+  - NVorbis.Ogg.ContainerReader
+  langs:
+  - csharp
+  - vb
+  name: NVorbis.Ogg
+  nameWithType: NVorbis.Ogg
+  fullName: NVorbis.Ogg
+  type: Namespace
+  assemblies:
+  - MonoGame.Framework
+references:
+- uid: NVorbis.Ogg.ContainerReader
+  commentId: T:NVorbis.Ogg.ContainerReader
+  isExternal: false
+  name: ContainerReader
+  nameWithType: ContainerReader
+  fullName: NVorbis.Ogg.ContainerReader

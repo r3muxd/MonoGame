@@ -1,0 +1,319 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights
+  commentId: T:Microsoft.Xna.Framework.Graphics.IEffectLights
+  id: IEffectLights
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor
+  - Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0
+  - Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1
+  - Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2
+  - Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting
+  - Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled
+  langs:
+  - csharp
+  - vb
+  name: IEffectLights
+  nameWithType: IEffectLights
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights
+  type: Interface
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IEffectLights
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 47
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe common effect light rendering parameters.\n"
+  example: []
+  syntax:
+    content: public interface IEffectLights
+    content.vb: Public Interface IEffectLights
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor
+  id: AmbientLightColor
+  parent: Microsoft.Xna.Framework.Graphics.IEffectLights
+  langs:
+  - csharp
+  - vb
+  name: AmbientLightColor
+  nameWithType: IEffectLights.AmbientLightColor
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AmbientLightColor
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 52
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe floating point ambient light color.\n"
+  example: []
+  syntax:
+    content: Vector3 AmbientLightColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Property AmbientLightColor As Vector3
+  overload: Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0
+  id: DirectionalLight0
+  parent: Microsoft.Xna.Framework.Graphics.IEffectLights
+  langs:
+  - csharp
+  - vb
+  name: DirectionalLight0
+  nameWithType: IEffectLights.DirectionalLight0
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DirectionalLight0
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 57
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns the first directional light.\n"
+  example: []
+  syntax:
+    content: DirectionalLight DirectionalLight0 { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.DirectionalLight
+    content.vb: ReadOnly Property DirectionalLight0 As DirectionalLight
+  overload: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1
+  id: DirectionalLight1
+  parent: Microsoft.Xna.Framework.Graphics.IEffectLights
+  langs:
+  - csharp
+  - vb
+  name: DirectionalLight1
+  nameWithType: IEffectLights.DirectionalLight1
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DirectionalLight1
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns the second directional light.\n"
+  example: []
+  syntax:
+    content: DirectionalLight DirectionalLight1 { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.DirectionalLight
+    content.vb: ReadOnly Property DirectionalLight1 As DirectionalLight
+  overload: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2
+  id: DirectionalLight2
+  parent: Microsoft.Xna.Framework.Graphics.IEffectLights
+  langs:
+  - csharp
+  - vb
+  name: DirectionalLight2
+  nameWithType: IEffectLights.DirectionalLight2
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DirectionalLight2
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 67
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns the third directional light.\n"
+  example: []
+  syntax:
+    content: DirectionalLight DirectionalLight2 { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.DirectionalLight
+    content.vb: ReadOnly Property DirectionalLight2 As DirectionalLight
+  overload: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled
+  id: LightingEnabled
+  parent: Microsoft.Xna.Framework.Graphics.IEffectLights
+  langs:
+  - csharp
+  - vb
+  name: LightingEnabled
+  nameWithType: IEffectLights.LightingEnabled
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LightingEnabled
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 72
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nToggles the rendering of lighting.\n"
+  example: []
+  syntax:
+    content: bool LightingEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property LightingEnabled As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting
+  commentId: M:Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting
+  id: EnableDefaultLighting
+  parent: Microsoft.Xna.Framework.Graphics.IEffectLights
+  langs:
+  - csharp
+  - vb
+  name: EnableDefaultLighting()
+  nameWithType: IEffectLights.EnableDefaultLighting()
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: EnableDefaultLighting
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectLights.cs
+    startLine: 77
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nInitializes the lights to the standard key/fill/back lighting rig.\n"
+  example: []
+  syntax:
+    content: void EnableDefaultLighting()
+    content.vb: Sub EnableDefaultLighting
+  overload: Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting*
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor
+  isExternal: false
+  name: AmbientLightColor
+  nameWithType: IEffectLights.AmbientLightColor
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.AmbientLightColor
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0
+  isExternal: false
+  name: DirectionalLight0
+  nameWithType: IEffectLights.DirectionalLight0
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight0
+- uid: Microsoft.Xna.Framework.Graphics.DirectionalLight
+  commentId: T:Microsoft.Xna.Framework.Graphics.DirectionalLight
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: DirectionalLight
+  nameWithType: DirectionalLight
+  fullName: Microsoft.Xna.Framework.Graphics.DirectionalLight
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1
+  isExternal: false
+  name: DirectionalLight1
+  nameWithType: IEffectLights.DirectionalLight1
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight1
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2
+  isExternal: false
+  name: DirectionalLight2
+  nameWithType: IEffectLights.DirectionalLight2
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.DirectionalLight2
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled
+  isExternal: false
+  name: LightingEnabled
+  nameWithType: IEffectLights.LightingEnabled
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.LightingEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting
+  isExternal: false
+  name: EnableDefaultLighting
+  nameWithType: IEffectLights.EnableDefaultLighting
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectLights.EnableDefaultLighting

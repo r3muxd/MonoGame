@@ -1,0 +1,623 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  commentId: T:Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  id: EffectAnnotation
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount
+  - Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name
+  - Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass
+  - Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType
+  - Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount
+  - Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic
+  langs:
+  - csharp
+  - vb
+  name: EffectAnnotation
+  nameWithType: EffectAnnotation
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: EffectAnnotation
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 6
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public class EffectAnnotation
+    content.vb: Public Class EffectAnnotation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass
+  commentId: P:Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass
+  id: ParameterClass
+  parent: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  langs:
+  - csharp
+  - vb
+  name: ParameterClass
+  nameWithType: EffectAnnotation.ParameterClass
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ParameterClass
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 35
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public EffectParameterClass ParameterClass { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.EffectParameterClass
+    content.vb: Public ReadOnly Property ParameterClass As EffectParameterClass
+  overload: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType
+  commentId: P:Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType
+  id: ParameterType
+  parent: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  langs:
+  - csharp
+  - vb
+  name: ParameterType
+  nameWithType: EffectAnnotation.ParameterType
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ParameterType
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 36
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public EffectParameterType ParameterType { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.EffectParameterType
+    content.vb: Public ReadOnly Property ParameterType As EffectParameterType
+  overload: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name
+  id: Name
+  parent: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: EffectAnnotation.Name
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Name
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 37
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount
+  id: RowCount
+  parent: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  langs:
+  - csharp
+  - vb
+  name: RowCount
+  nameWithType: EffectAnnotation.RowCount
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RowCount
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public int RowCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RowCount As Integer
+  overload: Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount
+  id: ColumnCount
+  parent: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  langs:
+  - csharp
+  - vb
+  name: ColumnCount
+  nameWithType: EffectAnnotation.ColumnCount
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColumnCount
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 39
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public int ColumnCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ColumnCount As Integer
+  overload: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic
+  commentId: P:Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic
+  id: Semantic
+  parent: Microsoft.Xna.Framework.Graphics.EffectAnnotation
+  langs:
+  - csharp
+  - vb
+  name: Semantic
+  nameWithType: EffectAnnotation.Semantic
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Semantic
+    path: ../MonoGame.Framework/Graphics/Effect/EffectAnnotation.cs
+    startLine: 40
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public string Semantic { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Semantic As String
+  overload: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass
+  isExternal: false
+  name: ParameterClass
+  nameWithType: EffectAnnotation.ParameterClass
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterClass
+- uid: Microsoft.Xna.Framework.Graphics.EffectParameterClass
+  commentId: T:Microsoft.Xna.Framework.Graphics.EffectParameterClass
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: EffectParameterClass
+  nameWithType: EffectParameterClass
+  fullName: Microsoft.Xna.Framework.Graphics.EffectParameterClass
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType
+  isExternal: false
+  name: ParameterType
+  nameWithType: EffectAnnotation.ParameterType
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ParameterType
+- uid: Microsoft.Xna.Framework.Graphics.EffectParameterType
+  commentId: T:Microsoft.Xna.Framework.Graphics.EffectParameterType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: EffectParameterType
+  nameWithType: EffectParameterType
+  fullName: Microsoft.Xna.Framework.Graphics.EffectParameterType
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name
+  isExternal: false
+  name: Name
+  nameWithType: EffectAnnotation.Name
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount
+  isExternal: false
+  name: RowCount
+  nameWithType: EffectAnnotation.RowCount
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.RowCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount
+  isExternal: false
+  name: ColumnCount
+  nameWithType: EffectAnnotation.ColumnCount
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.ColumnCount
+- uid: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic
+  isExternal: false
+  name: Semantic
+  nameWithType: EffectAnnotation.Semantic
+  fullName: Microsoft.Xna.Framework.Graphics.EffectAnnotation.Semantic

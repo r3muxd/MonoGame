@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.KeyState
+  commentId: T:Microsoft.Xna.Framework.Input.KeyState
+  id: KeyState
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.KeyState.Down
+  - Microsoft.Xna.Framework.Input.KeyState.Up
+  langs:
+  - csharp
+  - vb
+  name: KeyState
+  nameWithType: KeyState
+  fullName: Microsoft.Xna.Framework.Input.KeyState
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: KeyState
+    path: ../MonoGame.Framework/Input/KeyState.cs
+    startLine: 45
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nIdentifies the state of a keyboard key.\n"
+  example: []
+  syntax:
+    content: public enum KeyState
+    content.vb: Public Enum KeyState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Input.KeyState.Up
+  commentId: F:Microsoft.Xna.Framework.Input.KeyState.Up
+  id: Up
+  parent: Microsoft.Xna.Framework.Input.KeyState
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: KeyState.Up
+  fullName: Microsoft.Xna.Framework.Input.KeyState.Up
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Up
+    path: ../MonoGame.Framework/Input/KeyState.cs
+    startLine: 50
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nKey is released.\n"
+  example: []
+  syntax:
+    content: Up = 0
+    return:
+      type: Microsoft.Xna.Framework.Input.KeyState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.KeyState.Down
+  commentId: F:Microsoft.Xna.Framework.Input.KeyState.Down
+  id: Down
+  parent: Microsoft.Xna.Framework.Input.KeyState
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: KeyState.Down
+  fullName: Microsoft.Xna.Framework.Input.KeyState.Down
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Down
+    path: ../MonoGame.Framework/Input/KeyState.cs
+    startLine: 55
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nKey is pressed.\n"
+  example: []
+  syntax:
+    content: Down = 1
+    return:
+      type: Microsoft.Xna.Framework.Input.KeyState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: Microsoft.Xna.Framework.Input.KeyState
+  commentId: T:Microsoft.Xna.Framework.Input.KeyState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: KeyState
+  nameWithType: KeyState
+  fullName: Microsoft.Xna.Framework.Input.KeyState

@@ -1,0 +1,1817 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Plane
+  commentId: T:Microsoft.Xna.Framework.Plane
+  id: Plane
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  - Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector3,System.Single)
+  - Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector4)
+  - Microsoft.Xna.Framework.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - Microsoft.Xna.Framework.Plane.D
+  - Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4)
+  - Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4@,System.Single@)
+  - Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3)
+  - Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  - Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3)
+  - Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  - Microsoft.Xna.Framework.Plane.Equals(Microsoft.Xna.Framework.Plane)
+  - Microsoft.Xna.Framework.Plane.Equals(System.Object)
+  - Microsoft.Xna.Framework.Plane.GetHashCode
+  - Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  - Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  - Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  - Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  - Microsoft.Xna.Framework.Plane.Normal
+  - Microsoft.Xna.Framework.Plane.Normalize
+  - Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane)
+  - Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Plane@)
+  - Microsoft.Xna.Framework.Plane.op_Equality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  - Microsoft.Xna.Framework.Plane.op_Inequality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  - Microsoft.Xna.Framework.Plane.ToString
+  - Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Matrix)
+  - Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Quaternion)
+  - Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Plane@)
+  - Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Quaternion@,Microsoft.Xna.Framework.Plane@)
+  langs:
+  - csharp
+  - vb
+  name: Plane
+  nameWithType: Plane
+  fullName: Microsoft.Xna.Framework.Plane
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Plane
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 37
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataContract]
+
+      public struct Plane : IEquatable<Plane>
+    content.vb: >-
+      <DataContract>
+
+      Public Structure Plane
+          Implements IEquatable(Of Plane)
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Plane}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Plane.D
+  commentId: F:Microsoft.Xna.Framework.Plane.D
+  id: D
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: D
+  nameWithType: Plane.D
+  fullName: Microsoft.Xna.Framework.Plane.D
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: D
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float D
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public D As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Normal
+  commentId: F:Microsoft.Xna.Framework.Plane.Normal
+  id: Normal
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: Plane.Normal
+  fullName: Microsoft.Xna.Framework.Plane.Normal
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Normal
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 47
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Normal
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Normal As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector4)
+  commentId: M:Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector4)
+  id: '#ctor(Microsoft.Xna.Framework.Vector4)'
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector4)
+  nameWithType: Plane.Plane(Vector4)
+  fullName: Microsoft.Xna.Framework.Plane.Plane(Microsoft.Xna.Framework.Vector4)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 54
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Plane(Vector4 value)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector4
+    content.vb: Public Sub New(value As Vector4)
+  overload: Microsoft.Xna.Framework.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector3,System.Single)
+  commentId: M:Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector3,System.Single)
+  id: '#ctor(Microsoft.Xna.Framework.Vector3,System.Single)'
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, Single)
+  nameWithType: Plane.Plane(Vector3, Single)
+  fullName: Microsoft.Xna.Framework.Plane.Plane(Microsoft.Xna.Framework.Vector3, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 60
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Plane(Vector3 normal, float d)
+    parameters:
+    - id: normal
+      type: Microsoft.Xna.Framework.Vector3
+    - id: d
+      type: System.Single
+    content.vb: Public Sub New(normal As Vector3, d As Single)
+  overload: Microsoft.Xna.Framework.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  commentId: M:Microsoft.Xna.Framework.Plane.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  id: '#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)'
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, Vector3, Vector3)
+  nameWithType: Plane.Plane(Vector3, Vector3, Vector3)
+  fullName: Microsoft.Xna.Framework.Plane.Plane(Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Plane(Vector3 a, Vector3 b, Vector3 c)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.Vector3
+    - id: b
+      type: Microsoft.Xna.Framework.Vector3
+    - id: c
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Sub New(a As Vector3, b As Vector3, c As Vector3)
+  overload: Microsoft.Xna.Framework.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Microsoft.Xna.Framework.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Single, Single, Single, Single)
+  nameWithType: Plane.Plane(Single, Single, Single, Single)
+  fullName: Microsoft.Xna.Framework.Plane.Plane(System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 76
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Plane(float a, float b, float c, float d)
+    parameters:
+    - id: a
+      type: System.Single
+    - id: b
+      type: System.Single
+    - id: c
+      type: System.Single
+    - id: d
+      type: System.Single
+    content.vb: Public Sub New(a As Single, b As Single, c As Single, d As Single)
+  overload: Microsoft.Xna.Framework.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4)
+  commentId: M:Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4)
+  id: Dot(Microsoft.Xna.Framework.Vector4)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Dot(Vector4)
+  nameWithType: Plane.Dot(Vector4)
+  fullName: Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dot
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 87
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float Dot(Vector4 value)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector4
+    return:
+      type: System.Single
+    content.vb: Public Function Dot(value As Vector4) As Single
+  overload: Microsoft.Xna.Framework.Plane.Dot*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4@,System.Single@)
+  commentId: M:Microsoft.Xna.Framework.Plane.Dot(Microsoft.Xna.Framework.Vector4@,System.Single@)
+  id: Dot(Microsoft.Xna.Framework.Vector4@,System.Single@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Dot(ref Vector4, out Single)
+  nameWithType: Plane.Dot(ref Vector4, out Single)
+  fullName: Microsoft.Xna.Framework.Plane.Dot(ref Microsoft.Xna.Framework.Vector4, out System.Single)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dot
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 92
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Dot(ref Vector4 value, out float result)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector4
+    - id: result
+      type: System.Single
+    content.vb: Public Sub Dot(ByRef value As Vector4, ByRef result As Single)
+  overload: Microsoft.Xna.Framework.Plane.Dot*
+  nameWithType.vb: Plane.Dot(ByRef Vector4, ByRef Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Plane.Dot(ByRef Microsoft.Xna.Framework.Vector4, ByRef System.Single)
+  name.vb: Dot(ByRef Vector4, ByRef Single)
+- uid: Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3)
+  commentId: M:Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3)
+  id: DotCoordinate(Microsoft.Xna.Framework.Vector3)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotCoordinate(Vector3)
+  nameWithType: Plane.DotCoordinate(Vector3)
+  fullName: Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DotCoordinate
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 97
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float DotCoordinate(Vector3 value)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function DotCoordinate(value As Vector3) As Single
+  overload: Microsoft.Xna.Framework.Plane.DotCoordinate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  commentId: M:Microsoft.Xna.Framework.Plane.DotCoordinate(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  id: DotCoordinate(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotCoordinate(ref Vector3, out Single)
+  nameWithType: Plane.DotCoordinate(ref Vector3, out Single)
+  fullName: Microsoft.Xna.Framework.Plane.DotCoordinate(ref Microsoft.Xna.Framework.Vector3, out System.Single)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DotCoordinate
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 102
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void DotCoordinate(ref Vector3 value, out float result)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector3
+    - id: result
+      type: System.Single
+    content.vb: Public Sub DotCoordinate(ByRef value As Vector3, ByRef result As Single)
+  overload: Microsoft.Xna.Framework.Plane.DotCoordinate*
+  nameWithType.vb: Plane.DotCoordinate(ByRef Vector3, ByRef Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Plane.DotCoordinate(ByRef Microsoft.Xna.Framework.Vector3, ByRef System.Single)
+  name.vb: DotCoordinate(ByRef Vector3, ByRef Single)
+- uid: Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3)
+  commentId: M:Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3)
+  id: DotNormal(Microsoft.Xna.Framework.Vector3)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotNormal(Vector3)
+  nameWithType: Plane.DotNormal(Vector3)
+  fullName: Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DotNormal
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 107
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float DotNormal(Vector3 value)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function DotNormal(value As Vector3) As Single
+  overload: Microsoft.Xna.Framework.Plane.DotNormal*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  commentId: M:Microsoft.Xna.Framework.Plane.DotNormal(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  id: DotNormal(Microsoft.Xna.Framework.Vector3@,System.Single@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotNormal(ref Vector3, out Single)
+  nameWithType: Plane.DotNormal(ref Vector3, out Single)
+  fullName: Microsoft.Xna.Framework.Plane.DotNormal(ref Microsoft.Xna.Framework.Vector3, out System.Single)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DotNormal
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 112
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void DotNormal(ref Vector3 value, out float result)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Vector3
+    - id: result
+      type: System.Single
+    content.vb: Public Sub DotNormal(ByRef value As Vector3, ByRef result As Single)
+  overload: Microsoft.Xna.Framework.Plane.DotNormal*
+  nameWithType.vb: Plane.DotNormal(ByRef Vector3, ByRef Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Plane.DotNormal(ByRef Microsoft.Xna.Framework.Vector3, ByRef System.Single)
+  name.vb: DotNormal(ByRef Vector3, ByRef Single)
+- uid: Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Matrix)
+  commentId: M:Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Matrix)
+  id: Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Matrix)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(Plane, Matrix)
+  nameWithType: Plane.Transform(Plane, Matrix)
+  fullName: Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane, Microsoft.Xna.Framework.Matrix)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Transform
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 123
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nTransforms a normalized plane by a matrix.\n"
+  example: []
+  syntax:
+    content: public static Plane Transform(Plane plane, Matrix matrix)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+      description: The normalized plane to transform.
+    - id: matrix
+      type: Microsoft.Xna.Framework.Matrix
+      description: The transformation matrix.
+    return:
+      type: Microsoft.Xna.Framework.Plane
+      description: The transformed plane.
+    content.vb: Public Shared Function Transform(plane As Plane, matrix As Matrix) As Plane
+  overload: Microsoft.Xna.Framework.Plane.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Plane@)
+  commentId: M:Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Plane@)
+  id: Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Plane@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref Plane, ref Matrix, out Plane)
+  nameWithType: Plane.Transform(ref Plane, ref Matrix, out Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Transform(ref Microsoft.Xna.Framework.Plane, ref Microsoft.Xna.Framework.Matrix, out Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Transform
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 136
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nTransforms a normalized plane by a matrix.\n"
+  example: []
+  syntax:
+    content: public static void Transform(ref Plane plane, ref Matrix matrix, out Plane result)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+      description: The normalized plane to transform.
+    - id: matrix
+      type: Microsoft.Xna.Framework.Matrix
+      description: The transformation matrix.
+    - id: result
+      type: Microsoft.Xna.Framework.Plane
+      description: The transformed plane.
+    content.vb: Public Shared Sub Transform(ByRef plane As Plane, ByRef matrix As Matrix, ByRef result As Plane)
+  overload: Microsoft.Xna.Framework.Plane.Transform*
+  nameWithType.vb: Plane.Transform(ByRef Plane, ByRef Matrix, ByRef Plane)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Xna.Framework.Plane.Transform(ByRef Microsoft.Xna.Framework.Plane, ByRef Microsoft.Xna.Framework.Matrix, ByRef Microsoft.Xna.Framework.Plane)
+  name.vb: Transform(ByRef Plane, ByRef Matrix, ByRef Plane)
+- uid: Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Quaternion)
+  commentId: M:Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Quaternion)
+  id: Transform(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Quaternion)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(Plane, Quaternion)
+  nameWithType: Plane.Transform(Plane, Quaternion)
+  fullName: Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane, Microsoft.Xna.Framework.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Transform
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 159
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nTransforms a normalized plane by a quaternion rotation.\n"
+  example: []
+  syntax:
+    content: public static Plane Transform(Plane plane, Quaternion rotation)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+      description: The normalized plane to transform.
+    - id: rotation
+      type: Microsoft.Xna.Framework.Quaternion
+      description: The quaternion rotation.
+    return:
+      type: Microsoft.Xna.Framework.Plane
+      description: The transformed plane.
+    content.vb: Public Shared Function Transform(plane As Plane, rotation As Quaternion) As Plane
+  overload: Microsoft.Xna.Framework.Plane.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Quaternion@,Microsoft.Xna.Framework.Plane@)
+  commentId: M:Microsoft.Xna.Framework.Plane.Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Quaternion@,Microsoft.Xna.Framework.Plane@)
+  id: Transform(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Quaternion@,Microsoft.Xna.Framework.Plane@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref Plane, ref Quaternion, out Plane)
+  nameWithType: Plane.Transform(ref Plane, ref Quaternion, out Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Transform(ref Microsoft.Xna.Framework.Plane, ref Microsoft.Xna.Framework.Quaternion, out Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Transform
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 172
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nTransforms a normalized plane by a quaternion rotation.\n"
+  example: []
+  syntax:
+    content: public static void Transform(ref Plane plane, ref Quaternion rotation, out Plane result)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+      description: The normalized plane to transform.
+    - id: rotation
+      type: Microsoft.Xna.Framework.Quaternion
+      description: The quaternion rotation.
+    - id: result
+      type: Microsoft.Xna.Framework.Plane
+      description: The transformed plane.
+    content.vb: Public Shared Sub Transform(ByRef plane As Plane, ByRef rotation As Quaternion, ByRef result As Plane)
+  overload: Microsoft.Xna.Framework.Plane.Transform*
+  nameWithType.vb: Plane.Transform(ByRef Plane, ByRef Quaternion, ByRef Plane)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Xna.Framework.Plane.Transform(ByRef Microsoft.Xna.Framework.Plane, ByRef Microsoft.Xna.Framework.Quaternion, ByRef Microsoft.Xna.Framework.Plane)
+  name.vb: Transform(ByRef Plane, ByRef Quaternion, ByRef Plane)
+- uid: Microsoft.Xna.Framework.Plane.Normalize
+  commentId: M:Microsoft.Xna.Framework.Plane.Normalize
+  id: Normalize
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: Plane.Normalize()
+  fullName: Microsoft.Xna.Framework.Plane.Normalize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Normalize
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 178
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize
+  overload: Microsoft.Xna.Framework.Plane.Normalize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane)
+  commentId: M:Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane)
+  id: Normalize(Microsoft.Xna.Framework.Plane)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalize(Plane)
+  nameWithType: Plane.Normalize(Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Normalize
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 186
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static Plane Normalize(Plane value)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Plane
+    return:
+      type: Microsoft.Xna.Framework.Plane
+    content.vb: Public Shared Function Normalize(value As Plane) As Plane
+  overload: Microsoft.Xna.Framework.Plane.Normalize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Plane@)
+  commentId: M:Microsoft.Xna.Framework.Plane.Normalize(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Plane@)
+  id: Normalize(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.Plane@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalize(ref Plane, out Plane)
+  nameWithType: Plane.Normalize(ref Plane, out Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Normalize(ref Microsoft.Xna.Framework.Plane, out Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Normalize
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 193
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static void Normalize(ref Plane value, out Plane result)
+    parameters:
+    - id: value
+      type: Microsoft.Xna.Framework.Plane
+    - id: result
+      type: Microsoft.Xna.Framework.Plane
+    content.vb: Public Shared Sub Normalize(ByRef value As Plane, ByRef result As Plane)
+  overload: Microsoft.Xna.Framework.Plane.Normalize*
+  nameWithType.vb: Plane.Normalize(ByRef Plane, ByRef Plane)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Xna.Framework.Plane.Normalize(ByRef Microsoft.Xna.Framework.Plane, ByRef Microsoft.Xna.Framework.Plane)
+  name.vb: Normalize(ByRef Plane, ByRef Plane)
+- uid: Microsoft.Xna.Framework.Plane.op_Inequality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  commentId: M:Microsoft.Xna.Framework.Plane.op_Inequality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  id: op_Inequality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Plane, Plane)
+  nameWithType: Plane.Inequality(Plane, Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Inequality(Microsoft.Xna.Framework.Plane, Microsoft.Xna.Framework.Plane)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 201
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static bool operator !=(Plane plane1, Plane plane2)
+    parameters:
+    - id: plane1
+      type: Microsoft.Xna.Framework.Plane
+    - id: plane2
+      type: Microsoft.Xna.Framework.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(plane1 As Plane, plane2 As Plane) As Boolean
+  overload: Microsoft.Xna.Framework.Plane.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Plane.op_Equality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  commentId: M:Microsoft.Xna.Framework.Plane.op_Equality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  id: op_Equality(Microsoft.Xna.Framework.Plane,Microsoft.Xna.Framework.Plane)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equality(Plane, Plane)
+  nameWithType: Plane.Equality(Plane, Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Equality(Microsoft.Xna.Framework.Plane, Microsoft.Xna.Framework.Plane)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 206
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static bool operator ==(Plane plane1, Plane plane2)
+    parameters:
+    - id: plane1
+      type: Microsoft.Xna.Framework.Plane
+    - id: plane2
+      type: Microsoft.Xna.Framework.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(plane1 As Plane, plane2 As Plane) As Boolean
+  overload: Microsoft.Xna.Framework.Plane.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Plane.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Plane.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Plane.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Plane.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 211
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Plane.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Plane.Equals(Microsoft.Xna.Framework.Plane)
+  commentId: M:Microsoft.Xna.Framework.Plane.Equals(Microsoft.Xna.Framework.Plane)
+  id: Equals(Microsoft.Xna.Framework.Plane)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(Plane)
+  nameWithType: Plane.Equals(Plane)
+  fullName: Microsoft.Xna.Framework.Plane.Equals(Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 216
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Equals(Plane other)
+    parameters:
+    - id: other
+      type: Microsoft.Xna.Framework.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Plane) As Boolean
+  overload: Microsoft.Xna.Framework.Plane.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Plane}.Equals(Microsoft.Xna.Framework.Plane)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Plane.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Plane.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Plane.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 221
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Plane.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  id: Intersects(Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingBox)
+  nameWithType: Plane.Intersects(BoundingBox)
+  fullName: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 226
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public PlaneIntersectionType Intersects(BoundingBox box)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Function Intersects(box As BoundingBox) As PlaneIntersectionType
+  overload: Microsoft.Xna.Framework.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  commentId: M:Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  id: Intersects(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingBox, out PlaneIntersectionType)
+  nameWithType: Plane.Intersects(ref BoundingBox, out PlaneIntersectionType)
+  fullName: Microsoft.Xna.Framework.Plane.Intersects(ref Microsoft.Xna.Framework.BoundingBox, out Microsoft.Xna.Framework.PlaneIntersectionType)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 231
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref BoundingBox box, out PlaneIntersectionType result)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: result
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Sub Intersects(ByRef box As BoundingBox, ByRef result As PlaneIntersectionType)
+  overload: Microsoft.Xna.Framework.Plane.Intersects*
+  nameWithType.vb: Plane.Intersects(ByRef BoundingBox, ByRef PlaneIntersectionType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Plane.Intersects(ByRef Microsoft.Xna.Framework.BoundingBox, ByRef Microsoft.Xna.Framework.PlaneIntersectionType)
+  name.vb: Intersects(ByRef BoundingBox, ByRef PlaneIntersectionType)
+- uid: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  commentId: M:Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  id: Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingFrustum)
+  nameWithType: Plane.Intersects(BoundingFrustum)
+  fullName: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 236
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public PlaneIntersectionType Intersects(BoundingFrustum frustum)
+    parameters:
+    - id: frustum
+      type: Microsoft.Xna.Framework.BoundingFrustum
+    return:
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Function Intersects(frustum As BoundingFrustum) As PlaneIntersectionType
+  overload: Microsoft.Xna.Framework.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  commentId: M:Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  id: Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingSphere)
+  nameWithType: Plane.Intersects(BoundingSphere)
+  fullName: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 241
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public PlaneIntersectionType Intersects(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    return:
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Function Intersects(sphere As BoundingSphere) As PlaneIntersectionType
+  overload: Microsoft.Xna.Framework.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  commentId: M:Microsoft.Xna.Framework.Plane.Intersects(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  id: Intersects(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingSphere, out PlaneIntersectionType)
+  nameWithType: Plane.Intersects(ref BoundingSphere, out PlaneIntersectionType)
+  fullName: Microsoft.Xna.Framework.Plane.Intersects(ref Microsoft.Xna.Framework.BoundingSphere, out Microsoft.Xna.Framework.PlaneIntersectionType)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 246
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref BoundingSphere sphere, out PlaneIntersectionType result)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    - id: result
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Sub Intersects(ByRef sphere As BoundingSphere, ByRef result As PlaneIntersectionType)
+  overload: Microsoft.Xna.Framework.Plane.Intersects*
+  nameWithType.vb: Plane.Intersects(ByRef BoundingSphere, ByRef PlaneIntersectionType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Plane.Intersects(ByRef Microsoft.Xna.Framework.BoundingSphere, ByRef Microsoft.Xna.Framework.PlaneIntersectionType)
+  name.vb: Intersects(ByRef BoundingSphere, ByRef PlaneIntersectionType)
+- uid: Microsoft.Xna.Framework.Plane.ToString
+  commentId: M:Microsoft.Xna.Framework.Plane.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Plane
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Plane.ToString()
+  fullName: Microsoft.Xna.Framework.Plane.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Plane.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Plane.cs
+    startLine: 276
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Plane.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.IEquatable{Microsoft.Xna.Framework.Plane}
+  commentId: T:System.IEquatable{Microsoft.Xna.Framework.Plane}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Plane>
+  nameWithType: IEquatable<Plane>
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Plane>
+  nameWithType.vb: IEquatable(Of Plane)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Plane)
+  name.vb: IEquatable(Of Plane)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: Microsoft.Xna.Framework.Plane
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: Microsoft.Xna.Framework.Plane
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework.Plane.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.#ctor
+  isExternal: false
+  name: Plane
+  nameWithType: Plane.Plane
+  fullName: Microsoft.Xna.Framework.Plane.Plane
+- uid: Microsoft.Xna.Framework.Vector4
+  commentId: T:Microsoft.Xna.Framework.Vector4
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector4
+  nameWithType: Vector4
+  fullName: Microsoft.Xna.Framework.Vector4
+- uid: Microsoft.Xna.Framework.Plane.Dot*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.Dot
+  isExternal: false
+  name: Dot
+  nameWithType: Plane.Dot
+  fullName: Microsoft.Xna.Framework.Plane.Dot
+- uid: Microsoft.Xna.Framework.Plane.DotCoordinate*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.DotCoordinate
+  isExternal: false
+  name: DotCoordinate
+  nameWithType: Plane.DotCoordinate
+  fullName: Microsoft.Xna.Framework.Plane.DotCoordinate
+- uid: Microsoft.Xna.Framework.Plane.DotNormal*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.DotNormal
+  isExternal: false
+  name: DotNormal
+  nameWithType: Plane.DotNormal
+  fullName: Microsoft.Xna.Framework.Plane.DotNormal
+- uid: Microsoft.Xna.Framework.Plane.Transform*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.Transform
+  isExternal: false
+  name: Transform
+  nameWithType: Plane.Transform
+  fullName: Microsoft.Xna.Framework.Plane.Transform
+- uid: Microsoft.Xna.Framework.Plane
+  commentId: T:Microsoft.Xna.Framework.Plane
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Plane
+  nameWithType: Plane
+  fullName: Microsoft.Xna.Framework.Plane
+- uid: Microsoft.Xna.Framework.Matrix
+  commentId: T:Microsoft.Xna.Framework.Matrix
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Matrix
+  nameWithType: Matrix
+  fullName: Microsoft.Xna.Framework.Matrix
+- uid: Microsoft.Xna.Framework.Quaternion
+  commentId: T:Microsoft.Xna.Framework.Quaternion
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Microsoft.Xna.Framework.Quaternion
+- uid: Microsoft.Xna.Framework.Plane.Normalize*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.Normalize
+  isExternal: false
+  name: Normalize
+  nameWithType: Plane.Normalize
+  fullName: Microsoft.Xna.Framework.Plane.Normalize
+- uid: Microsoft.Xna.Framework.Plane.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: Plane.Inequality
+  fullName: Microsoft.Xna.Framework.Plane.Inequality
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Plane.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: Plane.Equality
+  fullName: Microsoft.Xna.Framework.Plane.Equality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Plane.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: Plane.Equals
+  fullName: Microsoft.Xna.Framework.Plane.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Microsoft.Xna.Framework.Plane}.Equals(Microsoft.Xna.Framework.Plane)
+  commentId: M:System.IEquatable{Microsoft.Xna.Framework.Plane}.Equals(Microsoft.Xna.Framework.Plane)
+  parent: System.IEquatable{Microsoft.Xna.Framework.Plane}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Plane)
+  nameWithType: IEquatable<Plane>.Equals(Plane)
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Plane>.Equals(Microsoft.Xna.Framework.Plane)
+  nameWithType.vb: IEquatable(Of Plane).Equals(Plane)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Plane).Equals(Microsoft.Xna.Framework.Plane)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Plane>.Equals
+    fullName: System.IEquatable<Microsoft.Xna.Framework.Plane>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: Microsoft.Xna.Framework.Plane
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Plane).Equals
+    fullName: System.IEquatable(Of Microsoft.Xna.Framework.Plane).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: Microsoft.Xna.Framework.Plane
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Plane.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Plane.GetHashCode
+  fullName: Microsoft.Xna.Framework.Plane.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Plane.Intersects*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.Intersects
+  isExternal: false
+  name: Intersects
+  nameWithType: Plane.Intersects
+  fullName: Microsoft.Xna.Framework.Plane.Intersects
+- uid: Microsoft.Xna.Framework.BoundingBox
+  commentId: T:Microsoft.Xna.Framework.BoundingBox
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Microsoft.Xna.Framework.BoundingBox
+- uid: Microsoft.Xna.Framework.PlaneIntersectionType
+  commentId: T:Microsoft.Xna.Framework.PlaneIntersectionType
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: PlaneIntersectionType
+  nameWithType: PlaneIntersectionType
+  fullName: Microsoft.Xna.Framework.PlaneIntersectionType
+- uid: Microsoft.Xna.Framework.BoundingFrustum
+  commentId: T:Microsoft.Xna.Framework.BoundingFrustum
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingFrustum
+  nameWithType: BoundingFrustum
+  fullName: Microsoft.Xna.Framework.BoundingFrustum
+- uid: Microsoft.Xna.Framework.BoundingSphere
+  commentId: T:Microsoft.Xna.Framework.BoundingSphere
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingSphere
+  nameWithType: BoundingSphere
+  fullName: Microsoft.Xna.Framework.BoundingSphere
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Plane.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Plane.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: Plane.ToString
+  fullName: Microsoft.Xna.Framework.Plane.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

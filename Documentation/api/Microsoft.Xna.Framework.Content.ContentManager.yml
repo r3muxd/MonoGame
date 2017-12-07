@@ -1,0 +1,1268 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Content.ContentManager
+  commentId: T:Microsoft.Xna.Framework.Content.ContentManager
+  id: ContentManager
+  parent: Microsoft.Xna.Framework.Content
+  children:
+  - Microsoft.Xna.Framework.Content.ContentManager.#ctor(System.IServiceProvider)
+  - Microsoft.Xna.Framework.Content.ContentManager.#ctor(System.IServiceProvider,System.String)
+  - Microsoft.Xna.Framework.Content.ContentManager.Dispose
+  - Microsoft.Xna.Framework.Content.ContentManager.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Content.ContentManager.Finalize
+  - Microsoft.Xna.Framework.Content.ContentManager.Load``1(System.String)
+  - Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets
+  - Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized``1(System.String)
+  - Microsoft.Xna.Framework.Content.ContentManager.OpenStream(System.String)
+  - Microsoft.Xna.Framework.Content.ContentManager.ReadAsset``1(System.String,System.Action{System.IDisposable})
+  - Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset``1(System.String,``0)
+  - Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets
+  - Microsoft.Xna.Framework.Content.ContentManager.RootDirectory
+  - Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider
+  - Microsoft.Xna.Framework.Content.ContentManager.Unload
+  langs:
+  - csharp
+  - vb
+  name: ContentManager
+  nameWithType: ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentManager
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ContentManager
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 20
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: 'public class ContentManager : IDisposable'
+    content.vb: >-
+      Public Class ContentManager
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Xna.Framework.Content.ResourceContentManager
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Finalize
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.Finalize
+  id: Finalize
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: ContentManager.Finalize()
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Finalize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Finalize
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 139
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: Microsoft.Xna.Framework.Content.ContentManager.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Xna.Framework.Content.ContentManager.#ctor(System.IServiceProvider)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.#ctor(System.IServiceProvider)
+  id: '#ctor(System.IServiceProvider)'
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: ContentManager(IServiceProvider)
+  nameWithType: ContentManager.ContentManager(IServiceProvider)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ContentManager(System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 147
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public ContentManager(IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    content.vb: Public Sub New(serviceProvider As IServiceProvider)
+  overload: Microsoft.Xna.Framework.Content.ContentManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentManager.#ctor(System.IServiceProvider,System.String)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.#ctor(System.IServiceProvider,System.String)
+  id: '#ctor(System.IServiceProvider,System.String)'
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: ContentManager(IServiceProvider, String)
+  nameWithType: ContentManager.ContentManager(IServiceProvider, String)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ContentManager(System.IServiceProvider, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 157
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public ContentManager(IServiceProvider serviceProvider, string rootDirectory)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    - id: rootDirectory
+      type: System.String
+    content.vb: Public Sub New(serviceProvider As IServiceProvider, rootDirectory As String)
+  overload: Microsoft.Xna.Framework.Content.ContentManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Dispose
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.Dispose
+  id: Dispose
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ContentManager.Dispose()
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Dispose()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 172
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Xna.Framework.Content.ContentManager.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: ContentManager.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 184
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Microsoft.Xna.Framework.Content.ContentManager.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized``1(System.String)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized``1(System.String)
+  id: LoadLocalized``1(System.String)
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: LoadLocalized<T>(String)
+  nameWithType: ContentManager.LoadLocalized<T>(String)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LoadLocalized
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 198
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public virtual T LoadLocalized<T>(string assetName)
+    parameters:
+    - id: assetName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Overridable Function LoadLocalized(Of T)(assetName As String) As T
+  overload: Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized*
+  nameWithType.vb: ContentManager.LoadLocalized(Of T)(String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized(Of T)(System.String)
+  name.vb: LoadLocalized(Of T)(String)
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Load``1(System.String)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.Load``1(System.String)
+  id: Load``1(System.String)
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: Load<T>(String)
+  nameWithType: ContentManager.Load<T>(String)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Load<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Load
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 221
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public virtual T Load<T>(string assetName)
+    parameters:
+    - id: assetName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Overridable Function Load(Of T)(assetName As String) As T
+  overload: Microsoft.Xna.Framework.Content.ContentManager.Load*
+  nameWithType.vb: ContentManager.Load(Of T)(String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentManager.Load(Of T)(System.String)
+  name.vb: Load(Of T)(String)
+- uid: Microsoft.Xna.Framework.Content.ContentManager.OpenStream(System.String)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.OpenStream(System.String)
+  id: OpenStream(System.String)
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: OpenStream(String)
+  nameWithType: ContentManager.OpenStream(String)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.OpenStream(System.String)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OpenStream
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 259
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: protected virtual Stream OpenStream(string assetName)
+    parameters:
+    - id: assetName
+      type: System.String
+    return:
+      type: System.IO.Stream
+    content.vb: Protected Overridable Function OpenStream(assetName As String) As Stream
+  overload: Microsoft.Xna.Framework.Content.ContentManager.OpenStream*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ReadAsset``1(System.String,System.Action{System.IDisposable})
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.ReadAsset``1(System.String,System.Action{System.IDisposable})
+  id: ReadAsset``1(System.String,System.Action{System.IDisposable})
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: ReadAsset<T>(String, Action<IDisposable>)
+  nameWithType: ContentManager.ReadAsset<T>(String, Action<IDisposable>)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ReadAsset<T>(System.String, System.Action<System.IDisposable>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReadAsset
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 302
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: protected T ReadAsset<T>(string assetName, Action<IDisposable> recordDisposableObject)
+    parameters:
+    - id: assetName
+      type: System.String
+    - id: recordDisposableObject
+      type: System.Action{System.IDisposable}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Protected Function ReadAsset(Of T)(assetName As String, recordDisposableObject As Action(Of IDisposable)) As T
+  overload: Microsoft.Xna.Framework.Content.ContentManager.ReadAsset*
+  nameWithType.vb: ContentManager.ReadAsset(Of T)(String, Action(Of IDisposable))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentManager.ReadAsset(Of T)(System.String, System.Action(Of System.IDisposable))
+  name.vb: ReadAsset(Of T)(String, Action(Of IDisposable))
+- uid: Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets
+  commentId: P:Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets
+  id: LoadedAssets
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: LoadedAssets
+  nameWithType: ContentManager.LoadedAssets
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LoadedAssets
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 410
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  summary: "\nVirtual property to allow a derived ContentManager to have it&apos;s assets reloaded\n"
+  example: []
+  syntax:
+    content: protected virtual Dictionary<string, object> LoadedAssets { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Protected Overridable ReadOnly Property LoadedAssets As Dictionary(Of String, Object)
+  overload: Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets*
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets
+  id: ReloadGraphicsAssets
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: ReloadGraphicsAssets()
+  nameWithType: ContentManager.ReloadGraphicsAssets()
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReloadGraphicsAssets
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 415
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: protected virtual void ReloadGraphicsAssets()
+    content.vb: Protected Overridable Sub ReloadGraphicsAssets
+  overload: Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset``1(System.String,``0)
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset``1(System.String,``0)
+  id: ReloadAsset``1(System.String,``0)
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: ReloadAsset<T>(String, T)
+  nameWithType: ContentManager.ReloadAsset<T>(String, T)
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset<T>(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ReloadAsset
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 430
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: protected virtual void ReloadAsset<T>(string originalAssetName, T currentAsset)
+    parameters:
+    - id: originalAssetName
+      type: System.String
+    - id: currentAsset
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Protected Overridable Sub ReloadAsset(Of T)(originalAssetName As String, currentAsset As T)
+  overload: Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset*
+  nameWithType.vb: ContentManager.ReloadAsset(Of T)(String, T)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset(Of T)(System.String, T)
+  name.vb: ReloadAsset(Of T)(String, T)
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Unload
+  commentId: M:Microsoft.Xna.Framework.Content.ContentManager.Unload
+  id: Unload
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: Unload()
+  nameWithType: ContentManager.Unload()
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Unload()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Unload
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 461
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public virtual void Unload()
+    content.vb: Public Overridable Sub Unload
+  overload: Microsoft.Xna.Framework.Content.ContentManager.Unload*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.Xna.Framework.Content.ContentManager.RootDirectory
+  commentId: P:Microsoft.Xna.Framework.Content.ContentManager.RootDirectory
+  id: RootDirectory
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: RootDirectory
+  nameWithType: ContentManager.RootDirectory
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.RootDirectory
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RootDirectory
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 473
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public string RootDirectory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RootDirectory As String
+  overload: Microsoft.Xna.Framework.Content.ContentManager.RootDirectory*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider
+  commentId: P:Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider
+  id: ServiceProvider
+  parent: Microsoft.Xna.Framework.Content.ContentManager
+  langs:
+  - csharp
+  - vb
+  name: ServiceProvider
+  nameWithType: ContentManager.ServiceProvider
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Content/ContentManager.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ServiceProvider
+    path: ../MonoGame.Framework/Content/ContentManager.cs
+    startLine: 493
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Content
+  syntax:
+    content: public IServiceProvider ServiceProvider { get; }
+    parameters: []
+    return:
+      type: System.IServiceProvider
+    content.vb: Public ReadOnly Property ServiceProvider As IServiceProvider
+  overload: Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Xna.Framework.Content
+  commentId: N:Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: Microsoft.Xna.Framework.Content
+  nameWithType: Microsoft.Xna.Framework.Content
+  fullName: Microsoft.Xna.Framework.Content
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Finalize*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.Finalize
+  isExternal: false
+  name: Finalize
+  nameWithType: ContentManager.Finalize
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Finalize
+- uid: Microsoft.Xna.Framework.Content.ContentManager.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.#ctor
+  isExternal: false
+  name: ContentManager
+  nameWithType: ContentManager.ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ContentManager
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: ContentManager.Dispose
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized
+  isExternal: false
+  name: LoadLocalized
+  nameWithType: ContentManager.LoadLocalized
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.LoadLocalized
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Load*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.Load
+  isExternal: false
+  name: Load
+  nameWithType: ContentManager.Load
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Load
+- uid: Microsoft.Xna.Framework.Content.ContentManager.OpenStream*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.OpenStream
+  isExternal: false
+  name: OpenStream
+  nameWithType: ContentManager.OpenStream
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.OpenStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ReadAsset*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.ReadAsset
+  isExternal: false
+  name: ReadAsset
+  nameWithType: ContentManager.ReadAsset
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ReadAsset
+- uid: System.Action{System.IDisposable}
+  commentId: T:System.Action{System.IDisposable}
+  parent: System
+  definition: System.Action`1
+  name: Action<IDisposable>
+  nameWithType: Action<IDisposable>
+  fullName: System.Action<System.IDisposable>
+  nameWithType.vb: Action(Of IDisposable)
+  fullName.vb: System.Action(Of System.IDisposable)
+  name.vb: Action(Of IDisposable)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IDisposable
+    name: IDisposable
+    nameWithType: IDisposable
+    fullName: System.IDisposable
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IDisposable
+    name: IDisposable
+    nameWithType: IDisposable
+    fullName: System.IDisposable
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets
+  isExternal: false
+  name: LoadedAssets
+  nameWithType: ContentManager.LoadedAssets
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.LoadedAssets
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets
+  isExternal: false
+  name: ReloadGraphicsAssets
+  nameWithType: ContentManager.ReloadGraphicsAssets
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ReloadGraphicsAssets
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset
+  isExternal: false
+  name: ReloadAsset
+  nameWithType: ContentManager.ReloadAsset
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ReloadAsset
+- uid: Microsoft.Xna.Framework.Content.ContentManager.Unload*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.Unload
+  isExternal: false
+  name: Unload
+  nameWithType: ContentManager.Unload
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.Unload
+- uid: Microsoft.Xna.Framework.Content.ContentManager.RootDirectory*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.RootDirectory
+  isExternal: false
+  name: RootDirectory
+  nameWithType: ContentManager.RootDirectory
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.RootDirectory
+- uid: Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider*
+  commentId: Overload:Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider
+  isExternal: false
+  name: ServiceProvider
+  nameWithType: ContentManager.ServiceProvider
+  fullName: Microsoft.Xna.Framework.Content.ContentManager.ServiceProvider

@@ -1,0 +1,509 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation
+  commentId: T:Microsoft.Xna.Framework.GraphicsDeviceInformation
+  id: GraphicsDeviceInformation
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter
+  - Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile
+  - Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDeviceInformation
+  nameWithType: GraphicsDeviceInformation
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/GraphicsDeviceInformation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDeviceInformation
+    path: ../MonoGame.Framework/GraphicsDeviceInformation.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe settings used in creation of the graphics device.\nSee <xref href=\"Microsoft.Xna.Framework.GraphicsDeviceManager.PreparingDeviceSettings\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public class GraphicsDeviceInformation
+    content.vb: Public Class GraphicsDeviceInformation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter
+  commentId: P:Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter
+  id: Adapter
+  parent: Microsoft.Xna.Framework.GraphicsDeviceInformation
+  langs:
+  - csharp
+  - vb
+  name: Adapter
+  nameWithType: GraphicsDeviceInformation.Adapter
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/GraphicsDeviceInformation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Adapter
+    path: ../MonoGame.Framework/GraphicsDeviceInformation.cs
+    startLine: 21
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe graphics adapter on which the graphics device will be created.\n"
+  remarks: "\nThis is only valid on desktop systems where multiple graphics \nadapters are possible.  Defaults to <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DefaultAdapter\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public GraphicsAdapter Adapter { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+    content.vb: Public Property Adapter As GraphicsAdapter
+  overload: Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile
+  commentId: P:Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile
+  id: GraphicsProfile
+  parent: Microsoft.Xna.Framework.GraphicsDeviceInformation
+  langs:
+  - csharp
+  - vb
+  name: GraphicsProfile
+  nameWithType: GraphicsDeviceInformation.GraphicsProfile
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/GraphicsDeviceInformation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsProfile
+    path: ../MonoGame.Framework/GraphicsDeviceInformation.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe requested graphics device feature set. \n"
+  example: []
+  syntax:
+    content: public GraphicsProfile GraphicsProfile { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+    content.vb: Public Property GraphicsProfile As GraphicsProfile
+  overload: Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters
+  commentId: P:Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters
+  id: PresentationParameters
+  parent: Microsoft.Xna.Framework.GraphicsDeviceInformation
+  langs:
+  - csharp
+  - vb
+  name: PresentationParameters
+  nameWithType: GraphicsDeviceInformation.PresentationParameters
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/GraphicsDeviceInformation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PresentationParameters
+    path: ../MonoGame.Framework/GraphicsDeviceInformation.cs
+    startLine: 31
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe settings that define how graphics will be presented to the display.\n"
+  example: []
+  syntax:
+    content: public PresentationParameters PresentationParameters { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.PresentationParameters
+    content.vb: Public Property PresentationParameters As PresentationParameters
+  overload: Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.GraphicsDeviceManager.PreparingDeviceSettings
+  commentId: E:Microsoft.Xna.Framework.GraphicsDeviceManager.PreparingDeviceSettings
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DefaultAdapter
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DefaultAdapter
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter*
+  commentId: Overload:Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter
+  isExternal: false
+  name: Adapter
+  nameWithType: GraphicsDeviceInformation.Adapter
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation.Adapter
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsAdapter
+  nameWithType: GraphicsAdapter
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile*
+  commentId: Overload:Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile
+  isExternal: false
+  name: GraphicsProfile
+  nameWithType: GraphicsDeviceInformation.GraphicsProfile
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation.GraphicsProfile
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsProfile
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsProfile
+  nameWithType: GraphicsProfile
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+- uid: Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters*
+  commentId: Overload:Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters
+  isExternal: false
+  name: PresentationParameters
+  nameWithType: GraphicsDeviceInformation.PresentationParameters
+  fullName: Microsoft.Xna.Framework.GraphicsDeviceInformation.PresentationParameters
+- uid: Microsoft.Xna.Framework.Graphics.PresentationParameters
+  commentId: T:Microsoft.Xna.Framework.Graphics.PresentationParameters
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: PresentationParameters
+  nameWithType: PresentationParameters
+  fullName: Microsoft.Xna.Framework.Graphics.PresentationParameters

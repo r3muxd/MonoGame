@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction
+  commentId: T:Microsoft.Xna.Framework.Graphics.CompareFunction
+  id: CompareFunction
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.Always
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.Equal
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.Greater
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.GreaterEqual
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.Less
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.LessEqual
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.Never
+  - Microsoft.Xna.Framework.Graphics.CompareFunction.NotEqual
+  langs:
+  - csharp
+  - vb
+  name: CompareFunction
+  nameWithType: CompareFunction
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CompareFunction
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe comparison function used for depth, stencil, and alpha tests.\n"
+  example: []
+  syntax:
+    content: public enum CompareFunction
+    content.vb: Public Enum CompareFunction
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.Always
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.Always
+  id: Always
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: Always
+  nameWithType: CompareFunction.Always
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.Always
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Always
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nAlways passes the test.\n"
+  example: []
+  syntax:
+    content: Always = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.Never
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.Never
+  id: Never
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: Never
+  nameWithType: CompareFunction.Never
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.Never
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Never
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNever passes the test.\n"
+  example: []
+  syntax:
+    content: Never = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.Less
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.Less
+  id: Less
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: Less
+  nameWithType: CompareFunction.Less
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.Less
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Less
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPasses the test when the new pixel value is less than current pixel value.\n"
+  example: []
+  syntax:
+    content: Less = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.LessEqual
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.LessEqual
+  id: LessEqual
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: LessEqual
+  nameWithType: CompareFunction.LessEqual
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.LessEqual
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LessEqual
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPasses the test when the new pixel value is less than or equal to current pixel value.\n"
+  example: []
+  syntax:
+    content: LessEqual = 3
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.Equal
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.Equal
+  id: Equal
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: CompareFunction.Equal
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.Equal
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equal
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPasses the test when the new pixel value is equal to current pixel value.\n"
+  example: []
+  syntax:
+    content: Equal = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.GreaterEqual
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.GreaterEqual
+  id: GreaterEqual
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: GreaterEqual
+  nameWithType: CompareFunction.GreaterEqual
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.GreaterEqual
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GreaterEqual
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 34
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPasses the test when the new pixel value is greater than or equal to current pixel value.\n"
+  example: []
+  syntax:
+    content: GreaterEqual = 5
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.Greater
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.Greater
+  id: Greater
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: Greater
+  nameWithType: CompareFunction.Greater
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.Greater
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Greater
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPasses the test when the new pixel value is greater than current pixel value.\n"
+  example: []
+  syntax:
+    content: Greater = 6
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction.NotEqual
+  commentId: F:Microsoft.Xna.Framework.Graphics.CompareFunction.NotEqual
+  id: NotEqual
+  parent: Microsoft.Xna.Framework.Graphics.CompareFunction
+  langs:
+  - csharp
+  - vb
+  name: NotEqual
+  nameWithType: CompareFunction.NotEqual
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction.NotEqual
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CompareFunction.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NotEqual
+    path: ../MonoGame.Framework/Graphics/States/CompareFunction.cs
+    startLine: 42
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPasses the test when the new pixel value does not equal to current pixel value.\n"
+  example: []
+  syntax:
+    content: NotEqual = 7
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CompareFunction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.CompareFunction
+  commentId: T:Microsoft.Xna.Framework.Graphics.CompareFunction
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: CompareFunction
+  nameWithType: CompareFunction
+  fullName: Microsoft.Xna.Framework.Graphics.CompareFunction

@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices
+  commentId: T:Microsoft.Xna.Framework.Graphics.IEffectMatrices
+  id: IEffectMatrices
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection
+  - Microsoft.Xna.Framework.Graphics.IEffectMatrices.View
+  - Microsoft.Xna.Framework.Graphics.IEffectMatrices.World
+  langs:
+  - csharp
+  - vb
+  name: IEffectMatrices
+  nameWithType: IEffectMatrices
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices
+  type: Interface
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IEffectMatrices
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public interface IEffectMatrices
+    content.vb: Public Interface IEffectMatrices
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection
+  id: Projection
+  parent: Microsoft.Xna.Framework.Graphics.IEffectMatrices
+  langs:
+  - csharp
+  - vb
+  name: Projection
+  nameWithType: IEffectMatrices.Projection
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Projection
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+    startLine: 46
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: Matrix Projection { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Matrix
+    content.vb: Property Projection As Matrix
+  overload: Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices.View
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectMatrices.View
+  id: View
+  parent: Microsoft.Xna.Framework.Graphics.IEffectMatrices
+  langs:
+  - csharp
+  - vb
+  name: View
+  nameWithType: IEffectMatrices.View
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices.View
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: View
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+    startLine: 47
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: Matrix View { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Matrix
+    content.vb: Property View As Matrix
+  overload: Microsoft.Xna.Framework.Graphics.IEffectMatrices.View*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices.World
+  commentId: P:Microsoft.Xna.Framework.Graphics.IEffectMatrices.World
+  id: World
+  parent: Microsoft.Xna.Framework.Graphics.IEffectMatrices
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: IEffectMatrices.World
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices.World
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: World
+    path: ../MonoGame.Framework/Graphics/Effect/IEffectMatrices.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: Matrix World { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Matrix
+    content.vb: Property World As Matrix
+  overload: Microsoft.Xna.Framework.Graphics.IEffectMatrices.World*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection
+  isExternal: false
+  name: Projection
+  nameWithType: IEffectMatrices.Projection
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices.Projection
+- uid: Microsoft.Xna.Framework.Matrix
+  commentId: T:Microsoft.Xna.Framework.Matrix
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Matrix
+  nameWithType: Matrix
+  fullName: Microsoft.Xna.Framework.Matrix
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices.View*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectMatrices.View
+  isExternal: false
+  name: View
+  nameWithType: IEffectMatrices.View
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices.View
+- uid: Microsoft.Xna.Framework.Graphics.IEffectMatrices.World*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.IEffectMatrices.World
+  isExternal: false
+  name: World
+  nameWithType: IEffectMatrices.World
+  fullName: Microsoft.Xna.Framework.Graphics.IEffectMatrices.World

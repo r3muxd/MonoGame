@@ -1,0 +1,1090 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  commentId: T:Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  id: TouchLocation
+  parent: Microsoft.Xna.Framework.Input.Touch
+  children:
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(System.Object)
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Equality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Inequality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.State
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString
+  - Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation(Microsoft.Xna.Framework.Input.Touch.TouchLocation@)
+  langs:
+  - csharp
+  - vb
+  name: TouchLocation
+  nameWithType: TouchLocation
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TouchLocation
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: 'public struct TouchLocation : IEquatable<TouchLocation>'
+    content.vb: >-
+      Public Structure TouchLocation
+          Implements IEquatable(Of TouchLocation)
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id
+  id: Id
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TouchLocation.Id
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Id
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 103
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public int Id { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Id As Integer
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position
+  id: Position
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: TouchLocation.Position
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Position
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 111
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public Vector2 Position { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Vector2
+    content.vb: Public ReadOnly Property Position As Vector2
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure
+  id: Pressure
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Pressure
+  nameWithType: TouchLocation.Pressure
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Pressure
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 119
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public float Pressure { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Pressure As Single
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.State
+  commentId: P:Microsoft.Xna.Framework.Input.Touch.TouchLocation.State
+  id: State
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: TouchLocation.State
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.State
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: State
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 127
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public TouchLocationState State { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+    content.vb: Public ReadOnly Property State As TouchLocationState
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.State*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)
+  id: '#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)'
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: TouchLocation(Int32, TouchLocationState, Vector2)
+  nameWithType: TouchLocation.TouchLocation(Int32, TouchLocationState, Vector2)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TouchLocation(System.Int32, Microsoft.Xna.Framework.Input.Touch.TouchLocationState, Microsoft.Xna.Framework.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 139
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public TouchLocation(int id, TouchLocationState state, Vector2 position)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: state
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+    - id: position
+      type: Microsoft.Xna.Framework.Vector2
+    content.vb: Public Sub New(id As Integer, state As TouchLocationState, position As Vector2)
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)
+  id: '#ctor(System.Int32,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Input.Touch.TouchLocationState,Microsoft.Xna.Framework.Vector2)'
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: TouchLocation(Int32, TouchLocationState, Vector2, TouchLocationState, Vector2)
+  nameWithType: TouchLocation.TouchLocation(Int32, TouchLocationState, Vector2, TouchLocationState, Vector2)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TouchLocation(System.Int32, Microsoft.Xna.Framework.Input.Touch.TouchLocationState, Microsoft.Xna.Framework.Vector2, Microsoft.Xna.Framework.Input.Touch.TouchLocationState, Microsoft.Xna.Framework.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 144
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public TouchLocation(int id, TouchLocationState state, Vector2 position, TouchLocationState previousState, Vector2 previousPosition)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: state
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+    - id: position
+      type: Microsoft.Xna.Framework.Vector2
+    - id: previousState
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+    - id: previousPosition
+      type: Microsoft.Xna.Framework.Vector2
+    content.vb: Public Sub New(id As Integer, state As TouchLocationState, position As Vector2, previousState As TouchLocationState, previousPosition As Vector2)
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: TouchLocation.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 255
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  id: Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Equals(TouchLocation)
+  nameWithType: TouchLocation.Equals(TouchLocation)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 263
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public bool Equals(TouchLocation other)
+    parameters:
+    - id: other
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As TouchLocation) As Boolean
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: TouchLocation.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 270
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TouchLocation.ToString()
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 275
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation(Microsoft.Xna.Framework.Input.Touch.TouchLocation@)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation(Microsoft.Xna.Framework.Input.Touch.TouchLocation@)
+  id: TryGetPreviousLocation(Microsoft.Xna.Framework.Input.Touch.TouchLocation@)
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: TryGetPreviousLocation(out TouchLocation)
+  nameWithType: TouchLocation.TryGetPreviousLocation(out TouchLocation)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation(out Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TryGetPreviousLocation
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 280
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public bool TryGetPreviousLocation(out TouchLocation aPreviousLocation)
+    parameters:
+    - id: aPreviousLocation
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetPreviousLocation(ByRef aPreviousLocation As TouchLocation) As Boolean
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation*
+  nameWithType.vb: TouchLocation.TryGetPreviousLocation(ByRef TouchLocation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation(ByRef Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  name.vb: TryGetPreviousLocation(ByRef TouchLocation)
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Inequality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Inequality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  id: op_Inequality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Inequality(TouchLocation, TouchLocation)
+  nameWithType: TouchLocation.Inequality(TouchLocation, TouchLocation)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Inequality(Microsoft.Xna.Framework.Input.Touch.TouchLocation, Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 314
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public static bool operator !=(TouchLocation value1, TouchLocation value2)
+    parameters:
+    - id: value1
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    - id: value2
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(value1 As TouchLocation, value2 As TouchLocation) As Boolean
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Equality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  commentId: M:Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Equality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  id: op_Equality(Microsoft.Xna.Framework.Input.Touch.TouchLocation,Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  parent: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  langs:
+  - csharp
+  - vb
+  name: Equality(TouchLocation, TouchLocation)
+  nameWithType: TouchLocation.Equality(TouchLocation, TouchLocation)
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equality(Microsoft.Xna.Framework.Input.Touch.TouchLocation, Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Touch/TouchLocation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Input/Touch/TouchLocation.cs
+    startLine: 323
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input.Touch
+  syntax:
+    content: public static bool operator ==(TouchLocation value1, TouchLocation value2)
+    parameters:
+    - id: value1
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    - id: value2
+      type: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(value1 As TouchLocation, value2 As TouchLocation) As Boolean
+  overload: Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Xna.Framework.Input.Touch
+  commentId: N:Microsoft.Xna.Framework.Input.Touch
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input.Touch
+  nameWithType: Microsoft.Xna.Framework.Input.Touch
+  fullName: Microsoft.Xna.Framework.Input.Touch
+- uid: System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}
+  commentId: T:System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<TouchLocation>
+  nameWithType: IEquatable<TouchLocation>
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Input.Touch.TouchLocation>
+  nameWithType.vb: IEquatable(Of TouchLocation)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  name.vb: IEquatable(Of TouchLocation)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    name: TouchLocation
+    nameWithType: TouchLocation
+    fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    name: TouchLocation
+    nameWithType: TouchLocation
+    fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id
+  isExternal: false
+  name: Id
+  nameWithType: TouchLocation.Id
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position
+  isExternal: false
+  name: Position
+  nameWithType: TouchLocation.Position
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Position
+- uid: Microsoft.Xna.Framework.Vector2
+  commentId: T:Microsoft.Xna.Framework.Vector2
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Microsoft.Xna.Framework.Vector2
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure
+  isExternal: false
+  name: Pressure
+  nameWithType: TouchLocation.Pressure
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Pressure
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.State*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.State
+  isExternal: false
+  name: State
+  nameWithType: TouchLocation.State
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.State
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+  commentId: T:Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+  parent: Microsoft.Xna.Framework.Input.Touch
+  isExternal: false
+  name: TouchLocationState
+  nameWithType: TouchLocationState
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocationState
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.#ctor
+  isExternal: false
+  name: TouchLocation
+  nameWithType: TouchLocation.TouchLocation
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TouchLocation
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: TouchLocation.Equals
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  commentId: M:System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  parent: System.IEquatable{Microsoft.Xna.Framework.Input.Touch.TouchLocation}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(TouchLocation)
+  nameWithType: IEquatable<TouchLocation>.Equals(TouchLocation)
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Input.Touch.TouchLocation>.Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  nameWithType.vb: IEquatable(Of TouchLocation).Equals(TouchLocation)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Input.Touch.TouchLocation).Equals(Microsoft.Xna.Framework.Input.Touch.TouchLocation)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<TouchLocation>.Equals
+    fullName: System.IEquatable<Microsoft.Xna.Framework.Input.Touch.TouchLocation>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    name: TouchLocation
+    nameWithType: TouchLocation
+    fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of TouchLocation).Equals
+    fullName: System.IEquatable(Of Microsoft.Xna.Framework.Input.Touch.TouchLocation).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+    name: TouchLocation
+    nameWithType: TouchLocation
+    fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  commentId: T:Microsoft.Xna.Framework.Input.Touch.TouchLocation
+  parent: Microsoft.Xna.Framework.Input.Touch
+  isExternal: false
+  name: TouchLocation
+  nameWithType: TouchLocation
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: TouchLocation.GetHashCode
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: TouchLocation.ToString
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation
+  isExternal: false
+  name: TryGetPreviousLocation
+  nameWithType: TouchLocation.TryGetPreviousLocation
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.TryGetPreviousLocation
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: TouchLocation.Inequality
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Inequality
+- uid: Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Touch.TouchLocation.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: TouchLocation.Equality
+  fullName: Microsoft.Xna.Framework.Input.Touch.TouchLocation.Equality

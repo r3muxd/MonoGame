@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Content
+  commentId: N:Microsoft.Xna.Framework.Content
+  id: Microsoft.Xna.Framework.Content
+  children:
+  - Microsoft.Xna.Framework.Content.ContentLoadException
+  - Microsoft.Xna.Framework.Content.ContentManager
+  - Microsoft.Xna.Framework.Content.ContentReader
+  - Microsoft.Xna.Framework.Content.ContentSerializerAttribute
+  - Microsoft.Xna.Framework.Content.ContentSerializerCollectionItemNameAttribute
+  - Microsoft.Xna.Framework.Content.ContentSerializerIgnoreAttribute
+  - Microsoft.Xna.Framework.Content.ContentSerializerRuntimeTypeAttribute
+  - Microsoft.Xna.Framework.Content.ContentSerializerTypeVersionAttribute
+  - Microsoft.Xna.Framework.Content.ContentTypeReader
+  - Microsoft.Xna.Framework.Content.ContentTypeReader`1
+  - Microsoft.Xna.Framework.Content.ContentTypeReaderManager
+  - Microsoft.Xna.Framework.Content.ResourceContentManager
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Xna.Framework.Content
+  nameWithType: Microsoft.Xna.Framework.Content
+  fullName: Microsoft.Xna.Framework.Content
+  type: Namespace
+  assemblies:
+  - MonoGame.Framework
+references:
+- uid: Microsoft.Xna.Framework.Content.ContentLoadException
+  commentId: T:Microsoft.Xna.Framework.Content.ContentLoadException
+  isExternal: false
+  name: ContentLoadException
+  nameWithType: ContentLoadException
+  fullName: Microsoft.Xna.Framework.Content.ContentLoadException
+- uid: Microsoft.Xna.Framework.Content.ContentManager
+  commentId: T:Microsoft.Xna.Framework.Content.ContentManager
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentManager
+  nameWithType: ContentManager
+  fullName: Microsoft.Xna.Framework.Content.ContentManager
+- uid: Microsoft.Xna.Framework.Content.ContentReader
+  commentId: T:Microsoft.Xna.Framework.Content.ContentReader
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentReader
+  nameWithType: ContentReader
+  fullName: Microsoft.Xna.Framework.Content.ContentReader
+- uid: Microsoft.Xna.Framework.Content.ContentSerializerAttribute
+  commentId: T:Microsoft.Xna.Framework.Content.ContentSerializerAttribute
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentSerializerAttribute
+  nameWithType: ContentSerializerAttribute
+  fullName: Microsoft.Xna.Framework.Content.ContentSerializerAttribute
+- uid: Microsoft.Xna.Framework.Content.ContentSerializerCollectionItemNameAttribute
+  commentId: T:Microsoft.Xna.Framework.Content.ContentSerializerCollectionItemNameAttribute
+  isExternal: false
+  name: ContentSerializerCollectionItemNameAttribute
+  nameWithType: ContentSerializerCollectionItemNameAttribute
+  fullName: Microsoft.Xna.Framework.Content.ContentSerializerCollectionItemNameAttribute
+- uid: Microsoft.Xna.Framework.Content.ContentSerializerIgnoreAttribute
+  commentId: T:Microsoft.Xna.Framework.Content.ContentSerializerIgnoreAttribute
+  isExternal: false
+  name: ContentSerializerIgnoreAttribute
+  nameWithType: ContentSerializerIgnoreAttribute
+  fullName: Microsoft.Xna.Framework.Content.ContentSerializerIgnoreAttribute
+- uid: Microsoft.Xna.Framework.Content.ContentSerializerRuntimeTypeAttribute
+  commentId: T:Microsoft.Xna.Framework.Content.ContentSerializerRuntimeTypeAttribute
+  isExternal: false
+  name: ContentSerializerRuntimeTypeAttribute
+  nameWithType: ContentSerializerRuntimeTypeAttribute
+  fullName: Microsoft.Xna.Framework.Content.ContentSerializerRuntimeTypeAttribute
+- uid: Microsoft.Xna.Framework.Content.ContentSerializerTypeVersionAttribute
+  commentId: T:Microsoft.Xna.Framework.Content.ContentSerializerTypeVersionAttribute
+  isExternal: false
+  name: ContentSerializerTypeVersionAttribute
+  nameWithType: ContentSerializerTypeVersionAttribute
+  fullName: Microsoft.Xna.Framework.Content.ContentSerializerTypeVersionAttribute
+- uid: Microsoft.Xna.Framework.Content.ContentTypeReader
+  commentId: T:Microsoft.Xna.Framework.Content.ContentTypeReader
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentTypeReader
+  nameWithType: ContentTypeReader
+  fullName: Microsoft.Xna.Framework.Content.ContentTypeReader
+- uid: Microsoft.Xna.Framework.Content.ContentTypeReader`1
+  commentId: T:Microsoft.Xna.Framework.Content.ContentTypeReader`1
+  isExternal: false
+  name: ContentTypeReader<T>
+  nameWithType: ContentTypeReader<T>
+  fullName: Microsoft.Xna.Framework.Content.ContentTypeReader<T>
+  nameWithType.vb: ContentTypeReader(Of T)
+  fullName.vb: Microsoft.Xna.Framework.Content.ContentTypeReader(Of T)
+  name.vb: ContentTypeReader(Of T)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Content.ContentTypeReader`1
+    name: ContentTypeReader
+    nameWithType: ContentTypeReader
+    fullName: Microsoft.Xna.Framework.Content.ContentTypeReader
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Content.ContentTypeReader`1
+    name: ContentTypeReader
+    nameWithType: ContentTypeReader
+    fullName: Microsoft.Xna.Framework.Content.ContentTypeReader
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Content.ContentTypeReaderManager
+  commentId: T:Microsoft.Xna.Framework.Content.ContentTypeReaderManager
+  parent: Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: ContentTypeReaderManager
+  nameWithType: ContentTypeReaderManager
+  fullName: Microsoft.Xna.Framework.Content.ContentTypeReaderManager
+- uid: Microsoft.Xna.Framework.Content.ResourceContentManager
+  commentId: T:Microsoft.Xna.Framework.Content.ResourceContentManager
+  isExternal: false
+  name: ResourceContentManager
+  nameWithType: ResourceContentManager
+  fullName: Microsoft.Xna.Framework.Content.ResourceContentManager
+- uid: Microsoft.Xna.Framework.Content
+  commentId: N:Microsoft.Xna.Framework.Content
+  isExternal: false
+  name: Microsoft.Xna.Framework.Content
+  nameWithType: Microsoft.Xna.Framework.Content
+  fullName: Microsoft.Xna.Framework.Content

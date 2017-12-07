@@ -1,0 +1,1641 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D
+  id: Texture2D
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType,System.Boolean,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  - Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  langs:
+  - csharp
+  - vb
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.OpenGL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Texture2D
+    path: ../MonoGame.Framework/Graphics/Texture2D.OpenGL.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public class Texture2D : Texture, IDisposable'
+    content.vb: >-
+      Public Class Texture2D
+          Inherits Texture
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource
+  - Microsoft.Xna.Framework.Graphics.Texture
+  derivedClasses:
+  - Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Xna.Framework.Graphics.Texture.Format
+  - Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+  - Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+  - Microsoft.Xna.Framework.Graphics.Texture.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  id: Bounds
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: Texture2D.Bounds
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bounds
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the dimensions of the texture\n"
+  example: []
+  syntax:
+    content: public Rectangle Bounds { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Rectangle
+    content.vb: Public ReadOnly Property Bounds As Rectangle
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32)'
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Texture2D(GraphicsDevice, Int32, Int32)
+  nameWithType: Texture2D.Texture2D(GraphicsDevice, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Texture2D(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a new texture of the given size\n"
+  example: []
+  syntax:
+    content: public Texture2D(GraphicsDevice graphicsDevice, int width, int height)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+      description: ''
+    - id: width
+      type: System.Int32
+      description: ''
+    - id: height
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, width As Integer, height As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat)'
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Texture2D(GraphicsDevice, Int32, Int32, Boolean, SurfaceFormat)
+  nameWithType: Texture2D.Texture2D(GraphicsDevice, Int32, Int32, Boolean, SurfaceFormat)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Texture2D(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Int32, System.Int32, System.Boolean, Microsoft.Xna.Framework.Graphics.SurfaceFormat)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 57
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a new texture of a given size with a surface format and optional mipmaps \n"
+  example: []
+  syntax:
+    content: public Texture2D(GraphicsDevice graphicsDevice, int width, int height, bool mipmap, SurfaceFormat format)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+      description: ''
+    - id: width
+      type: System.Int32
+      description: ''
+    - id: height
+      type: System.Int32
+      description: ''
+    - id: mipmap
+      type: System.Boolean
+      description: ''
+    - id: format
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+      description: ''
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, width As Integer, height As Integer, mipmap As Boolean, format As SurfaceFormat)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,System.Int32)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,System.Int32)'
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Texture2D(GraphicsDevice, Int32, Int32, Boolean, SurfaceFormat, Int32)
+  nameWithType: Texture2D.Texture2D(GraphicsDevice, Int32, Int32, Boolean, SurfaceFormat, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Texture2D(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Int32, System.Int32, System.Boolean, Microsoft.Xna.Framework.Graphics.SurfaceFormat, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 72
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a new texture array of a given size with a surface format and optional mipmaps.\nThrows ArgumentException if the current GraphicsDevice can&apos;t work with texture arrays\n"
+  example: []
+  syntax:
+    content: public Texture2D(GraphicsDevice graphicsDevice, int width, int height, bool mipmap, SurfaceFormat format, int arraySize)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+      description: ''
+    - id: width
+      type: System.Int32
+      description: ''
+    - id: height
+      type: System.Int32
+      description: ''
+    - id: mipmap
+      type: System.Boolean
+      description: ''
+    - id: format
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+      description: ''
+    - id: arraySize
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, width As Integer, height As Integer, mipmap As Boolean, format As SurfaceFormat, arraySize As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType,System.Boolean,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType,System.Boolean,System.Int32)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Int32,System.Int32,System.Boolean,Microsoft.Xna.Framework.Graphics.SurfaceFormat,Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType,System.Boolean,System.Int32)'
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Texture2D(GraphicsDevice, Int32, Int32, Boolean, SurfaceFormat, Texture2D.SurfaceType, Boolean, Int32)
+  nameWithType: Texture2D.Texture2D(GraphicsDevice, Int32, Int32, Boolean, SurfaceFormat, Texture2D.SurfaceType, Boolean, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Texture2D(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Int32, System.Int32, System.Boolean, Microsoft.Xna.Framework.Graphics.SurfaceFormat, Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType, System.Boolean, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 92
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: protected Texture2D(GraphicsDevice graphicsDevice, int width, int height, bool mipmap, SurfaceFormat format, Texture2D.SurfaceType type, bool shared, int arraySize)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: mipmap
+      type: System.Boolean
+    - id: format
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+    - id: type
+      type: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+    - id: shared
+      type: System.Boolean
+    - id: arraySize
+      type: System.Int32
+    content.vb: Protected Sub New(graphicsDevice As GraphicsDevice, width As Integer, height As Integer, mipmap As Boolean, format As SurfaceFormat, type As Texture2D.SurfaceType, shared As Boolean, arraySize As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  id: Width
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Texture2D.Width
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Width
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 123
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the width of the texture in pixels.\n"
+  example: []
+  syntax:
+    content: public int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Width As Integer
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.Width*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  id: Height
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Texture2D.Height
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Height
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 134
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the height of the texture in pixels.\n"
+  example: []
+  syntax:
+    content: public int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Height As Integer
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.Height*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  id: SetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: SetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(System.Int32, System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 154
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nChanges the pixels of the texture\nThrows ArgumentNullException if data is null\nThrows ArgumentException if arraySlice is greater than 0, and the GraphicsDevice does not support texture arrays\n"
+  example: []
+  syntax:
+    content: 'public void SetData<T>(int level, int arraySlice, Rectangle? rect, T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: level
+      type: System.Int32
+      description: Layer of the texture to modify
+    - id: arraySlice
+      type: System.Int32
+      description: Index inside the texture array
+    - id: rect
+      type: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+      description: Area to modify
+    - id: data
+      type: '{T}[]'
+      description: New data for the texture
+    - id: startIndex
+      type: System.Int32
+      description: Start position of data
+    - id: elementCount
+      type: System.Int32
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub SetData(Of T As Structure)(level As Integer, arraySlice As Integer, rect As Rectangle?, data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.SetData*
+  nameWithType.vb: Texture2D.SetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(System.Int32, System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  id: SetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: SetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 170
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nChanges the pixels of the texture\n"
+  example: []
+  syntax:
+    content: 'public void SetData<T>(int level, Rectangle? rect, T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: level
+      type: System.Int32
+      description: Layer of the texture to modify
+    - id: rect
+      type: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+      description: Area to modify
+    - id: data
+      type: '{T}[]'
+      description: New data for the texture
+    - id: startIndex
+      type: System.Int32
+      description: Start position of data
+    - id: elementCount
+      type: System.Int32
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub SetData(Of T As Structure)(level As Integer, rect As Rectangle?, data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.SetData*
+  nameWithType.vb: Texture2D.SetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[],System.Int32,System.Int32)
+  id: SetData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: SetData<T>(T[], Int32, Int32)
+  nameWithType: Texture2D.SetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 187
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nChanges the texture&apos;s pixels\n"
+  example: []
+  syntax:
+    content: 'public void SetData<T>(T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+      description: New data for the texture
+    - id: startIndex
+      type: System.Int32
+      description: Start position of data
+    - id: elementCount
+      type: System.Int32
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub SetData(Of T As Structure)(data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.SetData*
+  nameWithType.vb: Texture2D.SetData(Of T)(T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SetData``1(``0[])
+  id: SetData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: SetData<T>(T[])
+  nameWithType: Texture2D.SetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData<T>(T[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 199
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nChanges the texture&apos;s pixels\n"
+  example: []
+  syntax:
+    content: 'public void SetData<T>(T[] data)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+      description: ''
+    typeParameters:
+    - id: T
+      description: New data for the texture
+    content.vb: Public Sub SetData(Of T As Structure)(data As T())
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.SetData*
+  nameWithType.vb: Texture2D.SetData(Of T)(T())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.SetData(Of T)(T())
+  name.vb: SetData(Of T)(T())
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  id: GetData``1(System.Int32,System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: GetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(Int32, Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(System.Int32, System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 218
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRetrieves the contents of the texture\nThrows ArgumentException if data is null, data.length is too short or\nif arraySlice is greater than 0 and the GraphicsDevice doesn&apos;t support texture arrays\n"
+  example: []
+  syntax:
+    content: 'public void GetData<T>(int level, int arraySlice, Rectangle? rect, T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: level
+      type: System.Int32
+      description: Layer of the texture
+    - id: arraySlice
+      type: System.Int32
+      description: Index inside the texture array
+    - id: rect
+      type: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+      description: Area of the texture to retrieve
+    - id: data
+      type: '{T}[]'
+      description: Destination array for the data
+    - id: startIndex
+      type: System.Int32
+      description: Starting index of data where to write the pixel data
+    - id: elementCount
+      type: System.Int32
+      description: Number of pixels to read
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub GetData(Of T As Structure)(level As Integer, arraySlice As Integer, rect As Rectangle?, data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.GetData*
+  nameWithType.vb: Texture2D.GetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(System.Int32, System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  id: GetData``1(System.Int32,System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: GetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(Int32, Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(System.Int32, System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 236
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRetrieves the contents of the texture\nThrows ArgumentException if data is null, data.length is too short or\nif arraySlice is greater than 0 and the GraphicsDevice doesn&apos;t support texture arrays\n"
+  example: []
+  syntax:
+    content: 'public void GetData<T>(int level, Rectangle? rect, T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: level
+      type: System.Int32
+      description: Layer of the texture
+    - id: rect
+      type: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+      description: Area of the texture
+    - id: data
+      type: '{T}[]'
+      description: Destination array for the texture data
+    - id: startIndex
+      type: System.Int32
+      description: First position in data where to write the pixel data
+    - id: elementCount
+      type: System.Int32
+      description: Number of pixels to read
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub GetData(Of T As Structure)(level As Integer, rect As Rectangle?, data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.GetData*
+  nameWithType.vb: Texture2D.GetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(System.Int32, System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, Nullable(Of Rectangle), T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[],System.Int32,System.Int32)
+  id: GetData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: GetData<T>(T[], Int32, Int32)
+  nameWithType: Texture2D.GetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 250
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRetrieves the contents of the texture\nThrows ArgumentException if data is null, data.length is too short or\nif arraySlice is greater than 0 and the GraphicsDevice doesn&apos;t support texture arrays\n"
+  example: []
+  syntax:
+    content: 'public void GetData<T>(T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+      description: Destination array for the texture data
+    - id: startIndex
+      type: System.Int32
+      description: First position in data where to write the pixel data
+    - id: elementCount
+      type: System.Int32
+      description: Number of pixels to read
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub GetData(Of T As Structure)(data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.GetData*
+  nameWithType.vb: Texture2D.GetData(Of T)(T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.GetData``1(``0[])
+  id: GetData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: GetData<T>(T[])
+  nameWithType: Texture2D.GetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData<T>(T[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetData
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 262
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRetrieves the contents of the texture\nThrows ArgumentException if data is null, data.length is too short or\nif arraySlice is greater than 0 and the GraphicsDevice doesn&apos;t support texture arrays\n"
+  example: []
+  syntax:
+    content: 'public void GetData<T>(T[] data)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+      description: Destination array for the texture data
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Sub GetData(Of T As Structure)(data As T())
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.GetData*
+  nameWithType.vb: Texture2D.GetData(Of T)(T())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.Texture2D.GetData(Of T)(T())
+  name.vb: GetData(Of T)(T())
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  id: FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.IO.Stream)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: FromStream(GraphicsDevice, Stream)
+  nameWithType: Texture2D.FromStream(GraphicsDevice, Stream)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: FromStream
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 280
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a Texture2D from a stream, supported formats bmp, gif, jpg, png, tif and dds (only for simple textures).\nMay work with other formats, but will not work with tga files.\n"
+  remarks: "Note that different image decoders may generate slight differences between platforms, but perceptually \nthe images should be identical.  This call does not premultiply the image alpha, but areas of zero alpha will\nresult in black color data.\n"
+  example: []
+  syntax:
+    content: public static Texture2D FromStream(GraphicsDevice graphicsDevice, Stream stream)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+      description: The graphics device where the texture will be created.
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read the image data.
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Texture2D
+      description: The <xref href="Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color" data-throw-if-not-resolved="false"></xref> texture created from the image stream.
+    content.vb: Public Shared Function FromStream(graphicsDevice As GraphicsDevice, stream As Stream) As Texture2D
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  id: SaveAsJpeg(System.IO.Stream,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: SaveAsJpeg(Stream, Int32, Int32)
+  nameWithType: Texture2D.SaveAsJpeg(Stream, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg(System.IO.Stream, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SaveAsJpeg
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 302
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nConverts the texture to a JPG image\n"
+  example: []
+  syntax:
+    content: public void SaveAsJpeg(Stream stream, int width, int height)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: Destination for the image
+    - id: width
+      type: System.Int32
+      description: ''
+    - id: height
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub SaveAsJpeg(stream As Stream, width As Integer, height As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  id: SaveAsPng(System.IO.Stream,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: SaveAsPng(Stream, Int32, Int32)
+  nameWithType: Texture2D.SaveAsPng(Stream, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng(System.IO.Stream, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SaveAsPng
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 313
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nConverts the texture to a PNG image\n"
+  example: []
+  syntax:
+    content: public void SaveAsPng(Stream stream, int width, int height)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: Destination for the image
+    - id: width
+      type: System.Int32
+      description: ''
+    - id: height
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub SaveAsPng(stream As Stream, width As Integer, height As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  id: Reload(System.IO.Stream)
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D
+  langs:
+  - csharp
+  - vb
+  name: Reload(Stream)
+  nameWithType: Texture2D.Reload(Stream)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Reload(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Reload
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 320
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Reload(Stream textureStream)
+    parameters:
+    - id: textureStream
+      type: System.IO.Stream
+    content.vb: Public Sub Reload(textureStream As Stream)
+  overload: Microsoft.Xna.Framework.Graphics.Texture2D.Reload*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsResource
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsResource
+  nameWithType: GraphicsResource
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource
+- uid: Microsoft.Xna.Framework.Graphics.Texture
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture
+  nameWithType: Texture
+  fullName: Microsoft.Xna.Framework.Graphics.Texture
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Xna.Framework.Graphics.Texture.Format
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture.Format
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: false
+  name: Format
+  nameWithType: Texture.Format
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.Format
+- uid: Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: false
+  name: LevelCount
+  nameWithType: Texture.LevelCount
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.LevelCount
+- uid: Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: false
+  name: GraphicsDeviceResetting()
+  nameWithType: Texture.GraphicsDeviceResetting()
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: Texture.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: Texture.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.Texture.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Texture.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.Texture
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Texture.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.Texture.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Texture.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.Texture.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Texture.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Texture.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.Texture.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Dispose()
+  nameWithType: GraphicsResource.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Disposing
+  nameWithType: GraphicsResource.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsResource.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsResource.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Name
+  nameWithType: GraphicsResource.Name
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Tag
+  nameWithType: GraphicsResource.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: ToString()
+  nameWithType: GraphicsResource.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+  isExternal: false
+  name: Bounds
+  nameWithType: Texture2D.Bounds
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Bounds
+- uid: Microsoft.Xna.Framework.Rectangle
+  commentId: T:Microsoft.Xna.Framework.Rectangle
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: Microsoft.Xna.Framework.Rectangle
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.#ctor
+  isExternal: false
+  name: Texture2D
+  nameWithType: Texture2D.Texture2D
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Texture2D
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  commentId: T:Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SurfaceFormat
+  nameWithType: SurfaceFormat
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture2D.SurfaceType
+  nameWithType: Texture2D.SurfaceType
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Width*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.Width
+  isExternal: false
+  name: Width
+  nameWithType: Texture2D.Width
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Width
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Height*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.Height
+  isExternal: false
+  name: Height
+  nameWithType: Texture2D.Height
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Height
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SetData*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.SetData
+  isExternal: false
+  name: SetData
+  nameWithType: Texture2D.SetData
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SetData
+- uid: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+  commentId: T:System.Nullable{Microsoft.Xna.Framework.Rectangle}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Rectangle>
+  nameWithType: Nullable<Rectangle>
+  fullName: System.Nullable<Microsoft.Xna.Framework.Rectangle>
+  nameWithType.vb: Nullable(Of Rectangle)
+  fullName.vb: System.Nullable(Of Microsoft.Xna.Framework.Rectangle)
+  name.vb: Nullable(Of Rectangle)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}[]'
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.GetData*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.GetData
+  isExternal: false
+  name: GetData
+  nameWithType: Texture2D.GetData
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.GetData
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.FromStream
+  isExternal: false
+  name: FromStream
+  nameWithType: Texture2D.FromStream
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.FromStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg
+  isExternal: false
+  name: SaveAsJpeg
+  nameWithType: Texture2D.SaveAsJpeg
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsJpeg
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng
+  isExternal: false
+  name: SaveAsPng
+  nameWithType: Texture2D.SaveAsPng
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SaveAsPng
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.Reload*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Texture2D.Reload
+  isExternal: false
+  name: Reload
+  nameWithType: Texture2D.Reload
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.Reload

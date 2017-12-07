@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.CurveTangent
+  commentId: T:Microsoft.Xna.Framework.CurveTangent
+  id: CurveTangent
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.CurveTangent.Flat
+  - Microsoft.Xna.Framework.CurveTangent.Linear
+  - Microsoft.Xna.Framework.CurveTangent.Smooth
+  langs:
+  - csharp
+  - vb
+  name: CurveTangent
+  nameWithType: CurveTangent
+  fullName: Microsoft.Xna.Framework.CurveTangent
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/CurveTangent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CurveTangent
+    path: ../MonoGame.Framework/CurveTangent.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nDefines the different tangent types to be calculated for <xref href=\"Microsoft.Xna.Framework.CurveKey\" data-throw-if-not-resolved=\"false\"></xref> points in a <xref href=\"Microsoft.Xna.Framework.Curve\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public enum CurveTangent
+    content.vb: Public Enum CurveTangent
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.CurveTangent.Flat
+  commentId: F:Microsoft.Xna.Framework.CurveTangent.Flat
+  id: Flat
+  parent: Microsoft.Xna.Framework.CurveTangent
+  langs:
+  - csharp
+  - vb
+  name: Flat
+  nameWithType: CurveTangent.Flat
+  fullName: Microsoft.Xna.Framework.CurveTangent.Flat
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/CurveTangent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Flat
+    path: ../MonoGame.Framework/CurveTangent.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe tangent which always has a value equal to zero. \n"
+  example: []
+  syntax:
+    content: Flat = 0
+    return:
+      type: Microsoft.Xna.Framework.CurveTangent
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.CurveTangent.Linear
+  commentId: F:Microsoft.Xna.Framework.CurveTangent.Linear
+  id: Linear
+  parent: Microsoft.Xna.Framework.CurveTangent
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: CurveTangent.Linear
+  fullName: Microsoft.Xna.Framework.CurveTangent.Linear
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/CurveTangent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Linear
+    path: ../MonoGame.Framework/CurveTangent.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe tangent which contains a difference between current tangent value and the tangent value from the previous <xref href=\"Microsoft.Xna.Framework.CurveKey\" data-throw-if-not-resolved=\"false\"></xref>. \n"
+  example: []
+  syntax:
+    content: Linear = 1
+    return:
+      type: Microsoft.Xna.Framework.CurveTangent
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.CurveTangent.Smooth
+  commentId: F:Microsoft.Xna.Framework.CurveTangent.Smooth
+  id: Smooth
+  parent: Microsoft.Xna.Framework.CurveTangent
+  langs:
+  - csharp
+  - vb
+  name: Smooth
+  nameWithType: CurveTangent.Smooth
+  fullName: Microsoft.Xna.Framework.CurveTangent.Smooth
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/CurveTangent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Smooth
+    path: ../MonoGame.Framework/CurveTangent.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe smoouth tangent which contains the inflection between <xref href=\"Microsoft.Xna.Framework.CurveKey.TangentIn\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Microsoft.Xna.Framework.CurveKey.TangentOut\" data-throw-if-not-resolved=\"false\"></xref> by taking into account the values of both neighbors of the <xref href=\"Microsoft.Xna.Framework.CurveKey\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: Smooth = 2
+    return:
+      type: Microsoft.Xna.Framework.CurveTangent
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.CurveKey
+  commentId: T:Microsoft.Xna.Framework.CurveKey
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: CurveKey
+  nameWithType: CurveKey
+  fullName: Microsoft.Xna.Framework.CurveKey
+- uid: Microsoft.Xna.Framework.Curve
+  commentId: T:Microsoft.Xna.Framework.Curve
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Curve
+  nameWithType: Curve
+  fullName: Microsoft.Xna.Framework.Curve
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.CurveTangent
+  commentId: T:Microsoft.Xna.Framework.CurveTangent
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: CurveTangent
+  nameWithType: CurveTangent
+  fullName: Microsoft.Xna.Framework.CurveTangent
+- uid: Microsoft.Xna.Framework.CurveKey.TangentIn
+  commentId: P:Microsoft.Xna.Framework.CurveKey.TangentIn
+- uid: Microsoft.Xna.Framework.CurveKey.TangentOut
+  commentId: P:Microsoft.Xna.Framework.CurveKey.TangentOut

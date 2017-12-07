@@ -1,0 +1,340 @@
+### YamlMime:ManagedReference
+items:
+- uid: NVorbis.DataPacket.PacketFlags
+  commentId: T:NVorbis.DataPacket.PacketFlags
+  id: DataPacket.PacketFlags
+  parent: NVorbis
+  children:
+  - NVorbis.DataPacket.PacketFlags.HasGranuleCount
+  - NVorbis.DataPacket.PacketFlags.IsEndOfStream
+  - NVorbis.DataPacket.PacketFlags.IsResync
+  - NVorbis.DataPacket.PacketFlags.IsShort
+  - NVorbis.DataPacket.PacketFlags.User1
+  - NVorbis.DataPacket.PacketFlags.User2
+  - NVorbis.DataPacket.PacketFlags.User3
+  - NVorbis.DataPacket.PacketFlags.User4
+  langs:
+  - csharp
+  - vb
+  name: DataPacket.PacketFlags
+  nameWithType: DataPacket.PacketFlags
+  fullName: NVorbis.DataPacket.PacketFlags
+  type: Enum
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: PacketFlags
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nDefines flags to apply to the current packet\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      protected enum PacketFlags : byte
+    content.vb: >-
+      <Flags>
+
+      Protected Enum PacketFlags As Byte
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  - enum
+  modifiers.vb:
+  - Protected
+  - Enum
+- uid: NVorbis.DataPacket.PacketFlags.IsResync
+  commentId: F:NVorbis.DataPacket.PacketFlags.IsResync
+  id: IsResync
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: IsResync
+  nameWithType: DataPacket.PacketFlags.IsResync
+  fullName: NVorbis.DataPacket.PacketFlags.IsResync
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: IsResync
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 39
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nPacket is first since reader had to resync with stream.\n"
+  example: []
+  syntax:
+    content: IsResync = 1
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.IsEndOfStream
+  commentId: F:NVorbis.DataPacket.PacketFlags.IsEndOfStream
+  id: IsEndOfStream
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: IsEndOfStream
+  nameWithType: DataPacket.PacketFlags.IsEndOfStream
+  fullName: NVorbis.DataPacket.PacketFlags.IsEndOfStream
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: IsEndOfStream
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nPacket is the last in the logical stream.\n"
+  example: []
+  syntax:
+    content: IsEndOfStream = 2
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.IsShort
+  commentId: F:NVorbis.DataPacket.PacketFlags.IsShort
+  id: IsShort
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: IsShort
+  nameWithType: DataPacket.PacketFlags.IsShort
+  fullName: NVorbis.DataPacket.PacketFlags.IsShort
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: IsShort
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 47
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nPacket does not have all its data available.\n"
+  example: []
+  syntax:
+    content: IsShort = 4
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.HasGranuleCount
+  commentId: F:NVorbis.DataPacket.PacketFlags.HasGranuleCount
+  id: HasGranuleCount
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: HasGranuleCount
+  nameWithType: DataPacket.PacketFlags.HasGranuleCount
+  fullName: NVorbis.DataPacket.PacketFlags.HasGranuleCount
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: HasGranuleCount
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 51
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nPacket has a granule count defined.\n"
+  example: []
+  syntax:
+    content: HasGranuleCount = 8
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.User1
+  commentId: F:NVorbis.DataPacket.PacketFlags.User1
+  id: User1
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: User1
+  nameWithType: DataPacket.PacketFlags.User1
+  fullName: NVorbis.DataPacket.PacketFlags.User1
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: User1
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 56
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nFlag for use by inheritors.\n"
+  example: []
+  syntax:
+    content: User1 = 16
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.User2
+  commentId: F:NVorbis.DataPacket.PacketFlags.User2
+  id: User2
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: User2
+  nameWithType: DataPacket.PacketFlags.User2
+  fullName: NVorbis.DataPacket.PacketFlags.User2
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: User2
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 60
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nFlag for use by inheritors.\n"
+  example: []
+  syntax:
+    content: User2 = 32
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.User3
+  commentId: F:NVorbis.DataPacket.PacketFlags.User3
+  id: User3
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: User3
+  nameWithType: DataPacket.PacketFlags.User3
+  fullName: NVorbis.DataPacket.PacketFlags.User3
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: User3
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 64
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nFlag for use by inheritors.\n"
+  example: []
+  syntax:
+    content: User3 = 64
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NVorbis.DataPacket.PacketFlags.User4
+  commentId: F:NVorbis.DataPacket.PacketFlags.User4
+  id: User4
+  parent: NVorbis.DataPacket.PacketFlags
+  langs:
+  - csharp
+  - vb
+  name: User4
+  nameWithType: DataPacket.PacketFlags.User4
+  fullName: NVorbis.DataPacket.PacketFlags.User4
+  type: Field
+  source:
+    remote:
+      path: NVorbis/DataPacket.cs
+      branch: c84c6aced83e3fd801bdac237268a51e098ace2a
+      repo: https://github.com/ioctlLR/NVorbis.git
+    id: User4
+    path: ../ThirdParty/NVorbis/NVorbis/DataPacket.cs
+    startLine: 68
+  assemblies:
+  - MonoGame.Framework
+  namespace: NVorbis
+  summary: "\nFlag for use by inheritors.\n"
+  example: []
+  syntax:
+    content: User4 = 128
+    return:
+      type: NVorbis.DataPacket.PacketFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NVorbis
+  commentId: N:NVorbis
+  isExternal: false
+  name: NVorbis
+  nameWithType: NVorbis
+  fullName: NVorbis
+- uid: NVorbis.DataPacket.PacketFlags
+  commentId: T:NVorbis.DataPacket.PacketFlags
+  parent: NVorbis
+  isExternal: false
+  name: DataPacket.PacketFlags
+  nameWithType: DataPacket.PacketFlags
+  fullName: NVorbis.DataPacket.PacketFlags
