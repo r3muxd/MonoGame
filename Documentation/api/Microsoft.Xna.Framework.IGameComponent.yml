@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.IGameComponent
+  commentId: T:Microsoft.Xna.Framework.IGameComponent
+  id: IGameComponent
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.IGameComponent.Initialize
+  langs:
+  - csharp
+  - vb
+  name: IGameComponent
+  nameWithType: IGameComponent
+  fullName: Microsoft.Xna.Framework.IGameComponent
+  type: Interface
+  source:
+    remote:
+      path: MonoGame.Framework/IGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IGameComponent
+    path: ../MonoGame.Framework/IGameComponent.cs
+    startLine: 6
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public interface IGameComponent
+    content.vb: Public Interface IGameComponent
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Xna.Framework.IGameComponent.Initialize
+  commentId: M:Microsoft.Xna.Framework.IGameComponent.Initialize
+  id: Initialize
+  parent: Microsoft.Xna.Framework.IGameComponent
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: IGameComponent.Initialize()
+  fullName: Microsoft.Xna.Framework.IGameComponent.Initialize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/IGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Initialize
+    path: ../MonoGame.Framework/IGameComponent.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: void Initialize()
+    content.vb: Sub Initialize
+  overload: Microsoft.Xna.Framework.IGameComponent.Initialize*
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.IGameComponent.Initialize*
+  commentId: Overload:Microsoft.Xna.Framework.IGameComponent.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: IGameComponent.Initialize
+  fullName: Microsoft.Xna.Framework.IGameComponent.Initialize

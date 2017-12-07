@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  commentId: T:Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  id: ColorWriteChannels
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.ColorWriteChannels.All
+  - Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Alpha
+  - Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Blue
+  - Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Green
+  - Microsoft.Xna.Framework.Graphics.ColorWriteChannels.None
+  - Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Red
+  langs:
+  - csharp
+  - vb
+  name: ColorWriteChannels
+  nameWithType: ColorWriteChannels
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColorWriteChannels
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines the color channels for render target blending operations.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ColorWriteChannels
+    content.vb: >-
+      <Flags>
+
+      Public Enum ColorWriteChannels
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.None
+  commentId: F:Microsoft.Xna.Framework.Graphics.ColorWriteChannels.None
+  id: None
+  parent: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ColorWriteChannels.None
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.None
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: None
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNo channels selected.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Red
+  commentId: F:Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Red
+  id: Red
+  parent: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: ColorWriteChannels.Red
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Red
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Red
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 21
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRed channel selected.\n"
+  example: []
+  syntax:
+    content: Red = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Green
+  commentId: F:Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Green
+  id: Green
+  parent: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: ColorWriteChannels.Green
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Green
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Green
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 25
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGreen channel selected.\n"
+  example: []
+  syntax:
+    content: Green = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Blue
+  commentId: F:Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Blue
+  id: Blue
+  parent: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: ColorWriteChannels.Blue
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Blue
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Blue
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 29
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nBlue channel selected.\n"
+  example: []
+  syntax:
+    content: Blue = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Alpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Alpha
+  id: Alpha
+  parent: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: Alpha
+  nameWithType: ColorWriteChannels.Alpha
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.Alpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Alpha
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 33
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nAlpha channel selected.\n"
+  example: []
+  syntax:
+    content: Alpha = 8
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.All
+  commentId: F:Microsoft.Xna.Framework.Graphics.ColorWriteChannels.All
+  id: All
+  parent: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: ColorWriteChannels.All
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels.All
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ColorWriteChannels.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: All
+    path: ../MonoGame.Framework/Graphics/ColorWriteChannels.cs
+    startLine: 37
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nAll channels selected.\n"
+  example: []
+  syntax:
+    content: All = 15
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  commentId: T:Microsoft.Xna.Framework.Graphics.ColorWriteChannels
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ColorWriteChannels
+  nameWithType: ColorWriteChannels
+  fullName: Microsoft.Xna.Framework.Graphics.ColorWriteChannels

@@ -1,0 +1,1917 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.CurveKeyCollection
+  commentId: T:Microsoft.Xna.Framework.CurveKeyCollection
+  id: CurveKeyCollection
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.CurveKeyCollection.#ctor
+  - Microsoft.Xna.Framework.CurveKeyCollection.Add(Microsoft.Xna.Framework.CurveKey)
+  - Microsoft.Xna.Framework.CurveKeyCollection.Clear
+  - Microsoft.Xna.Framework.CurveKeyCollection.Clone
+  - Microsoft.Xna.Framework.CurveKeyCollection.Contains(Microsoft.Xna.Framework.CurveKey)
+  - Microsoft.Xna.Framework.CurveKeyCollection.CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  - Microsoft.Xna.Framework.CurveKeyCollection.Count
+  - Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator
+  - Microsoft.Xna.Framework.CurveKeyCollection.IndexOf(Microsoft.Xna.Framework.CurveKey)
+  - Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly
+  - Microsoft.Xna.Framework.CurveKeyCollection.Item(System.Int32)
+  - Microsoft.Xna.Framework.CurveKeyCollection.Remove(Microsoft.Xna.Framework.CurveKey)
+  - Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt(System.Int32)
+  - Microsoft.Xna.Framework.CurveKeyCollection.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: CurveKeyCollection
+  nameWithType: CurveKeyCollection
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CurveKeyCollection
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 16
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe collection of the <xref href=\"Microsoft.Xna.Framework.CurveKey\" data-throw-if-not-resolved=\"false\"></xref> elements and a part of the <xref href=\"Microsoft.Xna.Framework.Curve\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class CurveKeyCollection : ICollection<CurveKey>, IEnumerable<CurveKey>, IEnumerable
+    content.vb: >-
+      <DataContract>
+
+      Public Class CurveKeyCollection
+          Implements ICollection(Of CurveKey), IEnumerable(Of CurveKey), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  - System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Item(System.Int32)
+  commentId: P:Microsoft.Xna.Framework.CurveKeyCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: CurveKeyCollection.Item[Int32]
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: this[]
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nIndexer.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "Items")]
+
+      public CurveKey this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of key in this collection.
+    return:
+      type: Microsoft.Xna.Framework.CurveKey
+      description: <xref href="Microsoft.Xna.Framework.CurveKey" data-throw-if-not-resolved="false"></xref> at <code data-dev-comment-type="paramref" class="paramref">index</code> position.
+    content.vb: >-
+      <DataMember(Name:="Items")>
+
+      Public Property Item(index As Integer) As CurveKey
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Item*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Items
+  nameWithType.vb: CurveKeyCollection.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.CurveKeyCollection.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Count
+  commentId: P:Microsoft.Xna.Framework.CurveKeyCollection.Count
+  id: Count
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: CurveKeyCollection.Count
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Count
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Count
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 57
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nReturns the count of keys in this collection.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property Count As Integer
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Count*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Count
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly
+  commentId: P:Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: CurveKeyCollection.IsReadOnly
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsReadOnly
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nReturns false because it is not a read-only collection.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.IsReadOnly
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.#ctor
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: CurveKeyCollection()
+  nameWithType: CurveKeyCollection.CurveKeyCollection()
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.CurveKeyCollection()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 79
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nCreates a new instance of <xref href=\"Microsoft.Xna.Framework.CurveKeyCollection\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CurveKeyCollection()
+    content.vb: Public Sub New
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: CurveKeyCollection.IEnumerable.GetEnumerator()
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 86
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: CurveKeyCollection.System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Add(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.Add(Microsoft.Xna.Framework.CurveKey)
+  id: Add(Microsoft.Xna.Framework.CurveKey)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Add(CurveKey)
+  nameWithType: CurveKeyCollection.Add(CurveKey)
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Add(Microsoft.Xna.Framework.CurveKey)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Add
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 98
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nAdds a key to this collection.\n"
+  remarks: The new key would be added respectively to a position of that key and the position of other keys.
+  example: []
+  syntax:
+    content: public void Add(CurveKey item)
+    parameters:
+    - id: item
+      type: Microsoft.Xna.Framework.CurveKey
+      description: New key for the collection.
+    content.vb: Public Sub Add(item As CurveKey)
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Add*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws if <code data-dev-comment-type="paramref" class="paramref">item</code> is null.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Add(Microsoft.Xna.Framework.CurveKey)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Clear
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.Clear
+  id: Clear
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: CurveKeyCollection.Clear()
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Clear()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Clear
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 124
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nRemoves all keys from this collection.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Clone
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.Clone
+  id: Clone
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: CurveKeyCollection.Clone()
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Clone()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Clone
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 133
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nCreates a copy of this collection.\n"
+  example: []
+  syntax:
+    content: public CurveKeyCollection Clone()
+    return:
+      type: Microsoft.Xna.Framework.CurveKeyCollection
+      description: A copy of this collection.
+    content.vb: Public Function Clone As CurveKeyCollection
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Clone*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Contains(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.Contains(Microsoft.Xna.Framework.CurveKey)
+  id: Contains(Microsoft.Xna.Framework.CurveKey)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Contains(CurveKey)
+  nameWithType: CurveKeyCollection.Contains(CurveKey)
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Contains(Microsoft.Xna.Framework.CurveKey)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 146
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nDetermines whether this collection contains a specific key.\n"
+  example: []
+  syntax:
+    content: public bool Contains(CurveKey item)
+    parameters:
+    - id: item
+      type: Microsoft.Xna.Framework.CurveKey
+      description: The key to locate in this collection.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the key is found; <code>false</code> otherwise.
+    content.vb: Public Function Contains(item As CurveKey) As Boolean
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Contains(Microsoft.Xna.Framework.CurveKey)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  id: CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(CurveKey[], Int32)
+  nameWithType: CurveKeyCollection.CopyTo(CurveKey[], Int32)
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.CopyTo(Microsoft.Xna.Framework.CurveKey[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CopyTo
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 156
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nCopies the keys of this collection to an array, starting at the array index provided.\n"
+  example: []
+  syntax:
+    content: public void CopyTo(CurveKey[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: Microsoft.Xna.Framework.CurveKey[]
+      description: Destination array where elements will be copied.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in the array to start copying from.
+    content.vb: Public Sub CopyTo(array As CurveKey(), arrayIndex As Integer)
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  nameWithType.vb: CurveKeyCollection.CopyTo(CurveKey(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.CurveKeyCollection.CopyTo(Microsoft.Xna.Framework.CurveKey(), System.Int32)
+  name.vb: CopyTo(CurveKey(), Int32)
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: CurveKeyCollection.GetEnumerator()
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetEnumerator
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 165
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nReturns an enumerator that iterates through the collection.\n"
+  example: []
+  syntax:
+    content: public IEnumerator<CurveKey> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.Xna.Framework.CurveKey}
+      description: An enumerator for the <xref href="Microsoft.Xna.Framework.CurveKeyCollection" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetEnumerator As IEnumerator(Of CurveKey)
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.IndexOf(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.IndexOf(Microsoft.Xna.Framework.CurveKey)
+  id: IndexOf(Microsoft.Xna.Framework.CurveKey)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(CurveKey)
+  nameWithType: CurveKeyCollection.IndexOf(CurveKey)
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.IndexOf(Microsoft.Xna.Framework.CurveKey)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IndexOf
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 175
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nFinds element in the collection and returns its index.\n"
+  example: []
+  syntax:
+    content: public int IndexOf(CurveKey item)
+    parameters:
+    - id: item
+      type: Microsoft.Xna.Framework.CurveKey
+      description: Element for the search.
+    return:
+      type: System.Int32
+      description: Index of the element; or -1 if item is not found.
+    content.vb: Public Function IndexOf(item As CurveKey) As Integer
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.IndexOf*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt(System.Int32)
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(Int32)
+  nameWithType: CurveKeyCollection.RemoveAt(Int32)
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RemoveAt
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 184
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nRemoves element at the specified index.\n"
+  example: []
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index which element will be removed.
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Remove(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:Microsoft.Xna.Framework.CurveKeyCollection.Remove(Microsoft.Xna.Framework.CurveKey)
+  id: Remove(Microsoft.Xna.Framework.CurveKey)
+  parent: Microsoft.Xna.Framework.CurveKeyCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(CurveKey)
+  nameWithType: CurveKeyCollection.Remove(CurveKey)
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Remove(Microsoft.Xna.Framework.CurveKey)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/CurveKeyCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Remove
+    path: ../MonoGame.Framework/CurveKeyCollection.cs
+    startLine: 194
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nRemoves specific element.\n"
+  example: []
+  syntax:
+    content: public bool Remove(CurveKey item)
+    parameters:
+    - id: item
+      type: Microsoft.Xna.Framework.CurveKey
+      description: The element
+    return:
+      type: System.Boolean
+      description: <code>true</code> if item is successfully removed; <code>false</code> otherwise. This method also returns <code>false</code> if item was not found.
+    content.vb: Public Function Remove(item As CurveKey) As Boolean
+  overload: Microsoft.Xna.Framework.CurveKeyCollection.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Remove(Microsoft.Xna.Framework.CurveKey)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.CurveKey
+  commentId: T:Microsoft.Xna.Framework.CurveKey
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: CurveKey
+  nameWithType: CurveKey
+  fullName: Microsoft.Xna.Framework.CurveKey
+- uid: Microsoft.Xna.Framework.Curve
+  commentId: T:Microsoft.Xna.Framework.Curve
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Curve
+  nameWithType: Curve
+  fullName: Microsoft.Xna.Framework.Curve
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<CurveKey>
+  nameWithType: ICollection<CurveKey>
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>
+  nameWithType.vb: ICollection(Of CurveKey)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey)
+  name.vb: ICollection(Of CurveKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<CurveKey>
+  nameWithType: IEnumerable<CurveKey>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.CurveKey>
+  nameWithType.vb: IEnumerable(Of CurveKey)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.CurveKey)
+  name.vb: IEnumerable(Of CurveKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Item*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Item
+  isExternal: false
+  name: Item
+  nameWithType: CurveKeyCollection.Item
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Item
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Count*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Count
+  isExternal: false
+  name: Count
+  nameWithType: CurveKeyCollection.Count
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Count
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Count
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Count
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<CurveKey>.Count
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Count
+  nameWithType.vb: ICollection(Of CurveKey).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly
+  isExternal: false
+  name: IsReadOnly
+  nameWithType: CurveKeyCollection.IsReadOnly
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.IsReadOnly
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<CurveKey>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.IsReadOnly
+  nameWithType.vb: ICollection(Of CurveKey).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: Microsoft.Xna.Framework.CurveKeyCollection
+  commentId: T:Microsoft.Xna.Framework.CurveKeyCollection
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: CurveKeyCollection
+  nameWithType: CurveKeyCollection
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.#ctor
+  isExternal: false
+  name: CurveKeyCollection
+  nameWithType: CurveKeyCollection.CurveKeyCollection
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.CurveKeyCollection
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.System#Collections#IEnumerable#GetEnumerator
+  isExternal: false
+  name: IEnumerable.GetEnumerator
+  nameWithType: CurveKeyCollection.IEnumerable.GetEnumerator
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: CurveKeyCollection.System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Add*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Add
+  isExternal: false
+  name: Add
+  nameWithType: CurveKeyCollection.Add
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Add
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Add(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Add(Microsoft.Xna.Framework.CurveKey)
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(CurveKey)
+  nameWithType: ICollection<CurveKey>.Add(CurveKey)
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Add(Microsoft.Xna.Framework.CurveKey)
+  nameWithType.vb: ICollection(Of CurveKey).Add(CurveKey)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Add(Microsoft.Xna.Framework.CurveKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<CurveKey>.Add
+    fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of CurveKey).Add
+    fullName: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Clear*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: CurveKeyCollection.Clear
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Clear
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Clear
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Clear
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<CurveKey>.Clear()
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Clear()
+  nameWithType.vb: ICollection(Of CurveKey).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<CurveKey>.Clear
+    fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of CurveKey).Clear
+    fullName: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Clone*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Clone
+  isExternal: false
+  name: Clone
+  nameWithType: CurveKeyCollection.Clone
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Clone
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Contains*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Contains
+  isExternal: false
+  name: Contains
+  nameWithType: CurveKeyCollection.Contains
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Contains
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Contains(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Contains(Microsoft.Xna.Framework.CurveKey)
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(CurveKey)
+  nameWithType: ICollection<CurveKey>.Contains(CurveKey)
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Contains(Microsoft.Xna.Framework.CurveKey)
+  nameWithType.vb: ICollection(Of CurveKey).Contains(CurveKey)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Contains(Microsoft.Xna.Framework.CurveKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<CurveKey>.Contains
+    fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of CurveKey).Contains
+    fullName: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.CopyTo*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.CopyTo
+  isExternal: false
+  name: CopyTo
+  nameWithType: CurveKeyCollection.CopyTo
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.CopyTo
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.CopyTo(Microsoft.Xna.Framework.CurveKey[],System.Int32)
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(CurveKey[], Int32)
+  nameWithType: ICollection<CurveKey>.CopyTo(CurveKey[], Int32)
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.CopyTo(Microsoft.Xna.Framework.CurveKey[], System.Int32)
+  nameWithType.vb: ICollection(Of CurveKey).CopyTo(CurveKey(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).CopyTo(Microsoft.Xna.Framework.CurveKey(), System.Int32)
+  name.vb: CopyTo(CurveKey(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<CurveKey>.CopyTo
+    fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of CurveKey).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.CurveKey[]
+  name: CurveKey[]
+  nameWithType: CurveKey[]
+  fullName: Microsoft.Xna.Framework.CurveKey[]
+  nameWithType.vb: CurveKey()
+  fullName.vb: Microsoft.Xna.Framework.CurveKey()
+  name.vb: CurveKey()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator
+  isExternal: false
+  name: GetEnumerator
+  nameWithType: CurveKeyCollection.GetEnumerator
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<CurveKey>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.CurveKey>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of CurveKey).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.CurveKey).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<CurveKey>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.CurveKey>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of CurveKey).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.CurveKey).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{Microsoft.Xna.Framework.CurveKey}
+  commentId: T:System.Collections.Generic.IEnumerator{Microsoft.Xna.Framework.CurveKey}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<CurveKey>
+  nameWithType: IEnumerator<CurveKey>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.Xna.Framework.CurveKey>
+  nameWithType.vb: IEnumerator(Of CurveKey)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Microsoft.Xna.Framework.CurveKey)
+  name.vb: IEnumerator(Of CurveKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.IndexOf*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.IndexOf
+  isExternal: false
+  name: IndexOf
+  nameWithType: CurveKeyCollection.IndexOf
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.IndexOf
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt
+  isExternal: false
+  name: RemoveAt
+  nameWithType: CurveKeyCollection.RemoveAt
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.RemoveAt
+- uid: Microsoft.Xna.Framework.CurveKeyCollection.Remove*
+  commentId: Overload:Microsoft.Xna.Framework.CurveKeyCollection.Remove
+  isExternal: false
+  name: Remove
+  nameWithType: CurveKeyCollection.Remove
+  fullName: Microsoft.Xna.Framework.CurveKeyCollection.Remove
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Remove(Microsoft.Xna.Framework.CurveKey)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}.Remove(Microsoft.Xna.Framework.CurveKey)
+  parent: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.CurveKey}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(CurveKey)
+  nameWithType: ICollection<CurveKey>.Remove(CurveKey)
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Remove(Microsoft.Xna.Framework.CurveKey)
+  nameWithType.vb: ICollection(Of CurveKey).Remove(CurveKey)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Remove(Microsoft.Xna.Framework.CurveKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<CurveKey>.Remove
+    fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.CurveKey>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of CurveKey).Remove
+    fullName: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.CurveKey).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.CurveKey
+    name: CurveKey
+    nameWithType: CurveKey
+    fullName: Microsoft.Xna.Framework.CurveKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

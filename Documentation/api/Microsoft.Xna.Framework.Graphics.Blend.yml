@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.Blend
+  commentId: T:Microsoft.Xna.Framework.Graphics.Blend
+  id: Blend
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.Blend.BlendFactor
+  - Microsoft.Xna.Framework.Graphics.Blend.DestinationAlpha
+  - Microsoft.Xna.Framework.Graphics.Blend.DestinationColor
+  - Microsoft.Xna.Framework.Graphics.Blend.InverseBlendFactor
+  - Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationAlpha
+  - Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationColor
+  - Microsoft.Xna.Framework.Graphics.Blend.InverseSourceAlpha
+  - Microsoft.Xna.Framework.Graphics.Blend.InverseSourceColor
+  - Microsoft.Xna.Framework.Graphics.Blend.One
+  - Microsoft.Xna.Framework.Graphics.Blend.SourceAlpha
+  - Microsoft.Xna.Framework.Graphics.Blend.SourceAlphaSaturation
+  - Microsoft.Xna.Framework.Graphics.Blend.SourceColor
+  - Microsoft.Xna.Framework.Graphics.Blend.Zero
+  langs:
+  - csharp
+  - vb
+  name: Blend
+  nameWithType: Blend
+  fullName: Microsoft.Xna.Framework.Graphics.Blend
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Blend
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines a blend mode.\n"
+  example: []
+  syntax:
+    content: public enum Blend
+    content.vb: Public Enum Blend
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.Blend.One
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.One
+  id: One
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Blend.One
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.One
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: One
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by {1, 1, 1, 1}.\n"
+  example: []
+  syntax:
+    content: One = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.Zero
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.Zero
+  id: Zero
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Blend.Zero
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.Zero
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Zero
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by {0, 0, 0, 0}.\n"
+  example: []
+  syntax:
+    content: Zero = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.SourceColor
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.SourceColor
+  id: SourceColor
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: SourceColor
+  nameWithType: Blend.SourceColor
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.SourceColor
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SourceColor
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 23
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the source color. \n{Rs, Gs, Bs, As}, where Rs, Gs, Bs, As are color source values.\n"
+  example: []
+  syntax:
+    content: SourceColor = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.InverseSourceColor
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.InverseSourceColor
+  id: InverseSourceColor
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: InverseSourceColor
+  nameWithType: Blend.InverseSourceColor
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.InverseSourceColor
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: InverseSourceColor
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 28
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the inverse of the source color.\n{1 − Rs, 1 − Gs, 1 − Bs, 1 − As}, where Rs, Gs, Bs, As are color source values.\n"
+  example: []
+  syntax:
+    content: InverseSourceColor = 3
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.SourceAlpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.SourceAlpha
+  id: SourceAlpha
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: SourceAlpha
+  nameWithType: Blend.SourceAlpha
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.SourceAlpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SourceAlpha
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 33
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the alpha value of the source. \n{As, As, As, As}, where As is the source alpha value.\n"
+  example: []
+  syntax:
+    content: SourceAlpha = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.InverseSourceAlpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.InverseSourceAlpha
+  id: InverseSourceAlpha
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: InverseSourceAlpha
+  nameWithType: Blend.InverseSourceAlpha
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.InverseSourceAlpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: InverseSourceAlpha
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the inverse of the alpha value of the source. \n{1 − As, 1 − As, 1 − As, 1 − As}, where As is the source alpha value.\n"
+  example: []
+  syntax:
+    content: InverseSourceAlpha = 5
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.DestinationColor
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.DestinationColor
+  id: DestinationColor
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: DestinationColor
+  nameWithType: Blend.DestinationColor
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.DestinationColor
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DestinationColor
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component color is multiplied by the destination color. \n{Rd, Gd, Bd, Ad}, where Rd, Gd, Bd, Ad are color destination values.\n"
+  example: []
+  syntax:
+    content: DestinationColor = 6
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationColor
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationColor
+  id: InverseDestinationColor
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: InverseDestinationColor
+  nameWithType: Blend.InverseDestinationColor
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationColor
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: InverseDestinationColor
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the inversed destination color. \n{1 − Rd, 1 − Gd, 1 − Bd, 1 − Ad}, where Rd, Gd, Bd, Ad are color destination values.\n"
+  example: []
+  syntax:
+    content: InverseDestinationColor = 7
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.DestinationAlpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.DestinationAlpha
+  id: DestinationAlpha
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: DestinationAlpha
+  nameWithType: Blend.DestinationAlpha
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.DestinationAlpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DestinationAlpha
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 53
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the alpha value of the destination.\n{Ad, Ad, Ad, Ad}, where Ad is the destination alpha value.\n"
+  example: []
+  syntax:
+    content: DestinationAlpha = 8
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationAlpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationAlpha
+  id: InverseDestinationAlpha
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: InverseDestinationAlpha
+  nameWithType: Blend.InverseDestinationAlpha
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.InverseDestinationAlpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: InverseDestinationAlpha
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by the inversed alpha value of the destination. \n{1 − Ad, 1 − Ad, 1 − Ad, 1 − Ad}, where Ad is the destination alpha value.\n"
+  example: []
+  syntax:
+    content: InverseDestinationAlpha = 9
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.BlendFactor
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.BlendFactor
+  id: BlendFactor
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: BlendFactor
+  nameWithType: Blend.BlendFactor
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.BlendFactor
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BlendFactor
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by a constant in the <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: BlendFactor = 10
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.InverseBlendFactor
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.InverseBlendFactor
+  id: InverseBlendFactor
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: InverseBlendFactor
+  nameWithType: Blend.InverseBlendFactor
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.InverseBlendFactor
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: InverseBlendFactor
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by a inversed constant in the <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: InverseBlendFactor = 11
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Blend.SourceAlphaSaturation
+  commentId: F:Microsoft.Xna.Framework.Graphics.Blend.SourceAlphaSaturation
+  id: SourceAlphaSaturation
+  parent: Microsoft.Xna.Framework.Graphics.Blend
+  langs:
+  - csharp
+  - vb
+  name: SourceAlphaSaturation
+  nameWithType: Blend.SourceAlphaSaturation
+  fullName: Microsoft.Xna.Framework.Graphics.Blend.SourceAlphaSaturation
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/Blend.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SourceAlphaSaturation
+    path: ../MonoGame.Framework/Graphics/States/Blend.cs
+    startLine: 71
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach component of the color is multiplied by either the alpha of the source color, or the inverse of the alpha of the source color, whichever is greater. \n{f, f, f, 1}, where f = min(As, 1 − As), where As is the source alpha value.\n"
+  example: []
+  syntax:
+    content: SourceAlphaSaturation = 12
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Blend
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.Blend
+  commentId: T:Microsoft.Xna.Framework.Graphics.Blend
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Blend
+  nameWithType: Blend
+  fullName: Microsoft.Xna.Framework.Graphics.Blend
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor

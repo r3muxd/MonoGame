@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.CullMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.CullMode
+  id: CullMode
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.CullMode.CullClockwiseFace
+  - Microsoft.Xna.Framework.Graphics.CullMode.CullCounterClockwiseFace
+  - Microsoft.Xna.Framework.Graphics.CullMode.None
+  langs:
+  - csharp
+  - vb
+  name: CullMode
+  nameWithType: CullMode
+  fullName: Microsoft.Xna.Framework.Graphics.CullMode
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CullMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CullMode
+    path: ../MonoGame.Framework/Graphics/States/CullMode.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines a culling mode for faces in rasterization process.\n"
+  example: []
+  syntax:
+    content: public enum CullMode
+    content.vb: Public Enum CullMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.CullMode.None
+  commentId: F:Microsoft.Xna.Framework.Graphics.CullMode.None
+  id: None
+  parent: Microsoft.Xna.Framework.Graphics.CullMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: CullMode.None
+  fullName: Microsoft.Xna.Framework.Graphics.CullMode.None
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CullMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: None
+    path: ../MonoGame.Framework/Graphics/States/CullMode.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDo not cull faces.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CullMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CullMode.CullClockwiseFace
+  commentId: F:Microsoft.Xna.Framework.Graphics.CullMode.CullClockwiseFace
+  id: CullClockwiseFace
+  parent: Microsoft.Xna.Framework.Graphics.CullMode
+  langs:
+  - csharp
+  - vb
+  name: CullClockwiseFace
+  nameWithType: CullMode.CullClockwiseFace
+  fullName: Microsoft.Xna.Framework.Graphics.CullMode.CullClockwiseFace
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CullMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CullClockwiseFace
+    path: ../MonoGame.Framework/Graphics/States/CullMode.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCull faces with clockwise order.\n"
+  example: []
+  syntax:
+    content: CullClockwiseFace = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CullMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.CullMode.CullCounterClockwiseFace
+  commentId: F:Microsoft.Xna.Framework.Graphics.CullMode.CullCounterClockwiseFace
+  id: CullCounterClockwiseFace
+  parent: Microsoft.Xna.Framework.Graphics.CullMode
+  langs:
+  - csharp
+  - vb
+  name: CullCounterClockwiseFace
+  nameWithType: CullMode.CullCounterClockwiseFace
+  fullName: Microsoft.Xna.Framework.Graphics.CullMode.CullCounterClockwiseFace
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/CullMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CullCounterClockwiseFace
+    path: ../MonoGame.Framework/Graphics/States/CullMode.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCull faces with counter clockwise order.\n"
+  example: []
+  syntax:
+    content: CullCounterClockwiseFace = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.CullMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.CullMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.CullMode
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: CullMode
+  nameWithType: CullMode
+  fullName: Microsoft.Xna.Framework.Graphics.CullMode

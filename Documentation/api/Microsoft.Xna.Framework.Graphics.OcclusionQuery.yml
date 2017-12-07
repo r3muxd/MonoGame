@@ -1,0 +1,812 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  commentId: T:Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  id: OcclusionQuery
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.OcclusionQuery.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  - Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+  - Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+  - Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+  - Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount
+  langs:
+  - csharp
+  - vb
+  name: OcclusionQuery
+  nameWithType: OcclusionQuery
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.OpenGL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OcclusionQuery
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.OpenGL.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public class OcclusionQuery : GraphicsResource, IDisposable'
+    content.vb: >-
+      Public Class OcclusionQuery
+          Inherits GraphicsResource
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+  commentId: P:Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+  id: IsComplete
+  parent: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  langs:
+  - csharp
+  - vb
+  name: IsComplete
+  nameWithType: OcclusionQuery.IsComplete
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsComplete
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets a value indicating whether the occlusion query has completed.\n"
+  example: []
+  syntax:
+    content: public bool IsComplete { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<xref uid=\"langword_csharp_true\" name=\"true\" href=\"\"></xref> if the occlusion query has completed; otherwise,\n<xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref>.\n"
+    content.vb: Public ReadOnly Property IsComplete As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount
+  id: PixelCount
+  parent: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  langs:
+  - csharp
+  - vb
+  name: PixelCount
+  nameWithType: OcclusionQuery.PixelCount
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PixelCount
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.cs
+    startLine: 46
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the number of visible pixels.\n"
+  example: []
+  syntax:
+    content: public int PixelCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of visible pixels.
+    content.vb: Public ReadOnly Property PixelCount As Integer
+  overload: Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\nThe occlusion query has not yet completed. Check <xref href=\"Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete\" data-throw-if-not-resolved=\"false\"></xref> before reading\nthe result!\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  commentId: M:Microsoft.Xna.Framework.Graphics.OcclusionQuery.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)'
+  parent: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  langs:
+  - csharp
+  - vb
+  name: OcclusionQuery(GraphicsDevice)
+  nameWithType: OcclusionQuery.OcclusionQuery(GraphicsDevice)
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.OcclusionQuery(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.cs
+    startLine: 67
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Graphics.OcclusionQuery\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public OcclusionQuery(GraphicsDevice graphicsDevice)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+      description: The graphics device.
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice)
+  overload: Microsoft.Xna.Framework.Graphics.OcclusionQuery.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">graphicsDevice</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref>.\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\nThe current graphics profile does not support occlusion queries.\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+  commentId: M:Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+  id: Begin
+  parent: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  langs:
+  - csharp
+  - vb
+  name: Begin()
+  nameWithType: OcclusionQuery.Begin()
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Begin
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.cs
+    startLine: 85
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nBegins the occlusion query.\n"
+  example: []
+  syntax:
+    content: public void Begin()
+    content.vb: Public Sub Begin
+  overload: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<xref href=\"Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin\" data-throw-if-not-resolved=\"false\"></xref> is called again before calling <xref href=\"Microsoft.Xna.Framework.Graphics.OcclusionQuery.End\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+  commentId: M:Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+  id: End
+  parent: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  langs:
+  - csharp
+  - vb
+  name: End()
+  nameWithType: OcclusionQuery.End()
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.End()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: End
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.cs
+    startLine: 102
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEnds the occlusion query.\n"
+  example: []
+  syntax:
+    content: public void End()
+    content.vb: Public Sub
+  overload: Microsoft.Xna.Framework.Graphics.OcclusionQuery.End*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<xref href=\"Microsoft.Xna.Framework.Graphics.OcclusionQuery.End\" data-throw-if-not-resolved=\"false\"></xref> is called before calling <xref href=\"Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: OcclusionQuery.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/OcclusionQuery.OpenGL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Graphics/OcclusionQuery.OpenGL.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overridden: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  overload: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsResource
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsResource
+  nameWithType: GraphicsResource
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDeviceResetting()
+  nameWithType: GraphicsResource.GraphicsDeviceResetting()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: GraphicsResource.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: GraphicsResource.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Dispose()
+  nameWithType: GraphicsResource.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Disposing
+  nameWithType: GraphicsResource.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsResource.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsResource.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Name
+  nameWithType: GraphicsResource.Name
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Tag
+  nameWithType: GraphicsResource.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: ToString()
+  nameWithType: GraphicsResource.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+  isExternal: false
+  name: IsComplete
+  nameWithType: OcclusionQuery.IsComplete
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+  commentId: P:Microsoft.Xna.Framework.Graphics.OcclusionQuery.IsComplete
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount
+  isExternal: false
+  name: PixelCount
+  nameWithType: OcclusionQuery.PixelCount
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.PixelCount
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  commentId: T:Microsoft.Xna.Framework.Graphics.OcclusionQuery
+  isExternal: false
+  name: OcclusionQuery
+  nameWithType: OcclusionQuery
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.OcclusionQuery.#ctor
+  isExternal: false
+  name: OcclusionQuery
+  nameWithType: OcclusionQuery.OcclusionQuery
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.OcclusionQuery
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+  commentId: M:Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+  commentId: M:Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+  isExternal: false
+  name: Begin
+  nameWithType: OcclusionQuery.Begin
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Begin
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.End*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+  isExternal: false
+  name: End
+  nameWithType: OcclusionQuery.End
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.End
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: GraphicsResource.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: OcclusionQuery.Dispose
+  fullName: Microsoft.Xna.Framework.Graphics.OcclusionQuery.Dispose

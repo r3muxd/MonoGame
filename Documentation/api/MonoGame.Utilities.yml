@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: MonoGame.Utilities
+  commentId: N:MonoGame.Utilities
+  id: MonoGame.Utilities
+  children:
+  - MonoGame.Utilities.CompressionLevel
+  - MonoGame.Utilities.CompressionMode
+  - MonoGame.Utilities.FlushType
+  - MonoGame.Utilities.PlatformParameters
+  - MonoGame.Utilities.ZlibStream
+  langs:
+  - csharp
+  - vb
+  name: MonoGame.Utilities
+  nameWithType: MonoGame.Utilities
+  fullName: MonoGame.Utilities
+  type: Namespace
+  assemblies:
+  - MonoGame.Framework
+references:
+- uid: MonoGame.Utilities.PlatformParameters
+  commentId: T:MonoGame.Utilities.PlatformParameters
+  isExternal: false
+  name: PlatformParameters
+  nameWithType: PlatformParameters
+  fullName: MonoGame.Utilities.PlatformParameters
+- uid: MonoGame.Utilities.ZlibStream
+  commentId: T:MonoGame.Utilities.ZlibStream
+  isExternal: false
+  name: ZlibStream
+  nameWithType: ZlibStream
+  fullName: MonoGame.Utilities.ZlibStream
+- uid: MonoGame.Utilities.FlushType
+  commentId: T:MonoGame.Utilities.FlushType
+  parent: MonoGame.Utilities
+  isExternal: false
+  name: FlushType
+  nameWithType: FlushType
+  fullName: MonoGame.Utilities.FlushType
+- uid: MonoGame.Utilities.CompressionLevel
+  commentId: T:MonoGame.Utilities.CompressionLevel
+  parent: MonoGame.Utilities
+  isExternal: false
+  name: CompressionLevel
+  nameWithType: CompressionLevel
+  fullName: MonoGame.Utilities.CompressionLevel
+- uid: MonoGame.Utilities.CompressionMode
+  commentId: T:MonoGame.Utilities.CompressionMode
+  parent: MonoGame.Utilities
+  isExternal: false
+  name: CompressionMode
+  nameWithType: CompressionMode
+  fullName: MonoGame.Utilities.CompressionMode
+- uid: MonoGame.Utilities
+  commentId: N:MonoGame.Utilities
+  isExternal: false
+  name: MonoGame.Utilities
+  nameWithType: MonoGame.Utilities
+  fullName: MonoGame.Utilities

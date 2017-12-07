@@ -1,0 +1,508 @@
+### YamlMime:ManagedReference
+items:
+- uid: MonoGame.Utilities.Png.PngReader
+  commentId: T:MonoGame.Utilities.Png.PngReader
+  id: PngReader
+  parent: MonoGame.Utilities.Png
+  children:
+  - MonoGame.Utilities.Png.PngReader.#ctor
+  - MonoGame.Utilities.Png.PngReader.IsPngImage(System.IO.Stream)
+  - MonoGame.Utilities.Png.PngReader.Read(System.IO.Stream,Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  langs:
+  - csharp
+  - vb
+  name: PngReader
+  nameWithType: PngReader
+  fullName: MonoGame.Utilities.Png.PngReader
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PngReader
+    path: ../MonoGame.Framework/Utilities/Png/PngReader.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public class PngReader
+    content.vb: Public Class PngReader
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MonoGame.Utilities.Png.PngReader.#ctor
+  commentId: M:MonoGame.Utilities.Png.PngReader.#ctor
+  id: '#ctor'
+  parent: MonoGame.Utilities.Png.PngReader
+  langs:
+  - csharp
+  - vb
+  name: PngReader()
+  nameWithType: PngReader.PngReader()
+  fullName: MonoGame.Utilities.Png.PngReader.PngReader()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Utilities/Png/PngReader.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public PngReader()
+    content.vb: Public Sub New
+  overload: MonoGame.Utilities.Png.PngReader.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MonoGame.Utilities.Png.PngReader.Read(System.IO.Stream,Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  commentId: M:MonoGame.Utilities.Png.PngReader.Read(System.IO.Stream,Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  id: Read(System.IO.Stream,Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  parent: MonoGame.Utilities.Png.PngReader
+  langs:
+  - csharp
+  - vb
+  name: Read(Stream, GraphicsDevice)
+  nameWithType: PngReader.Read(Stream, GraphicsDevice)
+  fullName: MonoGame.Utilities.Png.PngReader.Read(System.IO.Stream, Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Read
+    path: ../MonoGame.Framework/Utilities/Png/PngReader.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public Texture2D Read(Stream inputStream, GraphicsDevice graphicsDevice)
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Texture2D
+    content.vb: Public Function Read(inputStream As Stream, graphicsDevice As GraphicsDevice) As Texture2D
+  overload: MonoGame.Utilities.Png.PngReader.Read*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MonoGame.Utilities.Png.PngReader.IsPngImage(System.IO.Stream)
+  commentId: M:MonoGame.Utilities.Png.PngReader.IsPngImage(System.IO.Stream)
+  id: IsPngImage(System.IO.Stream)
+  parent: MonoGame.Utilities.Png.PngReader
+  langs:
+  - csharp
+  - vb
+  name: IsPngImage(Stream)
+  nameWithType: PngReader.IsPngImage(Stream)
+  fullName: MonoGame.Utilities.Png.PngReader.IsPngImage(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngReader.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsPngImage
+    path: ../MonoGame.Framework/Utilities/Png/PngReader.cs
+    startLine: 69
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public static bool IsPngImage(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPngImage(stream As Stream) As Boolean
+  overload: MonoGame.Utilities.Png.PngReader.IsPngImage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MonoGame.Utilities.Png
+  commentId: N:MonoGame.Utilities.Png
+  isExternal: false
+  name: MonoGame.Utilities.Png
+  nameWithType: MonoGame.Utilities.Png
+  fullName: MonoGame.Utilities.Png
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MonoGame.Utilities.Png.PngReader.#ctor*
+  commentId: Overload:MonoGame.Utilities.Png.PngReader.#ctor
+  isExternal: false
+  name: PngReader
+  nameWithType: PngReader.PngReader
+  fullName: MonoGame.Utilities.Png.PngReader.PngReader
+- uid: MonoGame.Utilities.Png.PngReader.Read*
+  commentId: Overload:MonoGame.Utilities.Png.PngReader.Read
+  isExternal: false
+  name: Read
+  nameWithType: PngReader.Read
+  fullName: MonoGame.Utilities.Png.PngReader.Read
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: MonoGame.Utilities.Png.PngReader.IsPngImage*
+  commentId: Overload:MonoGame.Utilities.Png.PngReader.IsPngImage
+  isExternal: false
+  name: IsPngImage
+  nameWithType: PngReader.IsPngImage
+  fullName: MonoGame.Utilities.Png.PngReader.IsPngImage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

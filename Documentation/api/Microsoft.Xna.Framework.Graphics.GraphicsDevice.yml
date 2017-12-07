@@ -1,0 +1,3704 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  id: GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsAdapter,Microsoft.Xna.Framework.Graphics.GraphicsProfile,Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Color)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Color,System.Single,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceLost
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceReset
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceResetting
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(``0[])
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset(Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceCreated
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceDestroyed
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTarget2D)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTargetCube,Microsoft.Xna.Framework.Graphics.CubeMapFace)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers(Microsoft.Xna.Framework.Graphics.VertexBufferBinding[])
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures
+  - Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.OpenGL.FramebufferHelper.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDevice
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.OpenGL.FramebufferHelper.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public class GraphicsDevice : IDisposable'
+    content.vb: >-
+      Public Class GraphicsDevice
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures
+  id: VertexTextures
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: VertexTextures
+  nameWithType: GraphicsDevice.VertexTextures
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexTextures
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 64
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public TextureCollection VertexTextures { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.TextureCollection
+    content.vb: Public ReadOnly Property VertexTextures As TextureCollection
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates
+  id: VertexSamplerStates
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: VertexSamplerStates
+  nameWithType: GraphicsDevice.VertexSamplerStates
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexSamplerStates
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public SamplerStateCollection VertexSamplerStates { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SamplerStateCollection
+    content.vb: Public ReadOnly Property VertexSamplerStates As SamplerStateCollection
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures
+  id: Textures
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Textures
+  nameWithType: GraphicsDevice.Textures
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Textures
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 68
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public TextureCollection Textures { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.TextureCollection
+    content.vb: Public ReadOnly Property Textures As TextureCollection
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates
+  id: SamplerStates
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SamplerStates
+  nameWithType: GraphicsDevice.SamplerStates
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SamplerStates
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 70
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public SamplerStateCollection SamplerStates { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SamplerStateCollection
+    content.vb: Public ReadOnly Property SamplerStates As SamplerStateCollection
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceLost
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceLost
+  id: DeviceLost
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DeviceLost
+  nameWithType: GraphicsDevice.DeviceLost
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceLost
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceLost
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 119
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public event EventHandler<EventArgs> DeviceLost
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event DeviceLost As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceReset
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceReset
+  id: DeviceReset
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DeviceReset
+  nameWithType: GraphicsDevice.DeviceReset
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceReset
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceReset
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 120
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public event EventHandler<EventArgs> DeviceReset
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event DeviceReset As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceResetting
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceResetting
+  id: DeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DeviceResetting
+  nameWithType: GraphicsDevice.DeviceResetting
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DeviceResetting
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DeviceResetting
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 121
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public event EventHandler<EventArgs> DeviceResetting
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event DeviceResetting As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceCreated
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceCreated
+  id: ResourceCreated
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: ResourceCreated
+  nameWithType: GraphicsDevice.ResourceCreated
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceCreated
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ResourceCreated
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 122
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public event EventHandler<ResourceCreatedEventArgs> ResourceCreated
+    return:
+      type: System.EventHandler{Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs}
+    content.vb: Public Event ResourceCreated As EventHandler(Of ResourceCreatedEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceDestroyed
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceDestroyed
+  id: ResourceDestroyed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: ResourceDestroyed
+  nameWithType: GraphicsDevice.ResourceDestroyed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourceDestroyed
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ResourceDestroyed
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 123
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public event EventHandler<ResourceDestroyedEventArgs> ResourceDestroyed
+    return:
+      type: System.EventHandler{Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs}
+    content.vb: Public Event ResourceDestroyed As EventHandler(Of ResourceDestroyedEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Disposing
+  id: Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Disposing
+  nameWithType: GraphicsDevice.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Disposing
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Disposing
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 124
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public event EventHandler<EventArgs> Disposing
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event Disposing As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed
+  id: IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: GraphicsDevice.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsDisposed
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 132
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost
+  id: IsContentLost
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: IsContentLost
+  nameWithType: GraphicsDevice.IsContentLost
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsContentLost
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 140
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public bool IsContentLost { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsContentLost As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter
+  id: Adapter
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Adapter
+  nameWithType: GraphicsDevice.Adapter
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Adapter
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 166
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public GraphicsAdapter Adapter { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+    content.vb: Public ReadOnly Property Adapter As GraphicsAdapter
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+  id: Metrics
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Metrics
+  nameWithType: GraphicsDevice.Metrics
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Metrics
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 178
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe rendering information for debugging and profiling.\nThe metrics are reset every frame after draw within <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present\" data-throw-if-not-resolved=\"false\"></xref>. \n"
+  example: []
+  syntax:
+    content: public GraphicsMetrics Metrics { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+    content.vb: Public Property Metrics As GraphicsMetrics
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug
+  id: GraphicsDebug
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDebug
+  nameWithType: GraphicsDevice.GraphicsDebug
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDebug
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 185
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nAccess debugging APIs for the graphics subsystem.\n"
+  example: []
+  syntax:
+    content: public GraphicsDebug GraphicsDebug { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDebug
+    content.vb: Public Property GraphicsDebug As GraphicsDebug
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsAdapter,Microsoft.Xna.Framework.Graphics.GraphicsProfile,Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsAdapter,Microsoft.Xna.Framework.Graphics.GraphicsProfile,Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsAdapter,Microsoft.Xna.Framework.Graphics.GraphicsProfile,Microsoft.Xna.Framework.Graphics.PresentationParameters)'
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDevice(GraphicsAdapter, GraphicsProfile, PresentationParameters)
+  nameWithType: GraphicsDevice.GraphicsDevice(GraphicsAdapter, GraphicsProfile, PresentationParameters)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDevice(Microsoft.Xna.Framework.Graphics.GraphicsAdapter, Microsoft.Xna.Framework.Graphics.GraphicsProfile, Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 211
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsDevice\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public GraphicsDevice(GraphicsAdapter adapter, GraphicsProfile graphicsProfile, PresentationParameters presentationParameters)
+    parameters:
+    - id: adapter
+      type: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+      description: The graphics adapter.
+    - id: graphicsProfile
+      type: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+      description: The graphics profile.
+    - id: presentationParameters
+      type: Microsoft.Xna.Framework.Graphics.PresentationParameters
+      description: The presentation options.
+    content.vb: Public Sub New(adapter As GraphicsAdapter, graphicsProfile As GraphicsProfile, presentationParameters As PresentationParameters)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">presentationParameters</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref>.\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize
+  id: Finalize
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: GraphicsDevice.Finalize()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Finalize
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 276
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState
+  id: RasterizerState
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: RasterizerState
+  nameWithType: GraphicsDevice.RasterizerState
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RasterizerState
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 340
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public RasterizerState RasterizerState { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.RasterizerState
+    content.vb: Public Property RasterizerState As RasterizerState
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+  id: BlendFactor
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: BlendFactor
+  nameWithType: GraphicsDevice.BlendFactor
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BlendFactor
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 386
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe color used as blend factor when alpha blending.\n"
+  remarks: "\nWhen only changing BlendFactor, use this rather than <xref href=\"Microsoft.Xna.Framework.Graphics.BlendState.BlendFactor\" data-throw-if-not-resolved=\"false\"></xref> to\nonly update BlendFactor so the whole BlendState does not have to be updated.\n"
+  example: []
+  syntax:
+    content: public Color BlendFactor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Color
+    content.vb: Public Property BlendFactor As Color
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState
+  id: BlendState
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: BlendState
+  nameWithType: GraphicsDevice.BlendState
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BlendState
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 398
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public BlendState BlendState { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.BlendState
+    content.vb: Public Property BlendState As BlendState
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState
+  id: DepthStencilState
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DepthStencilState
+  nameWithType: GraphicsDevice.DepthStencilState
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DepthStencilState
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 436
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public DepthStencilState DepthStencilState { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.DepthStencilState
+    content.vb: Public Property DepthStencilState As DepthStencilState
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Color)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Color)
+  id: Clear(Microsoft.Xna.Framework.Color)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Clear(Color)
+  nameWithType: GraphicsDevice.Clear(Color)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Color)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Clear
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 489
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Clear(Color color)
+    parameters:
+    - id: color
+      type: Microsoft.Xna.Framework.Color
+    content.vb: Public Sub Clear(color As Color)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Color,System.Single,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Color,System.Single,System.Int32)
+  id: Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Color,System.Single,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Clear(ClearOptions, Color, Single, Int32)
+  nameWithType: GraphicsDevice.Clear(ClearOptions, Color, Single, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions, Microsoft.Xna.Framework.Color, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Clear
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 502
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Clear(ClearOptions options, Color color, float depth, int stencil)
+    parameters:
+    - id: options
+      type: Microsoft.Xna.Framework.Graphics.ClearOptions
+    - id: color
+      type: Microsoft.Xna.Framework.Color
+    - id: depth
+      type: System.Single
+    - id: stencil
+      type: System.Int32
+    content.vb: Public Sub Clear(options As ClearOptions, color As Color, depth As Single, stencil As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  id: Clear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Clear(ClearOptions, Vector4, Single, Int32)
+  nameWithType: GraphicsDevice.Clear(ClearOptions, Vector4, Single, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear(Microsoft.Xna.Framework.Graphics.ClearOptions, Microsoft.Xna.Framework.Vector4, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Clear
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 512
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Clear(ClearOptions options, Vector4 color, float depth, int stencil)
+    parameters:
+    - id: options
+      type: Microsoft.Xna.Framework.Graphics.ClearOptions
+    - id: color
+      type: Microsoft.Xna.Framework.Vector4
+    - id: depth
+      type: System.Single
+    - id: stencil
+      type: System.Int32
+    content.vb: Public Sub Clear(options As ClearOptions, color As Vector4, depth As Single, stencil As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose
+  id: Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GraphicsDevice.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 522
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: GraphicsDevice.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dispose
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 528
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+  id: Present
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Present()
+  nameWithType: GraphicsDevice.Present()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Present
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 592
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Present()
+    content.vb: Public Sub Present
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset
+  id: Reset
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: GraphicsDevice.Reset()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Reset
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 611
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset(Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset(Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  id: Reset(Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Reset(PresentationParameters)
+  nameWithType: GraphicsDevice.Reset(PresentationParameters)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset(Microsoft.Xna.Framework.Graphics.PresentationParameters)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Reset
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 624
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Reset(PresentationParameters presentationParameters)
+    parameters:
+    - id: presentationParameters
+      type: Microsoft.Xna.Framework.Graphics.PresentationParameters
+    content.vb: Public Sub Reset(presentationParameters As PresentationParameters)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode
+  id: DisplayMode
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DisplayMode
+  nameWithType: GraphicsDevice.DisplayMode
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DisplayMode
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 664
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public DisplayMode DisplayMode { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.DisplayMode
+    content.vb: Public ReadOnly Property DisplayMode As DisplayMode
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus
+  id: GraphicsDeviceStatus
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDeviceStatus
+  nameWithType: GraphicsDevice.GraphicsDeviceStatus
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDeviceStatus
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 672
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public GraphicsDeviceStatus GraphicsDeviceStatus { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+    content.vb: Public ReadOnly Property GraphicsDeviceStatus As GraphicsDeviceStatus
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters
+  id: PresentationParameters
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: PresentationParameters
+  nameWithType: GraphicsDevice.PresentationParameters
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PresentationParameters
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 680
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public PresentationParameters PresentationParameters { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.PresentationParameters
+    content.vb: Public ReadOnly Property PresentationParameters As PresentationParameters
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport
+  id: Viewport
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Viewport
+  nameWithType: GraphicsDevice.Viewport
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Viewport
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 686
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Viewport Viewport { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Viewport
+    content.vb: Public Property Viewport As Viewport
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile
+  id: GraphicsProfile
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GraphicsProfile
+  nameWithType: GraphicsDevice.GraphicsProfile
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsProfile
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 701
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public GraphicsProfile GraphicsProfile { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+    content.vb: Public ReadOnly Property GraphicsProfile As GraphicsProfile
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle
+  id: ScissorRectangle
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: ScissorRectangle
+  nameWithType: GraphicsDevice.ScissorRectangle
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ScissorRectangle
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 706
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Rectangle ScissorRectangle { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Rectangle
+    content.vb: Public Property ScissorRectangle As Rectangle
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount
+  id: RenderTargetCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: RenderTargetCount
+  nameWithType: GraphicsDevice.RenderTargetCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RenderTargetCount
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 723
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public int RenderTargetCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RenderTargetCount As Integer
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTarget2D)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTarget2D)
+  id: SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTarget2D)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(RenderTarget2D)
+  nameWithType: GraphicsDevice.SetRenderTarget(RenderTarget2D)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTarget2D)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetRenderTarget
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 731
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void SetRenderTarget(RenderTarget2D renderTarget)
+    parameters:
+    - id: renderTarget
+      type: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+    content.vb: Public Sub SetRenderTarget(renderTarget As RenderTarget2D)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTargetCube,Microsoft.Xna.Framework.Graphics.CubeMapFace)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTargetCube,Microsoft.Xna.Framework.Graphics.CubeMapFace)
+  id: SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTargetCube,Microsoft.Xna.Framework.Graphics.CubeMapFace)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(RenderTargetCube, CubeMapFace)
+  nameWithType: GraphicsDevice.SetRenderTarget(RenderTargetCube, CubeMapFace)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTargetCube, Microsoft.Xna.Framework.Graphics.CubeMapFace)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetRenderTarget
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 744
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void SetRenderTarget(RenderTargetCube renderTarget, CubeMapFace cubeMapFace)
+    parameters:
+    - id: renderTarget
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetCube
+    - id: cubeMapFace
+      type: Microsoft.Xna.Framework.Graphics.CubeMapFace
+    content.vb: Public Sub SetRenderTarget(renderTarget As RenderTargetCube, cubeMapFace As CubeMapFace)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  id: SetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTargets(RenderTargetBinding[])
+  nameWithType: GraphicsDevice.SetRenderTargets(RenderTargetBinding[])
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetRenderTargets
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 757
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void SetRenderTargets(params RenderTargetBinding[] renderTargets)
+    parameters:
+    - id: renderTargets
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetBinding[]
+    content.vb: Public Sub SetRenderTargets(ParamArray renderTargets As RenderTargetBinding())
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets*
+  nameWithType.vb: GraphicsDevice.SetRenderTargets(RenderTargetBinding())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding())
+  name.vb: SetRenderTargets(RenderTargetBinding())
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets
+  id: GetRenderTargets
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GetRenderTargets()
+  nameWithType: GraphicsDevice.GetRenderTargets()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetRenderTargets
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 855
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public RenderTargetBinding[] GetRenderTargets()
+    return:
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetBinding[]
+    content.vb: Public Function GetRenderTargets As RenderTargetBinding()
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  id: GetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GetRenderTargets(RenderTargetBinding[])
+  nameWithType: GraphicsDevice.GetRenderTargets(RenderTargetBinding[])
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetRenderTargets
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 863
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void GetRenderTargets(RenderTargetBinding[] outTargets)
+    parameters:
+    - id: outTargets
+      type: Microsoft.Xna.Framework.Graphics.RenderTargetBinding[]
+    content.vb: Public Sub GetRenderTargets(outTargets As RenderTargetBinding())
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets*
+  nameWithType.vb: GraphicsDevice.GetRenderTargets(RenderTargetBinding())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets(Microsoft.Xna.Framework.Graphics.RenderTargetBinding())
+  name.vb: GetRenderTargets(RenderTargetBinding())
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer)
+  id: SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SetVertexBuffer(VertexBuffer)
+  nameWithType: GraphicsDevice.SetVertexBuffer(VertexBuffer)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetVertexBuffer
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 869
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void SetVertexBuffer(VertexBuffer vertexBuffer)
+    parameters:
+    - id: vertexBuffer
+      type: Microsoft.Xna.Framework.Graphics.VertexBuffer
+    content.vb: Public Sub SetVertexBuffer(vertexBuffer As VertexBuffer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer,System.Int32)
+  id: SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SetVertexBuffer(VertexBuffer, Int32)
+  nameWithType: GraphicsDevice.SetVertexBuffer(VertexBuffer, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer(Microsoft.Xna.Framework.Graphics.VertexBuffer, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetVertexBuffer
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 876
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void SetVertexBuffer(VertexBuffer vertexBuffer, int vertexOffset)
+    parameters:
+    - id: vertexBuffer
+      type: Microsoft.Xna.Framework.Graphics.VertexBuffer
+    - id: vertexOffset
+      type: System.Int32
+    content.vb: Public Sub SetVertexBuffer(vertexBuffer As VertexBuffer, vertexOffset As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers(Microsoft.Xna.Framework.Graphics.VertexBufferBinding[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers(Microsoft.Xna.Framework.Graphics.VertexBufferBinding[])
+  id: SetVertexBuffers(Microsoft.Xna.Framework.Graphics.VertexBufferBinding[])
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: SetVertexBuffers(VertexBufferBinding[])
+  nameWithType: GraphicsDevice.SetVertexBuffers(VertexBufferBinding[])
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers(Microsoft.Xna.Framework.Graphics.VertexBufferBinding[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetVertexBuffers
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 891
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void SetVertexBuffers(params VertexBufferBinding[] vertexBuffers)
+    parameters:
+    - id: vertexBuffers
+      type: Microsoft.Xna.Framework.Graphics.VertexBufferBinding[]
+    content.vb: Public Sub SetVertexBuffers(ParamArray vertexBuffers As VertexBufferBinding())
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers*
+  nameWithType.vb: GraphicsDevice.SetVertexBuffers(VertexBufferBinding())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers(Microsoft.Xna.Framework.Graphics.VertexBufferBinding())
+  name.vb: SetVertexBuffers(VertexBufferBinding())
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices
+  id: Indices
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: Indices
+  nameWithType: GraphicsDevice.Indices
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Indices
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 918
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public IndexBuffer Indices { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.IndexBuffer
+    content.vb: Public Property Indices As IndexBuffer
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost
+  id: ResourcesLost
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: ResourcesLost
+  nameWithType: GraphicsDevice.ResourcesLost
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ResourcesLost
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 958
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public bool ResourcesLost { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ResourcesLost As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawIndexedPrimitives(PrimitiveType, Int32, Int32, Int32, Int32, Int32)
+  nameWithType: GraphicsDevice.DrawIndexedPrimitives(PrimitiveType, Int32, Int32, Int32, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawIndexedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 970
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw geometry by indexing into the vertex buffer.\n"
+  remarks: Note that minVertexIndex and numVertices are unused in MonoGame and will be ignored.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use DrawIndexedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount) instead. In future versions this method can be removed.")]
+
+      public void DrawIndexedPrimitives(PrimitiveType primitiveType, int baseVertex, int minVertexIndex, int numVertices, int startIndex, int primitiveCount)
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives in the index buffer.
+    - id: baseVertex
+      type: System.Int32
+      description: Used to offset the vertex range indexed from the vertex buffer.
+    - id: minVertexIndex
+      type: System.Int32
+      description: This is unused and remains here only for XNA API compatibility.
+    - id: numVertices
+      type: System.Int32
+      description: This is unused and remains here only for XNA API compatibility.
+    - id: startIndex
+      type: System.Int32
+      description: The index within the index buffer to start drawing from.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to render from the index buffer.
+    content.vb: >-
+      <Obsolete("Use DrawIndexedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount) instead. In future versions this method can be removed.")>
+
+      Public Sub DrawIndexedPrimitives(primitiveType As PrimitiveType, baseVertex As Integer, minVertexIndex As Integer, numVertices As Integer, startIndex As Integer, primitiveCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DrawIndexedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount) instead. In future versions this method can be removed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32)
+  id: DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawIndexedPrimitives(PrimitiveType, Int32, Int32, Int32)
+  nameWithType: GraphicsDevice.DrawIndexedPrimitives(PrimitiveType, Int32, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawIndexedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 983
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw geometry by indexing into the vertex buffer.\n"
+  example: []
+  syntax:
+    content: public void DrawIndexedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount)
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives in the index buffer.
+    - id: baseVertex
+      type: System.Int32
+      description: Used to offset the vertex range indexed from the vertex buffer.
+    - id: startIndex
+      type: System.Int32
+      description: The index within the index buffer to start drawing from.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to render from the index buffer.
+    content.vb: Public Sub DrawIndexedPrimitives(primitiveType As PrimitiveType, baseVertex As Integer, startIndex As Integer, primitiveCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32)
+  id: DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawUserPrimitives<T>(PrimitiveType, T[], Int32, Int32)
+  nameWithType: GraphicsDevice.DrawUserPrimitives<T>(PrimitiveType, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives<T>(Microsoft.Xna.Framework.Graphics.PrimitiveType, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawUserPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1016
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type from the data in an array of vertices without indexing.\n"
+  remarks: >-
+    The <xref href="Microsoft.Xna.Framework.Graphics.VertexDeclaration" data-throw-if-not-resolved="false"></xref> will be found by getting <xref href="Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration" data-throw-if-not-resolved="false"></xref>
+
+    from an instance of <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> and cached for subsequent calls.
+  example: []
+  syntax:
+    content: 'public void DrawUserPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int primitiveCount)where T : struct, IVertexType'
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw with the vertices.
+    - id: vertexData
+      type: '{T}[]'
+      description: An array of vertices to draw.
+    - id: vertexOffset
+      type: System.Int32
+      description: The index in the array of the first vertex that should be rendered.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    typeParameters:
+    - id: T
+      description: The type of the vertices.
+    content.vb: Public Sub DrawUserPrimitives(Of T As {Structure, IVertexType})(primitiveType As PrimitiveType, vertexData As T(), vertexOffset As Integer, primitiveCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives*
+  nameWithType.vb: GraphicsDevice.DrawUserPrimitives(Of T)(PrimitiveType, T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives(Of T)(Microsoft.Xna.Framework.Graphics.PrimitiveType, T(), System.Int32, System.Int32)
+  name.vb: DrawUserPrimitives(Of T)(PrimitiveType, T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  id: DrawUserPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawUserPrimitives<T>(PrimitiveType, T[], Int32, Int32, VertexDeclaration)
+  nameWithType: GraphicsDevice.DrawUserPrimitives<T>(PrimitiveType, T[], Int32, Int32, VertexDeclaration)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives<T>(Microsoft.Xna.Framework.Graphics.PrimitiveType, T[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawUserPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1030
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type from the data in the given array of vertices without indexing.\n"
+  example: []
+  syntax:
+    content: 'public void DrawUserPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int primitiveCount, VertexDeclaration vertexDeclaration)where T : struct'
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw with the vertices.
+    - id: vertexData
+      type: '{T}[]'
+      description: An array of vertices to draw.
+    - id: vertexOffset
+      type: System.Int32
+      description: The index in the array of the first vertex that should be rendered.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    - id: vertexDeclaration
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The layout of the vertices.
+    typeParameters:
+    - id: T
+      description: The type of the vertices.
+    content.vb: Public Sub DrawUserPrimitives(Of T As Structure)(primitiveType As PrimitiveType, vertexData As T(), vertexOffset As Integer, primitiveCount As Integer, vertexDeclaration As VertexDeclaration)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives*
+  nameWithType.vb: GraphicsDevice.DrawUserPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, VertexDeclaration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives(Of T)(Microsoft.Xna.Framework.Graphics.PrimitiveType, T(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  name.vb: DrawUserPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, VertexDeclaration)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32)
+  id: DrawPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawPrimitives(PrimitiveType, Int32, Int32)
+  nameWithType: GraphicsDevice.DrawPrimitives(PrimitiveType, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1067
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type from the currently bound vertexbuffers without indexing.\n"
+  example: []
+  syntax:
+    content: public void DrawPrimitives(PrimitiveType primitiveType, int vertexStart, int primitiveCount)
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw.
+    - id: vertexStart
+      type: System.Int32
+      description: Index of the vertex to start at.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    content.vb: Public Sub DrawPrimitives(primitiveType As PrimitiveType, vertexStart As Integer, primitiveCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32)
+  id: DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int16[], Int32, Int32)
+  nameWithType: GraphicsDevice.DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int16[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives<T>(Microsoft.Xna.Framework.Graphics.PrimitiveType, T[], System.Int32, System.Int32, System.Int16[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawUserIndexedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1105
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type by indexing into the given array of vertices with 16-bit indices.\n"
+  remarks: >-
+    The <xref href="Microsoft.Xna.Framework.Graphics.VertexDeclaration" data-throw-if-not-resolved="false"></xref> will be found by getting <xref href="Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration" data-throw-if-not-resolved="false"></xref>
+
+    from an instance of <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> and cached for subsequent calls.
+  example: []
+  syntax:
+    content: 'public void DrawUserIndexedPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int numVertices, short[] indexData, int indexOffset, int primitiveCount)where T : struct, IVertexType'
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw with the vertices.
+    - id: vertexData
+      type: '{T}[]'
+      description: An array of vertices to draw.
+    - id: vertexOffset
+      type: System.Int32
+      description: The index in the array of the first vertex to draw.
+    - id: numVertices
+      type: System.Int32
+      description: The number of vertices to draw.
+    - id: indexData
+      type: System.Int16[]
+      description: The index data.
+    - id: indexOffset
+      type: System.Int32
+      description: The index in the array of indices of the first index to use
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    typeParameters:
+    - id: T
+      description: The type of the vertices.
+    content.vb: Public Sub DrawUserIndexedPrimitives(Of T As {Structure, IVertexType})(primitiveType As PrimitiveType, vertexData As T(), vertexOffset As Integer, numVertices As Integer, indexData As Short(), indexOffset As Integer, primitiveCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives*
+  nameWithType.vb: GraphicsDevice.DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int16(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives(Of T)(Microsoft.Xna.Framework.Graphics.PrimitiveType, T(), System.Int32, System.Int32, System.Int16(), System.Int32, System.Int32)
+  name.vb: DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int16(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  id: DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int16[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int16[], Int32, Int32, VertexDeclaration)
+  nameWithType: GraphicsDevice.DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int16[], Int32, Int32, VertexDeclaration)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives<T>(Microsoft.Xna.Framework.Graphics.PrimitiveType, T[], System.Int32, System.Int32, System.Int16[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawUserIndexedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1125
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type by indexing into the given array of vertices with 16-bit indices.\n"
+  remarks: >-
+    All indices in the vertex buffer are interpreted relative to the specified <code data-dev-comment-type="paramref" class="paramref">vertexOffset</code>.
+
+    For example a value of zero in the array of indices points to the vertex at index <code data-dev-comment-type="paramref" class="paramref">vertexOffset</code>
+
+    in the array of vertices.
+  example: []
+  syntax:
+    content: 'public void DrawUserIndexedPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int numVertices, short[] indexData, int indexOffset, int primitiveCount, VertexDeclaration vertexDeclaration)where T : struct'
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw with the vertices.
+    - id: vertexData
+      type: '{T}[]'
+      description: An array of vertices to draw.
+    - id: vertexOffset
+      type: System.Int32
+      description: The index in the array of the first vertex to draw.
+    - id: numVertices
+      type: System.Int32
+      description: The number of vertices to draw.
+    - id: indexData
+      type: System.Int16[]
+      description: The index data.
+    - id: indexOffset
+      type: System.Int32
+      description: The index in the array of indices of the first index to use
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    - id: vertexDeclaration
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The layout of the vertices.
+    typeParameters:
+    - id: T
+      description: The type of the vertices.
+    content.vb: Public Sub DrawUserIndexedPrimitives(Of T As Structure)(primitiveType As PrimitiveType, vertexData As T(), vertexOffset As Integer, numVertices As Integer, indexData As Short(), indexOffset As Integer, primitiveCount As Integer, vertexDeclaration As VertexDeclaration)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives*
+  nameWithType.vb: GraphicsDevice.DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int16(), Int32, Int32, VertexDeclaration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives(Of T)(Microsoft.Xna.Framework.Graphics.PrimitiveType, T(), System.Int32, System.Int32, System.Int16(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  name.vb: DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int16(), Int32, Int32, VertexDeclaration)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32)
+  id: DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int32[], Int32, Int32)
+  nameWithType: GraphicsDevice.DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int32[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives<T>(Microsoft.Xna.Framework.Graphics.PrimitiveType, T[], System.Int32, System.Int32, System.Int32[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawUserIndexedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1185
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type by indexing into the given array of vertices with 32-bit indices.\n"
+  remarks: >-
+    The <xref href="Microsoft.Xna.Framework.Graphics.VertexDeclaration" data-throw-if-not-resolved="false"></xref> will be found by getting <xref href="Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration" data-throw-if-not-resolved="false"></xref>
+
+    from an instance of <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> and cached for subsequent calls.
+  example: []
+  syntax:
+    content: 'public void DrawUserIndexedPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int numVertices, int[] indexData, int indexOffset, int primitiveCount)where T : struct, IVertexType'
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw with the vertices.
+    - id: vertexData
+      type: '{T}[]'
+      description: An array of vertices to draw.
+    - id: vertexOffset
+      type: System.Int32
+      description: The index in the array of the first vertex to draw.
+    - id: numVertices
+      type: System.Int32
+      description: The number of vertices to draw.
+    - id: indexData
+      type: System.Int32[]
+      description: The index data.
+    - id: indexOffset
+      type: System.Int32
+      description: The index in the array of indices of the first index to use
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    typeParameters:
+    - id: T
+      description: The type of the vertices.
+    content.vb: Public Sub DrawUserIndexedPrimitives(Of T As {Structure, IVertexType})(primitiveType As PrimitiveType, vertexData As T(), vertexOffset As Integer, numVertices As Integer, indexData As Integer(), indexOffset As Integer, primitiveCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives*
+  nameWithType.vb: GraphicsDevice.DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int32(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives(Of T)(Microsoft.Xna.Framework.Graphics.PrimitiveType, T(), System.Int32, System.Int32, System.Int32(), System.Int32, System.Int32)
+  name.vb: DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int32(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  id: DrawUserIndexedPrimitives``1(Microsoft.Xna.Framework.Graphics.PrimitiveType,``0[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int32[], Int32, Int32, VertexDeclaration)
+  nameWithType: GraphicsDevice.DrawUserIndexedPrimitives<T>(PrimitiveType, T[], Int32, Int32, Int32[], Int32, Int32, VertexDeclaration)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives<T>(Microsoft.Xna.Framework.Graphics.PrimitiveType, T[], System.Int32, System.Int32, System.Int32[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawUserIndexedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1205
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw primitives of the specified type by indexing into the given array of vertices with 32-bit indices.\n"
+  remarks: >-
+    All indices in the vertex buffer are interpreted relative to the specified <code data-dev-comment-type="paramref" class="paramref">vertexOffset</code>.
+
+    For example value of zero in the array of indices points to the vertex at index <code data-dev-comment-type="paramref" class="paramref">vertexOffset</code>
+
+    in the array of vertices.
+  example: []
+  syntax:
+    content: 'public void DrawUserIndexedPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int numVertices, int[] indexData, int indexOffset, int primitiveCount, VertexDeclaration vertexDeclaration)where T : struct'
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives to draw with the vertices.
+    - id: vertexData
+      type: '{T}[]'
+      description: An array of vertices to draw.
+    - id: vertexOffset
+      type: System.Int32
+      description: The index in the array of the first vertex to draw.
+    - id: numVertices
+      type: System.Int32
+      description: The number of vertices to draw.
+    - id: indexData
+      type: System.Int32[]
+      description: The index data.
+    - id: indexOffset
+      type: System.Int32
+      description: The index in the array of indices of the first index to use
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives to draw.
+    - id: vertexDeclaration
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The layout of the vertices.
+    typeParameters:
+    - id: T
+      description: The type of the vertices.
+    content.vb: Public Sub DrawUserIndexedPrimitives(Of T As Structure)(primitiveType As PrimitiveType, vertexData As T(), vertexOffset As Integer, numVertices As Integer, indexData As Integer(), indexOffset As Integer, primitiveCount As Integer, vertexDeclaration As VertexDeclaration)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives*
+  nameWithType.vb: GraphicsDevice.DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int32(), Int32, Int32, VertexDeclaration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives(Of T)(Microsoft.Xna.Framework.Graphics.PrimitiveType, T(), System.Int32, System.Int32, System.Int32(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  name.vb: DrawUserIndexedPrimitives(Of T)(PrimitiveType, T(), Int32, Int32, Int32(), Int32, Int32, VertexDeclaration)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawInstancedPrimitives(PrimitiveType, Int32, Int32, Int32, Int32, Int32, Int32)
+  nameWithType: GraphicsDevice.DrawInstancedPrimitives(PrimitiveType, Int32, Int32, Int32, Int32, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawInstancedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1260
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw instanced geometry from the bound vertex buffers and index buffer.\n"
+  remarks: Note that minVertexIndex and numVertices are unused in MonoGame and will be ignored.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use DrawInstancedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount, int instanceCount) instead. In future versions this method can be removed.")]
+
+      public void DrawInstancedPrimitives(PrimitiveType primitiveType, int baseVertex, int minVertexIndex, int numVertices, int startIndex, int primitiveCount, int instanceCount)
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives in the index buffer.
+    - id: baseVertex
+      type: System.Int32
+      description: Used to offset the vertex range indexed from the vertex buffer.
+    - id: minVertexIndex
+      type: System.Int32
+      description: This is unused and remains here only for XNA API compatibility.
+    - id: numVertices
+      type: System.Int32
+      description: This is unused and remains here only for XNA API compatibility.
+    - id: startIndex
+      type: System.Int32
+      description: The index within the index buffer to start drawing from.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives in a single instance.
+    - id: instanceCount
+      type: System.Int32
+      description: The number of instances to render.
+    content.vb: >-
+      <Obsolete("Use DrawInstancedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount, int instanceCount) instead. In future versions this method can be removed.")>
+
+      Public Sub DrawInstancedPrimitives(primitiveType As PrimitiveType, baseVertex As Integer, minVertexIndex As Integer, numVertices As Integer, startIndex As Integer, primitiveCount As Integer, instanceCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DrawInstancedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount, int instanceCount) instead. In future versions this method can be removed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: DrawInstancedPrimitives(PrimitiveType, Int32, Int32, Int32, Int32)
+  nameWithType: GraphicsDevice.DrawInstancedPrimitives(PrimitiveType, Int32, Int32, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives(Microsoft.Xna.Framework.Graphics.PrimitiveType, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawInstancedPrimitives
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1276
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw instanced geometry from the bound vertex buffers and index buffer.\n"
+  remarks: Draw geometry with data from multiple bound vertex streams at different frequencies.
+  example: []
+  syntax:
+    content: public void DrawInstancedPrimitives(PrimitiveType primitiveType, int baseVertex, int startIndex, int primitiveCount, int instanceCount)
+    parameters:
+    - id: primitiveType
+      type: Microsoft.Xna.Framework.Graphics.PrimitiveType
+      description: The type of primitives in the index buffer.
+    - id: baseVertex
+      type: System.Int32
+      description: Used to offset the vertex range indexed from the vertex buffer.
+    - id: startIndex
+      type: System.Int32
+      description: The index within the index buffer to start drawing from.
+    - id: primitiveCount
+      type: System.Int32
+      description: The number of primitives in a single instance.
+    - id: instanceCount
+      type: System.Int32
+      description: The number of instances to render.
+    content.vb: Public Sub DrawInstancedPrimitives(primitiveType As PrimitiveType, baseVertex As Integer, startIndex As Integer, primitiveCount As Integer, instanceCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(``0[])
+  id: GetBackBufferData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GetBackBufferData<T>(T[])
+  nameWithType: GraphicsDevice.GetBackBufferData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData<T>(T[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetBackBufferData
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1304
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the Pixel data of what is currently drawn on screen.\nThe format is whatever the current format of the backbuffer is.\n"
+  example: []
+  syntax:
+    content: 'public void GetBackBufferData<T>(T[] data)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+    typeParameters:
+    - id: T
+      description: A byte[] of size (ViewPort.Width * ViewPort.Height * 4)
+    content.vb: Public Sub GetBackBufferData(Of T As Structure)(data As T())
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData*
+  nameWithType.vb: GraphicsDevice.GetBackBufferData(Of T)(T())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData(Of T)(T())
+  name.vb: GetBackBufferData(Of T)(T())
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(``0[],System.Int32,System.Int32)
+  id: GetBackBufferData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GetBackBufferData<T>(T[], Int32, Int32)
+  nameWithType: GraphicsDevice.GetBackBufferData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData<T>(T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetBackBufferData
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1311
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public void GetBackBufferData<T>(T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+    - id: startIndex
+      type: System.Int32
+    - id: elementCount
+      type: System.Int32
+    typeParameters:
+    - id: T
+    content.vb: Public Sub GetBackBufferData(Of T As Structure)(data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData*
+  nameWithType.vb: GraphicsDevice.GetBackBufferData(Of T)(T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: GetBackBufferData(Of T)(T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData``1(System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  id: GetBackBufferData``1(System.Nullable{Microsoft.Xna.Framework.Rectangle},``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: GetBackBufferData<T>(Nullable<Rectangle>, T[], Int32, Int32)
+  nameWithType: GraphicsDevice.GetBackBufferData<T>(Nullable<Rectangle>, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData<T>(System.Nullable<Microsoft.Xna.Framework.Rectangle>, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetBackBufferData
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.cs
+    startLine: 1316
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public void GetBackBufferData<T>(Rectangle? rect, T[] data, int startIndex, int elementCount)where T : struct'
+    parameters:
+    - id: rect
+      type: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+    - id: data
+      type: '{T}[]'
+    - id: startIndex
+      type: System.Int32
+    - id: elementCount
+      type: System.Int32
+    typeParameters:
+    - id: T
+    content.vb: Public Sub GetBackBufferData(Of T As Structure)(rect As Rectangle?, data As T(), startIndex As Integer, elementCount As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData*
+  nameWithType.vb: GraphicsDevice.GetBackBufferData(Of T)(Nullable(Of Rectangle), T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData(Of T)(System.Nullable(Of Microsoft.Xna.Framework.Rectangle), T(), System.Int32, System.Int32)
+  name.vb: GetBackBufferData(Of T)(Nullable(Of Rectangle), T(), Int32, Int32)
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  id: PlatformClear(Microsoft.Xna.Framework.Graphics.ClearOptions,Microsoft.Xna.Framework.Vector4,System.Single,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: PlatformClear(ClearOptions, Vector4, Single, Int32)
+  nameWithType: GraphicsDevice.PlatformClear(ClearOptions, Vector4, Single, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear(Microsoft.Xna.Framework.Graphics.ClearOptions, Microsoft.Xna.Framework.Vector4, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.OpenGL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PlatformClear
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.OpenGL.cs
+    startLine: 361
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void PlatformClear(ClearOptions options, Vector4 color, float depth, int stencil)
+    parameters:
+    - id: options
+      type: Microsoft.Xna.Framework.Graphics.ClearOptions
+    - id: color
+      type: Microsoft.Xna.Framework.Vector4
+    - id: depth
+      type: System.Single
+    - id: stencil
+      type: System.Int32
+    content.vb: Public Sub PlatformClear(options As ClearOptions, color As Vector4, depth As Single, stencil As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent
+  id: PlatformPresent
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  langs:
+  - csharp
+  - vb
+  name: PlatformPresent()
+  nameWithType: GraphicsDevice.PlatformPresent()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsDevice.OpenGL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PlatformPresent
+    path: ../MonoGame.Framework/Graphics/GraphicsDevice.OpenGL.cs
+    startLine: 535
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void PlatformPresent()
+    content.vb: Public Sub PlatformPresent
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures
+  isExternal: false
+  name: VertexTextures
+  nameWithType: GraphicsDevice.VertexTextures
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexTextures
+- uid: Microsoft.Xna.Framework.Graphics.TextureCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.TextureCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: TextureCollection
+  nameWithType: TextureCollection
+  fullName: Microsoft.Xna.Framework.Graphics.TextureCollection
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates
+  isExternal: false
+  name: VertexSamplerStates
+  nameWithType: GraphicsDevice.VertexSamplerStates
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.VertexSamplerStates
+- uid: Microsoft.Xna.Framework.Graphics.SamplerStateCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.SamplerStateCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SamplerStateCollection
+  nameWithType: SamplerStateCollection
+  fullName: Microsoft.Xna.Framework.Graphics.SamplerStateCollection
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures
+  isExternal: false
+  name: Textures
+  nameWithType: GraphicsDevice.Textures
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Textures
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates
+  isExternal: false
+  name: SamplerStates
+  nameWithType: GraphicsDevice.SamplerStates
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SamplerStates
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs}
+  commentId: T:System.EventHandler{Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ResourceCreatedEventArgs>
+  nameWithType: EventHandler<ResourceCreatedEventArgs>
+  fullName: System.EventHandler<Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs>
+  nameWithType.vb: EventHandler(Of ResourceCreatedEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs)
+  name.vb: EventHandler(Of ResourceCreatedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs
+    name: ResourceCreatedEventArgs
+    nameWithType: ResourceCreatedEventArgs
+    fullName: Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs
+    name: ResourceCreatedEventArgs
+    nameWithType: ResourceCreatedEventArgs
+    fullName: Microsoft.Xna.Framework.Graphics.ResourceCreatedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs}
+  commentId: T:System.EventHandler{Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ResourceDestroyedEventArgs>
+  nameWithType: EventHandler<ResourceDestroyedEventArgs>
+  fullName: System.EventHandler<Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs>
+  nameWithType.vb: EventHandler(Of ResourceDestroyedEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs)
+  name.vb: EventHandler(Of ResourceDestroyedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs
+    name: ResourceDestroyedEventArgs
+    nameWithType: ResourceDestroyedEventArgs
+    fullName: Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs
+    name: ResourceDestroyedEventArgs
+    nameWithType: ResourceDestroyedEventArgs
+    fullName: Microsoft.Xna.Framework.Graphics.ResourceDestroyedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsDevice.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost
+  isExternal: false
+  name: IsContentLost
+  nameWithType: GraphicsDevice.IsContentLost
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.IsContentLost
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter
+  isExternal: false
+  name: Adapter
+  nameWithType: GraphicsDevice.Adapter
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Adapter
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsAdapter
+  nameWithType: GraphicsAdapter
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsAdapter
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+  isExternal: false
+  name: Metrics
+  nameWithType: GraphicsDevice.Metrics
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsMetrics
+  nameWithType: GraphicsMetrics
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug
+  isExternal: false
+  name: GraphicsDebug
+  nameWithType: GraphicsDevice.GraphicsDebug
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDebug
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDebug
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDebug
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDebug
+  nameWithType: GraphicsDebug
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDebug
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.#ctor
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDevice
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsProfile
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsProfile
+  nameWithType: GraphicsProfile
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsProfile
+- uid: Microsoft.Xna.Framework.Graphics.PresentationParameters
+  commentId: T:Microsoft.Xna.Framework.Graphics.PresentationParameters
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: PresentationParameters
+  nameWithType: PresentationParameters
+  fullName: Microsoft.Xna.Framework.Graphics.PresentationParameters
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize
+  isExternal: false
+  name: Finalize
+  nameWithType: GraphicsDevice.Finalize
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Finalize
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState
+  isExternal: false
+  name: RasterizerState
+  nameWithType: GraphicsDevice.RasterizerState
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RasterizerState
+- uid: Microsoft.Xna.Framework.Graphics.RasterizerState
+  commentId: T:Microsoft.Xna.Framework.Graphics.RasterizerState
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: RasterizerState
+  nameWithType: RasterizerState
+  fullName: Microsoft.Xna.Framework.Graphics.RasterizerState
+- uid: Microsoft.Xna.Framework.Graphics.BlendState.BlendFactor
+  commentId: P:Microsoft.Xna.Framework.Graphics.BlendState.BlendFactor
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+  isExternal: false
+  name: BlendFactor
+  nameWithType: GraphicsDevice.BlendFactor
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendFactor
+- uid: Microsoft.Xna.Framework.Color
+  commentId: T:Microsoft.Xna.Framework.Color
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Color
+  nameWithType: Color
+  fullName: Microsoft.Xna.Framework.Color
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState
+  isExternal: false
+  name: BlendState
+  nameWithType: GraphicsDevice.BlendState
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.BlendState
+- uid: Microsoft.Xna.Framework.Graphics.BlendState
+  commentId: T:Microsoft.Xna.Framework.Graphics.BlendState
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: BlendState
+  nameWithType: BlendState
+  fullName: Microsoft.Xna.Framework.Graphics.BlendState
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState
+  isExternal: false
+  name: DepthStencilState
+  nameWithType: GraphicsDevice.DepthStencilState
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DepthStencilState
+- uid: Microsoft.Xna.Framework.Graphics.DepthStencilState
+  commentId: T:Microsoft.Xna.Framework.Graphics.DepthStencilState
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: DepthStencilState
+  nameWithType: DepthStencilState
+  fullName: Microsoft.Xna.Framework.Graphics.DepthStencilState
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: GraphicsDevice.Clear
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Clear
+- uid: Microsoft.Xna.Framework.Graphics.ClearOptions
+  commentId: T:Microsoft.Xna.Framework.Graphics.ClearOptions
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ClearOptions
+  nameWithType: ClearOptions
+  fullName: Microsoft.Xna.Framework.Graphics.ClearOptions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Vector4
+  commentId: T:Microsoft.Xna.Framework.Vector4
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector4
+  nameWithType: Vector4
+  fullName: Microsoft.Xna.Framework.Vector4
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: GraphicsDevice.Dispose
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+  isExternal: false
+  name: Present
+  nameWithType: GraphicsDevice.Present
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Present
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset
+  isExternal: false
+  name: Reset
+  nameWithType: GraphicsDevice.Reset
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Reset
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode
+  isExternal: false
+  name: DisplayMode
+  nameWithType: GraphicsDevice.DisplayMode
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DisplayMode
+- uid: Microsoft.Xna.Framework.Graphics.DisplayMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.DisplayMode
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: DisplayMode
+  nameWithType: DisplayMode
+  fullName: Microsoft.Xna.Framework.Graphics.DisplayMode
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus
+  isExternal: false
+  name: GraphicsDeviceStatus
+  nameWithType: GraphicsDevice.GraphicsDeviceStatus
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsDeviceStatus
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDeviceStatus
+  nameWithType: GraphicsDeviceStatus
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDeviceStatus
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters
+  isExternal: false
+  name: PresentationParameters
+  nameWithType: GraphicsDevice.PresentationParameters
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PresentationParameters
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport
+  isExternal: false
+  name: Viewport
+  nameWithType: GraphicsDevice.Viewport
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Viewport
+- uid: Microsoft.Xna.Framework.Graphics.Viewport
+  commentId: T:Microsoft.Xna.Framework.Graphics.Viewport
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Viewport
+  nameWithType: Viewport
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile
+  isExternal: false
+  name: GraphicsProfile
+  nameWithType: GraphicsDevice.GraphicsProfile
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GraphicsProfile
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle
+  isExternal: false
+  name: ScissorRectangle
+  nameWithType: GraphicsDevice.ScissorRectangle
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ScissorRectangle
+- uid: Microsoft.Xna.Framework.Rectangle
+  commentId: T:Microsoft.Xna.Framework.Rectangle
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: Microsoft.Xna.Framework.Rectangle
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount
+  isExternal: false
+  name: RenderTargetCount
+  nameWithType: GraphicsDevice.RenderTargetCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.RenderTargetCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget
+  isExternal: false
+  name: SetRenderTarget
+  nameWithType: GraphicsDevice.SetRenderTarget
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget
+- uid: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.RenderTarget2D
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: RenderTarget2D
+  nameWithType: RenderTarget2D
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTarget2D
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetCube
+  commentId: T:Microsoft.Xna.Framework.Graphics.RenderTargetCube
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: RenderTargetCube
+  nameWithType: RenderTargetCube
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetCube
+- uid: Microsoft.Xna.Framework.Graphics.CubeMapFace
+  commentId: T:Microsoft.Xna.Framework.Graphics.CubeMapFace
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: CubeMapFace
+  nameWithType: CubeMapFace
+  fullName: Microsoft.Xna.Framework.Graphics.CubeMapFace
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets
+  isExternal: false
+  name: SetRenderTargets
+  nameWithType: GraphicsDevice.SetRenderTargets
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTargets
+- uid: Microsoft.Xna.Framework.Graphics.RenderTargetBinding[]
+  name: RenderTargetBinding[]
+  nameWithType: RenderTargetBinding[]
+  fullName: Microsoft.Xna.Framework.Graphics.RenderTargetBinding[]
+  nameWithType.vb: RenderTargetBinding()
+  fullName.vb: Microsoft.Xna.Framework.Graphics.RenderTargetBinding()
+  name.vb: RenderTargetBinding()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTargetBinding
+    name: RenderTargetBinding
+    nameWithType: RenderTargetBinding
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTargetBinding
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.RenderTargetBinding
+    name: RenderTargetBinding
+    nameWithType: RenderTargetBinding
+    fullName: Microsoft.Xna.Framework.Graphics.RenderTargetBinding
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets
+  isExternal: false
+  name: GetRenderTargets
+  nameWithType: GraphicsDevice.GetRenderTargets
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetRenderTargets
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer
+  isExternal: false
+  name: SetVertexBuffer
+  nameWithType: GraphicsDevice.SetVertexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffer
+- uid: Microsoft.Xna.Framework.Graphics.VertexBuffer
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexBuffer
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexBuffer
+  nameWithType: VertexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.VertexBuffer
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers
+  isExternal: false
+  name: SetVertexBuffers
+  nameWithType: GraphicsDevice.SetVertexBuffers
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetVertexBuffers
+- uid: Microsoft.Xna.Framework.Graphics.VertexBufferBinding[]
+  name: VertexBufferBinding[]
+  nameWithType: VertexBufferBinding[]
+  fullName: Microsoft.Xna.Framework.Graphics.VertexBufferBinding[]
+  nameWithType.vb: VertexBufferBinding()
+  fullName.vb: Microsoft.Xna.Framework.Graphics.VertexBufferBinding()
+  name.vb: VertexBufferBinding()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.VertexBufferBinding
+    name: VertexBufferBinding
+    nameWithType: VertexBufferBinding
+    fullName: Microsoft.Xna.Framework.Graphics.VertexBufferBinding
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.VertexBufferBinding
+    name: VertexBufferBinding
+    nameWithType: VertexBufferBinding
+    fullName: Microsoft.Xna.Framework.Graphics.VertexBufferBinding
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices
+  isExternal: false
+  name: Indices
+  nameWithType: GraphicsDevice.Indices
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Indices
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  commentId: T:Microsoft.Xna.Framework.Graphics.IndexBuffer
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IndexBuffer
+  nameWithType: IndexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost
+  isExternal: false
+  name: ResourcesLost
+  nameWithType: GraphicsDevice.ResourcesLost
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.ResourcesLost
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives
+  isExternal: false
+  name: DrawIndexedPrimitives
+  nameWithType: GraphicsDevice.DrawIndexedPrimitives
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawIndexedPrimitives
+- uid: Microsoft.Xna.Framework.Graphics.PrimitiveType
+  commentId: T:Microsoft.Xna.Framework.Graphics.PrimitiveType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: PrimitiveType
+  nameWithType: PrimitiveType
+  fullName: Microsoft.Xna.Framework.Graphics.PrimitiveType
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  commentId: P:Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics.IVertexType
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: IVertexType.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType.VertexDeclaration
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives
+  isExternal: false
+  name: DrawUserPrimitives
+  nameWithType: GraphicsDevice.DrawUserPrimitives
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserPrimitives
+- uid: '{T}[]'
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Graphics.IVertexType
+  commentId: T:Microsoft.Xna.Framework.Graphics.IVertexType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IVertexType
+  nameWithType: IVertexType
+  fullName: Microsoft.Xna.Framework.Graphics.IVertexType
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives
+  isExternal: false
+  name: DrawPrimitives
+  nameWithType: GraphicsDevice.DrawPrimitives
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawPrimitives
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives
+  isExternal: false
+  name: DrawUserIndexedPrimitives
+  nameWithType: GraphicsDevice.DrawUserIndexedPrimitives
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives
+- uid: System.Int16[]
+  name: Int16[]
+  nameWithType: Int16[]
+  fullName: System.Int16[]
+  nameWithType.vb: Int16()
+  fullName.vb: System.Int16()
+  name.vb: Int16()
+  spec.csharp:
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[]
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives
+  isExternal: false
+  name: DrawInstancedPrimitives
+  nameWithType: GraphicsDevice.DrawInstancedPrimitives
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawInstancedPrimitives
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData
+  isExternal: false
+  name: GetBackBufferData
+  nameWithType: GraphicsDevice.GetBackBufferData
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.GetBackBufferData
+- uid: System.Nullable{Microsoft.Xna.Framework.Rectangle}
+  commentId: T:System.Nullable{Microsoft.Xna.Framework.Rectangle}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Rectangle>
+  nameWithType: Nullable<Rectangle>
+  fullName: System.Nullable<Microsoft.Xna.Framework.Rectangle>
+  nameWithType.vb: Nullable(Of Rectangle)
+  fullName.vb: System.Nullable(Of Microsoft.Xna.Framework.Rectangle)
+  name.vb: Nullable(Of Rectangle)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: Microsoft.Xna.Framework.Rectangle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear
+  isExternal: false
+  name: PlatformClear
+  nameWithType: GraphicsDevice.PlatformClear
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformClear
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent
+  isExternal: false
+  name: PlatformPresent
+  nameWithType: GraphicsDevice.PlatformPresent
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice.PlatformPresent

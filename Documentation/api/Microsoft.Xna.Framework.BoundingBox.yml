@@ -1,0 +1,2091 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.BoundingBox
+  commentId: T:Microsoft.Xna.Framework.BoundingBox
+  id: BoundingBox
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.BoundingBox.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.ContainmentType@)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingFrustum)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.ContainmentType@)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3)
+  - Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.ContainmentType@)
+  - Microsoft.Xna.Framework.BoundingBox.CornerCount
+  - Microsoft.Xna.Framework.BoundingBox.CreateFromPoints(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3})
+  - Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere)
+  - Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.BoundingBox@)
+  - Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@)
+  - Microsoft.Xna.Framework.BoundingBox.Equals(Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.BoundingBox.Equals(System.Object)
+  - Microsoft.Xna.Framework.BoundingBox.GetCorners
+  - Microsoft.Xna.Framework.BoundingBox.GetCorners(Microsoft.Xna.Framework.Vector3[])
+  - Microsoft.Xna.Framework.BoundingBox.GetHashCode
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Boolean@)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Boolean@)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray)
+  - Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray@,System.Nullable{System.Single}@)
+  - Microsoft.Xna.Framework.BoundingBox.Max
+  - Microsoft.Xna.Framework.BoundingBox.Min
+  - Microsoft.Xna.Framework.BoundingBox.op_Equality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.BoundingBox.op_Inequality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  - Microsoft.Xna.Framework.BoundingBox.ToString
+  langs:
+  - csharp
+  - vb
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Microsoft.Xna.Framework.BoundingBox
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BoundingBox
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataContract]
+
+      public struct BoundingBox : IEquatable<BoundingBox>
+    content.vb: >-
+      <DataContract>
+
+      Public Structure BoundingBox
+          Implements IEquatable(Of BoundingBox)
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.BoundingBox}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.BoundingBox.Min
+  commentId: F:Microsoft.Xna.Framework.BoundingBox.Min
+  id: Min
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: BoundingBox.Min
+  fullName: Microsoft.Xna.Framework.BoundingBox.Min
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Min
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 19
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Min
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Min As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Max
+  commentId: F:Microsoft.Xna.Framework.BoundingBox.Max
+  id: Max
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: BoundingBox.Max
+  fullName: Microsoft.Xna.Framework.BoundingBox.Max
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Max
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Max
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Max As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.CornerCount
+  commentId: F:Microsoft.Xna.Framework.BoundingBox.CornerCount
+  id: CornerCount
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: CornerCount
+  nameWithType: BoundingBox.CornerCount
+  fullName: Microsoft.Xna.Framework.BoundingBox.CornerCount
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CornerCount
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 24
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public const int CornerCount = 8
+    return:
+      type: System.Int32
+    content.vb: Public Const CornerCount As Integer = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.BoundingBox.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)
+  id: '#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)'
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: BoundingBox(Vector3, Vector3)
+  nameWithType: BoundingBox.BoundingBox(Vector3, Vector3)
+  fullName: Microsoft.Xna.Framework.BoundingBox.BoundingBox(Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 31
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public BoundingBox(Vector3 min, Vector3 max)
+    parameters:
+    - id: min
+      type: Microsoft.Xna.Framework.Vector3
+    - id: max
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Sub New(min As Vector3, max As Vector3)
+  overload: Microsoft.Xna.Framework.BoundingBox.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox)
+  id: Contains(Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(BoundingBox)
+  nameWithType: BoundingBox.Contains(BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 42
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public ContainmentType Contains(BoundingBox box)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Function Contains(box As BoundingBox) As ContainmentType
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.ContainmentType@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.ContainmentType@)
+  id: Contains(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.ContainmentType@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(ref BoundingBox, out ContainmentType)
+  nameWithType: BoundingBox.Contains(ref BoundingBox, out ContainmentType)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(ref Microsoft.Xna.Framework.BoundingBox, out Microsoft.Xna.Framework.ContainmentType)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 65
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Contains(ref BoundingBox box, out ContainmentType result)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: result
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Sub Contains(ByRef box As BoundingBox, ByRef result As ContainmentType)
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  nameWithType.vb: BoundingBox.Contains(ByRef BoundingBox, ByRef ContainmentType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Contains(ByRef Microsoft.Xna.Framework.BoundingBox, ByRef Microsoft.Xna.Framework.ContainmentType)
+  name.vb: Contains(ByRef BoundingBox, ByRef ContainmentType)
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingFrustum)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingFrustum)
+  id: Contains(Microsoft.Xna.Framework.BoundingFrustum)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(BoundingFrustum)
+  nameWithType: BoundingBox.Contains(BoundingFrustum)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingFrustum)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 70
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public ContainmentType Contains(BoundingFrustum frustum)
+    parameters:
+    - id: frustum
+      type: Microsoft.Xna.Framework.BoundingFrustum
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Function Contains(frustum As BoundingFrustum) As ContainmentType
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere)
+  id: Contains(Microsoft.Xna.Framework.BoundingSphere)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(BoundingSphere)
+  nameWithType: BoundingBox.Contains(BoundingSphere)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 109
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public ContainmentType Contains(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Function Contains(sphere As BoundingSphere) As ContainmentType
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.ContainmentType@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.ContainmentType@)
+  id: Contains(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.ContainmentType@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(ref BoundingSphere, out ContainmentType)
+  nameWithType: BoundingBox.Contains(ref BoundingSphere, out ContainmentType)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(ref Microsoft.Xna.Framework.BoundingSphere, out Microsoft.Xna.Framework.ContainmentType)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 193
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Contains(ref BoundingSphere sphere, out ContainmentType result)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    - id: result
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Sub Contains(ByRef sphere As BoundingSphere, ByRef result As ContainmentType)
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  nameWithType.vb: BoundingBox.Contains(ByRef BoundingSphere, ByRef ContainmentType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Contains(ByRef Microsoft.Xna.Framework.BoundingSphere, ByRef Microsoft.Xna.Framework.ContainmentType)
+  name.vb: Contains(ByRef BoundingSphere, ByRef ContainmentType)
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3)
+  id: Contains(Microsoft.Xna.Framework.Vector3)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(Vector3)
+  nameWithType: BoundingBox.Contains(Vector3)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 198
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public ContainmentType Contains(Vector3 point)
+    parameters:
+    - id: point
+      type: Microsoft.Xna.Framework.Vector3
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Function Contains(point As Vector3) As ContainmentType
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.ContainmentType@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Contains(Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.ContainmentType@)
+  id: Contains(Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.ContainmentType@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Contains(ref Vector3, out ContainmentType)
+  nameWithType: BoundingBox.Contains(ref Vector3, out ContainmentType)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains(ref Microsoft.Xna.Framework.Vector3, out Microsoft.Xna.Framework.ContainmentType)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 205
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Contains(ref Vector3 point, out ContainmentType result)
+    parameters:
+    - id: point
+      type: Microsoft.Xna.Framework.Vector3
+    - id: result
+      type: Microsoft.Xna.Framework.ContainmentType
+    content.vb: Public Sub Contains(ByRef point As Vector3, ByRef result As ContainmentType)
+  overload: Microsoft.Xna.Framework.BoundingBox.Contains*
+  nameWithType.vb: BoundingBox.Contains(ByRef Vector3, ByRef ContainmentType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Contains(ByRef Microsoft.Xna.Framework.Vector3, ByRef Microsoft.Xna.Framework.ContainmentType)
+  name.vb: Contains(ByRef Vector3, ByRef ContainmentType)
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateFromPoints(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3})
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.CreateFromPoints(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3})
+  id: CreateFromPoints(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3})
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: CreateFromPoints(IEnumerable<Vector3>)
+  nameWithType: BoundingBox.CreateFromPoints(IEnumerable<Vector3>)
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateFromPoints(System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.Vector3>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CreateFromPoints
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 232
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nCreate a bounding box from the given list of points.\n"
+  example: []
+  syntax:
+    content: public static BoundingBox CreateFromPoints(IEnumerable<Vector3> points)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3}
+      description: The list of Vector3 instances defining the point cloud to bound
+    return:
+      type: Microsoft.Xna.Framework.BoundingBox
+      description: A bounding box that encapsulates the given point cloud.
+    content.vb: Public Shared Function CreateFromPoints(points As IEnumerable(Of Vector3)) As BoundingBox
+  overload: Microsoft.Xna.Framework.BoundingBox.CreateFromPoints*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the given list has no points.
+  nameWithType.vb: BoundingBox.CreateFromPoints(IEnumerable(Of Vector3))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.CreateFromPoints(System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.Vector3))
+  name.vb: CreateFromPoints(IEnumerable(Of Vector3))
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere)
+  id: CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: CreateFromSphere(BoundingSphere)
+  nameWithType: BoundingBox.CreateFromSphere(BoundingSphere)
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CreateFromSphere
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 258
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static BoundingBox CreateFromSphere(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    return:
+      type: Microsoft.Xna.Framework.BoundingBox
+    content.vb: Public Shared Function CreateFromSphere(sphere As BoundingSphere) As BoundingBox
+  overload: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.BoundingBox@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.BoundingBox@)
+  id: CreateFromSphere(Microsoft.Xna.Framework.BoundingSphere@,Microsoft.Xna.Framework.BoundingBox@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: CreateFromSphere(ref BoundingSphere, out BoundingBox)
+  nameWithType: BoundingBox.CreateFromSphere(ref BoundingSphere, out BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(ref Microsoft.Xna.Framework.BoundingSphere, out Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CreateFromSphere
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 265
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static void CreateFromSphere(ref BoundingSphere sphere, out BoundingBox result)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    - id: result
+      type: Microsoft.Xna.Framework.BoundingBox
+    content.vb: Public Shared Sub CreateFromSphere(ByRef sphere As BoundingSphere, ByRef result As BoundingBox)
+  overload: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere*
+  nameWithType.vb: BoundingBox.CreateFromSphere(ByRef BoundingSphere, ByRef BoundingBox)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere(ByRef Microsoft.Xna.Framework.BoundingSphere, ByRef Microsoft.Xna.Framework.BoundingBox)
+  name.vb: CreateFromSphere(ByRef BoundingSphere, ByRef BoundingBox)
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  id: CreateMerged(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: CreateMerged(BoundingBox, BoundingBox)
+  nameWithType: BoundingBox.CreateMerged(BoundingBox, BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox, Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CreateMerged
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 272
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static BoundingBox CreateMerged(BoundingBox original, BoundingBox additional)
+    parameters:
+    - id: original
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: additional
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: Microsoft.Xna.Framework.BoundingBox
+    content.vb: Public Shared Function CreateMerged(original As BoundingBox, additional As BoundingBox) As BoundingBox
+  overload: Microsoft.Xna.Framework.BoundingBox.CreateMerged*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.CreateMerged(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@)
+  id: CreateMerged(Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@,Microsoft.Xna.Framework.BoundingBox@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: CreateMerged(ref BoundingBox, ref BoundingBox, out BoundingBox)
+  nameWithType: BoundingBox.CreateMerged(ref BoundingBox, ref BoundingBox, out BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateMerged(ref Microsoft.Xna.Framework.BoundingBox, ref Microsoft.Xna.Framework.BoundingBox, out Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CreateMerged
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 279
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static void CreateMerged(ref BoundingBox original, ref BoundingBox additional, out BoundingBox result)
+    parameters:
+    - id: original
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: additional
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: result
+      type: Microsoft.Xna.Framework.BoundingBox
+    content.vb: Public Shared Sub CreateMerged(ByRef original As BoundingBox, ByRef additional As BoundingBox, ByRef result As BoundingBox)
+  overload: Microsoft.Xna.Framework.BoundingBox.CreateMerged*
+  nameWithType.vb: BoundingBox.CreateMerged(ByRef BoundingBox, ByRef BoundingBox, ByRef BoundingBox)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.CreateMerged(ByRef Microsoft.Xna.Framework.BoundingBox, ByRef Microsoft.Xna.Framework.BoundingBox, ByRef Microsoft.Xna.Framework.BoundingBox)
+  name.vb: CreateMerged(ByRef BoundingBox, ByRef BoundingBox, ByRef BoundingBox)
+- uid: Microsoft.Xna.Framework.BoundingBox.Equals(Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Equals(Microsoft.Xna.Framework.BoundingBox)
+  id: Equals(Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Equals(BoundingBox)
+  nameWithType: BoundingBox.Equals(BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Equals(Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 289
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Equals(BoundingBox other)
+    parameters:
+    - id: other
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As BoundingBox) As Boolean
+  overload: Microsoft.Xna.Framework.BoundingBox.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.BoundingBox}.Equals(Microsoft.Xna.Framework.BoundingBox)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: BoundingBox.Equals(Object)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 294
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.BoundingBox.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.BoundingBox.GetCorners
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.GetCorners
+  id: GetCorners
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: GetCorners()
+  nameWithType: BoundingBox.GetCorners()
+  fullName: Microsoft.Xna.Framework.BoundingBox.GetCorners()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetCorners
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 299
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public Vector3[] GetCorners()
+    return:
+      type: Microsoft.Xna.Framework.Vector3[]
+    content.vb: Public Function GetCorners As Vector3()
+  overload: Microsoft.Xna.Framework.BoundingBox.GetCorners*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.GetCorners(Microsoft.Xna.Framework.Vector3[])
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.GetCorners(Microsoft.Xna.Framework.Vector3[])
+  id: GetCorners(Microsoft.Xna.Framework.Vector3[])
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: GetCorners(Vector3[])
+  nameWithType: BoundingBox.GetCorners(Vector3[])
+  fullName: Microsoft.Xna.Framework.BoundingBox.GetCorners(Microsoft.Xna.Framework.Vector3[])
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetCorners
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 313
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void GetCorners(Vector3[] corners)
+    parameters:
+    - id: corners
+      type: Microsoft.Xna.Framework.Vector3[]
+    content.vb: Public Sub GetCorners(corners As Vector3())
+  overload: Microsoft.Xna.Framework.BoundingBox.GetCorners*
+  nameWithType.vb: BoundingBox.GetCorners(Vector3())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.GetCorners(Microsoft.Xna.Framework.Vector3())
+  name.vb: GetCorners(Vector3())
+- uid: Microsoft.Xna.Framework.BoundingBox.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BoundingBox.GetHashCode()
+  fullName: Microsoft.Xna.Framework.BoundingBox.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 349
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.BoundingBox.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  id: Intersects(Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingBox)
+  nameWithType: BoundingBox.Intersects(BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 354
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Intersects(BoundingBox box)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: System.Boolean
+    content.vb: Public Function Intersects(box As BoundingBox) As Boolean
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Boolean@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Boolean@)
+  id: Intersects(Microsoft.Xna.Framework.BoundingBox@,System.Boolean@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingBox, out Boolean)
+  nameWithType: BoundingBox.Intersects(ref BoundingBox, out Boolean)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(ref Microsoft.Xna.Framework.BoundingBox, out System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 361
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref BoundingBox box, out bool result)
+    parameters:
+    - id: box
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: result
+      type: System.Boolean
+    content.vb: Public Sub Intersects(ByRef box As BoundingBox, ByRef result As Boolean)
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  nameWithType.vb: BoundingBox.Intersects(ByRef BoundingBox, ByRef Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Intersects(ByRef Microsoft.Xna.Framework.BoundingBox, ByRef System.Boolean)
+  name.vb: Intersects(ByRef BoundingBox, ByRef Boolean)
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  id: Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingFrustum)
+  nameWithType: BoundingBox.Intersects(BoundingFrustum)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingFrustum)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 379
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Intersects(BoundingFrustum frustum)
+    parameters:
+    - id: frustum
+      type: Microsoft.Xna.Framework.BoundingFrustum
+    return:
+      type: System.Boolean
+    content.vb: Public Function Intersects(frustum As BoundingFrustum) As Boolean
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  id: Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingSphere)
+  nameWithType: BoundingBox.Intersects(BoundingSphere)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 384
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Intersects(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    return:
+      type: System.Boolean
+    content.vb: Public Function Intersects(sphere As BoundingSphere) As Boolean
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Boolean@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Boolean@)
+  id: Intersects(Microsoft.Xna.Framework.BoundingSphere@,System.Boolean@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingSphere, out Boolean)
+  nameWithType: BoundingBox.Intersects(ref BoundingSphere, out Boolean)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(ref Microsoft.Xna.Framework.BoundingSphere, out System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 417
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref BoundingSphere sphere, out bool result)
+    parameters:
+    - id: sphere
+      type: Microsoft.Xna.Framework.BoundingSphere
+    - id: result
+      type: System.Boolean
+    content.vb: Public Sub Intersects(ByRef sphere As BoundingSphere, ByRef result As Boolean)
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  nameWithType.vb: BoundingBox.Intersects(ByRef BoundingSphere, ByRef Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Intersects(ByRef Microsoft.Xna.Framework.BoundingSphere, ByRef System.Boolean)
+  name.vb: Intersects(ByRef BoundingSphere, ByRef Boolean)
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane)
+  id: Intersects(Microsoft.Xna.Framework.Plane)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Plane)
+  nameWithType: BoundingBox.Intersects(Plane)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 422
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public PlaneIntersectionType Intersects(Plane plane)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+    return:
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Function Intersects(plane As Plane) As PlaneIntersectionType
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  id: Intersects(Microsoft.Xna.Framework.Plane@,Microsoft.Xna.Framework.PlaneIntersectionType@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref Plane, out PlaneIntersectionType)
+  nameWithType: BoundingBox.Intersects(ref Plane, out PlaneIntersectionType)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(ref Microsoft.Xna.Framework.Plane, out Microsoft.Xna.Framework.PlaneIntersectionType)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 429
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref Plane plane, out PlaneIntersectionType result)
+    parameters:
+    - id: plane
+      type: Microsoft.Xna.Framework.Plane
+    - id: result
+      type: Microsoft.Xna.Framework.PlaneIntersectionType
+    content.vb: Public Sub Intersects(ByRef plane As Plane, ByRef result As PlaneIntersectionType)
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  nameWithType.vb: BoundingBox.Intersects(ByRef Plane, ByRef PlaneIntersectionType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Intersects(ByRef Microsoft.Xna.Framework.Plane, ByRef Microsoft.Xna.Framework.PlaneIntersectionType)
+  name.vb: Intersects(ByRef Plane, ByRef PlaneIntersectionType)
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray)
+  id: Intersects(Microsoft.Xna.Framework.Ray)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Ray)
+  nameWithType: BoundingBox.Intersects(Ray)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 488
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public float ? Intersects(Ray ray)
+    parameters:
+    - id: ray
+      type: Microsoft.Xna.Framework.Ray
+    return:
+      type: System.Nullable{System.Single}
+    content.vb: Public Function Intersects(ray As Ray) As Single?
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray@,System.Nullable{System.Single}@)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.Intersects(Microsoft.Xna.Framework.Ray@,System.Nullable{System.Single}@)
+  id: Intersects(Microsoft.Xna.Framework.Ray@,System.Nullable{System.Single}@)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref Ray, out Nullable<Single>)
+  nameWithType: BoundingBox.Intersects(ref Ray, out Nullable<Single>)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects(ref Microsoft.Xna.Framework.Ray, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 493
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public void Intersects(ref Ray ray, out float ? result)
+    parameters:
+    - id: ray
+      type: Microsoft.Xna.Framework.Ray
+    - id: result
+      type: System.Nullable{System.Single}
+    content.vb: Public Sub Intersects(ByRef ray As Ray, ByRef result As Single?)
+  overload: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  nameWithType.vb: BoundingBox.Intersects(ByRef Ray, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.BoundingBox.Intersects(ByRef Microsoft.Xna.Framework.Ray, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef Ray, ByRef Nullable(Of Single))
+- uid: Microsoft.Xna.Framework.BoundingBox.op_Equality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.op_Equality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  id: op_Equality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Equality(BoundingBox, BoundingBox)
+  nameWithType: BoundingBox.Equality(BoundingBox, BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Equality(Microsoft.Xna.Framework.BoundingBox, Microsoft.Xna.Framework.BoundingBox)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 498
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static bool operator ==(BoundingBox a, BoundingBox b)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: b
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As BoundingBox, b As BoundingBox) As Boolean
+  overload: Microsoft.Xna.Framework.BoundingBox.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.BoundingBox.op_Inequality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.op_Inequality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  id: op_Inequality(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.BoundingBox)
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: Inequality(BoundingBox, BoundingBox)
+  nameWithType: BoundingBox.Inequality(BoundingBox, BoundingBox)
+  fullName: Microsoft.Xna.Framework.BoundingBox.Inequality(Microsoft.Xna.Framework.BoundingBox, Microsoft.Xna.Framework.BoundingBox)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 503
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public static bool operator !=(BoundingBox a, BoundingBox b)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.BoundingBox
+    - id: b
+      type: Microsoft.Xna.Framework.BoundingBox
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As BoundingBox, b As BoundingBox) As Boolean
+  overload: Microsoft.Xna.Framework.BoundingBox.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.BoundingBox.ToString
+  commentId: M:Microsoft.Xna.Framework.BoundingBox.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.BoundingBox
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: BoundingBox.ToString()
+  fullName: Microsoft.Xna.Framework.BoundingBox.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/BoundingBox.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/BoundingBox.cs
+    startLine: 519
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.BoundingBox.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.IEquatable{Microsoft.Xna.Framework.BoundingBox}
+  commentId: T:System.IEquatable{Microsoft.Xna.Framework.BoundingBox}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<BoundingBox>
+  nameWithType: IEquatable<BoundingBox>
+  fullName: System.IEquatable<Microsoft.Xna.Framework.BoundingBox>
+  nameWithType.vb: IEquatable(Of BoundingBox)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.BoundingBox)
+  name.vb: IEquatable(Of BoundingBox)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.BoundingBox
+    name: BoundingBox
+    nameWithType: BoundingBox
+    fullName: Microsoft.Xna.Framework.BoundingBox
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.BoundingBox
+    name: BoundingBox
+    nameWithType: BoundingBox
+    fullName: Microsoft.Xna.Framework.BoundingBox
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.BoundingBox.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.#ctor
+  isExternal: false
+  name: BoundingBox
+  nameWithType: BoundingBox.BoundingBox
+  fullName: Microsoft.Xna.Framework.BoundingBox.BoundingBox
+- uid: Microsoft.Xna.Framework.BoundingBox.Contains*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.Contains
+  isExternal: false
+  name: Contains
+  nameWithType: BoundingBox.Contains
+  fullName: Microsoft.Xna.Framework.BoundingBox.Contains
+- uid: Microsoft.Xna.Framework.BoundingBox
+  commentId: T:Microsoft.Xna.Framework.BoundingBox
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Microsoft.Xna.Framework.BoundingBox
+- uid: Microsoft.Xna.Framework.ContainmentType
+  commentId: T:Microsoft.Xna.Framework.ContainmentType
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: ContainmentType
+  nameWithType: ContainmentType
+  fullName: Microsoft.Xna.Framework.ContainmentType
+- uid: Microsoft.Xna.Framework.BoundingFrustum
+  commentId: T:Microsoft.Xna.Framework.BoundingFrustum
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingFrustum
+  nameWithType: BoundingFrustum
+  fullName: Microsoft.Xna.Framework.BoundingFrustum
+- uid: Microsoft.Xna.Framework.BoundingSphere
+  commentId: T:Microsoft.Xna.Framework.BoundingSphere
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingSphere
+  nameWithType: BoundingSphere
+  fullName: Microsoft.Xna.Framework.BoundingSphere
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateFromPoints*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.CreateFromPoints
+  isExternal: false
+  name: CreateFromPoints
+  nameWithType: BoundingBox.CreateFromPoints
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateFromPoints
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Vector3>
+  nameWithType: IEnumerable<Vector3>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.Vector3>
+  nameWithType.vb: IEnumerable(Of Vector3)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.Vector3)
+  name.vb: IEnumerable(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: Microsoft.Xna.Framework.Vector3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: Microsoft.Xna.Framework.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.CreateFromSphere
+  isExternal: false
+  name: CreateFromSphere
+  nameWithType: BoundingBox.CreateFromSphere
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateFromSphere
+- uid: Microsoft.Xna.Framework.BoundingBox.CreateMerged*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.CreateMerged
+  isExternal: false
+  name: CreateMerged
+  nameWithType: BoundingBox.CreateMerged
+  fullName: Microsoft.Xna.Framework.BoundingBox.CreateMerged
+- uid: Microsoft.Xna.Framework.BoundingBox.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: BoundingBox.Equals
+  fullName: Microsoft.Xna.Framework.BoundingBox.Equals
+- uid: System.IEquatable{Microsoft.Xna.Framework.BoundingBox}.Equals(Microsoft.Xna.Framework.BoundingBox)
+  commentId: M:System.IEquatable{Microsoft.Xna.Framework.BoundingBox}.Equals(Microsoft.Xna.Framework.BoundingBox)
+  parent: System.IEquatable{Microsoft.Xna.Framework.BoundingBox}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(BoundingBox)
+  nameWithType: IEquatable<BoundingBox>.Equals(BoundingBox)
+  fullName: System.IEquatable<Microsoft.Xna.Framework.BoundingBox>.Equals(Microsoft.Xna.Framework.BoundingBox)
+  nameWithType.vb: IEquatable(Of BoundingBox).Equals(BoundingBox)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.BoundingBox).Equals(Microsoft.Xna.Framework.BoundingBox)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<BoundingBox>.Equals
+    fullName: System.IEquatable<Microsoft.Xna.Framework.BoundingBox>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.BoundingBox
+    name: BoundingBox
+    nameWithType: BoundingBox
+    fullName: Microsoft.Xna.Framework.BoundingBox
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of BoundingBox).Equals
+    fullName: System.IEquatable(Of Microsoft.Xna.Framework.BoundingBox).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.BoundingBox
+    name: BoundingBox
+    nameWithType: BoundingBox
+    fullName: Microsoft.Xna.Framework.BoundingBox
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: Microsoft.Xna.Framework.BoundingBox.GetCorners*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.GetCorners
+  isExternal: false
+  name: GetCorners
+  nameWithType: BoundingBox.GetCorners
+  fullName: Microsoft.Xna.Framework.BoundingBox.GetCorners
+- uid: Microsoft.Xna.Framework.Vector3[]
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: Microsoft.Xna.Framework.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: Microsoft.Xna.Framework.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: Microsoft.Xna.Framework.Vector3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: Microsoft.Xna.Framework.Vector3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.BoundingBox.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: BoundingBox.GetHashCode
+  fullName: Microsoft.Xna.Framework.BoundingBox.GetHashCode
+- uid: Microsoft.Xna.Framework.BoundingBox.Intersects*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.Intersects
+  isExternal: false
+  name: Intersects
+  nameWithType: BoundingBox.Intersects
+  fullName: Microsoft.Xna.Framework.BoundingBox.Intersects
+- uid: Microsoft.Xna.Framework.Plane
+  commentId: T:Microsoft.Xna.Framework.Plane
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Plane
+  nameWithType: Plane
+  fullName: Microsoft.Xna.Framework.Plane
+- uid: Microsoft.Xna.Framework.PlaneIntersectionType
+  commentId: T:Microsoft.Xna.Framework.PlaneIntersectionType
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: PlaneIntersectionType
+  nameWithType: PlaneIntersectionType
+  fullName: Microsoft.Xna.Framework.PlaneIntersectionType
+- uid: Microsoft.Xna.Framework.Ray
+  commentId: T:Microsoft.Xna.Framework.Ray
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Ray
+  nameWithType: Ray
+  fullName: Microsoft.Xna.Framework.Ray
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Single>
+  nameWithType: Nullable<Single>
+  fullName: System.Nullable<System.Single>
+  nameWithType.vb: Nullable(Of Single)
+  fullName.vb: System.Nullable(Of System.Single)
+  name.vb: Nullable(Of Single)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.BoundingBox.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: BoundingBox.Equality
+  fullName: Microsoft.Xna.Framework.BoundingBox.Equality
+- uid: Microsoft.Xna.Framework.BoundingBox.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: BoundingBox.Inequality
+  fullName: Microsoft.Xna.Framework.BoundingBox.Inequality
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.BoundingBox.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.BoundingBox.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: BoundingBox.ToString
+  fullName: Microsoft.Xna.Framework.BoundingBox.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

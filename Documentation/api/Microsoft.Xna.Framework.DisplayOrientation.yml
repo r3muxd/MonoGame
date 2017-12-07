@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.DisplayOrientation
+  commentId: T:Microsoft.Xna.Framework.DisplayOrientation
+  id: DisplayOrientation
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.DisplayOrientation.Default
+  - Microsoft.Xna.Framework.DisplayOrientation.LandscapeLeft
+  - Microsoft.Xna.Framework.DisplayOrientation.LandscapeRight
+  - Microsoft.Xna.Framework.DisplayOrientation.Portrait
+  - Microsoft.Xna.Framework.DisplayOrientation.PortraitDown
+  - Microsoft.Xna.Framework.DisplayOrientation.Unknown
+  langs:
+  - csharp
+  - vb
+  name: DisplayOrientation
+  nameWithType: DisplayOrientation
+  fullName: Microsoft.Xna.Framework.DisplayOrientation
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DisplayOrientation
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nDefines the orientation of the display.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum DisplayOrientation
+    content.vb: >-
+      <Flags>
+
+      Public Enum DisplayOrientation
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.DisplayOrientation.Default
+  commentId: F:Microsoft.Xna.Framework.DisplayOrientation.Default
+  id: Default
+  parent: Microsoft.Xna.Framework.DisplayOrientation
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: DisplayOrientation.Default
+  fullName: Microsoft.Xna.Framework.DisplayOrientation.Default
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Default
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe default orientation.\n"
+  example: []
+  syntax:
+    content: Default = 0
+    return:
+      type: Microsoft.Xna.Framework.DisplayOrientation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.DisplayOrientation.LandscapeLeft
+  commentId: F:Microsoft.Xna.Framework.DisplayOrientation.LandscapeLeft
+  id: LandscapeLeft
+  parent: Microsoft.Xna.Framework.DisplayOrientation
+  langs:
+  - csharp
+  - vb
+  name: LandscapeLeft
+  nameWithType: DisplayOrientation.LandscapeLeft
+  fullName: Microsoft.Xna.Framework.DisplayOrientation.LandscapeLeft
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LandscapeLeft
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 21
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe display is rotated counterclockwise into a landscape orientation. Width is greater than height.\n"
+  example: []
+  syntax:
+    content: LandscapeLeft = 1
+    return:
+      type: Microsoft.Xna.Framework.DisplayOrientation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.DisplayOrientation.LandscapeRight
+  commentId: F:Microsoft.Xna.Framework.DisplayOrientation.LandscapeRight
+  id: LandscapeRight
+  parent: Microsoft.Xna.Framework.DisplayOrientation
+  langs:
+  - csharp
+  - vb
+  name: LandscapeRight
+  nameWithType: DisplayOrientation.LandscapeRight
+  fullName: Microsoft.Xna.Framework.DisplayOrientation.LandscapeRight
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LandscapeRight
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 25
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe display is rotated clockwise into a landscape orientation. Width is greater than height.\n"
+  example: []
+  syntax:
+    content: LandscapeRight = 2
+    return:
+      type: Microsoft.Xna.Framework.DisplayOrientation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.DisplayOrientation.Portrait
+  commentId: F:Microsoft.Xna.Framework.DisplayOrientation.Portrait
+  id: Portrait
+  parent: Microsoft.Xna.Framework.DisplayOrientation
+  langs:
+  - csharp
+  - vb
+  name: Portrait
+  nameWithType: DisplayOrientation.Portrait
+  fullName: Microsoft.Xna.Framework.DisplayOrientation.Portrait
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Portrait
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 29
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe display is rotated as portrait, where height is greater than width.\n"
+  example: []
+  syntax:
+    content: Portrait = 4
+    return:
+      type: Microsoft.Xna.Framework.DisplayOrientation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.DisplayOrientation.PortraitDown
+  commentId: F:Microsoft.Xna.Framework.DisplayOrientation.PortraitDown
+  id: PortraitDown
+  parent: Microsoft.Xna.Framework.DisplayOrientation
+  langs:
+  - csharp
+  - vb
+  name: PortraitDown
+  nameWithType: DisplayOrientation.PortraitDown
+  fullName: Microsoft.Xna.Framework.DisplayOrientation.PortraitDown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PortraitDown
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 33
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nThe display is rotated as inverted portrait, where height is greater than width.\n"
+  example: []
+  syntax:
+    content: PortraitDown = 8
+    return:
+      type: Microsoft.Xna.Framework.DisplayOrientation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.DisplayOrientation.Unknown
+  commentId: F:Microsoft.Xna.Framework.DisplayOrientation.Unknown
+  id: Unknown
+  parent: Microsoft.Xna.Framework.DisplayOrientation
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: DisplayOrientation.Unknown
+  fullName: Microsoft.Xna.Framework.DisplayOrientation.Unknown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/DisplayOrientation.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Unknown
+    path: ../MonoGame.Framework/DisplayOrientation.cs
+    startLine: 37
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nUnknown display orientation.\n"
+  example: []
+  syntax:
+    content: Unknown = 16
+    return:
+      type: Microsoft.Xna.Framework.DisplayOrientation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.DisplayOrientation
+  commentId: T:Microsoft.Xna.Framework.DisplayOrientation
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: DisplayOrientation
+  nameWithType: DisplayOrientation
+  fullName: Microsoft.Xna.Framework.DisplayOrientation

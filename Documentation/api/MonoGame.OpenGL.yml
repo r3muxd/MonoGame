@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MonoGame.OpenGL
+  commentId: N:MonoGame.OpenGL
+  id: MonoGame.OpenGL
+  children:
+  - MonoGame.OpenGL.IWindowInfo
+  langs:
+  - csharp
+  - vb
+  name: MonoGame.OpenGL
+  nameWithType: MonoGame.OpenGL
+  fullName: MonoGame.OpenGL
+  type: Namespace
+  assemblies:
+  - MonoGame.Framework
+references:
+- uid: MonoGame.OpenGL.IWindowInfo
+  commentId: T:MonoGame.OpenGL.IWindowInfo
+  isExternal: false
+  name: IWindowInfo
+  nameWithType: IWindowInfo
+  fullName: MonoGame.OpenGL.IWindowInfo

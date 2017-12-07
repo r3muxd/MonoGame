@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.FillMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.FillMode
+  id: FillMode
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.FillMode.Solid
+  - Microsoft.Xna.Framework.Graphics.FillMode.WireFrame
+  langs:
+  - csharp
+  - vb
+  name: FillMode
+  nameWithType: FillMode
+  fullName: Microsoft.Xna.Framework.Graphics.FillMode
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/FillMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: FillMode
+    path: ../MonoGame.Framework/Graphics/States/FillMode.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines options for filling the primitive.\n"
+  example: []
+  syntax:
+    content: public enum FillMode
+    content.vb: Public Enum FillMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.FillMode.Solid
+  commentId: F:Microsoft.Xna.Framework.Graphics.FillMode.Solid
+  id: Solid
+  parent: Microsoft.Xna.Framework.Graphics.FillMode
+  langs:
+  - csharp
+  - vb
+  name: Solid
+  nameWithType: FillMode.Solid
+  fullName: Microsoft.Xna.Framework.Graphics.FillMode.Solid
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/FillMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Solid
+    path: ../MonoGame.Framework/Graphics/States/FillMode.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw solid faces for each primitive.\n"
+  example: []
+  syntax:
+    content: Solid = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.FillMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.FillMode.WireFrame
+  commentId: F:Microsoft.Xna.Framework.Graphics.FillMode.WireFrame
+  id: WireFrame
+  parent: Microsoft.Xna.Framework.Graphics.FillMode
+  langs:
+  - csharp
+  - vb
+  name: WireFrame
+  nameWithType: FillMode.WireFrame
+  fullName: Microsoft.Xna.Framework.Graphics.FillMode.WireFrame
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/States/FillMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: WireFrame
+    path: ../MonoGame.Framework/Graphics/States/FillMode.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDraw lines for each primitive.\n"
+  example: []
+  syntax:
+    content: WireFrame = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.FillMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.FillMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.FillMode
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: FillMode
+  nameWithType: FillMode
+  fullName: Microsoft.Xna.Framework.Graphics.FillMode

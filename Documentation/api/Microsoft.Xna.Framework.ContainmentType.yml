@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.ContainmentType
+  commentId: T:Microsoft.Xna.Framework.ContainmentType
+  id: ContainmentType
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.ContainmentType.Contains
+  - Microsoft.Xna.Framework.ContainmentType.Disjoint
+  - Microsoft.Xna.Framework.ContainmentType.Intersects
+  langs:
+  - csharp
+  - vb
+  name: ContainmentType
+  nameWithType: ContainmentType
+  fullName: Microsoft.Xna.Framework.ContainmentType
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/ContainmentType.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ContainmentType
+    path: ../MonoGame.Framework/ContainmentType.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nDefines how the bounding volumes intersects or contain one another.\n"
+  example: []
+  syntax:
+    content: public enum ContainmentType
+    content.vb: Public Enum ContainmentType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.ContainmentType.Disjoint
+  commentId: F:Microsoft.Xna.Framework.ContainmentType.Disjoint
+  id: Disjoint
+  parent: Microsoft.Xna.Framework.ContainmentType
+  langs:
+  - csharp
+  - vb
+  name: Disjoint
+  nameWithType: ContainmentType.Disjoint
+  fullName: Microsoft.Xna.Framework.ContainmentType.Disjoint
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/ContainmentType.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Disjoint
+    path: ../MonoGame.Framework/ContainmentType.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nIndicates that there is no overlap between two bounding volumes.\n"
+  example: []
+  syntax:
+    content: Disjoint = 0
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.ContainmentType.Contains
+  commentId: F:Microsoft.Xna.Framework.ContainmentType.Contains
+  id: Contains
+  parent: Microsoft.Xna.Framework.ContainmentType
+  langs:
+  - csharp
+  - vb
+  name: Contains
+  nameWithType: ContainmentType.Contains
+  fullName: Microsoft.Xna.Framework.ContainmentType.Contains
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/ContainmentType.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Contains
+    path: ../MonoGame.Framework/ContainmentType.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nIndicates that one bounding volume completely contains another volume.\n"
+  example: []
+  syntax:
+    content: Contains = 1
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.ContainmentType.Intersects
+  commentId: F:Microsoft.Xna.Framework.ContainmentType.Intersects
+  id: Intersects
+  parent: Microsoft.Xna.Framework.ContainmentType
+  langs:
+  - csharp
+  - vb
+  name: Intersects
+  nameWithType: ContainmentType.Intersects
+  fullName: Microsoft.Xna.Framework.ContainmentType.Intersects
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/ContainmentType.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Intersects
+    path: ../MonoGame.Framework/ContainmentType.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  summary: "\nIndicates that bounding volumes partially overlap one another.\n"
+  example: []
+  syntax:
+    content: Intersects = 2
+    return:
+      type: Microsoft.Xna.Framework.ContainmentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.ContainmentType
+  commentId: T:Microsoft.Xna.Framework.ContainmentType
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: ContainmentType
+  nameWithType: ContainmentType
+  fullName: Microsoft.Xna.Framework.ContainmentType

@@ -1,0 +1,3403 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelMeshCollection
+  id: ModelMeshCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator
+  - Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item(System.String)
+  - Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue(System.String,Microsoft.Xna.Framework.Graphics.ModelMesh@)
+  langs:
+  - csharp
+  - vb
+  name: ModelMeshCollection
+  nameWithType: ModelMeshCollection
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMeshCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ModelMeshCollection
+    path: ../MonoGame.Framework/Graphics/ModelMeshCollection.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRepresents a collection of ModelMesh objects.\n"
+  example: []
+  syntax:
+    content: 'public sealed class ModelMeshCollection : ReadOnlyCollection<ModelMesh>, IList<ModelMesh>, ICollection<ModelMesh>, IList, ICollection, IReadOnlyList<ModelMesh>, IReadOnlyCollection<ModelMesh>, IEnumerable<ModelMesh>, IEnumerable'
+    content.vb: >-
+      Public NotInheritable Class ModelMeshCollection
+          Inherits ReadOnlyCollection(Of ModelMesh)
+          Implements IList(Of ModelMesh), ICollection(Of ModelMesh), IList, ICollection, IReadOnlyList(Of ModelMesh), IReadOnlyCollection(Of ModelMesh), IEnumerable(Of ModelMesh), IEnumerable
+  inheritance:
+  - System.Object
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  implements:
+  - System.Collections.Generic.IList{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  - System.Collections.Generic.ICollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyList{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  - System.Collections.Generic.IReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  - System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Contains(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.CopyTo(Microsoft.Xna.Framework.Graphics.ModelMesh[],System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.IndexOf(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#set_Item(System.Int32,Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Add(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Clear
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#Insert(System.Int32,Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Remove(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#get_Item(System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Add(System.Object)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Clear
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Contains(System.Object)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Remove(System.Object)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#RemoveAt(System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Count
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Item(System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Items
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#Item(System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#IsSynchronized
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#SyncRoot
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IsFixedSize
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IsReadOnly
+  - System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Item(System.Int32)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item(System.String)
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item(System.String)
+  id: Item(System.String)
+  parent: Microsoft.Xna.Framework.Graphics.ModelMeshCollection
+  langs:
+  - csharp
+  - vb
+  name: Item[String]
+  nameWithType: ModelMeshCollection.Item[String]
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item[System.String]
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMeshCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: this[]
+    path: ../MonoGame.Framework/Graphics/ModelMeshCollection.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRetrieves a ModelMesh from the collection, given the name of the mesh.\n"
+  example: []
+  syntax:
+    content: public ModelMesh this[string meshName] { get; }
+    parameters:
+    - id: meshName
+      type: System.String
+      description: The name of the mesh to retrieve.
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelMesh
+    content.vb: Public ReadOnly Property Item(meshName As String) As ModelMesh
+  overload: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item*
+  nameWithType.vb: ModelMeshCollection.Item(String)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item(System.String)
+  name.vb: Item(String)
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue(System.String,Microsoft.Xna.Framework.Graphics.ModelMesh@)
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue(System.String,Microsoft.Xna.Framework.Graphics.ModelMesh@)
+  id: TryGetValue(System.String,Microsoft.Xna.Framework.Graphics.ModelMesh@)
+  parent: Microsoft.Xna.Framework.Graphics.ModelMeshCollection
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(String, out ModelMesh)
+  nameWithType: ModelMeshCollection.TryGetValue(String, out ModelMesh)
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue(System.String, out Microsoft.Xna.Framework.Graphics.ModelMesh)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMeshCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TryGetValue
+    path: ../MonoGame.Framework/Graphics/ModelMeshCollection.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFinds a mesh with a given name if it exists in the collection.\n"
+  example: []
+  syntax:
+    content: public bool TryGetValue(string meshName, out ModelMesh value)
+    parameters:
+    - id: meshName
+      type: System.String
+      description: The name of the mesh to find.
+    - id: value
+      type: Microsoft.Xna.Framework.Graphics.ModelMesh
+      description: The mesh named meshName, if found.
+    return:
+      type: System.Boolean
+      description: true if a mesh was found
+    content.vb: Public Function TryGetValue(meshName As String, ByRef value As ModelMesh) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue*
+  nameWithType.vb: ModelMeshCollection.TryGetValue(String, ByRef ModelMesh)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue(System.String, ByRef Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: TryGetValue(String, ByRef ModelMesh)
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Xna.Framework.Graphics.ModelMeshCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ModelMeshCollection.GetEnumerator()
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMeshCollection.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetEnumerator
+    path: ../MonoGame.Framework/Graphics/ModelMeshCollection.cs
+    startLine: 65
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns a ModelMeshCollection.Enumerator that can iterate through a ModelMeshCollection.\n"
+  example: []
+  syntax:
+    content: public ModelMeshCollection.Enumerator GetEnumerator()
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Enumerator
+      description: ''
+    content.vb: Public Function GetEnumerator As ModelMeshCollection.Enumerator
+  overload: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<ModelMesh>
+  nameWithType: ReadOnlyCollection<ModelMesh>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: ReadOnlyCollection(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.Generic.IList{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ModelMesh>
+  nameWithType: IList<ModelMesh>
+  fullName: System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: IList(Of ModelMesh)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: IList(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<ModelMesh>
+  nameWithType: ICollection<ModelMesh>
+  fullName: System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: ICollection(Of ModelMesh)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: ICollection(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<ModelMesh>
+  nameWithType: IReadOnlyList<ModelMesh>
+  fullName: System.Collections.Generic.IReadOnlyList<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: IReadOnlyList(Of ModelMesh)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: IReadOnlyList(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<ModelMesh>
+  nameWithType: IReadOnlyCollection<ModelMesh>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: IReadOnlyCollection(Of ModelMesh)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: IReadOnlyCollection(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ModelMesh>
+  nameWithType: IEnumerable<ModelMesh>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: IEnumerable(Of ModelMesh)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: IEnumerable(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Contains(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Contains(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+  name: Contains(ModelMesh)
+  nameWithType: ReadOnlyCollection<ModelMesh>.Contains(ModelMesh)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Contains(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).Contains(ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).Contains(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ReadOnlyCollection<ModelMesh>.Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ReadOnlyCollection(Of ModelMesh).Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.CopyTo(Microsoft.Xna.Framework.Graphics.ModelMesh[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.CopyTo(Microsoft.Xna.Framework.Graphics.ModelMesh[],System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(ModelMesh[], Int32)
+  nameWithType: ReadOnlyCollection<ModelMesh>.CopyTo(ModelMesh[], Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.CopyTo(Microsoft.Xna.Framework.Graphics.ModelMesh[], System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).CopyTo(ModelMesh(), Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).CopyTo(Microsoft.Xna.Framework.Graphics.ModelMesh(), System.Int32)
+  name.vb: CopyTo(ModelMesh(), Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ReadOnlyCollection<ModelMesh>.CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ReadOnlyCollection(Of ModelMesh).CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.IndexOf(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.IndexOf(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+  name: IndexOf(ModelMesh)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IndexOf(ModelMesh)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.IndexOf(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).IndexOf(ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).IndexOf(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ReadOnlyCollection<ModelMesh>.IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ReadOnlyCollection(Of ModelMesh).IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+  name: IList<ModelMesh>.get_Item(Int32)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.get_Item(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.get_Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.get_Item(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.get_Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+    name: IList<ModelMesh>.get_Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+    name: System.Collections.Generic.IList<T>.get_Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#set_Item(System.Int32,Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#set_Item(System.Int32,Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+  name: IList<ModelMesh>.set_Item(Int32, ModelMesh)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.set_Item(Int32, ModelMesh)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.set_Item(System.Int32, Microsoft.Xna.Framework.Graphics.ModelMesh)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.set_Item(Int32, ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.set_Item(System.Int32, Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: System.Collections.Generic.IList<T>.set_Item(Int32, ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+    name: IList<ModelMesh>.set_Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+    name: System.Collections.Generic.IList<T>.set_Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Add(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Add(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  name: ICollection<ModelMesh>.Add(ModelMesh)
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.Add(ModelMesh)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Add(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.Add(ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.Add(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+    name: ICollection<ModelMesh>.Add
+    nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+    name: System.Collections.Generic.ICollection<T>.Add
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Clear
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Clear
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+  name: ICollection<ModelMesh>.Clear()
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.Clear()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Clear()
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.Clear()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.Clear()
+  name.vb: System.Collections.Generic.ICollection<T>.Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+    name: ICollection<ModelMesh>.Clear
+    nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+    name: System.Collections.Generic.ICollection<T>.Clear
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#Insert(System.Int32,Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#Insert(System.Int32,Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  name: IList<ModelMesh>.Insert(Int32, ModelMesh)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.Insert(Int32, ModelMesh)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.Insert(System.Int32, Microsoft.Xna.Framework.Graphics.ModelMesh)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.Insert(Int32, ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.Insert(System.Int32, Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: System.Collections.Generic.IList<T>.Insert(Int32, ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+    name: IList<ModelMesh>.Insert
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+    name: System.Collections.Generic.IList<T>.Insert
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Remove(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#Remove(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  name: ICollection<ModelMesh>.Remove(ModelMesh)
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.Remove(ModelMesh)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Remove(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.Remove(ModelMesh)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.Remove(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: System.Collections.Generic.ICollection<T>.Remove(ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+    name: ICollection<ModelMesh>.Remove
+    nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+    name: System.Collections.Generic.ICollection<T>.Remove
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  name: IList<ModelMesh>.RemoveAt(Int32)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.RemoveAt(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+    name: IList<ModelMesh>.RemoveAt
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+    name: System.Collections.Generic.IList<T>.RemoveAt
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  nameWithType: ReadOnlyCollection<ModelMesh>.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: ReadOnlyCollection<ModelMesh>.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  name: ICollection.CopyTo(Array, Int32)
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: ICollection.CopyTo
+    nameWithType: ReadOnlyCollection<ModelMesh>.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: System.Collections.ICollection.CopyTo
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#get_Item(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#get_Item(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+  name: IList.get_Item(Int32)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.get_Item(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.get_Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.get_Item(System.Int32)
+  name.vb: System.Collections.IList.get_Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+    name: IList.get_Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+    name: System.Collections.IList.get_Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  name: IList.set_Item(Int32, Object)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.set_Item(Int32, Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.set_Item(System.Int32, System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.set_Item(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.set_Item(System.Int32, System.Object)
+  name.vb: System.Collections.IList.set_Item(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: IList.set_Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: System.Collections.IList.set_Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Add(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Add(System.Object)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+  name: IList.Add(Object)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.Add(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Add(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Add(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Add(System.Object)
+  name.vb: System.Collections.IList.Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+    name: IList.Add
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+    name: System.Collections.IList.Add
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Clear
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Clear
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+  name: IList.Clear()
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.Clear()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Clear()
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Clear()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Clear()
+  name.vb: System.Collections.IList.Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+    name: IList.Clear
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+    name: System.Collections.IList.Clear
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Contains(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+  name: IList.Contains(Object)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.Contains(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Contains(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Contains(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Contains(System.Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+    name: IList.Contains
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+    name: System.Collections.IList.Contains
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IndexOf(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+  name: IList.IndexOf(Object)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.IndexOf(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.IndexOf(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.IndexOf(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.IndexOf(System.Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+    name: IList.IndexOf
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+    name: System.Collections.IList.IndexOf
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  name: IList.Insert(Int32, Object)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.Insert(Int32, Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Insert(System.Int32, System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Insert(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Insert(System.Int32, System.Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: IList.Insert
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: System.Collections.IList.Insert
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Remove(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+  name: IList.Remove(Object)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.Remove(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Remove(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Remove(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Remove(System.Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+    name: IList.Remove
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+    name: System.Collections.IList.Remove
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#RemoveAt(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+  name: IList.RemoveAt(Int32)
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.RemoveAt(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.RemoveAt(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.RemoveAt(System.Int32)
+  name.vb: System.Collections.IList.RemoveAt(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+    name: IList.RemoveAt
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+    name: System.Collections.IList.RemoveAt
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Count
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Count
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Count
+  name: Count
+  nameWithType: ReadOnlyCollection<ModelMesh>.Count
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Count
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).Count
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).Count
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Item(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: ReadOnlyCollection<ModelMesh>.Item[Int32]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Item[System.Int32]
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+    name: Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+    name: Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Items
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.Items
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Items
+  name: Items
+  nameWithType: ReadOnlyCollection<ModelMesh>.Items
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.Items
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).Items
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).Items
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  name: ICollection<ModelMesh>.IsReadOnly
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection<ModelMesh>.IsReadOnly
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.ICollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.IsReadOnly
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#Generic#IList{T}#Item(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  name: IList<ModelMesh>.Item[Int32]
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.Item[Int32]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.Item[System.Int32]
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.Item(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+    name: IList<ModelMesh>.Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList<ModelMesh>.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.Generic.IList<Microsoft.Xna.Framework.Graphics.ModelMesh>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+    name: System.Collections.Generic.IList<T>.Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.Generic.IList<T>.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#IsSynchronized
+  name: ICollection.IsSynchronized
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.ICollection.IsSynchronized
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#ICollection#SyncRoot
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#SyncRoot
+  name: ICollection.SyncRoot
+  nameWithType: ReadOnlyCollection<ModelMesh>.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.ICollection.SyncRoot
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IsFixedSize
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IsFixedSize
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IsFixedSize
+  name: IList.IsFixedSize
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.IsFixedSize
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.IsFixedSize
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#IsReadOnly
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IsReadOnly
+  name: IList.IsReadOnly
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.IsReadOnly
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.IsReadOnly
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}.System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+  name: IList.Item[Int32]
+  nameWithType: ReadOnlyCollection<ModelMesh>.IList.Item[Int32]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Item[System.Int32]
+  nameWithType.vb: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Item(System.Int32)
+  name.vb: System.Collections.IList.Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+    name: IList.Item
+    nameWithType: ReadOnlyCollection<ModelMesh>.IList.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.Xna.Framework.Graphics.ModelMesh>.System.Collections.IList.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+    name: System.Collections.IList.Item
+    nameWithType: ReadOnlyCollection(Of ModelMesh).System.Collections.IList.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.Xna.Framework.Graphics.ModelMesh).System.Collections.IList.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ReadOnlyCollection<T>.Contains(T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Contains(T)
+  nameWithType.vb: ReadOnlyCollection(Of T).Contains(T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ReadOnlyCollection<T>.Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ReadOnlyCollection(Of T).Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ReadOnlyCollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ReadOnlyCollection<T>.CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ReadOnlyCollection(Of T).CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+  isExternal: true
+  name: IndexOf(T)
+  nameWithType: ReadOnlyCollection<T>.IndexOf(T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.IndexOf(T)
+  nameWithType.vb: ReadOnlyCollection(Of T).IndexOf(T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ReadOnlyCollection<T>.IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: ReadOnlyCollection(Of T).IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+  isExternal: true
+  name: IList<T>.get_Item(Int32)
+  nameWithType: ReadOnlyCollection<T>.IList<T>.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.get_Item(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.get_Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.get_Item(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.get_Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+    name: IList<T>.get_Item
+    nameWithType: ReadOnlyCollection<T>.IList<T>.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#get_Item(System.Int32)
+    name: System.Collections.Generic.IList<T>.get_Item
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+  isExternal: true
+  name: IList<T>.set_Item(Int32, T)
+  nameWithType: ReadOnlyCollection<T>.IList<T>.set_Item(Int32, T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.set_Item(System.Int32, T)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.set_Item(Int32, T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.set_Item(System.Int32, T)
+  name.vb: System.Collections.Generic.IList<T>.set_Item(Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+    name: IList<T>.set_Item
+    nameWithType: ReadOnlyCollection<T>.IList<T>.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#set_Item(System.Int32,`0)
+    name: System.Collections.Generic.IList<T>.set_Item
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  isExternal: true
+  name: ICollection<T>.Add(T)
+  nameWithType: ReadOnlyCollection<T>.ICollection<T>.Add(T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+    name: ICollection<T>.Add
+    nameWithType: ReadOnlyCollection<T>.ICollection<T>.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Add(`0)
+    name: System.Collections.Generic.ICollection<T>.Add
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+  isExternal: true
+  name: ICollection<T>.Clear()
+  nameWithType: ReadOnlyCollection<T>.ICollection<T>.Clear()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Clear()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Clear()
+  name.vb: System.Collections.Generic.ICollection<T>.Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+    name: ICollection<T>.Clear
+    nameWithType: ReadOnlyCollection<T>.ICollection<T>.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Clear
+    name: System.Collections.Generic.ICollection<T>.Clear
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  isExternal: true
+  name: IList<T>.Insert(Int32, T)
+  nameWithType: ReadOnlyCollection<T>.IList<T>.Insert(Int32, T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Insert(Int32, T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  name.vb: System.Collections.Generic.IList<T>.Insert(Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+    name: IList<T>.Insert
+    nameWithType: ReadOnlyCollection<T>.IList<T>.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+    name: System.Collections.Generic.IList<T>.Insert
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  isExternal: true
+  name: ICollection<T>.Remove(T)
+  nameWithType: ReadOnlyCollection<T>.ICollection<T>.Remove(T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Remove(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+    name: ICollection<T>.Remove
+    nameWithType: ReadOnlyCollection<T>.ICollection<T>.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+    name: System.Collections.Generic.ICollection<T>.Remove
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  isExternal: true
+  name: IList<T>.RemoveAt(Int32)
+  nameWithType: ReadOnlyCollection<T>.IList<T>.RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+    name: IList<T>.RemoveAt
+    nameWithType: ReadOnlyCollection<T>.IList<T>.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+    name: System.Collections.Generic.IList<T>.RemoveAt
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+  isExternal: true
+  name: IEnumerable.GetEnumerator()
+  nameWithType: ReadOnlyCollection<T>.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: ReadOnlyCollection<T>.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  isExternal: true
+  name: ICollection.CopyTo(Array, Int32)
+  nameWithType: ReadOnlyCollection<T>.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: ICollection.CopyTo
+    nameWithType: ReadOnlyCollection<T>.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: System.Collections.ICollection.CopyTo
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+  isExternal: true
+  name: IList.get_Item(Int32)
+  nameWithType: ReadOnlyCollection<T>.IList.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.get_Item(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.get_Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.get_Item(System.Int32)
+  name.vb: System.Collections.IList.get_Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+    name: IList.get_Item
+    nameWithType: ReadOnlyCollection<T>.IList.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#get_Item(System.Int32)
+    name: System.Collections.IList.get_Item
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.get_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  isExternal: true
+  name: IList.set_Item(Int32, Object)
+  nameWithType: ReadOnlyCollection<T>.IList.set_Item(Int32, Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.set_Item(System.Int32, System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.set_Item(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.set_Item(System.Int32, System.Object)
+  name.vb: System.Collections.IList.set_Item(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: IList.set_Item
+    nameWithType: ReadOnlyCollection<T>.IList.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: System.Collections.IList.set_Item
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.set_Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+  isExternal: true
+  name: IList.Add(Object)
+  nameWithType: ReadOnlyCollection<T>.IList.Add(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Add(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.Add(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Add(System.Object)
+  name.vb: System.Collections.IList.Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+    name: IList.Add
+    nameWithType: ReadOnlyCollection<T>.IList.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Add(System.Object)
+    name: System.Collections.IList.Add
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.Add
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+  isExternal: true
+  name: IList.Clear()
+  nameWithType: ReadOnlyCollection<T>.IList.Clear()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Clear()
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.Clear()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Clear()
+  name.vb: System.Collections.IList.Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+    name: IList.Clear
+    nameWithType: ReadOnlyCollection<T>.IList.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Clear
+    name: System.Collections.IList.Clear
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.Clear
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+  isExternal: true
+  name: IList.Contains(Object)
+  nameWithType: ReadOnlyCollection<T>.IList.Contains(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Contains(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.Contains(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Contains(System.Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+    name: IList.Contains
+    nameWithType: ReadOnlyCollection<T>.IList.Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Contains(System.Object)
+    name: System.Collections.IList.Contains
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.Contains
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+  isExternal: true
+  name: IList.IndexOf(Object)
+  nameWithType: ReadOnlyCollection<T>.IList.IndexOf(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.IndexOf(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.IndexOf(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.IndexOf(System.Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+    name: IList.IndexOf
+    nameWithType: ReadOnlyCollection<T>.IList.IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IndexOf(System.Object)
+    name: System.Collections.IList.IndexOf
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.IndexOf
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  isExternal: true
+  name: IList.Insert(Int32, Object)
+  nameWithType: ReadOnlyCollection<T>.IList.Insert(Int32, Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Insert(System.Int32, System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.Insert(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Insert(System.Int32, System.Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: IList.Insert
+    nameWithType: ReadOnlyCollection<T>.IList.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: System.Collections.IList.Insert
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.Insert
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+  isExternal: true
+  name: IList.Remove(Object)
+  nameWithType: ReadOnlyCollection<T>.IList.Remove(Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Remove(System.Object)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.Remove(Object)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Remove(System.Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+    name: IList.Remove
+    nameWithType: ReadOnlyCollection<T>.IList.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Remove(System.Object)
+    name: System.Collections.IList.Remove
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.Remove
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+  isExternal: true
+  name: IList.RemoveAt(Int32)
+  nameWithType: ReadOnlyCollection<T>.IList.RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.RemoveAt(System.Int32)
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.RemoveAt(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.RemoveAt(System.Int32)
+  name.vb: System.Collections.IList.RemoveAt(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+    name: IList.RemoveAt
+    nameWithType: ReadOnlyCollection<T>.IList.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#RemoveAt(System.Int32)
+    name: System.Collections.IList.RemoveAt
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.RemoveAt
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Count
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ReadOnlyCollection<T>.Count
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Count
+  nameWithType.vb: ReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Count
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: ReadOnlyCollection<T>.Item[Int32]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Item[System.Int32]
+  nameWithType.vb: ReadOnlyCollection(Of T).Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+    name: Item
+    nameWithType: ReadOnlyCollection<T>.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+    name: Item
+    nameWithType: ReadOnlyCollection(Of T).Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Items
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.Items
+  isExternal: true
+  name: Items
+  nameWithType: ReadOnlyCollection<T>.Items
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Items
+  nameWithType.vb: ReadOnlyCollection(Of T).Items
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Items
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  isExternal: true
+  name: ICollection<T>.IsReadOnly
+  nameWithType: ReadOnlyCollection<T>.ICollection<T>.IsReadOnly
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  isExternal: true
+  name: IList<T>.Item[Int32]
+  nameWithType: ReadOnlyCollection<T>.IList<T>.Item[Int32]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.Item[System.Int32]
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Item(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+    name: IList<T>.Item
+    nameWithType: ReadOnlyCollection<T>.IList<T>.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+    name: System.Collections.Generic.IList<T>.Item
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#IsSynchronized
+  isExternal: true
+  name: ICollection.IsSynchronized
+  nameWithType: ReadOnlyCollection<T>.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.ICollection.IsSynchronized
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#ICollection#SyncRoot
+  isExternal: true
+  name: ICollection.SyncRoot
+  nameWithType: ReadOnlyCollection<T>.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.ICollection.SyncRoot
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IsFixedSize
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IsFixedSize
+  isExternal: true
+  name: IList.IsFixedSize
+  nameWithType: ReadOnlyCollection<T>.IList.IsFixedSize
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.IsFixedSize
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#IsReadOnly
+  isExternal: true
+  name: IList.IsReadOnly
+  nameWithType: ReadOnlyCollection<T>.IList.IsReadOnly
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.IsReadOnly
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+  isExternal: true
+  name: IList.Item[Int32]
+  nameWithType: ReadOnlyCollection<T>.IList.Item[Int32]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Item[System.Int32]
+  nameWithType.vb: ReadOnlyCollection(Of T).System.Collections.IList.Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Item(System.Int32)
+  name.vb: System.Collections.IList.Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+    name: IList.Item
+    nameWithType: ReadOnlyCollection<T>.IList.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.System.Collections.IList.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.System#Collections#IList#Item(System.Int32)
+    name: System.Collections.IList.Item
+    nameWithType: ReadOnlyCollection(Of T).System.Collections.IList.Item
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection(Of T).System.Collections.IList.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item
+  isExternal: false
+  name: Item
+  nameWithType: ModelMeshCollection.Item
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Item
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelMesh
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelMesh
+  nameWithType: ModelMesh
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue
+  isExternal: false
+  name: TryGetValue
+  nameWithType: ModelMeshCollection.TryGetValue
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.TryGetValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator
+  isExternal: false
+  name: GetEnumerator
+  nameWithType: ModelMeshCollection.GetEnumerator
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.GetEnumerator
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Enumerator
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Enumerator
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelMeshCollection.Enumerator
+  nameWithType: ModelMeshCollection.Enumerator
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshCollection.Enumerator

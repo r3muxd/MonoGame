@@ -1,0 +1,448 @@
+### YamlMime:ManagedReference
+items:
+- uid: MonoGame.Utilities.Png.PngWriter
+  commentId: T:MonoGame.Utilities.Png.PngWriter
+  id: PngWriter
+  parent: MonoGame.Utilities.Png
+  children:
+  - MonoGame.Utilities.Png.PngWriter.#ctor
+  - MonoGame.Utilities.Png.PngWriter.Write(Microsoft.Xna.Framework.Graphics.Texture2D,System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: PngWriter
+  nameWithType: PngWriter
+  fullName: MonoGame.Utilities.Png.PngWriter
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngWriter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PngWriter
+    path: ../MonoGame.Framework/Utilities/Png/PngWriter.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public class PngWriter
+    content.vb: Public Class PngWriter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MonoGame.Utilities.Png.PngWriter.#ctor
+  commentId: M:MonoGame.Utilities.Png.PngWriter.#ctor
+  id: '#ctor'
+  parent: MonoGame.Utilities.Png.PngWriter
+  langs:
+  - csharp
+  - vb
+  name: PngWriter()
+  nameWithType: PngWriter.PngWriter()
+  fullName: MonoGame.Utilities.Png.PngWriter.PngWriter()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngWriter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Utilities/Png/PngWriter.cs
+    startLine: 25
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public PngWriter()
+    content.vb: Public Sub New
+  overload: MonoGame.Utilities.Png.PngWriter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MonoGame.Utilities.Png.PngWriter.Write(Microsoft.Xna.Framework.Graphics.Texture2D,System.IO.Stream)
+  commentId: M:MonoGame.Utilities.Png.PngWriter.Write(Microsoft.Xna.Framework.Graphics.Texture2D,System.IO.Stream)
+  id: Write(Microsoft.Xna.Framework.Graphics.Texture2D,System.IO.Stream)
+  parent: MonoGame.Utilities.Png.PngWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Texture2D, Stream)
+  nameWithType: PngWriter.Write(Texture2D, Stream)
+  fullName: MonoGame.Utilities.Png.PngWriter.Write(Microsoft.Xna.Framework.Graphics.Texture2D, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Utilities/Png/PngWriter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Write
+    path: ../MonoGame.Framework/Utilities/Png/PngWriter.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: MonoGame.Utilities.Png
+  syntax:
+    content: public void Write(Texture2D texture2D, Stream outputStream)
+    parameters:
+    - id: texture2D
+      type: Microsoft.Xna.Framework.Graphics.Texture2D
+    - id: outputStream
+      type: System.IO.Stream
+    content.vb: Public Sub Write(texture2D As Texture2D, outputStream As Stream)
+  overload: MonoGame.Utilities.Png.PngWriter.Write*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MonoGame.Utilities.Png
+  commentId: N:MonoGame.Utilities.Png
+  isExternal: false
+  name: MonoGame.Utilities.Png
+  nameWithType: MonoGame.Utilities.Png
+  fullName: MonoGame.Utilities.Png
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MonoGame.Utilities.Png.PngWriter.#ctor*
+  commentId: Overload:MonoGame.Utilities.Png.PngWriter.#ctor
+  isExternal: false
+  name: PngWriter
+  nameWithType: PngWriter.PngWriter
+  fullName: MonoGame.Utilities.Png.PngWriter.PngWriter
+- uid: MonoGame.Utilities.Png.PngWriter.Write*
+  commentId: Overload:MonoGame.Utilities.Png.PngWriter.Write
+  isExternal: false
+  name: Write
+  nameWithType: PngWriter.Write
+  fullName: MonoGame.Utilities.Png.PngWriter.Write
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO

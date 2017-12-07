@@ -1,0 +1,935 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.KeyboardState
+  commentId: T:Microsoft.Xna.Framework.Input.KeyboardState
+  id: KeyboardState
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.KeyboardState.#ctor(Microsoft.Xna.Framework.Input.Keys[])
+  - Microsoft.Xna.Framework.Input.KeyboardState.#ctor(Microsoft.Xna.Framework.Input.Keys[],System.Boolean,System.Boolean)
+  - Microsoft.Xna.Framework.Input.KeyboardState.CapsLock
+  - Microsoft.Xna.Framework.Input.KeyboardState.Equals(System.Object)
+  - Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode
+  - Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys
+  - Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys)
+  - Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys)
+  - Microsoft.Xna.Framework.Input.KeyboardState.Item(Microsoft.Xna.Framework.Input.Keys)
+  - Microsoft.Xna.Framework.Input.KeyboardState.NumLock
+  - Microsoft.Xna.Framework.Input.KeyboardState.op_Equality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  - Microsoft.Xna.Framework.Input.KeyboardState.op_Inequality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  langs:
+  - csharp
+  - vb
+  name: KeyboardState
+  nameWithType: KeyboardState
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: KeyboardState
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nHolds the state of keystrokes by a keyboard.\n"
+  example: []
+  syntax:
+    content: public struct KeyboardState
+    content.vb: Public Structure KeyboardState
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.CapsLock
+  commentId: P:Microsoft.Xna.Framework.Input.KeyboardState.CapsLock
+  id: CapsLock
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: CapsLock
+  nameWithType: KeyboardState.CapsLock
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.CapsLock
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: CapsLock
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 94
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the current state of the Caps Lock key.\n"
+  example: []
+  syntax:
+    content: public bool CapsLock { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CapsLock As Boolean
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.CapsLock*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.NumLock
+  commentId: P:Microsoft.Xna.Framework.Input.KeyboardState.NumLock
+  id: NumLock
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: NumLock
+  nameWithType: KeyboardState.NumLock
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.NumLock
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NumLock
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 99
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the current state of the Num Lock key.\n"
+  example: []
+  syntax:
+    content: public bool NumLock { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property NumLock As Boolean
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.NumLock*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.#ctor(Microsoft.Xna.Framework.Input.Keys[],System.Boolean,System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.#ctor(Microsoft.Xna.Framework.Input.Keys[],System.Boolean,System.Boolean)
+  id: '#ctor(Microsoft.Xna.Framework.Input.Keys[],System.Boolean,System.Boolean)'
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: KeyboardState(Keys[], Boolean, Boolean)
+  nameWithType: KeyboardState.KeyboardState(Keys[], Boolean, Boolean)
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.KeyboardState(Microsoft.Xna.Framework.Input.Keys[], System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 126
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Input.KeyboardState\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public KeyboardState(Keys[] keys, bool capsLock = false, bool numLock = false)
+    parameters:
+    - id: keys
+      type: Microsoft.Xna.Framework.Input.Keys[]
+      description: List of keys to be flagged as pressed on initialization.
+    - id: capsLock
+      type: System.Boolean
+      description: Caps Lock state.
+    - id: numLock
+      type: System.Boolean
+      description: Num Lock state.
+    content.vb: Public Sub New(keys As Keys(), capsLock As Boolean = False, numLock As Boolean = False)
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.#ctor*
+  nameWithType.vb: KeyboardState.KeyboardState(Keys(), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Input.KeyboardState.KeyboardState(Microsoft.Xna.Framework.Input.Keys(), System.Boolean, System.Boolean)
+  name.vb: KeyboardState(Keys(), Boolean, Boolean)
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.#ctor(Microsoft.Xna.Framework.Input.Keys[])
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.#ctor(Microsoft.Xna.Framework.Input.Keys[])
+  id: '#ctor(Microsoft.Xna.Framework.Input.Keys[])'
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: KeyboardState(Keys[])
+  nameWithType: KeyboardState.KeyboardState(Keys[])
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.KeyboardState(Microsoft.Xna.Framework.Input.Keys[])
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 149
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Input.KeyboardState\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public KeyboardState(params Keys[] keys)
+    parameters:
+    - id: keys
+      type: Microsoft.Xna.Framework.Input.Keys[]
+      description: List of keys to be flagged as pressed on initialization.
+    content.vb: Public Sub New(ParamArray keys As Keys())
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.#ctor*
+  nameWithType.vb: KeyboardState.KeyboardState(Keys())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Input.KeyboardState.KeyboardState(Microsoft.Xna.Framework.Input.Keys())
+  name.vb: KeyboardState(Keys())
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.Item(Microsoft.Xna.Framework.Input.Keys)
+  commentId: P:Microsoft.Xna.Framework.Input.KeyboardState.Item(Microsoft.Xna.Framework.Input.Keys)
+  id: Item(Microsoft.Xna.Framework.Input.Keys)
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: Item[Keys]
+  nameWithType: KeyboardState.Item[Keys]
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Item[Microsoft.Xna.Framework.Input.Keys]
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: this[]
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 173
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns the state of a specified key.\n"
+  example: []
+  syntax:
+    content: public KeyState this[Keys key] { get; }
+    parameters:
+    - id: key
+      type: Microsoft.Xna.Framework.Input.Keys
+      description: The key to query.
+    return:
+      type: Microsoft.Xna.Framework.Input.KeyState
+      description: The state of the key.
+    content.vb: Public ReadOnly Property Item(key As Keys) As KeyState
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.Item*
+  nameWithType.vb: KeyboardState.Item(Keys)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.Xna.Framework.Input.KeyboardState.Item(Microsoft.Xna.Framework.Input.Keys)
+  name.vb: Item(Keys)
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys)
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys)
+  id: IsKeyDown(Microsoft.Xna.Framework.Input.Keys)
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: IsKeyDown(Keys)
+  nameWithType: KeyboardState.IsKeyDown(Keys)
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsKeyDown
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 183
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets whether given key is currently being pressed.\n"
+  example: []
+  syntax:
+    content: public bool IsKeyDown(Keys key)
+    parameters:
+    - id: key
+      type: Microsoft.Xna.Framework.Input.Keys
+      description: The key to query.
+    return:
+      type: System.Boolean
+      description: true if the key is pressed; false otherwise.
+    content.vb: Public Function IsKeyDown(key As Keys) As Boolean
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys)
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys)
+  id: IsKeyUp(Microsoft.Xna.Framework.Input.Keys)
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: IsKeyUp(Keys)
+  nameWithType: KeyboardState.IsKeyUp(Keys)
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp(Microsoft.Xna.Framework.Input.Keys)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsKeyUp
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 193
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets whether given key is currently being not pressed.\n"
+  example: []
+  syntax:
+    content: public bool IsKeyUp(Keys key)
+    parameters:
+    - id: key
+      type: Microsoft.Xna.Framework.Input.Keys
+      description: The key to query.
+    return:
+      type: System.Boolean
+      description: true if the key is not pressed; false otherwise.
+    content.vb: Public Function IsKeyUp(key As Keys) As Boolean
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys
+  id: GetPressedKeys
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: GetPressedKeys()
+  nameWithType: KeyboardState.GetPressedKeys()
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetPressedKeys
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 225
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns an array of values holding keys that are currently being pressed.\n"
+  example: []
+  syntax:
+    content: public Keys[] GetPressedKeys()
+    return:
+      type: Microsoft.Xna.Framework.Input.Keys[]
+      description: The keys that are currently being pressed.
+    content.vb: Public Function GetPressedKeys As Keys()
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: KeyboardState.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 255
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the hash code for <xref href=\"Microsoft.Xna.Framework.Input.KeyboardState\" data-throw-if-not-resolved=\"false\"></xref> instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: Hash code of the object.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.op_Equality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.op_Equality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  id: op_Equality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: Equality(KeyboardState, KeyboardState)
+  nameWithType: KeyboardState.Equality(KeyboardState, KeyboardState)
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Equality(Microsoft.Xna.Framework.Input.KeyboardState, Microsoft.Xna.Framework.Input.KeyboardState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 266
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCompares whether two <xref href=\"Microsoft.Xna.Framework.Input.KeyboardState\" data-throw-if-not-resolved=\"false\"></xref> instances are equal.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(KeyboardState a, KeyboardState b)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.Input.KeyboardState
+      description: <xref href="Microsoft.Xna.Framework.Input.KeyboardState" data-throw-if-not-resolved="false"></xref> instance to the left of the equality operator.
+    - id: b
+      type: Microsoft.Xna.Framework.Input.KeyboardState
+      description: <xref href="Microsoft.Xna.Framework.Input.KeyboardState" data-throw-if-not-resolved="false"></xref> instance to the right of the equality operator.
+    return:
+      type: System.Boolean
+      description: true if the instances are equal; false otherwise.
+    content.vb: Public Shared Operator =(a As KeyboardState, b As KeyboardState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.op_Inequality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.op_Inequality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  id: op_Inequality(Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState)
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: Inequality(KeyboardState, KeyboardState)
+  nameWithType: KeyboardState.Inequality(KeyboardState, KeyboardState)
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Inequality(Microsoft.Xna.Framework.Input.KeyboardState, Microsoft.Xna.Framework.Input.KeyboardState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 284
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCompares whether two <xref href=\"Microsoft.Xna.Framework.Input.KeyboardState\" data-throw-if-not-resolved=\"false\"></xref> instances are not equal.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(KeyboardState a, KeyboardState b)
+    parameters:
+    - id: a
+      type: Microsoft.Xna.Framework.Input.KeyboardState
+      description: <xref href="Microsoft.Xna.Framework.Input.KeyboardState" data-throw-if-not-resolved="false"></xref> instance to the left of the inequality operator.
+    - id: b
+      type: Microsoft.Xna.Framework.Input.KeyboardState
+      description: <xref href="Microsoft.Xna.Framework.Input.KeyboardState" data-throw-if-not-resolved="false"></xref> instance to the right of the inequality operator.
+    return:
+      type: System.Boolean
+      description: true if the instances are different; false otherwise.
+    content.vb: Public Shared Operator <>(a As KeyboardState, b As KeyboardState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Input.KeyboardState.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Input.KeyboardState
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: KeyboardState.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/KeyboardState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Input/KeyboardState.cs
+    startLine: 294
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCompares whether current instance is equal to specified object.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="Microsoft.Xna.Framework.Input.KeyboardState" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: true if the provided <xref href="Microsoft.Xna.Framework.Input.KeyboardState" data-throw-if-not-resolved="false"></xref> instance is same with current; false otherwise.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Input.KeyboardState.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.CapsLock*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.CapsLock
+  isExternal: false
+  name: CapsLock
+  nameWithType: KeyboardState.CapsLock
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.CapsLock
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.NumLock*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.NumLock
+  isExternal: false
+  name: NumLock
+  nameWithType: KeyboardState.NumLock
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.NumLock
+- uid: Microsoft.Xna.Framework.Input.KeyboardState
+  commentId: T:Microsoft.Xna.Framework.Input.KeyboardState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: KeyboardState
+  nameWithType: KeyboardState
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.#ctor
+  isExternal: false
+  name: KeyboardState
+  nameWithType: KeyboardState.KeyboardState
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.KeyboardState
+- uid: Microsoft.Xna.Framework.Input.Keys[]
+  name: Keys[]
+  nameWithType: Keys[]
+  fullName: Microsoft.Xna.Framework.Input.Keys[]
+  nameWithType.vb: Keys()
+  fullName.vb: Microsoft.Xna.Framework.Input.Keys()
+  name.vb: Keys()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Input.Keys
+    name: Keys
+    nameWithType: Keys
+    fullName: Microsoft.Xna.Framework.Input.Keys
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Input.Keys
+    name: Keys
+    nameWithType: Keys
+    fullName: Microsoft.Xna.Framework.Input.Keys
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.Item*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.Item
+  isExternal: false
+  name: Item
+  nameWithType: KeyboardState.Item
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Item
+- uid: Microsoft.Xna.Framework.Input.Keys
+  commentId: T:Microsoft.Xna.Framework.Input.Keys
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Keys
+  nameWithType: Keys
+  fullName: Microsoft.Xna.Framework.Input.Keys
+- uid: Microsoft.Xna.Framework.Input.KeyState
+  commentId: T:Microsoft.Xna.Framework.Input.KeyState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: KeyState
+  nameWithType: KeyState
+  fullName: Microsoft.Xna.Framework.Input.KeyState
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown
+  isExternal: false
+  name: IsKeyDown
+  nameWithType: KeyboardState.IsKeyDown
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyDown
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp
+  isExternal: false
+  name: IsKeyUp
+  nameWithType: KeyboardState.IsKeyUp
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.IsKeyUp
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys
+  isExternal: false
+  name: GetPressedKeys
+  nameWithType: KeyboardState.GetPressedKeys
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.GetPressedKeys
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: KeyboardState.GetHashCode
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: KeyboardState.Equality
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Equality
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: KeyboardState.Inequality
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Inequality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.KeyboardState.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Input.KeyboardState.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: KeyboardState.Equals
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState.Equals

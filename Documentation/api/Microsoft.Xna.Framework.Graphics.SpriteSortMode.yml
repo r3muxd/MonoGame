@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  id: SpriteSortMode
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.SpriteSortMode.BackToFront
+  - Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred
+  - Microsoft.Xna.Framework.Graphics.SpriteSortMode.FrontToBack
+  - Microsoft.Xna.Framework.Graphics.SpriteSortMode.Immediate
+  - Microsoft.Xna.Framework.Graphics.SpriteSortMode.Texture
+  langs:
+  - csharp
+  - vb
+  name: SpriteSortMode
+  nameWithType: SpriteSortMode
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteSortMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SpriteSortMode
+    path: ../MonoGame.Framework/Graphics/SpriteSortMode.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines sprite sort rendering options.\n"
+  example: []
+  syntax:
+    content: public enum SpriteSortMode
+    content.vb: Public Enum SpriteSortMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred
+  id: Deferred
+  parent: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  langs:
+  - csharp
+  - vb
+  name: Deferred
+  nameWithType: SpriteSortMode.Deferred
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteSortMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Deferred
+    path: ../MonoGame.Framework/Graphics/SpriteSortMode.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nAll sprites are drawing when <xref href=\"Microsoft.Xna.Framework.Graphics.SpriteBatch.End\" data-throw-if-not-resolved=\"false\"></xref> invokes, in order of draw call sequence. Depth is ignored.\n"
+  example: []
+  syntax:
+    content: Deferred = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Immediate
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteSortMode.Immediate
+  id: Immediate
+  parent: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  langs:
+  - csharp
+  - vb
+  name: Immediate
+  nameWithType: SpriteSortMode.Immediate
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Immediate
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteSortMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Immediate
+    path: ../MonoGame.Framework/Graphics/SpriteSortMode.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEach sprite is drawing at individual draw call, instead of <xref href=\"Microsoft.Xna.Framework.Graphics.SpriteBatch.End\" data-throw-if-not-resolved=\"false\"></xref>. Depth is ignored.\n"
+  example: []
+  syntax:
+    content: Immediate = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Texture
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteSortMode.Texture
+  id: Texture
+  parent: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: SpriteSortMode.Texture
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Texture
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteSortMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Texture
+    path: ../MonoGame.Framework/Graphics/SpriteSortMode.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nSame as <xref href=\"Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred\" data-throw-if-not-resolved=\"false\"></xref>, except sprites are sorted by texture prior to drawing. Depth is ignored.\n"
+  example: []
+  syntax:
+    content: Texture = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode.BackToFront
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteSortMode.BackToFront
+  id: BackToFront
+  parent: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  langs:
+  - csharp
+  - vb
+  name: BackToFront
+  nameWithType: SpriteSortMode.BackToFront
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode.BackToFront
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteSortMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BackToFront
+    path: ../MonoGame.Framework/Graphics/SpriteSortMode.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nSame as <xref href=\"Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred\" data-throw-if-not-resolved=\"false\"></xref>, except sprites are sorted by depth in back-to-front order prior to drawing.\n"
+  example: []
+  syntax:
+    content: BackToFront = 3
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode.FrontToBack
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteSortMode.FrontToBack
+  id: FrontToBack
+  parent: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  langs:
+  - csharp
+  - vb
+  name: FrontToBack
+  nameWithType: SpriteSortMode.FrontToBack
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode.FrontToBack
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteSortMode.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: FrontToBack
+    path: ../MonoGame.Framework/Graphics/SpriteSortMode.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nSame as <xref href=\"Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred\" data-throw-if-not-resolved=\"false\"></xref>, except sprites are sorted by depth in front-to-back order prior to drawing.\n"
+  example: []
+  syntax:
+    content: FrontToBack = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.SpriteBatch.End
+  commentId: M:Microsoft.Xna.Framework.Graphics.SpriteBatch.End
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteSortMode
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SpriteSortMode
+  nameWithType: SpriteSortMode
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteSortMode
+- uid: Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteSortMode.Deferred

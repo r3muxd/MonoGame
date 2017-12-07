@@ -1,0 +1,9 @@
+{
+  "_enableSearch": {
+    "api/**": true
+  },
+  "_disableContribution": {
+    "**CHANGELOG.md": true,
+    "index.md": true
+  }
+}

@@ -1,0 +1,523 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.Joystick
+  commentId: T:Microsoft.Xna.Framework.Input.Joystick
+  id: Joystick
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.Joystick.GetCapabilities(System.Int32)
+  - Microsoft.Xna.Framework.Input.Joystick.GetState(System.Int32)
+  - Microsoft.Xna.Framework.Input.Joystick.IsSupported
+  langs:
+  - csharp
+  - vb
+  name: Joystick
+  nameWithType: Joystick
+  fullName: Microsoft.Xna.Framework.Input.Joystick
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Joystick.SDL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Joystick
+    path: ../MonoGame.Framework/Input/Joystick.SDL.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nAllows interaction with joysticks. Unlike <xref href=\"Microsoft.Xna.Framework.Input.GamePad\" data-throw-if-not-resolved=\"false\"></xref> the number of Buttons/Axes/DPads is not limited.\n"
+  example: []
+  syntax:
+    content: public static class Joystick
+    content.vb: Public Module Joystick
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Xna.Framework.Input.Joystick.IsSupported
+  commentId: P:Microsoft.Xna.Framework.Input.Joystick.IsSupported
+  id: IsSupported
+  parent: Microsoft.Xna.Framework.Input.Joystick
+  langs:
+  - csharp
+  - vb
+  name: IsSupported
+  nameWithType: Joystick.IsSupported
+  fullName: Microsoft.Xna.Framework.Input.Joystick.IsSupported
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Joystick.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsSupported
+    path: ../MonoGame.Framework/Input/Joystick.cs
+    startLine: 15
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a value indicating whether the current platform supports reading raw joystick data.\n"
+  example: []
+  syntax:
+    content: public static bool IsSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the current platform supports reading raw joystick data; otherwise, <code>false</code>.
+    content.vb: Public Shared ReadOnly Property IsSupported As Boolean
+  overload: Microsoft.Xna.Framework.Input.Joystick.IsSupported*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.Joystick.GetCapabilities(System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Input.Joystick.GetCapabilities(System.Int32)
+  id: GetCapabilities(System.Int32)
+  parent: Microsoft.Xna.Framework.Input.Joystick
+  langs:
+  - csharp
+  - vb
+  name: GetCapabilities(Int32)
+  nameWithType: Joystick.GetCapabilities(Int32)
+  fullName: Microsoft.Xna.Framework.Input.Joystick.GetCapabilities(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Joystick.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetCapabilities
+    path: ../MonoGame.Framework/Input/Joystick.cs
+    startLine: 25
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the capabilites of the joystick.\n"
+  example: []
+  syntax:
+    content: public static JoystickCapabilities GetCapabilities(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Index of the joystick you want to access.
+    return:
+      type: Microsoft.Xna.Framework.Input.JoystickCapabilities
+      description: The capabilites of the joystick.
+    content.vb: Public Shared Function GetCapabilities(index As Integer) As JoystickCapabilities
+  overload: Microsoft.Xna.Framework.Input.Joystick.GetCapabilities*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.Joystick.GetState(System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Input.Joystick.GetState(System.Int32)
+  id: GetState(System.Int32)
+  parent: Microsoft.Xna.Framework.Input.Joystick
+  langs:
+  - csharp
+  - vb
+  name: GetState(Int32)
+  nameWithType: Joystick.GetState(Int32)
+  fullName: Microsoft.Xna.Framework.Input.Joystick.GetState(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Joystick.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetState
+    path: ../MonoGame.Framework/Input/Joystick.cs
+    startLine: 35
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the current state of the joystick.\n"
+  example: []
+  syntax:
+    content: public static JoystickState GetState(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Index of the joystick you want to access.
+    return:
+      type: Microsoft.Xna.Framework.Input.JoystickState
+      description: The state of the joystick.
+    content.vb: Public Shared Function GetState(index As Integer) As JoystickState
+  overload: Microsoft.Xna.Framework.Input.Joystick.GetState*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Xna.Framework.Input.GamePad
+  commentId: T:Microsoft.Xna.Framework.Input.GamePad
+  isExternal: false
+  name: GamePad
+  nameWithType: GamePad
+  fullName: Microsoft.Xna.Framework.Input.GamePad
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.Joystick.IsSupported*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Joystick.IsSupported
+  isExternal: false
+  name: IsSupported
+  nameWithType: Joystick.IsSupported
+  fullName: Microsoft.Xna.Framework.Input.Joystick.IsSupported
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Input.Joystick.GetCapabilities*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Joystick.GetCapabilities
+  isExternal: false
+  name: GetCapabilities
+  nameWithType: Joystick.GetCapabilities
+  fullName: Microsoft.Xna.Framework.Input.Joystick.GetCapabilities
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Input.JoystickCapabilities
+  commentId: T:Microsoft.Xna.Framework.Input.JoystickCapabilities
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: JoystickCapabilities
+  nameWithType: JoystickCapabilities
+  fullName: Microsoft.Xna.Framework.Input.JoystickCapabilities
+- uid: Microsoft.Xna.Framework.Input.Joystick.GetState*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Joystick.GetState
+  isExternal: false
+  name: GetState
+  nameWithType: Joystick.GetState
+  fullName: Microsoft.Xna.Framework.Input.Joystick.GetState
+- uid: Microsoft.Xna.Framework.Input.JoystickState
+  commentId: T:Microsoft.Xna.Framework.Input.JoystickState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: JoystickState
+  nameWithType: JoystickState
+  fullName: Microsoft.Xna.Framework.Input.JoystickState

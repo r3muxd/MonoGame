@@ -1,0 +1,814 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelMesh
+  id: ModelMesh
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart})
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.Draw
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.Effects
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.Name
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone
+  - Microsoft.Xna.Framework.Graphics.ModelMesh.Tag
+  langs:
+  - csharp
+  - vb
+  name: ModelMesh
+  nameWithType: ModelMesh
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ModelMesh
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public sealed class ModelMesh
+    content.vb: Public NotInheritable Class ModelMesh
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart})
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelMesh.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart})
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart})'
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: ModelMesh(GraphicsDevice, List<ModelMeshPart>)
+  nameWithType: ModelMesh.ModelMesh(GraphicsDevice, List<ModelMeshPart>)
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.ModelMesh(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Collections.Generic.List<Microsoft.Xna.Framework.Graphics.ModelMeshPart>)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 13
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelMesh(GraphicsDevice graphicsDevice, List<ModelMeshPart> parts)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    - id: parts
+      type: System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart}
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, parts As List(Of ModelMeshPart))
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.#ctor*
+  nameWithType.vb: ModelMesh.ModelMesh(GraphicsDevice, List(Of ModelMeshPart))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.ModelMesh.ModelMesh(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Collections.Generic.List(Of Microsoft.Xna.Framework.Graphics.ModelMeshPart))
+  name.vb: ModelMesh(GraphicsDevice, List(Of ModelMeshPart))
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere
+  id: BoundingSphere
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: BoundingSphere
+  nameWithType: ModelMesh.BoundingSphere
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BoundingSphere
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public BoundingSphere BoundingSphere { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.BoundingSphere
+    content.vb: Public Property BoundingSphere As BoundingSphere
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Effects
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMesh.Effects
+  id: Effects
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: ModelMesh.Effects
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Effects
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Effects
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 47
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelEffectCollection Effects { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelEffectCollection
+    content.vb: Public ReadOnly Property Effects As ModelEffectCollection
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.Effects*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts
+  id: MeshParts
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: MeshParts
+  nameWithType: ModelMesh.MeshParts
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MeshParts
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 52
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelMeshPartCollection MeshParts { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelMeshPartCollection
+    content.vb: Public Property MeshParts As ModelMeshPartCollection
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMesh.Name
+  id: Name
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ModelMesh.Name
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Name
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Name
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 56
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone
+  id: ParentBone
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: ParentBone
+  nameWithType: ModelMesh.ParentBone
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ParentBone
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelBone ParentBone { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelBone
+    content.vb: Public Property ParentBone As ModelBone
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelMesh.Tag
+  id: Tag
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: ModelMesh.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Tag
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Tag
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public object Tag { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Tag As Object
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.Tag*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Draw
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelMesh.Draw
+  id: Draw
+  parent: Microsoft.Xna.Framework.Graphics.ModelMesh
+  langs:
+  - csharp
+  - vb
+  name: Draw()
+  nameWithType: ModelMesh.Draw()
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Draw()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelMesh.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Draw
+    path: ../MonoGame.Framework/Graphics/ModelMesh.cs
+    startLine: 71
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void Draw()
+    content.vb: Public Sub Draw
+  overload: Microsoft.Xna.Framework.Graphics.ModelMesh.Draw*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.#ctor
+  isExternal: false
+  name: ModelMesh
+  nameWithType: ModelMesh.ModelMesh
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.ModelMesh
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart}
+  commentId: T:System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMeshPart}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ModelMeshPart>
+  nameWithType: List<ModelMeshPart>
+  fullName: System.Collections.Generic.List<Microsoft.Xna.Framework.Graphics.ModelMeshPart>
+  nameWithType.vb: List(Of ModelMeshPart)
+  fullName.vb: System.Collections.Generic.List(Of Microsoft.Xna.Framework.Graphics.ModelMeshPart)
+  name.vb: List(Of ModelMeshPart)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMeshPart
+    name: ModelMeshPart
+    nameWithType: ModelMeshPart
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMeshPart
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMeshPart
+    name: ModelMeshPart
+    nameWithType: ModelMeshPart
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMeshPart
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere
+  isExternal: false
+  name: BoundingSphere
+  nameWithType: ModelMesh.BoundingSphere
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.BoundingSphere
+- uid: Microsoft.Xna.Framework.BoundingSphere
+  commentId: T:Microsoft.Xna.Framework.BoundingSphere
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: BoundingSphere
+  nameWithType: BoundingSphere
+  fullName: Microsoft.Xna.Framework.BoundingSphere
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Effects*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.Effects
+  isExternal: false
+  name: Effects
+  nameWithType: ModelMesh.Effects
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Effects
+- uid: Microsoft.Xna.Framework.Graphics.ModelEffectCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelEffectCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelEffectCollection
+  nameWithType: ModelEffectCollection
+  fullName: Microsoft.Xna.Framework.Graphics.ModelEffectCollection
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts
+  isExternal: false
+  name: MeshParts
+  nameWithType: ModelMesh.MeshParts
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.MeshParts
+- uid: Microsoft.Xna.Framework.Graphics.ModelMeshPartCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelMeshPartCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelMeshPartCollection
+  nameWithType: ModelMeshPartCollection
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMeshPartCollection
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Name*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.Name
+  isExternal: false
+  name: Name
+  nameWithType: ModelMesh.Name
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone
+  isExternal: false
+  name: ParentBone
+  nameWithType: ModelMesh.ParentBone
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.ParentBone
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelBone
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelBone
+  nameWithType: ModelBone
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Tag*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.Tag
+  isExternal: false
+  name: Tag
+  nameWithType: ModelMesh.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Tag
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh.Draw*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelMesh.Draw
+  isExternal: false
+  name: Draw
+  nameWithType: ModelMesh.Draw
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh.Draw

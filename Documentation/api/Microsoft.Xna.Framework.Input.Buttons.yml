@@ -1,0 +1,935 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.Buttons
+  commentId: T:Microsoft.Xna.Framework.Input.Buttons
+  id: Buttons
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.Buttons.A
+  - Microsoft.Xna.Framework.Input.Buttons.B
+  - Microsoft.Xna.Framework.Input.Buttons.Back
+  - Microsoft.Xna.Framework.Input.Buttons.BigButton
+  - Microsoft.Xna.Framework.Input.Buttons.DPadDown
+  - Microsoft.Xna.Framework.Input.Buttons.DPadLeft
+  - Microsoft.Xna.Framework.Input.Buttons.DPadRight
+  - Microsoft.Xna.Framework.Input.Buttons.DPadUp
+  - Microsoft.Xna.Framework.Input.Buttons.LeftShoulder
+  - Microsoft.Xna.Framework.Input.Buttons.LeftStick
+  - Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickDown
+  - Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickLeft
+  - Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickRight
+  - Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickUp
+  - Microsoft.Xna.Framework.Input.Buttons.LeftTrigger
+  - Microsoft.Xna.Framework.Input.Buttons.RightShoulder
+  - Microsoft.Xna.Framework.Input.Buttons.RightStick
+  - Microsoft.Xna.Framework.Input.Buttons.RightThumbstickDown
+  - Microsoft.Xna.Framework.Input.Buttons.RightThumbstickLeft
+  - Microsoft.Xna.Framework.Input.Buttons.RightThumbstickRight
+  - Microsoft.Xna.Framework.Input.Buttons.RightThumbstickUp
+  - Microsoft.Xna.Framework.Input.Buttons.RightTrigger
+  - Microsoft.Xna.Framework.Input.Buttons.Start
+  - Microsoft.Xna.Framework.Input.Buttons.X
+  - Microsoft.Xna.Framework.Input.Buttons.Y
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: Buttons
+  fullName: Microsoft.Xna.Framework.Input.Buttons
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Buttons
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDefines the buttons on gamepad.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum Buttons
+    content.vb: >-
+      <Flags>
+
+      Public Enum Buttons
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Input.Buttons.DPadUp
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.DPadUp
+  id: DPadUp
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: DPadUp
+  nameWithType: Buttons.DPadUp
+  fullName: Microsoft.Xna.Framework.Input.Buttons.DPadUp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DPadUp
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDirectional pad up.\n"
+  example: []
+  syntax:
+    content: DPadUp = 1
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.DPadDown
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.DPadDown
+  id: DPadDown
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: DPadDown
+  nameWithType: Buttons.DPadDown
+  fullName: Microsoft.Xna.Framework.Input.Buttons.DPadDown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DPadDown
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDirectional pad down.\n"
+  example: []
+  syntax:
+    content: DPadDown = 2
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.DPadLeft
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.DPadLeft
+  id: DPadLeft
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: DPadLeft
+  nameWithType: Buttons.DPadLeft
+  fullName: Microsoft.Xna.Framework.Input.Buttons.DPadLeft
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DPadLeft
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 27
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDirectional pad left.\n"
+  example: []
+  syntax:
+    content: DPadLeft = 4
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.DPadRight
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.DPadRight
+  id: DPadRight
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: DPadRight
+  nameWithType: Buttons.DPadRight
+  fullName: Microsoft.Xna.Framework.Input.Buttons.DPadRight
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DPadRight
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDirectional pad right.\n"
+  example: []
+  syntax:
+    content: DPadRight = 8
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.Start
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.Start
+  id: Start
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: Buttons.Start
+  fullName: Microsoft.Xna.Framework.Input.Buttons.Start
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Start
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 37
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nSTART button.\n"
+  example: []
+  syntax:
+    content: Start = 16
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.Back
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.Back
+  id: Back
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: Buttons.Back
+  fullName: Microsoft.Xna.Framework.Input.Buttons.Back
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Back
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 42
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBACK button.\n"
+  example: []
+  syntax:
+    content: Back = 32
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftStick
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftStick
+  id: LeftStick
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftStick
+  nameWithType: Buttons.LeftStick
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftStick
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftStick
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 47
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft stick button (pressing the left stick).\n"
+  example: []
+  syntax:
+    content: LeftStick = 64
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightStick
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightStick
+  id: RightStick
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightStick
+  nameWithType: Buttons.RightStick
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightStick
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightStick
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 52
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight stick button (pressing the right stick).\n"
+  example: []
+  syntax:
+    content: RightStick = 128
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftShoulder
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftShoulder
+  id: LeftShoulder
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftShoulder
+  nameWithType: Buttons.LeftShoulder
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftShoulder
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftShoulder
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 57
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft bumper (shoulder) button.\n"
+  example: []
+  syntax:
+    content: LeftShoulder = 256
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightShoulder
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightShoulder
+  id: RightShoulder
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightShoulder
+  nameWithType: Buttons.RightShoulder
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightShoulder
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightShoulder
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight bumper (shoulder) button.\n"
+  example: []
+  syntax:
+    content: RightShoulder = 512
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.BigButton
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.BigButton
+  id: BigButton
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: BigButton
+  nameWithType: Buttons.BigButton
+  fullName: Microsoft.Xna.Framework.Input.Buttons.BigButton
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BigButton
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 67
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nBig button.\n"
+  example: []
+  syntax:
+    content: BigButton = 2048
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.A
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.A
+  id: A
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: Buttons.A
+  fullName: Microsoft.Xna.Framework.Input.Buttons.A
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: A
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 72
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nA button.\n"
+  example: []
+  syntax:
+    content: A = 4096
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.B
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.B
+  id: B
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: Buttons.B
+  fullName: Microsoft.Xna.Framework.Input.Buttons.B
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: B
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 77
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nB button.\n"
+  example: []
+  syntax:
+    content: B = 8192
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.X
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.X
+  id: X
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Buttons.X
+  fullName: Microsoft.Xna.Framework.Input.Buttons.X
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: X
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 82
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nX button.\n"
+  example: []
+  syntax:
+    content: X = 16384
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.Y
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.Y
+  id: Y
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Buttons.Y
+  fullName: Microsoft.Xna.Framework.Input.Buttons.Y
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Y
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 87
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nY button.\n"
+  example: []
+  syntax:
+    content: Y = 32768
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickLeft
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickLeft
+  id: LeftThumbstickLeft
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftThumbstickLeft
+  nameWithType: Buttons.LeftThumbstickLeft
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickLeft
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftThumbstickLeft
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 92
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft stick is towards the left.\n"
+  example: []
+  syntax:
+    content: LeftThumbstickLeft = 2097152
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightTrigger
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightTrigger
+  id: RightTrigger
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightTrigger
+  nameWithType: Buttons.RightTrigger
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightTrigger
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightTrigger
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 97
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight trigger.\n"
+  example: []
+  syntax:
+    content: RightTrigger = 4194304
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftTrigger
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftTrigger
+  id: LeftTrigger
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftTrigger
+  nameWithType: Buttons.LeftTrigger
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftTrigger
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftTrigger
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 102
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft trigger.\n"
+  example: []
+  syntax:
+    content: LeftTrigger = 8388608
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickUp
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightThumbstickUp
+  id: RightThumbstickUp
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightThumbstickUp
+  nameWithType: Buttons.RightThumbstickUp
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickUp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightThumbstickUp
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 107
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight stick is towards up.\n"
+  example: []
+  syntax:
+    content: RightThumbstickUp = 16777216
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickDown
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightThumbstickDown
+  id: RightThumbstickDown
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightThumbstickDown
+  nameWithType: Buttons.RightThumbstickDown
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickDown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightThumbstickDown
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 112
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight stick is towards down.\n"
+  example: []
+  syntax:
+    content: RightThumbstickDown = 33554432
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickRight
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightThumbstickRight
+  id: RightThumbstickRight
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightThumbstickRight
+  nameWithType: Buttons.RightThumbstickRight
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickRight
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightThumbstickRight
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 117
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight stick is towards the right.\n"
+  example: []
+  syntax:
+    content: RightThumbstickRight = 67108864
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickLeft
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.RightThumbstickLeft
+  id: RightThumbstickLeft
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: RightThumbstickLeft
+  nameWithType: Buttons.RightThumbstickLeft
+  fullName: Microsoft.Xna.Framework.Input.Buttons.RightThumbstickLeft
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightThumbstickLeft
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 122
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRight stick is towards the left.\n"
+  example: []
+  syntax:
+    content: RightThumbstickLeft = 134217728
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickUp
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickUp
+  id: LeftThumbstickUp
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftThumbstickUp
+  nameWithType: Buttons.LeftThumbstickUp
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickUp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftThumbstickUp
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 127
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft stick is towards up.\n"
+  example: []
+  syntax:
+    content: LeftThumbstickUp = 268435456
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickDown
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickDown
+  id: LeftThumbstickDown
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftThumbstickDown
+  nameWithType: Buttons.LeftThumbstickDown
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickDown
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftThumbstickDown
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 132
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft stick is towards down.\n"
+  example: []
+  syntax:
+    content: LeftThumbstickDown = 536870912
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickRight
+  commentId: F:Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickRight
+  id: LeftThumbstickRight
+  parent: Microsoft.Xna.Framework.Input.Buttons
+  langs:
+  - csharp
+  - vb
+  name: LeftThumbstickRight
+  nameWithType: Buttons.LeftThumbstickRight
+  fullName: Microsoft.Xna.Framework.Input.Buttons.LeftThumbstickRight
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Buttons.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftThumbstickRight
+    path: ../MonoGame.Framework/Input/Buttons.cs
+    startLine: 137
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nLeft stick is towards the right.\n"
+  example: []
+  syntax:
+    content: LeftThumbstickRight = 1073741824
+    return:
+      type: Microsoft.Xna.Framework.Input.Buttons
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: Microsoft.Xna.Framework.Input.Buttons
+  commentId: T:Microsoft.Xna.Framework.Input.Buttons
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Buttons
+  nameWithType: Buttons
+  fullName: Microsoft.Xna.Framework.Input.Buttons

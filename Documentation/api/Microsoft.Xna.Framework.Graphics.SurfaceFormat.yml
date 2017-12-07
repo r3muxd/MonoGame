@@ -1,0 +1,1310 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  commentId: T:Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  id: SurfaceFormat
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Alpha8
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32SRgb
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr565
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32SRgb
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra4444
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra5551
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.ColorSRgb
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1a
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1SRgb
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3SRgb
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5SRgb
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfSingle
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector2
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector4
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.HdrBlendable
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte2
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte4
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rg32
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba1010102
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba64
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcExplicitAlpha
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcInterpolatedAlpha
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc2Bpp
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc4Bpp
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbEtc1
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc2Bpp
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc4Bpp
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Single
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector2
+  - Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector4
+  langs:
+  - csharp
+  - vb
+  name: SurfaceFormat
+  nameWithType: SurfaceFormat
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SurfaceFormat
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines types of surface formats.\n"
+  example: []
+  syntax:
+    content: public enum SurfaceFormat
+    content.vb: Public Enum SurfaceFormat
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color
+  id: Color
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: SurfaceFormat.Color
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Color
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Color
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 32-bit ARGB pixel format for store 8 bits per channel. \n"
+  example: []
+  syntax:
+    content: Color = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr565
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr565
+  id: Bgr565
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgr565
+  nameWithType: SurfaceFormat.Bgr565
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr565
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgr565
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 16-bit BGR pixel format for store 5 bits for blue, 6 bits for green, and 5 bits for red.   \n"
+  example: []
+  syntax:
+    content: Bgr565 = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra5551
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra5551
+  id: Bgra5551
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgra5551
+  nameWithType: SurfaceFormat.Bgra5551
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra5551
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgra5551
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 16-bit BGRA pixel format where 5 bits reserved for each color and last bit is reserved for alpha.\n"
+  example: []
+  syntax:
+    content: Bgra5551 = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra4444
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra4444
+  id: Bgra4444
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgra4444
+  nameWithType: SurfaceFormat.Bgra4444
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra4444
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgra4444
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 16-bit BGRA pixel format for store 4 bits per channel.\n"
+  example: []
+  syntax:
+    content: Bgra4444 = 3
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1
+  id: Dxt1
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt1
+  nameWithType: SurfaceFormat.Dxt1
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt1
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT1. Texture format with compression. Surface dimensions must be a multiple 4.\n"
+  example: []
+  syntax:
+    content: Dxt1 = 4
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3
+  id: Dxt3
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt3
+  nameWithType: SurfaceFormat.Dxt3
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt3
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 34
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT3. Texture format with compression. Surface dimensions must be a multiple 4.\n"
+  example: []
+  syntax:
+    content: Dxt3 = 5
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5
+  id: Dxt5
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt5
+  nameWithType: SurfaceFormat.Dxt5
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt5
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT5. Texture format with compression. Surface dimensions must be a multiple 4.\n"
+  example: []
+  syntax:
+    content: Dxt5 = 6
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte2
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte2
+  id: NormalizedByte2
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: NormalizedByte2
+  nameWithType: SurfaceFormat.NormalizedByte2
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NormalizedByte2
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 42
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nSigned 16-bit bump-map format for store 8 bits for <code>u</code> and <code>v</code> data.\n"
+  example: []
+  syntax:
+    content: NormalizedByte2 = 7
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte4
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte4
+  id: NormalizedByte4
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: NormalizedByte4
+  nameWithType: SurfaceFormat.NormalizedByte4
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.NormalizedByte4
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: NormalizedByte4
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 46
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nSigned 16-bit bump-map format for store 8 bits per channel.\n"
+  example: []
+  syntax:
+    content: NormalizedByte4 = 8
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba1010102
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba1010102
+  id: Rgba1010102
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Rgba1010102
+  nameWithType: SurfaceFormat.Rgba1010102
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba1010102
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Rgba1010102
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 50
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 32-bit RGBA pixel format for store 10 bits for each color and 2 bits for alpha.\n"
+  example: []
+  syntax:
+    content: Rgba1010102 = 9
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rg32
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rg32
+  id: Rg32
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Rg32
+  nameWithType: SurfaceFormat.Rg32
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rg32
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Rg32
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 54
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 32-bit RG pixel format using 16 bits per channel.\n"
+  example: []
+  syntax:
+    content: Rg32 = 10
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba64
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba64
+  id: Rgba64
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Rgba64
+  nameWithType: SurfaceFormat.Rgba64
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Rgba64
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Rgba64
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 64-bit RGBA pixel format using 16 bits per channel.\n"
+  example: []
+  syntax:
+    content: Rgba64 = 11
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Alpha8
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Alpha8
+  id: Alpha8
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Alpha8
+  nameWithType: SurfaceFormat.Alpha8
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Alpha8
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Alpha8
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned A 8-bit format for store 8 bits to alpha channel.\n"
+  example: []
+  syntax:
+    content: Alpha8 = 12
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Single
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Single
+  id: Single
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Single
+  nameWithType: SurfaceFormat.Single
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Single
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Single
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nIEEE 32-bit R float format for store 32 bits to red channel.\n"
+  example: []
+  syntax:
+    content: Single = 13
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector2
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector2
+  id: Vector2
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Vector2
+  nameWithType: SurfaceFormat.Vector2
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Vector2
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 70
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nIEEE 64-bit RG float format for store 32 bits per channel.\n"
+  example: []
+  syntax:
+    content: Vector2 = 14
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector4
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector4
+  id: Vector4
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Vector4
+  nameWithType: SurfaceFormat.Vector4
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Vector4
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Vector4
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 74
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nIEEE 128-bit RGBA float format for store 32 bits per channel.\n"
+  example: []
+  syntax:
+    content: Vector4 = 15
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfSingle
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfSingle
+  id: HalfSingle
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: HalfSingle
+  nameWithType: SurfaceFormat.HalfSingle
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfSingle
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: HalfSingle
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 78
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFloat 16-bit R format for store 16 bits to red channel.   \n"
+  example: []
+  syntax:
+    content: HalfSingle = 16
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector2
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector2
+  id: HalfVector2
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: HalfVector2
+  nameWithType: SurfaceFormat.HalfVector2
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector2
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: HalfVector2
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 82
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFloat 32-bit RG format for store 16 bits per channel. \n"
+  example: []
+  syntax:
+    content: HalfVector2 = 17
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector4
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector4
+  id: HalfVector4
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: HalfVector4
+  nameWithType: SurfaceFormat.HalfVector4
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HalfVector4
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: HalfVector4
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 86
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFloat 64-bit ARGB format for store 16 bits per channel. \n"
+  example: []
+  syntax:
+    content: HalfVector4 = 18
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HdrBlendable
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.HdrBlendable
+  id: HdrBlendable
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: HdrBlendable
+  nameWithType: SurfaceFormat.HdrBlendable
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.HdrBlendable
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: HdrBlendable
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 90
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFloat pixel format for high dynamic range data.\n"
+  example: []
+  syntax:
+    content: HdrBlendable = 19
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32
+  id: Bgr32
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgr32
+  nameWithType: SurfaceFormat.Bgr32
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgr32
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 97
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFor compatibility with WPF D3DImage.\n"
+  example: []
+  syntax:
+    content: Bgr32 = 20
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32
+  id: Bgra32
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgra32
+  nameWithType: SurfaceFormat.Bgra32
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgra32
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 101
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nFor compatibility with WPF D3DImage.\n"
+  example: []
+  syntax:
+    content: Bgra32 = 21
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.ColorSRgb
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.ColorSRgb
+  id: ColorSRgb
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: ColorSRgb
+  nameWithType: SurfaceFormat.ColorSRgb
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.ColorSRgb
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ColorSRgb
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 106
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 32-bit RGBA sRGB pixel format that supports 8 bits per channel.\n"
+  example: []
+  syntax:
+    content: ColorSRgb = 30
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32SRgb
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32SRgb
+  id: Bgr32SRgb
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgr32SRgb
+  nameWithType: SurfaceFormat.Bgr32SRgb
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgr32SRgb
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgr32SRgb
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 110
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 32-bit sRGB pixel format that supports 8 bits per channel. 8 bits are unused.\n"
+  example: []
+  syntax:
+    content: Bgr32SRgb = 31
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32SRgb
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32SRgb
+  id: Bgra32SRgb
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Bgra32SRgb
+  nameWithType: SurfaceFormat.Bgra32SRgb
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Bgra32SRgb
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bgra32SRgb
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 114
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnsigned 32-bit sRGB pixel format that supports 8 bits per channel.\n"
+  example: []
+  syntax:
+    content: Bgra32SRgb = 32
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1SRgb
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1SRgb
+  id: Dxt1SRgb
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt1SRgb
+  nameWithType: SurfaceFormat.Dxt1SRgb
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1SRgb
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt1SRgb
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 118
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT1. sRGB texture format with compression. Surface dimensions must be a multiple of 4.\n"
+  example: []
+  syntax:
+    content: Dxt1SRgb = 33
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3SRgb
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3SRgb
+  id: Dxt3SRgb
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt3SRgb
+  nameWithType: SurfaceFormat.Dxt3SRgb
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt3SRgb
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt3SRgb
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 122
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT3. sRGB texture format with compression. Surface dimensions must be a multiple of 4.\n"
+  example: []
+  syntax:
+    content: Dxt3SRgb = 34
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5SRgb
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5SRgb
+  id: Dxt5SRgb
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt5SRgb
+  nameWithType: SurfaceFormat.Dxt5SRgb
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt5SRgb
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt5SRgb
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 126
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT5. sRGB texture format with compression. Surface dimensions must be a multiple of 4.\n"
+  example: []
+  syntax:
+    content: Dxt5SRgb = 35
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc2Bpp
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc2Bpp
+  id: RgbPvrtc2Bpp
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbPvrtc2Bpp
+  nameWithType: SurfaceFormat.RgbPvrtc2Bpp
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc2Bpp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbPvrtc2Bpp
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 131
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPowerVR texture compression format (iOS and Android).\n"
+  example: []
+  syntax:
+    content: RgbPvrtc2Bpp = 50
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc4Bpp
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc4Bpp
+  id: RgbPvrtc4Bpp
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbPvrtc4Bpp
+  nameWithType: SurfaceFormat.RgbPvrtc4Bpp
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbPvrtc4Bpp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbPvrtc4Bpp
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 135
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPowerVR texture compression format (iOS and Android).\n"
+  example: []
+  syntax:
+    content: RgbPvrtc4Bpp = 51
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc2Bpp
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc2Bpp
+  id: RgbaPvrtc2Bpp
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbaPvrtc2Bpp
+  nameWithType: SurfaceFormat.RgbaPvrtc2Bpp
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc2Bpp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbaPvrtc2Bpp
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 139
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPowerVR texture compression format (iOS and Android).\n"
+  example: []
+  syntax:
+    content: RgbaPvrtc2Bpp = 52
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc4Bpp
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc4Bpp
+  id: RgbaPvrtc4Bpp
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbaPvrtc4Bpp
+  nameWithType: SurfaceFormat.RgbaPvrtc4Bpp
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaPvrtc4Bpp
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbaPvrtc4Bpp
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 143
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nPowerVR texture compression format (iOS and Android).\n"
+  example: []
+  syntax:
+    content: RgbaPvrtc4Bpp = 53
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbEtc1
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbEtc1
+  id: RgbEtc1
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbEtc1
+  nameWithType: SurfaceFormat.RgbEtc1
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbEtc1
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbEtc1
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 147
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nEriccson Texture Compression (Android)\n"
+  example: []
+  syntax:
+    content: RgbEtc1 = 60
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1a
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1a
+  id: Dxt1a
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: Dxt1a
+  nameWithType: SurfaceFormat.Dxt1a
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.Dxt1a
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Dxt1a
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 151
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDXT1 version where 1-bit alpha is used.\n"
+  example: []
+  syntax:
+    content: Dxt1a = 70
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcExplicitAlpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcExplicitAlpha
+  id: RgbaAtcExplicitAlpha
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbaAtcExplicitAlpha
+  nameWithType: SurfaceFormat.RgbaAtcExplicitAlpha
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcExplicitAlpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbaAtcExplicitAlpha
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 155
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nATC/ATITC compression (Android)\n"
+  example: []
+  syntax:
+    content: RgbaAtcExplicitAlpha = 80
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcInterpolatedAlpha
+  commentId: F:Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcInterpolatedAlpha
+  id: RgbaAtcInterpolatedAlpha
+  parent: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  langs:
+  - csharp
+  - vb
+  name: RgbaAtcInterpolatedAlpha
+  nameWithType: SurfaceFormat.RgbaAtcInterpolatedAlpha
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat.RgbaAtcInterpolatedAlpha
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SurfaceFormat.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RgbaAtcInterpolatedAlpha
+    path: ../MonoGame.Framework/Graphics/SurfaceFormat.cs
+    startLine: 159
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nATC/ATITC compression (Android)\n"
+  example: []
+  syntax:
+    content: RgbaAtcInterpolatedAlpha = 81
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  commentId: T:Microsoft.Xna.Framework.Graphics.SurfaceFormat
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SurfaceFormat
+  nameWithType: SurfaceFormat
+  fullName: Microsoft.Xna.Framework.Graphics.SurfaceFormat

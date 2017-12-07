@@ -1,0 +1,675 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  id: SpriteFont.Glyph
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.BoundsInTexture
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Character
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Cropping
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Empty
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.LeftSideBearing
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.RightSideBearing
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Width
+  - Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.WidthIncludingBearings
+  langs:
+  - csharp
+  - vb
+  name: SpriteFont.Glyph
+  nameWithType: SpriteFont.Glyph
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Glyph
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 337
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nStruct that defines the spacing, Kerning, and bounds of a character.\n"
+  remarks: Provides the data necessary to implement custom SpriteFont rendering.
+  example: []
+  syntax:
+    content: public struct Glyph
+    content.vb: Public Structure Glyph
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Character
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Character
+  id: Character
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: SpriteFont.Glyph.Character
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Character
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Character
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 342
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe char associated with this glyph.\n"
+  example: []
+  syntax:
+    content: public char Character
+    return:
+      type: System.Char
+    content.vb: Public Character As Char
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.BoundsInTexture
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.BoundsInTexture
+  id: BoundsInTexture
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: BoundsInTexture
+  nameWithType: SpriteFont.Glyph.BoundsInTexture
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.BoundsInTexture
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: BoundsInTexture
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 346
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nRectangle in the font texture where this letter exists.\n"
+  example: []
+  syntax:
+    content: public Rectangle BoundsInTexture
+    return:
+      type: Microsoft.Xna.Framework.Rectangle
+    content.vb: Public BoundsInTexture As Rectangle
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Cropping
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Cropping
+  id: Cropping
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: Cropping
+  nameWithType: SpriteFont.Glyph.Cropping
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Cropping
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Cropping
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 350
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCropping applied to the BoundsInTexture to calculate the bounds of the actual character.\n"
+  example: []
+  syntax:
+    content: public Rectangle Cropping
+    return:
+      type: Microsoft.Xna.Framework.Rectangle
+    content.vb: Public Cropping As Rectangle
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.LeftSideBearing
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.LeftSideBearing
+  id: LeftSideBearing
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: LeftSideBearing
+  nameWithType: SpriteFont.Glyph.LeftSideBearing
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.LeftSideBearing
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftSideBearing
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 354
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe amount of space between the left side ofthe character and its first pixel in the X dimention.\n"
+  example: []
+  syntax:
+    content: public float LeftSideBearing
+    return:
+      type: System.Single
+    content.vb: Public LeftSideBearing As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.RightSideBearing
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.RightSideBearing
+  id: RightSideBearing
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: RightSideBearing
+  nameWithType: SpriteFont.Glyph.RightSideBearing
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.RightSideBearing
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightSideBearing
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 358
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe amount of space between the right side of the character and its last pixel in the X dimention.\n"
+  example: []
+  syntax:
+    content: public float RightSideBearing
+    return:
+      type: System.Single
+    content.vb: Public RightSideBearing As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Width
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Width
+  id: Width
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: SpriteFont.Glyph.Width
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Width
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Width
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 362
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nWidth of the character before kerning is applied. \n"
+  example: []
+  syntax:
+    content: public float Width
+    return:
+      type: System.Single
+    content.vb: Public Width As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.WidthIncludingBearings
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.WidthIncludingBearings
+  id: WidthIncludingBearings
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: WidthIncludingBearings
+  nameWithType: SpriteFont.Glyph.WidthIncludingBearings
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.WidthIncludingBearings
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: WidthIncludingBearings
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 366
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nWidth of the character before kerning is applied. \n"
+  example: []
+  syntax:
+    content: public float WidthIncludingBearings
+    return:
+      type: System.Single
+    content.vb: Public WidthIncludingBearings As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Empty
+  commentId: F:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Empty
+  id: Empty
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: SpriteFont.Glyph.Empty
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.Empty
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Empty
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 368
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public static readonly SpriteFont.Glyph Empty
+    return:
+      type: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+    content.vb: Public Shared ReadOnly Empty As SpriteFont.Glyph
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SpriteFont.Glyph.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/SpriteFont.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Graphics/SpriteFont.cs
+    startLine: 370
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: Microsoft.Xna.Framework.Rectangle
+  commentId: T:Microsoft.Xna.Framework.Rectangle
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: Microsoft.Xna.Framework.Rectangle
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SpriteFont.Glyph
+  nameWithType: SpriteFont.Glyph
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: SpriteFont.Glyph.ToString
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteFont.Glyph.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

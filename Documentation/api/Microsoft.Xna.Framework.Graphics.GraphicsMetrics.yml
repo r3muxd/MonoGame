@@ -1,0 +1,794 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  id: GraphicsMetrics
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Addition(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Subtraction(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount
+  - Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount
+  langs:
+  - csharp
+  - vb
+  name: GraphicsMetrics
+  nameWithType: GraphicsMetrics
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsMetrics
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nA snapshot of rendering statistics from <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics\" data-throw-if-not-resolved=\"false\"></xref> to be used for runtime debugging and profiling.\n"
+  example: []
+  syntax:
+    content: public struct GraphicsMetrics
+    content.vb: Public Structure GraphicsMetrics
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount
+  id: ClearCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: ClearCount
+  nameWithType: GraphicsMetrics.ClearCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ClearCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 23
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of times Clear was called.\n"
+  example: []
+  syntax:
+    content: public long ClearCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property ClearCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount
+  id: DrawCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: DrawCount
+  nameWithType: GraphicsMetrics.DrawCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 28
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of times Draw was called.\n"
+  example: []
+  syntax:
+    content: public long DrawCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property DrawCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount
+  id: PixelShaderCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: PixelShaderCount
+  nameWithType: GraphicsMetrics.PixelShaderCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PixelShaderCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 33
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of times the pixel shader was changed on the GPU.\n"
+  example: []
+  syntax:
+    content: public long PixelShaderCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property PixelShaderCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount
+  id: PrimitiveCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: PrimitiveCount
+  nameWithType: GraphicsMetrics.PrimitiveCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PrimitiveCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of rendered primitives.\n"
+  example: []
+  syntax:
+    content: public long PrimitiveCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property PrimitiveCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount
+  id: SpriteCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: SpriteCount
+  nameWithType: GraphicsMetrics.SpriteCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SpriteCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 43
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of sprites and text characters rendered via <xref href=\"Microsoft.Xna.Framework.Graphics.SpriteBatch\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public long SpriteCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property SpriteCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount
+  id: TargetCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: TargetCount
+  nameWithType: GraphicsMetrics.TargetCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TargetCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of times a target was changed on the GPU.\n"
+  example: []
+  syntax:
+    content: public long TargetCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property TargetCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount
+  id: TextureCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: TextureCount
+  nameWithType: GraphicsMetrics.TextureCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TextureCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 53
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of times a texture was changed on the GPU.\n"
+  example: []
+  syntax:
+    content: public long TextureCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property TextureCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount
+  id: VertexShaderCount
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: VertexShaderCount
+  nameWithType: GraphicsMetrics.VertexShaderCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexShaderCount
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nNumber of times the vertex shader was changed on the GPU.\n"
+  example: []
+  syntax:
+    content: public long VertexShaderCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property VertexShaderCount As Long
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Subtraction(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Subtraction(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  id: op_Subtraction(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(GraphicsMetrics, GraphicsMetrics)
+  nameWithType: GraphicsMetrics.Subtraction(GraphicsMetrics, GraphicsMetrics)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.Subtraction(Microsoft.Xna.Framework.Graphics.GraphicsMetrics, Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Subtraction
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns the difference between two sets of metrics.\n"
+  example: []
+  syntax:
+    content: public static GraphicsMetrics operator -(GraphicsMetrics value1, GraphicsMetrics value2)
+    parameters:
+    - id: value1
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+      description: Source <xref href="Microsoft.Xna.Framework.Graphics.GraphicsMetrics" data-throw-if-not-resolved="false"></xref> on the left of the sub sign.
+    - id: value2
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+      description: Source <xref href="Microsoft.Xna.Framework.Graphics.GraphicsMetrics" data-throw-if-not-resolved="false"></xref> on the right of the sub sign.
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+      description: Difference between two sets of metrics.
+    content.vb: Public Shared Operator -(value1 As GraphicsMetrics, value2 As GraphicsMetrics) As GraphicsMetrics
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Addition(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Addition(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  id: op_Addition(Microsoft.Xna.Framework.Graphics.GraphicsMetrics,Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  langs:
+  - csharp
+  - vb
+  name: Addition(GraphicsMetrics, GraphicsMetrics)
+  nameWithType: GraphicsMetrics.Addition(GraphicsMetrics, GraphicsMetrics)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.Addition(Microsoft.Xna.Framework.Graphics.GraphicsMetrics, Microsoft.Xna.Framework.Graphics.GraphicsMetrics)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/GraphicsMetrics.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Addition
+    path: ../MonoGame.Framework/Graphics/GraphicsMetrics.cs
+    startLine: 87
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns the combination of two sets of metrics.\n"
+  example: []
+  syntax:
+    content: public static GraphicsMetrics operator +(GraphicsMetrics value1, GraphicsMetrics value2)
+    parameters:
+    - id: value1
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+      description: Source <xref href="Microsoft.Xna.Framework.Graphics.GraphicsMetrics" data-throw-if-not-resolved="false"></xref> on the left of the add sign.
+    - id: value2
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+      description: Source <xref href="Microsoft.Xna.Framework.Graphics.GraphicsMetrics" data-throw-if-not-resolved="false"></xref> on the right of the add sign.
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+      description: Combination of two sets of metrics.
+    content.vb: Public Shared Operator +(value1 As GraphicsMetrics, value2 As GraphicsMetrics) As GraphicsMetrics
+  overload: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsDevice.Metrics
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount
+  isExternal: false
+  name: ClearCount
+  nameWithType: GraphicsMetrics.ClearCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.ClearCount
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount
+  isExternal: false
+  name: DrawCount
+  nameWithType: GraphicsMetrics.DrawCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.DrawCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount
+  isExternal: false
+  name: PixelShaderCount
+  nameWithType: GraphicsMetrics.PixelShaderCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PixelShaderCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount
+  isExternal: false
+  name: PrimitiveCount
+  nameWithType: GraphicsMetrics.PrimitiveCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.PrimitiveCount
+- uid: Microsoft.Xna.Framework.Graphics.SpriteBatch
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteBatch
+  isExternal: false
+  name: SpriteBatch
+  nameWithType: SpriteBatch
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteBatch
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount
+  isExternal: false
+  name: SpriteCount
+  nameWithType: GraphicsMetrics.SpriteCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.SpriteCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount
+  isExternal: false
+  name: TargetCount
+  nameWithType: GraphicsMetrics.TargetCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TargetCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount
+  isExternal: false
+  name: TextureCount
+  nameWithType: GraphicsMetrics.TextureCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.TextureCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount
+  isExternal: false
+  name: VertexShaderCount
+  nameWithType: GraphicsMetrics.VertexShaderCount
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.VertexShaderCount
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsMetrics
+  nameWithType: GraphicsMetrics
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Subtraction*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Subtraction
+  isExternal: false
+  name: Subtraction
+  nameWithType: GraphicsMetrics.Subtraction
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.Subtraction
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Addition*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.GraphicsMetrics.op_Addition
+  isExternal: false
+  name: Addition
+  nameWithType: GraphicsMetrics.Addition
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsMetrics.Addition

@@ -1,0 +1,1142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  id: VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor(Microsoft.Xna.Framework.Graphics.VertexElement[])
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor(System.Int32,Microsoft.Xna.Framework.Graphics.VertexElement[])
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(System.Object)
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Equality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Inequality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  - Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride
+  langs:
+  - csharp
+  - vb
+  name: VertexDeclaration
+  nameWithType: VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.OpenGL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexDeclaration
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.OpenGL.cs
+    startLine: 10
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDefines per-vertex data of a vertex buffer.\n"
+  remarks: "\n<xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration\" data-throw-if-not-resolved=\"false\"></xref> implements <xref href=\"System.IEquatable%601\" data-throw-if-not-resolved=\"false\"></xref> and can be used as\na key in a dictionary. Two vertex declarations are considered equal if the vertices are\nstructurally equivalent, i.e. the vertex elements and the vertex stride are identical. (The\nproperties <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsResource.Name\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag\" data-throw-if-not-resolved=\"false\"></xref> are\nignored in <xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)\" data-throw-if-not-resolved=\"false\"></xref>!)\n"
+  example: []
+  syntax:
+    content: 'public class VertexDeclaration : GraphicsResource, IDisposable, IEquatable<VertexDeclaration>'
+    content.vb: >-
+      Public Class VertexDeclaration
+          Inherits GraphicsResource
+          Implements IDisposable, IEquatable(Of VertexDeclaration)
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource
+  implements:
+  - System.IDisposable
+  - System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}
+  inheritedMembers:
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor(Microsoft.Xna.Framework.Graphics.VertexElement[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor(Microsoft.Xna.Framework.Graphics.VertexElement[])
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.VertexElement[])'
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: VertexDeclaration(VertexElement[])
+  nameWithType: VertexDeclaration.VertexDeclaration(VertexElement[])
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexDeclaration(Microsoft.Xna.Framework.Graphics.VertexElement[])
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 144
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public VertexDeclaration(params VertexElement[] elements)
+    parameters:
+    - id: elements
+      type: Microsoft.Xna.Framework.Graphics.VertexElement[]
+      description: The vertex elements.
+    content.vb: Public Sub New(ParamArray elements As VertexElement())
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">elements</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref> or empty.\n"
+  nameWithType.vb: VertexDeclaration.VertexDeclaration(VertexElement())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexDeclaration(Microsoft.Xna.Framework.Graphics.VertexElement())
+  name.vb: VertexDeclaration(VertexElement())
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor(System.Int32,Microsoft.Xna.Framework.Graphics.VertexElement[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor(System.Int32,Microsoft.Xna.Framework.Graphics.VertexElement[])
+  id: '#ctor(System.Int32,Microsoft.Xna.Framework.Graphics.VertexElement[])'
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: VertexDeclaration(Int32, VertexElement[])
+  nameWithType: VertexDeclaration.VertexDeclaration(Int32, VertexElement[])
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexDeclaration(System.Int32, Microsoft.Xna.Framework.Graphics.VertexElement[])
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 157
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public VertexDeclaration(int vertexStride, params VertexElement[] elements)
+    parameters:
+    - id: vertexStride
+      type: System.Int32
+      description: The size of a vertex (including padding) in bytes.
+    - id: elements
+      type: Microsoft.Xna.Framework.Graphics.VertexElement[]
+      description: The vertex elements.
+    content.vb: Public Sub New(vertexStride As Integer, ParamArray elements As VertexElement())
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">elements</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref> or empty.\n"
+  nameWithType.vb: VertexDeclaration.VertexDeclaration(Int32, VertexElement())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexDeclaration(System.Int32, Microsoft.Xna.Framework.Graphics.VertexElement())
+  name.vb: VertexDeclaration(Int32, VertexElement())
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements
+  id: GetVertexElements
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: GetVertexElements()
+  nameWithType: VertexDeclaration.GetVertexElements()
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetVertexElements
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 232
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets a copy of the vertex elements.\n"
+  example: []
+  syntax:
+    content: public VertexElement[] GetVertexElements()
+    return:
+      type: Microsoft.Xna.Framework.Graphics.VertexElement[]
+      description: A copy of the vertex elements.
+    content.vb: Public Function GetVertexElements As VertexElement()
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride
+  commentId: P:Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride
+  id: VertexStride
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: VertexStride
+  nameWithType: VertexDeclaration.VertexStride
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VertexStride
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 241
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the size of a vertex (including padding) in bytes.\n"
+  example: []
+  syntax:
+    content: public int VertexStride { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The size of a vertex (including padding) in bytes.
+    content.vb: Public ReadOnly Property VertexStride As Integer
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: VertexDeclaration.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 254
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: "\n<xref uid=\"langword_csharp_true\" name=\"true\" href=\"\"></xref> if the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance;\notherwise, <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref>.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  id: Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Equals(VertexDeclaration)
+  nameWithType: VertexDeclaration.Equals(VertexDeclaration)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 268
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDetermines whether the specified <xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration\" data-throw-if-not-resolved=\"false\"></xref> is equal to this\ninstance.\n"
+  example: []
+  syntax:
+    content: public bool Equals(VertexDeclaration other)
+    parameters:
+    - id: other
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: "\n<xref uid=\"langword_csharp_true\" name=\"true\" href=\"\"></xref> if the specified <xref href=\"Microsoft.Xna.Framework.Graphics.VertexDeclaration\" data-throw-if-not-resolved=\"false\"></xref> is equal to this\ninstance; otherwise, <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref>.\n"
+    content.vb: Public Function Equals(other As VertexDeclaration) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: VertexDeclaration.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 280
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data\nstructures like a hash table.\n"
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Equality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Equality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  id: op_Equality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Equality(VertexDeclaration, VertexDeclaration)
+  nameWithType: VertexDeclaration.Equality(VertexDeclaration, VertexDeclaration)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equality(Microsoft.Xna.Framework.Graphics.VertexDeclaration, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 295
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCompares two <xref href=\"Microsoft.Xna.Framework.Graphics.VertexElement\" data-throw-if-not-resolved=\"false\"></xref> instances to determine whether they are the\nsame.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(VertexDeclaration left, VertexDeclaration right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The first instance.
+    - id: right
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\n<xref uid=\"langword_csharp_true\" name=\"true\" href=\"\"></xref> if the <code data-dev-comment-type=\"paramref\" class=\"paramref\">left</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">right</code> are\nthe same; otherwise, <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref>.\n"
+    content.vb: Public Shared Operator =(left As VertexDeclaration, right As VertexDeclaration) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Inequality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Inequality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  id: op_Inequality(Microsoft.Xna.Framework.Graphics.VertexDeclaration,Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Inequality(VertexDeclaration, VertexDeclaration)
+  nameWithType: VertexDeclaration.Inequality(VertexDeclaration, VertexDeclaration)
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Inequality(Microsoft.Xna.Framework.Graphics.VertexDeclaration, Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Graphics/Vertices/VertexDeclaration.cs
+    startLine: 310
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCompares two <xref href=\"Microsoft.Xna.Framework.Graphics.VertexElement\" data-throw-if-not-resolved=\"false\"></xref> instances to determine whether they are\ndifferent.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(VertexDeclaration left, VertexDeclaration right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The first instance.
+    - id: right
+      type: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\n<xref uid=\"langword_csharp_true\" name=\"true\" href=\"\"></xref> if the <code data-dev-comment-type=\"paramref\" class=\"paramref\">left</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">right</code> are\nthe different; otherwise, <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref>.\n"
+    content.vb: Public Shared Operator <>(left As VertexDeclaration, right As VertexDeclaration) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Name
+  nameWithType: GraphicsResource.Name
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Tag
+  nameWithType: GraphicsResource.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsResource
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsResource
+  nameWithType: GraphicsResource
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}
+  commentId: T:System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<VertexDeclaration>
+  nameWithType: IEquatable<VertexDeclaration>
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Graphics.VertexDeclaration>
+  nameWithType.vb: IEquatable(Of VertexDeclaration)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  name.vb: IEquatable(Of VertexDeclaration)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    name: VertexDeclaration
+    nameWithType: VertexDeclaration
+    fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    name: VertexDeclaration
+    nameWithType: VertexDeclaration
+    fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDeviceResetting()
+  nameWithType: GraphicsResource.GraphicsDeviceResetting()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: GraphicsResource.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: GraphicsResource.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Dispose()
+  nameWithType: GraphicsResource.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: GraphicsResource.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Disposing
+  nameWithType: GraphicsResource.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsResource.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsResource.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: ToString()
+  nameWithType: GraphicsResource.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.#ctor
+  isExternal: false
+  name: VertexDeclaration
+  nameWithType: VertexDeclaration.VertexDeclaration
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexDeclaration
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: Microsoft.Xna.Framework.Graphics.VertexElement[]
+  name: VertexElement[]
+  nameWithType: VertexElement[]
+  fullName: Microsoft.Xna.Framework.Graphics.VertexElement[]
+  nameWithType.vb: VertexElement()
+  fullName.vb: Microsoft.Xna.Framework.Graphics.VertexElement()
+  name.vb: VertexElement()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.VertexElement
+    name: VertexElement
+    nameWithType: VertexElement
+    fullName: Microsoft.Xna.Framework.Graphics.VertexElement
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.VertexElement
+    name: VertexElement
+    nameWithType: VertexElement
+    fullName: Microsoft.Xna.Framework.Graphics.VertexElement
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements
+  isExternal: false
+  name: GetVertexElements
+  nameWithType: VertexDeclaration.GetVertexElements
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetVertexElements
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride
+  isExternal: false
+  name: VertexStride
+  nameWithType: VertexDeclaration.VertexStride
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.VertexStride
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: VertexDeclaration.Equals
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  commentId: M:System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  parent: System.IEquatable{Microsoft.Xna.Framework.Graphics.VertexDeclaration}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(VertexDeclaration)
+  nameWithType: IEquatable<VertexDeclaration>.Equals(VertexDeclaration)
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Graphics.VertexDeclaration>.Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  nameWithType.vb: IEquatable(Of VertexDeclaration).Equals(VertexDeclaration)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Graphics.VertexDeclaration).Equals(Microsoft.Xna.Framework.Graphics.VertexDeclaration)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<VertexDeclaration>.Equals
+    fullName: System.IEquatable<Microsoft.Xna.Framework.Graphics.VertexDeclaration>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    name: VertexDeclaration
+    nameWithType: VertexDeclaration
+    fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of VertexDeclaration).Equals
+    fullName: System.IEquatable(Of Microsoft.Xna.Framework.Graphics.VertexDeclaration).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+    name: VertexDeclaration
+    nameWithType: VertexDeclaration
+    fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: VertexDeclaration.GetHashCode
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.GetHashCode
+- uid: Microsoft.Xna.Framework.Graphics.VertexElement
+  commentId: T:Microsoft.Xna.Framework.Graphics.VertexElement
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: VertexElement
+  nameWithType: VertexElement
+  fullName: Microsoft.Xna.Framework.Graphics.VertexElement
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: VertexDeclaration.Equality
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Equality
+- uid: Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.VertexDeclaration.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: VertexDeclaration.Inequality
+  fullName: Microsoft.Xna.Framework.Graphics.VertexDeclaration.Inequality

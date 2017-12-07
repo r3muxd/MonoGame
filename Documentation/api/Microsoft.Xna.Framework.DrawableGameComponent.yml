@@ -1,0 +1,1480 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.DrawableGameComponent
+  commentId: T:Microsoft.Xna.Framework.DrawableGameComponent
+  id: DrawableGameComponent
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.DrawableGameComponent.#ctor(Microsoft.Xna.Framework.Game)
+  - Microsoft.Xna.Framework.DrawableGameComponent.Draw(Microsoft.Xna.Framework.GameTime)
+  - Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder
+  - Microsoft.Xna.Framework.DrawableGameComponent.DrawOrderChanged
+  - Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice
+  - Microsoft.Xna.Framework.DrawableGameComponent.Initialize
+  - Microsoft.Xna.Framework.DrawableGameComponent.LoadContent
+  - Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent
+  - Microsoft.Xna.Framework.DrawableGameComponent.Visible
+  - Microsoft.Xna.Framework.DrawableGameComponent.VisibleChanged
+  langs:
+  - csharp
+  - vb
+  name: DrawableGameComponent
+  nameWithType: DrawableGameComponent
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawableGameComponent
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: 'public class DrawableGameComponent : GameComponent, IGameComponent, IUpdateable, IComparable<GameComponent>, IDisposable, IDrawable'
+    content.vb: >-
+      Public Class DrawableGameComponent
+          Inherits GameComponent
+          Implements IGameComponent, IUpdateable, IComparable(Of GameComponent), IDisposable, IDrawable
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.GameComponent
+  implements:
+  - Microsoft.Xna.Framework.IGameComponent
+  - Microsoft.Xna.Framework.IUpdateable
+  - System.IComparable{Microsoft.Xna.Framework.GameComponent}
+  - System.IDisposable
+  - Microsoft.Xna.Framework.IDrawable
+  inheritedMembers:
+  - Microsoft.Xna.Framework.GameComponent.Game
+  - Microsoft.Xna.Framework.GameComponent.Enabled
+  - Microsoft.Xna.Framework.GameComponent.UpdateOrder
+  - Microsoft.Xna.Framework.GameComponent.EnabledChanged
+  - Microsoft.Xna.Framework.GameComponent.UpdateOrderChanged
+  - Microsoft.Xna.Framework.GameComponent.Update(Microsoft.Xna.Framework.GameTime)
+  - Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.GameComponent.OnEnabledChanged(System.Object,System.EventArgs)
+  - Microsoft.Xna.Framework.GameComponent.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.GameComponent.Dispose
+  - Microsoft.Xna.Framework.GameComponent.CompareTo(Microsoft.Xna.Framework.GameComponent)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice
+  id: GraphicsDevice
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: GraphicsDevice
+  nameWithType: DrawableGameComponent.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GraphicsDevice
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GraphicsDevice GraphicsDevice { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    content.vb: Public ReadOnly Property GraphicsDevice As GraphicsDevice
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder
+  commentId: P:Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder
+  id: DrawOrder
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: DrawOrder
+  nameWithType: DrawableGameComponent.DrawOrder
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawOrder
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 19
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public int DrawOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DrawOrder As Integer
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder*
+  implements:
+  - Microsoft.Xna.Framework.IDrawable.DrawOrder
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.Visible
+  commentId: P:Microsoft.Xna.Framework.DrawableGameComponent.Visible
+  id: Visible
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: DrawableGameComponent.Visible
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.Visible
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Visible
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Visible As Boolean
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.Visible*
+  implements:
+  - Microsoft.Xna.Framework.IDrawable.Visible
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrderChanged
+  commentId: E:Microsoft.Xna.Framework.DrawableGameComponent.DrawOrderChanged
+  id: DrawOrderChanged
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: DrawOrderChanged
+  nameWithType: DrawableGameComponent.DrawOrderChanged
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrderChanged
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DrawOrderChanged
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 45
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public event EventHandler<EventArgs> DrawOrderChanged
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event DrawOrderChanged As EventHandler(Of EventArgs)
+  implements:
+  - Microsoft.Xna.Framework.IDrawable.DrawOrderChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.VisibleChanged
+  commentId: E:Microsoft.Xna.Framework.DrawableGameComponent.VisibleChanged
+  id: VisibleChanged
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: VisibleChanged
+  nameWithType: DrawableGameComponent.VisibleChanged
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.VisibleChanged
+  type: Event
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: VisibleChanged
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 46
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public event EventHandler<EventArgs> VisibleChanged
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event VisibleChanged As EventHandler(Of EventArgs)
+  implements:
+  - Microsoft.Xna.Framework.IDrawable.VisibleChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.#ctor(Microsoft.Xna.Framework.Game)
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.#ctor(Microsoft.Xna.Framework.Game)
+  id: '#ctor(Microsoft.Xna.Framework.Game)'
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: DrawableGameComponent(Game)
+  nameWithType: DrawableGameComponent.DrawableGameComponent(Game)
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.DrawableGameComponent(Microsoft.Xna.Framework.Game)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public DrawableGameComponent(Game game)
+    parameters:
+    - id: game
+      type: Microsoft.Xna.Framework.Game
+    content.vb: Public Sub New(game As Game)
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.Initialize
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.Initialize
+  id: Initialize
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: DrawableGameComponent.Initialize()
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.Initialize()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Initialize
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 53
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public override void Initialize()
+    content.vb: Public Overrides Sub Initialize
+  overridden: Microsoft.Xna.Framework.GameComponent.Initialize
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.Initialize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.LoadContent
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.LoadContent
+  id: LoadContent
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: LoadContent()
+  nameWithType: DrawableGameComponent.LoadContent()
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.LoadContent()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LoadContent
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 62
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void LoadContent()
+    content.vb: Protected Overridable Sub LoadContent
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.LoadContent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent
+  id: UnloadContent
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: UnloadContent()
+  nameWithType: DrawableGameComponent.UnloadContent()
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: UnloadContent
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 64
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void UnloadContent()
+    content.vb: Protected Overridable Sub UnloadContent
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.Draw(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.Draw(Microsoft.Xna.Framework.GameTime)
+  id: Draw(Microsoft.Xna.Framework.GameTime)
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: Draw(GameTime)
+  nameWithType: DrawableGameComponent.Draw(GameTime)
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.Draw(Microsoft.Xna.Framework.GameTime)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Draw
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public virtual void Draw(GameTime gameTime)
+    parameters:
+    - id: gameTime
+      type: Microsoft.Xna.Framework.GameTime
+    content.vb: Public Overridable Sub Draw(gameTime As GameTime)
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.Draw*
+  implements:
+  - Microsoft.Xna.Framework.IDrawable.Draw(Microsoft.Xna.Framework.GameTime)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged(System.Object,System.EventArgs)
+  id: OnVisibleChanged(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: OnVisibleChanged(Object, EventArgs)
+  nameWithType: DrawableGameComponent.OnVisibleChanged(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OnVisibleChanged
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 68
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void OnVisibleChanged(object sender, EventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: System.EventArgs
+    content.vb: Protected Overridable Sub OnVisibleChanged(sender As Object, args As EventArgs)
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged(System.Object,System.EventArgs)
+  id: OnDrawOrderChanged(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.DrawableGameComponent
+  langs:
+  - csharp
+  - vb
+  name: OnDrawOrderChanged(Object, EventArgs)
+  nameWithType: DrawableGameComponent.OnDrawOrderChanged(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/DrawableGameComponent.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OnDrawOrderChanged
+    path: ../MonoGame.Framework/DrawableGameComponent.cs
+    startLine: 73
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: protected virtual void OnDrawOrderChanged(object sender, EventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: System.EventArgs
+    content.vb: Protected Overridable Sub OnDrawOrderChanged(sender As Object, args As EventArgs)
+  overload: Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.GameComponent
+  commentId: T:Microsoft.Xna.Framework.GameComponent
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameComponent
+  nameWithType: GameComponent
+  fullName: Microsoft.Xna.Framework.GameComponent
+- uid: Microsoft.Xna.Framework.IGameComponent
+  commentId: T:Microsoft.Xna.Framework.IGameComponent
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: IGameComponent
+  nameWithType: IGameComponent
+  fullName: Microsoft.Xna.Framework.IGameComponent
+- uid: Microsoft.Xna.Framework.IUpdateable
+  commentId: T:Microsoft.Xna.Framework.IUpdateable
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: IUpdateable
+  nameWithType: IUpdateable
+  fullName: Microsoft.Xna.Framework.IUpdateable
+- uid: System.IComparable{Microsoft.Xna.Framework.GameComponent}
+  commentId: T:System.IComparable{Microsoft.Xna.Framework.GameComponent}
+  parent: System
+  definition: System.IComparable`1
+  name: IComparable<GameComponent>
+  nameWithType: IComparable<GameComponent>
+  fullName: System.IComparable<Microsoft.Xna.Framework.GameComponent>
+  nameWithType.vb: IComparable(Of GameComponent)
+  fullName.vb: System.IComparable(Of Microsoft.Xna.Framework.GameComponent)
+  name.vb: IComparable(Of GameComponent)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.GameComponent
+    name: GameComponent
+    nameWithType: GameComponent
+    fullName: Microsoft.Xna.Framework.GameComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.GameComponent
+    name: GameComponent
+    nameWithType: GameComponent
+    fullName: Microsoft.Xna.Framework.GameComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Xna.Framework.IDrawable
+  commentId: T:Microsoft.Xna.Framework.IDrawable
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: Microsoft.Xna.Framework.IDrawable
+- uid: Microsoft.Xna.Framework.GameComponent.Game
+  commentId: P:Microsoft.Xna.Framework.GameComponent.Game
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: Game
+  nameWithType: GameComponent.Game
+  fullName: Microsoft.Xna.Framework.GameComponent.Game
+- uid: Microsoft.Xna.Framework.GameComponent.Enabled
+  commentId: P:Microsoft.Xna.Framework.GameComponent.Enabled
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: Enabled
+  nameWithType: GameComponent.Enabled
+  fullName: Microsoft.Xna.Framework.GameComponent.Enabled
+- uid: Microsoft.Xna.Framework.GameComponent.UpdateOrder
+  commentId: P:Microsoft.Xna.Framework.GameComponent.UpdateOrder
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: UpdateOrder
+  nameWithType: GameComponent.UpdateOrder
+  fullName: Microsoft.Xna.Framework.GameComponent.UpdateOrder
+- uid: Microsoft.Xna.Framework.GameComponent.EnabledChanged
+  commentId: E:Microsoft.Xna.Framework.GameComponent.EnabledChanged
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: EnabledChanged
+  nameWithType: GameComponent.EnabledChanged
+  fullName: Microsoft.Xna.Framework.GameComponent.EnabledChanged
+- uid: Microsoft.Xna.Framework.GameComponent.UpdateOrderChanged
+  commentId: E:Microsoft.Xna.Framework.GameComponent.UpdateOrderChanged
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: UpdateOrderChanged
+  nameWithType: GameComponent.UpdateOrderChanged
+  fullName: Microsoft.Xna.Framework.GameComponent.UpdateOrderChanged
+- uid: Microsoft.Xna.Framework.GameComponent.Update(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Microsoft.Xna.Framework.GameComponent.Update(Microsoft.Xna.Framework.GameTime)
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: Update(GameTime)
+  nameWithType: GameComponent.Update(GameTime)
+  fullName: Microsoft.Xna.Framework.GameComponent.Update(Microsoft.Xna.Framework.GameTime)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.Update(Microsoft.Xna.Framework.GameTime)
+    name: Update
+    nameWithType: GameComponent.Update
+    fullName: Microsoft.Xna.Framework.GameComponent.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.Update(Microsoft.Xna.Framework.GameTime)
+    name: Update
+    nameWithType: GameComponent.Update
+    fullName: Microsoft.Xna.Framework.GameComponent.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: true
+  name: OnUpdateOrderChanged(Object, EventArgs)
+  nameWithType: GameComponent.OnUpdateOrderChanged(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged(System.Object, System.EventArgs)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged(System.Object,System.EventArgs)
+    name: OnUpdateOrderChanged
+    nameWithType: GameComponent.OnUpdateOrderChanged
+    fullName: Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged(System.Object,System.EventArgs)
+    name: OnUpdateOrderChanged
+    nameWithType: GameComponent.OnUpdateOrderChanged
+    fullName: Microsoft.Xna.Framework.GameComponent.OnUpdateOrderChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameComponent.OnEnabledChanged(System.Object,System.EventArgs)
+  commentId: M:Microsoft.Xna.Framework.GameComponent.OnEnabledChanged(System.Object,System.EventArgs)
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: true
+  name: OnEnabledChanged(Object, EventArgs)
+  nameWithType: GameComponent.OnEnabledChanged(Object, EventArgs)
+  fullName: Microsoft.Xna.Framework.GameComponent.OnEnabledChanged(System.Object, System.EventArgs)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.OnEnabledChanged(System.Object,System.EventArgs)
+    name: OnEnabledChanged
+    nameWithType: GameComponent.OnEnabledChanged
+    fullName: Microsoft.Xna.Framework.GameComponent.OnEnabledChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.OnEnabledChanged(System.Object,System.EventArgs)
+    name: OnEnabledChanged
+    nameWithType: GameComponent.OnEnabledChanged
+    fullName: Microsoft.Xna.Framework.GameComponent.OnEnabledChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameComponent.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.GameComponent.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: GameComponent.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.GameComponent.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: GameComponent.Dispose
+    fullName: Microsoft.Xna.Framework.GameComponent.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: GameComponent.Dispose
+    fullName: Microsoft.Xna.Framework.GameComponent.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameComponent.Dispose
+  commentId: M:Microsoft.Xna.Framework.GameComponent.Dispose
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: Dispose()
+  nameWithType: GameComponent.Dispose()
+  fullName: Microsoft.Xna.Framework.GameComponent.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.Dispose
+    name: Dispose
+    nameWithType: GameComponent.Dispose
+    fullName: Microsoft.Xna.Framework.GameComponent.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.Dispose
+    name: Dispose
+    nameWithType: GameComponent.Dispose
+    fullName: Microsoft.Xna.Framework.GameComponent.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameComponent.CompareTo(Microsoft.Xna.Framework.GameComponent)
+  commentId: M:Microsoft.Xna.Framework.GameComponent.CompareTo(Microsoft.Xna.Framework.GameComponent)
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: CompareTo(GameComponent)
+  nameWithType: GameComponent.CompareTo(GameComponent)
+  fullName: Microsoft.Xna.Framework.GameComponent.CompareTo(Microsoft.Xna.Framework.GameComponent)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.CompareTo(Microsoft.Xna.Framework.GameComponent)
+    name: CompareTo
+    nameWithType: GameComponent.CompareTo
+    fullName: Microsoft.Xna.Framework.GameComponent.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameComponent
+    name: GameComponent
+    nameWithType: GameComponent
+    fullName: Microsoft.Xna.Framework.GameComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.CompareTo(Microsoft.Xna.Framework.GameComponent)
+    name: CompareTo
+    nameWithType: GameComponent.CompareTo
+    fullName: Microsoft.Xna.Framework.GameComponent.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameComponent
+    name: GameComponent
+    nameWithType: GameComponent
+    fullName: Microsoft.Xna.Framework.GameComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: DrawableGameComponent.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder
+  isExternal: false
+  name: DrawOrder
+  nameWithType: DrawableGameComponent.DrawOrder
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.DrawOrder
+- uid: Microsoft.Xna.Framework.IDrawable.DrawOrder
+  commentId: P:Microsoft.Xna.Framework.IDrawable.DrawOrder
+  parent: Microsoft.Xna.Framework.IDrawable
+  isExternal: false
+  name: DrawOrder
+  nameWithType: IDrawable.DrawOrder
+  fullName: Microsoft.Xna.Framework.IDrawable.DrawOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.Visible*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.Visible
+  isExternal: false
+  name: Visible
+  nameWithType: DrawableGameComponent.Visible
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.Visible
+- uid: Microsoft.Xna.Framework.IDrawable.Visible
+  commentId: P:Microsoft.Xna.Framework.IDrawable.Visible
+  parent: Microsoft.Xna.Framework.IDrawable
+  isExternal: false
+  name: Visible
+  nameWithType: IDrawable.Visible
+  fullName: Microsoft.Xna.Framework.IDrawable.Visible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.IDrawable.DrawOrderChanged
+  commentId: E:Microsoft.Xna.Framework.IDrawable.DrawOrderChanged
+  parent: Microsoft.Xna.Framework.IDrawable
+  isExternal: false
+  name: DrawOrderChanged
+  nameWithType: IDrawable.DrawOrderChanged
+  fullName: Microsoft.Xna.Framework.IDrawable.DrawOrderChanged
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.IDrawable.VisibleChanged
+  commentId: E:Microsoft.Xna.Framework.IDrawable.VisibleChanged
+  parent: Microsoft.Xna.Framework.IDrawable
+  isExternal: false
+  name: VisibleChanged
+  nameWithType: IDrawable.VisibleChanged
+  fullName: Microsoft.Xna.Framework.IDrawable.VisibleChanged
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.#ctor
+  isExternal: false
+  name: DrawableGameComponent
+  nameWithType: DrawableGameComponent.DrawableGameComponent
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.DrawableGameComponent
+- uid: Microsoft.Xna.Framework.Game
+  commentId: T:Microsoft.Xna.Framework.Game
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Game
+  nameWithType: Game
+  fullName: Microsoft.Xna.Framework.Game
+- uid: Microsoft.Xna.Framework.GameComponent.Initialize
+  commentId: M:Microsoft.Xna.Framework.GameComponent.Initialize
+  parent: Microsoft.Xna.Framework.GameComponent
+  isExternal: false
+  name: Initialize()
+  nameWithType: GameComponent.Initialize()
+  fullName: Microsoft.Xna.Framework.GameComponent.Initialize()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.GameComponent.Initialize
+    name: Initialize
+    nameWithType: GameComponent.Initialize
+    fullName: Microsoft.Xna.Framework.GameComponent.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.GameComponent.Initialize
+    name: Initialize
+    nameWithType: GameComponent.Initialize
+    fullName: Microsoft.Xna.Framework.GameComponent.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.Initialize*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: DrawableGameComponent.Initialize
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.Initialize
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.LoadContent*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.LoadContent
+  isExternal: false
+  name: LoadContent
+  nameWithType: DrawableGameComponent.LoadContent
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.LoadContent
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent
+  isExternal: false
+  name: UnloadContent
+  nameWithType: DrawableGameComponent.UnloadContent
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.UnloadContent
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.Draw*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.Draw
+  isExternal: false
+  name: Draw
+  nameWithType: DrawableGameComponent.Draw
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.Draw
+- uid: Microsoft.Xna.Framework.IDrawable.Draw(Microsoft.Xna.Framework.GameTime)
+  commentId: M:Microsoft.Xna.Framework.IDrawable.Draw(Microsoft.Xna.Framework.GameTime)
+  parent: Microsoft.Xna.Framework.IDrawable
+  isExternal: false
+  name: Draw(GameTime)
+  nameWithType: IDrawable.Draw(GameTime)
+  fullName: Microsoft.Xna.Framework.IDrawable.Draw(Microsoft.Xna.Framework.GameTime)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.IDrawable.Draw(Microsoft.Xna.Framework.GameTime)
+    name: Draw
+    nameWithType: IDrawable.Draw
+    fullName: Microsoft.Xna.Framework.IDrawable.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.IDrawable.Draw(Microsoft.Xna.Framework.GameTime)
+    name: Draw
+    nameWithType: IDrawable.Draw
+    fullName: Microsoft.Xna.Framework.IDrawable.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.GameTime
+    name: GameTime
+    nameWithType: GameTime
+    fullName: Microsoft.Xna.Framework.GameTime
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.GameTime
+  commentId: T:Microsoft.Xna.Framework.GameTime
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Microsoft.Xna.Framework.GameTime
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged
+  isExternal: false
+  name: OnVisibleChanged
+  nameWithType: DrawableGameComponent.OnVisibleChanged
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.OnVisibleChanged
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged*
+  commentId: Overload:Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged
+  isExternal: false
+  name: OnDrawOrderChanged
+  nameWithType: DrawableGameComponent.OnDrawOrderChanged
+  fullName: Microsoft.Xna.Framework.DrawableGameComponent.OnDrawOrderChanged

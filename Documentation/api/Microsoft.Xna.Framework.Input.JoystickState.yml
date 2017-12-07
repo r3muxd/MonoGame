@@ -1,0 +1,848 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.JoystickState
+  commentId: T:Microsoft.Xna.Framework.Input.JoystickState
+  id: JoystickState
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.JoystickState.Axes
+  - Microsoft.Xna.Framework.Input.JoystickState.Buttons
+  - Microsoft.Xna.Framework.Input.JoystickState.Equals(System.Object)
+  - Microsoft.Xna.Framework.Input.JoystickState.GetHashCode
+  - Microsoft.Xna.Framework.Input.JoystickState.Hats
+  - Microsoft.Xna.Framework.Input.JoystickState.IsConnected
+  - Microsoft.Xna.Framework.Input.JoystickState.op_Equality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  - Microsoft.Xna.Framework.Input.JoystickState.op_Inequality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  - Microsoft.Xna.Framework.Input.JoystickState.ToString
+  langs:
+  - csharp
+  - vb
+  name: JoystickState
+  nameWithType: JoystickState
+  fullName: Microsoft.Xna.Framework.Input.JoystickState
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: JoystickState
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDescribes current joystick state.\n"
+  example: []
+  syntax:
+    content: public struct JoystickState
+    content.vb: Public Structure JoystickState
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Input.JoystickState.IsConnected
+  commentId: P:Microsoft.Xna.Framework.Input.JoystickState.IsConnected
+  id: IsConnected
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: JoystickState.IsConnected
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.IsConnected
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsConnected
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a value indicating whether the joystick is connected.\n"
+  example: []
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the joystick is connected; otherwise, <code>false</code>.
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: Microsoft.Xna.Framework.Input.JoystickState.IsConnected*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Axes
+  commentId: P:Microsoft.Xna.Framework.Input.JoystickState.Axes
+  id: Axes
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: Axes
+  nameWithType: JoystickState.Axes
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Axes
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Axes
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 24
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the joystick axis values.\n"
+  example: []
+  syntax:
+    content: public int[] Axes { get; }
+    parameters: []
+    return:
+      type: System.Int32[]
+      description: An array list of ints that indicate axis values.
+    content.vb: Public ReadOnly Property Axes As Integer()
+  overload: Microsoft.Xna.Framework.Input.JoystickState.Axes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Buttons
+  commentId: P:Microsoft.Xna.Framework.Input.JoystickState.Buttons
+  id: Buttons
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: JoystickState.Buttons
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Buttons
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Buttons
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the joystick button values.\n"
+  example: []
+  syntax:
+    content: public ButtonState[] Buttons { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.ButtonState[]
+      description: An array list of ButtonState that indicate button values.
+    content.vb: Public ReadOnly Property Buttons As ButtonState()
+  overload: Microsoft.Xna.Framework.Input.JoystickState.Buttons*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Hats
+  commentId: P:Microsoft.Xna.Framework.Input.JoystickState.Hats
+  id: Hats
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: Hats
+  nameWithType: JoystickState.Hats
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Hats
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Hats
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 36
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the joystick hat values.\n"
+  example: []
+  syntax:
+    content: public JoystickHat[] Hats { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.JoystickHat[]
+      description: An array list of <xref href="Microsoft.Xna.Framework.Input.JoystickHat" data-throw-if-not-resolved="false"></xref> that indicate hat values.
+    content.vb: Public ReadOnly Property Hats As JoystickHat()
+  overload: Microsoft.Xna.Framework.Input.JoystickState.Hats*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.JoystickState.op_Equality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  commentId: M:Microsoft.Xna.Framework.Input.JoystickState.op_Equality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  id: op_Equality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: Equality(JoystickState, JoystickState)
+  nameWithType: JoystickState.Equality(JoystickState, JoystickState)
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Equality(Microsoft.Xna.Framework.Input.JoystickState, Microsoft.Xna.Framework.Input.JoystickState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 45
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether a specified instance of <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref> is\nequal to another specified <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(JoystickState left, JoystickState right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Input.JoystickState
+      description: The first <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref> to compare.
+    - id: right
+      type: Microsoft.Xna.Framework.Input.JoystickState
+      description: The second <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code>left</code> and <code>right</code> are equal; otherwise, <code>false</code>.
+    content.vb: Public Shared Operator =(left As JoystickState, right As JoystickState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.JoystickState.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.JoystickState.op_Inequality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  commentId: M:Microsoft.Xna.Framework.Input.JoystickState.op_Inequality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  id: op_Inequality(Microsoft.Xna.Framework.Input.JoystickState,Microsoft.Xna.Framework.Input.JoystickState)
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: Inequality(JoystickState, JoystickState)
+  nameWithType: JoystickState.Inequality(JoystickState, JoystickState)
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Inequality(Microsoft.Xna.Framework.Input.JoystickState, Microsoft.Xna.Framework.Input.JoystickState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 60
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether a specified instance of <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref> is not\nequal to another specified <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(JoystickState left, JoystickState right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Input.JoystickState
+      description: The first <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref> to compare.
+    - id: right
+      type: Microsoft.Xna.Framework.Input.JoystickState
+      description: The second <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code>left</code> and <code>right</code> are not equal; otherwise, <code>false</code>.
+    content.vb: Public Shared Operator <>(left As JoystickState, right As JoystickState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.JoystickState.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Input.JoystickState.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: JoystickState.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 71
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to the current <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with the current <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: >-
+        <code>true</code> if the specified <xref href="System.Object" data-throw-if-not-resolved="false"></xref> is equal to the current
+
+        <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref>; otherwise, <code>false</code>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Input.JoystickState.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.JoystickState.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Input.JoystickState.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: JoystickState.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 81
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nServes as a hash function for a <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref> object.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: >-
+        A hash code for this instance that is suitable for use in hashing algorithms and data structures such as a
+
+        hash table.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Input.JoystickState.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.JoystickState.ToString
+  commentId: M:Microsoft.Xna.Framework.Input.JoystickState.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Input.JoystickState
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: JoystickState.ToString()
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/JoystickState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Input/JoystickState.cs
+    startLine: 107
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents the current <xref href=\"Microsoft.Xna.Framework.Input.JoystickState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> that represents the current <xref href="Microsoft.Xna.Framework.Input.JoystickState" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Input.JoystickState.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.JoystickState.IsConnected*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.IsConnected
+  isExternal: false
+  name: IsConnected
+  nameWithType: JoystickState.IsConnected
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Axes*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.Axes
+  isExternal: false
+  name: Axes
+  nameWithType: JoystickState.Axes
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Axes
+- uid: System.Int32[]
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Buttons*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.Buttons
+  isExternal: false
+  name: Buttons
+  nameWithType: JoystickState.Buttons
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Buttons
+- uid: Microsoft.Xna.Framework.Input.ButtonState[]
+  name: ButtonState[]
+  nameWithType: ButtonState[]
+  fullName: Microsoft.Xna.Framework.Input.ButtonState[]
+  nameWithType.vb: ButtonState()
+  fullName.vb: Microsoft.Xna.Framework.Input.ButtonState()
+  name.vb: ButtonState()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Input.ButtonState
+    name: ButtonState
+    nameWithType: ButtonState
+    fullName: Microsoft.Xna.Framework.Input.ButtonState
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Input.ButtonState
+    name: ButtonState
+    nameWithType: ButtonState
+    fullName: Microsoft.Xna.Framework.Input.ButtonState
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Input.JoystickHat
+  commentId: T:Microsoft.Xna.Framework.Input.JoystickHat
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: JoystickHat
+  nameWithType: JoystickHat
+  fullName: Microsoft.Xna.Framework.Input.JoystickHat
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Hats*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.Hats
+  isExternal: false
+  name: Hats
+  nameWithType: JoystickState.Hats
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Hats
+- uid: Microsoft.Xna.Framework.Input.JoystickHat[]
+  name: JoystickHat[]
+  nameWithType: JoystickHat[]
+  fullName: Microsoft.Xna.Framework.Input.JoystickHat[]
+  nameWithType.vb: JoystickHat()
+  fullName.vb: Microsoft.Xna.Framework.Input.JoystickHat()
+  name.vb: JoystickHat()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Input.JoystickHat
+    name: JoystickHat
+    nameWithType: JoystickHat
+    fullName: Microsoft.Xna.Framework.Input.JoystickHat
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Input.JoystickHat
+    name: JoystickHat
+    nameWithType: JoystickHat
+    fullName: Microsoft.Xna.Framework.Input.JoystickHat
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Input.JoystickState
+  commentId: T:Microsoft.Xna.Framework.Input.JoystickState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: JoystickState
+  nameWithType: JoystickState
+  fullName: Microsoft.Xna.Framework.Input.JoystickState
+- uid: Microsoft.Xna.Framework.Input.JoystickState.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: JoystickState.Equality
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Equality
+- uid: Microsoft.Xna.Framework.Input.JoystickState.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: JoystickState.Inequality
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Inequality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.JoystickState.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: JoystickState.Equals
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.JoystickState.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: JoystickState.GetHashCode
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.JoystickState.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Input.JoystickState.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: JoystickState.ToString
+  fullName: Microsoft.Xna.Framework.Input.JoystickState.ToString

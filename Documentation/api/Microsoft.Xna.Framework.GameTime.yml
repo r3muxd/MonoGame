@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.GameTime
+  commentId: T:Microsoft.Xna.Framework.GameTime
+  id: GameTime
+  parent: Microsoft.Xna.Framework
+  children:
+  - Microsoft.Xna.Framework.GameTime.#ctor
+  - Microsoft.Xna.Framework.GameTime.#ctor(System.TimeSpan,System.TimeSpan)
+  - Microsoft.Xna.Framework.GameTime.#ctor(System.TimeSpan,System.TimeSpan,System.Boolean)
+  - Microsoft.Xna.Framework.GameTime.ElapsedGameTime
+  - Microsoft.Xna.Framework.GameTime.IsRunningSlowly
+  - Microsoft.Xna.Framework.GameTime.TotalGameTime
+  langs:
+  - csharp
+  - vb
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Microsoft.Xna.Framework.GameTime
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GameTime
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public class GameTime
+    content.vb: Public Class GameTime
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.GameTime.TotalGameTime
+  commentId: P:Microsoft.Xna.Framework.GameTime.TotalGameTime
+  id: TotalGameTime
+  parent: Microsoft.Xna.Framework.GameTime
+  langs:
+  - csharp
+  - vb
+  name: TotalGameTime
+  nameWithType: GameTime.TotalGameTime
+  fullName: Microsoft.Xna.Framework.GameTime.TotalGameTime
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TotalGameTime
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 10
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public TimeSpan TotalGameTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property TotalGameTime As TimeSpan
+  overload: Microsoft.Xna.Framework.GameTime.TotalGameTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GameTime.ElapsedGameTime
+  commentId: P:Microsoft.Xna.Framework.GameTime.ElapsedGameTime
+  id: ElapsedGameTime
+  parent: Microsoft.Xna.Framework.GameTime
+  langs:
+  - csharp
+  - vb
+  name: ElapsedGameTime
+  nameWithType: GameTime.ElapsedGameTime
+  fullName: Microsoft.Xna.Framework.GameTime.ElapsedGameTime
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ElapsedGameTime
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public TimeSpan ElapsedGameTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ElapsedGameTime As TimeSpan
+  overload: Microsoft.Xna.Framework.GameTime.ElapsedGameTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GameTime.IsRunningSlowly
+  commentId: P:Microsoft.Xna.Framework.GameTime.IsRunningSlowly
+  id: IsRunningSlowly
+  parent: Microsoft.Xna.Framework.GameTime
+  langs:
+  - csharp
+  - vb
+  name: IsRunningSlowly
+  nameWithType: GameTime.IsRunningSlowly
+  fullName: Microsoft.Xna.Framework.GameTime.IsRunningSlowly
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsRunningSlowly
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 14
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public bool IsRunningSlowly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRunningSlowly As Boolean
+  overload: Microsoft.Xna.Framework.GameTime.IsRunningSlowly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GameTime.#ctor
+  commentId: M:Microsoft.Xna.Framework.GameTime.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xna.Framework.GameTime
+  langs:
+  - csharp
+  - vb
+  name: GameTime()
+  nameWithType: GameTime.GameTime()
+  fullName: Microsoft.Xna.Framework.GameTime.GameTime()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 16
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GameTime()
+    content.vb: Public Sub New
+  overload: Microsoft.Xna.Framework.GameTime.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GameTime.#ctor(System.TimeSpan,System.TimeSpan)
+  commentId: M:Microsoft.Xna.Framework.GameTime.#ctor(System.TimeSpan,System.TimeSpan)
+  id: '#ctor(System.TimeSpan,System.TimeSpan)'
+  parent: Microsoft.Xna.Framework.GameTime
+  langs:
+  - csharp
+  - vb
+  name: GameTime(TimeSpan, TimeSpan)
+  nameWithType: GameTime.GameTime(TimeSpan, TimeSpan)
+  fullName: Microsoft.Xna.Framework.GameTime.GameTime(System.TimeSpan, System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 23
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GameTime(TimeSpan totalGameTime, TimeSpan elapsedGameTime)
+    parameters:
+    - id: totalGameTime
+      type: System.TimeSpan
+    - id: elapsedGameTime
+      type: System.TimeSpan
+    content.vb: Public Sub New(totalGameTime As TimeSpan, elapsedGameTime As TimeSpan)
+  overload: Microsoft.Xna.Framework.GameTime.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.GameTime.#ctor(System.TimeSpan,System.TimeSpan,System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.GameTime.#ctor(System.TimeSpan,System.TimeSpan,System.Boolean)
+  id: '#ctor(System.TimeSpan,System.TimeSpan,System.Boolean)'
+  parent: Microsoft.Xna.Framework.GameTime
+  langs:
+  - csharp
+  - vb
+  name: GameTime(TimeSpan, TimeSpan, Boolean)
+  nameWithType: GameTime.GameTime(TimeSpan, TimeSpan, Boolean)
+  fullName: Microsoft.Xna.Framework.GameTime.GameTime(System.TimeSpan, System.TimeSpan, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/GameTime.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/GameTime.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework
+  syntax:
+    content: public GameTime(TimeSpan totalRealTime, TimeSpan elapsedRealTime, bool isRunningSlowly)
+    parameters:
+    - id: totalRealTime
+      type: System.TimeSpan
+    - id: elapsedRealTime
+      type: System.TimeSpan
+    - id: isRunningSlowly
+      type: System.Boolean
+    content.vb: Public Sub New(totalRealTime As TimeSpan, elapsedRealTime As TimeSpan, isRunningSlowly As Boolean)
+  overload: Microsoft.Xna.Framework.GameTime.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.GameTime.TotalGameTime*
+  commentId: Overload:Microsoft.Xna.Framework.GameTime.TotalGameTime
+  isExternal: false
+  name: TotalGameTime
+  nameWithType: GameTime.TotalGameTime
+  fullName: Microsoft.Xna.Framework.GameTime.TotalGameTime
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.Xna.Framework.GameTime.ElapsedGameTime*
+  commentId: Overload:Microsoft.Xna.Framework.GameTime.ElapsedGameTime
+  isExternal: false
+  name: ElapsedGameTime
+  nameWithType: GameTime.ElapsedGameTime
+  fullName: Microsoft.Xna.Framework.GameTime.ElapsedGameTime
+- uid: Microsoft.Xna.Framework.GameTime.IsRunningSlowly*
+  commentId: Overload:Microsoft.Xna.Framework.GameTime.IsRunningSlowly
+  isExternal: false
+  name: IsRunningSlowly
+  nameWithType: GameTime.IsRunningSlowly
+  fullName: Microsoft.Xna.Framework.GameTime.IsRunningSlowly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.GameTime.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.GameTime.#ctor
+  isExternal: false
+  name: GameTime
+  nameWithType: GameTime.GameTime
+  fullName: Microsoft.Xna.Framework.GameTime.GameTime

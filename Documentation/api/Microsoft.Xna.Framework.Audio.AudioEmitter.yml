@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter
+  commentId: T:Microsoft.Xna.Framework.Audio.AudioEmitter
+  id: AudioEmitter
+  parent: Microsoft.Xna.Framework.Audio
+  children:
+  - Microsoft.Xna.Framework.Audio.AudioEmitter.#ctor
+  - Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale
+  - Microsoft.Xna.Framework.Audio.AudioEmitter.Forward
+  - Microsoft.Xna.Framework.Audio.AudioEmitter.Position
+  - Microsoft.Xna.Framework.Audio.AudioEmitter.Up
+  - Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity
+  langs:
+  - csharp
+  - vb
+  name: AudioEmitter
+  nameWithType: AudioEmitter
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AudioEmitter
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 13
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: "\nRepresents a 3D audio emitter. Used to simulate 3D audio effects.\n"
+  example: []
+  syntax:
+    content: public class AudioEmitter
+    content.vb: Public Class AudioEmitter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.#ctor
+  commentId: M:Microsoft.Xna.Framework.Audio.AudioEmitter.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xna.Framework.Audio.AudioEmitter
+  langs:
+  - csharp
+  - vb
+  name: AudioEmitter()
+  nameWithType: AudioEmitter.AudioEmitter()
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.AudioEmitter()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 16
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Initializes a new AudioEmitter instance.
+  example: []
+  syntax:
+    content: public AudioEmitter()
+    content.vb: Public Sub New
+  overload: Microsoft.Xna.Framework.Audio.AudioEmitter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale
+  commentId: P:Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale
+  id: DopplerScale
+  parent: Microsoft.Xna.Framework.Audio.AudioEmitter
+  langs:
+  - csharp
+  - vb
+  name: DopplerScale
+  nameWithType: AudioEmitter.DopplerScale
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DopplerScale
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets or sets a scale applied to the Doppler effect between the AudioEmitter and an AudioListener.
+  remarks: "\n<p>Defaults to 1.0</p>\n<p>A value of 1.0 leaves the Doppler effect unmodified.</p>\n"
+  example: []
+  syntax:
+    content: public float DopplerScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DopplerScale As Single
+  overload: Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Forward
+  commentId: P:Microsoft.Xna.Framework.Audio.AudioEmitter.Forward
+  id: Forward
+  parent: Microsoft.Xna.Framework.Audio.AudioEmitter
+  langs:
+  - csharp
+  - vb
+  name: Forward
+  nameWithType: AudioEmitter.Forward
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Forward
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Forward
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 54
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets or sets the emitter&apos;s forward vector.
+  remarks: "\n<p>Defaults to Vector3.Forward. (new Vector3(0, 0, -1))</p>\n<p>Used with AudioListener.Velocity to calculate Doppler values.</p>\n<p>The Forward and Up values must be orthonormal.</p>\n"
+  example: []
+  syntax:
+    content: public Vector3 Forward { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Property Forward As Vector3
+  overload: Microsoft.Xna.Framework.Audio.AudioEmitter.Forward*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Position
+  commentId: P:Microsoft.Xna.Framework.Audio.AudioEmitter.Position
+  id: Position
+  parent: Microsoft.Xna.Framework.Audio.AudioEmitter
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: AudioEmitter.Position
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Position
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Position
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 60
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets or sets the position of this emitter.
+  example: []
+  syntax:
+    content: public Vector3 Position { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Property Position As Vector3
+  overload: Microsoft.Xna.Framework.Audio.AudioEmitter.Position*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Up
+  commentId: P:Microsoft.Xna.Framework.Audio.AudioEmitter.Up
+  id: Up
+  parent: Microsoft.Xna.Framework.Audio.AudioEmitter
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: AudioEmitter.Up
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Up
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Up
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 70
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets or sets the emitter&apos;s Up vector.
+  remarks: "\n<p>Defaults to Vector3.Up. (new Vector3(0, -1, 1)).</p>\n<p>The Up and Forward vectors must be orthonormal.</p>\n"
+  example: []
+  syntax:
+    content: public Vector3 Up { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Property Up As Vector3
+  overload: Microsoft.Xna.Framework.Audio.AudioEmitter.Up*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity
+  commentId: P:Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity
+  id: Velocity
+  parent: Microsoft.Xna.Framework.Audio.AudioEmitter
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: AudioEmitter.Velocity
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Audio/AudioEmitter.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Velocity
+    path: ../MonoGame.Framework/Audio/AudioEmitter.cs
+    startLine: 80
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Audio
+  summary: Gets or sets the emitter&apos;s velocity vector.
+  remarks: "\n<p>Defaults to Vector3.Zero.</p>\n<p>This value is only used when calculating Doppler values.</p>\n"
+  example: []
+  syntax:
+    content: public Vector3 Velocity { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+    content.vb: Public Property Velocity As Vector3
+  overload: Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Audio
+  commentId: N:Microsoft.Xna.Framework.Audio
+  isExternal: false
+  name: Microsoft.Xna.Framework.Audio
+  nameWithType: Microsoft.Xna.Framework.Audio
+  fullName: Microsoft.Xna.Framework.Audio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.AudioEmitter.#ctor
+  isExternal: false
+  name: AudioEmitter
+  nameWithType: AudioEmitter.AudioEmitter
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.AudioEmitter
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale
+  isExternal: false
+  name: DopplerScale
+  nameWithType: AudioEmitter.DopplerScale
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.DopplerScale
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Forward*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.AudioEmitter.Forward
+  isExternal: false
+  name: Forward
+  nameWithType: AudioEmitter.Forward
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Forward
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Position*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.AudioEmitter.Position
+  isExternal: false
+  name: Position
+  nameWithType: AudioEmitter.Position
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Position
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Up*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.AudioEmitter.Up
+  isExternal: false
+  name: Up
+  nameWithType: AudioEmitter.Up
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Up
+- uid: Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity*
+  commentId: Overload:Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity
+  isExternal: false
+  name: Velocity
+  nameWithType: AudioEmitter.Velocity
+  fullName: Microsoft.Xna.Framework.Audio.AudioEmitter.Velocity

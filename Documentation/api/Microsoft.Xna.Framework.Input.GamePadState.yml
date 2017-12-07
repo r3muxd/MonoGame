@@ -1,0 +1,1146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.GamePadState
+  commentId: T:Microsoft.Xna.Framework.Input.GamePadState
+  id: GamePadState
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.GamePadState.#ctor(Microsoft.Xna.Framework.Input.GamePadThumbSticks,Microsoft.Xna.Framework.Input.GamePadTriggers,Microsoft.Xna.Framework.Input.GamePadButtons,Microsoft.Xna.Framework.Input.GamePadDPad)
+  - Microsoft.Xna.Framework.Input.GamePadState.#ctor(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,System.Single,Microsoft.Xna.Framework.Input.Buttons)
+  - Microsoft.Xna.Framework.Input.GamePadState.Buttons
+  - Microsoft.Xna.Framework.Input.GamePadState.Default
+  - Microsoft.Xna.Framework.Input.GamePadState.DPad
+  - Microsoft.Xna.Framework.Input.GamePadState.Equals(System.Object)
+  - Microsoft.Xna.Framework.Input.GamePadState.GetHashCode
+  - Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown(Microsoft.Xna.Framework.Input.Buttons)
+  - Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp(Microsoft.Xna.Framework.Input.Buttons)
+  - Microsoft.Xna.Framework.Input.GamePadState.IsConnected
+  - Microsoft.Xna.Framework.Input.GamePadState.op_Equality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  - Microsoft.Xna.Framework.Input.GamePadState.op_Inequality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  - Microsoft.Xna.Framework.Input.GamePadState.PacketNumber
+  - Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks
+  - Microsoft.Xna.Framework.Input.GamePadState.ToString
+  - Microsoft.Xna.Framework.Input.GamePadState.Triggers
+  langs:
+  - csharp
+  - vb
+  name: GamePadState
+  nameWithType: GamePadState
+  fullName: Microsoft.Xna.Framework.Input.GamePadState
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GamePadState
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 13
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRepresents specific information about the state of the controller,\nincluding the current state of buttons and sticks.\n\nThis is implemented as a partial struct to allow for individual platforms\nto offer additional data without separate state queries to GamePad.\n"
+  example: []
+  syntax:
+    content: public struct GamePadState
+    content.vb: Public Structure GamePadState
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Default
+  commentId: F:Microsoft.Xna.Framework.Input.GamePadState.Default
+  id: Default
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: GamePadState.Default
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Default
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Default
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 18
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nThe default initialized gamepad state.\n"
+  example: []
+  syntax:
+    content: public static readonly GamePadState Default
+    return:
+      type: Microsoft.Xna.Framework.Input.GamePadState
+    content.vb: Public Shared ReadOnly Default As GamePadState
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.IsConnected
+  commentId: P:Microsoft.Xna.Framework.Input.GamePadState.IsConnected
+  id: IsConnected
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: GamePadState.IsConnected
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.IsConnected
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsConnected
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 24
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a value indicating if the controller is connected.\n"
+  example: []
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if it is connected; otherwise, <code>false</code>.
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: Microsoft.Xna.Framework.Input.GamePadState.IsConnected*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.PacketNumber
+  commentId: P:Microsoft.Xna.Framework.Input.GamePadState.PacketNumber
+  id: PacketNumber
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: PacketNumber
+  nameWithType: GamePadState.PacketNumber
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.PacketNumber
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PacketNumber
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the packet number associated with this state.\n"
+  example: []
+  syntax:
+    content: public int PacketNumber { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The packet number.
+    content.vb: Public ReadOnly Property PacketNumber As Integer
+  overload: Microsoft.Xna.Framework.Input.GamePadState.PacketNumber*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Buttons
+  commentId: P:Microsoft.Xna.Framework.Input.GamePadState.Buttons
+  id: Buttons
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: GamePadState.Buttons
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Buttons
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Buttons
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 36
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a structure that identifies what buttons on the controller are pressed.\n"
+  example: []
+  syntax:
+    content: public GamePadButtons Buttons { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.GamePadButtons
+      description: The buttons structure.
+    content.vb: Public ReadOnly Property Buttons As GamePadButtons
+  overload: Microsoft.Xna.Framework.Input.GamePadState.Buttons*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.DPad
+  commentId: P:Microsoft.Xna.Framework.Input.GamePadState.DPad
+  id: DPad
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: DPad
+  nameWithType: GamePadState.DPad
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.DPad
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DPad
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 42
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a structure that identifies what directions of the directional pad on the controller are pressed.\n"
+  example: []
+  syntax:
+    content: public GamePadDPad DPad { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.GamePadDPad
+      description: The directional pad structure.
+    content.vb: Public ReadOnly Property DPad As GamePadDPad
+  overload: Microsoft.Xna.Framework.Input.GamePadState.DPad*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks
+  commentId: P:Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks
+  id: ThumbSticks
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: ThumbSticks
+  nameWithType: GamePadState.ThumbSticks
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ThumbSticks
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 48
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a structure that indicates the position of the controller sticks (thumbsticks).\n"
+  example: []
+  syntax:
+    content: public GamePadThumbSticks ThumbSticks { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.GamePadThumbSticks
+      description: The thumbsticks position.
+    content.vb: Public ReadOnly Property ThumbSticks As GamePadThumbSticks
+  overload: Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Triggers
+  commentId: P:Microsoft.Xna.Framework.Input.GamePadState.Triggers
+  id: Triggers
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: Triggers
+  nameWithType: GamePadState.Triggers
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Triggers
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Triggers
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 54
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets a structure that identifies the position of triggers on the controller.\n"
+  example: []
+  syntax:
+    content: public GamePadTriggers Triggers { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.GamePadTriggers
+      description: Positions of the triggers.
+    content.vb: Public ReadOnly Property Triggers As GamePadTriggers
+  overload: Microsoft.Xna.Framework.Input.GamePadState.Triggers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.GamePadState.#ctor(Microsoft.Xna.Framework.Input.GamePadThumbSticks,Microsoft.Xna.Framework.Input.GamePadTriggers,Microsoft.Xna.Framework.Input.GamePadButtons,Microsoft.Xna.Framework.Input.GamePadDPad)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.#ctor(Microsoft.Xna.Framework.Input.GamePadThumbSticks,Microsoft.Xna.Framework.Input.GamePadTriggers,Microsoft.Xna.Framework.Input.GamePadButtons,Microsoft.Xna.Framework.Input.GamePadDPad)
+  id: '#ctor(Microsoft.Xna.Framework.Input.GamePadThumbSticks,Microsoft.Xna.Framework.Input.GamePadTriggers,Microsoft.Xna.Framework.Input.GamePadButtons,Microsoft.Xna.Framework.Input.GamePadDPad)'
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: GamePadState(GamePadThumbSticks, GamePadTriggers, GamePadButtons, GamePadDPad)
+  nameWithType: GamePadState.GamePadState(GamePadThumbSticks, GamePadTriggers, GamePadButtons, GamePadDPad)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.GamePadState(Microsoft.Xna.Framework.Input.GamePadThumbSticks, Microsoft.Xna.Framework.Input.GamePadTriggers, Microsoft.Xna.Framework.Input.GamePadButtons, Microsoft.Xna.Framework.Input.GamePadDPad)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 64
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref> struct\nusing the specified GamePadThumbSticks, GamePadTriggers, GamePadButtons, and GamePadDPad.\n"
+  example: []
+  syntax:
+    content: public GamePadState(GamePadThumbSticks thumbSticks, GamePadTriggers triggers, GamePadButtons buttons, GamePadDPad dPad)
+    parameters:
+    - id: thumbSticks
+      type: Microsoft.Xna.Framework.Input.GamePadThumbSticks
+      description: Initial thumbstick state.
+    - id: triggers
+      type: Microsoft.Xna.Framework.Input.GamePadTriggers
+      description: Initial trigger state..
+    - id: buttons
+      type: Microsoft.Xna.Framework.Input.GamePadButtons
+      description: Initial button state.
+    - id: dPad
+      type: Microsoft.Xna.Framework.Input.GamePadDPad
+      description: Initial directional pad state.
+    content.vb: Public Sub New(thumbSticks As GamePadThumbSticks, triggers As GamePadTriggers, buttons As GamePadButtons, dPad As GamePadDPad)
+  overload: Microsoft.Xna.Framework.Input.GamePadState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.GamePadState.#ctor(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,System.Single,Microsoft.Xna.Framework.Input.Buttons)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.#ctor(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,System.Single,Microsoft.Xna.Framework.Input.Buttons)
+  id: '#ctor(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,System.Single,Microsoft.Xna.Framework.Input.Buttons)'
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: GamePadState(Vector2, Vector2, Single, Single, Buttons)
+  nameWithType: GamePadState.GamePadState(Vector2, Vector2, Single, Single, Buttons)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.GamePadState(Microsoft.Xna.Framework.Vector2, Microsoft.Xna.Framework.Vector2, System.Single, System.Single, Microsoft.Xna.Framework.Input.Buttons)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 84
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref> struct.\nusing the specified stick, trigger, and button values.\n"
+  example: []
+  syntax:
+    content: public GamePadState(Vector2 leftThumbStick, Vector2 rightThumbStick, float leftTrigger, float rightTrigger, Buttons buttons)
+    parameters:
+    - id: leftThumbStick
+      type: Microsoft.Xna.Framework.Vector2
+      description: Left stick value. Each axis is clamped between −1.0 and 1.0.
+    - id: rightThumbStick
+      type: Microsoft.Xna.Framework.Vector2
+      description: Right stick value. Each axis is clamped between −1.0 and 1.0.
+    - id: leftTrigger
+      type: System.Single
+      description: Left trigger value. This value is clamped between 0.0 and 1.0.
+    - id: rightTrigger
+      type: System.Single
+      description: Right trigger value. This value is clamped between 0.0 and 1.0.
+    - id: buttons
+      type: Microsoft.Xna.Framework.Input.Buttons
+      description: Array or parameter list of Buttons to initialize as pressed.
+    content.vb: Public Sub New(leftThumbStick As Vector2, rightThumbStick As Vector2, leftTrigger As Single, rightTrigger As Single, buttons As Buttons)
+  overload: Microsoft.Xna.Framework.Input.GamePadState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown(Microsoft.Xna.Framework.Input.Buttons)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown(Microsoft.Xna.Framework.Input.Buttons)
+  id: IsButtonDown(Microsoft.Xna.Framework.Input.Buttons)
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: IsButtonDown(Buttons)
+  nameWithType: GamePadState.IsButtonDown(Buttons)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown(Microsoft.Xna.Framework.Input.Buttons)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsButtonDown
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 121
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether specified input device buttons are pressed in this GamePadState.\n"
+  example: []
+  syntax:
+    content: public bool IsButtonDown(Buttons button)
+    parameters:
+    - id: button
+      type: Microsoft.Xna.Framework.Input.Buttons
+      description: Buttons to query. Specify a single button, or combine multiple buttons using a bitwise OR operation.
+    return:
+      type: System.Boolean
+      description: <code>true</code>, if button was pressed, <code>false</code> otherwise.
+    content.vb: Public Function IsButtonDown(button As Buttons) As Boolean
+  overload: Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp(Microsoft.Xna.Framework.Input.Buttons)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp(Microsoft.Xna.Framework.Input.Buttons)
+  id: IsButtonUp(Microsoft.Xna.Framework.Input.Buttons)
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: IsButtonUp(Buttons)
+  nameWithType: GamePadState.IsButtonUp(Buttons)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp(Microsoft.Xna.Framework.Input.Buttons)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsButtonUp
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 131
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether specified input device buttons are released (not pressed) in this GamePadState.\n"
+  example: []
+  syntax:
+    content: public bool IsButtonUp(Buttons button)
+    parameters:
+    - id: button
+      type: Microsoft.Xna.Framework.Input.Buttons
+      description: Buttons to query. Specify a single button, or combine multiple buttons using a bitwise OR operation.
+    return:
+      type: System.Boolean
+      description: <code>true</code>, if button was released (not pressed), <code>false</code> otherwise.
+    content.vb: Public Function IsButtonUp(button As Buttons) As Boolean
+  overload: Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.GamePadState.op_Equality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.op_Equality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  id: op_Equality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: Equality(GamePadState, GamePadState)
+  nameWithType: GamePadState.Equality(GamePadState, GamePadState)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Equality(Microsoft.Xna.Framework.Input.GamePadState, Microsoft.Xna.Framework.Input.GamePadState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 143
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether a specified instance of <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref> is equal\nto another specified <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(GamePadState left, GamePadState right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Input.GamePadState
+      description: The first <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref> to compare.
+    - id: right
+      type: Microsoft.Xna.Framework.Input.GamePadState
+      description: The second <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code>left</code> and <code>right</code> are equal; otherwise, <code>false</code>.
+    content.vb: Public Shared Operator =(left As GamePadState, right As GamePadState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.GamePadState.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.GamePadState.op_Inequality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.op_Inequality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  id: op_Inequality(Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: Inequality(GamePadState, GamePadState)
+  nameWithType: GamePadState.Inequality(GamePadState, GamePadState)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Inequality(Microsoft.Xna.Framework.Input.GamePadState, Microsoft.Xna.Framework.Input.GamePadState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 160
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether a specified instance of <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref> is not\nequal to another specified <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(GamePadState left, GamePadState right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Input.GamePadState
+      description: The first <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref> to compare.
+    - id: right
+      type: Microsoft.Xna.Framework.Input.GamePadState
+      description: The second <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code>left</code> and <code>right</code> are not equal; otherwise, <code>false</code>.
+    content.vb: Public Shared Operator <>(left As GamePadState, right As GamePadState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.GamePadState.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: GamePadState.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 171
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to the current <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with the current <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: >-
+        <code>true</code> if the specified <xref href="System.Object" data-throw-if-not-resolved="false"></xref> is equal to the current
+
+        <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref>; otherwise, <code>false</code>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Input.GamePadState.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.GamePadState.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: GamePadState.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 181
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nServes as a hash function for a <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref> object.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: >-
+        A hash code for this instance that is suitable for use in hashing algorithms and data structures such as a
+
+        hash table.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Input.GamePadState.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.GamePadState.ToString
+  commentId: M:Microsoft.Xna.Framework.Input.GamePadState.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Input.GamePadState
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: GamePadState.ToString()
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/GamePadState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Input/GamePadState.cs
+    startLine: 198
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents the current <xref href=\"Microsoft.Xna.Framework.Input.GamePadState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> that represents the current <xref href="Microsoft.Xna.Framework.Input.GamePadState" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Input.GamePadState.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.GamePadState
+  commentId: T:Microsoft.Xna.Framework.Input.GamePadState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: GamePadState
+  nameWithType: GamePadState
+  fullName: Microsoft.Xna.Framework.Input.GamePadState
+- uid: Microsoft.Xna.Framework.Input.GamePadState.IsConnected*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.IsConnected
+  isExternal: false
+  name: IsConnected
+  nameWithType: GamePadState.IsConnected
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Input.GamePadState.PacketNumber*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.PacketNumber
+  isExternal: false
+  name: PacketNumber
+  nameWithType: GamePadState.PacketNumber
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.PacketNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Buttons*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.Buttons
+  isExternal: false
+  name: Buttons
+  nameWithType: GamePadState.Buttons
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Buttons
+- uid: Microsoft.Xna.Framework.Input.GamePadButtons
+  commentId: T:Microsoft.Xna.Framework.Input.GamePadButtons
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: GamePadButtons
+  nameWithType: GamePadButtons
+  fullName: Microsoft.Xna.Framework.Input.GamePadButtons
+- uid: Microsoft.Xna.Framework.Input.GamePadState.DPad*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.DPad
+  isExternal: false
+  name: DPad
+  nameWithType: GamePadState.DPad
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.DPad
+- uid: Microsoft.Xna.Framework.Input.GamePadDPad
+  commentId: T:Microsoft.Xna.Framework.Input.GamePadDPad
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: GamePadDPad
+  nameWithType: GamePadDPad
+  fullName: Microsoft.Xna.Framework.Input.GamePadDPad
+- uid: Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks
+  isExternal: false
+  name: ThumbSticks
+  nameWithType: GamePadState.ThumbSticks
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.ThumbSticks
+- uid: Microsoft.Xna.Framework.Input.GamePadThumbSticks
+  commentId: T:Microsoft.Xna.Framework.Input.GamePadThumbSticks
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: GamePadThumbSticks
+  nameWithType: GamePadThumbSticks
+  fullName: Microsoft.Xna.Framework.Input.GamePadThumbSticks
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Triggers*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.Triggers
+  isExternal: false
+  name: Triggers
+  nameWithType: GamePadState.Triggers
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Triggers
+- uid: Microsoft.Xna.Framework.Input.GamePadTriggers
+  commentId: T:Microsoft.Xna.Framework.Input.GamePadTriggers
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: GamePadTriggers
+  nameWithType: GamePadTriggers
+  fullName: Microsoft.Xna.Framework.Input.GamePadTriggers
+- uid: Microsoft.Xna.Framework.Input.GamePadState.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.#ctor
+  isExternal: false
+  name: GamePadState
+  nameWithType: GamePadState.GamePadState
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.GamePadState
+- uid: Microsoft.Xna.Framework.Vector2
+  commentId: T:Microsoft.Xna.Framework.Vector2
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Microsoft.Xna.Framework.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Input.Buttons
+  commentId: T:Microsoft.Xna.Framework.Input.Buttons
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Buttons
+  nameWithType: Buttons
+  fullName: Microsoft.Xna.Framework.Input.Buttons
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown
+  isExternal: false
+  name: IsButtonDown
+  nameWithType: GamePadState.IsButtonDown
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.IsButtonDown
+- uid: Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp
+  isExternal: false
+  name: IsButtonUp
+  nameWithType: GamePadState.IsButtonUp
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.IsButtonUp
+- uid: Microsoft.Xna.Framework.Input.GamePadState.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: GamePadState.Equality
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Equality
+- uid: Microsoft.Xna.Framework.Input.GamePadState.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: GamePadState.Inequality
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Inequality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.GamePadState.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: GamePadState.Equals
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.GamePadState.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: GamePadState.GetHashCode
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.GetHashCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.GamePadState.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Input.GamePadState.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: GamePadState.ToString
+  fullName: Microsoft.Xna.Framework.Input.GamePadState.ToString

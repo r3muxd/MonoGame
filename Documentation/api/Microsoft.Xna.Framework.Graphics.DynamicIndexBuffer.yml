@@ -1,0 +1,1889 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  commentId: T:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  id: DynamicIndexBuffer
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,Microsoft.Xna.Framework.Graphics.IndexElementSize,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)
+  - Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Type,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)
+  - Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost
+  - Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData``1(``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  - Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  langs:
+  - csharp
+  - vb
+  name: DynamicIndexBuffer
+  nameWithType: DynamicIndexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: DynamicIndexBuffer
+    path: ../MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public class DynamicIndexBuffer : IndexBuffer, IDisposable'
+    content.vb: >-
+      Public Class DynamicIndexBuffer
+          Inherits IndexBuffer
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.BufferUsage
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexCount
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexElementSize
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,{T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1({T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1({T}[])
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,{T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1({T}[],System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1({T}[])
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,{T}[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  - Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost
+  commentId: P:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost
+  id: IsContentLost
+  parent: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  langs:
+  - csharp
+  - vb
+  name: IsContentLost
+  nameWithType: DynamicIndexBuffer.IsContentLost
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: IsContentLost
+    path: ../MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+    startLine: 15
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public bool IsContentLost { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsContentLost As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,Microsoft.Xna.Framework.Graphics.IndexElementSize,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)
+  commentId: M:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,Microsoft.Xna.Framework.Graphics.IndexElementSize,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,Microsoft.Xna.Framework.Graphics.IndexElementSize,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)'
+  parent: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  langs:
+  - csharp
+  - vb
+  name: DynamicIndexBuffer(GraphicsDevice, IndexElementSize, Int32, BufferUsage)
+  nameWithType: DynamicIndexBuffer.DynamicIndexBuffer(GraphicsDevice, IndexElementSize, Int32, BufferUsage)
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.DynamicIndexBuffer(Microsoft.Xna.Framework.Graphics.GraphicsDevice, Microsoft.Xna.Framework.Graphics.IndexElementSize, System.Int32, Microsoft.Xna.Framework.Graphics.BufferUsage)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public DynamicIndexBuffer(GraphicsDevice graphicsDevice, IndexElementSize indexElementSize, int indexCount, BufferUsage usage)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    - id: indexElementSize
+      type: Microsoft.Xna.Framework.Graphics.IndexElementSize
+    - id: indexCount
+      type: System.Int32
+    - id: usage
+      type: Microsoft.Xna.Framework.Graphics.BufferUsage
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, indexElementSize As IndexElementSize, indexCount As Integer, usage As BufferUsage)
+  overload: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Type,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)
+  commentId: M:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Type,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice,System.Type,System.Int32,Microsoft.Xna.Framework.Graphics.BufferUsage)'
+  parent: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  langs:
+  - csharp
+  - vb
+  name: DynamicIndexBuffer(GraphicsDevice, Type, Int32, BufferUsage)
+  nameWithType: DynamicIndexBuffer.DynamicIndexBuffer(GraphicsDevice, Type, Int32, BufferUsage)
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.DynamicIndexBuffer(Microsoft.Xna.Framework.Graphics.GraphicsDevice, System.Type, System.Int32, Microsoft.Xna.Framework.Graphics.BufferUsage)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+    startLine: 22
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public DynamicIndexBuffer(GraphicsDevice graphicsDevice, Type indexType, int indexCount, BufferUsage usage)
+    parameters:
+    - id: graphicsDevice
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    - id: indexType
+      type: System.Type
+    - id: indexCount
+      type: System.Int32
+    - id: usage
+      type: Microsoft.Xna.Framework.Graphics.BufferUsage
+    content.vb: Public Sub New(graphicsDevice As GraphicsDevice, indexType As Type, indexCount As Integer, usage As BufferUsage)
+  overload: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  commentId: M:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  id: SetData``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  parent: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  langs:
+  - csharp
+  - vb
+  name: SetData<T>(Int32, T[], Int32, Int32, SetDataOptions)
+  nameWithType: DynamicIndexBuffer.SetData<T>(Int32, T[], Int32, Int32, SetDataOptions)
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData<T>(System.Int32, T[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetData
+    path: ../MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+    startLine: 27
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public void SetData<T>(int offsetInBytes, T[] data, int startIndex, int elementCount, SetDataOptions options)where T : struct'
+    parameters:
+    - id: offsetInBytes
+      type: System.Int32
+    - id: data
+      type: '{T}[]'
+    - id: startIndex
+      type: System.Int32
+    - id: elementCount
+      type: System.Int32
+    - id: options
+      type: Microsoft.Xna.Framework.Graphics.SetDataOptions
+    typeParameters:
+    - id: T
+    content.vb: Public Sub SetData(Of T As Structure)(offsetInBytes As Integer, data As T(), startIndex As Integer, elementCount As Integer, options As SetDataOptions)
+  overload: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData*
+  nameWithType.vb: DynamicIndexBuffer.SetData(Of T)(Int32, T(), Int32, Int32, SetDataOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData(Of T)(System.Int32, T(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  name.vb: SetData(Of T)(Int32, T(), Int32, Int32, SetDataOptions)
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData``1(``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  commentId: M:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData``1(``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  id: SetData``1(``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  parent: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer
+  langs:
+  - csharp
+  - vb
+  name: SetData<T>(T[], Int32, Int32, SetDataOptions)
+  nameWithType: DynamicIndexBuffer.SetData<T>(T[], Int32, Int32, SetDataOptions)
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData<T>(T[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SetData
+    path: ../MonoGame.Framework/Graphics/Vertices/DynamicIndexBuffer.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: 'public void SetData<T>(T[] data, int startIndex, int elementCount, SetDataOptions options)where T : struct'
+    parameters:
+    - id: data
+      type: '{T}[]'
+    - id: startIndex
+      type: System.Int32
+    - id: elementCount
+      type: System.Int32
+    - id: options
+      type: Microsoft.Xna.Framework.Graphics.SetDataOptions
+    typeParameters:
+    - id: T
+    content.vb: Public Sub SetData(Of T As Structure)(data As T(), startIndex As Integer, elementCount As Integer, options As SetDataOptions)
+  overload: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData*
+  nameWithType.vb: DynamicIndexBuffer.SetData(Of T)(T(), Int32, Int32, SetDataOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData(Of T)(T(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  name.vb: SetData(Of T)(T(), Int32, Int32, SetDataOptions)
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsResource
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsResource
+  nameWithType: GraphicsResource
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  commentId: T:Microsoft.Xna.Framework.Graphics.IndexBuffer
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IndexBuffer
+  nameWithType: IndexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.BufferUsage
+  commentId: P:Microsoft.Xna.Framework.Graphics.IndexBuffer.BufferUsage
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  isExternal: false
+  name: BufferUsage
+  nameWithType: IndexBuffer.BufferUsage
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.BufferUsage
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexCount
+  commentId: P:Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexCount
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  isExternal: false
+  name: IndexCount
+  nameWithType: IndexBuffer.IndexCount
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexCount
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexElementSize
+  commentId: P:Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexElementSize
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  isExternal: false
+  name: IndexElementSize
+  nameWithType: IndexBuffer.IndexElementSize
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.IndexElementSize
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  isExternal: false
+  name: GraphicsDeviceResetting()
+  nameWithType: IndexBuffer.GraphicsDeviceResetting()
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: IndexBuffer.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: IndexBuffer.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,{T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  name: GetData<T>(Int32, T[], Int32, Int32)
+  nameWithType: IndexBuffer.GetData<T>(Int32, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>(System.Int32, T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.GetData(Of T)(Int32, T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)(System.Int32, T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: IndexBuffer.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: IndexBuffer.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1({T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+  name: GetData<T>(T[], Int32, Int32)
+  nameWithType: IndexBuffer.GetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.GetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: IndexBuffer.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: IndexBuffer.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1({T}[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+  name: GetData<T>(T[])
+  nameWithType: IndexBuffer.GetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>(T[])
+  nameWithType.vb: IndexBuffer.GetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)(T())
+  name.vb: GetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+    name: GetData<T>
+    nameWithType: IndexBuffer.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+    name: GetData(Of T)
+    nameWithType: IndexBuffer.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,{T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  name: SetData<T>(Int32, T[], Int32, Int32)
+  nameWithType: IndexBuffer.SetData<T>(Int32, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>(System.Int32, T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.SetData(Of T)(Int32, T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)(System.Int32, T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: IndexBuffer.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: IndexBuffer.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1({T}[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+  name: SetData<T>(T[], Int32, Int32)
+  nameWithType: IndexBuffer.SetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.SetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: IndexBuffer.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: IndexBuffer.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1({T}[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+  name: SetData<T>(T[])
+  nameWithType: IndexBuffer.SetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>(T[])
+  nameWithType.vb: IndexBuffer.SetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)(T())
+  name.vb: SetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+    name: SetData<T>
+    nameWithType: IndexBuffer.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+    name: SetData(Of T)
+    nameWithType: IndexBuffer.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,{T}[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  definition: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  name: SetDataInternal<T>(Int32, T[], Int32, Int32, SetDataOptions)
+  nameWithType: IndexBuffer.SetDataInternal<T>(Int32, T[], Int32, Int32, SetDataOptions)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal<T>(System.Int32, T[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  nameWithType.vb: IndexBuffer.SetDataInternal(Of T)(Int32, T(), Int32, Int32, SetDataOptions)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal(Of T)(System.Int32, T(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  name.vb: SetDataInternal(Of T)(Int32, T(), Int32, Int32, SetDataOptions)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+    name: SetDataInternal<T>
+    nameWithType: IndexBuffer.SetDataInternal<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.SetDataOptions
+    name: SetDataOptions
+    nameWithType: SetDataOptions
+    fullName: Microsoft.Xna.Framework.Graphics.SetDataOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+    name: SetDataInternal(Of T)
+    nameWithType: IndexBuffer.SetDataInternal(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.SetDataOptions
+    name: SetDataOptions
+    nameWithType: SetDataOptions
+    fullName: Microsoft.Xna.Framework.Graphics.SetDataOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.IndexBuffer
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: IndexBuffer.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: IndexBuffer.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: IndexBuffer.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Dispose()
+  nameWithType: GraphicsResource.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Disposing
+  nameWithType: GraphicsResource.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsResource.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsResource.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Name
+  nameWithType: GraphicsResource.Name
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Tag
+  nameWithType: GraphicsResource.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: ToString()
+  nameWithType: GraphicsResource.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: GetData<T>(Int32, T[], Int32, Int32)
+  nameWithType: IndexBuffer.GetData<T>(Int32, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>(System.Int32, T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.GetData(Of T)(Int32, T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)(System.Int32, T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(Int32, T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: IndexBuffer.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: IndexBuffer.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: GetData<T>(T[], Int32, Int32)
+  nameWithType: IndexBuffer.GetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.GetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: GetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData<T>
+    nameWithType: IndexBuffer.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[],System.Int32,System.Int32)
+    name: GetData(Of T)
+    nameWithType: IndexBuffer.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+  isExternal: false
+  name: GetData<T>(T[])
+  nameWithType: IndexBuffer.GetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>(T[])
+  nameWithType.vb: IndexBuffer.GetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)(T())
+  name.vb: GetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+    name: GetData<T>
+    nameWithType: IndexBuffer.GetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData``1(``0[])
+    name: GetData(Of T)
+    nameWithType: IndexBuffer.GetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.GetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: SetData<T>(Int32, T[], Int32, Int32)
+  nameWithType: IndexBuffer.SetData<T>(Int32, T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>(System.Int32, T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.SetData(Of T)(Int32, T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)(System.Int32, T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(Int32, T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: IndexBuffer.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(System.Int32,``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: IndexBuffer.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+  isExternal: true
+  name: SetData<T>(T[], Int32, Int32)
+  nameWithType: IndexBuffer.SetData<T>(T[], Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>(T[], System.Int32, System.Int32)
+  nameWithType.vb: IndexBuffer.SetData(Of T)(T(), Int32, Int32)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)(T(), System.Int32, System.Int32)
+  name.vb: SetData(Of T)(T(), Int32, Int32)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData<T>
+    nameWithType: IndexBuffer.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[],System.Int32,System.Int32)
+    name: SetData(Of T)
+    nameWithType: IndexBuffer.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+  isExternal: false
+  name: SetData<T>(T[])
+  nameWithType: IndexBuffer.SetData<T>(T[])
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>(T[])
+  nameWithType.vb: IndexBuffer.SetData(Of T)(T())
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)(T())
+  name.vb: SetData(Of T)(T())
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+    name: SetData<T>
+    nameWithType: IndexBuffer.SetData<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData``1(``0[])
+    name: SetData(Of T)
+    nameWithType: IndexBuffer.SetData(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetData(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  commentId: M:Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  isExternal: true
+  name: SetDataInternal<T>(Int32, T[], Int32, Int32, SetDataOptions)
+  nameWithType: IndexBuffer.SetDataInternal<T>(Int32, T[], Int32, Int32, SetDataOptions)
+  fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal<T>(System.Int32, T[], System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  nameWithType.vb: IndexBuffer.SetDataInternal(Of T)(Int32, T(), Int32, Int32, SetDataOptions)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal(Of T)(System.Int32, T(), System.Int32, System.Int32, Microsoft.Xna.Framework.Graphics.SetDataOptions)
+  name.vb: SetDataInternal(Of T)(Int32, T(), Int32, Int32, SetDataOptions)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+    name: SetDataInternal<T>
+    nameWithType: IndexBuffer.SetDataInternal<T>
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.SetDataOptions
+    name: SetDataOptions
+    nameWithType: SetDataOptions
+    fullName: Microsoft.Xna.Framework.Graphics.SetDataOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal``1(System.Int32,``0[],System.Int32,System.Int32,Microsoft.Xna.Framework.Graphics.SetDataOptions)
+    name: SetDataInternal(Of T)
+    nameWithType: IndexBuffer.SetDataInternal(Of T)
+    fullName: Microsoft.Xna.Framework.Graphics.IndexBuffer.SetDataInternal(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.Xna.Framework.Graphics.SetDataOptions
+    name: SetDataOptions
+    nameWithType: SetDataOptions
+    fullName: Microsoft.Xna.Framework.Graphics.SetDataOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost
+  isExternal: false
+  name: IsContentLost
+  nameWithType: DynamicIndexBuffer.IsContentLost
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.IsContentLost
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.#ctor
+  isExternal: false
+  name: DynamicIndexBuffer
+  nameWithType: DynamicIndexBuffer.DynamicIndexBuffer
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.DynamicIndexBuffer
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.IndexElementSize
+  commentId: T:Microsoft.Xna.Framework.Graphics.IndexElementSize
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: IndexElementSize
+  nameWithType: IndexElementSize
+  fullName: Microsoft.Xna.Framework.Graphics.IndexElementSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.BufferUsage
+  commentId: T:Microsoft.Xna.Framework.Graphics.BufferUsage
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: BufferUsage
+  nameWithType: BufferUsage
+  fullName: Microsoft.Xna.Framework.Graphics.BufferUsage
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData
+  isExternal: false
+  name: SetData
+  nameWithType: DynamicIndexBuffer.SetData
+  fullName: Microsoft.Xna.Framework.Graphics.DynamicIndexBuffer.SetData
+- uid: '{T}[]'
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Xna.Framework.Graphics.SetDataOptions
+  commentId: T:Microsoft.Xna.Framework.Graphics.SetDataOptions
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SetDataOptions
+  nameWithType: SetDataOptions
+  fullName: Microsoft.Xna.Framework.Graphics.SetDataOptions

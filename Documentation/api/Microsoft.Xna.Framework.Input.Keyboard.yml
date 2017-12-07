@@ -1,0 +1,464 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.Keyboard
+  commentId: T:Microsoft.Xna.Framework.Input.Keyboard
+  id: Keyboard
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.Keyboard.GetState
+  - Microsoft.Xna.Framework.Input.Keyboard.GetState(Microsoft.Xna.Framework.PlayerIndex)
+  langs:
+  - csharp
+  - vb
+  name: Keyboard
+  nameWithType: Keyboard
+  fullName: Microsoft.Xna.Framework.Input.Keyboard
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keyboard.SDL.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Keyboard
+    path: ../MonoGame.Framework/Input/Keyboard.SDL.cs
+    startLine: 8
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nAllows getting keystrokes from keyboard.\n"
+  example: []
+  syntax:
+    content: public static class Keyboard
+    content.vb: Public Module Keyboard
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Xna.Framework.Input.Keyboard.GetState
+  commentId: M:Microsoft.Xna.Framework.Input.Keyboard.GetState
+  id: GetState
+  parent: Microsoft.Xna.Framework.Input.Keyboard
+  langs:
+  - csharp
+  - vb
+  name: GetState()
+  nameWithType: Keyboard.GetState()
+  fullName: Microsoft.Xna.Framework.Input.Keyboard.GetState()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keyboard.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetState
+    path: ../MonoGame.Framework/Input/Keyboard.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns the current keyboard state.\n"
+  example: []
+  syntax:
+    content: public static KeyboardState GetState()
+    return:
+      type: Microsoft.Xna.Framework.Input.KeyboardState
+      description: Current keyboard state.
+    content.vb: Public Shared Function GetState As KeyboardState
+  overload: Microsoft.Xna.Framework.Input.Keyboard.GetState*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.Keyboard.GetState(Microsoft.Xna.Framework.PlayerIndex)
+  commentId: M:Microsoft.Xna.Framework.Input.Keyboard.GetState(Microsoft.Xna.Framework.PlayerIndex)
+  id: GetState(Microsoft.Xna.Framework.PlayerIndex)
+  parent: Microsoft.Xna.Framework.Input.Keyboard
+  langs:
+  - csharp
+  - vb
+  name: GetState(PlayerIndex)
+  nameWithType: Keyboard.GetState(PlayerIndex)
+  fullName: Microsoft.Xna.Framework.Input.Keyboard.GetState(Microsoft.Xna.Framework.PlayerIndex)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/Keyboard.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetState
+    path: ../MonoGame.Framework/Input/Keyboard.cs
+    startLine: 27
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns the current keyboard state for a given player.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use GetState() instead. In future versions this method can be removed.")]
+
+      public static KeyboardState GetState(PlayerIndex playerIndex)
+    parameters:
+    - id: playerIndex
+      type: Microsoft.Xna.Framework.PlayerIndex
+      description: Player index of the keyboard.
+    return:
+      type: Microsoft.Xna.Framework.Input.KeyboardState
+      description: Current keyboard state.
+    content.vb: >-
+      <Obsolete("Use GetState() instead. In future versions this method can be removed.")>
+
+      Public Shared Function GetState(playerIndex As PlayerIndex) As KeyboardState
+  overload: Microsoft.Xna.Framework.Input.Keyboard.GetState*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use GetState() instead. In future versions this method can be removed.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.Keyboard.GetState*
+  commentId: Overload:Microsoft.Xna.Framework.Input.Keyboard.GetState
+  isExternal: false
+  name: GetState
+  nameWithType: Keyboard.GetState
+  fullName: Microsoft.Xna.Framework.Input.Keyboard.GetState
+- uid: Microsoft.Xna.Framework.Input.KeyboardState
+  commentId: T:Microsoft.Xna.Framework.Input.KeyboardState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: KeyboardState
+  nameWithType: KeyboardState
+  fullName: Microsoft.Xna.Framework.Input.KeyboardState
+- uid: Microsoft.Xna.Framework.PlayerIndex
+  commentId: T:Microsoft.Xna.Framework.PlayerIndex
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: PlayerIndex
+  nameWithType: PlayerIndex
+  fullName: Microsoft.Xna.Framework.PlayerIndex
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework

@@ -1,0 +1,1122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Input.MouseState
+  commentId: T:Microsoft.Xna.Framework.Input.MouseState
+  id: MouseState
+  parent: Microsoft.Xna.Framework.Input
+  children:
+  - Microsoft.Xna.Framework.Input.MouseState.#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState)
+  - Microsoft.Xna.Framework.Input.MouseState.#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,System.Int32)
+  - Microsoft.Xna.Framework.Input.MouseState.Equals(System.Object)
+  - Microsoft.Xna.Framework.Input.MouseState.GetHashCode
+  - Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue
+  - Microsoft.Xna.Framework.Input.MouseState.LeftButton
+  - Microsoft.Xna.Framework.Input.MouseState.MiddleButton
+  - Microsoft.Xna.Framework.Input.MouseState.op_Equality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  - Microsoft.Xna.Framework.Input.MouseState.op_Inequality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  - Microsoft.Xna.Framework.Input.MouseState.Position
+  - Microsoft.Xna.Framework.Input.MouseState.RightButton
+  - Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue
+  - Microsoft.Xna.Framework.Input.MouseState.X
+  - Microsoft.Xna.Framework.Input.MouseState.XButton1
+  - Microsoft.Xna.Framework.Input.MouseState.XButton2
+  - Microsoft.Xna.Framework.Input.MouseState.Y
+  langs:
+  - csharp
+  - vb
+  name: MouseState
+  nameWithType: MouseState
+  fullName: Microsoft.Xna.Framework.Input.MouseState
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MouseState
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nRepresents a mouse state with cursor position and button press information.\n"
+  example: []
+  syntax:
+    content: public struct MouseState
+    content.vb: Public Structure MouseState
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Input.MouseState.#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState)
+  commentId: M:Microsoft.Xna.Framework.Input.MouseState.#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState)'
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: MouseState(Int32, Int32, Int32, ButtonState, ButtonState, ButtonState, ButtonState, ButtonState)
+  nameWithType: MouseState.MouseState(Int32, Int32, Int32, ButtonState, ButtonState, ButtonState, ButtonState, ButtonState)
+  fullName: Microsoft.Xna.Framework.Input.MouseState.MouseState(System.Int32, System.Int32, System.Int32, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 32
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nInitializes a new instance of the MouseState.\n"
+  remarks: Normally <xref href="Microsoft.Xna.Framework.Input.Mouse.GetState" data-throw-if-not-resolved="false"></xref> should be used to get mouse current state. The constructor is provided for simulating mouse input.
+  example: []
+  syntax:
+    content: public MouseState(int x, int y, int scrollWheel, ButtonState leftButton, ButtonState middleButton, ButtonState rightButton, ButtonState xButton1, ButtonState xButton2)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: Horizontal position of the mouse in relation to the window.
+    - id: y
+      type: System.Int32
+      description: Vertical position of the mouse in relation to the window.
+    - id: scrollWheel
+      type: System.Int32
+      description: Mouse scroll wheel&apos;s value.
+    - id: leftButton
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: Left mouse button&apos;s state.
+    - id: middleButton
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: Middle mouse button&apos;s state.
+    - id: rightButton
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: Right mouse button&apos;s state.
+    - id: xButton1
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: XBUTTON1&apos;s state.
+    - id: xButton2
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: XBUTTON2&apos;s state.
+    content.vb: Public Sub New(x As Integer, y As Integer, scrollWheel As Integer, leftButton As ButtonState, middleButton As ButtonState, rightButton As ButtonState, xButton1 As ButtonState, xButton2 As ButtonState)
+  overload: Microsoft.Xna.Framework.Input.MouseState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.MouseState.#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Input.MouseState.#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,Microsoft.Xna.Framework.Input.ButtonState,System.Int32)'
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: MouseState(Int32, Int32, Int32, ButtonState, ButtonState, ButtonState, ButtonState, ButtonState, Int32)
+  nameWithType: MouseState.MouseState(Int32, Int32, Int32, ButtonState, ButtonState, ButtonState, ButtonState, ButtonState, Int32)
+  fullName: Microsoft.Xna.Framework.Input.MouseState.MouseState(System.Int32, System.Int32, System.Int32, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, Microsoft.Xna.Framework.Input.ButtonState, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 66
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nInitializes a new instance of the MouseState.\n"
+  remarks: Normally <xref href="Microsoft.Xna.Framework.Input.Mouse.GetState" data-throw-if-not-resolved="false"></xref> should be used to get mouse current state. The constructor is provided for simulating mouse input.
+  example: []
+  syntax:
+    content: public MouseState(int x, int y, int scrollWheel, ButtonState leftButton, ButtonState middleButton, ButtonState rightButton, ButtonState xButton1, ButtonState xButton2, int horizontalScrollWheel)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: Horizontal position of the mouse in relation to the window.
+    - id: y
+      type: System.Int32
+      description: Vertical position of the mouse in relation to the window.
+    - id: scrollWheel
+      type: System.Int32
+      description: Mouse scroll wheel&apos;s value.
+    - id: leftButton
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: Left mouse button&apos;s state.
+    - id: middleButton
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: Middle mouse button&apos;s state.
+    - id: rightButton
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: Right mouse button&apos;s state.
+    - id: xButton1
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: XBUTTON1&apos;s state.
+    - id: xButton2
+      type: Microsoft.Xna.Framework.Input.ButtonState
+      description: XBUTTON2&apos;s state.
+    - id: horizontalScrollWheel
+      type: System.Int32
+      description: Mouse horizontal scroll wheel&apos;s value.
+    content.vb: Public Sub New(x As Integer, y As Integer, scrollWheel As Integer, leftButton As ButtonState, middleButton As ButtonState, rightButton As ButtonState, xButton1 As ButtonState, xButton2 As ButtonState, horizontalScrollWheel As Integer)
+  overload: Microsoft.Xna.Framework.Input.MouseState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Input.MouseState.op_Equality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  commentId: M:Microsoft.Xna.Framework.Input.MouseState.op_Equality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  id: op_Equality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: Equality(MouseState, MouseState)
+  nameWithType: MouseState.Equality(MouseState, MouseState)
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Equality(Microsoft.Xna.Framework.Input.MouseState, Microsoft.Xna.Framework.Input.MouseState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 94
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCompares whether two MouseState instances are equal.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(MouseState left, MouseState right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Input.MouseState
+      description: MouseState instance on the left of the equal sign.
+    - id: right
+      type: Microsoft.Xna.Framework.Input.MouseState
+      description: MouseState instance  on the right of the equal sign.
+    return:
+      type: System.Boolean
+      description: true if the instances are equal; false otherwise.
+    content.vb: Public Shared Operator =(left As MouseState, right As MouseState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.MouseState.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.MouseState.op_Inequality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  commentId: M:Microsoft.Xna.Framework.Input.MouseState.op_Inequality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  id: op_Inequality(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState)
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: Inequality(MouseState, MouseState)
+  nameWithType: MouseState.Inequality(MouseState, MouseState)
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Inequality(Microsoft.Xna.Framework.Input.MouseState, Microsoft.Xna.Framework.Input.MouseState)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 113
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCompares whether two MouseState instances are not equal.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(MouseState left, MouseState right)
+    parameters:
+    - id: left
+      type: Microsoft.Xna.Framework.Input.MouseState
+      description: MouseState instance on the left of the equal sign.
+    - id: right
+      type: Microsoft.Xna.Framework.Input.MouseState
+      description: MouseState instance  on the right of the equal sign.
+    return:
+      type: System.Boolean
+      description: true if the objects are not equal; false otherwise.
+    content.vb: Public Shared Operator <>(left As MouseState, right As MouseState) As Boolean
+  overload: Microsoft.Xna.Framework.Input.MouseState.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Input.MouseState.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Input.MouseState.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: MouseState.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 123
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nCompares whether current instance is equal to specified object.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The MouseState to compare.
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Input.MouseState.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.MouseState.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Input.MouseState.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: MouseState.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Input.MouseState.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 134
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets the hash code for MouseState instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: Hash code of the object.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Input.MouseState.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Input.MouseState.X
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.X
+  id: X
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: MouseState.X
+  fullName: Microsoft.Xna.Framework.Input.MouseState.X
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: X
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 154
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets horizontal position of the cursor in relation to the window.\n"
+  example: []
+  syntax:
+    content: public int X { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property X As Integer
+  overload: Microsoft.Xna.Framework.Input.MouseState.X*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.Y
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.Y
+  id: Y
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: MouseState.Y
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Y
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Y
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 166
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets vertical position of the cursor in relation to the window.\n"
+  example: []
+  syntax:
+    content: public int Y { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Y As Integer
+  overload: Microsoft.Xna.Framework.Input.MouseState.Y*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.Position
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.Position
+  id: Position
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: MouseState.Position
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Position
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Position
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 178
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets cursor position.\n"
+  example: []
+  syntax:
+    content: public Point Position { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Point
+    content.vb: Public ReadOnly Property Position As Point
+  overload: Microsoft.Xna.Framework.Input.MouseState.Position*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.LeftButton
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.LeftButton
+  id: LeftButton
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: LeftButton
+  nameWithType: MouseState.LeftButton
+  fullName: Microsoft.Xna.Framework.Input.MouseState.LeftButton
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: LeftButton
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 185
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets state of the left mouse button.\n"
+  example: []
+  syntax:
+    content: public ButtonState LeftButton { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.ButtonState
+    content.vb: Public ReadOnly Property LeftButton As ButtonState
+  overload: Microsoft.Xna.Framework.Input.MouseState.LeftButton*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.MiddleButton
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.MiddleButton
+  id: MiddleButton
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: MiddleButton
+  nameWithType: MouseState.MiddleButton
+  fullName: Microsoft.Xna.Framework.Input.MouseState.MiddleButton
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MiddleButton
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 195
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets state of the middle mouse button.\n"
+  example: []
+  syntax:
+    content: public ButtonState MiddleButton { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.ButtonState
+    content.vb: Public ReadOnly Property MiddleButton As ButtonState
+  overload: Microsoft.Xna.Framework.Input.MouseState.MiddleButton*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.RightButton
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.RightButton
+  id: RightButton
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: RightButton
+  nameWithType: MouseState.RightButton
+  fullName: Microsoft.Xna.Framework.Input.MouseState.RightButton
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RightButton
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 205
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets state of the right mouse button.\n"
+  example: []
+  syntax:
+    content: public ButtonState RightButton { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.ButtonState
+    content.vb: Public ReadOnly Property RightButton As ButtonState
+  overload: Microsoft.Xna.Framework.Input.MouseState.RightButton*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue
+  id: ScrollWheelValue
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: ScrollWheelValue
+  nameWithType: MouseState.ScrollWheelValue
+  fullName: Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ScrollWheelValue
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 215
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns cumulative scroll wheel value since the game start.\n"
+  example: []
+  syntax:
+    content: public int ScrollWheelValue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ScrollWheelValue As Integer
+  overload: Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue
+  id: HorizontalScrollWheelValue
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: HorizontalScrollWheelValue
+  nameWithType: MouseState.HorizontalScrollWheelValue
+  fullName: Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: HorizontalScrollWheelValue
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 225
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nReturns the cumulative horizontal scroll wheel value since the game start\n"
+  example: []
+  syntax:
+    content: public int HorizontalScrollWheelValue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property HorizontalScrollWheelValue As Integer
+  overload: Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.XButton1
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.XButton1
+  id: XButton1
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: XButton1
+  nameWithType: MouseState.XButton1
+  fullName: Microsoft.Xna.Framework.Input.MouseState.XButton1
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: XButton1
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 235
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets state of the XButton1.\n"
+  example: []
+  syntax:
+    content: public ButtonState XButton1 { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.ButtonState
+    content.vb: Public ReadOnly Property XButton1 As ButtonState
+  overload: Microsoft.Xna.Framework.Input.MouseState.XButton1*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Input.MouseState.XButton2
+  commentId: P:Microsoft.Xna.Framework.Input.MouseState.XButton2
+  id: XButton2
+  parent: Microsoft.Xna.Framework.Input.MouseState
+  langs:
+  - csharp
+  - vb
+  name: XButton2
+  nameWithType: MouseState.XButton2
+  fullName: Microsoft.Xna.Framework.Input.MouseState.XButton2
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Input/MouseState.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: XButton2
+    path: ../MonoGame.Framework/Input/MouseState.cs
+    startLine: 247
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Input
+  summary: "\nGets state of the XButton2.\n"
+  example: []
+  syntax:
+    content: public ButtonState XButton2 { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Input.ButtonState
+    content.vb: Public ReadOnly Property XButton2 As ButtonState
+  overload: Microsoft.Xna.Framework.Input.MouseState.XButton2*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Xna.Framework.Input
+  commentId: N:Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: Microsoft.Xna.Framework.Input
+  nameWithType: Microsoft.Xna.Framework.Input
+  fullName: Microsoft.Xna.Framework.Input
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Input.Mouse.GetState
+  commentId: M:Microsoft.Xna.Framework.Input.Mouse.GetState
+- uid: Microsoft.Xna.Framework.Input.MouseState.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.#ctor
+  isExternal: false
+  name: MouseState
+  nameWithType: MouseState.MouseState
+  fullName: Microsoft.Xna.Framework.Input.MouseState.MouseState
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Input.ButtonState
+  commentId: T:Microsoft.Xna.Framework.Input.ButtonState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: ButtonState
+  nameWithType: ButtonState
+  fullName: Microsoft.Xna.Framework.Input.ButtonState
+- uid: Microsoft.Xna.Framework.Input.MouseState.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: MouseState.Equality
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Equality
+- uid: Microsoft.Xna.Framework.Input.MouseState
+  commentId: T:Microsoft.Xna.Framework.Input.MouseState
+  parent: Microsoft.Xna.Framework.Input
+  isExternal: false
+  name: MouseState
+  nameWithType: MouseState
+  fullName: Microsoft.Xna.Framework.Input.MouseState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Xna.Framework.Input.MouseState.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: MouseState.Inequality
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Inequality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.MouseState.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: MouseState.Equals
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Equals
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Input.MouseState.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: MouseState.GetHashCode
+  fullName: Microsoft.Xna.Framework.Input.MouseState.GetHashCode
+- uid: Microsoft.Xna.Framework.Input.MouseState.X*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.X
+  isExternal: false
+  name: X
+  nameWithType: MouseState.X
+  fullName: Microsoft.Xna.Framework.Input.MouseState.X
+- uid: Microsoft.Xna.Framework.Input.MouseState.Y*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.Y
+  isExternal: false
+  name: Y
+  nameWithType: MouseState.Y
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Y
+- uid: Microsoft.Xna.Framework.Input.MouseState.Position*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.Position
+  isExternal: false
+  name: Position
+  nameWithType: MouseState.Position
+  fullName: Microsoft.Xna.Framework.Input.MouseState.Position
+- uid: Microsoft.Xna.Framework.Point
+  commentId: T:Microsoft.Xna.Framework.Point
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Point
+  nameWithType: Point
+  fullName: Microsoft.Xna.Framework.Point
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Input.MouseState.LeftButton*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.LeftButton
+  isExternal: false
+  name: LeftButton
+  nameWithType: MouseState.LeftButton
+  fullName: Microsoft.Xna.Framework.Input.MouseState.LeftButton
+- uid: Microsoft.Xna.Framework.Input.MouseState.MiddleButton*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.MiddleButton
+  isExternal: false
+  name: MiddleButton
+  nameWithType: MouseState.MiddleButton
+  fullName: Microsoft.Xna.Framework.Input.MouseState.MiddleButton
+- uid: Microsoft.Xna.Framework.Input.MouseState.RightButton*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.RightButton
+  isExternal: false
+  name: RightButton
+  nameWithType: MouseState.RightButton
+  fullName: Microsoft.Xna.Framework.Input.MouseState.RightButton
+- uid: Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue
+  isExternal: false
+  name: ScrollWheelValue
+  nameWithType: MouseState.ScrollWheelValue
+  fullName: Microsoft.Xna.Framework.Input.MouseState.ScrollWheelValue
+- uid: Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue
+  isExternal: false
+  name: HorizontalScrollWheelValue
+  nameWithType: MouseState.HorizontalScrollWheelValue
+  fullName: Microsoft.Xna.Framework.Input.MouseState.HorizontalScrollWheelValue
+- uid: Microsoft.Xna.Framework.Input.MouseState.XButton1*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.XButton1
+  isExternal: false
+  name: XButton1
+  nameWithType: MouseState.XButton1
+  fullName: Microsoft.Xna.Framework.Input.MouseState.XButton1
+- uid: Microsoft.Xna.Framework.Input.MouseState.XButton2*
+  commentId: Overload:Microsoft.Xna.Framework.Input.MouseState.XButton2
+  isExternal: false
+  name: XButton2
+  nameWithType: MouseState.XButton2
+  fullName: Microsoft.Xna.Framework.Input.MouseState.XButton2

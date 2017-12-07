@@ -1,0 +1,771 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteEffect
+  id: SpriteEffect
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  - Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor(Microsoft.Xna.Framework.Graphics.SpriteEffect)
+  - Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone
+  - Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply
+  langs:
+  - csharp
+  - vb
+  name: SpriteEffect
+  nameWithType: SpriteEffect
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SpriteEffect
+    path: ../MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe default effect used by SpriteBatch.\n"
+  example: []
+  syntax:
+    content: 'public class SpriteEffect : Effect, IDisposable'
+    content.vb: >-
+      Public Class SpriteEffect
+          Inherits Effect
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource
+  - Microsoft.Xna.Framework.Graphics.Effect
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Xna.Framework.Graphics.Effect.Parameters
+  - Microsoft.Xna.Framework.Graphics.Effect.Techniques
+  - Microsoft.Xna.Framework.Graphics.Effect.CurrentTechnique
+  - Microsoft.Xna.Framework.Graphics.Effect.Dispose(System.Boolean)
+  - Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  - Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  commentId: M:Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.GraphicsDevice)'
+  parent: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  langs:
+  - csharp
+  - vb
+  name: SpriteEffect(GraphicsDevice)
+  nameWithType: SpriteEffect.SpriteEffect(GraphicsDevice)
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.SpriteEffect(Microsoft.Xna.Framework.Graphics.GraphicsDevice)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+    startLine: 25
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a new SpriteEffect.\n"
+  example: []
+  syntax:
+    content: public SpriteEffect(GraphicsDevice device)
+    parameters:
+    - id: device
+      type: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+    content.vb: Public Sub New(device As GraphicsDevice)
+  overload: Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor(Microsoft.Xna.Framework.Graphics.SpriteEffect)
+  commentId: M:Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor(Microsoft.Xna.Framework.Graphics.SpriteEffect)
+  id: '#ctor(Microsoft.Xna.Framework.Graphics.SpriteEffect)'
+  parent: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  langs:
+  - csharp
+  - vb
+  name: SpriteEffect(SpriteEffect)
+  nameWithType: SpriteEffect.SpriteEffect(SpriteEffect)
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.SpriteEffect(Microsoft.Xna.Framework.Graphics.SpriteEffect)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+    startLine: 34
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a new SpriteEffect by cloning parameter settings from an existing instance.\n"
+  example: []
+  syntax:
+    content: protected SpriteEffect(SpriteEffect cloneSource)
+    parameters:
+    - id: cloneSource
+      type: Microsoft.Xna.Framework.Graphics.SpriteEffect
+    content.vb: Protected Sub New(cloneSource As SpriteEffect)
+  overload: Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone
+  commentId: M:Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone
+  id: Clone
+  parent: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: SpriteEffect.Clone()
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Clone
+    path: ../MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a clone of the current SpriteEffect instance.\n"
+  example: []
+  syntax:
+    content: public override Effect Clone()
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Effect
+    content.vb: Public Overrides Function Clone As Effect
+  overridden: Microsoft.Xna.Framework.Graphics.Effect.Clone
+  overload: Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply
+  commentId: M:Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply
+  id: OnApply
+  parent: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  langs:
+  - csharp
+  - vb
+  name: OnApply()
+  nameWithType: SpriteEffect.OnApply()
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: OnApply
+    path: ../MonoGame.Framework/Graphics/Effect/SpriteEffect.cs
+    startLine: 61
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nLazily computes derived parameter values immediately before applying the effect.\n"
+  example: []
+  syntax:
+    content: protected override void OnApply()
+    content.vb: Protected Overrides Sub OnApply
+  overridden: Microsoft.Xna.Framework.Graphics.Effect.OnApply
+  overload: Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsResource
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsResource
+  nameWithType: GraphicsResource
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource
+- uid: Microsoft.Xna.Framework.Graphics.Effect
+  commentId: T:Microsoft.Xna.Framework.Graphics.Effect
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Effect
+  nameWithType: Effect
+  fullName: Microsoft.Xna.Framework.Graphics.Effect
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Xna.Framework.Graphics.Effect.Parameters
+  commentId: P:Microsoft.Xna.Framework.Graphics.Effect.Parameters
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: false
+  name: Parameters
+  nameWithType: Effect.Parameters
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.Parameters
+- uid: Microsoft.Xna.Framework.Graphics.Effect.Techniques
+  commentId: P:Microsoft.Xna.Framework.Graphics.Effect.Techniques
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: false
+  name: Techniques
+  nameWithType: Effect.Techniques
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.Techniques
+- uid: Microsoft.Xna.Framework.Graphics.Effect.CurrentTechnique
+  commentId: P:Microsoft.Xna.Framework.Graphics.Effect.CurrentTechnique
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: false
+  name: CurrentTechnique
+  nameWithType: Effect.CurrentTechnique
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.CurrentTechnique
+- uid: Microsoft.Xna.Framework.Graphics.Effect.Dispose(System.Boolean)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Effect.Dispose(System.Boolean)
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Effect.Dispose(Boolean)
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Effect.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Effect.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+  commentId: M:Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: false
+  name: GraphicsDeviceResetting()
+  nameWithType: Effect.GraphicsDeviceResetting()
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: Effect.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+    name: GraphicsDeviceResetting
+    nameWithType: Effect.GraphicsDeviceResetting
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.GraphicsDeviceResetting
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Dispose()
+  nameWithType: GraphicsResource.Dispose()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+    name: Dispose
+    nameWithType: GraphicsResource.Dispose
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  commentId: E:Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Disposing
+  nameWithType: GraphicsResource.Disposing
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Disposing
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsResource.GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: IsDisposed
+  nameWithType: GraphicsResource.IsDisposed
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.IsDisposed
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Name
+  nameWithType: GraphicsResource.Name
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Name
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  commentId: P:Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: Tag
+  nameWithType: GraphicsResource.Tag
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.Tag
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  parent: Microsoft.Xna.Framework.Graphics.GraphicsResource
+  isExternal: false
+  name: ToString()
+  nameWithType: GraphicsResource.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+    name: ToString
+    nameWithType: GraphicsResource.ToString
+    fullName: Microsoft.Xna.Framework.Graphics.GraphicsResource.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SpriteEffect.#ctor
+  isExternal: false
+  name: SpriteEffect
+  nameWithType: SpriteEffect.SpriteEffect
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.SpriteEffect
+- uid: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  commentId: T:Microsoft.Xna.Framework.Graphics.GraphicsDevice
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: Microsoft.Xna.Framework.Graphics.GraphicsDevice
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect
+  commentId: T:Microsoft.Xna.Framework.Graphics.SpriteEffect
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: SpriteEffect
+  nameWithType: SpriteEffect
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect
+- uid: Microsoft.Xna.Framework.Graphics.Effect.Clone
+  commentId: M:Microsoft.Xna.Framework.Graphics.Effect.Clone
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: false
+  name: Clone()
+  nameWithType: Effect.Clone()
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.Clone()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.Clone
+    name: Clone
+    nameWithType: Effect.Clone
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.Clone
+    name: Clone
+    nameWithType: Effect.Clone
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone
+  isExternal: false
+  name: Clone
+  nameWithType: SpriteEffect.Clone
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.Clone
+- uid: Microsoft.Xna.Framework.Graphics.Effect.OnApply
+  commentId: M:Microsoft.Xna.Framework.Graphics.Effect.OnApply
+  parent: Microsoft.Xna.Framework.Graphics.Effect
+  isExternal: false
+  name: OnApply()
+  nameWithType: Effect.OnApply()
+  fullName: Microsoft.Xna.Framework.Graphics.Effect.OnApply()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.OnApply
+    name: OnApply
+    nameWithType: Effect.OnApply
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.OnApply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.Effect.OnApply
+    name: OnApply
+    nameWithType: Effect.OnApply
+    fullName: Microsoft.Xna.Framework.Graphics.Effect.OnApply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply
+  isExternal: false
+  name: OnApply
+  nameWithType: SpriteEffect.OnApply
+  fullName: Microsoft.Xna.Framework.Graphics.SpriteEffect.OnApply

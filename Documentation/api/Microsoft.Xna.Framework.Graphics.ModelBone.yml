@@ -1,0 +1,893 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelBone
+  id: ModelBone
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.ModelBone.#ctor
+  - Microsoft.Xna.Framework.Graphics.ModelBone.AddChild(Microsoft.Xna.Framework.Graphics.ModelBone)
+  - Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  - Microsoft.Xna.Framework.Graphics.ModelBone.Children
+  - Microsoft.Xna.Framework.Graphics.ModelBone.Index
+  - Microsoft.Xna.Framework.Graphics.ModelBone.Meshes
+  - Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform
+  - Microsoft.Xna.Framework.Graphics.ModelBone.Name
+  - Microsoft.Xna.Framework.Graphics.ModelBone.Parent
+  - Microsoft.Xna.Framework.Graphics.ModelBone.Transform
+  langs:
+  - csharp
+  - vb
+  name: ModelBone
+  nameWithType: ModelBone
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone
+  type: Class
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ModelBone
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 9
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public sealed class ModelBone
+    content.vb: Public NotInheritable Class ModelBone
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Meshes
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.Meshes
+  id: Meshes
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: Meshes
+  nameWithType: ModelBone.Meshes
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Meshes
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Meshes
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 15
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public List<ModelMesh> Meshes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMesh}
+    content.vb: Public ReadOnly Property Meshes As List(Of ModelMesh)
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.Meshes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Children
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.Children
+  id: Children
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: ModelBone.Children
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Children
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Children
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 26
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelBoneCollection Children { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelBoneCollection
+    content.vb: Public ReadOnly Property Children As ModelBoneCollection
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.Children*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Index
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.Index
+  id: Index
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: ModelBone.Index
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Index
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Index
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 30
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public int Index { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Index As Integer
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.Index*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Name
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.Name
+  id: Name
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ModelBone.Name
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Name
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Name
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 34
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Parent
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.Parent
+  id: Parent
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: ModelBone.Parent
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Parent
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Parent
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelBone Parent { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Graphics.ModelBone
+    content.vb: Public Property Parent As ModelBone
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.Parent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Transform
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.Transform
+  id: Transform
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: ModelBone.Transform
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Transform
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Transform
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 44
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public Matrix Transform { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Matrix
+    content.vb: Public Property Transform As Matrix
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.Transform*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform
+  commentId: P:Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform
+  id: ModelTransform
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: ModelTransform
+  nameWithType: ModelBone.ModelTransform
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ModelTransform
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 53
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nTransform of this node from the root of the model not from the parent\n"
+  example: []
+  syntax:
+    content: public Matrix ModelTransform { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Matrix
+    content.vb: Public Property ModelTransform As Matrix
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.#ctor
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelBone.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: ModelBone()
+  nameWithType: ModelBone.ModelBone()
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.ModelBone()
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public ModelBone()
+    content.vb: Public Sub New
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  id: AddMesh(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: AddMesh(ModelMesh)
+  nameWithType: ModelBone.AddMesh(ModelMesh)
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh(Microsoft.Xna.Framework.Graphics.ModelMesh)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AddMesh
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 63
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void AddMesh(ModelMesh mesh)
+    parameters:
+    - id: mesh
+      type: Microsoft.Xna.Framework.Graphics.ModelMesh
+    content.vb: Public Sub AddMesh(mesh As ModelMesh)
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.AddChild(Microsoft.Xna.Framework.Graphics.ModelBone)
+  commentId: M:Microsoft.Xna.Framework.Graphics.ModelBone.AddChild(Microsoft.Xna.Framework.Graphics.ModelBone)
+  id: AddChild(Microsoft.Xna.Framework.Graphics.ModelBone)
+  parent: Microsoft.Xna.Framework.Graphics.ModelBone
+  langs:
+  - csharp
+  - vb
+  name: AddChild(ModelBone)
+  nameWithType: ModelBone.AddChild(ModelBone)
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.AddChild(Microsoft.Xna.Framework.Graphics.ModelBone)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/ModelBone.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AddChild
+    path: ../MonoGame.Framework/Graphics/ModelBone.cs
+    startLine: 68
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: public void AddChild(ModelBone modelBone)
+    parameters:
+    - id: modelBone
+      type: Microsoft.Xna.Framework.Graphics.ModelBone
+    content.vb: Public Sub AddChild(modelBone As ModelBone)
+  overload: Microsoft.Xna.Framework.Graphics.ModelBone.AddChild*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Meshes*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.Meshes
+  isExternal: false
+  name: Meshes
+  nameWithType: ModelBone.Meshes
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Meshes
+- uid: System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  commentId: T:System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.ModelMesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ModelMesh>
+  nameWithType: List<ModelMesh>
+  fullName: System.Collections.Generic.List<Microsoft.Xna.Framework.Graphics.ModelMesh>
+  nameWithType.vb: List(Of ModelMesh)
+  fullName.vb: System.Collections.Generic.List(Of Microsoft.Xna.Framework.Graphics.ModelMesh)
+  name.vb: List(Of ModelMesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+    name: ModelMesh
+    nameWithType: ModelMesh
+    fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Children*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.Children
+  isExternal: false
+  name: Children
+  nameWithType: ModelBone.Children
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Children
+- uid: Microsoft.Xna.Framework.Graphics.ModelBoneCollection
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelBoneCollection
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelBoneCollection
+  nameWithType: ModelBoneCollection
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBoneCollection
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Index*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.Index
+  isExternal: false
+  name: Index
+  nameWithType: ModelBone.Index
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Index
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Name*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.Name
+  isExternal: false
+  name: Name
+  nameWithType: ModelBone.Name
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Parent*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.Parent
+  isExternal: false
+  name: Parent
+  nameWithType: ModelBone.Parent
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Parent
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelBone
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelBone
+  nameWithType: ModelBone
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.Transform*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.Transform
+  isExternal: false
+  name: Transform
+  nameWithType: ModelBone.Transform
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.Transform
+- uid: Microsoft.Xna.Framework.Matrix
+  commentId: T:Microsoft.Xna.Framework.Matrix
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Matrix
+  nameWithType: Matrix
+  fullName: Microsoft.Xna.Framework.Matrix
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform
+  isExternal: false
+  name: ModelTransform
+  nameWithType: ModelBone.ModelTransform
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.ModelTransform
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.#ctor
+  isExternal: false
+  name: ModelBone
+  nameWithType: ModelBone.ModelBone
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.ModelBone
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh
+  isExternal: false
+  name: AddMesh
+  nameWithType: ModelBone.AddMesh
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.AddMesh
+- uid: Microsoft.Xna.Framework.Graphics.ModelMesh
+  commentId: T:Microsoft.Xna.Framework.Graphics.ModelMesh
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: ModelMesh
+  nameWithType: ModelMesh
+  fullName: Microsoft.Xna.Framework.Graphics.ModelMesh
+- uid: Microsoft.Xna.Framework.Graphics.ModelBone.AddChild*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.ModelBone.AddChild
+  isExternal: false
+  name: AddChild
+  nameWithType: ModelBone.AddChild
+  fullName: Microsoft.Xna.Framework.Graphics.ModelBone.AddChild

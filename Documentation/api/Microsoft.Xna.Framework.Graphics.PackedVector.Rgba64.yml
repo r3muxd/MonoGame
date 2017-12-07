@@ -1,0 +1,1215 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  commentId: T:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  id: Rgba64
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector
+  children:
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(Microsoft.Xna.Framework.Vector4)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(System.Object)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Equality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Inequality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString
+  - Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4
+  langs:
+  - csharp
+  - vb
+  name: Rgba64
+  nameWithType: Rgba64
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Rgba64
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 11
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nPacked vector type containing four 16-bit unsigned normalized values ranging from 0 to 1.\n"
+  example: []
+  syntax:
+    content: 'public struct Rgba64 : IPackedVector<ulong>, IEquatable<Rgba64>, IPackedVector'
+    content.vb: >-
+      Public Structure Rgba64
+          Implements IPackedVector(Of ULong), IEquatable(Of Rgba64), IPackedVector
+  implements:
+  - Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}
+  - System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}
+  - Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue
+  commentId: P:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue
+  id: PackedValue
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: PackedValue
+  nameWithType: Rgba64.PackedValue
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: PackedValue
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 16
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nGets and sets the packed value.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public ulong PackedValue { get; set; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Property PackedValue As ULong
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue*
+  implements:
+  - Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}.PackedValue
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: Rgba64(Single, Single, Single, Single)
+  nameWithType: Rgba64.Rgba64(Single, Single, Single, Single)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Rgba64(System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 38
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nCreates a new instance of Rgba64.\n"
+  example: []
+  syntax:
+    content: public Rgba64(float x, float y, float z, float w)
+    parameters:
+    - id: x
+      type: System.Single
+      description: The x component
+    - id: y
+      type: System.Single
+      description: The y component
+    - id: z
+      type: System.Single
+      description: The z component
+    - id: w
+      type: System.Single
+      description: The w component
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, w As Single)
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(Microsoft.Xna.Framework.Vector4)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor(Microsoft.Xna.Framework.Vector4)
+  id: '#ctor(Microsoft.Xna.Framework.Vector4)'
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: Rgba64(Vector4)
+  nameWithType: Rgba64.Rgba64(Vector4)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Rgba64(Microsoft.Xna.Framework.Vector4)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 49
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nCreates a new instance of Rgba64.\n"
+  example: []
+  syntax:
+    content: public Rgba64(Vector4 vector)
+    parameters:
+    - id: vector
+      type: Microsoft.Xna.Framework.Vector4
+      description: "\nVector containing the components for the packed vector.\n"
+    content.vb: Public Sub New(vector As Vector4)
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4
+  id: ToVector4
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: ToVector4()
+  nameWithType: Rgba64.ToVector4()
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToVector4
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 58
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nGets the packed vector in Vector4 format.\n"
+  example: []
+  syntax:
+    content: public Vector4 ToVector4()
+    return:
+      type: Microsoft.Xna.Framework.Vector4
+      description: The packed vector in Vector4 format
+    content.vb: Public Function ToVector4 As Vector4
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4*
+  implements:
+  - Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  id: Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  isEii: true
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: IPackedVector.PackFromVector4(Vector4)
+  nameWithType: Rgba64.IPackedVector.PackFromVector4(Vector4)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 72
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nSets the packed vector from a Vector4.\n"
+  example: []
+  syntax:
+    content: void IPackedVector.PackFromVector4(Vector4 vector)
+    parameters:
+    - id: vector
+      type: Microsoft.Xna.Framework.Vector4
+      description: Vector containing the components.
+    content.vb: Sub Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(vector As Vector4) Implements IPackedVector.PackFromVector4
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4*
+  implements:
+  - Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  nameWithType.vb: Rgba64.Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Vector4)
+  name.vb: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Vector4)
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(System.Object)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Rgba64.Equals(Object)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 82
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nCompares an object with the packed vector.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare.
+    return:
+      type: System.Boolean
+      description: True if the object is equal to the packed vector.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  id: Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: Equals(Rgba64)
+  nameWithType: Rgba64.Equals(Rgba64)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Equals
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 92
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nCompares another Rgba64 packed vector with the packed vector.\n"
+  example: []
+  syntax:
+    content: public bool Equals(Rgba64 other)
+    parameters:
+    - id: other
+      type: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+      description: The Rgba64 packed vector to compare.
+    return:
+      type: System.Boolean
+      description: True if the packed vectors are equal.
+    content.vb: Public Function Equals(other As Rgba64) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Rgba64.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 101
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nGets a string representation of the packed vector.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation of the packed vector.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Rgba64.GetHashCode()
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: GetHashCode
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 110
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  summary: "\nGets a hash code of the packed vector.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for the packed vector.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Equality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Equality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  id: op_Equality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: Equality(Rgba64, Rgba64)
+  nameWithType: Rgba64.Equality(Rgba64, Rgba64)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64, Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Equality
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 115
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  syntax:
+    content: public static bool operator ==(Rgba64 lhs, Rgba64 rhs)
+    parameters:
+    - id: lhs
+      type: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    - id: rhs
+      type: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(lhs As Rgba64, rhs As Rgba64) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Inequality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Inequality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  id: op_Inequality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64,Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Rgba64, Rgba64)
+  nameWithType: Rgba64.Inequality(Rgba64, Rgba64)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Inequality(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64, Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  type: Operator
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: op_Inequality
+    path: ../MonoGame.Framework/Graphics/PackedVector/Rgba64.cs
+    startLine: 120
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics.PackedVector
+  syntax:
+    content: public static bool operator !=(Rgba64 lhs, Rgba64 rhs)
+    parameters:
+    - id: lhs
+      type: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    - id: rhs
+      type: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(lhs As Rgba64, rhs As Rgba64) As Boolean
+  overload: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector
+  commentId: N:Microsoft.Xna.Framework.Graphics.PackedVector
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics.PackedVector
+  nameWithType: Microsoft.Xna.Framework.Graphics.PackedVector
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}
+  commentId: T:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector
+  definition: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+  name: IPackedVector<UInt64>
+  nameWithType: IPackedVector<UInt64>
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector<System.UInt64>
+  nameWithType.vb: IPackedVector(Of UInt64)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector(Of System.UInt64)
+  name.vb: IPackedVector(Of UInt64)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+    name: IPackedVector
+    nameWithType: IPackedVector
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+    name: IPackedVector
+    nameWithType: IPackedVector
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}
+  commentId: T:System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Rgba64>
+  nameWithType: IEquatable<Rgba64>
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64>
+  nameWithType.vb: IEquatable(Of Rgba64)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  name.vb: IEquatable(Of Rgba64)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    name: Rgba64
+    nameWithType: Rgba64
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    name: Rgba64
+    nameWithType: Rgba64
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  commentId: T:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector
+  isExternal: false
+  name: IPackedVector
+  nameWithType: IPackedVector
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+  commentId: T:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+  isExternal: false
+  name: IPackedVector<TPacked>
+  nameWithType: IPackedVector<TPacked>
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector<TPacked>
+  nameWithType.vb: IPackedVector(Of TPacked)
+  fullName.vb: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector(Of TPacked)
+  name.vb: IPackedVector(Of TPacked)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+    name: IPackedVector
+    nameWithType: IPackedVector
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPacked
+    nameWithType: TPacked
+    fullName: TPacked
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1
+    name: IPackedVector
+    nameWithType: IPackedVector
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPacked
+    nameWithType: TPacked
+    fullName: TPacked
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue
+  isExternal: false
+  name: PackedValue
+  nameWithType: Rgba64.PackedValue
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.PackedValue
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}.PackedValue
+  commentId: P:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}.PackedValue
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector{System.UInt64}
+  definition: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1.PackedValue
+  name: PackedValue
+  nameWithType: IPackedVector<UInt64>.PackedValue
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector<System.UInt64>.PackedValue
+  nameWithType.vb: IPackedVector(Of UInt64).PackedValue
+  fullName.vb: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector(Of System.UInt64).PackedValue
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1.PackedValue
+  commentId: P:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector`1.PackedValue
+  isExternal: false
+  name: PackedValue
+  nameWithType: IPackedVector<TPacked>.PackedValue
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector<TPacked>.PackedValue
+  nameWithType.vb: IPackedVector(Of TPacked).PackedValue
+  fullName.vb: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector(Of TPacked).PackedValue
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.#ctor
+  isExternal: false
+  name: Rgba64
+  nameWithType: Rgba64.Rgba64
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Rgba64
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Vector4
+  commentId: T:Microsoft.Xna.Framework.Vector4
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector4
+  nameWithType: Vector4
+  fullName: Microsoft.Xna.Framework.Vector4
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4
+  isExternal: false
+  name: ToVector4
+  nameWithType: Rgba64.ToVector4
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToVector4
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  isExternal: false
+  name: ToVector4()
+  nameWithType: IPackedVector.ToVector4()
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4()
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+    name: ToVector4
+    nameWithType: IPackedVector.ToVector4
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+    name: ToVector4
+    nameWithType: IPackedVector.ToVector4
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.ToVector4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft#Xna#Framework#Graphics#PackedVector#IPackedVector#PackFromVector4
+  isExternal: false
+  name: IPackedVector.PackFromVector4
+  nameWithType: Rgba64.IPackedVector.PackFromVector4
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4
+  nameWithType.vb: Rgba64.Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4
+  name.vb: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  commentId: M:Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector
+  isExternal: false
+  name: PackFromVector4(Vector4)
+  nameWithType: IPackedVector.PackFromVector4(Vector4)
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+  spec.csharp:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+    name: PackFromVector4
+    nameWithType: IPackedVector.PackFromVector4
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Vector4
+    name: Vector4
+    nameWithType: Vector4
+    fullName: Microsoft.Xna.Framework.Vector4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4(Microsoft.Xna.Framework.Vector4)
+    name: PackFromVector4
+    nameWithType: IPackedVector.PackFromVector4
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.IPackedVector.PackFromVector4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Vector4
+    name: Vector4
+    nameWithType: Vector4
+    fullName: Microsoft.Xna.Framework.Vector4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: Rgba64.Equals
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  commentId: M:System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  parent: System.IEquatable{Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Rgba64)
+  nameWithType: IEquatable<Rgba64>.Equals(Rgba64)
+  fullName: System.IEquatable<Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64>.Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  nameWithType.vb: IEquatable(Of Rgba64).Equals(Rgba64)
+  fullName.vb: System.IEquatable(Of Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64).Equals(Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Rgba64>.Equals
+    fullName: System.IEquatable<Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    name: Rgba64
+    nameWithType: Rgba64
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Rgba64).Equals
+    fullName: System.IEquatable(Of Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+    name: Rgba64
+    nameWithType: Rgba64
+    fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  commentId: T:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+  parent: Microsoft.Xna.Framework.Graphics.PackedVector
+  isExternal: false
+  name: Rgba64
+  nameWithType: Rgba64
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: Rgba64.ToString
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Rgba64.GetHashCode
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Equality*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: Rgba64.Equality
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Equality
+- uid: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Inequality*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: Rgba64.Inequality
+  fullName: Microsoft.Xna.Framework.Graphics.PackedVector.Rgba64.Inequality

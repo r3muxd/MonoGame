@@ -1,0 +1,1146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.Viewport
+  commentId: T:Microsoft.Xna.Framework.Graphics.Viewport
+  id: Viewport
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.Viewport.#ctor(Microsoft.Xna.Framework.Rectangle)
+  - Microsoft.Xna.Framework.Graphics.Viewport.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Microsoft.Xna.Framework.Graphics.Viewport.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  - Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio
+  - Microsoft.Xna.Framework.Graphics.Viewport.Bounds
+  - Microsoft.Xna.Framework.Graphics.Viewport.Height
+  - Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+  - Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+  - Microsoft.Xna.Framework.Graphics.Viewport.Project(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  - Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea
+  - Microsoft.Xna.Framework.Graphics.Viewport.ToString
+  - Microsoft.Xna.Framework.Graphics.Viewport.Unproject(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  - Microsoft.Xna.Framework.Graphics.Viewport.Width
+  - Microsoft.Xna.Framework.Graphics.Viewport.X
+  - Microsoft.Xna.Framework.Graphics.Viewport.Y
+  langs:
+  - csharp
+  - vb
+  name: Viewport
+  nameWithType: Viewport
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport
+  type: Struct
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Viewport
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 12
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nDescribes the view bounds for render-target surface.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public struct Viewport
+    content.vb: >-
+      <DataContract>
+
+      Public Structure Viewport
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Height
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Height
+  id: Height
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Viewport.Height
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Height
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Height
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 27
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe height of the bounds in pixels.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int Height { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property Height As Integer
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.Height*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+  id: MaxDepth
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: MaxDepth
+  nameWithType: Viewport.MaxDepth
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MaxDepth
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 41
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe upper limit of depth of this viewport.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MaxDepth { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public Property MaxDepth As Single
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+  id: MinDepth
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: MinDepth
+  nameWithType: Viewport.MinDepth
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: MinDepth
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 55
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe lower limit of depth of this viewport.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MinDepth { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public Property MinDepth As Single
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.MinDepth*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Width
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Width
+  id: Width
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Viewport.Width
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Width
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Width
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 69
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe width of the bounds in pixels.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int Width { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property Width As Integer
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.Width*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Y
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Y
+  id: Y
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Viewport.Y
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Y
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Y
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 83
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe y coordinate of the beginning of this viewport.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int Y { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property Y As Integer
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.Y*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.X
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.X
+  id: X
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Viewport.X
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.X
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: X
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 98
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nThe x coordinate of the beginning of this viewport.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int X { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property X As Integer
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.X*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio
+  id: AspectRatio
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: AspectRatio
+  nameWithType: Viewport.AspectRatio
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: AspectRatio
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 110
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets the aspect ratio of this <xref href=\"Microsoft.Xna.Framework.Graphics.Viewport\" data-throw-if-not-resolved=\"false\"></xref>, which is width / height. \n"
+  example: []
+  syntax:
+    content: public float AspectRatio { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property AspectRatio As Single
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Bounds
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Bounds
+  id: Bounds
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: Viewport.Bounds
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Bounds
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Bounds
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 125
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nGets or sets a boundary of this <xref href=\"Microsoft.Xna.Framework.Graphics.Viewport\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Rectangle Bounds { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Rectangle
+    content.vb: Public Property Bounds As Rectangle
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.Bounds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea
+  id: TitleSafeArea
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: TitleSafeArea
+  nameWithType: Viewport.TitleSafeArea
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea
+  type: Property
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: TitleSafeArea
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 144
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns the subset of the viewport that is guaranteed to be visible on a lower quality display.\n"
+  example: []
+  syntax:
+    content: public Rectangle TitleSafeArea { get; }
+    parameters: []
+    return:
+      type: Microsoft.Xna.Framework.Rectangle
+    content.vb: Public ReadOnly Property TitleSafeArea As Rectangle
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Viewport.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Viewport(Int32, Int32, Int32, Int32)
+  nameWithType: Viewport.Viewport(Int32, Int32, Int32, Int32)
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Viewport(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 156
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nConstructs a viewport from the given values. The <xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.MinDepth\" data-throw-if-not-resolved=\"false\"></xref> will be 0.0 and <xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth\" data-throw-if-not-resolved=\"false\"></xref> will be 1.0.\n"
+  example: []
+  syntax:
+    content: public Viewport(int x, int y, int width, int height)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The x coordinate of the upper-left corner of the view bounds in pixels.
+    - id: y
+      type: System.Int32
+      description: The y coordinate of the upper-left corner of the view bounds in pixels.
+    - id: width
+      type: System.Int32
+      description: The width of the view bounds in pixels.
+    - id: height
+      type: System.Int32
+      description: The height of the view bounds in pixels.
+    content.vb: Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer)
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Viewport.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)'
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Viewport(Int32, Int32, Int32, Int32, Single, Single)
+  nameWithType: Viewport.Viewport(Int32, Int32, Int32, Int32, Single, Single)
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Viewport(System.Int32, System.Int32, System.Int32, System.Int32, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 175
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nConstructs a viewport from the given values.\n"
+  example: []
+  syntax:
+    content: public Viewport(int x, int y, int width, int height, float minDepth, float maxDepth)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The x coordinate of the upper-left corner of the view bounds in pixels.
+    - id: y
+      type: System.Int32
+      description: The y coordinate of the upper-left corner of the view bounds in pixels.
+    - id: width
+      type: System.Int32
+      description: The width of the view bounds in pixels.
+    - id: height
+      type: System.Int32
+      description: The height of the view bounds in pixels.
+    - id: minDepth
+      type: System.Single
+      description: The lower limit of depth.
+    - id: maxDepth
+      type: System.Single
+      description: The upper limit of depth.
+    content.vb: Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer, minDepth As Single, maxDepth As Single)
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.#ctor(Microsoft.Xna.Framework.Rectangle)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Viewport.#ctor(Microsoft.Xna.Framework.Rectangle)
+  id: '#ctor(Microsoft.Xna.Framework.Rectangle)'
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Viewport(Rectangle)
+  nameWithType: Viewport.Viewport(Rectangle)
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Viewport(Microsoft.Xna.Framework.Rectangle)
+  type: Constructor
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: .ctor
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 189
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nCreates a new instance of <xref href=\"Microsoft.Xna.Framework.Graphics.Viewport\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public Viewport(Rectangle bounds)
+    parameters:
+    - id: bounds
+      type: Microsoft.Xna.Framework.Rectangle
+      description: A <xref href="Microsoft.Xna.Framework.Rectangle" data-throw-if-not-resolved="false"></xref> that defines the location and size of the <xref href="Microsoft.Xna.Framework.Graphics.Viewport" data-throw-if-not-resolved="false"></xref> in a render target.
+    content.vb: Public Sub New(bounds As Rectangle)
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Project(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Viewport.Project(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  id: Project(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Project(Vector3, Matrix, Matrix, Matrix)
+  nameWithType: Viewport.Project(Vector3, Matrix, Matrix, Matrix)
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Project(Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Matrix, Microsoft.Xna.Framework.Matrix, Microsoft.Xna.Framework.Matrix)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Project
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 201
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nProjects a <xref href=\"Microsoft.Xna.Framework.Vector3\" data-throw-if-not-resolved=\"false\"></xref> from world space into screen space.\n"
+  example: []
+  syntax:
+    content: public Vector3 Project(Vector3 source, Matrix projection, Matrix view, Matrix world)
+    parameters:
+    - id: source
+      type: Microsoft.Xna.Framework.Vector3
+      description: The <xref href="Microsoft.Xna.Framework.Vector3" data-throw-if-not-resolved="false"></xref> to project.
+    - id: projection
+      type: Microsoft.Xna.Framework.Matrix
+      description: The projection <xref href="Microsoft.Xna.Framework.Matrix" data-throw-if-not-resolved="false"></xref>.
+    - id: view
+      type: Microsoft.Xna.Framework.Matrix
+      description: The view <xref href="Microsoft.Xna.Framework.Matrix" data-throw-if-not-resolved="false"></xref>.
+    - id: world
+      type: Microsoft.Xna.Framework.Matrix
+      description: The world <xref href="Microsoft.Xna.Framework.Matrix" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+      description: ''
+    content.vb: Public Function Project(source As Vector3, projection As Matrix, view As Matrix, world As Matrix) As Vector3
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.Project*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Unproject(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  commentId: M:Microsoft.Xna.Framework.Graphics.Viewport.Unproject(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  id: Unproject(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: Unproject(Vector3, Matrix, Matrix, Matrix)
+  nameWithType: Viewport.Unproject(Vector3, Matrix, Matrix, Matrix)
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Unproject(Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework.Matrix, Microsoft.Xna.Framework.Matrix, Microsoft.Xna.Framework.Matrix)
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Unproject
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 226
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nUnprojects a <xref href=\"Microsoft.Xna.Framework.Vector3\" data-throw-if-not-resolved=\"false\"></xref> from screen space into world space.\n"
+  example: []
+  syntax:
+    content: public Vector3 Unproject(Vector3 source, Matrix projection, Matrix view, Matrix world)
+    parameters:
+    - id: source
+      type: Microsoft.Xna.Framework.Vector3
+      description: The <xref href="Microsoft.Xna.Framework.Vector3" data-throw-if-not-resolved="false"></xref> to unproject.
+    - id: projection
+      type: Microsoft.Xna.Framework.Matrix
+      description: The projection <xref href="Microsoft.Xna.Framework.Matrix" data-throw-if-not-resolved="false"></xref>.
+    - id: view
+      type: Microsoft.Xna.Framework.Matrix
+      description: The view <xref href="Microsoft.Xna.Framework.Matrix" data-throw-if-not-resolved="false"></xref>.
+    - id: world
+      type: Microsoft.Xna.Framework.Matrix
+      description: The world <xref href="Microsoft.Xna.Framework.Matrix" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Microsoft.Xna.Framework.Vector3
+      description: ''
+    content.vb: Public Function Unproject(source As Vector3, projection As Matrix, view As Matrix, world As Matrix) As Vector3
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.Unproject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.ToString
+  commentId: M:Microsoft.Xna.Framework.Graphics.Viewport.ToString
+  id: ToString
+  parent: Microsoft.Xna.Framework.Graphics.Viewport
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Viewport.ToString()
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.ToString()
+  type: Method
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Viewport.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: ToString
+    path: ../MonoGame.Framework/Graphics/Viewport.cs
+    startLine: 255
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  summary: "\nReturns a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> representation of this <xref href=\"Microsoft.Xna.Framework.Graphics.Viewport\" data-throw-if-not-resolved=\"false\"></xref> in the format:\n{X:[<xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.X\" data-throw-if-not-resolved=\"false\"></xref>] Y:[<xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.Y\" data-throw-if-not-resolved=\"false\"></xref>] Width:[<xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.Width\" data-throw-if-not-resolved=\"false\"></xref>] Height:[<xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.Height\" data-throw-if-not-resolved=\"false\"></xref>] MinDepth:[<xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.MinDepth\" data-throw-if-not-resolved=\"false\"></xref>] MaxDepth:[<xref href=\"Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth\" data-throw-if-not-resolved=\"false\"></xref>]}\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representation of this <xref href="Microsoft.Xna.Framework.Graphics.Viewport" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.Xna.Framework.Graphics.Viewport.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Height*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.Height
+  isExternal: false
+  name: Height
+  nameWithType: Viewport.Height
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Height
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+  isExternal: false
+  name: MaxDepth
+  nameWithType: Viewport.MaxDepth
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.MinDepth*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+  isExternal: false
+  name: MinDepth
+  nameWithType: Viewport.MinDepth
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Width*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.Width
+  isExternal: false
+  name: Width
+  nameWithType: Viewport.Width
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Width
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Y*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.Y
+  isExternal: false
+  name: Y
+  nameWithType: Viewport.Y
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Y
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.X*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.X
+  isExternal: false
+  name: X
+  nameWithType: Viewport.X
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.X
+- uid: Microsoft.Xna.Framework.Graphics.Viewport
+  commentId: T:Microsoft.Xna.Framework.Graphics.Viewport
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Viewport
+  nameWithType: Viewport
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio
+  isExternal: false
+  name: AspectRatio
+  nameWithType: Viewport.AspectRatio
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.AspectRatio
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Bounds*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.Bounds
+  isExternal: false
+  name: Bounds
+  nameWithType: Viewport.Bounds
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Bounds
+- uid: Microsoft.Xna.Framework.Rectangle
+  commentId: T:Microsoft.Xna.Framework.Rectangle
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: Microsoft.Xna.Framework.Rectangle
+- uid: Microsoft.Xna.Framework
+  commentId: N:Microsoft.Xna.Framework
+  isExternal: false
+  name: Microsoft.Xna.Framework
+  nameWithType: Microsoft.Xna.Framework
+  fullName: Microsoft.Xna.Framework
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea
+  isExternal: false
+  name: TitleSafeArea
+  nameWithType: Viewport.TitleSafeArea
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.TitleSafeArea
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.MinDepth
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.MaxDepth
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.#ctor*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.#ctor
+  isExternal: false
+  name: Viewport
+  nameWithType: Viewport.Viewport
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Viewport
+- uid: Microsoft.Xna.Framework.Vector3
+  commentId: T:Microsoft.Xna.Framework.Vector3
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Microsoft.Xna.Framework.Vector3
+- uid: Microsoft.Xna.Framework.Matrix
+  commentId: T:Microsoft.Xna.Framework.Matrix
+  parent: Microsoft.Xna.Framework
+  isExternal: false
+  name: Matrix
+  nameWithType: Matrix
+  fullName: Microsoft.Xna.Framework.Matrix
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Project*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.Project
+  isExternal: false
+  name: Project
+  nameWithType: Viewport.Project
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Project
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Unproject*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.Unproject
+  isExternal: false
+  name: Unproject
+  nameWithType: Viewport.Unproject
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.Unproject
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.X
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.X
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Y
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Y
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Width
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Width
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.Height
+  commentId: P:Microsoft.Xna.Framework.Graphics.Viewport.Height
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Xna.Framework.Graphics.Viewport.ToString*
+  commentId: Overload:Microsoft.Xna.Framework.Graphics.Viewport.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: Viewport.ToString
+  fullName: Microsoft.Xna.Framework.Graphics.Viewport.ToString

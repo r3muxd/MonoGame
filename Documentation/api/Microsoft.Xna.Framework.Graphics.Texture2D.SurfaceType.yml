@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  id: Texture2D.SurfaceType
+  parent: Microsoft.Xna.Framework.Graphics
+  children:
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.RenderTarget
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.SwapChainRenderTarget
+  - Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.Texture
+  langs:
+  - csharp
+  - vb
+  name: Texture2D.SurfaceType
+  nameWithType: Texture2D.SurfaceType
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  type: Enum
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SurfaceType
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 13
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: protected enum SurfaceType
+    content.vb: Protected Enum SurfaceType
+  modifiers.csharp:
+  - protected
+  - enum
+  modifiers.vb:
+  - Protected
+  - Enum
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.Texture
+  commentId: F:Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.Texture
+  id: Texture
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: Texture2D.SurfaceType.Texture
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.Texture
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: Texture
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 15
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: Texture = 0
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.RenderTarget
+  commentId: F:Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.RenderTarget
+  id: RenderTarget
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget
+  nameWithType: Texture2D.SurfaceType.RenderTarget
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.RenderTarget
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: RenderTarget
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 16
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: RenderTarget = 1
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.SwapChainRenderTarget
+  commentId: F:Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.SwapChainRenderTarget
+  id: SwapChainRenderTarget
+  parent: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  langs:
+  - csharp
+  - vb
+  name: SwapChainRenderTarget
+  nameWithType: Texture2D.SurfaceType.SwapChainRenderTarget
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType.SwapChainRenderTarget
+  type: Field
+  source:
+    remote:
+      path: MonoGame.Framework/Graphics/Texture2D.cs
+      branch: docfx
+      repo: https://github.com/Jjagg/MonoGame
+    id: SwapChainRenderTarget
+    path: ../MonoGame.Framework/Graphics/Texture2D.cs
+    startLine: 17
+  assemblies:
+  - MonoGame.Framework
+  namespace: Microsoft.Xna.Framework.Graphics
+  syntax:
+    content: SwapChainRenderTarget = 2
+    return:
+      type: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.Xna.Framework.Graphics
+  commentId: N:Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Microsoft.Xna.Framework.Graphics
+  nameWithType: Microsoft.Xna.Framework.Graphics
+  fullName: Microsoft.Xna.Framework.Graphics
+- uid: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  commentId: T:Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
+  parent: Microsoft.Xna.Framework.Graphics
+  isExternal: false
+  name: Texture2D.SurfaceType
+  nameWithType: Texture2D.SurfaceType
+  fullName: Microsoft.Xna.Framework.Graphics.Texture2D.SurfaceType
