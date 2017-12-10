@@ -2,6 +2,9 @@
   "_enableSearch": {
     "api/**": true
   },
+  "disableSidebar": {
+    "articles/**": true
+  },
   "_disableContribution": {
     "**CHANGELOG.md": true,
     "index.md": true
