@@ -72,7 +72,6 @@
     ],
     "dest": "_site",
     "postProcessors": [
-      "ExtractSearchIndex"
     ],
     "globalMetadata": {
       "_appTitle": "MonoGame Documentation",
