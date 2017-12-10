@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../",
+          "src": "..",
           "files": [ 
             "MonoGame.Framework/MonoGame.Framework.Windows.csproj",
             "MonoGame.Framework/MonoGame.Framework.WindowsGL.csproj",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "src": "../",
+        "src": "..",
         "files": [
           "CHANGELOG.md"
         ]
@@ -71,16 +71,21 @@
       }
     ],
     "dest": "_site",
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
     "globalMetadata": {
       "_appTitle": "MonoGame Documentation",
       "_disableBreadcrumb": true,
       "_disableFooter": true,
-      "_enableNewTab": false
+      "_enableNewTab": false,
+      "_enableSearch": false
     },
     "fileMetadataFiles": [
       "metadata.json"
     ],
     "template": [
+      "default",
       "template-mg"
     ],
     "noLangKeyword": false
