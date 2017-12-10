@@ -3,3 +3,5 @@
   topicHref: articles/index.md
 - name: Api Reference
   href: api/
+- name: Changelog
+  href: ../CHANGELOG.md
