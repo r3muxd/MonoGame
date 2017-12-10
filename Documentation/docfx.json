@@ -32,6 +32,8 @@
         "files": [
           "manual/**.md",
           "manual/**/toc.yml",
+          "tutorials/**.md",
+          "tutorials/**/toc.yml",
           "toc.yml",
           "index.md"
         ],
@@ -113,6 +115,8 @@
         "files": [
           "manual/**.md",
           "manual/**/toc.yml",
+          "tutorials/**.md",
+          "tutorials/**/toc.yml",
           "toc.yml",
           "*.md",
           "pdf/*"
