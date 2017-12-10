@@ -1,12 +1,9 @@
 {
-  "_enableSearch": {
-    "api/**": true
-  },
   "disableSidebar": {
     "articles/**": true
   },
   "_disableContribution": {
-    "**CHANGELOG.md": true,
+    "../CHANGELOG.md": true,
     "index.md": true
   }
 }
