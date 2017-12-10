@@ -31,7 +31,7 @@ spriteBatch.Draw(ballTexture, ballPosition, Color.White);
 
 Now run the game.
 
-![Draw Ball 1](~/images/getting_started/4_ball_not_center.png)
+![Draw Ball 1](images/4_ball_not_center.png)
 
 As you can see the ball doesn't seem quite centered yet. This is happening because MonoGame uses (0, 0) as the origin point for drawing by default. We can modify this by doing the following:
 
@@ -51,7 +51,7 @@ spriteBatch.Draw(
 
 With this we are setting the origin to the center of the image. Now the image will get drawn to the center of the screen.
 
-![Draw Ball 2](~/images/getting_started/4_ball_center.png)
+![Draw Ball 2](images/4_ball_center.png)
 
 Next let's setup some movement. Find the **Update** method and add:
 
