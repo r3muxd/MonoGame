@@ -10,7 +10,9 @@
             "MonoGame.Framework/MonoGame.Framework.Linux.csproj",
             "MonoGame.Framework/MonoGame.Framework.MacOS.csproj"
           ],
-          "exclude": [ "**/obj/**", "**/bin/**"
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**"
           ]
         }
       ],
@@ -34,8 +36,10 @@
           "index.md"
         ],
         "exclude": [
-          "obj/**",
-          "_site/**"
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**",
+          "_site_pdf/**"
         ]
       },
       {
@@ -48,11 +52,13 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "**/images/**"
         ],
         "exclude": [
-          "obj/**",
-          "_site/**"
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**",
+          "_site_pdf/**"
         ]
       }
     ],
@@ -65,8 +71,10 @@
           "apidoc/**.md"
         ],
         "exclude": [
-          "obj/**",
-          "_site/**"
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**",
+          "_site_pdf/**"
         ]
       }
     ],
@@ -124,11 +132,12 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "**/images/**"
         ],
         "exclude": [
           "**/bin/**",
           "**/obj/**",
+          "_site/**",
           "_site_pdf/**"
         ]
       }

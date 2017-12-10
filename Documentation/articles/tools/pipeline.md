@@ -3,7 +3,7 @@
 The MonoGame Pipeline Tool (Pipeline.exe) is the front-end GUI editor for MonoGame content builder projects.
 
 <p align="center">
-<img src="~/images/pipeline.png"/>
+![Pipeline Tool](images/pipeline.png)
 </p>
 
 The Pipeline Tool has the following features:
