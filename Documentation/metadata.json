@@ -1,6 +1,6 @@
 {
   "disableSidebar": {
-    "articles/**": true
+    "manual/**": true
   },
   "_disableContribution": {
     "../CHANGELOG.md": true,

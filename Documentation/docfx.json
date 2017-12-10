@@ -30,8 +30,8 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "manual/**.md",
+          "manual/**/toc.yml",
           "toc.yml",
           "index.md"
         ],
@@ -111,8 +111,8 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "manual/**.md",
+          "manual/**/toc.yml",
           "toc.yml",
           "*.md",
           "pdf/*"

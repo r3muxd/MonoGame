@@ -1,6 +1,6 @@
 - name: Manual
-  href: articles/
-  topicHref: articles/index.md
+  href: manual/
+  topicHref: manual/index.md
 - name: Tutorials
   href: tutorials/
   topicHref: tutorials/index.md
