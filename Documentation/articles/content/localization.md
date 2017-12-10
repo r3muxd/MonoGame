@@ -1,3 +1,5 @@
+# Localization
+
 Localization is an important part of any game. While it can be possible to design a
 game that is region independent, its quite hard. At some point you will need to 
 produce localized text and graphics. 
@@ -6,7 +8,7 @@ MonoGame has a simple localization system built in. If you want to develop your 
 system you are still able to do so. But the default system should be good enough for
 most use cases.
 
-# Creating resx files.
+### Creating resx files.
 
 MonoGame runs on .net/Mono on most platforms. Localization is handled by those platforms
 via the use of resx files. There are walkthroughs on [MSDN](https://msdn.microsoft.com/en-us/library/aa992030(v=vs.100).aspx)
@@ -53,13 +55,13 @@ the embedded resx file.
 You can add support for a new language by adding a new resx file which uses the language/region code e.g Foo.de-DE.resx.
 This new file will contain the translations for that language/region. In the example we are targetting German.
  
-## Universal Windows Platform (UWP) considerations.
+#### Universal Windows Platform (UWP) considerations.
 
 Unfortunately UWP does not support resx files anymore. They have a new file called resw. The format is similar but 
 incompatible. As a result you will need to duplicate the data into a set of resw files to get the to work on UWP. The 
 process is like the standrd resx process.
 
-# Upgrading your SpriteFont files
+### Upgrading your SpriteFont files
 
 By default the SpriteFont processor uses a limited set of characters to generate the font. While this is fine for english 
 languages it would probably not include special characters needed for other languages (French, Arabic, Korean etc).
@@ -109,7 +111,7 @@ the LocalizedFontProcessor. This can be done by editing the .mgcb file or using 
 that you can just compile your content as normal. If the processor has any trouble resolving or reading the
 resx files you will get an error.
 
-# Loading the Font
+### Loading the Font
 
 Loading the font can be done in the normal way. The end result of the process is a .xnb file containing a normal
 SpriteFont. 
@@ -118,7 +120,7 @@ SpriteFont.
 	var font = Content.Load<SpriteFont>("Foo");
 ```
 
-# Other Localized assets
+### Other Localized assets
 
 Not all localized assets will be fonts. In certain situtions you might need to swap out an entire texture or spritesheet.
 For these cases a new method has been added to the ContentManager, LoadLocalized. The idea behind this method is that it will

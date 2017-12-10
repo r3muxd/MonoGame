@@ -1,4 +1,4 @@
-# Change Log
+# Changelog
 
 
 ## 3.6 Release - 2/28/2017

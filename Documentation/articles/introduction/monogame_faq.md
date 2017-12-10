@@ -1,3 +1,5 @@
+# MonoGame FAQ
+
 This page contains a list of frequently asked questions.
 
 ### What software do I need to start?

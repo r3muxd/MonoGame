@@ -1,3 +1,5 @@
+# Setting up MonoGame on Linux
+
 This section will help you setup MonoGame on Linux.
 
 ### Running MonoGame Applications

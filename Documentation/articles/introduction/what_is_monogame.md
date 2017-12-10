@@ -1,3 +1,5 @@
+What is MonoGame
+
 MonoGame is an Open Source implementation of the Microsoft XNA 4 Framework. Our goal is to allow people to make great games using a simple API.
 The currently supported platforms are as follows.
 

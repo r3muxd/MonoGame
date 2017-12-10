@@ -1,47 +1,49 @@
+# MGCB
+
 The MonoGame Content Builder (MGCB.exe) is a command line tool for building XNB content on Windows, Mac, and Linux desktop systems.
 
 Typically it is executed by the [Pipeline GUI tool](pipeline.md) when editing content or indirectly from VisualStudio or MonoDevelop during the build process of a MonoGame project.  Alternatively you can use it yourself from the command line for specialized build pipelines or for debugging content processing.
 
-## Command Line Options
+### Command Line Options
 The options are processed "left to right".  When an option is repeated the last option always wins.
 
-### Output Directory
+#### Output Directory
 ```
 /outputDir:<directory_path>
 ```
 It specifies the directory where all content is written.  If this option is omitted the output will be put into the current working directory.
 
-### Intermediate Directory
+#### Intermediate Directory
 ```
 /intermediateDir:<directory_path>
 ```
 It specifies the directory where all intermediate files are written.  If this option is omitted the intermediate data will be put into the current working directory.
 
-### Rebuild Content
+#### Rebuild Content
 ```
 /rebuild 
 ```
 An optional parameter which forces a full rebuild of all content.
 
-### Clean Content
+#### Clean Content
 ```
 /clean
 ```
 Delete all previously built content and intermediate files.  Only the `/intermediateDir` and `/outputDir` need to be defined for clean to do its job.
 
-### Incremental Build
+#### Incremental Build
 ```
 /incremental
 ```
 Skip cleaning files not included in the current build.  Useful for custom tools which only require a subset of the game content built.
 
-### Assembly Reference
+#### Assembly Reference
 ```
 /reference:<assembly_path> 
 ```
 An optional parameter which adds an assembly reference which contains importers, processors, or writers needed during content building.
 
-### Target Platform
+#### Target Platform
 ```
 /platform:<target_Platform> 
 ```
@@ -64,7 +66,7 @@ If not set it will default to Windows.
 
 NOTE: PlayStation 4, Xbox One, PS Vita, and Switch support is only available to licensed console developers.
 
-### Target Graphics Profile
+#### Target Graphics Profile
 ```
 /profile:<graphics_Profile> 
 ```
@@ -74,25 +76,25 @@ Set the target graphics profile for this build. It must be a member of the Graph
 
 If not set it will default to HiDef.
 
-### Target Build Configuration
+#### Target Build Configuration
 ```
 /config:<build_config> 
 ```
 The optional build configuration name from the build system.  This is sometimes used as a hint in content processors.
 
-### Content Compression
+#### Content Compression
 ```
 /compress
 ```
 Uses LZ4 compression to compress the contents of the XNB files.  Content build times will increase with this option enabled.  Compression is not recommended for platforms such as Android, Windows Phone 8 and Windows 8 as the app package is already compressed.  This is not compatible with LZX compression used in XNA content.
 
-### Content Importer Name
+#### Content Importer Name
 ```
 /importer:<class_name>
 ```
 An optional parameter which defines the class name of the content importer for reading source content.  If the option is omitted or used without a class name the default content importer for the source type is used.
 
-### Content Processor Name
+#### Content Processor Name
 ```
 /processor:<class_name>
 ```
@@ -100,7 +102,7 @@ An optional parameter which defines the class name of the content processor for 
 
 Note that when you change the processor all previously defined `/processorParam` are cleared.
 
-### Content Processor Parameter
+#### Content Processor Parameter
 ```
 /processorParam:<name>=<value>
 ```
@@ -108,13 +110,13 @@ An optional parameter which defines a parameter name and value to set on a conte
 
 Note all defined processor parameters are cleared when the `/processor` is set.
 
-### Build Content File
+#### Build Content File
 ```
 /build:<content_filepath>
 ```
 Instructs the content builder to build the specified content file using the previously set switches and options.
 
-### Response File
+#### Response File
 ```
 /@:<response_filepath>
 ```
@@ -123,6 +125,7 @@ This defines a text response file (sometimes called a command file) that contain
 Each switch is specified on a new line.  Comment lines are prefixed with #.  You can specify multiple response files or mix normal command line switches with response files.
 
 An example response file could look like this:
+
 ```
 # Directories
 /outputDir:bin/foo 
@@ -138,12 +141,13 @@ An example response file could look like this:
 /build:Textures\metal.png
 /build:Textures\plastic.png
 ```
-### Launch Debugger
+```
+#### Launch Debugger
 ```
 /launchdebugger
 ```
 Allows a debugger to attach to the MGCB executable before content is built.
-### Define Preprocessor Parameter
+#### Define Preprocessor Parameter
 ```
 /define <name>=<value>
 ```

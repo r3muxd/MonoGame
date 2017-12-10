@@ -1,3 +1,5 @@
+# Setting up MonoGame on Mac
+
 This section will help you setup MonoGame on Mac OSX.
 
 ### Running MonoGame Applications
