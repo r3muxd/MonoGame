@@ -1,0 +1,68 @@
+/* Navbar in MG orange with white text. */
+.navbar-inverse {
+    background-color: #E73C00;
+    border-color: #E73C00;
+    color: #C01000;
+    font-weight: 500;
+}
+
+/* Selected navbar element styling */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: white;
+    background-color: #E73C00;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+/* unselected navbar elements */
+.navbar-inverse .navbar-nav > li > a {
+  color: #EEE;
+}
+
+/* Main content margin */
+.article {
+  margin-top: 80px;
+}
+
+/* Links in MG orange */
+button, a {
+    color: #E73C00;
+}
+
+a:focus, a:hover, button:focus, button:hover {
+  text-decoration: underline;
+  color: #E73C00;
+}
+
+/* toc */
+.sidetoc.shiftup {
+  bottom: 0px;
+}
+.sidetoc {
+  top: 115px;
+}
+.sidefilter {
+  padding-top: 20px;
+  top: 50px;
+}
+.toc .nav > li.active > a, .toc .nav > li.active > a:focus, .toc .nav > li.active > a:hover {
+  color: #E73C00;
+}
+.toc .nav > li > a:focus, .toc .nav > li > a:hover {
+  color: #E73C00;
+}
+
+/* affix */
+.sideaffix > div.contribution > ul > li > a.contribution-link:hover, .sideaffix > div.contribution > ul > li > a.contribution-link:focus {
+  text-decoration: underline;
+}
+.affix h5 {
+  display: none;
+}
+.affix > ul > li.active > a, .affix > ul > li.active > a::before {
+  color: #E73C00;
+}
+.affix > ul.level1 {
+  margin-right: 0px;
+}
+
