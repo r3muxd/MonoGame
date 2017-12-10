@@ -1,3 +1,4 @@
+# Understanding the Code
 
 This file will go over the code that is getting created when you start a blank project. For help on creating a project please look at [Creating a New Project](1_creating_a_new_project.md)
 

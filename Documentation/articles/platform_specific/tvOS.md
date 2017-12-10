@@ -1,6 +1,6 @@
-#
+# Platform-Specific Notes: tvOS
 
-## Menu Button Handling
+### Menu Button Handling
 
 The Menu button will map to the "Back" button on the GamePad. However on tvOS,
 the Menu button requires some special processing. According to the Apple 

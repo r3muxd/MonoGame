@@ -1,3 +1,5 @@
+# Adding Content
+
 This file will go over adding content to your game. For help on creating a project please look at [Creating a New Project](1_creating_a_new_project.md)
 
 First of all you are gonna need some content for your game. For this tutorial use the following image of a ball:

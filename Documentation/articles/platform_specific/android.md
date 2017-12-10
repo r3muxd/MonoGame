@@ -1,11 +1,11 @@
-# 
+# Platform-Specific Notes: Android
 
-## Target Frameworks
+### Target Frameworks
 Specifying the target Android versions can be confusing.  MonoGame is built to target Android 4.2 (API Level 17), but can run on lower Android versions.  If you build MonoGame from source, you will need the SDK Platform for API Level 17 installed in the Android SDK Manager.
 
 Since MonoGame targets Android 4.2, the Target Framework in your Android project must be set to 4.2 or higher.  To allow your game to run on lower Android versions, set the Minimum Android version to the desired version in the project properties.
 
-### Visual Studio
+#### Visual Studio
 There are three settings in the Application tab of the project properties to set the target Android versions.
 
 `Compile using Android version` must be set to a minimum of `Android 4.2`.  If you are using APIs available only in later Android versions, this must be set to the Android version that API became available or higher.
@@ -20,7 +20,7 @@ This is an example of a project set to build with the 4.4 SDK and target 4.0 as 
 <img src="~/images/android_vs_target_frameworks.png"/>
 </p>
 
-### Xamarin Studio
+#### Xamarin Studio
 
 Xamarin Studio has the same settings in the project options dialog. They are just in different places.
 
@@ -37,9 +37,9 @@ On the `Android Application` page, you will find `Minimum Android version` (Visu
 </p>
 
 
-## Android Manifest Requirements
+### Android Manifest Requirements
 
-### OpenGL ES 2.0 Support
+#### OpenGL ES 2.0 Support
 
 MonoGame uses OpenGL ES 2.0. Google requires the following to be added to AndroidManifest.xml in order for the Market to hide the game from devices that do not have support for OpenGL ES 2.0.
 
@@ -49,12 +49,12 @@ MonoGame uses OpenGL ES 2.0. Google requires the following to be added to Androi
 <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 ```
 
-### Texture Compression
+#### Texture Compression
 
 The Market can also filter games by the types of texture compression they support. Add a  ```
 <supports-gl-texture> ``` node for each type of texture compression used in your game. See the [Android documentation](http://developer.android.com/guide/topics/manifest/supports-gl-texture-element.html) for further details on this node.
 
-## References
+### References
 
 [Such Android API Levels, Much Confuse. Wow.](http://redth.codes/such-android-api-levels-much-confuse-wow/) is a blog post by Redth going into more detail about setting the Android versions in a Xamarin project.
 

@@ -1,6 +1,9 @@
-- name: General
+- name: Manual
   href: articles/
   topicHref: articles/index.md
+- name: Tutorials
+  href: tutorials/
+  topicHref: tutorials/index.md
 - name: Api Reference
   href: api/
 - name: Changelog

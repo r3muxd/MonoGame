@@ -1,3 +1,5 @@
+# Adding Basic Code
+
 This file will go over adding basic logic to your game. Do note that this file continues where [Adding Content](3_adding_content.md) tutorial left off.
 
 First of all we need to add few new variables, one for position, and one for speed.
