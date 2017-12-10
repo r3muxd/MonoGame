@@ -1,2 +1,0 @@
-# MonoGame API Reference
-
