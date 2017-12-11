@@ -5,6 +5,6 @@
   href: tutorials/
   topicHref: tutorials/index.md
 - name: Api Reference
-  href: api/
+  href: _api/
 - name: Changelog
   href: ../CHANGELOG.md
