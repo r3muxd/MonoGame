@@ -117,13 +117,13 @@
     ],
     "dest": "_site",
     "postProcessors": [
+      "ExtractSearchIndex"
     ],
     "globalMetadata": {
       "_appTitle": "MonoGame Documentation",
       "_disableBreadcrumb": true,
       "_disableFooter": true,
-      "_enableNewTab": false,
-      "_enableSearch": false
+      "_enableNewTab": false
     },
     "fileMetadataFiles": [
       "metadata.json"
