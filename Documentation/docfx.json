@@ -14,7 +14,7 @@
         }
       ],
 
-      "dest": "_tmp/api/windx"
+      "dest": "_api/"
     },
     {
       "src": [
