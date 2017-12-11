@@ -1,7 +1,9 @@
 THIS IS A WORK IN PROGRESS!
 
 # MonoGame Documentation
-This is the source for the [documentation published on MonoGame.net](http://www.monogame.net/documentation/).  It is rebuilt when the code changes and is published nightly to the website.
+This is the source for the [documentation published on MonoGame.net](http://www.monogame.net/documentation/).
+It is rebuilt when the code changes and is published nightly to the website.
+To build the web pages, MonoGame uses [docfx](http://dotnet.github.io/docfx/).
 
 ## General Rules
 The following rules must be observed at all times when contributing documentation to the MonoGame project.
@@ -28,7 +30,13 @@ Review the following expectations before contributing any documentation.
 TODO!
 
 ### API Reference 
-The API reference documentation is a big part of the documentation effort for MonoGame.  The documentation is written in the [C# XML format](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) and is inline to the MonoGame source code. The final web pages with API documentation are generated using [SharpDoc](http://sharpdx.org/documentation/tools/sharpdoc).
+The API reference documentation is a big part of the documentation effort for MonoGame.
+The documentation is written in the [C# XML format](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) and is inline to the MonoGame source code.
+The API is extracted by docfx and built into web pages.
+docfx supports adding to or overwriting API documentation in separate files.
+This feature can be used to write extensive remarks or example implementations while keeping the source code clean.
+The easiest way to create an override file is to click the "Improve this Doc" link on an API reference page.
+
 
 #### Every Word Should Contain Value
 Every word in the reference documentation should provide information beyond the API itself.  Documentation that only rehashes or rephrases what is already apparent in the class, method, parameter, or property name has zero value and wastes time for both the writer and reader.
@@ -37,10 +45,14 @@ Every word in the reference documentation should provide information beyond the 
 There is no guarantee that the reader will read beyond the first sentence of the reference documentation.  This is why that first sentence is the most important and should convey the most key piece of information.  Take your time to write the most concise and clear first sentence possible.  This helps users tremendously and goes a long way towards having great documentation.
 
 #### Surface Information Hidden In the Code
-Being inline with the code allows you to easily look for critical information within it that the user might not know from looking at the API alone.  Take your time to explore inner method calls and platform specific sections of the code.  The time to write the documentation is once you feel you fully understand the code you are documenting.  If you don't feel you understand the code then leave the documentation for someone else to write.
+Being inline with the code allows you to easily look for critical information within it that the user might not know from looking at the API alone.
+Take your time to explore inner method calls and platform specific sections of the code.
+The time to write the documentation is once you feel you fully understand the code you are documenting.
+If you don't feel you understand the code then ask for help or leave the documentation for someone else to write.
 
 #### Documentation Is Referenced Not Read
-Remember that the user is searching for an answer for a specific question.  It is your job to predict these questions and provide them clear answers.
+Remember that the user is searching for an answer for a specific question.
+It is your goal to predict these questions and provide them with clear answers.
 
 
 ## License
