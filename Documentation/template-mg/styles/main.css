@@ -65,7 +65,7 @@ a:focus, a:hover, button:focus, button:hover, .btn:focus, .btn:hover {
 .affix h5 {
   display: none;
 }
-.affix > ul > li.active > a, .affix ul > li.active > a {
+.affix > ul > li.active > a, .affix ul > li.active > a, .affix > ul > li.active > a::before, .affix ul > li.active > a::before {
   color: #E73C00;
 }
 .affix > ul.level1 {
