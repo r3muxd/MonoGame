@@ -5,10 +5,7 @@
         {
           "src": "..",
           "files": [ 
-            "MonoGame.Framework/MonoGame.Framework.Windows.csproj",
-            "MonoGame.Framework/MonoGame.Framework.WindowsGL.csproj",
-            "MonoGame.Framework/MonoGame.Framework.Linux.csproj",
-            "MonoGame.Framework/MonoGame.Framework.MacOS.csproj"
+            "MonoGame.Framework/MonoGame.Framework.Windows.csproj"
           ],
           "exclude": [
             "**/obj/**",
@@ -16,10 +13,48 @@
           ]
         }
       ],
-      "dest": "api",
-      "disableGitFeatures": false
+
+      "dest": "_tmp/api/windx"
+    },
+    {
+      "src": [
+        {
+          "src": "..",
+          "files": [ 
+            "MonoGame.Framework/MonoGame.Framework.WindowsGL.csproj"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**"
+          ]
+        }
+      ],
+      "dest": "_tmp/api/desktopgl"
     }
   ],
+  "merge": {
+    "content": [
+       {
+           "files": "*.yml",
+           "src": "_tmp/api/windx"
+       },
+       {
+           "files": "*.yml",
+           "src": "_tmp/api/desktopgl"
+       }
+     ],
+     "fileMetadata": {
+         "platform": {
+             "_tmp/api/windx/*.yml": [
+                 "windx"
+             ],
+             "_tmp/api/desktopgl/*.yml": [
+                 "desktopgl"
+             ]
+         }
+     },
+     "dest": "_api"
+  },
   "build": {
     "content": [
       {
