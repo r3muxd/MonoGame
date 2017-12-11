@@ -6,6 +6,12 @@
     font-weight: 500;
 }
 
+/* Navbar search bar */
+.form-control:focus {
+  border-color: #CCC;
+  box-shadow: none;
+}
+
 /* Selected navbar element styling */
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     color: white;
@@ -29,7 +35,7 @@ button, a {
     color: #E73C00;
 }
 
-a:focus, a:hover, button:focus, button:hover {
+a:focus, a:hover, button:focus, button:hover, .btn:focus, .btn:hover {
   text-decoration: underline;
   color: #E73C00;
 }
@@ -59,10 +65,22 @@ a:focus, a:hover, button:focus, button:hover {
 .affix h5 {
   display: none;
 }
-.affix > ul > li.active > a, .affix > ul > li.active > a::before {
+.affix > ul > li.active > a, .affix ul > li.active > a {
   color: #E73C00;
 }
 .affix > ul.level1 {
   margin-right: 0px;
+}
+
+/* small screens */
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-width: 0px
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #E66A38
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #E66A38
 }
 
