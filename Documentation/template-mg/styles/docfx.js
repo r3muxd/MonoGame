@@ -57,15 +57,6 @@ $(function () {
     $('.IMPORTANT, .CAUTION').addClass('alert alert-danger');
   }
 
-  // Enable anchors for headings.
-  (function () {
-    anchors.options = {
-      placement: 'left',
-      visible: 'touch'
-    };
-    anchors.add('article h2:not(.no-anchor), article h3:not(.no-anchor), article h4:not(.no-anchor)');
-  })();
-
   // Open links to different host in a new window.
   function renderLinks() {
     if ($("meta[property='docfx:newtab']").attr("content") === "true") {
