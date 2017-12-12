@@ -58,6 +58,7 @@ a:focus, a:hover, button:focus, button:hover, .btn:focus, .btn:hover {
   color: #E73C00;
 }
 
+
 /* affix */
 .sideaffix > div.contribution > ul > li > a.contribution-link:hover, .sideaffix > div.contribution > ul > li > a.contribution-link:focus {
   text-decoration: underline;
@@ -73,7 +74,9 @@ a:focus, a:hover, button:focus, button:hover, .btn:focus, .btn:hover {
 }
 
 /* small screens */
-
+.navbar-form {
+  line-height: 3;
+}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   border-width: 0px
 }
@@ -82,5 +85,12 @@ a:focus, a:hover, button:focus, button:hover, .btn:focus, .btn:hover {
 }
 .navbar-inverse .navbar-toggle {
   border-color: #E66A38
+}
+#search {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255,255,255,.1);
 }
 
