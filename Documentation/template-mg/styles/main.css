@@ -98,6 +98,15 @@ a.expander:focus, a.expander:hover {
   border-bottom-color: rgba(255,255,255,.1);
 }
 
+
+/* API */
+.api {
+  text-align: justify;
+  vertical-align: top;
+}
+.api > h2 {
+  margin-bottom: 25px;
+}
 /* API expanders */
 .collapse.in, .collapsing {
   text-align: unset;
@@ -125,4 +134,11 @@ table.api-table td {
   border-top: #ccc 1px solid;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+table.api-table td.member {
+  min-width: 200px;
+  width: 30%;
+}
+table.api-table td.summary {
+  width: 70%;
 }
