@@ -108,7 +108,7 @@ a.expander:focus, a.expander:hover {
   margin-bottom: 25px;
 }
 /* API expanders */
-.collapse.in, .collapsing {
+.api .collapse.in, .api .collapsing {
   text-align: unset;
 }
 .expander:before {
