@@ -546,7 +546,7 @@ $(function () {
 
     function getHierarchy() {
       // supported headers are h1, h2, h3, and h4
-      // The topest header is ignored
+      // The top header is ignored
       var selector = ".article article";
       var affixSelector = "#affix";
       var headers = ['h4', 'h3', 'h2', 'h1'];
@@ -579,7 +579,7 @@ $(function () {
             href: "#" + id,
             items: []
           };
-          if (nextLevelSelector) {
+          /*if (nextLevelSelector) {
             var selector = '#' + cssEscape(id) + "~" + nextLevelSelector;
             var currentSelector = selector;
             if (prevSelector) currentSelector += ":not(" + prevSelector + ")";
@@ -592,7 +592,7 @@ $(function () {
               }
             })
             prevSelector = selector;
-          }
+          }*/
           hierarchy.push(item);
         }
         break;
