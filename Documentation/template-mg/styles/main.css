@@ -1,3 +1,9 @@
+/* always show the scroll bar, prevents page repositoning 
+ * when expanders cause scroll bar to appear/disappear.   */
+html {
+  overflow-y: scroll;
+}
+
 /* Navbar in MG orange with white text. */
 .navbar-inverse {
     background-color: #E73C00;
