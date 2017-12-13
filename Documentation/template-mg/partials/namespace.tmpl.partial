@@ -1,21 +1,21 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 <h1 id="{{id}}" data-uid="{{uid}}" class="text-break">{{>partials/title}}</h1>
-<div class="markdown level0 summary">{{{summary}}}</div>
-<div class="markdown level0 conceptual">{{{conceptual}}}</div>
 <div class="api">
-{{#children}}
-  <h2 id="{{id}}"><a href="#collapsible-{{id}}" class="expander" data-toggle="collapse"/>{{>partials/namespaceSubtitle}}</h2>
-  <div id="collapsible-{{id}}" class="collapse in ns-members">
-    <table class="nameValue api-table">
-      {{#children}}
-        <tr>
-        <td class="member"><xref uid="{{uid}}" altProperty="fullName" displayProperty="name"/></td>
-        <td class="summary">{{{summary}}}</td>
-        </tr>
-      {{/children}}
-    </table>
-  </div>
-{{/children}}
+  <div class="markdown level0 summary">{{{summary}}}</div>
+  <div class="markdown level0 conceptual">{{{conceptual}}}</div>
+  {{#children}}
+    <h2 id="{{id}}"><a href="#collapsible-{{id}}" class="expander" data-toggle="collapse"/>{{>partials/namespaceSubtitle}}</h2>
+    <div id="collapsible-{{id}}" class="collapse in ns-members">
+      <table class="nameValue api-table">
+        {{#children}}
+          <tr>
+          <td class="member"><xref uid="{{uid}}" altProperty="fullName" displayProperty="name"/></td>
+          <td class="summary">{{{summary}}}</td>
+          </tr>
+        {{/children}}
+      </table>
+    </div>
+  {{/children}}
 </div>
 <div class="markdown level0 remarks">{{{remarks}}}</div>

@@ -108,9 +108,6 @@ a.expander:focus, a.expander:hover {
   margin-bottom: 25px;
 }
 /* API expanders */
-.api .collapse.in, .api .collapsing {
-  text-align: unset;
-}
 .expander:before {
   font-family: 'Glyphicons Halflings';
   content: "\e114";
@@ -126,10 +123,7 @@ a.expander:focus, a.expander:hover {
   transform: rotate(-90deg);
 }
 
-/* API tables */
-table.api-table {
-  border-top: #ccc 1px solid;
-}
+/* Namespace tables */
 table.api-table td {
   border-top: #ccc 1px solid;
   padding-top: 10px;
@@ -141,4 +135,28 @@ table.api-table td.member {
 }
 table.api-table td.summary {
   width: 70%;
+}
+@media (max-width: 768px) {
+  table.api-table td.member {
+    width: 100%;
+    float: left;
+    padding-bottom: 0px;
+  }
+  table.api-table td.summary {
+    width: 100%;
+    border: none;
+    float: left;
+    padding-top: 0px;
+  }
+}
+/* Class page */
+h5.api {
+  margin-top: 5px;
+}
+.inheritance h5 {
+  border-bottom: none;
+}
+.class-loc {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
