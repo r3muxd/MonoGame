@@ -149,7 +149,7 @@
 <div><xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
 {{/overridden}}
 {{#remarks}}
-<h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
+<h3 id="{{id}}_remarks">{{__global.remarks}}</h3>
 <div class="markdown level1 remarks">{{{remarks}}}</div>
 {{/remarks}}
 {{#example.0}}
