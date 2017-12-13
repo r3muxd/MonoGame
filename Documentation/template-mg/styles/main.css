@@ -158,5 +158,12 @@ h5.api {
 }
 .class-loc {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+}
+.class-loc h5 {
+  margin-top: 5px;
+}
+/* View Source links */
+article span.small.pull-right {
+  margin-top: 3px;
 }
