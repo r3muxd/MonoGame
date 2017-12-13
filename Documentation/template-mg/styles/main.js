@@ -5,7 +5,7 @@
 
   var anchorScrolls = {
     ANCHOR_REGEX: /^#[^ ]+$/,
-    OFFSET_HEIGHT_PX: 120,
+    OFFSET_HEIGHT_PX: 100,
 
     /**
      * Establish events, and fix initial scroll position if a hash is provided.
@@ -13,7 +13,7 @@
     init: function() {
       this.scrollToCurrent();
       $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
-      $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
+      $('body').on('click', 'a:not([data-toggle])', $.proxy(this, 'delegateAnchors'));
     },
 
     /**
