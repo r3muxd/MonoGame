@@ -169,3 +169,9 @@ table.api-table td.summary {
 article span.small.pull-right {
   margin-top: 3px;
 }
+/* I think they did this for anchors, but it's hacky and causes problems
+ * with the View Source links, so we're overwriting it                   */
+h1::before, h2::before, h3::before, h4::before {
+  height: 0px;
+  margin-top: 0px;
+}
