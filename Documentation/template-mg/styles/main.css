@@ -98,9 +98,8 @@ a.expander:focus, a.expander:hover {
   border-bottom-color: rgba(255,255,255,.1);
 }
 
-
 /* API */
-.api {
+.api-table {
   text-align: justify;
   vertical-align: top;
 }
@@ -150,11 +149,14 @@ table.api-table td.summary {
   }
 }
 /* Class page */
-h5.api {
-  margin-top: 5px;
+.api h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .inheritance h5 {
   border-bottom: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .class-loc {
   padding-top: 10px;
