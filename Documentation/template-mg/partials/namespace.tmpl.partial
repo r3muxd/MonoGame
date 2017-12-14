@@ -5,8 +5,11 @@
   <div class="markdown level0 summary">{{{summary}}}</div>
   <div class="markdown level0 conceptual">{{{conceptual}}}</div>
   {{#children}}
-    <h2 id="{{id}}"><a href="#collapsible-{{id}}" class="expander" data-toggle="collapse"/>{{>partials/namespaceSubtitle}}</h2>
-    <div id="collapsible-{{id}}" class="collapse in ns-members">
+    <h2 id="{{id}}">
+      <span class="expander"></span>
+      {{>partials/namespaceSubtitle}}
+    </h2>
+    <div class="wrapper collapse in" aria-expanded="true">
       <table class="nameValue api-table">
         {{#children}}
           <tr>
