@@ -4,6 +4,10 @@ html {
   overflow-y: scroll;
 }
 
+div.wrapper {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 /* Navbar in MG orange with white text. */
 .navbar-inverse {
     background-color: #E73C00;
@@ -105,30 +109,44 @@ a.expander:focus, a.expander:hover {
 }
 
 /* API */
+div.api {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 .api-table {
   text-align: justify;
   vertical-align: top;
 }
 .api > h2 {
-  margin-bottom: 25px;
+  /* disable top margin to prevent margin folding, which causes
+   * jumps in the collapse animation */
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 /* API expanders */
 .expander:before {
   font-family: 'Glyphicons Halflings';
   content: "\e114";
   color: grey;
-  font-size: medium;
   position: absolute;
-  left: -10px;
-  margin-top: 10px;
-
   transition: transform .2s ease-out;
+  cursor: pointer;
 }
 .expander.collapsed:before {
   transform: rotate(-90deg);
 }
+.api .expander:before {
+  font-size: medium;
+  left: -10px;
+  margin-top: 10px;
+}
+
 
 /* Namespace tables */
+table.api-table {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
 table.api-table td {
   border-top: #ccc 1px solid;
   padding-top: 10px;

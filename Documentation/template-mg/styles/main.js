@@ -1,3 +1,12 @@
+
+// expanders
+$(".expander").click(function(e) {
+  var exp = $(e.target);
+  exp.parent().next().collapse("toggle");
+  exp.toggleClass("collapsed");
+});
+
+
 // function for smooth scrolling and proper offset when jumping to anchors
 // Taken from https://stackoverflow.com/a/13067009
 (function(document, history, location) {
@@ -57,7 +66,7 @@
      */
     scrollToCurrent: function(e) { 
       if(this.scrollIfAnchor(window.location.hash) && e) {
-      	e.preventDefault();
+        e.preventDefault();
       }
     },
 
@@ -73,5 +82,5 @@
     }
   };
 
-	$(document).ready($.proxy(anchorScrolls, 'init'));
+    $(document).ready($.proxy(anchorScrolls, 'init'));
 })(window.document, window.history, window.location);
