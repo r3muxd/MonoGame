@@ -1,0 +1,349 @@
+/* ===== GENERAL ===== */
+
+html {
+  font-family: "Segoe UI",Tahoma,Helvetica,sans-serif;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+}
+input {
+  font-family: "Segoe UI",Tahoma,Helvetica,sans-serif;
+  font-size: 90%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+  margin: 0.8em 0;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 0.7em 0;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.25em;
+  margin: 0.6em 0;
+  font-weight: 600;
+}
+
+/* Links in MG orange */
+a {
+  color: #E73C00;
+  text-decoration: none;
+}
+.content a:focus, .content a:hover {
+  text-decoration: underline;
+}
+.hide {
+  display: none
+}
+
+/* Don't underline expanders */
+a.expander:focus, a.expander:hover {
+  text-decoration: unset;
+}
+
+ul.nav {
+  list-style: none;
+}
+
+.scroll-y {
+  overflow-y: auto;
+}
+
+.flex-col {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.flex-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-stretch {
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* flex items have min-width of content size by default */
+  min-width: 0;
+}
+img {
+  max-width: 100%;
+}
+code {
+  line-height: 1.2;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+.no-overflow {
+  overflow: hidden;
+}
+#page-toc {
+  overflow: auto;
+  white-space: nowrap;
+  flex: 0 0 280px;
+}
+#page-affix {
+  flex: 1 0 200px;
+}
+.content-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+@media (max-width: 992px) {
+  /* hide affix on small screens */
+  #page-affix {
+    display: none;
+  }
+}
+
+/* ===== NAVBAR ===== */
+
+#navbar {
+  max-width: 1110px;
+  margin: auto;
+}
+.navbar ul {
+  margin: 0px;
+}
+/* Navbar in MG orange with white text. */
+.navbar {
+  font-family: "Segoe UI",Tahoma,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  background-color: #E73C00;
+  border-color: #E73C00;
+  color: #C01000;
+  font-weight: 500;
+}
+
+/* navbar elements */
+.navbar a {
+  float: left;
+  padding: 5px 10px;
+  margin: 10px 10px 0px 10px;
+  color: #EEE;
+}
+
+/* Hovered navbar element styling */
+.navbar a:hover {
+  color: white;
+}
+
+/* Selected navbar element styling */
+.navbar .active > a {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* ===== TOC ===== */
+
+#page-toc {
+  background-color: #f1f1f1;
+  border-right: 2px solid #e7e7e7;
+}
+#toc-filter-input {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+.toc a {
+  color: #666666
+}
+.toc a.active {
+  color: #E73C00;
+}
+.toc a:focus, .toc a:hover {
+  color: #E73C00;
+}
+.toc ul {
+  padding: 0 0 0 20px;
+}
+.toc .level1 a {
+  font-weight: 700;
+  font-size: 100%;
+}
+.toc .level2 a {
+  font-weight: 500;
+  font-size: 92%;
+}
+.toc .level3 a {
+  font-weight: 400;
+  font-size: 86%;
+}
+
+/* ===== CONTENT ===== */
+.prevnext {
+  margin: 50px 5px;
+  display: flex;
+}
+.page-nav {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: auto;
+}
+.page-nav > i.material-icons {
+  font-size: 48px;
+}
+a.page-nav:not([href]) {
+  /* don't show prev/next arrow when no link set */
+  display: none;
+}
+a.page-nav {
+  color: #aaa;
+}
+a.page-nav:hover {
+  color: #E73C00;
+}
+
+/* ===== AFFIX ===== */
+
+.sideaffix {
+  position: fixed;
+  top: 65px;
+}
+a.contribution-link {
+  font-weight: bold;
+}
+a.contribution-link:hover, a.contribution-link:focus {
+  text-decoration: underline;
+}
+.affix h5 {
+  display: none;
+}
+.affix > ul > li.active > a, .affix ul > li.active > a, .affix > ul > li.active > a::before, .affix ul > li.active > a::before {
+  color: #E73C00;
+}
+.affix > ul.level1 {
+  margin-right: 0;
+}
+
+/* small screens */
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-width: 0px
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #E66A38
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #E66A38
+}
+#search {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255,255,255,.1);
+}
+
+/* API */
+div.api {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.api-table {
+  text-align: justify;
+  vertical-align: top;
+}
+.api > h2 {
+  /* disable top margin to prevent margin folding, which causes
+   * jumps in the collapse animation */
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* API expanders */
+.expander:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  color: grey;
+  position: absolute;
+  transition: transform .2s ease-out;
+  cursor: pointer;
+}
+.expander.collapsed:before {
+  transform: rotate(-90deg);
+}
+.api .expander:before {
+  font-size: medium;
+  left: -10px;
+  margin-top: 10px;
+}
+
+
+/* Namespace tables */
+table.api-table {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+table.api-table td {
+  border-top: #ccc 1px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+table.api-table td.member {
+  min-width: 200px;
+  width: 30%;
+}
+table.api-table td.summary {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  table.api-table td.member {
+    width: 100%;
+    float: left;
+    padding-bottom: 0;
+  }
+  table.api-table td.summary {
+    width: 100%;
+    border: none;
+    float: left;
+    padding-top: 0;
+  }
+}
+/* Class page */
+.api h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.inheritance h5 {
+  border-bottom: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.class-loc {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.class-loc h5 {
+  margin-top: 5px;
+}
+/* View Source links */
+article span.small.pull-right {
+  margin-top: 3px;
+}
+/* They used a trick for anchors, but it's hacky and causes problems
+ * with the View Source links, so we're overwriting it
+ * we solve the anchoring with a script in main.js */
+h1::before, h2::before, h3::before, h4::before {
+  height: 0;
+  margin-top: 0;
+}
+

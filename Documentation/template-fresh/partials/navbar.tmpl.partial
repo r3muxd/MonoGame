@@ -1,0 +1,8 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<nav class="navbar" role="navigation">
+  <div class="navbar-header hide">
+    <button type="button" id="navbar-toggle" />
+  </div>
+  <div class="collapse" id="navbar" />
+</nav>

@@ -94,7 +94,6 @@
       }
     ],
     "xrefService": [
-      "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
     "overwrite": [
       {
@@ -112,7 +111,6 @@
     ],
     "dest": "_site",
     "postProcessors": [
-      "ExtractSearchIndex"
     ],
     "globalMetadata": {
       "_appTitle": "MonoGame Documentation",
@@ -124,8 +122,7 @@
       "metadata.json"
     ],
     "template": [
-      "default",
-      "template-mg"
+      "template-fresh"
     ],
     "noLangKeyword": false
   },

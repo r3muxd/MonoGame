@@ -1,0 +1,44 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+{{!include(/^styles/.*/)}}
+{{!include(/^fonts/.*/)}}
+{{!include(favicon.ico)}}
+{{!include(logo.svg)}}
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  {{>partials/head}}
+  <body data-spy="scroll" data-target="#affix" data-offset="110">
+    <div class="flex-col">
+      <header>
+        {{^_disableNavbar}}
+        {{>partials/navbar}}
+        {{/_disableNavbar}}
+        {{^_disableBreadcrumb}}
+        {{>partials/breadcrumb}}
+        {{/_disableBreadcrumb}}
+      </header>
+      <div class="flex-row flex-stretch no-overflow">
+        {{^_disableToc}}
+          {{>partials/toc}}
+        {{/_disableToc}}
+        <div class="flex-stretch flex-row scroll-y">
+          <div class="flex-stretch">
+            <div class="content-wrapper">
+              <article class="content" id="_content" data-uid="{{uid}}" role="main">
+                {{!body}}
+              </article>
+              <div class="prevnext">
+                <a class="page-nav"><i class="material-icons">keyboard_arrow_left</i></a>
+                <a class="page-nav"><i class="material-icons">keyboard_arrow_right</i></a>
+              </div>
+            </div>
+          </div>
+          {{^_disableAffix}}
+          {{>partials/affix}}
+          {{/_disableAffix}}
+        </div>
+      </div>
+    </div>
+    {{>partials/scripts}}
+  </body>
+</html>

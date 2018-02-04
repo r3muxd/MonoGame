@@ -1,0 +1,512 @@
+/*
+* ---- GENERAL --------------------------------
+*/
+body{
+  color: #393939;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+}
+h1, h2, h3, h4 {
+  color: #393939;
+
+  font-weight: normal;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  text-rendering: optimizeLegibility;
+}
+h1  {
+  font-size: 2em;
+}
+h2  {font-size: 1.5em;}
+h3  {font-size: 1.2em;}
+p   {margin-top: 10px;}
+p,li{
+  line-height: 1.4em;;
+}
+
+
+i {font-style:italic;}
+b {font-weight: bold;}
+em {font-style:italic;} 
+strong {font-weight: bold;}
+
+blockquote{
+  border-left: 3px solid #E73C00;
+  margin: 25px 0 25px 40px;
+  color: #666;
+  padding: 4px 20px;
+}
+
+del{text-decoration: line-through;}
+
+::selection {
+    background: #E73C00; /* Safari */
+    color:white;
+  }
+::-moz-selection {
+  background: #E73C00; /* Firefox */
+  color:white;
+}
+::-webkit-selection {
+    background: #E73C00;
+    color:white;
+}
+
+/*
+* ---- TYPOGRAPHY --------------------------------
+*/
+
+p{
+  color: #393939;
+  margin: 0 0 0.8em 0;
+  
+}
+
+a{
+  color: #E73C00;
+
+/*
+  TODO: This was causing the nav links to animate their
+  scale on page load in IE.  The transition effect isn't
+  all that great anyway, so i'm fine with disabling this.
+
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+*/
+}
+
+h1 a{
+  color: #393939;
+}
+
+a:hover{
+  color: white;
+  background: #E73C00;
+  cursor:pointer;
+}
+
+ul li a{
+  color: #E73C00;
+}
+
+li{
+  line-height: 1.5em;
+}
+
+ul{
+  list-style: square;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 1px solid #eee;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.half-rule{
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.content-center{
+  text-align: center;
+}
+
+a img{
+  padding-bottom: 10px;
+}
+
+a img:hover{
+  background: none;
+}
+
+pre {
+	font: 12px/18px Consolas, Monaco, monospace;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/*
+* ---- FORMS --------------------------------
+*/
+
+input[type="text"]{
+  border: 1px solid #333;
+  box-sizing: border-box;
+  width:90%;
+  padding: 5% 5%;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+
+/*
+* ---- LAYOUT --------------------------------
+*/
+.container{
+  width: 95%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.container:after{
+  clear:both;
+}
+
+.container:before, .container:after{
+  content: " ";
+  display: table;
+}
+
+.headlines {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.description-buffer{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.section{
+  width:100%;
+  background: #fff;
+}
+
+.page-description{
+  width:100%;
+  background: #E73C00;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+
+  color:white;
+  text-align: center; 
+  top: 0;
+}
+
+.page-description h1{
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  line-height: 0.5em;
+  color:white;
+}
+
+#back-to-top{
+  background: #E73C00;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  text-decoration: none;
+  right:10px;
+  opacity: 0.6;
+  display: none;
+}
+
+#back-to-top:hover{
+  padding: 8px;
+  color: #E73C00;
+  background:transparent;
+  border: 2px solid #E73C00;
+}
+
+
+
+/*
+* ---- NAVIGATION --------------------------------
+*/
+
+/*-- Branging ---------------------*/
+
+.site-text{
+  margin-top: -2px;
+  float:left;
+}
+
+.site-title{
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0.5em;
+}
+
+.site-description{
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.brand-info{
+  float:left;
+}
+
+.site-logo {
+  width: 218px;
+  height: 46px;
+  float: left;
+  margin-top:8px;
+  padding: 0px;
+} 
+
+a.home-link, a:hover.home-link {
+   text-decoration: none;
+}
+
+/*-- Navigation bar ---------------------*/
+
+
+.site-navigation{
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  min-height: 63px;
+
+  background: rgba(255,255,255, 0.9);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#menu-main
+{
+  float:right;
+  overflow: hidden;
+  color:white;
+  padding: 0;
+  margin: 0px;
+}
+
+#menu-main li a{
+  cursor:pointer;
+  display: inline-block;
+  color: #393939;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 20px 20px 0px 20px;
+}
+
+
+
+#menu-main li{
+  display: inline-block;
+}
+
+#menu-main li a:hover {
+  background:none;
+  color: #E73C00;
+}
+
+.handle{
+  float:right;
+  box-sizing: border-box;
+  height: 60px;
+  width:60px;
+  cursor:pointer;
+  color:white;
+  display: none;
+
+  background-image: url('images/arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+
+  -webkit-transition: rotate 2s; /* For Safari 3.1 to 6.0 */
+  transition: rotate 2s;
+}
+
+.rotate{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+.nav-item-active {
+  color: #E73C00;
+  border-bottom: 2px solid #E73C00;
+}
+
+  .showing{
+    max-height: 20em;
+  }
+
+/*
+* ---- ARCHIVE --------------------------------
+*/
+
+.archive-list{
+  float:left;
+  width: 16.666666666666666666666666666667%;
+  padding:10px;
+  padding-right: 30px;
+  padding-top: 44px;
+}
+
+.archive-list ul{
+  list-style: none;
+  margin: 0;
+}
+
+.archive-list ul li{
+  color:#E73C00;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.archive-list ul li ul{
+  margin-bottom: 10px;
+}
+
+.archive-list ul li ul li{
+  border:none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.archive-list ul li ul li:before{
+  color: #666;
+  content: "- ";
+}
+
+
+.archive-list ul li ul li a{
+  color: #E73C00;
+  text-decoration: none;
+}
+
+.archive-list ul li ul li a:hover{
+  background: none;
+}
+
+.archive-content{
+  padding:20px;
+  width: 83.333333333333333333333333333333%;
+  float:left;
+}
+
+/*
+* ---- BLOG --------------------------------
+*/
+
+.post-header{
+  margin-bottom: 20px;
+}
+
+.post-header h1{
+  margin-bottom: 15px;
+}
+
+.post-content img{
+  margin:auto;
+}
+
+.post-meta{
+  margin-top: 0;
+}
+
+/*
+* ---- MEDIA QUERIES ----------------
+*/
+
+@media screen and (max-width: 840px){
+  
+	/*
+	* ---- NAVIGATION ----------------
+	*/
+
+	.current-menu-item{
+		border:none;
+	}
+
+	nav ul{
+		float:none;
+		max-height: 0;	
+		width:100%;
+		display: block;
+	}
+
+	.showing{
+		max-height: 26em;
+	}
+
+	#menu-main li{
+		display:block;
+		float:none;
+		width: 100%;
+		padding: 20px 20px 0px 20px;
+		margin-bottom: 5px;
+	}
+
+	#menu-main li a{
+		padding: 0px;
+	}
+
+	.handle{
+		display: block;
+	}
+
+	#back-to-top{
+	  display: block;
+	}
+
+	.gitter-open-chat-button{
+	  display: none;
+	}
+
