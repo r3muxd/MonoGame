@@ -16,7 +16,7 @@ The currently supported platforms are as follows.
    * tvOS
 
 MonoGame also supports a number of Game Consoles. The templates and source for these platforms
-are not publicly availalbe. However they are available to developers registered with the appropriate
+are not publicly available. However they are available to developers registered with the appropriate
 developer programs.  
 
  * Consoles (for registered developers)

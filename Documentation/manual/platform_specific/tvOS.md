@@ -20,34 +20,34 @@ the developer to the event.
 Some sample code.
 
 ```csharp
+public class Game1 : Game , IPlaformBackButton 
+{
+	private bool _isOnRootMenu = true;
 
-	public class Game1 : Game , IPlaformBackButton {
+	public bool Handled () 
+    {
+		return _isOnRootMenu ? false : true;
+	}
 
-		bool IsOnRootMenu = true;
+	public Game1 ()
+	{
+		Services.AddService<IPlaformBackButton>(this);
+	}
 
-		public bool Handled () {
-			return IsOnRootMenu ? false : true;
-		}
-
-		public Game1 ()
+	public override Update(GameTime gametime)
+	{
+		if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
 		{
-			Services.AddService<IPlaformBackButton>(this);
-		}
-
-		public override Update(GameTime gametime)
-		{
-			if (GamePad.GetState (PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-			{
-				// do something in game
-			}
+			// do something in game
 		}
 	}
+}
 ```
 
 The key to this working is the `IPlatformBackButton` interface. By implementing
 and registering this interface MonoGame can callback into your application to ask if it
 should let you handle the Menu button or if it should pass it up to tvOS. So in this case if
-the app is on the "Main menu" the developer will set *IsOnRootMenu* to true and when the Menu
+the app is on the "Main menu" the developer will set `IsOnRootMenu` to true and when the Menu
 button is pressed the game with Exit. However if IsOnRootMenu is false then the "Menu" button 
 click will be routed to the GamePad Back button and the developer can check for the Back button
 press and act accordingly.
