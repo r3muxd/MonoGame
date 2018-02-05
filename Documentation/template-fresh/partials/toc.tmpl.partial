@@ -1,8 +1,10 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<div id="page-toc" class="sidenav">
-  <a id="toc-toggle" class="hide">Show / Hide Table of Contents</a>
-  <div class="sidetoggle" id="sidetoggle">
-    <div id="sidetoc"></div>
+<div id="page-toc" {{^hasToc}}class="hide"{{/hasToc}}>
+  <div id="toc-filter-wrapper">
+    <form id="toc-filter">
+      <input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
+    </form>
   </div>
+  <div id="toc" />
 </div>

@@ -1,9 +1,16 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
-exports.path = {};
-exports.path.getFileNameWithoutExtension = getFileNameWithoutExtension;
-exports.path.getDirectoryName = getDirectoryName;
+
+exports.getFileName = getFileName;
+exports.stripExtension = stripExtension;
+exports.stripAllExtensions = stripAllExtensions;
+exports.getFileNameWithoutExtension = getFileNameWithoutExtension;
+exports.getFileNameWithoutAnyExtensions = getFileNameWithoutAnyExtensions;
+
+exports.getDirectory = getDirectory;
+exports.getDirectoryName = getDirectoryName;
 
 exports.getHtmlId = getHtmlId;
+exports.getNavId = getNavId;
 
 exports.getViewSourceHref = getViewSourceHref;
 exports.getImproveTheDocHref = getImproveTheDocHref;
@@ -12,21 +19,45 @@ exports.processSeeAlso = processSeeAlso;
 exports.isAbsolutePath = isAbsolutePath;
 exports.isRelativePath = isRelativePath;
 
+
+function getFileName(path) {
+  return path.substring(path.lastIndexOf('/') + 1);
+}
+
+function stripExtension(path) {
+  var idx = path.lastIndexOf('.');
+  return idx == -1 ? path : path.substring(0, idx);
+}
+
+function stripAllExtensions(path) {
+  var idx = path.indexOf('.');
+  return idx == -1 ? path : path.substring(0, idx);
+}
+
 function getFileNameWithoutExtension(path) {
-    if (!path || path[path.length - 1] === '/' || path[path.length - 1] === '\\') return '';
-    var fileName = path.split('\\').pop().split('/').pop();
-    return fileName.slice(0, fileName.lastIndexOf('.'));
+  return stripExtension(getFileName(path));
+}
+
+function getFileNameWithoutAnyExtensions(path) {
+  return stripAllExtensions(getFileName(path));
+}
+
+function getDirectory(path) {
+    var idx = path.lastIndexOf('/');
+    return path.substring(0, idx + 1);
 }
 
 function getDirectoryName(path) {
-    if (!path) return '';
-    var index = path.lastIndexOf('/');
-    return path.slice(0, index + 1);
+    return getDirectory(path).slice(0, -1);
 }
 
 function getHtmlId(input) {
     if (!input) return '';
     return input.replace(/\W/g, '_');
+}
+
+function getNavId(path) {
+  return path.substring(0, path.indexOf("/")) || path.substring(0, path.indexOf("."));
 }
 
 // Note: the parameter `gitContribute` won't be used in this function

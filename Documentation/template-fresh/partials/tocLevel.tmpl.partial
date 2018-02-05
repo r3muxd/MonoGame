@@ -2,18 +2,13 @@
 
 <ul class="nav level{{level}}">
 {{#items}}
-  <li>
+  <li navname="{{navName}}" filename="{{filename}}">
     {{^leaf}}
     <span class="expand-stub"></span>
     {{/leaf}}
-    {{#topicHref}}
-    <a href="{{topicHref}}" name="{{tocHref}}" title="{{name}}">{{name}}</a>
-    {{/topicHref}}
-    {{^topicHref}}
-    <a>{{{name}}}</a>
-    {{/topicHref}}
+    <a href="{{dst}}">{{name}}</a>
     {{^leaf}}
-      {{>partials/li}}
+      {{>partials/tocLevel}}
     {{/leaf}}
   </li>
 {{/items}}

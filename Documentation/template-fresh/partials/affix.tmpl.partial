@@ -1,26 +1,5 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<div id="page-affix" role="complementary">
-  <div class="sideaffix">
-    {{^_disableContribution}}
-    <div class="contribution">
-      <ul class="nav">
-        {{#docurl}}
-        <li>
-          <a href="{{docurl}}" class="contribution-link">{{__global.improveThisDoc}}</a>
-        </li>
-        {{/docurl}}
-        {{#sourceurl}}
-        <li>
-          <a href="{{sourceurl}}" class="contribution-link">{{__global.viewSource}}</a>
-        </li>
-        {{/sourceurl}}
-      </ul>
-    </div>
-    {{/_disableContribution}}
-    {{^disableSidebar}}
-    <nav class="hidden-xs hidden-sm" id="affix">
-    </nav>
-    {{/disableSidebar}}
-  </div>
+<div id="page-affix" role="complementary" {{#_disableAffix}}class="hide"{{/_disableAffix}}>
+  <nav id="affix" />
 </div>
