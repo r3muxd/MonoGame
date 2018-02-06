@@ -4,7 +4,8 @@ A core element of Microsoft XNA is the effect system which is used for all rende
 
 For MonoGame we have the burden of supporting stock and custom effects for desktop GLSL, mobile GLSL, DirectX HLSL, and custom formats like that of the PlayStation Mobile.  There currently is no effect system or shader language that supports all the platforms we require, forcing us to build a new custom effect system.
 
-# MGFX
+## MGFX
+
 MGFX is MonoGame's own "FX" runtime and tools which with the following core goals:
 
 * Support a similar technique, passes, shaders structure as Microsoft FX files.
@@ -13,7 +14,8 @@ MGFX is MonoGame's own "FX" runtime and tools which with the following core goal
 * Be cross-platform and support multiple shader languages and bytecodes.
 * Easy to extend for future platforms and features.
 
-# Stock Effects
+## Stock Effects
+
 The following stock effects in MonoGame and fully supported on current platforms:
 
 * BasicEffect
@@ -26,13 +28,15 @@ Under the hood these effects use the same system and tools as one would for a cu
 
 If your game requires an extra little bit of performance you can easily hand edit the existing effects to remove unnecessary features or optimize for specific hardware and rebuild them with the MGFX tool.
 
-# Custom Effects
+## Custom Effects
+
 To use a custom effect with MonoGame you must do one of the following (not both):
 * Run the effect file through the [MonoGame Effect content processor](../tools/mgcb.md) for loading via the `ContentManager` (Recommended).
 * Process your effect file with the [2MGFX tool](../tools/2mgfx.md) and load them yourself at runtime.
 
 
-### Effect Writing Tips
+## Effect Writing Tips
+
 These are some tips for writing or converting effects for use with MonoGame.
 
 * Use the [DX11 feature levels](http://msdn.microsoft.com/en-us/library/windows/desktop/ff476876.aspx) `vs_4_0_level_9_1` or `ps_4_0_level_9_1` when targeting Windows 8 Metro applications and wanting to support all devices.  Higher shader models work, but might not run on all Windows 8 systems.
@@ -46,7 +50,8 @@ These are some tips for writing or converting effects for use with MonoGame.
 * The effect compiler is aggressive about removing unused paramters, be sure the parameters you are setting are actually used.
 * If you think you've found a bug porting a shader [please let us know](https://github.com/mono/MonoGame/issues).
 
-# Roadmap
+## Roadmap
+
 There is still work to be done for better support of custom effects and shaders in MonoGame:
 
 * Support GLSL in FX files.
