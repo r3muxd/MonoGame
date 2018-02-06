@@ -1,7 +1,7 @@
 $(function() {
 
   window.onpopstate = function(event) {
-    window.alert('popstate: ' + JSON.stringify(document.location));
+    loadPage(stripExtension(document.location.pathname));
   };
 
   historySupported = window.history && window.history.pushState;
@@ -21,10 +21,15 @@ $(function() {
   loadAffix();
   loadPage(startPagePath);
 
-  function loadPage(url) {
-    getJSON(url, function (data) {
+  function loadPage(path) {
+    if (currentPage && currentPage.filename === path) {
+      window.alert("Skipped page load");
+      return false;
+    }
+    getJSON(path + ".json", function (data) {
       updatePage(data);
     });
+    return true;
   }
 
   function updatePage(newPage) {
@@ -54,7 +59,6 @@ $(function() {
     }
 
     pageTocEl.toggleClass('hide', !newPage.hasToc);
-    pageAffixEl.toggleClass('hide', !newPage.hasAffix);
 
     currentPage = newPage;
   }
@@ -88,6 +92,8 @@ $(function() {
       highlightjs();
       if (page.hasAffix)
         loadAffix();
+      else
+        pageAffixEl.toggleClass('hide', true);
     });
   }
 
@@ -99,8 +105,13 @@ $(function() {
 
   function loadAffix() {
     var hierarchy = getHeadingHierarchy();
-    var html = buildAffix(hierarchy, 1);
-    affixEl.html(html);
+    if (hierarchy.length == 0) {
+      pageAffixEl.addClass('hide');
+    } else {
+      var html = buildAffix(hierarchy, 1);
+      affixEl.html(html);
+      pageAffixEl.removeClass('hide');
+    }
   }
 
   function getHeadingHierarchy() {
@@ -230,10 +241,9 @@ $(function() {
         var href = a.attr('href');
         if (isRelativePath(href) && href.endsWith('.html')) {
           e.preventDefault();
-          var dataPath = href.substring(0, href.lastIndexOf('.')) + '.json';
-          loadPage(dataPath);
-
-          history.pushState({href: href}, null, href);
+          var dataPath = stripExtension(href);
+          if (loadPage(dataPath))
+            history.pushState({href: href}, null, href);
         }
       });
     }
@@ -256,6 +266,10 @@ $(function() {
       .replace(/'/g, '&#39;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;');
+  }
+
+  function stripExtension(path) {
+    return path.substring(0, path.lastIndexOf('.'));
   }
 
   function isRelativePath(path) {

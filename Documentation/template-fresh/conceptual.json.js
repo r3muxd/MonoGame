@@ -5,7 +5,7 @@ exports.transform = function (model) {
   page = {};
 
   page.title = model.title
-  page.filename = '/' + common.stripExtension(model._key);
+  page.filename = '/' + common.stripAllExtensions(model._path);
   page.path = parsePagePath(model._path);
   page.navId = common.getNavId(model._path);
   page.navHtml = model._navRel;
