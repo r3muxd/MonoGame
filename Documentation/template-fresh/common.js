@@ -10,7 +10,6 @@ exports.getDirectory = getDirectory;
 exports.getDirectoryName = getDirectoryName;
 
 exports.getHtmlId = getHtmlId;
-exports.getNavId = getNavId;
 
 exports.getViewSourceHref = getViewSourceHref;
 exports.getImproveTheDocHref = getImproveTheDocHref;
@@ -54,10 +53,6 @@ function getDirectoryName(path) {
 function getHtmlId(input) {
     if (!input) return '';
     return input.replace(/\W/g, '_');
-}
-
-function getNavId(path) {
-  return path.substring(0, path.indexOf("/")) || path.substring(0, path.indexOf("."));
 }
 
 // Note: the parameter `gitContribute` won't be used in this function

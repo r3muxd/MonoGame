@@ -7,28 +7,37 @@ $(function() {
   historySupported = window.history && window.history.pushState;
 
   currentPage = null;
+  nav = null;
+  toc = null;
 
+  // cached DOM elements (as jQuery objects)
   titleEl = $('head title');
   pageTocEl = $('#page-toc');
   pageAffixEl = $('#page-affix');
   navEl = $('#navbar');
   tocEl = $('#toc');
   contentWrapperEl = $('#content-wrapper');
+  breadcrumbWrapperEl = $('#breadcrumb-wrapper');
+  breadcrumbEl = $('#breadcrumb');
+  contributionLinkEl = $('#contribution-link');
+  prevEl = contentWrapperEl.find('#prev');
+  nextEl = contentWrapperEl.find('#next');
   affixEl = $('#affix');
 
   var startPagePath = $("meta[property='docfx\\:pagedata']").attr('content');
-  highlightjs();
-  loadAffix();
   loadPage(startPagePath);
 
   function loadPage(path) {
-    if (currentPage && currentPage.filename === path) {
-      window.alert("Skipped page load");
+    // don't reload page
+    if (currentPage && currentPage.path === path)
       return false;
-    }
-    getJSON(path + ".json", function (data) {
-      updatePage(data);
+
+    getJSON(path + '.json', function (page) {
+      page.navIndex = -1;
+      page.tocIndex = -1;
+      updatePage(page);
     });
+
     return true;
   }
 
@@ -37,30 +46,36 @@ $(function() {
     var init = currentPage == null;
     var shouldLoadNav = init;
     var switchNav = !init && currentPage.navId != newPage.navId;
-    var shouldLoadToc = (init || switchNav) && newPage.hasToc;
+    var shouldLoadToc = (init || switchNav);
 
     if (!init)
       updateTitle(newPage.title);
 
     if (shouldLoadNav)
-      loadNavBar(newPage);
+      loadNavBar(currentPage, newPage);
     else if (switchNav)
-      setNavActive(newPage.navId);
+      loadAfterNav(currentPage, newPage);
+    else
+      newPage.navIndex = currentPage.navIndex;
 
-    if (!init)
-      loadConceptual(newPage);
+    loadConceptual(newPage);
 
     if (shouldLoadToc)
-        loadToc(newPage);
-    else {
-      if (!init)
-        setTocActive(currentPage.path.slice(1), false);
-      setTocActive(newPage.path.slice(1), true);
-    }
+      loadToc(currentPage, newPage);
+    else
+      loadAfterToc(currentPage, newPage);
 
     pageTocEl.toggleClass('hide', !newPage.hasToc);
+    breadcrumbWrapperEl.toggleClass('hide', !newPage.hasBreadcrumb);
+    contributionLinkEl.toggleClass('hide', !newPage.hasContributionLink);
+
+    if (newPage.hasContributionLink)
+      contributionLinkEl.attr('href', newPage.contributionLink);
 
     currentPage = newPage;
+
+    console.log('Loaded Page:');
+    console.log(JSON.stringify(currentPage, null, 4));
   }
 
   function updateTitle(newTitle) {
@@ -69,38 +84,127 @@ $(function() {
     titleEl.text(newTitle + ' ' + title.slice(idx));
   }
 
-  function loadNavBar(page) {
-    $.get(page.navHtml, function (tocHtml) {
-      navEl.html(tocHtml);
-      setNavActive(page.navId);
+  function loadNavBar(oldPage, newPage) {
+    getJSON(newPage.nav + '.json', function (navNodes) {
+      nav = new Tree(navNodes);
+      var navHtml = buildTocHtml(nav);
+      navEl.html(navHtml);
+      loadAfterNav(oldPage, newPage);
       hookNavEvents();
     });
   }
 
-  function loadToc(page) {
-    $.get(page.tocHtml, function (tocHtml) {
+  function loadToc(oldPage, newPage) {
+    getJSON(newPage.toc + '.json', function (tocNodes) {
+      toc = new Tree(tocNodes);
+      var tocHtml = buildTocHtml(toc);
       tocEl.html(tocHtml);
-      setTocActive(page.path.slice(1), true);
       hookTocEvents();
+
+      loadAfterToc(oldPage, newPage);
     });
   }
 
+  function buildTocHtml(tree) {
+    var root = buildTocRec(tree, tree.rootNodes(), 1);
+    return root;
+
+    function buildTocRec(tree, nodes, level) {
+      var ul = $('<ul>').addClass('nav level' + level);
+      for (var i = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+        var li = $('<li>');
+        li.append($(createAnchorHtml(node)));
+
+        node.liElement = li;
+
+        if (!node.leaf) {
+          var subUl = buildTocRec(tree, tree.children(node.index), level + 1);
+          li.append(subUl);
+        }
+        ul.append(li);
+      }
+
+      return ul;
+    }
+  }
+
+  function loadAfterNav(oldPage, newPage) {
+    for (var i = 0; i < nav.nodes.length; i++) {
+      if (!nav.nodes[i].path)
+        continue;
+      var nnp = nav.nodes[i].path.slice(1);
+      var nodeNavId = nnp.substring(0, nnp.indexOf('/')) || nnp;
+      if (nodeNavId === newPage.navId) {
+        newPage.navIndex = i;
+        break;
+      }
+    }
+
+    if (oldPage && oldPage.navIndex >= 0)
+      nav.nodes[oldPage.navIndex].liElement.removeClass('active');
+    if (newPage.navIndex >= 0)
+      nav.nodes[newPage.navIndex].liElement.addClass('active');
+  }
+
+  function loadAfterToc(oldPage, newPage) {
+    for (var i = 0; i < toc.nodes.length; i++) {
+      if (toc.nodes[i].path === newPage.path)
+        newPage.tocIndex = i;
+    }
+
+    toggleTocActive(oldPage, false);
+    toggleTocActive(newPage, true);
+
+    if (newPage.hasBreadcrumb)
+      updateBreadcrumb(newPage);
+  }
+
+  function toggleTocActive(page, value) {
+    if (!page || page.tocIndex < 0)
+      return;
+
+    var index = page.tocIndex;
+    while (index !== null) {
+      toc.nodes[index].liElement.toggleClass('active', value);
+      index = toc.nodes[index].parent;
+    }
+  }
+
   function loadConceptual(page) {
-    var conceptualPath = page.filename + '.html.partial';
+    var conceptualPath = page.path + '.html.partial';
     $.get(conceptualPath, function (contentHtml) {
       contentWrapperEl.html(contentHtml);
-      highlightjs();
-      if (page.hasAffix)
-        loadAffix();
-      else
-        pageAffixEl.toggleClass('hide', true);
-    });
+      loadAfterConceptual(page);
+   });
+  }
+
+  function loadAfterConceptual(page) {
+    highlightjs();
+    if (page.hasAffix)
+      loadAffix();
+    else
+      pageAffixEl.toggleClass('hide', true);
   }
 
   function highlightjs() {
     contentWrapperEl.find('pre code').each(function(i, block) {
       hljs.highlightBlock(block);
     });
+  }
+
+  function updateBreadcrumb(page){
+    var node = toc.nodes[page.tocIndex];
+    html = node.name;
+
+    var index = node.parent;
+    while (index != null) {
+      node = toc.nodes[index];
+      html = createAnchorHtml(node) + ' > ' + html;
+      index = node.parent;
+    }
+    breadcrumbEl.html(html);
+    makeLocalLinksDynamic(breadcrumbEl);
   }
 
   function loadAffix() {
@@ -172,60 +276,6 @@ $(function() {
   }
 
 
-  function setNavActive(name) {
-    navEl.find('li').each(function (i, e) {
-      var obj = $(e);
-      if (name === obj.attr('navname'))
-        obj.addClass('active');
-      else
-        obj.removeClass('active');
-    });
-  }
-
-  function setTocActive(elements, value) {
-    var lis = getTocLis(elements);
-    if (value) {
-      for (var i = 0; i < lis.length; i++)
-        lis[i].addClass('active');
-    } else {
-      for (var i = 0; i < lis.length; i++)
-        lis[i].removeClass('active');
-    }
-  }
-
-  function getTocLis(elements) {
-    var ul = tocEl.children()
-    if (ul.length == 0)
-      return [];
-    // find the leaf element
-    for (var i = 0; i < elements.length; i++) {
-      var el = elements[i];
-      var li = ul.children('[filename=' + el + ']');
-      // if it's not a direct child, look through all descendants
-      if (li.length == 0)
-        li = ul.find('[filename=' + el + ']');
-      if (li.length == 0)
-        break;
-
-      ul = li.children('ul');
-      if (ul.length == 0)
-        break;
-    }
-
-    if (!li || li.length == 0)
-      return [];
-
-    // walk up the toc and grab all li's
-    lis = [];
-    while (li && li.attr('id') != 'toc') {
-      if (li.is('li'))
-        lis.push(li);
-      li = li.parent();
-    }
-
-    return lis;
-  }
-
   function hookNavEvents() {
     makeLocalLinksDynamic(navEl);
   }
@@ -249,13 +299,19 @@ $(function() {
     }
   }
 
-  function getJSON(url, success) {
+  function createAnchorHtml(node) {
+    var href = node.path + '.html';
+    return '<a href="' + href + '" index="' +  node.index + '">' + node.name + '</a>';
+  }
+
+  function getJSON(url, success, failure) {
     $.ajax({
       dataType: 'json',
       url: url,
-      success: success,
       mimeType: 'application/json'
-    });
+    })
+      .done(success)
+      .fail(failure);
   }
 
   function htmlEncode(str) {

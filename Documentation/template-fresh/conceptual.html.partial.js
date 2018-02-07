@@ -27,7 +27,7 @@ exports.transform = function (model) {
     var og = html.substring(start, end);
     var abs = og.substring(2); // '~/path' to 'path'
     var rel = makeRelative(model._path, abs);
-    
+
     return html.substring(0, start) + rel + html.substring(end);
   }
 
@@ -42,7 +42,7 @@ exports.transform = function (model) {
     while ((i = from.indexOf('/', i)) != -1) {
       i = i + 1; // index right after the separator
       var dir = from.substring(0, i);
-      if (to.indexOf(dir) == 0) // startsWith is not implemented in the jint version used by docfx
+      if (to.indexOf(dir) !== 0) // startsWith is not implemented in the jint version used by docfx
         break;
       matching++;
       matchingIndex = i;

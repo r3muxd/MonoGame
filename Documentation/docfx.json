@@ -114,7 +114,6 @@
     ],
     "globalMetadata": {
       "_appTitle": "MonoGame Documentation",
-      "_disableBreadcrumb": true,
       "_disableFooter": true,
       "_enableNewTab": false
     },

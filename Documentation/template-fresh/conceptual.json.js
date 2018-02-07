@@ -5,12 +5,13 @@ exports.transform = function (model) {
   page = {};
 
   page.title = model.title
-  page.filename = '/' + common.stripAllExtensions(model._path);
-  page.path = parsePagePath(model._path);
-  page.navId = common.getNavId(model._path);
-  page.navHtml = model._navRel;
-  page.tocHtml = model._tocRel;
+  page.path = '/' + common.stripAllExtensions(model._path);
+  var navPathIndex = model._path.indexOf('/');
+  page.navId = model._path.substring(0, navPathIndex) || model._path.substring(0, model._path.indexOf('.'));
+  page.nav = common.stripExtension(model._navRel);
+  page.toc = common.stripExtension(model._tocRel);
   page.hasToc = !model.disableToc && model._navRel != model._tocRel;
+  page.hasBreadcrumb = !model._disableBreadcrumb;
   page.hasContributionLink = !model._disableContribution;
   if (page.hasContributionLink)
     page.contributionLink = model.docurl || common.getImproveTheDocHref(model, model._gitContribute, model._gitUrlPattern);

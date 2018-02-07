@@ -5,5 +5,8 @@
   "_disableContribution": {
     "../CHANGELOG.md": true,
     "index.md": true
+  },
+  "_disableBreadcrumb": {
+    "../CHANGELOG.md": true
   }
 }

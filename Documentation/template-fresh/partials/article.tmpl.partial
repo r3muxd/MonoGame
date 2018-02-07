@@ -1,16 +1,5 @@
-<div>
-  <article id="content" data-uid="{{uid}}" role="main">
-    <div class="flex-row">
-      {{{rawTitle}}}
-      <a class="contribution-link{{#_disableContribution}} hide{{/_disableContribution}}" href="{{docurl}}">
-        {{__global.improveThisDoc}}
-      </a>
-    </div>
-    {{{conceptual}}}
-  </article>
-  <div class="prevnext">
-    <a id="prev" class="page-nav"><i class="material-icons">keyboard_arrow_left</i></a>
-    <a id="next" class="page-nav"><i class="material-icons">keyboard_arrow_right</i></a>
-  </div>
-</div>
+<article id="content" data-uid="{{uid}}" role="main">
+  {{{rawTitle}}}
+  {{{conceptual}}}
+</article>
 
