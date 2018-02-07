@@ -3,32 +3,42 @@ var common = require("./common.js");
 
 exports.transform = function (model) {
   model.docurl = model.docurl || common.getImproveTheDocHref(model, model._gitContribute, model._gitUrlPattern);
-  fixImageLinks();
+  fixLinks('<a href=', fixAnchorLink);
+  fixLinks('<img src=', fixImageLink);
   return model;
 
-  function fixImageLinks() {
+  function fixLinks(pattern, process) {
     var html = model.conceptual;
     var i = html.length - 1;
-    while ((i = html.lastIndexOf("<img src=", i)) != -1) {
+    while ((i = html.lastIndexOf(pattern, i)) != -1) {
       var start = html.indexOf('"', i) + 1;
       var end = html.indexOf('"', start + 1);
-      html = fixImageLink(html, start, end);
+      html = fixLink(html, start, end, process);
       i--; // don't rematch
     }
 
     model.conceptual = html;
   }
 
-  function fixImageLink(html, start, end) {
-    // docfx fails to resolve image links because of the dynamic content
-    // image src will look like: "~/manual/getting_started/images/1_new_solution_vs.png"
+  function fixLink(html, start, end, process) {
+    // src will look like: "~/manual/getting_started/images/1_new_solution_vs.png"
     // while we just need the relative path: "images/1_new_solution_vs.png"
     // so let's fix that :)
-    var og = html.substring(start, end);
-    var abs = og.substring(2); // '~/path' to 'path'
-    var rel = makeRelative(model._path, abs);
+    if (html.substring(start, start + 2) !== '~/')
+      return html;
 
-    return html.substring(0, start) + rel + html.substring(end);
+    var og = html.substring(start, end);
+    return html.substring(0, start) + process(og) + html.substring(end);
+  }
+
+  function fixAnchorLink(link) {
+    // ~/articles/getting_started.md to /articles/getting_started.html
+    return common.stripExtension(link.slice(1)) + '.html';
+  }
+
+  function fixImageLink(link) {
+    var abs = link.substring(2); // '~/path' to 'path'
+    return makeRelative(model._path, abs);
   }
 
   function makeRelative(from, to) {

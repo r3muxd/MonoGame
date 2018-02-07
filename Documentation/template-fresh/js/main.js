@@ -66,7 +66,6 @@ $(function() {
       loadAfterToc(currentPage, newPage);
 
     pageTocEl.toggleClass('hide', !newPage.hasToc);
-    breadcrumbWrapperEl.toggleClass('hide', !newPage.hasBreadcrumb);
     contributionLinkEl.toggleClass('hide', !newPage.hasContributionLink);
 
     if (newPage.hasContributionLink)
@@ -156,6 +155,12 @@ $(function() {
     toggleTocActive(oldPage, false);
     toggleTocActive(newPage, true);
 
+
+    if (newPage.tocIndex < 0)
+      newPage.hasBreadcrumb = false;
+
+    breadcrumbWrapperEl.toggleClass('hide', !newPage.hasBreadcrumb);
+
     if (newPage.hasBreadcrumb)
       updateBreadcrumb(newPage);
   }
@@ -185,6 +190,8 @@ $(function() {
       loadAffix();
     else
       pageAffixEl.toggleClass('hide', true);
+
+    makeLocalLinksDynamic(contentWrapperEl);
   }
 
   function highlightjs() {
@@ -195,14 +202,17 @@ $(function() {
 
   function updateBreadcrumb(page){
     var node = toc.nodes[page.tocIndex];
-    html = node.name;
+    html = '<span class="semibold">' + node.name + '</span>';
 
     var index = node.parent;
     while (index != null) {
       node = toc.nodes[index];
-      html = createAnchorHtml(node) + ' > ' + html;
+      html = createAnchorHtml(node) + ' <i class="material-icons">keyboard_arrow_right</i> ' + html;
       index = node.parent;
     }
+
+    html = '<div>' + html + '</div>';
+
     breadcrumbEl.html(html);
     makeLocalLinksDynamic(breadcrumbEl);
   }

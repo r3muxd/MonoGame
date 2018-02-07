@@ -44,9 +44,8 @@ a {
   text-decoration: none;
 }
 
-/* Don't underline expanders */
-a.expander:focus, a.expander:hover {
-  text-decoration: unset;
+.semibold {
+  font-weight: 600;
 }
 
 ul.nav {
@@ -116,6 +115,11 @@ code {
 }
 #breadcrumb {
   padding: 5px;
+}
+#breadcrumb .material-icons {
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 0;
 }
 
 /* ===== NAVBAR ===== */
@@ -231,7 +235,7 @@ ul.level1 {
   text-decoration: underline;
 }
 #content-wrapper {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #prevnext {
   margin: 40px 5px;
