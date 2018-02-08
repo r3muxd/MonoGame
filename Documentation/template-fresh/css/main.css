@@ -267,9 +267,13 @@ a.page-nav:not([href]) {
   transition: color .2s;
   flex-grow: 1;
   text-align: center;
+  outline: none;
 }
 #prevnext a:hover {
   color: #E73C00;
+  text-decoration: none;
+}
+#prevnext a:focus {
   text-decoration: none;
 }
 

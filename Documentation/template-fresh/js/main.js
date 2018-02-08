@@ -19,12 +19,14 @@ $(function() {
   var filterEl = pageTocEl.find('#toc-filter-input');
   var filterNoResultsEl = pageTocEl.find('#toc-no-results');
   var tocEl = pageTocEl.find('#toc');
+  var pageScrollEl = $('#page-scroll');
   var contentWrapperEl = $('#content-wrapper');
   var breadcrumbWrapperEl = $('#breadcrumb-wrapper');
   var breadcrumbEl = $('#breadcrumb');
   var contributionLinkEl = $('#contribution-link');
-  var prevEl = contentWrapperEl.find('#prev');
-  var nextEl = contentWrapperEl.find('#next');
+  var prevnextEl = $('#prevnext');
+  var prevEl = prevnextEl.find('#prev');
+  var nextEl = prevnextEl.find('#next');
   var affixEl = $('#affix');
 
   init();
@@ -43,6 +45,7 @@ $(function() {
       page.navIndex = -1;
       page.tocIndex = -1;
       updatePage(page);
+      pageScrollEl.scrollTop(0);
     });
 
     return true;
@@ -122,7 +125,7 @@ $(function() {
         var li = $('<li>');
         li.append($(createAnchorHtml(node)));
 
-        node.liElement = li;
+        node.element = li;
 
         if (!node.leaf) {
           var subUl = buildTocRec(tree, tree.children(node.index), level + 1);
@@ -148,9 +151,9 @@ $(function() {
     }
 
     if (oldPage && oldPage.navIndex >= 0)
-      nav.nodes[oldPage.navIndex].liElement.removeClass('active');
+      nav.nodes[oldPage.navIndex].element.removeClass('active');
     if (newPage.navIndex >= 0)
-      nav.nodes[newPage.navIndex].liElement.addClass('active');
+      nav.nodes[newPage.navIndex].element.addClass('active');
   }
 
   function loadAfterToc(oldPage, newPage) {
@@ -162,22 +165,63 @@ $(function() {
     toggleTocActive(oldPage, false);
     toggleTocActive(newPage, true);
 
-
-    if (newPage.tocIndex < 0)
+    if (newPage.tocIndex < 0) {
       newPage.hasBreadcrumb = false;
+      newPage.hasPrevnext = false;
+    }
 
-    breadcrumbWrapperEl.toggleClass('hide', !newPage.hasBreadcrumb);
-
-    if (newPage.hasBreadcrumb)
-      updateBreadcrumb(newPage);
+    updateBreadcrumb(newPage);
+    updatePrevnext(newPage);
   }
 
   function toggleTocActive(page, value) {
     if (!page || page.tocIndex < 0)
       return;
 
-    toc.doSelf(page.tocIndex, n => n.liElement.toggleClass('active', value));
-    toc.doAncestors(page.tocIndex, n => n.liElement.toggleClass('active', value));
+    toc.doSelf(page.tocIndex, n => n.element.toggleClass('active', value));
+    toc.doAncestors(page.tocIndex, n => n.element.toggleClass('active', value));
+  }
+
+  function updateBreadcrumb(page) {
+
+    breadcrumbWrapperEl.toggleClass('hide', !page.hasBreadcrumb);
+    if (!page.hasBreadcrumb)
+      return;
+
+    var node = toc.nodes[page.tocIndex];
+    var html = '<span class="semibold">' + node.name + '</span>';
+
+    var index = node.parent;
+    while (index != null) {
+      node = toc.nodes[index];
+      html = createAnchorHtml(node) + ' <span class="mg-icons">&#xe802;</span> ' + html;
+      index = node.parent;
+    }
+
+    html = '<div>' + html + '</div>';
+
+    breadcrumbEl.html(html);
+    makeLocalLinksDynamic(breadcrumbEl);
+  }
+
+  function updatePrevnext(page) {
+
+    prevnextEl.toggleClass('hide', !page.hasPrevnext);
+    if (!page.hasPrevnext)
+      return;
+
+    var prev = toc.prev(page.tocIndex);
+    if (prev)
+      prevEl.attr('href', prev.path + '.html');
+    else
+      prevEl.removeAttr('href');
+    var next = toc.next(page.tocIndex);
+    if (next)
+      nextEl.attr('href', next.path + '.html');
+    else
+      nextEl.removeAttr('href');
+
+    makeLocalLinksDynamic(prevnextEl);
   }
 
   function loadConceptual(page) {
@@ -202,23 +246,6 @@ $(function() {
     contentWrapperEl.find('pre code').each(function(i, block) {
       hljs.highlightBlock(block);
     });
-  }
-
-  function updateBreadcrumb(page){
-    var node = toc.nodes[page.tocIndex];
-    var html = '<span class="semibold">' + node.name + '</span>';
-
-    var index = node.parent;
-    while (index != null) {
-      node = toc.nodes[index];
-      html = createAnchorHtml(node) + ' <span class="mg-icons">&#xe802;</span> ' + html;
-      index = node.parent;
-    }
-
-    html = '<div>' + html + '</div>';
-
-    breadcrumbEl.html(html);
-    makeLocalLinksDynamic(breadcrumbEl);
   }
 
   function loadAffix() {
@@ -301,21 +328,21 @@ $(function() {
   function hookTocFilterEvent() {
     filterEl.off('input');
     filterEl.on('input', function (e) {
-      var text = e.target.value.trim();
+      var text = e.currentTarget.value.trim();
       if (!text) {
-        toc.doAll(n => n.liElement.removeClass('hide'));
+        toc.doAll(n => n.element.removeClass('hide'));
         filterNoResultsEl.addClass('hide');
       } else {
         var match = 0;
         for (var i = 0; i < toc.nodes.length; i++) {
           var node = toc.nodes[i];
           if (node.name.toLowerCase().indexOf(text.toLowerCase()) > -1) {
-            toc.doSelf(i, n => n.liElement.removeClass('hide'));
-            toc.doAncestors(i, n => n.liElement.removeClass('hide'));
-            i = toc.doBelow(i, n => n.liElement.removeClass('hide'));
+            toc.doSelf(i, n => n.element.removeClass('hide'));
+            toc.doAncestors(i, n => n.element.removeClass('hide'));
+            i = toc.doBelow(i, n => n.element.removeClass('hide'));
             match++;
           } else {
-            node.liElement.addClass('hide');
+            node.element.addClass('hide');
           }
           filterNoResultsEl.toggleClass('hide', match > 0);
         }
@@ -325,10 +352,10 @@ $(function() {
 
   function makeLocalLinksDynamic(element) {
     if (historySupported) {
-      element.find('a').click(function(e) {
-        var a = $(e.target);
+      element.find('a[href]').off().click(function(e) {
+        var a = $(e.currentTarget);
         var href = a.attr('href');
-        if (isRelativePath(href) && href.endsWith('.html')) {
+        if (href && isRelativePath(href) && href.endsWith('.html')) {
           e.preventDefault();
           var dataPath = stripExtension(href);
           if (loadPage(dataPath))

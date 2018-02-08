@@ -115,6 +115,7 @@
     "globalMetadata": {
       "_appTitle": "MonoGame Documentation",
       "_disableFooter": true,
+      "_disablePrevnext": true,
       "_enableNewTab": false
     },
     "fileMetadataFiles": [

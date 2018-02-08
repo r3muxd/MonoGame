@@ -66,7 +66,7 @@ Tree.prototype.next = function (currentIdx, filter) {
   if (filter && !filter(nextNode))
     return this.next(currentIdx + 1, filter);
 
-  return prevNode;
+  return nextNode;
 }
 
 Tree.prototype.first = function (filter) {

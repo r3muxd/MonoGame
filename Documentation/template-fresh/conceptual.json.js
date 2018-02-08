@@ -16,6 +16,7 @@ exports.transform = function (model) {
   if (page.hasContributionLink)
     page.contributionLink = model.docurl || common.getImproveTheDocHref(model, model._gitContribute, model._gitUrlPattern);
   page.hasAffix = !model._disableAffix;
+  page.hasPrevnext = !model._disablePrevnext;
 
   model.page = JSON.stringify(page);
  

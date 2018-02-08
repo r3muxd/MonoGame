@@ -8,5 +8,8 @@
   },
   "_disableBreadcrumb": {
     "../CHANGELOG.md": true
+  },
+  "_disablePrevnext": {
+    "tutorials/**": false
   }
 }
