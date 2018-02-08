@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'mg-icons';
+  src: url('../font/mg-icons.woff2') format('woff2'),
+       url('../font/mg-icons.woff') format('woff');
+}
+
+.mg-icons {
+  font-family: 'mg-icons';
+}
+

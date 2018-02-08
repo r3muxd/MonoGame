@@ -75,3 +75,20 @@ Tree.prototype.first = function (filter) {
   return this.next(-1, filter);
 }
 
+Tree.prototype.doAll = function (f) {
+  for (var i = 0; i < this.nodes.length; i++)
+    f(this.nodes[i]);
+}
+Tree.prototype.doSelf = function (nodeIdx, f) {
+  f(this.nodes[nodeIdx]);
+}
+Tree.prototype.doBelow = function (nodeIdx, f) {
+  var rootLevel = this.nodes[nodeIdx].level;
+  for (var i = nodeIdx + 1; i < this.nodes.length && this.nodes[i].level > rootLevel; i++)
+    f(this.nodes[i]);
+}
+Tree.prototype.doAncestors = function (nodeIdx, f) {
+  for (var i = this.nodes[nodeIdx].parent; i != null; i = this.nodes[i].parent)
+    f(this.nodes[i]);
+}
+

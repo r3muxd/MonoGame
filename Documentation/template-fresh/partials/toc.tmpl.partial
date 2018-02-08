@@ -2,9 +2,7 @@
 
 <div id="page-toc" {{^hasToc}}class="hide"{{/hasToc}}>
   <div id="toc-filter-wrapper">
-    <form id="toc-filter">
-      <input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
-    </form>
+    <span class="mg-icons">&#xe804;</span><input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
   </div>
   <div id="toc" />
 </div>

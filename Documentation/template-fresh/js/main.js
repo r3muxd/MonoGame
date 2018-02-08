@@ -15,6 +15,7 @@ $(function() {
   pageTocEl = $('#page-toc');
   pageAffixEl = $('#page-affix');
   navEl = $('#navbar');
+  filterEl = $('#toc-filter-input');
   tocEl = $('#toc');
   contentWrapperEl = $('#content-wrapper');
   breadcrumbWrapperEl = $('#breadcrumb-wrapper');
@@ -24,8 +25,12 @@ $(function() {
   nextEl = contentWrapperEl.find('#next');
   affixEl = $('#affix');
 
-  var startPagePath = $("meta[property='docfx\\:pagedata']").attr('content');
-  loadPage(startPagePath);
+  init();
+  
+  function init() {
+    var startPagePath = $("meta[property='docfx\\:pagedata']").attr('content');
+    loadPage(startPagePath);
+  }
 
   function loadPage(path) {
     // don't reload page
@@ -169,11 +174,8 @@ $(function() {
     if (!page || page.tocIndex < 0)
       return;
 
-    var index = page.tocIndex;
-    while (index !== null) {
-      toc.nodes[index].liElement.toggleClass('active', value);
-      index = toc.nodes[index].parent;
-    }
+    toc.doSelf(page.tocIndex, n => n.liElement.toggleClass('active', value));
+    toc.doAncestors(page.tocIndex, n => n.liElement.toggleClass('active', value));
   }
 
   function loadConceptual(page) {
@@ -207,7 +209,7 @@ $(function() {
     var index = node.parent;
     while (index != null) {
       node = toc.nodes[index];
-      html = createAnchorHtml(node) + ' <i class="material-icons">keyboard_arrow_right</i> ' + html;
+      html = createAnchorHtml(node) + ' <span class="mg-icons">&#xe802;</span> ' + html;
       index = node.parent;
     }
 
@@ -285,13 +287,34 @@ $(function() {
     return html;
   }
 
-
   function hookNavEvents() {
     makeLocalLinksDynamic(navEl);
   }
 
   function hookTocEvents() {
+    hookTocFilterEvent();
     makeLocalLinksDynamic(tocEl);
+  }
+
+  function hookTocFilterEvent() {
+    filterEl.off('input');
+    filterEl.on('input', function (e) {
+      var text = e.target.value;
+      if (!text) {
+        toc.doAll(n => n.liElement.removeClass('hide'));
+      } else {
+        for (var i = 0; i < toc.nodes.length; i++) {
+          var node = toc.nodes[i];
+          if (node.name.toLowerCase().indexOf(text.toLowerCase()) > -1) {
+            toc.doSelf(i, n => n.liElement.removeClass('hide'));
+            toc.doAncestors(i, n => n.liElement.removeClass('hide'));
+            toc.doBelow(i, n => n.liElement.removeClass('hide'));
+          } else {
+            node.liElement.addClass('hide');
+          }
+        }
+      }
+    });
   }
 
   function makeLocalLinksDynamic(element) {

@@ -39,23 +39,29 @@ h4 {
   margin: 0.6em 0;
   font-weight: 500;
 }
-
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+code {
+  line-height: 1.2;
+  color: #444;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: .2em .4em;
+}
+ul.nav {
+  list-style: none;
 }
 
 .semibold {
   font-weight: 600;
 }
-
-ul.nav {
-  list-style: none;
-}
-
 .scroll-y {
   overflow-y: auto;
 }
-
 .flex-col {
   height: 100%;
   display: flex;
@@ -70,16 +76,6 @@ ul.nav {
   flex-shrink: 1;
   /* flex items have min-width of content size by default */
   min-width: 0;
-}
-img {
-  max-width: 100%;
-}
-code {
-  line-height: 1.2;
-  color: #444;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-  padding: .2em .4em;
 }
 
 /* ===== MAIN LAYOUT ===== */
@@ -116,10 +112,15 @@ code {
 #breadcrumb {
   padding: 5px;
 }
-#breadcrumb .material-icons {
-  vertical-align: middle;
-  font-size: 20px;
-  line-height: 0;
+#breadcrumb .mg-icons {
+  font-size: .9em;
+  color: #555;
+  margin: 0 3px;
+}
+#contribution-link {
+  padding: 5px 20px;
+  font-weight: 600;
+  flex-shrink: 0;
 }
 
 /* ===== NAVBAR ===== */
@@ -172,13 +173,21 @@ code {
 }
 #toc-filter-wrapper {
   margin: 12px;
-}
-#toc-filter-input {
   border: 1px #ddd solid;
   border-radius: 5px;
+  background-color: white;
+  display: flex;
+}
+#toc-filter-wrapper .mg-icons {
+  color: #666;
+  margin: auto 0 auto 8px;
+}
+#toc-filter-input {
   box-sizing: border-box;
-  width: 100%;
-  padding: 10px;
+  padding: 8px;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
 }
 #toc {
   margin: 12px;
@@ -237,31 +246,25 @@ ul.level1 {
 #content-wrapper {
   margin-top: 15px;
 }
+
 #prevnext {
   margin: 40px 5px;
   display: flex;
-}
-.page-nav {
-  margin: auto;
-}
-.page-nav > i.material-icons {
-  font-size: 48px;
 }
 a.page-nav:not([href]) {
   /* don't show prev/next arrow when no link set */
   display: none;
 }
 #prevnext a {
+  font-size: 48px;
   color: #aaa;
   transition: color .2s;
+  flex-grow: 1;
+  text-align: center;
 }
 #prevnext a:hover {
   color: #E73C00;
-}
-#contribution-link {
-  padding: 5px 20px;
-  font-weight: 600;
-  flex-shrink: 0;
+  text-decoration: none;
 }
 
 /* ===== AFFIX ===== */
