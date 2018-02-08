@@ -1,6 +1,45 @@
 
+if (typeof exports !== 'undefined') {
+  exports.TreeBuilder = TreeBuilder;
+  exports.Tree = Tree;
+}
+
+function TreeBuilder() {
+  this.lastAtDepth = [];
+  this.nodes = [];
+}
+
+TreeBuilder.prototype.push = function (node, depth) {
+  var i = this.nodes.length;
+
+  // console.log('Pushing ' + i + '; depth: ' + depth + '; [' + this.lastAtDepth + ']');
+  // console.log('Node: ' + JSON.stringify(node));
+
+  node.index = i;
+  node.depth = depth;
+  node.parent = depth - 1 >= 0 ? this.lastAtDepth[depth - 1] : null;
+  node.prevSibling = depth < this.lastAtDepth.length ? this.lastAtDepth[depth] : null;
+  node.nextSibling = null;
+  if (node.prevSibling !== null)
+    this.nodes[node.prevSibling].nextSibling = i;
+
+  // console.log('Result: ' + JSON.stringify(node));
+
+  this.nodes.push(node);
+  this.lastAtDepth[depth] = i;
+  this.lastAtDepth = this.lastAtDepth.slice(0, depth + 1);
+}
+
+TreeBuilder.prototype.finish = function () {
+  return new Tree(this.nodes);
+}
+
 function Tree(nodes) {
   this.nodes = nodes;
+}
+
+Tree.prototype.size = function () {
+  return this.nodes.length;
 }
 
 Tree.prototype.parent = function (nodeIdx) {
@@ -15,9 +54,11 @@ Tree.prototype.nextSibling = function (nodeIdx) {
   var n = this.nodes[nodeIdx];
   return n.nextSibling ? this.nodes[n.prevSibling] : null;
 }
-Tree.prototype.firstChild = function (nodeIdx) {
+Tree.prototype.hasChildren = function (nodeIdx) {
   var n = this.nodes[nodeIdx];
-  return n.leaf ? null : this.nodes[nodeIdx + 1];
+  if (nodeIdx + 1 >= this.nodes.length)
+    return false;
+  return this.nodes[nodeIdx + 1].depth > n.depth;
 }
 Tree.prototype.rootNodes = function () {
   if (this.nodes.length === 0)
@@ -33,7 +74,7 @@ Tree.prototype.rootNodes = function () {
 }
 Tree.prototype.children = function (nodeIdx) {
   var n = this.nodes[nodeIdx];
-  if (n.leaf)
+  if (!this.hasChildren(nodeIdx))
     return [];
 
   var cs = [];
@@ -84,8 +125,8 @@ Tree.prototype.doSelf = function (nodeIdx, f) {
 }
 Tree.prototype.doBelow = function (nodeIdx, f) {
   // apply 'f' to all nodes below the node at 'nodeIdx' and return the index of the last applied node
-  var rootLevel = this.nodes[nodeIdx].level;
-  for (var i = nodeIdx + 1; i < this.nodes.length && this.nodes[i].level > rootLevel; i++)
+  var rootDepth = this.nodes[nodeIdx].depth;
+  for (var i = nodeIdx + 1; i < this.nodes.length && this.nodes[i].depth > rootDepth; i++)
     f(this.nodes[i]);
   return i - 1;
 }

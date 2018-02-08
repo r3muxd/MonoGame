@@ -1,4 +1,5 @@
-var common = require('./common.js')
+var common = require('./common.js');
+var tree = require('./js/tree.js');
 
 exports.getOptions = function (model) {
   return {
@@ -8,8 +9,8 @@ exports.getOptions = function (model) {
 
 exports.transform = function (model) {
 
-  var nodes = buildTree(model);
-  model.toc = JSON.stringify(nodes);
+  var tocTree = buildTree(model);
+  model.toc = JSON.stringify(tocTree.nodes);
   return model;
 }
 
@@ -19,58 +20,28 @@ exports.transform = function (model) {
 function buildTree(model) {
   var items = model.items;
 
-  addIndices(items);
   var nodes = [];
-  buildTreeRec(nodes, null, items, 1);
-  return nodes;
+  var builder = new tree.TreeBuilder();
+  buildTreeRec(items, 0);
+  return builder.finish();
 
-  function buildTreeRec(nodes, parent, items, level) {
+  function buildTreeRec(items, depth) {
     for (var i = 0; i < items.length; i++) {
-      var item = items[i];
-
-      var leaf = !item.items || item.items.length === 0;
-      var index = item.index;
-      var prevSibling = i - 1 >= 0 ? items[i-1].index : null;
-      var nextSibling = i + 1 < items.length ? items[i+1].index : null;
+      var current = items[i];
 
       var path = null;
-      if (item.topicHref) {
+      if (current.topicHref) {
         var dir = common.getDirectory(model._path);
-        var subPath = item.topicHref.slice(0, item.topicHref.indexOf("."));
+        var subPath = common.stripExtension(current.topicHref);
         path = '/' + dir + subPath;
       }
 
-      var node = {
-        parent: parent,
-        leaf: leaf,
-        index: index,
-        prevSibling: prevSibling,
-        nextSibling: nextSibling,
-
-        level: level,
-        name: item.name,
-        path: path
-      };
-
-      nodes.push(node);
-      if (!leaf)
-        buildTreeRec(nodes, index, item.items, level + 1);
+      var node = { name: current.name, path: path };
+      builder.push(node, depth);
+      if (current.items)
+        buildTreeRec(current.items, depth + 1);
     }
   }
 }
 
-// assign depth-first indices to all tree items so we can easily build the flat tree
-function addIndices(items) {
-  addIndicesRec(items, {index: 0});
-
-  function addIndicesRec(items, indexBox) {
-    for (var i = 0; i < items.length; i++) {
-      var item = items[i];
-      item.index = indexBox.index;
-      indexBox.index += 1;
-      if (item.items)
-        addIndicesRec(item.items, indexBox);
-    }
-  }
-}
 

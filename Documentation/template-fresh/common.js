@@ -18,7 +18,6 @@ exports.processSeeAlso = processSeeAlso;
 exports.isAbsolutePath = isAbsolutePath;
 exports.isRelativePath = isRelativePath;
 
-
 function getFileName(path) {
   return path.substring(path.lastIndexOf('/') + 1);
 }

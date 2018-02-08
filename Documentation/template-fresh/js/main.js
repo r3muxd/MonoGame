@@ -76,7 +76,7 @@ $(function() {
     if (shouldLoadToc)
       loadToc(currentPage, newPage);
     else
-      loadAfterToc(currentPage, newPage);
+      loadAfterToc(currentPage, newPage, false);
 
     pageTocEl.toggleClass('hide', !newPage.hasToc);
     contributionLinkEl.toggleClass('hide', !newPage.hasContributionLink);
@@ -99,7 +99,7 @@ $(function() {
   function loadNavBar(oldPage, newPage) {
     getJSON(newPage.nav + '.json', function (navNodes) {
       nav = new Tree(navNodes);
-      var navHtml = buildTocHtml(nav);
+      var navHtml = buildTreeHtml(nav);
       navEl.html(navHtml);
       loadAfterNav(oldPage, newPage);
       hookNavEvents();
@@ -109,19 +109,19 @@ $(function() {
   function loadToc(oldPage, newPage) {
     getJSON(newPage.toc + '.json', function (tocNodes) {
       toc = new Tree(tocNodes);
-      var tocHtml = buildTocHtml(toc);
+      var tocHtml = buildTreeHtml(toc);
       tocEl.html(tocHtml);
       hookTocEvents();
 
-      loadAfterToc(oldPage, newPage);
+      loadAfterToc(oldPage, newPage, true);
     });
   }
 
-  function buildTocHtml(tree) {
-    var root = buildTocRec(tree, tree.rootNodes(), 1);
+  function buildTreeHtml(tree) {
+    var root = buildTreeRec(tree.rootNodes(), 1);
     return root;
 
-    function buildTocRec(tree, nodes, level) {
+    function buildTreeRec(nodes, level) {
       var ul = $('<ul>').addClass('nav level' + level);
       for (var i = 0; i < nodes.length; i++) {
         var node = nodes[i];
@@ -130,8 +130,9 @@ $(function() {
 
         node.element = li;
 
-        if (!node.leaf) {
-          var subUl = buildTocRec(tree, tree.children(node.index), level + 1);
+        var children = tree.children(node.index);
+        if (children.length > 0) {
+          var subUl = buildTreeRec(children, level + 1);
           li.append(subUl);
         }
         ul.append(li);
@@ -159,13 +160,16 @@ $(function() {
       nav.nodes[newPage.navIndex].element.addClass('active');
   }
 
-  function loadAfterToc(oldPage, newPage) {
+  function loadAfterToc(oldPage, newPage, tocChanged) {
     for (var i = 0; i < toc.nodes.length; i++) {
       if (toc.nodes[i].path === newPage.path)
         newPage.tocIndex = i;
     }
 
-    toggleTocActive(oldPage, false);
+    console.log('  tocIndex: ' + newPage.tocIndex);
+
+    if (!tocChanged)
+      toggleTocActive(oldPage, false);
     toggleTocActive(newPage, true);
 
     if (newPage.tocIndex < 0) {
@@ -237,6 +241,10 @@ $(function() {
 
   function loadAfterConceptual(page) {
     highlightjs();
+
+    // unhook possible scroll event handlers
+    pageScrollEl.off('scroll');
+
     if (page.hasAffix)
       loadAffix();
     else
@@ -252,17 +260,23 @@ $(function() {
   }
 
   function loadAffix() {
-    var hierarchy = getHeadingHierarchy();
-    if (hierarchy.length == 0) {
+    var headingTree = getHeadingTree();
+    console.log('Heading tree:');
+    console.log('  ' + JSON.stringify(headingTree));
+    if (headingTree.size() === 0) {
       pageAffixEl.addClass('hide');
     } else {
-      var html = buildAffix(hierarchy, 1);
+      var html = buildTreeHtml(headingTree);
       affixEl.html(html);
       pageAffixEl.removeClass('hide');
+
+      pageScrollEl.scroll(function () {
+        scrollAffix();
+      });
     }
   }
 
-  function getHeadingHierarchy() {
+  function getHeadingTree() {
     var article = contentWrapperEl.find('article');
 
     // the root heading level is the first level with more than 1 heading
@@ -278,45 +292,25 @@ $(function() {
     }
 
     if (rootHeadingLevel == deepest)
-      return [];
+      return new Tree([]);
 
     var rootHeading = 'h' + rootHeadingLevel;
     var subHeading = 'h' + (rootHeadingLevel + 1);
     var headings = article.find(rootHeading + ',' + subHeading);
 
-    var hierarchy = [];
+    var treeBuilder = new TreeBuilder();
     for (var i = 0; i < headings.length; i++) {
-      var heading = $(headings[i]);
-      var id = heading.attr('id');
-      if (!id)
-        continue;
-      var myHeading = { name: htmlEncode(heading.text()), href: '#' + id, items: [] };
-
-      if (heading.is(rootHeading)) {
-        hierarchy.push(myHeading);
-      } else if (heading.is(subHeading)) {
-        if (hierarchy.length != 0)
-            hierarchy[hierarchy.length -1].items.push(myHeading);
-      }
+      var heading = headings[i];
+      var depth = Number(heading.nodeName[1]) - rootHeadingLevel;
+      var myHeading = { name: htmlEncode(heading.textContent), href: '#' + heading.id, element: $(heading) };
+      treeBuilder.push(myHeading, depth);
     }
 
-    return hierarchy;
+    return treeBuilder.finish();
   }
 
-  function buildAffix(items, level) {
-    if (!items || items.length == 0)
-      return '';
-    var html = '';
-    html += '<ul class="nav level' + level + '">';
-    for (var i = 0; i < items.length; i++) {
-      var item = items[i];
-      html += '<li>';
-      html += '<a href="' + item.href + '">' + item.name + '</a>';
-      html += buildAffix(item.items, level + 1);
-      html += '</li>';
-    }
-    html  += '</ul>';
-    return html;
+  function scrollAffix() {
+
   }
 
   function hookNavEvents() {
@@ -355,7 +349,7 @@ $(function() {
 
   function makeLocalLinksDynamic(element) {
     if (historySupported) {
-      element.find('a[href]').off().click(function(e) {
+      element.find('a[href]').off('click').click(function(e) {
         var a = $(e.currentTarget);
         var href = a.attr('href');
         if (href && isRelativePath(href) && href.endsWith('.html')) {
