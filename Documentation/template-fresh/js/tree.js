@@ -83,9 +83,11 @@ Tree.prototype.doSelf = function (nodeIdx, f) {
   f(this.nodes[nodeIdx]);
 }
 Tree.prototype.doBelow = function (nodeIdx, f) {
+  // apply 'f' to all nodes below the node at 'nodeIdx' and return the index of the last applied node
   var rootLevel = this.nodes[nodeIdx].level;
   for (var i = nodeIdx + 1; i < this.nodes.length && this.nodes[i].level > rootLevel; i++)
     f(this.nodes[i]);
+  return i - 1;
 }
 Tree.prototype.doAncestors = function (nodeIdx, f) {
   for (var i = this.nodes[nodeIdx].parent; i != null; i = this.nodes[i].parent)

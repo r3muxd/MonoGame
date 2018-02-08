@@ -171,6 +171,9 @@ ul.nav {
   background-color: #f1f1f1;
   border-right: 2px solid #e7e7e7;
 }
+#page-toc > div {
+  margin: 12px;
+}
 #toc-filter-wrapper {
   margin: 12px;
   border: 1px #ddd solid;
@@ -189,8 +192,11 @@ ul.nav {
   border: none;
   background-color: transparent;
 }
-#toc {
-  margin: 12px;
+#toc-no-results {
+  padding: 5px;
+  margin-left: 20px !important;
+  color: #666;
+  font-weight: 600;
 }
 #toc a {
   color: #666

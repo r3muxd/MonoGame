@@ -1,29 +1,31 @@
+"use strict";
 $(function() {
 
   window.onpopstate = function(event) {
     loadPage(stripExtension(document.location.pathname));
   };
 
-  historySupported = window.history && window.history.pushState;
+  var historySupported = window.history && window.history.pushState;
 
-  currentPage = null;
-  nav = null;
-  toc = null;
+  var currentPage = null;
+  var nav = null;
+  var toc = null;
 
   // cached DOM elements (as jQuery objects)
-  titleEl = $('head title');
-  pageTocEl = $('#page-toc');
-  pageAffixEl = $('#page-affix');
-  navEl = $('#navbar');
-  filterEl = $('#toc-filter-input');
-  tocEl = $('#toc');
-  contentWrapperEl = $('#content-wrapper');
-  breadcrumbWrapperEl = $('#breadcrumb-wrapper');
-  breadcrumbEl = $('#breadcrumb');
-  contributionLinkEl = $('#contribution-link');
-  prevEl = contentWrapperEl.find('#prev');
-  nextEl = contentWrapperEl.find('#next');
-  affixEl = $('#affix');
+  var titleEl = $('head title');
+  var pageTocEl = $('#page-toc');
+  var pageAffixEl = $('#page-affix');
+  var navEl = $('#navbar');
+  var filterEl = pageTocEl.find('#toc-filter-input');
+  var filterNoResultsEl = pageTocEl.find('#toc-no-results');
+  var tocEl = pageTocEl.find('#toc');
+  var contentWrapperEl = $('#content-wrapper');
+  var breadcrumbWrapperEl = $('#breadcrumb-wrapper');
+  var breadcrumbEl = $('#breadcrumb');
+  var contributionLinkEl = $('#contribution-link');
+  var prevEl = contentWrapperEl.find('#prev');
+  var nextEl = contentWrapperEl.find('#next');
+  var affixEl = $('#affix');
 
   init();
   
@@ -204,7 +206,7 @@ $(function() {
 
   function updateBreadcrumb(page){
     var node = toc.nodes[page.tocIndex];
-    html = '<span class="semibold">' + node.name + '</span>';
+    var html = '<span class="semibold">' + node.name + '</span>';
 
     var index = node.parent;
     while (index != null) {
@@ -299,19 +301,23 @@ $(function() {
   function hookTocFilterEvent() {
     filterEl.off('input');
     filterEl.on('input', function (e) {
-      var text = e.target.value;
+      var text = e.target.value.trim();
       if (!text) {
         toc.doAll(n => n.liElement.removeClass('hide'));
+        filterNoResultsEl.addClass('hide');
       } else {
+        var match = 0;
         for (var i = 0; i < toc.nodes.length; i++) {
           var node = toc.nodes[i];
           if (node.name.toLowerCase().indexOf(text.toLowerCase()) > -1) {
             toc.doSelf(i, n => n.liElement.removeClass('hide'));
             toc.doAncestors(i, n => n.liElement.removeClass('hide'));
-            toc.doBelow(i, n => n.liElement.removeClass('hide'));
+            i = toc.doBelow(i, n => n.liElement.removeClass('hide'));
+            match++;
           } else {
             node.liElement.addClass('hide');
           }
+          filterNoResultsEl.toggleClass('hide', match > 0);
         }
       }
     });
