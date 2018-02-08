@@ -46,6 +46,9 @@ $(function() {
       page.tocIndex = -1;
       updatePage(page);
       pageScrollEl.scrollTop(0);
+
+      filterEl[0].value = '';
+      filterEl.trigger('input');
     }, function () {
       // reload the page on failure to go to 404
       location.reload();
