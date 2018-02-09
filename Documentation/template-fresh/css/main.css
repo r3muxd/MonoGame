@@ -116,6 +116,7 @@ ul.nav {
 #page-scroll {
   overflow-x: hidden;
   min-width: 280px;
+  align-items: flex-start;
 }
 #page-toc {
   overflow: auto;
@@ -289,7 +290,7 @@ ul.level1 {
   text-decoration: underline;
 }
 #main-wrapper {
-  width: 100%;
+  flex-grow: 1;
   max-width: 900px;
   margin: 0 auto;
 }
