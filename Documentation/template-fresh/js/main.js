@@ -61,7 +61,7 @@ $(function() {
     var init = currentPage == null;
     var shouldLoadNav = init;
     var switchNav = !init && currentPage.navIndex !== newPage.navIndex;
-    var shouldLoadToc = (init || switchNav);
+    var shouldLoadToc = (init || switchNav) && newPage.toc !== null;
 
     if (!init)
       updateTitle(newPage.title);
@@ -181,7 +181,6 @@ $(function() {
   }
 
   function updateBreadcrumb(page) {
-
     breadcrumbWrapperEl.toggleClass('hide', !page.hasBreadcrumb);
     if (!page.hasBreadcrumb)
       return;
