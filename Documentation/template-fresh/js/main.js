@@ -102,7 +102,7 @@ $(function() {
   function loadNavBar(oldPage, newPage) {
     getJSON(newPage.nav + '.json', function (navNodes) {
       nav = new Tree(navNodes);
-      var navHtml = buildTreeHtml(nav);
+      var navHtml = buildTreeHtml(nav, createAnchorJquery);
       navEl.html(navHtml);
       loadAfterNav(oldPage, newPage);
       hookNavEvents();
@@ -112,7 +112,7 @@ $(function() {
   function loadToc(oldPage, newPage) {
     getJSON(newPage.toc + '.json', function (tocNodes) {
       toc = new Tree(tocNodes);
-      var tocHtml = buildTreeHtml(toc);
+      var tocHtml = buildTreeHtml(toc, createTocEntry);
       tocEl.html(tocHtml);
       hookTocEvents();
 
@@ -120,7 +120,15 @@ $(function() {
     });
   }
 
-  function buildTreeHtml(tree) {
+  function createTocEntry(node, tree) {
+    var anchor = createAnchorJquery(node);
+    //if (tree.hasChildren(node.index))
+    //  $(anchor).addClass('expander');
+
+    return anchor;
+  }
+
+  function buildTreeHtml(tree, createEntry) {
     var root = buildTreeRec(tree.rootNodes(), 1);
     return root;
 
@@ -128,8 +136,8 @@ $(function() {
       var ul = $('<ul>').addClass('nav level' + level);
       for (var i = 0; i < nodes.length; i++) {
         var node = nodes[i];
-        var li = $('<li>');
-        li.append($(createAnchorHtml(node)));
+        var li = $('<li class="pos-rel">');
+        li.append(createEntry(node, tree));
 
         node.element = li;
 
@@ -168,8 +176,6 @@ $(function() {
       if (toc.nodes[i].path === newPage.path)
         newPage.tocIndex = i;
     }
-
-    console.log('  tocIndex: ' + newPage.tocIndex);
 
     if (!tocChanged)
       toggleTocActive(oldPage, false);
@@ -269,7 +275,7 @@ $(function() {
     if (headingTree.size() === 0) {
       pageAffixEl.addClass('hide');
     } else {
-      var html = buildTreeHtml(headingTree);
+      var html = buildTreeHtml(headingTree, createAnchorJquery);
       affixEl.html(html);
       pageAffixEl.removeClass('hide');
 
@@ -363,6 +369,10 @@ $(function() {
         }
       });
     }
+  }
+
+  function createAnchorJquery(node) {
+    return $(createAnchorHtml(node));
   }
 
   function createAnchorHtml(node) {

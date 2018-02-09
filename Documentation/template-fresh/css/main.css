@@ -78,6 +78,20 @@ ul.nav {
   /* flex items have min-width of content size by default */
   min-width: 0;
 }
+.pos-rel {
+  position: relative;
+}
+.expander::before {
+  font-family: "mg-icons";
+  content: "\e802";
+  transition: transform .2s ease-out;
+  cursor: pointer;
+  position: absolute;
+  font-size: .8em;
+}
+.expander.expanded::before {
+  transform: rotate(90deg);
+}
 
 /* ===== MAIN LAYOUT ===== */
 
@@ -173,7 +187,7 @@ ul.nav {
   border-right: 2px solid #e7e7e7;
 }
 #page-toc > div {
-  margin: 12px;
+  margin: 10px;
 }
 #toc-filter-wrapper {
   margin: 12px;
@@ -217,26 +231,26 @@ ul.level1 {
 }
 #toc ul.level1 {
   margin: 5px 0;
-}
-#toc ul.level1 >li > a {
   font-weight: 700;
   font-size: 100%;
 }
 #toc ul.level2 {
   margin: 3px 0;
   border-left: 3px #ddd solid;
-}
-#toc ul.level2 > li > a {
   font-weight: 500;
   font-size: 92%;
 }
 #toc ul.level3 {
   margin: 2px 0;
   border-left: 2px #ddd solid;
-}
-#toc ul.level3 > li > a {
   font-weight: 400;
   font-size: 86%;
+}
+.level1 .expander::before {
+  left: -17px;
+}
+.level2 .expander::before {
+  left: -13px;
 }
 
 /* ===== CONTENT ===== */
@@ -339,24 +353,6 @@ div.api {
   margin-top: 0;
   margin-bottom: 15px;
 }
-/* API expanders */
-.expander:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e114";
-  color: grey;
-  position: absolute;
-  transition: transform .2s ease-out;
-  cursor: pointer;
-}
-.expander.collapsed:before {
-  transform: rotate(-90deg);
-}
-.api .expander:before {
-  font-size: medium;
-  left: -10px;
-  margin-top: 10px;
-}
-
 
 /* Namespace tables */
 table.api-table {
@@ -408,13 +404,6 @@ table.api-table td.summary {
 /* View Source links */
 article span.small.pull-right {
   margin-top: 3px;
-}
-/* They used a trick for anchors, but it's hacky and causes problems
- * with the View Source links, so we're overwriting it
- * we solve the anchoring with a script in main.js */
-h1::before, h2::before, h3::before, h4::before {
-  height: 0;
-  margin-top: 0;
 }
 
 .hide {
