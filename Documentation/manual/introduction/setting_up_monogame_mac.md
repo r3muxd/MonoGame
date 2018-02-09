@@ -32,7 +32,7 @@ To setup MonoGame application development on mac OSX do the following:
 * Click on the newest MonoGame release
 * Download MonoGame for Mac
 * Open the .pkg 
-  * You will probably get an error about signing. If you do , right click and Open the .pkg file and you will be able to continue
+  * You will probably get an error about signing. If you do, right click and Open the .pkg file and you will be able to continue
 * That's it, MonoGame is installed.
 
 Make sure you install mono and Xamarin Studio first so that MonoGame can correctly setup the 
