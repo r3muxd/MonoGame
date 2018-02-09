@@ -4,7 +4,7 @@
 - name: Tutorials
   href: tutorials/
   topicHref: tutorials/index.md
-- name: Api Reference
+- name: Api
   href: _api/
 - name: Changelog
   href: ../CHANGELOG.md

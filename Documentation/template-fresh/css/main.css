@@ -60,8 +60,17 @@ ul.nav {
 .semibold {
   font-weight: 600;
 }
+.scroll {
+  overflow: auto;
+}
 .scroll-y {
   overflow-y: auto;
+}
+.stretch-width {
+  width: 100%;
+}
+.stretch-height {
+  height: 100%;
 }
 .flex-col {
   height: 100%;
@@ -76,15 +85,19 @@ ul.nav {
   flex-grow: 1;
   flex-shrink: 1;
   /* flex items have min-width of content size by default */
+  /* that made text content on some pages not wrap properly */
   min-width: 0;
 }
 .pos-rel {
   position: relative;
 }
+.pos-abs {
+  position: relative;
+}
 .expander::before {
   font-family: "mg-icons";
   content: "\e802";
-  transition: transform .2s ease-out;
+  transition: transform .3s ease-out;
   cursor: pointer;
   position: absolute;
   font-size: .8em;
@@ -98,24 +111,36 @@ ul.nav {
 .no-overflow {
   overflow: hidden;
 }
+#page-scroll {
+  overflow-x: hidden;
+  min-width: 280px;
+}
 #page-toc {
   overflow: auto;
   white-space: nowrap;
-  flex: 0 0 280px;
+  flex: 0 0 0;
+  transition: flex-basis .2s ease;
+  background-color: #f1f1f1;
+  border-right: 2px solid #e7e7e7;
+}
+#page-toc.shown {
+  flex-basis: 280px;
 }
 #page-affix {
   flex: 1 0 200px;
 }
-#main-wrapper {
-  max-width: 900px;
-  margin: auto;
+#toc-toggle-wrapper {
+  margin-bottom: 10px;
 }
-
-@media (max-width: 992px) {
-  /* hide affix on small screens */
-  #page-affix {
-    display: none;
-  }
+#toc-toggle {
+  padding: 10px; /* make it larger so it's easier to click */
+  left: -6px;
+  cursor: pointer;
+  color: #666;
+  transition: color .2s;
+}
+#toc-toggle:hover {
+  color: #333;
 }
 
 /* ===== BREADCRUMB ===== */
@@ -182,13 +207,6 @@ ul.nav {
 
 /* ===== TOC ===== */
 
-#page-toc {
-  background-color: #f1f1f1;
-  border-right: 2px solid #e7e7e7;
-}
-#page-toc > div {
-  margin: 10px;
-}
 #toc-filter-wrapper {
   margin: 12px;
   border: 1px #ddd solid;
@@ -208,10 +226,12 @@ ul.nav {
   background-color: transparent;
 }
 #toc-no-results {
-  padding: 5px;
   margin-left: 20px !important;
   color: #666;
   font-weight: 600;
+}
+#toc {
+  margin: 10px;
 }
 #toc a {
   color: #666
@@ -257,12 +277,18 @@ ul.level1 {
 
 #page-main {
   padding: 15px 20px;
+  display: flex;
+  flex-flow: row wrap;
 }
 #page-main a {
   color: #E73C00;
 }
 #page-main a:focus, #page-main a:hover {
   text-decoration: underline;
+}
+#main-wrapper {
+  max-width: 900px;
+  margin: auto;
 }
 #content-wrapper {
   margin-top: 15px;
@@ -406,6 +432,34 @@ article span.small.pull-right {
   margin-top: 3px;
 }
 
+/* ===== RESPONSIVENESS ===== */
+
+@media (max-width: 992px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+@media(max-width: 786px) {
+  .hide-sm {
+    display: none;
+  }
+}
+@media(max-width: 576px) {
+  #page-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media(max-width: 414px) {
+  #page-toc.shown {
+    flex-basis: 84vw;
+  }
+}
+
+/* ===== RESPONSIVENESS OVERRIDES ===== */
+
 .hide {
   display: none
 }
+

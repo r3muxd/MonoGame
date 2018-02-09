@@ -20,6 +20,7 @@ $(function() {
   var filterNoResultsEl = pageTocEl.find('#toc-no-results');
   var tocEl = pageTocEl.find('#toc');
   var pageScrollEl = $('#page-scroll');
+  var tocToggleWrapperEl = pageScrollEl.find('#toc-toggle-wrapper');
   var contentWrapperEl = $('#content-wrapper');
   var breadcrumbWrapperEl = $('#breadcrumb-wrapper');
   var breadcrumbEl = $('#breadcrumb');
@@ -32,6 +33,9 @@ $(function() {
   init();
   
   function init() {
+    $('#toc-toggle').click(function () {
+      pageTocEl.toggleClass('shown');
+    });
     var startPagePath = $("meta[property='docfx\\:pagedata']").attr('content');
     loadPage(startPagePath);
   }
@@ -47,8 +51,10 @@ $(function() {
       updatePage(page);
       pageScrollEl.scrollTop(0);
 
-      filterEl[0].value = '';
-      filterEl.trigger('input');
+      if (filterEl.value) {
+        filterEl[0].value = '';
+        filterEl.trigger('input');
+      }
     }, function () {
       // reload the page on failure to go to 404
       location.reload();
@@ -82,6 +88,7 @@ $(function() {
       loadAfterToc(currentPage, newPage, false);
 
     pageTocEl.toggleClass('hide', !newPage.hasToc);
+    tocToggleWrapperEl.toggleClass('hide', !newPage.hasToc);
     contributionLinkEl.toggleClass('hide', !newPage.hasContributionLink);
 
     if (newPage.hasContributionLink)
@@ -270,8 +277,8 @@ $(function() {
 
   function loadAffix() {
     var headingTree = getHeadingTree();
-    console.log('Heading tree:');
-    console.log('  ' + JSON.stringify(headingTree));
+    //console.log('Heading tree:');
+    //console.log('  ' + JSON.stringify(headingTree));
     if (headingTree.size() === 0) {
       pageAffixEl.addClass('hide');
     } else {
