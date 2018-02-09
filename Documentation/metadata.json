@@ -7,6 +7,7 @@
     "index.md": true
   },
   "_disableBreadcrumb": {
+    "index.md": true,
     "../CHANGELOG.md": true
   },
   "_disablePrevnext": {

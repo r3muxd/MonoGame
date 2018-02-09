@@ -46,15 +46,8 @@ $(function() {
       return false;
 
     getJSON(path + '.json', function (page) {
-      page.navIndex = -1;
-      page.tocIndex = -1;
       updatePage(page);
       pageScrollEl.scrollTop(0);
-
-      if (filterEl.value) {
-        filterEl[0].value = '';
-        filterEl.trigger('input');
-      }
     }, function () {
       // reload the page on failure to go to 404
       location.reload();
@@ -67,7 +60,7 @@ $(function() {
 
     var init = currentPage == null;
     var shouldLoadNav = init;
-    var switchNav = !init && currentPage.navId != newPage.navId;
+    var switchNav = !init && currentPage.navIndex !== newPage.navIndex;
     var shouldLoadToc = (init || switchNav);
 
     if (!init)
@@ -77,8 +70,6 @@ $(function() {
       loadNavBar(currentPage, newPage);
     else if (switchNav)
       loadAfterNav(currentPage, newPage);
-    else
-      newPage.navIndex = currentPage.navIndex;
 
     loadConceptual(newPage);
 
@@ -161,17 +152,6 @@ $(function() {
   }
 
   function loadAfterNav(oldPage, newPage) {
-    for (var i = 0; i < nav.nodes.length; i++) {
-      if (!nav.nodes[i].path)
-        continue;
-      var nnp = nav.nodes[i].path.slice(1);
-      var nodeNavId = nnp.substring(0, nnp.indexOf('/')) || nnp;
-      if (nodeNavId === newPage.navId) {
-        newPage.navIndex = i;
-        break;
-      }
-    }
-
     if (oldPage && oldPage.navIndex >= 0)
       nav.nodes[oldPage.navIndex].element.removeClass('active');
     if (newPage.navIndex >= 0)
@@ -179,11 +159,6 @@ $(function() {
   }
 
   function loadAfterToc(oldPage, newPage, tocChanged) {
-    for (var i = 0; i < toc.nodes.length; i++) {
-      if (toc.nodes[i].path === newPage.path)
-        newPage.tocIndex = i;
-    }
-
     if (!tocChanged)
       toggleTocActive(oldPage, false);
     toggleTocActive(newPage, true);
@@ -375,6 +350,14 @@ $(function() {
             history.pushState({href: href}, null, href);
         }
       });
+    }
+  }
+
+  function clearTocFilter() {
+    // this is currently not used
+    if (filterEl[0].value) {
+      filterEl[0].value = '';
+      filterEl.trigger('input');
     }
   }
 
