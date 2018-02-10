@@ -60,6 +60,9 @@ ul.nav {
   padding-left: 12px;
 }
 
+.hide {
+  display: none !important;
+}
 .semibold {
   font-weight: 600;
 }
@@ -477,9 +480,4 @@ table.api-table td.summary {
   }
 }
 
-/* ===== RESPONSIVENESS OVERRIDES ===== */
-
-.hide {
-  display: none
-}
 
