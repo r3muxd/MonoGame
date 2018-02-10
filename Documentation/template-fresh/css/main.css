@@ -298,6 +298,7 @@ ul.level1 {
 #main-wrapper {
   flex-grow: 1;
   max-width: 900px;
+  padding-bottom: 50px;
   margin: 0 auto;
   width: 100%;
 }
