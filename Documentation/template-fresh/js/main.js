@@ -2,7 +2,12 @@
 $(function() {
 
   window.onpopstate = function(event) {
-    loadPage(stripExtension(document.location.pathname));
+    saveScrollPos();
+    var scrollPos = event.state ? event.state.scrollPos : null;
+    loadPage(stripExtension(window.location.pathname), scrollPos, window.location.hash.substring(1));
+  };
+  window.onbeforeunload = function(event) {
+    saveScrollPos();
   };
 
   var historySupported = window.history && window.history.pushState;
@@ -38,26 +43,30 @@ $(function() {
       pageTocEl.toggleClass('shown');
     });
     var startPagePath = $("meta[property='docfx\\:pagedata']").attr('content');
-    loadPage(startPagePath);
+    var scrollPos = null;
+    if (historySupported && history.state && history.state.scrollPos)
+      scrollPos = history.state.scrollPos;
+    loadPage(startPagePath, scrollPos, window.location.hash);
   }
 
-  function loadPage(path) {
+  function loadPage(path, scrollPos, hash) {
     // don't reload page
-    if (currentPage && currentPage.path === path)
+    if (currentPage && currentPage.path === path) {
+      setScroll(scrollPos, hash);
       return false;
+    }
 
     getJSON(path + '.json', function (page) {
-      updatePage(page);
-      pageScrollEl.scrollTop(0);
+      updatePage(page, scrollPos, hash);
     }, function () {
       // reload the page on failure to go to 404
-      location.reload();
+      window.location.reload();
     });
 
     return true;
   }
 
-  function updatePage(newPage) {
+  function updatePage(newPage, scrollPos, hash) {
 
     var init = currentPage == null;
     var shouldLoadNav = init;
@@ -72,7 +81,7 @@ $(function() {
     else if (switchNav)
       loadAfterNav(currentPage, newPage);
 
-    loadConceptual(newPage);
+    loadConceptual(newPage, scrollPos, hash);
 
     if (shouldLoadToc)
       loadToc(currentPage, newPage);
@@ -222,15 +231,15 @@ $(function() {
     makeLocalLinksDynamic(prevnextEl);
   }
 
-  function loadConceptual(page) {
+  function loadConceptual(page, scrollPos, hash) {
     var conceptualPath = page.path + '.html.partial';
     $.get(conceptualPath, function (contentHtml) {
       contentWrapperEl.html(contentHtml);
-      loadAfterConceptual(page);
+      loadAfterConceptual(page, scrollPos, hash);
    });
   }
 
-  function loadAfterConceptual(page) {
+  function loadAfterConceptual(page, scrollPos, hash) {
     highlightjs();
 
     // unhook possible scroll event handlers
@@ -240,6 +249,8 @@ $(function() {
       loadAffix();
     else
       pageAffixEl.toggleClass('hide', true);
+
+    setScroll(scrollPos, hash);
 
     makeLocalLinksDynamic(contentWrapperEl);
   }
@@ -252,13 +263,12 @@ $(function() {
 
   function loadAffix() {
     var headingTree = getHeadingTree();
-    //console.log('Heading tree:');
-    //console.log('  ' + JSON.stringify(headingTree));
     if (headingTree.size() === 0) {
       pageAffixEl.addClass('hide');
     } else {
       var html = buildTreeHtml(headingTree, createAnchorJquery);
       affixEl.html(html);
+      makeLocalLinksDynamic(affixEl);
       pageAffixEl.removeClass('hide');
 
       pageScrollEl.scroll(function () {
@@ -366,17 +376,37 @@ $(function() {
 
   function makeLocalLinksDynamic(element) {
     if (historySupported) {
-      element.find('a[href]').off('click').click(function(e) {
-        var a = $(e.currentTarget);
-        var href = a.attr('href');
-        if (href && isRelativePath(href) && href.endsWith('.html')) {
-          e.preventDefault();
-          var dataPath = stripExtension(href);
-          if (loadPage(dataPath))
-            history.pushState({href: href}, null, href);
+      var as = element.find('a[href]');
+      as.off('click');
+      for (var i = 0; i < as.length; i++) {
+        var a = as[i];
+        var path = a.pathname;
+        if (path && isRelativePath(path) && path.endsWith('.html')) {
+          a.onclick = function(e) {
+            var a = e.currentTarget;
+            e.preventDefault();
+            var dataPath = stripExtension(a.pathname);
+            saveScrollPos();
+            if (loadPage(dataPath, null, a.hash.substring(1)))
+              history.pushState(null, null, a.href);
+          };
         }
-      });
+      }
     }
+  }
+
+  function saveScrollPos() {
+    var state = {scrollPos: pageScrollEl.scrollTop()};
+    history.replaceState(state, null, null);
+  }
+
+  function setScroll(scrollPos, hash) {
+    if (scrollPos != null)
+      pageScrollEl.scrollTop(scrollPos);
+    else if (hash)
+      window.location.hash = hash;
+    else
+      pageScrollEl.scrollTop(0);
   }
 
   function clearTocFilter() {

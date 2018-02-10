@@ -282,6 +282,7 @@ ul.level1 {
   padding: 15px 20px;
   display: flex;
   flex-flow: row wrap;
+  flex-basis: 900px;
   align-content: flex-start;
   position: relative;
 }
