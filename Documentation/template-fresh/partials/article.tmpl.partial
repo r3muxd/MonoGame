@@ -1,4 +1,4 @@
-<article id="content" data-uid="{{uid}}" role="main">
+<article id="content" data-uid="{{uid}}" role="main" class="pos-rel">
   {{{rawTitle}}}
   {{{conceptual}}}
 </article>

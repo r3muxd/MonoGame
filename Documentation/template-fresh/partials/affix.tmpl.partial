@@ -1,5 +1,7 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<div id="page-affix" role="complementary" class="{{#_disableAffix}}hide{{/_disableAffix}} hide-md">
+<div id="page-affix" role="complementary" class="pos-rel {{#_disableAffix}}hide{{/_disableAffix}}">
+  <div class="affix-fade fade-in" />
+  <div class="affix-fade fade-out" />
   <nav id="affix" />
 </div>

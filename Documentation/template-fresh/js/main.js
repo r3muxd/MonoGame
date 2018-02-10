@@ -10,6 +10,7 @@ $(function() {
   var currentPage = null;
   var nav = null;
   var toc = null;
+  var activeHeadingIndex = -1;
 
   // cached DOM elements (as jQuery objects)
   var titleEl = $('head title');
@@ -186,12 +187,12 @@ $(function() {
       return;
 
     var node = toc.nodes[page.tocIndex];
-    var html = '<span class="semibold">' + node.name + '</span>';
+    var html = '<span class="semibold nowrap">' + node.name + '</span>';
 
     var index = node.parent;
     while (index != null) {
       node = toc.nodes[index];
-      html = createAnchorHtml(node) + ' <span class="mg-icons">&#xe802;</span> ' + html;
+      html = createAnchorHtml(node, 'nowrap') + ' <span class="mg-icons">&#xe802;</span> ' + html;
       index = node.parent;
     }
 
@@ -261,7 +262,7 @@ $(function() {
       pageAffixEl.removeClass('hide');
 
       pageScrollEl.scroll(function () {
-        scrollAffix();
+        scrollAffix(headingTree);
       });
     }
   }
@@ -292,15 +293,41 @@ $(function() {
     for (var i = 0; i < headings.length; i++) {
       var heading = headings[i];
       var depth = Number(heading.nodeName[1]) - rootHeadingLevel;
-      var myHeading = { name: htmlEncode(heading.textContent), href: '#' + heading.id, element: $(heading) };
+      var myHeading = { name: htmlEncode(heading.textContent), href: '#' + heading.id, headingElement: heading };
       treeBuilder.push(myHeading, depth);
     }
 
     return treeBuilder.finish();
   }
 
-  function scrollAffix() {
+  function scrollAffix(tree) {
+    var scrollTop = pageScrollEl.scrollTop();
 
+    for (var i = tree.nodes.length - 1; i >= 0; i--) {
+      if (tree.nodes[i].headingElement.offsetTop < scrollTop)
+        break;
+    }
+
+    if (activeHeadingIndex === i)
+      return;
+
+    if (activeHeadingIndex != -1) {
+      tree.doSelf(activeHeadingIndex, n => n.element.removeClass('active'));
+      tree.doAncestors(activeHeadingIndex, n => n.element.removeClass('active'));
+    }
+
+    activeHeadingIndex = i;
+
+    var newTop = .2 * pageAffixEl.height();
+    if (activeHeadingIndex !== -1) {
+      tree.doSelf(activeHeadingIndex, n => n.element.addClass('active'));
+      tree.doAncestors(activeHeadingIndex, n => n.element.addClass('active'));
+
+      var rootHeadingNode = tree.rootParent(activeHeadingIndex);
+      newTop -= rootHeadingNode.element.position().top;
+    }
+
+    affixEl.css('top', newTop);
   }
 
   function hookNavEvents() {
@@ -364,9 +391,9 @@ $(function() {
     return $(createAnchorHtml(node));
   }
 
-  function createAnchorHtml(node) {
-    var href = node.path + '.html';
-    return '<a href="' + href + '" index="' +  node.index + '">' + node.name + '</a>';
+  function createAnchorHtml(node, cls = '') {
+    var href = node.href || node.path + '.html';
+    return '<a href="' + href + '" index="' +  node.index + '" class="' + cls + '">' + node.name + '</a>';
   }
 
   function getJSON(url, success, failure) {

@@ -72,6 +72,12 @@ Tree.prototype.rootNodes = function () {
   }
   return rns;
 }
+Tree.prototype.rootParent = function (nodeIdx) {
+  var node = this.nodes[nodeIdx];
+  while (node.parent !== null)
+    node = this.parent(node.index);
+  return node;
+}
 Tree.prototype.children = function (nodeIdx) {
   var n = this.nodes[nodeIdx];
   if (!this.hasChildren(nodeIdx))
@@ -114,6 +120,11 @@ Tree.prototype.first = function (filter) {
   if (this.nodes.length === 0)
     return null;
   return this.next(-1, filter);
+}
+Tree.prototype.last = function (filter) {
+  if (this.nodes.length === 0)
+    return null;
+  return this.prev(this.nodes.length, filter);
 }
 
 Tree.prototype.doAll = function (f) {
