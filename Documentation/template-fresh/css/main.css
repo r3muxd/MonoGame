@@ -190,7 +190,6 @@ ul.nav {
   height: 50px;
   background-color: #E73C00;
   border-color: #E73C00;
-  font-weight: 500;
 }
 
 /* navbar elements */
@@ -262,13 +261,12 @@ ul.level1 {
 #toc ul.level2 {
   margin: 3px 0;
   border-left: 3px #ddd solid;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 92%;
 }
 #toc ul.level3 {
   margin: 2px 0;
   border-left: 2px #ddd solid;
-  font-weight: 400;
   font-size: 86%;
 }
 .level1 .expander::before {
