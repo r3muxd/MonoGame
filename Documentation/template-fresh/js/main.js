@@ -36,6 +36,9 @@ $(function() {
   var nextEl = prevnextEl.find('#next');
   var affixEl = $('#affix');
 
+  var baseDir = $("meta[property='docfx\\:baseDir']").attr('content');
+  var basePath = baseDir ? '/' + baseDir : '';
+
   init();
   
   function init() {
@@ -220,12 +223,12 @@ $(function() {
 
     var prev = toc.prev(page.tocIndex);
     if (prev)
-      prevEl.attr('href', prev.path + '.html');
+      prevEl.attr('href', basePath + prev.path + '.html');
     else
       prevEl.removeAttr('href');
     var next = toc.next(page.tocIndex);
     if (next)
-      nextEl.attr('href', next.path + '.html');
+      nextEl.attr('href', basePath + next.path + '.html');
     else
       nextEl.removeAttr('href');
 
@@ -233,7 +236,7 @@ $(function() {
   }
 
   function loadConceptual(page, scrollPos, hash) {
-    var conceptualPath = page.path + '.html.partial';
+    var conceptualPath = basePath + page.path + '.html.partial';
     $.get(conceptualPath, function (contentHtml) {
       contentWrapperEl.html(contentHtml);
       loadAfterConceptual(page, scrollPos, hash);
@@ -423,7 +426,7 @@ $(function() {
   }
 
   function createAnchorHtml(node, cls = '') {
-    var href = node.href || node.path + '.html';
+    var href = node.href || (basePath + node.path + '.html');
     return '<a href="' + href + '" index="' +  node.index + '" class="' + cls + '">' + node.name + '</a>';
   }
 

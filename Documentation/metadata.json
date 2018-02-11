@@ -3,12 +3,13 @@
     "manual/**": true
   },
   "_disableContribution": {
-    "../CHANGELOG.md": true,
-    "index.md": true
+    "index.md": true,
+    "../CHANGELOG.md": true
   },
   "_disableBreadcrumb": {
     "index.md": true,
-    "../CHANGELOG.md": true
+    "../CHANGELOG.md": true,
+    "_api/**": true
   },
   "_disablePrevnext": {
     "tutorials/**": false
