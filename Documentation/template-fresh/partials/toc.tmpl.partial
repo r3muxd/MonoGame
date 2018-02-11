@@ -6,6 +6,6 @@
       <span class="mg-icons">&#xe804;</span><input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
     </div>
     <div id="toc-no-results" class="hide">No results</div>
-    <div id="toc" />
+    <div id="toc"></div>
   </div>
 </div>
