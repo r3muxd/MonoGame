@@ -5,7 +5,7 @@ exports.transform = function (model) {
   var page = {};
 
   page.title = model.title
-  page.path = '/' + common.stripAllExtensions(model._path);
+  page.path = '/' + common.stripExtension(model._key);
   page.navIndex = findNavIndex();
   page.nav = common.stripExtension(model._navRel);
   page.toc = model._tocRel === model._navRel ? null : common.stripExtension(model._tocRel);

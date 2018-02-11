@@ -59,8 +59,9 @@ $(function() {
     getJSON(path + '.json', function (page) {
       updatePage(page, scrollPos, hash);
     }, function () {
+      console.error('Failed to load page: ' + path);
       // reload the page on failure to go to 404
-      window.location.reload();
+      //window.location.reload();
     });
 
     return true;
