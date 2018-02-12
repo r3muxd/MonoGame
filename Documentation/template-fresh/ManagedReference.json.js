@@ -4,7 +4,7 @@ exports.transform = function (model) {
 
   var page = {};
 
-  page.title = model.title
+  page.title = model.name[0].value;
   page.path = '/' + common.stripExtension(model._key);
   page.navIndex = findNavIndex();
   page.nav = common.stripExtension(model._navRel);
