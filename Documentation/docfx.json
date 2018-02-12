@@ -116,8 +116,7 @@
       "_appTitle": "MonoGame Documentation",
       "_disableFooter": true,
       "_disablePrevnext": true,
-      "_enableNewTab": false,
-      "baseDir": "/"
+      "_enableNewTab": false
     },
     "fileMetadataFiles": [
       "metadata.json"

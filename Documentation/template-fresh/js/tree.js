@@ -75,7 +75,7 @@ Tree.prototype.rootNodes = function () {
 Tree.prototype.rootParent = function (nodeIdx) {
   var node = this.nodes[nodeIdx];
   while (node.parent !== null)
-    node = this.parent(node.index);
+    node = this.nodes[node.parent];
   return node;
 }
 Tree.prototype.children = function (nodeIdx) {

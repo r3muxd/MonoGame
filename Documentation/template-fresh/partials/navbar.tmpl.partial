@@ -4,5 +4,5 @@
   <div class="navbar-header hide">
     <button type="button" id="navbar-toggle" />
   </div>
-  <div class="collapse" id="navbar" />
+  <div class="collapse" id="navbar"></div>
 </nav>
