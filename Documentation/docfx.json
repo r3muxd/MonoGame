@@ -94,6 +94,7 @@
       }
     ],
     "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
     "overwrite": [
       {
@@ -116,7 +117,8 @@
       "_appTitle": "MonoGame Documentation",
       "_disableFooter": true,
       "_disablePrevnext": true,
-      "_enableNewTab": false
+      "_enableNewTab": false,
+      "baseDir": "MonoGame-docfx"
     },
     "fileMetadataFiles": [
       "metadata.json"

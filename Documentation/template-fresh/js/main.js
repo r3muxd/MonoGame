@@ -250,7 +250,7 @@ $(function() {
     pageScrollEl.off('scroll');
 
     if (page.hasAffix)
-      loadAffix();
+      loadAffix(page);
     else
       pageAffixEl.toggleClass('hide', true);
 
@@ -265,8 +265,8 @@ $(function() {
     });
   }
 
-  function loadAffix() {
-    var headingTree = getHeadingTree();
+  function loadAffix(page) {
+    var headingTree = getHeadingTree(page.affixSubLevel);
     if (headingTree.size() === 0) {
       pageAffixEl.addClass('hide');
     } else {
@@ -281,13 +281,11 @@ $(function() {
     }
   }
 
-  function getHeadingTree() {
+  function getHeadingTree(subLevel) {
     var article = contentWrapperEl.find('article');
 
     // the root heading level is the first level with more than 1 heading
     // we go down at most 1 level from the root level and no further than h4
-    // Basically it turns this: [h1, h2, h2, h3, h4, h3]
-    // Into this:               [h2, h2[h3, h3]]
     var deepest = 4;
 
     // first level with more than 1 element
@@ -301,11 +299,17 @@ $(function() {
 
     var rootHeading = 'h' + rootHeadingLevel;
     var subHeading = 'h' + (rootHeadingLevel + 1);
-    var headings = article.find(rootHeading + ',' + subHeading);
+
+    var findStr = rootHeading;
+    if (subLevel)
+      findStr += ',' + subHeading;
+
+    var headings = article.find(findStr);
 
     var treeBuilder = new TreeBuilder();
     for (var i = 0; i < headings.length; i++) {
       var heading = headings[i];
+      // get the heading number from the tag name (nodeName) and subtract root level for the depth
       var depth = Number(heading.nodeName[1]) - rootHeadingLevel;
       var myHeading = { name: htmlEncode(heading.textContent), href: '#' + heading.id, headingElement: heading };
       treeBuilder.push(myHeading, depth);
