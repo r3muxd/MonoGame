@@ -3,17 +3,25 @@
 <ul class="nav level{{level}}">
 {{#items}}
   <li>
+    <div>
+      {{^leaf}}
+        <a class="expander collapsed"></a>
+      {{/leaf}}
+      {{#topicHref}}
+        <a href="{{topicHref}}" name="{{tocHref}}" title="{{name}}">
+          {{name}}
+        </a>
+      {{/topicHref}}
+      {{^topicHref}}
+        <a>
+          {{{name}}}
+        </a>
+      {{/topicHref}}
+    </div>
     {{^leaf}}
-    <span class="expand-stub"></span>
-    {{/leaf}}
-    {{#topicHref}}
-    <a href="{{topicHref}}" name="{{tocHref}}" title="{{name}}">{{name}}</a>
-    {{/topicHref}}
-    {{^topicHref}}
-    <a>{{{name}}}</a>
-    {{/topicHref}}
-    {{^leaf}}
-      {{>partials/li}}
+      <div class="collapse">
+        {{>partials/li}}
+      </div>
     {{/leaf}}
   </li>
 {{/items}}

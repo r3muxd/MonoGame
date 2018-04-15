@@ -71,7 +71,20 @@ a.expander:focus, a.expander:hover {
 .toc .nav > li > a:focus, .toc .nav > li > a:hover {
   color: #E73C00;
 }
-
+.toc .nav .level3 a {
+  margin-left: 15px;
+}
+.toc .level1 > li {
+  margin-left: 10px;
+}
+.toc .level1 .expander:before {
+  font-size: small;
+  left: -18px;
+  top: 2px;
+}
+.toc .level2 .expander:before {
+  font-size: x-small;
+}
 
 /* affix */
 .sideaffix > div.contribution > ul > li > a.contribution-link:hover, .sideaffix > div.contribution > ul > li > a.contribution-link:focus {
