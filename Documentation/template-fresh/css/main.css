@@ -143,8 +143,10 @@ ul.nav {
   margin-bottom: 10px;
 }
 #toc-toggle {
+  position: sticky;
   padding: 10px; /* make it larger so it's easier to click */
-  left: -6px;
+  top: 10px;
+  margin-left: -10px;
   cursor: pointer;
   color: #666;
   transition: color .2s;
