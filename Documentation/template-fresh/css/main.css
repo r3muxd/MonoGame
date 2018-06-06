@@ -398,30 +398,19 @@ a.page-nav:not([href]) {
 }
 
 /* API */
-/*div.api {
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-.api-table {
-  text-align: justify;
-  vertical-align: top;
-}
-.api > h2 {
-  /* disable top margin to prevent margin folding, which causes
-   * jumps in the collapse animation */
-  margin-top: 0;
-  margin-bottom: 15px;
-}
 
 /* Namespace tables */
 table.api-table {
   margin-top: 25px;
   margin-bottom: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 table.api-table td {
   border-top: #ccc 1px solid;
   padding-top: 10px;
   padding-bottom: 10px;
+  vertical-align: top;
 }
 table.api-table td.member {
   min-width: 200px;
@@ -429,6 +418,9 @@ table.api-table td.member {
 }
 table.api-table td.summary {
   width: 70%;
+}
+table.api-table td.summary>p {
+  margin: 0;
 }
 @media (max-width: 768px) {
   table.api-table td.member {
