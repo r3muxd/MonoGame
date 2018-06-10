@@ -244,6 +244,7 @@ ul.nav {
 }
 #toc {
   margin: 10px;
+  padding-left: 12px;
 }
 #toc a {
   color: #666
@@ -265,20 +266,25 @@ ul.level1 {
 }
 #toc ul.level2 {
   margin: 3px 0;
-  border-left: 3px #ddd solid;
   font-weight: 400;
   font-size: 92%;
 }
 #toc ul.level3 {
   margin: 2px 0;
-  border-left: 2px #ddd solid;
   font-size: 86%;
 }
 .level1 .expander::before {
-  left: -17px;
+  left: -15px;
+  top: 4px;
+  font-weight: 500;
+  color: #444;
 }
 .level2 .expander::before {
-  left: -13px;
+  left: -11px;
+  top: 5px;
+  font-weight: 400;
+  font-size: 7.5pt;
+  color: #666;
 }
 
 /* ===== CONTENT ===== */

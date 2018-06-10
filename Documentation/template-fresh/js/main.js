@@ -124,7 +124,7 @@ $(function() {
   function loadToc(oldPage, newPage) {
     getJSON(newPage.toc + '.json', function (tocNodes) {
       toc = new Tree(tocNodes);
-      var tocHtml = buildTreeHtml(toc, createTocEntry);
+      var tocHtml = buildTreeHtml(toc, createTocEntry, true);
       tocEl.html(tocHtml);
       hookTocEvents();
 
@@ -133,29 +133,28 @@ $(function() {
   }
 
   function createTocEntry(node, tree) {
-    var anchor = createAnchorJquery(node);
-    //if (tree.hasChildren(node.index))
-    //  $(anchor).addClass('expander');
-
-    return anchor;
+    return createAnchorJquery(node);
   }
 
-  function buildTreeHtml(tree, createEntry) {
-    var root = buildTreeRec(tree.rootNodes(), 1);
+  function buildTreeHtml(tree, createEntry, expander = false) {
+    var root = buildTreeRec(tree.rootNodes(), 1, expander);
     return root;
 
-    function buildTreeRec(nodes, level) {
+    function buildTreeRec(nodes, level, expander) {
       var ul = $('<ul>').addClass('nav level' + level);
       for (var i = 0; i < nodes.length; i++) {
         var node = nodes[i];
+        var children = tree.children(node.index);
+
         var li = $('<li class="pos-rel">');
+        if (children.length > 0 && expander)
+          li.append($('<span class="expander" />'));
         li.append(createEntry(node, tree));
 
         node.element = li;
 
-        var children = tree.children(node.index);
         if (children.length > 0) {
-          var subUl = buildTreeRec(children, level + 1);
+          var subUl = buildTreeRec(children, level + 1, expander);
           li.append(subUl);
         }
         ul.append(li);
