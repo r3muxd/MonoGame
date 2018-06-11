@@ -142,13 +142,20 @@ $(function() {
 
     function buildTreeRec(nodes, level, expander) {
       var ul = $('<ul>').addClass('nav level' + level);
+      if (expander)
+        ul.addClass('collapsed');
       for (var i = 0; i < nodes.length; i++) {
         var node = nodes[i];
         var children = tree.children(node.index);
 
         var li = $('<li class="pos-rel">');
-        if (children.length > 0 && expander)
-          li.append($('<span class="expander" />'));
+        if (children.length > 0 && expander) {
+          var expander = $('<span class="expander" />');
+          expander.click(function() {
+            toggleExpander($(this));
+          });
+          li.append(expander);
+        }
         li.append(createEntry(node, tree));
 
         node.element = li;
@@ -162,6 +169,14 @@ $(function() {
 
       return ul;
     }
+  }
+
+  function toggleExpander(e, value) {
+    if (!e)
+      return;
+    e.toggleClass('expanded', value);
+    var expanded = e.hasClass('expanded');
+    e.nextAll('ul').toggleClass('collapsed', !expanded);
   }
 
   function loadAfterNav(oldPage, newPage) {
@@ -191,6 +206,7 @@ $(function() {
 
     toc.doSelf(page.tocIndex, n => n.element.toggleClass('active', value));
     toc.doAncestors(page.tocIndex, n => n.element.toggleClass('active', value));
+    toc.doAncestors(page.tocIndex, n => toggleExpander(n.element.children('span'), true));
   }
 
   function updateBreadcrumb(page) {

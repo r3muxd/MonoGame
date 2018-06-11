@@ -104,7 +104,7 @@ ul.nav {
 .expander::before {
   font-family: "mg-icons";
   content: "\e802";
-  transition: transform .3s ease-out;
+  /* transition: transform .2s; */
   cursor: pointer;
   position: absolute;
   font-size: .8em;
@@ -255,6 +255,13 @@ ul.nav {
 #toc a:hover {
   color: #E73C00;
 }
+#toc ul {
+  /*transition: height .2s;*/
+  /*transition: margin .2s;*/
+}
+#toc ul.collapsed {
+  height: 0;
+}
 ul.level1 {
   margin: 0;
   padding: 0;
@@ -265,13 +272,22 @@ ul.level1 {
   font-size: 100%;
 }
 #toc ul.level2 {
-  margin: 3px 0;
+  margin: 3px 0 3px -2px;
+  padding-left: 14px;
   font-weight: 400;
   font-size: 92%;
+  overflow: hidden;
+}
+#toc ul.level2 {
+  margin: 0;
 }
 #toc ul.level3 {
   margin: 2px 0;
   font-size: 86%;
+  overflow: hidden;
+}
+#toc ul.level3 {
+  margin: 0;
 }
 .level1 .expander::before {
   left: -15px;
