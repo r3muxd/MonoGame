@@ -479,6 +479,10 @@ table.api-table td.summary>p {
   margin-top: 5px;
 }
 
+.no-transition {
+  transition: none !important;
+}
+
 /* ===== RESPONSIVENESS ===== */
 
 @media(max-width: 786px) {

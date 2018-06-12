@@ -42,9 +42,27 @@ $(function() {
   init();
   
   function init() {
-    $('#toc-toggle').click(function () {
+
+    $('#toc-toggle').click(function (ev) {
       pageTocEl.toggleClass('shown');
+      ev.stopPropagation();
     });
+
+    var mainPage = $('#page-main');
+    mainPage.click(hideTocForMobile);
+
+    pageTocEl.addClass('no-transition');
+    hideTocForMobile();
+    // we need to force the browser to reload the element before the no-transition class is removed
+    pageTocEl.hide().show(0);
+    pageTocEl.removeClass('no-transition');
+
+    function hideTocForMobile() {
+      if (isReallySmall())
+        pageTocEl.removeClass('shown');
+    }
+
+
     var startPagePath = $("meta[property='docfx\\:pagedata']").attr('content');
     var scrollPos = null;
     if (historySupported && history.state && history.state.scrollPos)
@@ -472,6 +490,10 @@ $(function() {
     })
       .done(success)
       .fail(failure);
+  }
+
+  function isReallySmall() {
+    return window.matchMedia("(max-width: 414px)").matches;
   }
 
   function htmlEncode(str) {
