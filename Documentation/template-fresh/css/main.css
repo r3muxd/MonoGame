@@ -238,9 +238,10 @@ ul.nav {
   background-color: transparent;
 }
 #toc-no-results {
-  margin-left: 20px !important;
+  margin-left: 20px;
   color: #666;
   font-weight: 600;
+  font-style: italic;
 }
 #toc {
   margin: 10px;
@@ -259,7 +260,10 @@ ul.nav {
   /*transition: height .2s;*/
   /*transition: margin .2s;*/
 }
-#toc ul.collapsed {
+.direct-search-result > a {
+  font-style: italic;
+}
+#toc li:not(.search-result) ul.collapsed {
   height: 0;
 }
 ul.level1 {

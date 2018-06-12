@@ -92,6 +92,8 @@ $(function() {
     else
       loadAfterToc(currentPage, newPage, false);
 
+    clearTocFilter();
+
     pageTocEl.toggleClass('hide', !newPage.hasToc);
     tocToggleWrapperEl.toggleClass('hide', !newPage.hasToc);
     contributionLinkEl.toggleClass('hide', !newPage.hasContributionLink);
@@ -171,9 +173,13 @@ $(function() {
     }
   }
 
+  function toggleExpandLi(e, value) {
+    var expander = e.children('span.expander');
+    if (expander)
+      toggleExpander(expander, value);
+  }
+
   function toggleExpander(e, value) {
-    if (!e)
-      return;
     e.toggleClass('expanded', value);
     var expanded = e.hasClass('expanded');
     e.nextAll('ul').toggleClass('collapsed', !expanded);
@@ -187,9 +193,19 @@ $(function() {
   }
 
   function loadAfterToc(oldPage, newPage, tocChanged) {
-    if (!tocChanged)
-      toggleTocActive(oldPage, false);
-    toggleTocActive(newPage, true);
+    if (!tocChanged) {
+      if (oldPage.tocIndex >= 0)
+        toggleTocActive(oldPage, false);
+      // fold in all elements
+      toc.doAll(n => toggleExpandLi(n.element, false));
+    }
+
+    if (newPage.tocIndex >= 0) {
+      toggleTocActive(newPage, true);
+      // expand active elements
+      toc.doSelf(newPage.tocIndex, n => toggleExpandLi(n.element, true));
+      toc.doAncestors(newPage.tocIndex, n => toggleExpandLi(n.element, true));
+    }
 
     if (newPage.tocIndex < 0) {
       newPage.hasBreadcrumb = false;
@@ -206,7 +222,6 @@ $(function() {
 
     toc.doSelf(page.tocIndex, n => n.element.toggleClass('active', value));
     toc.doAncestors(page.tocIndex, n => n.element.toggleClass('active', value));
-    toc.doAncestors(page.tocIndex, n => toggleExpander(n.element.children('span'), true));
   }
 
   function updateBreadcrumb(page) {
@@ -377,22 +392,21 @@ $(function() {
     filterEl.on('input', function (e) {
       var text = e.currentTarget.value.trim();
       if (!text) {
-        toc.doAll(n => n.element.removeClass('hide'));
+        toc.doAll(n => n.element.removeClass('hide search-result direct-search-result'));
         filterNoResultsEl.addClass('hide');
       } else {
+        toc.doAll(n => n.element.addClass('hide').removeClass('search-result direct-search-result'));
         var match = 0;
         for (var i = 0; i < toc.nodes.length; i++) {
           var node = toc.nodes[i];
           if (node.name.toLowerCase().indexOf(text.toLowerCase()) > -1) {
-            toc.doSelf(i, n => n.element.removeClass('hide'));
-            toc.doAncestors(i, n => n.element.removeClass('hide'));
+            toc.doSelf(i, n => n.element.removeClass('hide').addClass('search-result direct-search-result'));
+            toc.doAncestors(i, n => n.element.removeClass('hide').addClass('search-result'));
             i = toc.doBelow(i, n => n.element.removeClass('hide'));
             match++;
-          } else {
-            node.element.addClass('hide');
           }
-          filterNoResultsEl.toggleClass('hide', match > 0);
         }
+        filterNoResultsEl.toggleClass('hide', match > 0);
       }
     });
   }
@@ -433,7 +447,6 @@ $(function() {
   }
 
   function clearTocFilter() {
-    // this is currently not used
     if (filterEl[0].value) {
       filterEl[0].value = '';
       filterEl.trigger('input');
