@@ -1,7 +1,7 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 <div id="page-toc" class="shown pos-rel {{^hasToc}}hide{{/hasToc}}">
-  <div class="scroll stretch-height">
+  <div id="toc-scroll-wrapper" class="scroll stretch-height">
     <div id="toc-filter-wrapper">
       <span class="mg-icons">&#xe804;</span><input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
     </div>
