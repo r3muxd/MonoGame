@@ -90,7 +90,7 @@ $(function() {
     if (shouldLoadToc)
       loadToc(currentPage, newPage);
     else
-      loadAfterToc(currentPage, newPage, false);
+      loadAfterToc(currentPage, newPage, currentPage && newPage.toc !== null);
 
     clearTocFilter();
 
@@ -130,7 +130,7 @@ $(function() {
       tocEl.html(tocHtml);
       hookTocEvents();
 
-      loadAfterToc(oldPage, newPage, true);
+      loadAfterToc(oldPage, newPage, false);
     });
   }
 
@@ -192,8 +192,8 @@ $(function() {
       nav.nodes[newPage.navIndex].element.addClass('active');
   }
 
-  function loadAfterToc(oldPage, newPage, tocChanged) {
-    if (!tocChanged) {
+  function loadAfterToc(oldPage, newPage, keptToc) {
+    if (keptToc) {
       if (oldPage.tocIndex >= 0)
         toggleTocActive(oldPage, false);
       // fold in all elements
