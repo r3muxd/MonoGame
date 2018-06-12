@@ -308,6 +308,8 @@ $(function() {
       pageScrollEl.scroll(function () {
         scrollAffix(headingTree);
       });
+
+      scrollAffix(headingTree);
     }
   }
 
