@@ -13,6 +13,7 @@ exports.transform = function (model) {
   page.hasToc = !model.disableToc && model._navRel != model._tocRel;
   page.hasBreadcrumb = !model._disableBreadcrumb;
   page.hasContributionLink = !model._disableContribution;
+  page.autoExpandToc = !model.disableAutoExpandToc;
   if (page.hasContributionLink)
     page.contributionLink = model.docurl || common.getImproveTheDocHref(model, model._gitContribute, model._gitUrlPattern);
   page.hasAffix = !model._disableAffix;

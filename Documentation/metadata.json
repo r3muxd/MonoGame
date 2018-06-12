@@ -16,5 +16,8 @@
   },
   "disableAffixSubLevel": {
     "_api/**": true
+  },
+  "disableAutoExpandToc": {
+    "_api/**": true
   }
 }

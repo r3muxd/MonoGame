@@ -240,9 +240,11 @@ $(function() {
 
     if (newPage.tocIndex >= 0) {
       toggleTocActive(newPage, true);
-      // expand active elements
-      toc.doSelf(newPage.tocIndex, n => toggleExpandLi(n.element, true));
-      toc.doAncestors(newPage.tocIndex, n => toggleExpandLi(n.element, true));
+      if (newPage.autoExpandToc) {
+        // expand active elements
+        toc.doSelf(newPage.tocIndex, n => toggleExpandLi(n.element, true));
+        toc.doAncestors(newPage.tocIndex, n => toggleExpandLi(n.element, true));
+      }
     }
 
     if (newPage.tocIndex < 0) {
