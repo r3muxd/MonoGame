@@ -514,6 +514,9 @@ table.api-table td.summary>p {
   #toc-scroll-wrapper {
     width: 100%;
   }
+  #page-scroll {
+    min-width: 100%;
+  }
 }
 
 
