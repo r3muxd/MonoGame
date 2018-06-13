@@ -16,8 +16,10 @@
       <div class="flex-row flex-stretch no-overflow">
         {{>partials/toc}}
         <div id="page-scroll" class="flex-stretch flex-row scroll-y">
-          <div id="page-main" class="flex-stretch">
-            <div id="toc-toggle-wrapper" class="{{^hasToc}}hide{{/hasToc}} show-sm pos-rel"><span id="toc-toggle" class="mg-icons pos-rel">&#xf0c9;</span></div>
+          <div id="page-main" class="page-main flex-stretch">
+            <div id="toc-toggle-wrapper" class="{{^hasToc}}hide{{/hasToc}} show-sm pos-rel">
+              <a id="toc-toggle" class="mg-icons pos-rel">&#xf0c9;</a>
+            </div>
             <div id="main-wrapper">
               {{>partials/breadcrumb}}
               <div id="content-wrapper">

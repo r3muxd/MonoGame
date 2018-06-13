@@ -155,6 +155,7 @@ ul.nav {
   cursor: pointer;
   color: #666;
   transition: color .2s;
+  text-decoration: none;
 }
 #toc-toggle:hover {
   color: #333;
@@ -270,6 +271,7 @@ ul.nav {
   font-style: italic;
 }
 #toc li:not(.search-result) ul.collapsed {
+  display: none;
   height: 0;
 }
 ul.level1 {
@@ -315,7 +317,7 @@ ul.level1 {
 
 /* ===== CONTENT ===== */
 
-#page-main {
+.page-main {
   padding: 15px 20px;
   display: flex;
   flex-flow: row wrap;
@@ -323,10 +325,10 @@ ul.level1 {
   align-content: flex-start;
   position: relative;
 }
-#page-main a {
+.page-main a {
   color: #E73C00;
 }
-#page-main a:focus, #page-main a:hover {
+.page-main a:focus, .page-main a:hover {
   text-decoration: underline;
 }
 #main-wrapper {
