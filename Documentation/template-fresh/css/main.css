@@ -231,9 +231,10 @@ ul.nav {
   background-color: white;
   display: flex;
 }
-#toc-filter-wrapper .mg-icons {
+#filter-clear {
   color: #666;
-  margin: auto 0 auto 8px;
+  margin: auto 8px;
+  cursor: pointer;
 }
 #toc-filter-input {
   box-sizing: border-box;

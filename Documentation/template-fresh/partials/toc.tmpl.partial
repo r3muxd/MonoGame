@@ -3,7 +3,8 @@
 <div id="page-toc" class="shown pos-rel {{^hasToc}}hide{{/hasToc}}">
   <div id="toc-scroll-wrapper" class="scroll stretch-height">
     <div id="toc-filter-wrapper">
-      <span class="mg-icons">&#xe804;</span><input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
+      <input type="text" id="toc-filter-input" placeholder="Type to filter" onkeypress="if(event.keyCode==13) {return false;}">
+      <span id="filter-clear" class="mg-icons hide">&#xe803;</span>
     </div>
     <div id="toc-no-results" class="hide">No results</div>
     <div id="toc"></div>

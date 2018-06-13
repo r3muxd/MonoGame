@@ -23,6 +23,7 @@ $(function() {
   var pageAffixEl = $('#page-affix');
   var navEl = $('#navbar');
   var filterEl = pageTocEl.find('#toc-filter-input');
+  var filterClearEl = pageTocEl.find('#filter-clear');
   var filterNoResultsEl = pageTocEl.find('#toc-no-results');
   var tocEl = pageTocEl.find('#toc');
   var pageScrollEl = $('#page-scroll');
@@ -430,13 +431,16 @@ $(function() {
   }
 
   function hookTocFilterEvent() {
+    filterClearEl.click(clearTocFilter);
     filterEl.off('input');
     filterEl.on('input', function (e) {
       var text = e.currentTarget.value.trim();
       if (!text) {
+        filterClearEl.addClass('hide');
         toc.doAll(n => n.element.removeClass('hide search-result direct-search-result'));
         filterNoResultsEl.addClass('hide');
       } else {
+        filterClearEl.removeClass('hide');
         toc.doAll(n => n.element.addClass('hide').removeClass('search-result direct-search-result'));
         var match = 0;
         for (var i = 0; i < toc.nodes.length; i++) {
