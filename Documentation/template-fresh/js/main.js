@@ -327,12 +327,31 @@ $(function() {
 
     setScroll(scrollPos, hash);
 
+    if (page.subtitleAnchors);
+      addSubtitleAnchors();
+
     makeLocalLinksDynamic(contentWrapperEl);
   }
 
   function highlightjs() {
     contentWrapperEl.find('pre code').each(function(i, block) {
       hljs.highlightBlock(block);
+    });
+  }
+
+  function addSubtitleAnchors() {
+    contentWrapperEl.find('h2, h3, h4').each(function(i) {
+      console.log('Anchoring title: ' + $(this).text());
+      var id = $(this).attr('id');
+      var anchor = $('<a class="subtitle-anchor mg-icons hide" href="#' + id + '">&#xF07B;</a>');
+      $(this).append(anchor);
+
+      $(this).mouseenter(function () {
+        anchor.removeClass('hide');
+      });
+      $(this).mouseleave(function () {
+        anchor.addClass('hide');
+      });
     });
   }
 

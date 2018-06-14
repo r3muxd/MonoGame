@@ -343,6 +343,19 @@ ul.level1 {
   margin-top: 15px;
 }
 
+a.subtitle-anchor {
+  margin-left: 12px;
+  font-size: .8em;
+  font-weight: 200;
+  color: #666;
+  transition: color .2s;
+  cursor: pointer;
+}
+a.subtitle-anchor:hover {
+  text-decoration: none;
+  color: #E73C00;
+}
+
 #prevnext {
   margin: 40px 5px;
   display: flex;

@@ -14,6 +14,7 @@ exports.transform = function (model) {
   page.hasBreadcrumb = !model._disableBreadcrumb;
   page.hasContributionLink = !model._disableContribution;
   page.autoExpandToc = !model.disableAutoExpandToc;
+  page.hasSubtitleAnchors = !model.disableSubtitleAnchors;
   if (page.hasContributionLink)
     page.contributionLink = model.docurl || common.getImproveTheDocHref(model, model._gitContribute, model._gitUrlPattern);
   page.hasAffix = !model._disableAffix;
