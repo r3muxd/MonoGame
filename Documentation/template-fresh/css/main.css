@@ -55,6 +55,10 @@ code {
   border-radius: 4px;
   padding: .2em .4em;
 }
+pre > code {
+  padding: 10px;
+  border: #e7e7e7 2px solid;
+}
 ul.nav {
   list-style: none;
   padding-left: 12px;
