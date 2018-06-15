@@ -21,7 +21,7 @@ The reason why they start with Microsoft.Xna.Framework is because MonoGame is an
 public class Game1 : Game
 ```
 
-The main Game1 class is inheriting from the Game class, which provides all the core methods for your game (ie. Load/Unload Content, Update, Draw etc.). You usually have only one Game class per game so its name isn't that important.
+The main Game1 class is inheriting from the [Game](xref:Microsoft.Xna.Framework.Game) class, which provides all the core methods for your game (ie. Load/Unload Content, Update, Draw etc.). You usually have only one Game class per game so its name isn't that important.
 
 **Instanced Variables**
 
