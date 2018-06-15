@@ -12,7 +12,7 @@
     <span class="level{{index}}">{{{specName.0.value}}}</span>
     <span class="mg-icons">&#xe800;</span>
     {{/inheritance}}
-  <strong><span class="level{{level}}"><span class="xref">{{name.0.value}}</span></strong>
+  <span class="level{{level}}"><span class="xref">{{name.0.value}}</span>
   {{#derivedClasses}}
     <span class="mg-icons">&#xe800;</span>
     <span class="level{{index}}">{{{specName.0.value}}}</span>
@@ -23,7 +23,7 @@
 
 {{#implements.0}}
 <div class="implements">
-  <h5><strong>{{__global.implements}}</strong></h5>
+  <strong>{{__global.implements}}</strong>
 {{/implements.0}}
 {{#implements}}
   <div>{{{specName.0.value}}}</div>
@@ -34,7 +34,7 @@
 
 {{#inheritedMembers.0}}
 <div class="inheritedMembers">
-  <h5><strong>{{__global.inheritedMembers}}</strong></h5>
+  <strong>{{__global.inheritedMembers}}</strong>
 {{/inheritedMembers.0}}
 {{#inheritedMembers}}
   <div>
@@ -51,7 +51,7 @@
 {{/inheritedMembers.0}}
 
 {{#syntax.parameters.0}}
-<h5 class="parameters">{{__global.parameters}}</h5>
+<strong>{{__global.parameters}}</strong>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
@@ -75,7 +75,7 @@
 {{/syntax.parameters.0}}
 
 {{#syntax.return}}
-<h5 class="returns">{{__global.returns}}</h5>
+<strong>{{__global.returns}}</strong>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
@@ -93,7 +93,7 @@
 {{/syntax.return}}
 
 {{#syntax.typeParameters.0}}
-<h5 class="typeParameters">{{__global.typeParameters}}</h5>
+<strong>{{__global.typeParameters}}</strong>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
