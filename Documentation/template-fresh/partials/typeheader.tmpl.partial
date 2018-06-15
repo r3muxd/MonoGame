@@ -5,16 +5,16 @@
 </div>
 
 {{#inClass}}
-<div class="inheritance">
+<div class="type-subheader inheritance">
   <div>
-    <span><strong>{{__global.inheritance}}</strong> </span>
+    <span class="pad-right10"><strong>{{__global.inheritance}}</strong> </span>
     {{#inheritance}}
     <span class="level{{index}}">{{{specName.0.value}}}</span>
-    <span class="mg-icons">&#xe800;</span>
+    <span class="inherit-separator mg-icons">&#xe800;</span>
     {{/inheritance}}
   <span class="level{{level}}"><span class="xref">{{name.0.value}}</span>
   {{#derivedClasses}}
-    <span class="mg-icons">&#xe800;</span>
+    <span class="inherit-separator mg-icons">&#xe800;</span>
     <span class="level{{index}}">{{{specName.0.value}}}</span>
   {{/derivedClasses}}
   </div>
@@ -22,7 +22,7 @@
 {{/inClass}}
 
 {{#implements.0}}
-<div class="implements">
+<div class="type-subheader implements">
   <strong>{{__global.implements}}</strong>
 {{/implements.0}}
 {{#implements}}
@@ -33,7 +33,7 @@
 {{/implements.0}}
 
 {{#inheritedMembers.0}}
-<div class="inheritedMembers">
+<div class="type-subheader inheritedMembers">
   <strong>{{__global.inheritedMembers}}</strong>
 {{/inheritedMembers.0}}
 {{#inheritedMembers}}
@@ -51,6 +51,7 @@
 {{/inheritedMembers.0}}
 
 {{#syntax.parameters.0}}
+<div class="type-subheader">
 <strong>{{__global.parameters}}</strong>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
@@ -72,9 +73,11 @@
 {{#syntax.parameters.0}}
   </tbody>
 </table>
+</div>
 {{/syntax.parameters.0}}
 
 {{#syntax.return}}
+<div class="type-subheader">
 <strong>{{__global.returns}}</strong>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
@@ -90,9 +93,11 @@
     </tr>
   </tbody>
 </table>
+</div>
 {{/syntax.return}}
 
 {{#syntax.typeParameters.0}}
+<div class="type-subheader">
 <strong>{{__global.typeParameters}}</strong>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
@@ -112,5 +117,6 @@
 {{#syntax.typeParameters.0}}
   </tbody>
 </table>
+</div>
 {{/syntax.typeParameters.0}}
 

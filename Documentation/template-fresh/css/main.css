@@ -489,21 +489,18 @@ table.api-table td.summary>p {
   }
 }
 /* Class page */
-.api h5 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+.type-subheader {
+  padding-bottom: 10px;
 }
-.inheritance h5 {
-  border-bottom: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.pad-right10 {
+  padding-right: 10px;
+}
+.inherit-separator {
+  padding: 2px;
 }
 .class-loc {
   padding-top: 10px;
   padding-bottom: 8px;
-}
-.class-loc h5 {
-  margin-top: 5px;
 }
 
 .no-transition {
