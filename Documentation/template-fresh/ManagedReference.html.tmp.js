@@ -5,7 +5,7 @@ var mrefCommon = require('./ManagedReference.common.js');
 
 exports.transform = function (model) {
 
-  model.dataPath = common.getFileNameWithoutExtension(model._key);
+  model.dataPath = model.baseDir;
 
   if (mrefCommon && mrefCommon.transform) {
     model = mrefCommon.transform(model);
