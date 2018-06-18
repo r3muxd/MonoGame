@@ -340,8 +340,7 @@ $(function() {
   }
 
   function addSubtitleAnchors() {
-    contentWrapperEl.find('h2, h3, h4').each(function(i) {
-      console.log('Anchoring title: ' + $(this).text());
+    contentWrapperEl.find('h2').each(function(i) {
       var id = $(this).attr('id');
       var anchor = $('<a class="subtitle-anchor mg-icons hide" href="#' + id + '">&#xF07B;</a>');
       $(this).append(anchor);

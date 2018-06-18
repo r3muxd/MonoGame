@@ -10,7 +10,7 @@
         }
       ],
 
-      "dest": "_api/"
+      "dest": "obj/api/merged"
     },
     {
       "src": [
@@ -21,38 +21,40 @@
           ]
         }
       ],
-      "dest": "_tmp/api/desktopgl"
+      "dest": "obj/api/desktopgl"
     }
   ],
   "merge": {
     "content": [
        {
            "files": "*.yml",
-           "src": "_tmp/api/windx"
+           "src": "obj/api/windx"
        },
        {
            "files": "*.yml",
-           "src": "_tmp/api/desktopgl"
+           "src": "obj/api/desktopgl"
        }
      ],
      "fileMetadata": {
          "platform": {
-             "_tmp/api/windx/*.yml": [
+             "obj/api/windx/*.yml": [
                  "windx"
              ],
-             "_tmp/api/desktopgl/*.yml": [
+             "obj/api/desktopgl/*.yml": [
                  "desktopgl"
              ]
          }
      },
-     "dest": "_api"
+     "dest": "obj/api/merged"
   },
   "build": {
     "content": [
       {
+        "src": "obj/api/merged",
+        "dest": "api/",
         "files": [
-          "_api/**.yml",
-          "_api/index.md"
+          "**.yml",
+          "index.md"
         ]
       },
       {

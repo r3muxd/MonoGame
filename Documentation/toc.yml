@@ -5,6 +5,6 @@
   href: tutorials/
   topicHref: tutorials/index.md
 - name: Api
-  href: _api/
+  href: obj/api/merged/
 - name: Changelog
   href: ../CHANGELOG.md

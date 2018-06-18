@@ -1,10 +1,7 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
 var common = require('./common.js');
-var classCategory = 'class';
-var namespaceCategory = 'ns';
 
 exports.transform = function (model)  {
-
   if (!model) return null;
 
   langs = model.langs;
@@ -15,70 +12,145 @@ exports.transform = function (model)  {
     });
   }
 
-  if (model.type) {
-    switch (model.type.toLowerCase()) {
-      case 'namespace':
-        model.isNamespace = true;
-        if (model.children) groupChildren(model, namespaceCategory);
-        break;
-      case 'class':
-      case 'interface':
-      case 'struct':
-      case 'delegate':
-      case 'enum':
-        model.isClass = true;
-        if (model.children) groupChildren(model, classCategory);
-        model[getTypePropertyName(model.type)] = true;
-        break;
-      default:
-        break;
+  if (!model.type) {
+    console.err('Managed Reference without a type! uid: ' + model.uid);
+    return model;
+  }
+
+  var lcType = model.type.toLowerCase();
+  var cat = getCategory(lcType);
+  var typePropName = getTypePropertyName(lcType);
+
+  model[cat] = true;
+  model[typePropName] = true;
+  model.title = getTitle(model);
+
+  // the structure of these isn't consistent, possibly due to the member split plugin not being up to date
+  // for class members that don't have overload pages we prepend the parent name
+  // for class members on overload pages the title is fixed below
+  if (cat === 'classMember' && !model.children && model.parent && model.parent.name)
+    model.title = model.parent.name[0].value + '.' + model.title;
+
+  model.hideChildren = true;
+  model.subHeaderLevel = 2;
+
+  if (model.children && model.children.length > 0) {
+    if (cat === 'ns' || (cat === 'namespaceMember' && model._splitReference)) {
+      model.isCollection = true;
+      groupChildren(model, cat);
+    } else if (cat === 'classMember') {
+
+      model.expandChildren = true;
+      model.children.forEach(function (item) {
+        var parentName = item.parent.substring(item.parent.lastIndexOf('.'));
+        if (!item.title)
+          item.title = parentName + '.' + getTitle(item);
+        item.subHeaderLevel = 3;
+        item.expandChildren = false;
+        item.isCollection = false;
+      });
+ 
+      if (model.children.length > 1) {
+        model.childTypes = [ { 'id': 'overloads', 'inOverload': true, 'children': model.children} ];
+        model.isCollection = true;
+      } else {
+        // overload pages are generated even though there's only 1 member
+        // we work around this by expanding the child member as if it were a root item
+        var child = model.children[0];
+        model.title = child.title;
+        child.skipOverloadTitle = true;
+        child.subHeaderLevel = 2;
+      }
     }
   }
 
   return model;
 }
 
-exports.getBookmarks = function (model, ignoreChildren)  {
-  if (!model || !model.type || model.type.toLowerCase() === "namespace") return null;
+exports.getBookmarks = function (model)  {
+  if (!model.type)
+    console.err('Managed Reference without a type! uid: ' + model.uid);
 
   var bookmarks = {};
 
-  if (typeof ignoreChildren == 'undefined' || ignoreChildren === false) {
-    if (model.children) {
-      model.children.forEach(function (item) {
-        bookmarks[item.uid] = common.getHtmlId(item.uid);
-        if (item.overload && item.overload.uid) {
-          bookmarks[item.overload.uid] = common.getHtmlId(item.overload.uid);
-        }
-      });
-    }
-  }
-
   // Reference's first level bookmark should have no anchor
   bookmarks[model.uid] = "";
+
+  var cat = getCategory(model.type.toLowerCase());
+  if (cat === 'ns' || model._splitReferences && cat === 'namespaceMember')
+    return bookmarks;
+
+  if (model.children) {
+    model.children.forEach(function (item) {
+      bookmarks[item.uid] = common.getHtmlId(item.uid);
+      if (item.overload && item.overload.uid)
+        bookmarks[item.overload.uid] = common.getHtmlId(item.overload.uid);
+    });
+  }
   return bookmarks;
 }
 
-exports.groupChildren = groupChildren;
-exports.getTypePropertyName = getTypePropertyName;
-exports.getCategory = getCategory;
+exports.getTitle = getTitle;
+
+function getTitle(item) {
+  if (!item.type)
+    console.err('Item without type: ' + item.uid);
+
+  var title = item.name[0].value;
+  var lcType = item.type.toLowerCase();
+  var typeStr = '';
+  switch (lcType) {
+    case 'class':
+      typeStr = 'Class';
+      break;
+    case 'struct':
+      typeStr = 'Struct';
+      break;
+    case 'interface':
+      typeStr = 'Interface';
+      break;
+    case 'enum':
+      typeStr = 'Enum';
+      break;
+    case 'delegate':
+      typeStr = 'Delegate';
+      break;
+    case 'constructor':
+      typeStr = 'Constructor';
+      break;
+    case 'field':
+      typeStr = 'Field';
+      break;
+    case 'property':
+      typeStr = 'Property';
+      break;
+    case 'event':
+      typeStr = 'Event';
+      break;
+    case 'operator':
+      typeStr = 'Operator';
+      break;
+    case 'method':
+    case 'eii':
+      typeStr = 'Method';
+      break;
+    default:
+      break;
+  }
+
+  return title + ' ' + typeStr;
+}
 
 function groupChildren(model, category) {
-  if (!model || !model.type) {
-    return;
-  }
-  var typeChildrenItems = getDefinitions(category);
+
+  var childTypeDefs = getDefinitions(category);
   var grouped = {};
 
   model.children.forEach(function (c) {
-    if (c.isEii) {
-      var type = "eii";
-    } else {
-      var type = c.type.toLowerCase();
-    }
-    if (!grouped.hasOwnProperty(type)) {
+    var type = c.type.toLowerCase();
+    if (!grouped.hasOwnProperty(type))
       grouped[type] = [];
-    }
+
     // special handle for field
     if (type === "field" && c.syntax) {
       c.syntax.fieldValue = c.syntax.return;
@@ -95,92 +167,73 @@ function groupChildren(model, category) {
       c.syntax.return = undefined;
     }
     grouped[type].push(c);
-  })
+  });
 
-  var children = [];
-  for (var key in typeChildrenItems) {
-    if (typeChildrenItems.hasOwnProperty(key) && grouped.hasOwnProperty(key)) {
-      var typeChildrenItem = typeChildrenItems[key];
-      var items = grouped[key];
-      if (items && items.length > 0) {
-        var item = {};
-        for (var itemKey in typeChildrenItem) {
-          if (typeChildrenItem.hasOwnProperty(itemKey)){
-            item[itemKey] = typeChildrenItem[itemKey];
-          }
-        }
-        item.children = items;
-        children.push(item);
-      }
-    }
+  var childTypeItems = [];
+  for (var childType in childTypeDefs) {
+    if (!childTypeDefs.hasOwnProperty(childType) || !grouped.hasOwnProperty(childType))
+      continue;
+
+    var typeDef = childTypeDefs[childType];
+
+    var childTypeItem = {};
+    childTypeItem[typeDef.typePropertyName] = true;
+    childTypeItem.id = typeDef.id;
+    childTypeItem.children = grouped[childType];
+
+    childTypeItems.push(childTypeItem);
   }
 
-  model.children = children;
+  model.childTypes = childTypeItems;
 }
 
-function getTypePropertyName(type) {
-  if (!type) {
-    return undefined;
-  }
-  var loweredType = type.toLowerCase();
-  var definition = getDefinition(loweredType);
-  if (definition) {
-    return definition.typePropertyName;
-  }
+var namespaceMembers = {
+  "class":          { typePropertyName: "inClass",        id: "classes" },
+  "struct":         { typePropertyName: "inStruct",       id: "structs" },
+  "interface":      { typePropertyName: "inInterface",    id: "interfaces" },
+  "enum":           { typePropertyName: "inEnum",         id: "enums" },
+  "delegate":       { typePropertyName: "inDelegate",     id: "delegates" }
+};
 
-  return undefined;
+var classMembers = {
+  "constructor":    { typePropertyName: "inConstructor",  id: "constructors" },
+  "field":          { typePropertyName: "inField",        id: "fields" },
+  "property":       { typePropertyName: "inProperty",     id: "properties" },
+  "method":         { typePropertyName: "inMethod",       id: "methods" },
+  "event":          { typePropertyName: "inEvent",        id: "events" },
+  "operator":       { typePropertyName: "inOperator",     id: "operators" },
+  "eii":            { typePropertyName: "inEii",          id: "eii" }
+};
+
+function getTypePropertyName(type) {
+  if (type === "namespace")
+    return 'inNamespace';
+
+  var def = classMembers[type] || namespaceMembers[type];
+
+  if (!def)
+    console.err('Unknown type: ' + type);
+
+  return def.typePropertyName;
 }
 
 function getCategory(type) {
-  var classItems = getDefinitions(classCategory);
-  if (classItems.hasOwnProperty(type)) {
-    return classCategory;
-  }
-
-  var namespaceItems = getDefinitions(namespaceCategory);
-  if (namespaceItems.hasOwnProperty(type)) {
-    return namespaceCategory;
-  }
-  return undefined;
+  if (type === 'namespace')
+    return 'ns';
+  if (namespaceMembers.hasOwnProperty(type))
+    return 'namespaceMember';
+  if (classMembers.hasOwnProperty(type))
+    return 'classMember';
+  console.err('Type without category: ' + type);
 }
-
-function getDefinition(type) {
-  var classItems = getDefinitions(classCategory);
-  if (classItems.hasOwnProperty(type)) {
-    return classItems[type];
-  }
-  var namespaceItems = getDefinitions(namespaceCategory);
-  if (namespaceItems.hasOwnProperty(type)) {
-    return namespaceItems[type];
-  }
-  return undefined;
-}
-
+ 
 function getDefinitions(category) {
-  var namespaceItems = {
-    "class":        { inClass: true,        typePropertyName: "inClass",        id: "classes" },
-    "struct":       { inStruct: true,       typePropertyName: "inStruct",       id: "structs" },
-    "interface":    { inInterface: true,    typePropertyName: "inInterface",    id: "interfaces" },
-    "enum":         { inEnum: true,         typePropertyName: "inEnum",         id: "enums" },
-    "delegate":     { inDelegate: true,     typePropertyName: "inDelegate",     id: "delegates" }
-  };
-  var classItems = {
-    "constructor":  { inConstructor: true,  typePropertyName: "inConstructor",  id: "constructors" },
-    "field":        { inField: true,        typePropertyName: "inField",        id: "fields" },
-    "property":     { inProperty: true,     typePropertyName: "inProperty",     id: "properties" },
-    "method":       { inMethod: true,       typePropertyName: "inMethod",       id: "methods" },
-    "event":        { inEvent: true,        typePropertyName: "inEvent",        id: "events" },
-    "operator":     { inOperator: true,     typePropertyName: "inOperator",     id: "operators" },
-    "eii":          { inEii: true,          typePropertyName: "inEii",          id: "eii" }
-  };
-  if (category === 'class') {
-    return classItems;
-  }
-  if (category === 'ns') {
-    return namespaceItems;
-  }
+  if (category === 'ns')
+    return namespaceMembers;
+  if (category === 'namespaceMember')
+    return classMembers;
+
   console.err("category '" + category + "' is not valid.");
-  return undefined;
 }
 
 function handleItem(vm, gitContribute, gitUrlPattern) {

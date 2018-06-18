@@ -5,15 +5,11 @@ var mrefCommon = require('./ManagedReference.common.js');
 
 exports.transform = function (model) {
 
-  model.dataPath = model.baseDir;
+  model.dataPath = common.getFileNameWithoutExtension(model._key);
 
-  if (mrefCommon && mrefCommon.transform) {
+  if (mrefCommon && mrefCommon.transform)
     model = mrefCommon.transform(model);
-  }
-  if (model.type.toLowerCase() === "enum") {
-    model.isClass = false;
-    model.isEnum = true;
-  }
+
   model._disableToc = model._disableToc || !model._tocPath || (model._navPath === model._tocPath);
 
   return model;

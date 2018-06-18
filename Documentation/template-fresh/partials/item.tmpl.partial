@@ -1,0 +1,48 @@
+<div class="markdown level0 summary">{{{summary}}}</div>
+<div class="markdown level0 conceptual">{{{conceptual}}}</div>
+
+{{! Add the header for all API pages except namespace pages; includes declaration, inheritance... }}
+{{^ns}}
+  {{>partials/itemHeader}}
+{{/ns}}
+
+{{#remarks}}
+<h{{subheaderLevel}} id="{{id}}_remarks">{{__global.remarks}}</h{{subheaderLevel}}>
+<div class="markdown level0 remarks">{{{remarks}}}</div>
+{{/remarks}}
+
+{{#example.0}}
+<h{{subheaderLevel}} id="{{id}}_examples">{{__global.examples}}</h{{subheaderLevel}}>
+{{/example.0}}
+{{#example}}
+{{{.}}}
+{{/example}}
+
+{{! Collections can be namespace members, class members or overloads }}
+{{#isCollection}}
+  {{>partials/collection}}
+{{/isCollection}}
+
+{{#expandChildren}}
+  {{#children}}
+    {{! If this item only has 1 child (not a collection) the title is already added above }}
+    {{^skipOverloadTitle}}
+      <h2 id="{{id}}" data-uid="{{uid}}" class="text-break">{{title}}</h2>
+    {{/skipOverloadTitle}}
+    {{>partials/item}}
+  {{/children}}
+{{/expandChildren}}
+
+{{#seealso.0}}
+<h{{subheaderLevel}} id="seealso">{{__global.seealso}}</h{{subheaderLevel}}>
+<div class="seealso">
+{{/seealso.0}}
+  {{#seealso}}
+    {{#isCref}}
+      <div>{{{type.specName.0.value}}}</div>
+    {{/isCref}}
+    {{^isCref}}
+      <div>{{{url}}}</div>
+    {{/isCref}}
+  {{/seealso}}
+{{#seealso.0}}

@@ -1,8 +1,8 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-{{#children}}
+{{#childTypes}}
   <h2 id="{{id}}">
-    {{>partials/namespaceSubtitle}}
+    {{>partials/subtitle}}
   </h2>
   <div>
     <table class="nameValue api-table">
@@ -14,4 +14,4 @@
       {{/children}}
     </table>
   </div>
-{{/children}}
+{{/childTypes}}

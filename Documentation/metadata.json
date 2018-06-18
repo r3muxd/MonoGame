@@ -15,9 +15,9 @@
   },
   "disableAffixSubLevel": {
     "../CHANGELOG.md": true,
-    "_api/**": true
+    "obj/api/**": true
   },
   "disableAutoExpandToc": {
-    "_api/**": true
+    "obj/api/**": true
   }
 }
