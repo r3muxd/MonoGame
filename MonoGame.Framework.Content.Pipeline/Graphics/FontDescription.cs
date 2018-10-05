@@ -4,29 +4,33 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
+using System.Xml;
+using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Intermediate;
 
 namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
 {
-    internal class CharacterCollection : ICollection<char>
+    internal class CharacterCollection : ICollection<int>
     {
-        private List<char> _items;
+        private List<int> _items;
 
         public CharacterCollection()
         {
-            _items = new List<char>();
+            _items = new List<int>();
         }
 
-        public CharacterCollection(IEnumerable<char> characters)
+        public CharacterCollection(IEnumerable<int> characters)
         {
-            _items = new List<char>();
+            _items = new List<int>();
             foreach (var c in characters)
                 Add(c);
         }
 
-        #region ICollection<char> Members
+        #region ICollection<int> Members
 
-        public void Add(char item)
+        public void Add(int item)
         {
             if (!_items.Contains(item))
                 _items.Add(item);
@@ -37,12 +41,12 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
             _items.Clear();
         }
 
-        public bool Contains(char item)
+        public bool Contains(int item)
         {
             return _items.Contains(item);
         }
 
-        public void CopyTo(char[] array, int arrayIndex)
+        public void CopyTo(int[] array, int arrayIndex)
         {
             _items.CopyTo(array, arrayIndex);
         }
@@ -57,16 +61,16 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
             get { return false; }
         }
 
-        public bool Remove(char item)
+        public bool Remove(int item)
         {
             return _items.Remove(item);
         }
 
         #endregion
 
-        #region IEnumerable<char> Members
+        #region IEnumerable<int> Members
 
-        public IEnumerator<char> GetEnumerator()
+        public IEnumerator<int> GetEnumerator()
         {
             return _items.GetEnumerator();
         }
@@ -83,12 +87,64 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
         #endregion
     }
 
+    public struct CodePoint
+    {
+        public int Value;
+
+        public CodePoint(int value)
+        {
+            Value = value;
+        }
+
+        public static implicit operator int(CodePoint cp)
+        {
+            return cp.Value;
+        }
+    }
+
+    internal class CodePointSerializer : ElementSerializer<CodePoint>
+    {
+	    private static readonly IntSerializer _intSerializer = new IntSerializer();
+
+        protected internal override CodePoint Deserialize(string[] inputs, ref int index)
+        {
+            var value = inputs[index++];
+            Debug.WriteLine("Deserializing: " + value);
+			if (value.Length == 1)
+			{
+				// Single character directly specifies a codepoint.
+				return new CodePoint(value[0]);
+			}
+            if (value.Length == 2 && char.IsHighSurrogate(value[0]))
+			{
+			    return new CodePoint(char.ConvertToUtf32(value, 0));
+			}
+            if (value.Length > 2 && value[0] == '0' && value[1] == 'x')
+            {
+                return new CodePoint(Convert.ToInt32(value, 16));
+            }
+
+            // Otherwise it must be an integer (eg. "32" or "0x20").
+            index--;
+            return new CodePoint(_intSerializer.Deserialize(inputs, ref index));
+        }
+
+        protected internal override void Serialize(CodePoint value, List<string> results)
+        {
+            _intSerializer.Serialize(value, results);
+        }
+
+        public CodePointSerializer(string xmlTypeName, int elementCount) : base(xmlTypeName, elementCount)
+        {
+        }
+    }
+
 	/// <summary>
 	/// Provides information to the FontDescriptionProcessor describing which font to rasterize, which font size to utilize, and which Unicode characters to include in the processor output.
 	/// </summary>
 	public class FontDescription : ContentItem
 	{
-        private char? defaultCharacter;
+        private CodePoint? defaultCharacter;
         private string fontName;
         private float size;
         private float spacing;
@@ -182,16 +238,10 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
         /// Gets or sets the default character for the font.
         /// </summary>
         [ContentSerializer(Optional = true)]
-        public Nullable<char> DefaultCharacter
+        public CodePoint? DefaultCharacter
         {
-            get
-            {
-                return defaultCharacter;
-            }
-            set
-            {
-                defaultCharacter = value;
-            }
+            get { return defaultCharacter; }
+            set { defaultCharacter = value; }
         }
 
         [ContentSerializer(CollectionItemName = "CharacterRegion")]
@@ -236,7 +286,7 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
         }
 		
 	    [ContentSerializerIgnore]
-	    public ICollection<char> Characters
+	    public ICollection<int> Characters
 	    {
 	        get { return characters; } 
             internal set { characters = new CharacterCollection(value); }

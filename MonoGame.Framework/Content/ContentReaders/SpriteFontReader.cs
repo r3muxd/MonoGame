@@ -26,13 +26,13 @@ namespace Microsoft.Xna.Framework.Content
                 // discard the rest of the SpriteFont data as we are only reloading GPU resources for now
                 input.ReadObject<List<Rectangle>>();
                 input.ReadObject<List<Rectangle>>();
-                input.ReadObject<List<char>>();
+                input.ReadObject<List<int>>();
                 input.ReadInt32();
                 input.ReadSingle();
                 input.ReadObject<List<Vector3>>();
                 if (input.ReadBoolean())
                 {
-                    input.ReadChar();
+                    input.ReadInt32();
                 }
 
                 return existingInstance;
@@ -43,15 +43,14 @@ namespace Microsoft.Xna.Framework.Content
                 Texture2D texture = input.ReadObject<Texture2D>();
                 List<Rectangle> glyphs = input.ReadObject<List<Rectangle>>();
                 List<Rectangle> cropping = input.ReadObject<List<Rectangle>>();
-                List<char> charMap = input.ReadObject<List<char>>();
+                List<int> charMap = input.ReadObject<List<int>>();
                 int lineSpacing = input.ReadInt32();
                 float spacing = input.ReadSingle();
                 List<Vector3> kerning = input.ReadObject<List<Vector3>>();
-                char? defaultCharacter = null;
+                int? defaultCharacter = null;
                 if (input.ReadBoolean())
-                {
-                    defaultCharacter = new char?(input.ReadChar());
-                }
+                    defaultCharacter = input.ReadChar();
+
                 return new SpriteFont(texture, glyphs, cropping, charMap, lineSpacing, spacing, kerning, defaultCharacter);
             }
         }

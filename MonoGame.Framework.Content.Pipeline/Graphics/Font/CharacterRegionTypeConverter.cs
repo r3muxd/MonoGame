@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Globalization;
 
 namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
@@ -28,8 +29,9 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
 			//  32-127
 			//  0x20-0x7F
 
+            Debug.WriteLine(source);
 			var splitStr = source.Split('-');
-			var split = new char[splitStr.Length];
+			var split = new int[splitStr.Length];
 			for (int i = 0; i < splitStr.Length; i++)
 			{
 				split[i] = ConvertCharacter(splitStr[i]);
@@ -51,21 +53,28 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
 		}
 
 
-		static char ConvertCharacter(string value)
+		static int ConvertCharacter(string value)
 		{
+            Console.WriteLine("Converting region with value: " + value);
 			if (value.Length == 1)
 			{
 				// Single character directly specifies a codepoint.
 				return value[0];
 			}
-			else
+            if (value.Length == 2 && char.IsHighSurrogate(value[0]))
 			{
-				// Otherwise it must be an integer (eg. "32" or "0x20").
-				return (char)(int)intConverter.ConvertFromInvariantString(value);
+			    return char.ConvertToUtf32(value, 0);
 			}
+            if (value.Length > 2 && value[0] == '0' && value[1] == 'x')
+            {
+                return Convert.ToInt32(value, 16);
+            }
+
+            // Otherwise it must be an integer (eg. "32").
+            return int.Parse(value);
 		}
 
 
-		static TypeConverter intConverter = TypeDescriptor.GetConverter(typeof(int));
+	    private static readonly TypeConverter _intConverter = TypeDescriptor.GetConverter(typeof(int));
 	}
 }

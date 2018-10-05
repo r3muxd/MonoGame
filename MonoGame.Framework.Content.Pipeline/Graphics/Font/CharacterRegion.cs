@@ -8,11 +8,11 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
 	[TypeConverter(typeof(CharacterRegionTypeConverter))]
 	public struct CharacterRegion
 	{
-	    public char Start;
-	    public char End;
+	    public int Start;
+	    public int End;
 
 		// Enumerates all characters within the region.        
-	    public IEnumerable<Char> Characters()
+	    public IEnumerable<int> Characters()
 	    {
 	        for (var c = Start; c <= End; c++)
 	        {
@@ -21,7 +21,7 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Graphics
 	    }
 
 	    // Constructor.
-        public CharacterRegion(char start, char end)
+        public CharacterRegion(int start, int end)
         {
             if (start > end)
                 throw new ArgumentException();

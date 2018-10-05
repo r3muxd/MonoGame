@@ -645,76 +645,12 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="text">The text which will be drawn.</param>
         /// <param name="position">The drawing location on screen.</param>
         /// <param name="color">A color mask.</param>
-		public unsafe void DrawString (SpriteFont spriteFont, string text, Vector2 position, Color color)
-		{
-            CheckValid(spriteFont, text);
-            
-            float sortKey = (_sortMode == SpriteSortMode.Texture) ? spriteFont.Texture.SortingKey : 0;
-
-            var offset = Vector2.Zero;
-            var firstGlyphOfLine = true;
-
-            fixed (SpriteFont.Glyph* pGlyphs = spriteFont.Glyphs)
-            for (var i = 0; i < text.Length; ++i)
-            {
-                var c = text[i];
-
-                if (c == '\r')
-                    continue;
-
-                if (c == '\n')
-                {
-                    offset.X = 0;
-                    offset.Y += spriteFont.LineSpacing;
-                    firstGlyphOfLine = true;
-                    continue;
-                }
- 
-                var currentGlyphIndex = spriteFont.GetGlyphIndexOrDefault(c);
-                var pCurrentGlyph = pGlyphs + currentGlyphIndex;
-
-                // The first character on a line might have a negative left side bearing.
-                // In this scenario, SpriteBatch/SpriteFont normally offset the text to the right,
-                //  so that text does not hang off the left side of its rectangle.
-                if (firstGlyphOfLine)
-                {
-                    offset.X = Math.Max(pCurrentGlyph->LeftSideBearing, 0);
-                    firstGlyphOfLine = false;
-                }
-                else
-                {
-                    offset.X += spriteFont.Spacing + pCurrentGlyph->LeftSideBearing;
-                }
-
-                var p = offset;                
-                p.X += pCurrentGlyph->Cropping.X;
-                p.Y += pCurrentGlyph->Cropping.Y;
-                p += position;
-
-                var item = _batcher.CreateBatchItem();
-                item.Texture = spriteFont.Texture;
-                item.SortKey = sortKey;
-            
-                _texCoordTL.X = pCurrentGlyph->BoundsInTexture.X * spriteFont.Texture.TexelWidth;
-                _texCoordTL.Y = pCurrentGlyph->BoundsInTexture.Y * spriteFont.Texture.TexelHeight;
-                _texCoordBR.X = (pCurrentGlyph->BoundsInTexture.X + pCurrentGlyph->BoundsInTexture.Width) * spriteFont.Texture.TexelWidth;
-                _texCoordBR.Y = (pCurrentGlyph->BoundsInTexture.Y + pCurrentGlyph->BoundsInTexture.Height) * spriteFont.Texture.TexelHeight;
-
-                item.Set(p.X,
-                         p.Y,
-                         pCurrentGlyph->BoundsInTexture.Width,
-                         pCurrentGlyph->BoundsInTexture.Height,
-                         color,
-                         _texCoordTL,
-                         _texCoordBR,
-                         0);
-                
-                offset.X += pCurrentGlyph->Width + pCurrentGlyph->RightSideBearing;
-            }
-
-			// We need to flush if we're using Immediate sort mode.
-			FlushIfNeeded();
-		}
+        public void DrawString (SpriteFont spriteFont, string text, Vector2 position, Color color)
+        {
+	        CheckValid(spriteFont, text);
+            var cs = new SpriteFont.CharacterSource(text);
+            DrawString(spriteFont, ref cs, position, color);
+        }
 
         /// <summary>
         /// Submit a text string of sprites for drawing in the current batch.
@@ -728,13 +664,13 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="scale">A scaling of this string.</param>
         /// <param name="effects">Modificators for drawing. Can be combined.</param>
         /// <param name="layerDepth">A depth of the layer of this string.</param>
-		public void DrawString (
-			SpriteFont spriteFont, string text, Vector2 position, Color color,
+        public void DrawString (
+            SpriteFont spriteFont, string text, Vector2 position, Color color,
             float rotation, Vector2 origin, float scale, SpriteEffects effects, float layerDepth)
-		{
-			var scaleVec = new Vector2(scale, scale);
+        {
+            var scaleVec = new Vector2(scale, scale);
             DrawString(spriteFont, text, position, color, rotation, origin, scaleVec, effects, layerDepth);
-		}
+        }
 
         /// <summary>
         /// Submit a text string of sprites for drawing in the current batch.
@@ -748,200 +684,41 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="scale">A scaling of this string.</param>
         /// <param name="effects">Modificators for drawing. Can be combined.</param>
         /// <param name="layerDepth">A depth of the layer of this string.</param>
-		public unsafe void DrawString (
-			SpriteFont spriteFont, string text, Vector2 position, Color color,
+        public void DrawString (
+            SpriteFont spriteFont, string text, Vector2 position, Color color,
             float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float layerDepth)
-		{
+        {
             CheckValid(spriteFont, text);
-            
-            float sortKey = 0;
-            // set SortKey based on SpriteSortMode.
-            switch (_sortMode)
-            {
-                    // Comparison of Texture objects.
-                    case SpriteSortMode.Texture:
-                        sortKey = spriteFont.Texture.SortingKey;
-                        break;
-                    // Comparison of Depth
-                    case SpriteSortMode.FrontToBack:
-                        sortKey = layerDepth;
-                        break;
-                    // Comparison of Depth in reverse
-                    case SpriteSortMode.BackToFront:
-                        sortKey = -layerDepth;
-                        break;
-            }
+            var cs = new SpriteFont.CharacterSource(text);
+            DrawString(spriteFont, ref cs, position, color, rotation, origin, scale, effects, layerDepth);
+        }
 
-            var flipAdjustment = Vector2.Zero;
+	    /// <summary>
+	    /// Submit a text string of sprites for drawing in the current batch.
+	    /// </summary>
+	    /// <param name="spriteFont">A font.</param>
+	    /// <param name="text">The text which will be drawn.</param>
+	    /// <param name="position">The drawing location on screen.</param>
+	    /// <param name="color">A color mask.</param>
+	    public void DrawString(SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color)
+	    {
+	        CheckValid(spriteFont, text);
+            var cs = new SpriteFont.CharacterSource(text);
+            DrawString(spriteFont, ref cs, position, color);
+	    }
 
-            var flippedVert = (effects & SpriteEffects.FlipVertically) == SpriteEffects.FlipVertically;
-            var flippedHorz = (effects & SpriteEffects.FlipHorizontally) == SpriteEffects.FlipHorizontally;
-
-            if (flippedVert || flippedHorz)
-            {
-                Vector2 size;
-                
-                var source = new SpriteFont.CharacterSource(text);
-                spriteFont.MeasureString(ref source, out size);
-
-                if (flippedHorz)
-                {
-                    origin.X *= -1;
-                    flipAdjustment.X = -size.X;
-                }
-
-                if (flippedVert)
-                {
-                    origin.Y *= -1;
-                    flipAdjustment.Y = spriteFont.LineSpacing - size.Y;
-                }
-            }
-            
-            Matrix transformation = Matrix.Identity;
-            float cos = 0, sin = 0;
-            if (rotation == 0)
-            {
-                transformation.M11 = (flippedHorz ? -scale.X : scale.X);
-                transformation.M22 = (flippedVert ? -scale.Y : scale.Y);
-                transformation.M41 = ((flipAdjustment.X - origin.X) * transformation.M11) + position.X;
-                transformation.M42 = ((flipAdjustment.Y - origin.Y) * transformation.M22) + position.Y;
-            }
-            else
-            {
-                cos = (float)Math.Cos(rotation);
-                sin = (float)Math.Sin(rotation);
-                transformation.M11 = (flippedHorz ? -scale.X : scale.X) * cos;
-                transformation.M12 = (flippedHorz ? -scale.X : scale.X) * sin;
-                transformation.M21 = (flippedVert ? -scale.Y : scale.Y) * (-sin);
-                transformation.M22 = (flippedVert ? -scale.Y : scale.Y) * cos;
-                transformation.M41 = (((flipAdjustment.X - origin.X) * transformation.M11) + (flipAdjustment.Y - origin.Y) * transformation.M21) + position.X;
-                transformation.M42 = (((flipAdjustment.X - origin.X) * transformation.M12) + (flipAdjustment.Y - origin.Y) * transformation.M22) + position.Y; 
-            }
-
-            var offset = Vector2.Zero;
-            var firstGlyphOfLine = true;
-
-            fixed (SpriteFont.Glyph* pGlyphs = spriteFont.Glyphs)
-            for (var i = 0; i < text.Length; ++i)
-            {
-                var c = text[i];
-
-                if (c == '\r')
-                    continue;
-
-                if (c == '\n')
-                {
-                    offset.X = 0;
-                    offset.Y += spriteFont.LineSpacing;
-                    firstGlyphOfLine = true;
-                    continue;
-                }
-
-                var currentGlyphIndex = spriteFont.GetGlyphIndexOrDefault(c);
-                var pCurrentGlyph = pGlyphs + currentGlyphIndex;
-
-                // The first character on a line might have a negative left side bearing.
-                // In this scenario, SpriteBatch/SpriteFont normally offset the text to the right,
-                //  so that text does not hang off the left side of its rectangle.
-                if (firstGlyphOfLine)
-                {
-                    offset.X = Math.Max(pCurrentGlyph->LeftSideBearing, 0);
-                    firstGlyphOfLine = false;
-                }
-                else
-                {
-                    offset.X += spriteFont.Spacing + pCurrentGlyph->LeftSideBearing;
-                }
-
-                var p = offset;
-
-                if (flippedHorz)
-                    p.X += pCurrentGlyph->BoundsInTexture.Width;
-                p.X += pCurrentGlyph->Cropping.X;
-
-                if (flippedVert)
-                    p.Y += pCurrentGlyph->BoundsInTexture.Height - spriteFont.LineSpacing;
-                p.Y += pCurrentGlyph->Cropping.Y;
-
-                Vector2.Transform(ref p, ref transformation, out p);
-
-                var item = _batcher.CreateBatchItem();               
-                item.Texture = spriteFont.Texture;
-                item.SortKey = sortKey;
-                
-                _texCoordTL.X = pCurrentGlyph->BoundsInTexture.X * spriteFont.Texture.TexelWidth;
-                _texCoordTL.Y = pCurrentGlyph->BoundsInTexture.Y * spriteFont.Texture.TexelHeight;
-                _texCoordBR.X = (pCurrentGlyph->BoundsInTexture.X + pCurrentGlyph->BoundsInTexture.Width) * spriteFont.Texture.TexelWidth;
-                _texCoordBR.Y = (pCurrentGlyph->BoundsInTexture.Y + pCurrentGlyph->BoundsInTexture.Height) * spriteFont.Texture.TexelHeight;
-                            
-                if ((effects & SpriteEffects.FlipVertically) != 0)
-                {
-                    var temp = _texCoordBR.Y;
-				    _texCoordBR.Y = _texCoordTL.Y;
-				    _texCoordTL.Y = temp;
-			    }
-                if ((effects & SpriteEffects.FlipHorizontally) != 0)
-                {
-                    var temp = _texCoordBR.X;
-				    _texCoordBR.X = _texCoordTL.X;
-				    _texCoordTL.X = temp;
-			    }
-
-                if (rotation == 0f)
-                {
-                    item.Set(p.X,
-                            p.Y,
-                            pCurrentGlyph->BoundsInTexture.Width * scale.X,
-                            pCurrentGlyph->BoundsInTexture.Height * scale.Y,
-                            color,
-                            _texCoordTL,
-                            _texCoordBR,
-                            layerDepth);
-                }
-                else
-                {
-                    item.Set(p.X,
-                            p.Y,
-                            0,
-                            0,
-                            pCurrentGlyph->BoundsInTexture.Width * scale.X,
-                            pCurrentGlyph->BoundsInTexture.Height * scale.Y,
-                            sin,
-                            cos,
-                            color,
-                            _texCoordTL,
-                            _texCoordBR,
-                            layerDepth);
-                }
-                
-                offset.X += pCurrentGlyph->Width + pCurrentGlyph->RightSideBearing;
-            }
-
-			// We need to flush if we're using Immediate sort mode.
-			FlushIfNeeded();
-		}
-
-        /// <summary>
-        /// Submit a text string of sprites for drawing in the current batch.
-        /// </summary>
-        /// <param name="spriteFont">A font.</param>
-        /// <param name="text">The text which will be drawn.</param>
-        /// <param name="position">The drawing location on screen.</param>
-        /// <param name="color">A color mask.</param>
-		public unsafe void DrawString (SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color)
-		{
-            CheckValid(spriteFont, text);
+        private unsafe void DrawString (SpriteFont spriteFont, ref SpriteFont.CharacterSource cs, Vector2 position, Color color)
+        {
             
             float sortKey =  (_sortMode == SpriteSortMode.Texture) ? spriteFont.Texture.SortingKey : 0;
 
             var offset = Vector2.Zero;
             var firstGlyphOfLine = true;
 
-            fixed (SpriteFont.Glyph* pGlyphs = spriteFont.Glyphs)
-            for (var i = 0; i < text.Length; ++i)
+            var utf = cs.GetUtf32();
+            fixed (SpriteFont.Glyph* pGlyphs = spriteFont._glyphs)
+            foreach (var c in utf)
             {
-                var c = text[i];
-
                 if (c == '\r')
                     continue;
 
@@ -1011,13 +788,13 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="scale">A scaling of this string.</param>
         /// <param name="effects">Modificators for drawing. Can be combined.</param>
         /// <param name="layerDepth">A depth of the layer of this string.</param>
-		public void DrawString (
-			SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color,
+        public void DrawString (
+            SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color,
             float rotation, Vector2 origin, float scale, SpriteEffects effects, float layerDepth)
-		{
-			var scaleVec = new Vector2 (scale, scale);
+        {
+            var scaleVec = new Vector2 (scale, scale);
             DrawString(spriteFont, text, position, color, rotation, origin, scaleVec, effects, layerDepth);
-		}
+        }
 
         /// <summary>
         /// Submit a text string of sprites for drawing in the current batch.
@@ -1031,12 +808,19 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="scale">A scaling of this string.</param>
         /// <param name="effects">Modificators for drawing. Can be combined.</param>
         /// <param name="layerDepth">A depth of the layer of this string.</param>
-		public unsafe void DrawString (
-			SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color,
+        public void DrawString(
+            SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color,
             float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float layerDepth)
-		{
+        {
             CheckValid(spriteFont, text);
-            
+            var cs = new SpriteFont.CharacterSource(text);
+            DrawString(spriteFont, ref cs, position, color, rotation, origin, scale, effects, layerDepth);
+	    }
+
+        private unsafe void DrawString (
+            SpriteFont spriteFont, ref SpriteFont.CharacterSource text, Vector2 position, Color color,
+            float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float layerDepth)
+        {
             float sortKey = 0;
             // set SortKey based on SpriteSortMode.
             switch (_sortMode)
@@ -1062,9 +846,8 @@ namespace Microsoft.Xna.Framework.Graphics
 
             if (flippedVert || flippedHorz)
             {
-                var source = new SpriteFont.CharacterSource(text);
                 Vector2 size;
-                spriteFont.MeasureString(ref source, out size);
+                spriteFont.MeasureString(ref text, out size);
 
                 if (flippedHorz)
                 {
@@ -1103,11 +886,9 @@ namespace Microsoft.Xna.Framework.Graphics
             var offset = Vector2.Zero;
             var firstGlyphOfLine = true;
 
-            fixed (SpriteFont.Glyph* pGlyphs = spriteFont.Glyphs)
-            for (var i = 0; i < text.Length; ++i)
+            fixed (SpriteFont.Glyph* pGlyphs = spriteFont._glyphs)
+            foreach (var c in text.GetUtf32())
             {
-                var c = text[i];
-
                 if (c == '\r')
                     continue;
 
@@ -1159,15 +940,15 @@ namespace Microsoft.Xna.Framework.Graphics
                 if ((effects & SpriteEffects.FlipVertically) != 0)
                 {
                     var temp = _texCoordBR.Y;
-				    _texCoordBR.Y = _texCoordTL.Y;
-				    _texCoordTL.Y = temp;
-			    }
+                    _texCoordBR.Y = _texCoordTL.Y;
+                    _texCoordTL.Y = temp;
+                }
                 if ((effects & SpriteEffects.FlipHorizontally) != 0)
                 {
                     var temp = _texCoordBR.X;
-				    _texCoordBR.X = _texCoordTL.X;
-				    _texCoordTL.X = temp;
-			    }
+                    _texCoordBR.X = _texCoordTL.X;
+                    _texCoordTL.X = temp;
+                }
 
                 if (rotation == 0f)
                 {
@@ -1197,11 +978,11 @@ namespace Microsoft.Xna.Framework.Graphics
                 }
 
                 offset.X += pCurrentGlyph->Width + pCurrentGlyph->RightSideBearing;
-			}
+            }
 
-			// We need to flush if we're using Immediate sort mode.
-			FlushIfNeeded();
-		}
+            // We need to flush if we're using Immediate sort mode.
+            FlushIfNeeded();
+        }
 
         /// <summary>
         /// Immediately releases the unmanaged resources used by this object.
@@ -1222,6 +1003,5 @@ namespace Microsoft.Xna.Framework.Graphics
             }
             base.Dispose(disposing);
         }
-	}
+    }
 }
-

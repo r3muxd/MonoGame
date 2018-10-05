@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 
 namespace Microsoft.Xna.Framework.Graphics 
@@ -22,9 +23,9 @@ namespace Microsoft.Xna.Framework.Graphics
 				"Character cannot be resolved by this SpriteFont.";
 		}
 
-        private readonly Glyph[] _glyphs;
+        internal readonly Glyph[] _glyphs;
         private readonly CharacterRegion[] _regions;
-        private char? _defaultCharacter;
+        private int? _defaultCharacter;
         private int _defaultGlyphIndex = -1;
 		
 		private readonly Texture2D _texture;
@@ -32,7 +33,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		/// <summary>
 		/// All the glyphs in this SpriteFont.
 		/// </summary>
-		public Glyph[] Glyphs { get { return _glyphs; } }
+        public ReadOnlyCollection<Glyph> Glyphs => Array.AsReadOnly(_glyphs);
 
 		class CharComparer: IEqualityComparer<char>
 		{
@@ -61,10 +62,10 @@ namespace Microsoft.Xna.Framework.Graphics
 		/// <param name="kerning">The letters kernings(X - left side bearing, Y - width and Z - right side bearing).</param>
 		/// <param name="defaultCharacter">The character that will be substituted when a given character is not included in the font.</param>
 		public SpriteFont (
-			Texture2D texture, List<Rectangle> glyphBounds, List<Rectangle> cropping, List<char> characters,
-			int lineSpacing, float spacing, List<Vector3> kerning, char? defaultCharacter)
+			Texture2D texture, List<Rectangle> glyphBounds, List<Rectangle> cropping, List<int> characters,
+			int lineSpacing, float spacing, List<Vector3> kerning, int? defaultCharacter)
 		{
-			Characters = new ReadOnlyCollection<char>(characters.ToArray());
+			CodePoints = new ReadOnlyCollection<int>(characters.ToArray());
 			_texture = texture;
 			LineSpacing = lineSpacing;
 			Spacing = spacing;
@@ -78,7 +79,7 @@ namespace Microsoft.Xna.Framework.Graphics
                 {
 					BoundsInTexture = glyphBounds[i],
 					Cropping = cropping[i],
-                    Character = characters[i],
+                    CodePoint = characters[i],
 
                     LeftSideBearing = kerning[i].X,
                     Width = kerning[i].Y,
@@ -122,6 +123,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
         /// <returns>A new Dictionary containing all of the glyphs inthis SpriteFont</returns>
         /// <remarks>Can be used to calculate character bounds when implementing custom SpriteFont rendering.</remarks>
+        [Obsolete("This method is deprecated and will be removed in MonoGame 4.0. Please use the Glyphs property instead.")]
         public Dictionary<char, Glyph> GetGlyphs()
         {
             var glyphsDictionary = new Dictionary<char, Glyph>(_glyphs.Length, CharComparer.Default);
@@ -130,16 +132,17 @@ namespace Microsoft.Xna.Framework.Graphics
             return glyphsDictionary;
         }
 
-		/// <summary>
-		/// Gets a collection of the characters in the font.
-		/// </summary>
-		public ReadOnlyCollection<char> Characters { get; private set; }
+        /// <summary>
+        /// Gets a collection of the characters in the font.
+        /// </summary>
+        public ReadOnlyCollection<char> Characters => CodePoints.Where(cp => cp <= char.MaxValue).Select(cp => (char) cp).ToList().AsReadOnly();
+		public ReadOnlyCollection<int> CodePoints { get; private set; }
 
 		/// <summary>
 		/// Gets or sets the character that will be substituted when a
 		/// given character is not included in the font.
 		/// </summary>
-		public char? DefaultCharacter
+		public int? DefaultCharacter
         {
             get { return _defaultCharacter; }
             set
@@ -212,11 +215,9 @@ namespace Microsoft.Xna.Framework.Graphics
 			var offset = Vector2.Zero;
             var firstGlyphOfLine = true;
 
-            fixed (Glyph* pGlyphs = Glyphs)
-            for (var i = 0; i < text.Length; ++i)
+            fixed (Glyph* pGlyphs = _glyphs)
+            foreach (var c in text.GetUtf32())
             {
-                var c = text[i];
-
                 if (c == '\r')
                     continue;
 
@@ -231,7 +232,7 @@ namespace Microsoft.Xna.Framework.Graphics
                 }
 
                 var currentGlyphIndex = GetGlyphIndexOrDefault(c);
-                Debug.Assert(currentGlyphIndex >= 0 && currentGlyphIndex < Glyphs.Length, "currentGlyphIndex was outside the bounds of the array.");
+                Debug.Assert(currentGlyphIndex >= 0 && currentGlyphIndex < _glyphs.Length, "currentGlyphIndex was outside the bounds of the array.");
                 var pCurrentGlyph = pGlyphs + currentGlyphIndex;
 
                 // The first character on a line might have a negative left side bearing.
@@ -260,7 +261,7 @@ namespace Microsoft.Xna.Framework.Graphics
             size.Y = offset.Y + finalLineHeight;
 		}
         
-        internal unsafe bool TryGetGlyphIndex(char c, out int index)
+        internal unsafe bool TryGetGlyphIndex(int c, out int index)
         {
             fixed (CharacterRegion* pRegions = _regions)
             {
@@ -299,7 +300,7 @@ namespace Microsoft.Xna.Framework.Graphics
             return true;
         }
 
-        internal int GetGlyphIndexOrDefault(char c)
+        internal int GetGlyphIndexOrDefault(int c)
         {
             int glyphIdx;
             if (!TryGetGlyphIndex(c, out glyphIdx))
@@ -332,10 +333,53 @@ namespace Microsoft.Xna.Framework.Graphics
 				Length = _builder.Length;
 			}
 
-			public readonly int Length;
-			public char this [int index] 
+            private IEnumerable<int> ToUtf32(string chars)
             {
-				get 
+                for (var i = 0; i < chars.Length; i++)
+                {
+                    int c;
+                    if (char.IsHighSurrogate(chars[i]))
+                    {
+                        c = char.ConvertToUtf32(chars, i);
+                        i++;
+                    }
+                    else if (char.IsLowSurrogate(chars[i]))
+                        continue;
+                    else
+                        c = chars[i];
+
+                    yield return c;
+                }
+            }
+
+            private IEnumerable<int> ToUtf32(StringBuilder chars)
+            {
+                for (var i = 0; i < chars.Length; i++)
+                {
+                    int c;
+                    if (char.IsHighSurrogate(chars[i]))
+                    {
+                        c = char.ConvertToUtf32(chars[i], chars[i + 1]);
+                        i++;
+                    }
+                    else if (char.IsLowSurrogate(chars[i]))
+                        continue;
+                    else
+                        c = chars[i];
+
+                    yield return c;
+                }
+            }
+
+            public IEnumerable<int> GetUtf32()
+            {
+                return _string != null ? ToUtf32(_string) : ToUtf32(_builder);
+            }
+
+			public readonly int Length;
+			public int this [int index]
+            {
+				get
                 {
 					if (_string != null)
 						return _string[index];
@@ -348,12 +392,22 @@ namespace Microsoft.Xna.Framework.Graphics
         /// Struct that defines the spacing, Kerning, and bounds of a character.
         /// </summary>
         /// <remarks>Provides the data necessary to implement custom SpriteFont rendering.</remarks>
-		public struct Glyph 
+		public struct Glyph
         {
             /// <summary>
-            /// The char associated with this glyph.
+            /// The Unicode code point for this glyph.
             /// </summary>
-			public char Character;
+            public int CodePoint;
+
+            /// <summary>
+            /// The char associated with this glyph. If this is a 
+            /// </summary>
+            [Obsolete("This method is deprecated and will be removed in MonoGame 4.0. Please use the CodePoint field instead.")]
+            public char Character
+            {
+                get { return (char) CodePoint; }
+                set { CodePoint = value; }
+            }
             /// <summary>
             /// Rectangle in the font texture where this letter exists.
             /// </summary>
@@ -383,17 +437,17 @@ namespace Microsoft.Xna.Framework.Graphics
 
 			public override string ToString ()
 			{
-                return "CharacterIndex=" + Character + ", Glyph=" + BoundsInTexture + ", Cropping=" + Cropping + ", Kerning=" + LeftSideBearing + "," + Width + "," + RightSideBearing;
+                return "CharacterIndex=" + CodePoint + ", Glyph=" + BoundsInTexture + ", Cropping=" + Cropping + ", Kerning=" + LeftSideBearing + "," + Width + "," + RightSideBearing;
 			}
 		}
 
         private struct CharacterRegion
         {
-            public char Start;
-            public char End;
+            public int Start;
+            public int End;
             public int StartIndex;
 
-            public CharacterRegion(char start, int startIndex)
+            public CharacterRegion(int start, int startIndex)
             {
                 this.Start = start;                
                 this.End = start;

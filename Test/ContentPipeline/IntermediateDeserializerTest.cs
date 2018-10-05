@@ -449,14 +449,14 @@ namespace MonoGame.Tests.ContentPipeline
                 Assert.AreEqual(FontDescriptionStyle.Bold, fontDesc.Style);
                 Assert.AreEqual('*', fontDesc.DefaultCharacter);
                         
-                var expectedCharacters = new List<char>();
+                var expectedCharacters = new List<int>();
                 for (var c = HttpUtility.HtmlDecode("&#32;")[0]; c <= HttpUtility.HtmlDecode("&#126;")[0]; c++)
                     expectedCharacters.Add(c);
 
                 expectedCharacters.Add(HttpUtility.HtmlDecode("&#916;")[0]);
                 expectedCharacters.Add(HttpUtility.HtmlDecode("&#176;")[0]);
 
-                var characters = new List<char>(fontDesc.Characters);
+                var characters = new List<int>(fontDesc.Characters);
                 foreach (var c in expectedCharacters)
                 {
                     Assert.Contains(c, characters);
