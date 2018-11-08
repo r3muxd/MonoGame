@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Text;
 
 #if MONOMAC && PLATFORM_MACOS_LEGACY
 using MonoMac.AudioToolbox;
@@ -56,10 +57,18 @@ namespace Microsoft.Xna.Framework.Audio
             string defaultDevice = Alc.GetString(IntPtr.Zero, AlcGetString.CaptureDefaultDeviceSpecifier);
 
 #if true //DESKTOPGL
-            // enumarating capture devices
+            // enumerating capture devices
             IntPtr deviceList = Alc.alGetString(IntPtr.Zero, (int)AlcGetString.CaptureDeviceSpecifier);
-            // we need to marshal a string array
-            string deviceIdentifier = Marshal.PtrToStringAnsi(deviceList);
+
+            // Marshal native UTF-8 character array to .NET string
+            // Code adapted from https://stackoverflow.com/a/10773988
+            var len = 0;
+            while (Marshal.ReadByte(deviceList, len) != 0)
+                len++;
+            var buffer = new byte[len];
+            Marshal.Copy(deviceList, buffer, 0, buffer.Length);
+
+            var deviceIdentifier = Encoding.UTF8.GetString(buffer);
             while (!String.IsNullOrEmpty(deviceIdentifier))
             {  
                 Microphone microphone = new Microphone(deviceIdentifier);
