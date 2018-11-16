@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <!-- Symbols -->
+  <PropertyGroup>
+    <DefineConstants>DESKTOP;OPENGL;OPENAL;XNADESIGNPROVIDED;DESKTOPGL;SUPPORTS_EFX</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Source Files -->
+  <ItemGroup>
+    <Compile Include="**/*.cs" />
+    <Compile Remove="**/*.?*.cs" />
+    <Compile Include="Utilities/Imaging/**/*.?*.cs" />
+
+    <Compile Remove="Android/**/*.cs" />
+    <Compile Remove="DesktopGL/**/*.cs" />
+    <Compile Remove="iOS/**/*.cs" />
+    <Compile Remove="MacOS/**/*.cs" />
+    <Compile Remove="Microsoft/*.cs" />
+    <Compile Remove="SDL/**/*.cs" />
+    <Compile Remove="Web/**/*.cs" />
+    <Compile Remove="Windows/**/*.cs" />
+    <Compile Remove="WindowsUniversal/**/*.cs" />
+
+    <Compile Remove="GamerServices/**/*.cs" />
+    <Compile Remove="Net/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Platform-specific extension includes -->
+    <Compile Include="**\*.Desktop.cs" />
+    <Compile Include="**\*.OpenGL.cs" />
+    <Compile Include="Graphics\OpenGL.Common.cs" />
+    <Compile Include="**\*.SDL.cs" />
+    <Compile Include="**\*.OpenAL.cs" />
+    <Compile Include="**\*.NVorbis.cs" />
+    <Compile Include="**\*.DesktopGL.cs" />
+
+    <!-- Platform-specific folders -->
+    <Compile Include="SDL\**\*.cs" />
+    <Compile Include="DesktopGL\**\*.cs" />
+    <Compile Remove="DesktopGL\GamerServices\**\*.cs" />
+
+    <!-- Link NVorbis source -->
+    <Compile Include="..\ThirdParty\NVorbis\NVorbis\*.cs">
+      <Link>Utilities\NVorbis\%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\ThirdParty\NVorbis\NVorbis\Ogg\*.cs">
+      <Link>Utilities\NVorbis\Ogg\%(Filename)%(Extension)</Link>
+    </Compile>
+
+    <!-- Exceptions -->
+    <Compile Include="Audio\Xact\WaveBank.Default.cs" />
+    <Compile Remove="Graphics\GraphicsAdapter.cs" />
+    <Compile Include="Graphics\GraphicsAdapter.Legacy.cs" />
+    <Compile Include="Graphics\GraphicsDebug.Default.cs" />
+    <Compile Include="Media\MediaLibrary.Default.cs" />
+    <Compile Include="Media\MediaPlayer.Default.cs" />
+    <Compile Include="Utilities\ReflectionHelpers.Legacy.cs" />
+
+    <!-- Not supported/not yet implemented -->
+    <Compile Remove="Content\ContentReaders/VideoReader.cs" />
+    <Compile Remove="Graphics\RenderTarget3D.cs" />
+    <Compile Remove="Input\KeyboardInput.cs" />
+    <Compile Remove="Input\MessageBox.cs" />
+    <Compile Remove="Media\Video.cs" />
+    <Compile Remove="Media\VideoPlayer.cs" />
+  </ItemGroup>
+
+  <!-- Embedded Resources -->
+  <ItemGroup>
+    <EmbeddedResource Include="MonoGame.bmp">
+      <LogicalName>MonoGame.bmp</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\ThirdParty\SDL_GameControllerDB\gamecontrollerdb.txt">
+      <LogicalName>gamecontrollerdb.txt</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Graphics\Effect\Resources\AlphaTestEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\BasicEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\DualTextureEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\EnvironmentMapEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\SkinnedEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\SpriteEffect.ogl.mgfxo" />
+  </ItemGroup>
+ 
+  <!-- Native Dependencies -->
+  <ItemGroup>
+    <None Include="..\ThirdParty\Dependencies\MonoGame.Framework.dll.config">
+      <Link>MonoGame.Framework.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Windows\x86\SDL2.dll">
+      <Link>x86\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Windows\x64\SDL2.dll">
+      <Link>x64\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Windows\x86\soft_oal.dll">
+      <Link>x86\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Windows\x64\soft_oal.dll">
+      <Link>x64\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Linux\x86\libSDL2-2.0.so.0">
+      <Link>x86\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Linux\x64\libSDL2-2.0.so.0">
+      <Link>x64\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Linux\x86\libopenal.so.1">
+      <Link>x86\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Linux\x64\libopenal.so.1">
+      <Link>x64\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\MacOS\Universal\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\MacOS\Universal\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
