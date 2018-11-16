@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <!-- Symbols -->
+  <PropertyGroup>
+    <DefineConstants>OPENGL;OPENAL;XNADESIGNPROVIDED;DESKTOPGL;SUPPORTS_EFX</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Source Files -->
+  <ItemGroup>
+    <Compile Include="..\MonoGame.Framework.Platform\**\*.Desktop.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\**\*.OpenGL.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Graphics\OpenGL.Common.cs">
+      <Link>Graphics\OpenGL.Common.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Graphics\OpenGL.cs">
+      <Link>Graphics\OpenGL.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\**\*.SDL.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\**\*.OpenAL.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\**\*.NVorbis.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\ThirdParty\NVorbis\NVorbis\*.cs">
+      <Link>Utilities\NVorbis\%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\ThirdParty\NVorbis\NVorbis\Ogg\*.cs">
+      <Link>Utilities\NVorbis\Ogg\%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\**\*.DesktopGL.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\SDL\**\*.cs">
+      <Link>SDL\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\DesktopGL\**\*.cs">
+      <Link>DesktopGL\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+
+    <Compile Include="..\MonoGame.Framework.Platform\Audio\Xact\WaveBank.Default.cs">
+      <Link>Audio\Xact\WaveBank.Default.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Graphics\GraphicsAdapter.Legacy.cs">
+      <Link>Graphics\GraphicsAdapter.Legacy.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Graphics\GraphicsDebug.Default.cs">
+      <Link>Graphics\GraphicsDebug.Default.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Media\MediaLibrary.Default.cs">
+      <Link>Media\MediaLibrary.Default.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Media\MediaPlayer.Default.cs">
+      <Link>Media\MediaPlayer.Default.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoGame.Framework.Platform\Utilities\ReflectionHelpers.Legacy.cs">
+      <Link>Utilities\ReflectionHelpers.Legacy.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+  <!-- Embedded Resources -->
+  <ItemGroup Condition="$(DefineConstants.Contains(DESKTOP))">
+    <EmbeddedResource Include="MonoGame.bmp">
+      <LogicalName>MonoGame.bmp</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(DefineConstants.Contains(DESKTOPGL))">
+    <EmbeddedResource Include="..\ThirdParty\SDL_GameControllerDB\gamecontrollerdb.txt">
+      <LogicalName>gamecontrollerdb.txt</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(DefineConstants.Contains(OPENGL))">
+    <EmbeddedResource Include="Graphics\Effect\Resources\AlphaTestEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\BasicEffect.ogl.mgfxo">
+      <Services>_GLCompatible</Services>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\Effect\Resources\DualTextureEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\EnvironmentMapEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\SkinnedEffect.ogl.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\SpriteEffect.ogl.mgfxo" />
+  </ItemGroup>
+ 
+  <!-- Native Dependencies -->
+  <ItemGroup Condition="$(DefineConstants.Contains(DESKTOPGL))">
+    <None Include="..\ThirdParty\Dependencies\MonoGame.Framework.dll.config">
+      <Link>MonoGame.Framework.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Windows\x86\SDL2.dll">
+      <Link>x86\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Windows\x64\SDL2.dll">
+      <Link>x64\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Windows\x86\soft_oal.dll">
+      <Link>x86\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Windows\x64\soft_oal.dll">
+      <Link>x64\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Linux\x86\libSDL2-2.0.so.0">
+      <Link>x86\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\Linux\x64\libSDL2-2.0.so.0">
+      <Link>x64\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Linux\x86\libopenal.so.1">
+      <Link>x86\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\Linux\x64\libopenal.so.1">
+      <Link>x64\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\SDL\MacOS\Universal\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ThirdParty\Dependencies\openal-soft\MacOS\Universal\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+</Project>
