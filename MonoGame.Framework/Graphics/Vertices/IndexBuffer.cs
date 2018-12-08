@@ -15,7 +15,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public int IndexCount { get; private set; }
         public IndexElementSize IndexElementSize { get; private set; }
 
-   		protected IndexBuffer(GraphicsDevice graphicsDevice, Type indexType, int indexCount, BufferUsage usage, bool dynamic)
+		protected IndexBuffer(GraphicsDevice graphicsDevice, Type indexType, int indexCount, BufferUsage usage, bool dynamic)
             : this(graphicsDevice, SizeForType(graphicsDevice, indexType), indexCount, usage, dynamic)
         {
         }
@@ -27,10 +27,10 @@ namespace Microsoft.Xna.Framework.Graphics
                 throw new ArgumentNullException("graphicsDevice", FrameworkResources.ResourceCreationWhenDeviceIsNull);
             }
 			this.GraphicsDevice = graphicsDevice;
-			this.IndexElementSize = indexElementSize;	
+			this.IndexElementSize = indexElementSize;
             this.IndexCount = indexCount;
             this.BufferUsage = usage;
-			
+
             _isDynamic = dynamic;
 
             PlatformConstruct(indexElementSize, indexCount);
@@ -101,12 +101,12 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             SetDataInternal<T>(offsetInBytes, data, startIndex, elementCount, SetDataOptions.None);
         }
-        		
+
 		public void SetData<T>(T[] data, int startIndex, int elementCount) where T : struct
         {
             SetDataInternal<T>(0, data, startIndex, elementCount, SetDataOptions.None);
 		}
-		
+
         public void SetData<T>(T[] data) where T : struct
         {
             SetDataInternal<T>(0, data, 0, data.Length, SetDataOptions.None);

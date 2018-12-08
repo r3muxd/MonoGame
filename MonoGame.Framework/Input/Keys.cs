@@ -6,7 +6,7 @@ namespace Microsoft.Xna.Framework.Input
 {
     /// <summary>
     /// Defines the keys on a keyboard.
-    /// </summary>	
+    /// </summary>
 	public enum Keys
 	{
         /// <summary>

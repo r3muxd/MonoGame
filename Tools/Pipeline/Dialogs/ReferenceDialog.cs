@@ -95,7 +95,7 @@ namespace MonoGame.Tools.Pipeline
         private void ButtonRemove_Click(object sender, EventArgs e)
         {
             var selectedItems = grid1.SelectedItems.ToArray();
-            
+
             foreach (var item in selectedItems)
                 _dataStore.Remove(item as RefItem);
         }

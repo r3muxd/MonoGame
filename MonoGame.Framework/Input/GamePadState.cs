@@ -7,7 +7,7 @@ namespace Microsoft.Xna.Framework.Input
     /// <summary>
     /// Represents specific information about the state of the controller,
     /// including the current state of buttons and sticks.
-    /// 
+    ///
     /// This is implemented as a partial struct to allow for individual platforms
     /// to offer additional data without separate state queries to GamePad.
     /// </summary>
@@ -92,7 +92,7 @@ namespace Microsoft.Xna.Framework.Input
         /// values for platform-specific fields.
         /// </summary>
         partial void PlatformConstruct();
-  
+
         /// <summary>
         /// Gets the button mask along with 'virtual buttons' like LeftThumbstickLeft.
         /// </summary>
@@ -101,7 +101,7 @@ namespace Microsoft.Xna.Framework.Input
             var result = Buttons._buttons;
 
             result |= ThumbSticks._virtualButtons;
-            
+
             if (DPad.Down == ButtonState.Pressed)
                 result |= Microsoft.Xna.Framework.Input.Buttons.DPadDown;
             if (DPad.Up == ButtonState.Pressed)
@@ -201,7 +201,7 @@ namespace Microsoft.Xna.Framework.Input
             if (!IsConnected)
                 return "[GamePadState: IsConnected = 0]";
 
-            return "[GamePadState: IsConnected=" + (IsConnected ? "1" : "0") + 
+            return "[GamePadState: IsConnected=" + (IsConnected ? "1" : "0") +
                    ", PacketNumber=" + PacketNumber.ToString("00000") +
                    ", Buttons=" + Buttons +
                    ", DPad=" + DPad +

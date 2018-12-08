@@ -27,27 +27,27 @@ namespace Microsoft.Xna.Framework.Graphics
                                         IntPtr windowHandle,
                                         int width,
                                         int height)
-            : this( 
-                graphicsDevice, 
-                windowHandle, 
-                width, 
-                height, 
-                false, 
+            : this(
+                graphicsDevice,
+                windowHandle,
+                width,
+                height,
+                false,
                 SurfaceFormat.Color,
                 DepthFormat.Depth24,
-                0, 
+                0,
                 RenderTargetUsage.DiscardContents,
                 PresentInterval.Default)
         {
         }
 
         public SwapChainRenderTarget(   GraphicsDevice graphicsDevice,
-                                        IntPtr windowHandle,                                     
+                                        IntPtr windowHandle,
                                         int width,
                                         int height,
                                         bool mipMap,
                                         SurfaceFormat surfaceFormat,
-                                        DepthFormat depthFormat,                                        
+                                        DepthFormat depthFormat,
                                         int preferredMultiSampleCount,
                                         RenderTargetUsage usage,
                                         PresentInterval presentInterval)
@@ -93,12 +93,12 @@ namespace Microsoft.Xna.Framework.Graphics
 
             PresentInterval = presentInterval;
 
-            // Once the desired swap chain description is configured, it must 
+            // Once the desired swap chain description is configured, it must
             // be created on the same adapter as our D3D Device
             var d3dDevice = graphicsDevice._d3dDevice;
 
             // First, retrieve the underlying DXGI Device from the D3D Device.
-            // Creates the swap chain 
+            // Creates the swap chain
             using (var dxgiDevice = d3dDevice.QueryInterface<SharpDX.DXGI.Device1>())
             using (var dxgiAdapter = dxgiDevice.Adapter)
             using (var dxgiFactory = dxgiAdapter.GetParent<Factory1>())

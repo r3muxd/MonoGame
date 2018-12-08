@@ -187,15 +187,15 @@ namespace Lidgren.Network
 				return;
 
 			NetException.Assert(m_outgoingMessagesPool.Contains(msg) == false, "Recyling already recycled message! Thread race?");
-			
+
 			byte[] storage = msg.m_data;
 			msg.m_data = null;
-			
+
 			// message fragments cannot be recycled
 			// TODO: find a way to recycle large message after all fragments has been acknowledged; or? possibly better just to garbage collect them
 			if (msg.m_fragmentGroup == 0)
 				Recycle(storage);
-	
+
 			msg.Reset();
 			m_outgoingMessagesPool.Enqueue(msg);
 		}

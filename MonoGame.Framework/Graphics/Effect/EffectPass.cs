@@ -17,12 +17,12 @@ namespace Microsoft.Xna.Framework.Graphics
 
         public EffectAnnotationCollection Annotations { get; private set; }
 
-        internal EffectPass(    Effect effect, 
+        internal EffectPass(    Effect effect,
                                 string name,
-                                Shader vertexShader, 
-                                Shader pixelShader, 
-                                BlendState blendState, 
-                                DepthStencilState depthStencilState, 
+                                Shader vertexShader,
+                                Shader pixelShader,
+                                BlendState blendState,
+                                DepthStencilState depthStencilState,
                                 RasterizerState rasterizerState,
                                 EffectAnnotationCollection annotations )
         {
@@ -42,7 +42,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             Annotations = annotations;
         }
-        
+
         internal EffectPass(Effect effect, EffectPass cloneSource)
         {
             Debug.Assert(effect != null, "Got a null effect!");
@@ -96,7 +96,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
                 // Update the texture parameters.
                 SetShaderSamplers(_pixelShader, device.Textures, device.SamplerStates);
-                
+
                 // Update the constant buffers.
                 for (var c = 0; c < _pixelShader.CBuffers.Length; c++)
                 {

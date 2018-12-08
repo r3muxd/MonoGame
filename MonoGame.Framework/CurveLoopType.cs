@@ -28,7 +28,7 @@ namespace Microsoft.Xna.Framework
         /// </summary>
         Oscillate,
         /// <summary>
-        /// The linear interpolation will be performed for determined the value. 
+        /// The linear interpolation will be performed for determined the value.
         /// </summary>
         Linear
     }

@@ -51,14 +51,14 @@ namespace MonoGame.Utilities
 
             var dst = new Uri(src, UrlEncode(relativeFile));
 
-            // The uri now contains the path to the relativeFile with 
+            // The uri now contains the path to the relativeFile with
             // relative addresses resolved... get the local path.
             var localPath = dst.LocalPath;
 
             if (!hasForwardSlash && localPath.StartsWith("/"))
                 localPath = localPath.Substring(1);
 
-            // Convert the directory separator characters to the 
+            // Convert the directory separator characters to the
             // correct platform specific separator.
             return NormalizeFilePathSeparators(localPath);
         }

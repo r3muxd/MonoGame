@@ -11,16 +11,16 @@ namespace Microsoft.Xna.Framework
 		#region Methods
 		void Update(GameTime gameTime);
 		#endregion
-		
+
 		#region Events
 		event EventHandler<EventArgs> EnabledChanged;
-		
+
 		event EventHandler<EventArgs> UpdateOrderChanged;
 		#endregion
-	
+
 		#region Properties
 		bool Enabled { get; }
-		
+
 		int UpdateOrder { get; }
 		#endregion
 	}

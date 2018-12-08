@@ -11,7 +11,7 @@ namespace Microsoft.Xna.Framework.Graphics
     /// This class handles the queueing of batch items into the GPU by creating the triangle tesselations
     /// that are used to draw the sprite textures. This class supports int.MaxValue number of sprites to be
     /// batched and will process them into short.MaxValue groups (strided by 6 for the number of vertices
-    /// sent to the GPU). 
+    /// sent to the GPU).
     /// </summary>
 	internal class SpriteBatcher
 	{
@@ -41,7 +41,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// Index pointer to the next available SpriteBatchItem in _batchItemList.
         /// </summary>
         private int _batchItemCount;
-        
+
         /// <summary>
         /// The target graphics device.
         /// </summary>
@@ -68,7 +68,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		}
 
         /// <summary>
-        /// Reuse a previously allocated SpriteBatchItem from the item pool. 
+        /// Reuse a previously allocated SpriteBatchItem from the item pool.
         /// if there is none available grow the pool and initialize new items.
         /// </summary>
         /// <returns></returns>
@@ -137,7 +137,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             _vertexArray = new VertexPositionColorTexture[4 * numBatchItems];
         }
-                
+
         /// <summary>
         /// Sorts the batch items and then groups batch drawing into maximal allowed batch sets that do not
         /// overflow the 16 bit array indices for vertices.
@@ -152,11 +152,11 @@ namespace Microsoft.Xna.Framework.Graphics
 			// nothing to do
             if (_batchItemCount == 0)
 				return;
-			
+
 			// sort the batch items
 			switch ( sortMode )
 			{
-			case SpriteSortMode.Texture :                
+			case SpriteSortMode.Texture :
 			case SpriteSortMode.FrontToBack :
 			case SpriteSortMode.BackToFront :
                 Array.Sort(_batchItemList, 0, _batchItemCount);
@@ -167,7 +167,7 @@ namespace Microsoft.Xna.Framework.Graphics
             int batchIndex = 0;
             int batchCount = _batchItemCount;
 
-            
+
             unchecked
             {
                 _device._graphicsMetrics._spriteCount += batchCount;
@@ -223,7 +223,7 @@ namespace Microsoft.Xna.Framework.Graphics
                 // large batches
                 batchCount -= numBatchesToProcess;
             }
-            // return items to the pool.  
+            // return items to the pool.
             _batchItemCount = 0;
 		}
 

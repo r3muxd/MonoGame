@@ -9,12 +9,12 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Text;
 
-namespace Microsoft.Xna.Framework.Graphics 
+namespace Microsoft.Xna.Framework.Graphics
 {
 
-	public sealed class SpriteFont 
+	public sealed class SpriteFont
     {
-		internal static class Errors 
+		internal static class Errors
         {
 			public const string TextContainsUnresolvableCharacters =
 				"Text contains characters that cannot be resolved by this SpriteFont.";
@@ -26,7 +26,7 @@ namespace Microsoft.Xna.Framework.Graphics
         private readonly CharacterRegion[] _regions;
         private char? _defaultCharacter;
         private int _defaultGlyphIndex = -1;
-		
+
 		private readonly Texture2D _texture;
 
 		/// <summary>
@@ -72,9 +72,9 @@ namespace Microsoft.Xna.Framework.Graphics
             _glyphs = new Glyph[characters.Count];
             var regions = new Stack<CharacterRegion>();
 
-			for (var i = 0; i < characters.Count; i++) 
+			for (var i = 0; i < characters.Count; i++)
             {
-				_glyphs[i] = new Glyph 
+				_glyphs[i] = new Glyph
                 {
 					BoundsInTexture = glyphBounds[i],
 					Cropping = cropping[i],
@@ -86,12 +86,12 @@ namespace Microsoft.Xna.Framework.Graphics
 
                     WidthIncludingBearings = kerning[i].X + kerning[i].Y + kerning[i].Z
 				};
-                
+
                 if(regions.Count == 0 || characters[i] > (regions.Peek().End+1))
                 {
                     // Start a new region
                     regions.Push(new CharacterRegion(characters[i], i));
-                } 
+                }
                 else if(characters[i] == (regions.Peek().End+1))
                 {
                     var currentRegion = regions.Pop();
@@ -143,7 +143,7 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             get { return _defaultCharacter; }
             set
-            {   
+            {
                 // Get the default glyph index here once.
                 if (value.HasValue)
                 {
@@ -208,7 +208,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
 			var width = 0.0f;
 			var finalLineHeight = (float)LineSpacing;
-            
+
 			var offset = Vector2.Zero;
             var firstGlyphOfLine = true;
 
@@ -259,18 +259,18 @@ namespace Microsoft.Xna.Framework.Graphics
             size.X = width;
             size.Y = offset.Y + finalLineHeight;
 		}
-        
+
         internal unsafe bool TryGetGlyphIndex(char c, out int index)
         {
             fixed (CharacterRegion* pRegions = _regions)
             {
-                // Get region Index 
+                // Get region Index
                 int regionIdx = -1;
                 var l = 0;
                 var r = _regions.Length - 1;
                 while (l <= r)
                 {
-                    var m = (l + r) >> 1;                    
+                    var m = (l + r) >> 1;
                     Debug.Assert(m >= 0 && m < _regions.Length, "Index was outside the bounds of the array.");
                     if (pRegions[m].End < c)
                     {
@@ -312,8 +312,8 @@ namespace Microsoft.Xna.Framework.Graphics
             else
                 return glyphIdx;
         }
-        
-        internal struct CharacterSource 
+
+        internal struct CharacterSource
         {
 			private readonly string _string;
 			private readonly StringBuilder _builder;
@@ -333,9 +333,9 @@ namespace Microsoft.Xna.Framework.Graphics
 			}
 
 			public readonly int Length;
-			public char this [int index] 
+			public char this [int index]
             {
-				get 
+				get
                 {
 					if (_string != null)
 						return _string[index];
@@ -348,7 +348,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// Struct that defines the spacing, Kerning, and bounds of a character.
         /// </summary>
         /// <remarks>Provides the data necessary to implement custom SpriteFont rendering.</remarks>
-		public struct Glyph 
+		public struct Glyph
         {
             /// <summary>
             /// The char associated with this glyph.
@@ -371,11 +371,11 @@ namespace Microsoft.Xna.Framework.Graphics
             /// </summary>
             public float RightSideBearing;
             /// <summary>
-            /// Width of the character before kerning is applied. 
+            /// Width of the character before kerning is applied.
             /// </summary>
             public float Width;
             /// <summary>
-            /// Width of the character before kerning is applied. 
+            /// Width of the character before kerning is applied.
             /// </summary>
             public float WidthIncludingBearings;
 
@@ -395,7 +395,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             public CharacterRegion(char start, int startIndex)
             {
-                this.Start = start;                
+                this.Start = start;
                 this.End = start;
                 this.StartIndex = startIndex;
             }

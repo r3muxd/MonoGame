@@ -26,12 +26,12 @@ namespace Microsoft.Xna.Framework.Media
 		public void Dispose()
         {
         }
-		
+
 		public IEnumerator<Song> GetEnumerator()
         {
             return innerlist.GetEnumerator();
         }
-		
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return innerlist.GetEnumerator();
@@ -44,7 +44,7 @@ namespace Microsoft.Xna.Framework.Media
 				return innerlist.Count;
             }
         }
-		
+
 		public bool IsReadOnly
         {
 		    get
@@ -60,7 +60,7 @@ namespace Microsoft.Xna.Framework.Media
 				return this.innerlist[index];
             }
         }
-		
+
 		public void Add(Song item)
         {
 
@@ -84,12 +84,12 @@ namespace Microsoft.Xna.Framework.Media
 
             this.innerlist.Add(item);
         }
-		
+
 		public void Clear()
         {
             innerlist.Clear();
         }
-        
+
         public SongCollection Clone()
         {
             SongCollection sc = new SongCollection();
@@ -97,22 +97,22 @@ namespace Microsoft.Xna.Framework.Media
                 sc.Add(song);
             return sc;
         }
-        
+
         public bool Contains(Song item)
         {
             return innerlist.Contains(item);
         }
-        
+
         public void CopyTo(Song[] array, int arrayIndex)
         {
             innerlist.CopyTo(array, arrayIndex);
         }
-		
+
 		public int IndexOf(Song item)
         {
             return innerlist.IndexOf(item);
         }
-        
+
         public bool Remove(Song item)
         {
             return innerlist.Remove(item);

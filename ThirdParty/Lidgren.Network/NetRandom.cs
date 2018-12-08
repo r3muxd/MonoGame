@@ -113,7 +113,7 @@ namespace Lidgren.Network
 		{
             return minValue + (int)(NextDouble() * (double)(maxValue - minValue));
 		}
-		
+
 		/// <summary>
 		/// Generates a random value between UInt64.MinValue to UInt64.MaxValue
 		/// </summary>
@@ -143,7 +143,7 @@ namespace Lidgren.Network
 			m_nextBoolIndex++;
 			return retval;
 		}
-		
+
 
 		/// <summary>
 		/// Fills all bytes from offset to offset + length in buffer with random values

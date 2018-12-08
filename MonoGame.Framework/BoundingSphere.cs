@@ -50,7 +50,7 @@ namespace Microsoft.Xna.Framework
         #region Constructors
 
         /// <summary>
-        /// Constructs a bounding sphere with the specified center and radius.  
+        /// Constructs a bounding sphere with the specified center and radius.
         /// </summary>
         /// <param name="center">The sphere center.</param>
         /// <param name="radius">The sphere radius.</param>
@@ -108,9 +108,9 @@ namespace Microsoft.Xna.Framework
 			else if (Center.Z > box.Max.Z)
 				dmin += (Center.Z - box.Max.Z) * (Center.Z - box.Max.Z);
 
-			if (dmin <= Radius * Radius) 
+			if (dmin <= Radius * Radius)
 				return ContainmentType.Intersects;
-            
+
             //else disjoint
             return ContainmentType.Disjoint;
         }
@@ -222,14 +222,14 @@ namespace Microsoft.Xna.Framework
             float sqRadius = Radius * Radius;
             float sqDistance;
             Vector3.DistanceSquared(ref point, ref Center, out sqDistance);
-            
+
             if (sqDistance > sqRadius)
                 result = ContainmentType.Disjoint;
 
             else if (sqDistance < sqRadius)
                 result = ContainmentType.Contains;
 
-            else 
+            else
                 result = ContainmentType.Intersects;
         }
 
@@ -280,7 +280,7 @@ namespace Microsoft.Xna.Framework
         }
 
         /// <summary>
-        /// Creates the smallest <see cref="BoundingSphere"/> that can contain a specified list of points in 3D-space. 
+        /// Creates the smallest <see cref="BoundingSphere"/> that can contain a specified list of points in 3D-space.
         /// </summary>
         /// <param name="points">List of point to create the sphere from.</param>
         /// <returns>The new <see cref="BoundingSphere"/>.</returns>
@@ -299,22 +299,22 @@ namespace Microsoft.Xna.Framework
             var maxz = -minx;
 
             // Find the most extreme points along the principle axis.
-            var numPoints = 0;           
+            var numPoints = 0;
             foreach (var pt in points)
             {
                 ++numPoints;
 
-                if (pt.X < minx.X) 
+                if (pt.X < minx.X)
                     minx = pt;
-                if (pt.X > maxx.X) 
+                if (pt.X > maxx.X)
                     maxx = pt;
-                if (pt.Y < miny.Y) 
+                if (pt.Y < miny.Y)
                     miny = pt;
-                if (pt.Y > maxy.Y) 
+                if (pt.Y > maxy.Y)
                     maxy = pt;
-                if (pt.Z < minz.Z) 
+                if (pt.Z < minz.Z)
                     minz = pt;
-                if (pt.Z > maxz.Z) 
+                if (pt.Z > maxz.Z)
                     maxz = pt;
             }
 
@@ -328,22 +328,22 @@ namespace Microsoft.Xna.Framework
             // Pick the pair of most distant points.
             var min = minx;
             var max = maxx;
-            if (sqDistY > sqDistX && sqDistY > sqDistZ) 
+            if (sqDistY > sqDistX && sqDistY > sqDistZ)
             {
                 max = maxy;
                 min = miny;
             }
-            if (sqDistZ > sqDistX && sqDistZ > sqDistY) 
+            if (sqDistZ > sqDistX && sqDistZ > sqDistY)
             {
                 max = maxz;
                 min = minz;
             }
-            
+
             var center = (min + max) * 0.5f;
             var radius = Vector3.Distance(max, center);
-            
+
             // Test every point and expand the sphere.
-            // The current bounding sphere is just a good approximation and may not enclose all points.            
+            // The current bounding sphere is just a good approximation and may not enclose all points.
             // From: Mathematics for 3D Game Programming and Computer Graphics, Eric Lengyel, Third Edition.
             // Page 218
             float sqRadius = radius * radius;

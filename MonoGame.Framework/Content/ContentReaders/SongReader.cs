@@ -14,7 +14,7 @@ namespace Microsoft.Xna.Framework.Content
 		protected internal override Song Read(ContentReader input, Song existingInstance)
 		{
 			var path = input.ReadString();
-			
+
 			if (!String.IsNullOrEmpty(path))
 			{
                 // Add the ContentManager's RootDirectory
@@ -23,10 +23,10 @@ namespace Microsoft.Xna.Framework.Content
                 // Resolve the relative path
                 path = FileHelpers.ResolveRelativePath(dirPath, path);
 			}
-			
+
 			var durationMs = input.ReadObject<int>();
 
-            return new Song(path, durationMs); 
+            return new Song(path, durationMs);
 		}
 	}
 }

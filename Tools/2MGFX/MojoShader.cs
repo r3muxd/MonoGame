@@ -2587,13 +2587,13 @@ namespace TwoMGFX
 		    [MarshalAs(UnmanagedType.ByValArray, SizeConst=16, ArraySubType=UnmanagedType.I4)]
 		    [FieldOffset(0)]
 		    public IntPtr ival;
-		    
+
 		    /// float[16]
 		    [MarshalAs(UnmanagedType.ByValArray, SizeConst=16, ArraySubType=UnmanagedType.R4)]
 		    [FieldOffset(0)]
             public IntPtr fval;
 		}
-		
+
 		public enum MOJOSHADER_uniformType {
 		    
 		    /// MOJOSHADER_UNIFORM_UNKNOWN -> -1
@@ -2612,14 +2612,14 @@ namespace TwoMGFX
 		    MOJOSHADER_SAMPLER_UNKNOWN = -1,
 		    
 		    MOJOSHADER_SAMPLER_2D = 0,
-		    
+
 		    MOJOSHADER_SAMPLER_CUBE = 1,
-		    
+
 		    MOJOSHADER_SAMPLER_VOLUME = 2,
 
             MOJOSHADER_SAMPLER_1D = 3,
 		}
-		
+
 		public enum MOJOSHADER_usage {
 		    
 		    /// MOJOSHADER_USAGE_UNKNOWN -> -1

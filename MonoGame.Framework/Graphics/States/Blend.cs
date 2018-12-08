@@ -18,7 +18,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
 		Zero,
         /// <summary>
-        /// Each component of the color is multiplied by the source color. 
+        /// Each component of the color is multiplied by the source color.
         /// {Rs, Gs, Bs, As}, where Rs, Gs, Bs, As are color source values.
         /// </summary>
 		SourceColor,
@@ -28,22 +28,22 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
 		InverseSourceColor,
         /// <summary>
-        /// Each component of the color is multiplied by the alpha value of the source. 
+        /// Each component of the color is multiplied by the alpha value of the source.
         /// {As, As, As, As}, where As is the source alpha value.
         /// </summary>
 		SourceAlpha,
         /// <summary>
-        /// Each component of the color is multiplied by the inverse of the alpha value of the source. 
+        /// Each component of the color is multiplied by the inverse of the alpha value of the source.
         /// {1 − As, 1 − As, 1 − As, 1 − As}, where As is the source alpha value.
         /// </summary>
 		InverseSourceAlpha,
         /// <summary>
-        /// Each component color is multiplied by the destination color. 
+        /// Each component color is multiplied by the destination color.
         /// {Rd, Gd, Bd, Ad}, where Rd, Gd, Bd, Ad are color destination values.
         /// </summary>
-		DestinationColor,	
+		DestinationColor,
         /// <summary>
-        /// Each component of the color is multiplied by the inversed destination color. 
+        /// Each component of the color is multiplied by the inversed destination color.
         /// {1 − Rd, 1 − Gd, 1 − Bd, 1 − Ad}, where Rd, Gd, Bd, Ad are color destination values.
         /// </summary>
 		InverseDestinationColor,
@@ -51,9 +51,9 @@ namespace Microsoft.Xna.Framework.Graphics
         /// Each component of the color is multiplied by the alpha value of the destination.
         /// {Ad, Ad, Ad, Ad}, where Ad is the destination alpha value.
         /// </summary>
-		DestinationAlpha,	
+		DestinationAlpha,
         /// <summary>
-        /// Each component of the color is multiplied by the inversed alpha value of the destination. 
+        /// Each component of the color is multiplied by the inversed alpha value of the destination.
         /// {1 − Ad, 1 − Ad, 1 − Ad, 1 − Ad}, where Ad is the destination alpha value.
         /// </summary>
 		InverseDestinationAlpha,
@@ -66,7 +66,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
 		InverseBlendFactor,
         /// <summary>
-        /// Each component of the color is multiplied by either the alpha of the source color, or the inverse of the alpha of the source color, whichever is greater. 
+        /// Each component of the color is multiplied by either the alpha of the source color, or the inverse of the alpha of the source color, whichever is greater.
         /// {f, f, f, 1}, where f = min(As, 1 − As), where As is the source alpha value.
         /// </summary>
 		SourceAlphaSaturation

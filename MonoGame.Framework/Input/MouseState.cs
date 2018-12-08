@@ -85,7 +85,7 @@ namespace Microsoft.Xna.Framework.Input
             _xButton2 = xButton2;
             _horizontalScrollWheelValue = horizontalScrollWheel;
         }
-		
+
         /// <summary>
         /// Compares whether two MouseState instances are equal.
         /// </summary>
@@ -104,7 +104,7 @@ namespace Microsoft.Xna.Framework.Input
                    left._xButton1 == right._xButton1 &&
                    left._xButton2 == right._xButton2;
 		}
-		
+
         /// <summary>
         /// Compares whether two MouseState instances are not equal.
         /// </summary>
@@ -178,12 +178,12 @@ namespace Microsoft.Xna.Framework.Input
         /// </summary>
         public Point Position
         {
-            get { return new Point(_x, _y); }   
+            get { return new Point(_x, _y); }
         }
         /// <summary>
         /// Gets state of the left mouse button.
         /// </summary>
-		public ButtonState LeftButton { 
+		public ButtonState LeftButton {
 			get {
 				return _leftButton;
 			}
@@ -193,17 +193,17 @@ namespace Microsoft.Xna.Framework.Input
         /// <summary>
         /// Gets state of the middle mouse button.
         /// </summary>
-		public ButtonState MiddleButton { 
+		public ButtonState MiddleButton {
 			get {
 				return _middleButton;
 			}
-			internal set { _middleButton = value; }			
+			internal set { _middleButton = value; }
 		}
 
         /// <summary>
         /// Gets state of the right mouse button.
         /// </summary>
-		public ButtonState RightButton { 
+		public ButtonState RightButton {
 			get {
 				return _rightButton;
 			}
@@ -213,7 +213,7 @@ namespace Microsoft.Xna.Framework.Input
         /// <summary>
         /// Returns cumulative scroll wheel value since the game start.
         /// </summary>
-		public int ScrollWheelValue { 
+		public int ScrollWheelValue {
 			get {
 				return _scrollWheelValue;
 			}
@@ -233,7 +233,7 @@ namespace Microsoft.Xna.Framework.Input
         /// <summary>
         /// Gets state of the XButton1.
         /// </summary>
-		public ButtonState XButton1 { 
+		public ButtonState XButton1 {
 			get {
                 return _xButton1;
 			}
@@ -245,7 +245,7 @@ namespace Microsoft.Xna.Framework.Input
         /// <summary>
         /// Gets state of the XButton2.
         /// </summary>
-		public ButtonState XButton2 { 
+		public ButtonState XButton2 {
 			get {
                 return _xButton2;
 			}
@@ -255,4 +255,3 @@ namespace Microsoft.Xna.Framework.Input
 		}
 	}
 }
-

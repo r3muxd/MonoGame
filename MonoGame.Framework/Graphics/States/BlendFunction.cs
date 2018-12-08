@@ -18,13 +18,13 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
 		Subtract,
         /// <summary>
-        /// The function will subtracts source from destination. (destColor * destBlend) - (srcColor * srcBlend) 
+        /// The function will subtracts source from destination. (destColor * destBlend) - (srcColor * srcBlend)
         /// </summary>
         ReverseSubtract,
         /// <summary>
         /// The function will extracts minimum of the source and destination. min((srcColor * srcBlend),(destColor * destBlend))
         /// </summary>
-        Min, 
+        Min,
         /// <summary>
         /// The function will extracts maximum of the source and destination. max((srcColor * srcBlend),(destColor * destBlend))
         /// </summary>

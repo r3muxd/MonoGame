@@ -28,10 +28,10 @@ namespace Microsoft.Xna.Framework.Graphics
 
         public EffectPass this[string name]
         {
-            get 
+            get
             {
                 // TODO: Add a name to pass lookup table.
-				foreach (var pass in _passes) 
+				foreach (var pass in _passes)
                 {
 					if (pass.Name == name)
 						return pass;
@@ -49,7 +49,7 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             return new Enumerator(_passes);
         }
-            
+
         IEnumerator<EffectPass> IEnumerable<EffectPass>.GetEnumerator()
         {
             return ((IEnumerable<EffectPass>)_passes).GetEnumerator();

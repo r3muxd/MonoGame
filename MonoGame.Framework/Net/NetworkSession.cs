@@ -2,34 +2,34 @@
 // /*
 // Microsoft Public License (Ms-PL)
 // MonoGame - Copyright © 2009 The MonoGame Team
-// 
+//
 // All rights reserved.
-// 
+//
 // This license governs use of the accompanying software. If you use the software, you accept this license. If you do not
 // accept the license, do not use the software.
-// 
+//
 // 1. Definitions
-// The terms "reproduce," "reproduction," "derivative works," and "distribution" have the same meaning here as under 
+// The terms "reproduce," "reproduction," "derivative works," and "distribution" have the same meaning here as under
 // U.S. copyright law.
-// 
+//
 // A "contribution" is the original software, or any additions or changes to the software.
 // A "contributor" is any person that distributes its contribution under this license.
 // "Licensed patents" are a contributor's patent claims that read directly on its contribution.
-// 
+//
 // 2. Grant of Rights
-// (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, 
+// (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3,
 // each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
-// (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, 
+// (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3,
 // each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
-// 
+//
 // 3. Conditions and Limitations
 // (A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
-// (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, 
+// (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software,
 // your patent license from such contributor to the software ends automatically.
-// (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution 
+// (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution
 // notices that are present in the software.
-// (D) If you distribute any portion of the software in source code form, you may do so only under this license by including 
-// a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object 
+// (D) If you distribute any portion of the software in source code form, you may do so only under this license by including
+// a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object
 // code form, you may only do so under a license that complies with this license.
 // (E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees
 // or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent
@@ -57,10 +57,10 @@ namespace Microsoft.Xna.Framework.Net
 		NetworkSessionType sessionType,// Type of session being hosted.
 		int maxLocalGamers,// Maximum number of local players on the same gaming machine in this network session.
 		int maxGamers,		// Maximum number of players allowed in this network session.  For Zune-based games, this value must be between 2 and 8; 8 is the maximum number of players supported in the session.
-		int privateGamerSlots, // Number of reserved private session slots created for the session. This value must be less than maximumGamers. 
+		int privateGamerSlots, // Number of reserved private session slots created for the session. This value must be less than maximumGamers.
 		NetworkSessionProperties sessionProperties, // Properties of the session being created.
 		int hostGamer,		// Gamer Index of the host
-		bool isHost	// If the session is for host or not 
+		bool isHost	// If the session is for host or not
 	);
 
 	public delegate AvailableNetworkSessionCollection  NetworkSessionAsynchronousFind (
@@ -76,14 +76,14 @@ namespace Microsoft.Xna.Framework.Net
 	public sealed class NetworkSession : IDisposable
 	{
 		internal static List<NetworkSession> activeSessions = new List<NetworkSession>();
-		
+
 		private NetworkSessionState sessionState;
-		//private static NetworkSessionType networkSessionType;	
+		//private static NetworkSessionType networkSessionType;
 		private GamerCollection<NetworkGamer> _allGamers;
 		private GamerCollection<LocalNetworkGamer> _localGamers;
 		private GamerCollection<NetworkGamer> _remoteGamers;
 		private GamerCollection<NetworkGamer> _previousGamers;
-		
+
 		internal Queue<CommandEvent> commandQueue;
 
 		// use the static Create or BeginCreate methods
@@ -91,7 +91,7 @@ namespace Microsoft.Xna.Framework.Net
 		{
 			activeSessions.Add(this);
 		}
-		
+
         ~NetworkSession()
         {
             Dispose(false);
@@ -105,18 +105,18 @@ namespace Microsoft.Xna.Framework.Net
 		private NetworkGamer hostingGamer;
 
 		internal MonoGamerPeer networkPeer;
-		
+
 		private NetworkSession (NetworkSessionType sessionType, int maxGamers, int privateGamerSlots, NetworkSessionProperties sessionProperties, bool isHost, int hostGamer)
 			: this(sessionType, maxGamers, privateGamerSlots, sessionProperties, isHost, hostGamer, null)
 		{
 		}
-		
+
 		private NetworkSession (NetworkSessionType sessionType, int maxGamers, int privateGamerSlots, NetworkSessionProperties sessionProperties, bool isHost, int hostGamer, AvailableNetworkSession availableSession) : this()
 		{
 			if (sessionProperties == null) {
 				throw new ArgumentNullException ("sessionProperties");
 			}
-			
+
 			_allGamers = new GamerCollection<NetworkGamer>();
 			_localGamers = new GamerCollection<LocalNetworkGamer>();
 //			for (int x = 0; x < Gamer.SignedInGamers.Count; x++) {
@@ -127,19 +127,19 @@ namespace Microsoft.Xna.Framework.Net
 //				localGamer.SignedInGamer = Gamer.SignedInGamers[x];
 //				_allGamers.AddGamer(localGamer);
 //				_localGamers.AddGamer(localGamer);
-//				
+//
 //				// We will attach a property change handler to local gamers
 //				//  se that we can broadcast the change to other peers.
-//				localGamer.PropertyChanged += HandleGamerPropertyChanged;	
-//				
+//				localGamer.PropertyChanged += HandleGamerPropertyChanged;
+//
 //			}
 
 			_remoteGamers = new GamerCollection<NetworkGamer>();
 			_previousGamers = new GamerCollection<NetworkGamer>();
 			hostingGamer = null;
-			
-			commandQueue = new Queue<CommandEvent>();			
-			
+
+			commandQueue = new Queue<CommandEvent>();
+
 			this.sessionType = sessionType;
 			this.maxGamers = maxGamers;
 			this.privateGamerSlots = privateGamerSlots;
@@ -152,27 +152,27 @@ namespace Microsoft.Xna.Framework.Net
                 if (networkPeer == null)
                     networkPeer = new MonoGamerPeer(this, availableSession);
             }
-            			
+
 			CommandGamerJoined gj = new CommandGamerJoined(hostGamer, this.isHost, true);
 			commandQueue.Enqueue(new CommandEvent(gj));
 		}
-		
+
 		public static NetworkSession Create (
 			NetworkSessionType sessionType,// Type of session being hosted.
 			IEnumerable<SignedInGamer> localGamers, // Maximum number of local players on the same gaming machine in this network session.
 			int maxGamers, // Maximum number of players allowed in this network session.  For Zune-based games, this value must be between 2 and 8; 8 is the maximum number of players supported in the session.
-			int privateGamerSlots, // Number of reserved private session slots created for the session. This value must be less than maximumGamers. 
+			int privateGamerSlots, // Number of reserved private session slots created for the session. This value must be less than maximumGamers.
 			NetworkSessionProperties sessionProperties // Properties of the session being created.
 			)
 		{
 			try {
 				return EndCreate(BeginCreate(sessionType, localGamers, maxGamers,privateGamerSlots, sessionProperties,null, null));
 			} finally {
-				
+
 			}
-			
-		} 
-		
+
+		}
+
 		public static NetworkSession Create (
 			NetworkSessionType sessionType,	// Type of session being hosted.
 			int maxLocalGamers,		// Maximum number of local players on the same gaming machine in this network session.
@@ -182,9 +182,9 @@ namespace Microsoft.Xna.Framework.Net
 			try {
 				return EndCreate(BeginCreate(sessionType,maxLocalGamers,maxGamers,null, null));
 			} finally {
-				
+
 			}
-			
+
 		}
 
 		public static NetworkSession Create (
@@ -197,11 +197,11 @@ namespace Microsoft.Xna.Framework.Net
 			try {
 				return EndCreate(BeginCreate(sessionType,maxLocalGamers,maxGamers,privateGamerSlots,sessionProperties,null, null));
 			} finally {
-				
+
 			}
-			
+
 		}
-		
+
 		private static NetworkSession Create (
 			NetworkSessionType sessionType,
 			int maxLocalGamers,
@@ -211,29 +211,29 @@ namespace Microsoft.Xna.Framework.Net
 			int hostGamer,
 			bool isHost)
 		{
-			
+
 			NetworkSession session = null;
-			
+
 			try {
 				if (sessionProperties == null)
 					sessionProperties = new NetworkSessionProperties();
 				session = new NetworkSession (sessionType, maxGamers, privateGamerSlots, sessionProperties, isHost, hostGamer);
-				
+
 			} finally {
 			}
-			
+
 			return session;
 		}
-		
+
 		#region IDisposable Members
 
 		public void Dispose ()
 		{
 			this.Dispose(true);
-			GC.SuppressFinalize(this);				
+			GC.SuppressFinalize(this);
 		}
-		
-		public void Dispose (bool disposing) 
+
+		public void Dispose (bool disposing)
 		{
             if (!_isDisposed)
             {
@@ -265,13 +265,13 @@ namespace Microsoft.Xna.Framework.Net
 		{
 			if (gamer == null)
 				throw new ArgumentNullException ("gamer");
-			
+
 //			_allGamers.AddGamer(gamer);
 //			_localGamers.AddGamer((LocalNetworkGamer)gamer);
-//			
+//
 //			// We will attach a property change handler to local gamers
 //			//  se that we can broadcast the change to other peers.
-//			gamer.PropertyChanged += HandleGamerPropertyChanged;	
+//			gamer.PropertyChanged += HandleGamerPropertyChanged;
 		}
 
 		public static IAsyncResult BeginCreate (NetworkSessionType sessionType,
@@ -283,7 +283,7 @@ namespace Microsoft.Xna.Framework.Net
 			Object asyncState)
 		{
 			int hostGamer = -1;
-			hostGamer = GetHostingGamerIndex (localGamers);            
+			hostGamer = GetHostingGamerIndex (localGamers);
 			return BeginCreate (sessionType, hostGamer, 4, maxGamers, privateGamerSlots, sessionProperties, callback, asyncState);
 		}
 
@@ -318,16 +318,16 @@ namespace Microsoft.Xna.Framework.Net
 			AsyncCallback callback,
 			Object asyncState)
 		{
-			if (maxLocalGamers < 1 || maxLocalGamers > 4) 
+			if (maxLocalGamers < 1 || maxLocalGamers > 4)
 				throw new ArgumentOutOfRangeException ( "Maximum local players must be between 1 and 4." );
-			if (maxGamers < 2 || maxGamers > 32) 
+			if (maxGamers < 2 || maxGamers > 32)
 				throw new ArgumentOutOfRangeException ( "Maximum number of gamers must be between 2 and 32." );
 			try {
 				NetworkSessionAsynchronousCreate AsynchronousCreate = new NetworkSessionAsynchronousCreate (Create);
 				return AsynchronousCreate.BeginInvoke (sessionType, maxLocalGamers, maxGamers, privateGamerSlots, sessionProperties, hostGamer, true, callback, asyncState);
 			} finally {
-			}		
-			
+			}
+
 		}
 
 		internal static int GetHostingGamerIndex (IEnumerable<SignedInGamer> localGamers)
@@ -353,7 +353,7 @@ namespace Microsoft.Xna.Framework.Net
 			}
 
 			return (int)hostGamer.PlayerIndex;
-		}		
+		}
 
 		public static IAsyncResult BeginFind (
 			NetworkSessionType sessionType,
@@ -379,7 +379,7 @@ namespace Microsoft.Xna.Framework.Net
 		{
 			return BeginFind (sessionType, -1, 4, searchProperties, callback, asyncState);
 		}
-		
+
 		private static IAsyncResult BeginFind (
 			NetworkSessionType sessionType,
 			int hostGamer,
@@ -406,7 +406,7 @@ namespace Microsoft.Xna.Framework.Net
 			Object asyncState)
 		{
 			if (availableSession == null)
-				throw new ArgumentNullException ();			
+				throw new ArgumentNullException ();
 
 			try {
 				NetworkSessionAsynchronousJoin AsynchronousJoin = new NetworkSessionAsynchronousJoin (JoinSession);
@@ -420,7 +420,7 @@ namespace Microsoft.Xna.Framework.Net
 			IEnumerable<SignedInGamer> localGamers,
 			AsyncCallback callback,
 			Object asyncState)
-		{	
+		{
 			try {
 				throw new NotImplementedException ();
 			} finally {
@@ -457,12 +457,12 @@ namespace Microsoft.Xna.Framework.Net
 				// Call EndInvoke to retrieve the results.
 				if (asyncResult.AsyncDelegate is NetworkSessionAsynchronousCreate) {
 					returnValue = ((NetworkSessionAsynchronousCreate)asyncResult.AsyncDelegate).EndInvoke (result);
-				}	
+				}
 			} finally {
 				// Close the wait handle.
-				result.AsyncWaitHandle.Close ();	 
+				result.AsyncWaitHandle.Close ();
 			}
-			
+
 			return returnValue;
 		}
 
@@ -470,20 +470,20 @@ namespace Microsoft.Xna.Framework.Net
 		{
 			AvailableNetworkSessionCollection returnValue = null;
 			List<AvailableNetworkSession> networkSessions = new List<AvailableNetworkSession>();
-			
+
 			try {
 				// Retrieve the delegate.
-                AsyncResult asyncResult = (AsyncResult)result;            	
+                AsyncResult asyncResult = (AsyncResult)result;
 
-      
+
 				// Wait for the WaitHandle to become signaled.
 				result.AsyncWaitHandle.WaitOne ();
-				               
-				
+
+
 				// Call EndInvoke to retrieve the results.
 				if (asyncResult.AsyncDelegate is NetworkSessionAsynchronousFind) {
-					returnValue = ((NetworkSessionAsynchronousFind)asyncResult.AsyncDelegate).EndInvoke (result);                    
-				
+					returnValue = ((NetworkSessionAsynchronousFind)asyncResult.AsyncDelegate).EndInvoke (result);
+
 					MonoGamerPeer.FindResults(networkSessions);
                 }
 
@@ -510,7 +510,7 @@ namespace Microsoft.Xna.Framework.Net
 			NetworkSession returnValue = null;
 			try {
 				// Retrieve the delegate.
-				AsyncResult asyncResult = (AsyncResult)result;            	
+				AsyncResult asyncResult = (AsyncResult)result;
 
 				// Wait for the WaitHandle to become signaled.
 				result.AsyncWaitHandle.WaitOne ();
@@ -518,7 +518,7 @@ namespace Microsoft.Xna.Framework.Net
 				// Call EndInvoke to retrieve the results.
 				if (asyncResult.AsyncDelegate is NetworkSessionAsynchronousJoin) {
 					returnValue = ((NetworkSessionAsynchronousJoin)asyncResult.AsyncDelegate).EndInvoke (result);
-				}		            	            
+				}
 			} finally {
 				// Close the wait handle.
 				result.AsyncWaitHandle.Close ();
@@ -532,7 +532,7 @@ namespace Microsoft.Xna.Framework.Net
 			NetworkSession returnValue = null;
 			try {
 				// Retrieve the delegate.
-				AsyncResult asyncResult = (AsyncResult)result;            	
+				AsyncResult asyncResult = (AsyncResult)result;
 
 				// Wait for the WaitHandle to become signaled.
 				result.AsyncWaitHandle.WaitOne ();
@@ -540,7 +540,7 @@ namespace Microsoft.Xna.Framework.Net
 				// Call EndInvoke to retrieve the results.
 				if (asyncResult.AsyncDelegate is NetworkSessionAsynchronousJoinInvited) {
 					returnValue = ((NetworkSessionAsynchronousJoinInvited)asyncResult.AsyncDelegate).EndInvoke (result);
-				}		            	            
+				}
 			} finally {
 				// Close the wait handle.
 				result.AsyncWaitHandle.Close ();
@@ -583,7 +583,7 @@ namespace Microsoft.Xna.Framework.Net
 			} finally {
 			}
 		}
-		
+
 		public NetworkGamer FindGamerById (byte gamerId)
 		{
 			try {
@@ -591,7 +591,7 @@ namespace Microsoft.Xna.Framework.Net
 					if (gamer.Id == gamerId)
 						return gamer;
 				}
-				
+
 				return null;
 			} finally {
 			}
@@ -601,12 +601,12 @@ namespace Microsoft.Xna.Framework.Net
 		{
 			return EndJoin(BeginJoin(availableSession, null, null));
 		}
-		
-		private static NetworkSession JoinSession (AvailableNetworkSession availableSession) 
+
+		private static NetworkSession JoinSession (AvailableNetworkSession availableSession)
 		{
 			NetworkSession session = null;
-			
-			try {                
+
+			try {
 				NetworkSessionType sessionType = availableSession.SessionType;
 				int maxGamers = 32;
 				int privateGamerSlots = 0;
@@ -616,13 +616,13 @@ namespace Microsoft.Xna.Framework.Net
 				if (sessionProperties == null)
 					sessionProperties = new NetworkSessionProperties();
 				session = new NetworkSession (sessionType, maxGamers, privateGamerSlots, sessionProperties, isHost, hostGamer, availableSession);
-				
+
 			} finally {
 			}
-			
-			return session;		
+
+			return session;
 		}
-		
+
         /*
 		public static NetworkSession JoinInvited (IEnumerable<SignedInGamer> localGamers)
 		{
@@ -631,7 +631,7 @@ namespace Microsoft.Xna.Framework.Net
 			} finally {
 			}
 		}
-        
+
 		public static NetworkSession JoinInvited (int maxLocalGamers)
 		{
 			if (maxLocalGamers < 1 || maxLocalGamers > 4)
@@ -666,11 +666,11 @@ namespace Microsoft.Xna.Framework.Net
 
 		public void Update ()
 		{
-			// Updates the state of the multiplayer session. 
+			// Updates the state of the multiplayer session.
 			try {
 				while (commandQueue.Count > 0 && networkPeer.IsReady) {
 					var command = (CommandEvent)commandQueue.Dequeue();
-					
+
 					// for some screwed up reason we are dequeueing something
 					// that is null so we will just continue.  I am not sure
 					// if is jumbled data coming in from the connection or
@@ -680,14 +680,14 @@ namespace Microsoft.Xna.Framework.Net
 					if (command == null) {
 						continue;
 					}
-					
+
 					switch (command.Command) {
 					case CommandEventType.SendData:
 						ProcessSendData((CommandSendData)command.CommandObject);
-						break;						
+						break;
 					case CommandEventType.ReceiveData:
 						ProcessReceiveData((CommandReceiveData)command.CommandObject);
-						break;	
+						break;
 					case CommandEventType.GamerJoined:
 						ProcessGamerJoined((CommandGamerJoined)command.CommandObject);
 						break;
@@ -699,15 +699,15 @@ namespace Microsoft.Xna.Framework.Net
 						break;
 					case CommandEventType.GamerStateChange:
 						ProcessGamerStateChange((CommandGamerStateChange)command.CommandObject);
-						break;							
-					
-					}					
+						break;
+
+					}
 				}
-			} 
+			}
 			catch (Exception exc) {
                 if (exc != null)
                 {
-#if DEBUG				
+#if DEBUG
 				Console.WriteLine("Error in NetworkSession Update: " + exc.Message);
 #endif
                 }
@@ -715,13 +715,13 @@ namespace Microsoft.Xna.Framework.Net
 			finally {
 			}
 		}
-		
-		private void ProcessGamerStateChange(CommandGamerStateChange command) 
+
+		private void ProcessGamerStateChange(CommandGamerStateChange command)
 		{
-			
-			networkPeer.SendGamerStateChange(command.Gamer);	
+
+			networkPeer.SendGamerStateChange(command.Gamer);
 		}
-		
+
 		private void ProcessSendData(CommandSendData command)
 		{
 			networkPeer.SendData(command.data, command.options);
@@ -733,22 +733,22 @@ namespace Microsoft.Xna.Framework.Net
 				gamer.receivedData.Enqueue(crd);
 			}
 		}
-		
+
 		private void ProcessReceiveData(CommandReceiveData command)
 		{
-			
+
 			// first let's look up the gamer that sent the data
 			foreach (NetworkGamer gamer in _allGamers) {
 				if (gamer.RemoteUniqueIdentifier == command.remoteUniqueIdentifier)
 					command.gamer = gamer;
 			}
-			
+
 			// for some reason this is null sometimes
 			//  this needs to be looked into instead of the
 			//  check below
 			if (command.gamer == null)
 				return;
-			
+
 			// now we loop through each of our local gamers and add the command
 			// to be processed.
 			foreach (LocalNetworkGamer localGamer in LocalGamers) {
@@ -756,19 +756,19 @@ namespace Microsoft.Xna.Framework.Net
 					localGamer.receivedData.Enqueue(command);
 				}
 			}
-			
+
 		}
-		
+
 		private void ProcessSessionStateChange(CommandSessionStateChange command)
 		{
 			if (sessionState == command.NewState)
 				return;
-			
+
 			sessionState = command.NewState;
-			
+
 			switch (command.NewState) {
 			case NetworkSessionState.Ended:
-				
+
 				ResetReady();
 
                 // Have to find an example of how this is used so that I can figure out how to pass
@@ -776,22 +776,22 @@ namespace Microsoft.Xna.Framework.Net
                 EventHelpers.Raise(this, SessionEnded, new NetworkSessionEndedEventArgs(NetworkSessionEndReason.HostEndedSession));
 				break;
 			case NetworkSessionState.Playing:
-				
+
 				EventHelpers.Raise(this, GameStarted, new GameStartedEventArgs());
 				break;
 			}
-			
+
 			// if changing from playing to lobby
 			if (command.NewState == NetworkSessionState.Lobby && command.OldState == NetworkSessionState.Playing) {
 				ResetReady();
 				EventHelpers.Raise(this, GameEnded, new GameEndedEventArgs());
 			}
 		}
-		
-		private void ProcessGamerJoined(CommandGamerJoined command) 
+
+		private void ProcessGamerJoined(CommandGamerJoined command)
 		{
 			NetworkGamer gamer;
-			
+
 			if ((command.State & GamerStates.Local) != 0) {
 				gamer = new LocalNetworkGamer(this, (byte)command.InternalIndex, command.State);
 				_allGamers.AddGamer(gamer);
@@ -801,10 +801,10 @@ namespace Microsoft.Xna.Framework.Net
 				//  Take a look at HoneycombRush tut for debugging later.
 				if (Gamer.SignedInGamers.Count >= _localGamers.Count)
 					((LocalNetworkGamer)gamer).SignedInGamer = Gamer.SignedInGamers[_localGamers.Count - 1];
-				
+
 				// We will attach a property change handler to local gamers
 				//  se that we can broadcast the change to other peers.
-				gamer.PropertyChanged += HandleGamerPropertyChanged;				
+				gamer.PropertyChanged += HandleGamerPropertyChanged;
 			}
 			else {
 				gamer = new NetworkGamer (this, (byte)command.InternalIndex, command.State);
@@ -814,33 +814,33 @@ namespace Microsoft.Xna.Framework.Net
 				_allGamers.AddGamer(gamer);
 				_remoteGamers.AddGamer(gamer);
 			}
-			
+
 			if ((command.State & GamerStates.Host) != 0)
 				hostingGamer = gamer;
-			
+
 			gamer.Machine = new NetworkMachine();
 			gamer.Machine.Gamers.AddGamer(gamer);
 			//gamer.IsReady = true;
-			
+
 			EventHelpers.Raise(this, GamerJoined, new GamerJoinedEventArgs(gamer));
-			
+
 			if (networkPeer !=  null && (command.State & GamerStates.Local) == 0) {
-				
+
 				networkPeer.SendPeerIntroductions(gamer);
 			}
-			
+
 			if (networkPeer != null)
 			{
 				networkPeer.UpdateLiveSession(this);
 			}
-			
-			
+
+
 		}
-		
-		private void ProcessGamerLeft(CommandGamerLeft command) 
+
+		private void ProcessGamerLeft(CommandGamerLeft command)
 		{
 			NetworkGamer gamer;
-			
+
 			for (int x = 0; x < _remoteGamers.Count; x++) {
 				if (_remoteGamers[x].RemoteUniqueIdentifier == command.remoteUniqueIdentifier) {
 					gamer = _remoteGamers[x];
@@ -848,23 +848,23 @@ namespace Microsoft.Xna.Framework.Net
 					_allGamers.RemoveGamer(gamer);
 					EventHelpers.Raise(this, GamerLeft, new GamerLeftEventArgs(gamer));
 				}
-				
+
 			}
-			
+
 			if (networkPeer != null)
 			{
 				networkPeer.UpdateLiveSession(this);
 			}
-		}		
+		}
 
 		void HandleGamerPropertyChanged (object sender, System.ComponentModel.PropertyChangedEventArgs e)
 		{
 			NetworkGamer gamer = sender as NetworkGamer;
 			if (gamer == null)
 				return;
-			
+
 			// If the gamer is local then we need to broadcast that change to all other
-			// connected peers.  This is a double check here as we should only be handling 
+			// connected peers.  This is a double check here as we should only be handling
 			//  property changes for local gamers for now.
 			if (gamer.IsLocal) {
 				CommandGamerStateChange sc = new CommandGamerStateChange(gamer);
@@ -872,9 +872,9 @@ namespace Microsoft.Xna.Framework.Net
 				commandQueue.Enqueue(cmd);
 			}
 		}
-		
+
 		#region Properties
-		public GamerCollection<NetworkGamer> AllGamers { 
+		public GamerCollection<NetworkGamer> AllGamers {
 			get {
 				return _allGamers;
 			}
@@ -882,7 +882,7 @@ namespace Microsoft.Xna.Framework.Net
 
 		bool _AllowHostMigration = false;
 
-		public bool AllowHostMigration { 
+		public bool AllowHostMigration {
 			get {
 				return _AllowHostMigration;
 			}
@@ -895,7 +895,7 @@ namespace Microsoft.Xna.Framework.Net
 
 		bool _AllowJoinInProgress = false;
 
-		public bool AllowJoinInProgress { 
+		public bool AllowJoinInProgress {
 			get {
 				return _AllowJoinInProgress;
 			}
@@ -907,20 +907,20 @@ namespace Microsoft.Xna.Framework.Net
 		}
 
         /*
-		public int BytesPerSecondReceived { 
+		public int BytesPerSecondReceived {
 			get {
 				throw new NotImplementedException ();
 			}
 		}
 
-		public int BytesPerSecondSent { 
+		public int BytesPerSecondSent {
 			get {
 				throw new NotImplementedException ();
 			}
 		}
         */
 
-		public NetworkGamer Host { 
+		public NetworkGamer Host {
 			get {
 				return hostingGamer;
 			}
@@ -928,13 +928,13 @@ namespace Microsoft.Xna.Framework.Net
 
 		bool _isDisposed = false;
 
-		public bool IsDisposed { 
+		public bool IsDisposed {
 			get {
 				return _isDisposed; // TODO (this.kernelHandle == 0);
 			}
 		}
 
-		public bool IsEveryoneReady { 
+		public bool IsEveryoneReady {
 			get {
 				if (_allGamers.Count == 0)
 					return false;
@@ -947,26 +947,26 @@ namespace Microsoft.Xna.Framework.Net
 			}
 		}
 
-		public bool IsHost { 
+		public bool IsHost {
 			get {
 				return isHost;
 			}
 		}
 
-		public GamerCollection<LocalNetworkGamer> LocalGamers { 
+		public GamerCollection<LocalNetworkGamer> LocalGamers {
 			get {
 				return _localGamers;
 			}
-		}	
+		}
 
-		public int MaxGamers { 
+		public int MaxGamers {
 			get {
 				return maxGamers;
 			}
 			set {
 				maxGamers = value;
 			}
-		}		
+		}
 
 		public GamerCollection<NetworkGamer> PreviousGamers {
 			get {
@@ -974,14 +974,14 @@ namespace Microsoft.Xna.Framework.Net
 			}
 		}
 
-		public int PrivateGamerSlots { 
+		public int PrivateGamerSlots {
 			get {
 				return privateGamerSlots;
 			}
 			set {
 				privateGamerSlots = value;
 			}
-		}	
+		}
 
 		public GamerCollection<NetworkGamer> RemoteGamers {
 			get {
@@ -993,7 +993,7 @@ namespace Microsoft.Xna.Framework.Net
 			get {
 				return sessionProperties;
 			}
-		}	
+		}
 
 		public NetworkSessionState SessionState {
 			get {
@@ -1017,7 +1017,7 @@ namespace Microsoft.Xna.Framework.Net
                     return networkPeer.SimulatedLatency;
                 }
 #endif
-                return defaultSimulatedLatency;				
+                return defaultSimulatedLatency;
 			}
 			set {
                 defaultSimulatedLatency = value;
@@ -1027,7 +1027,7 @@ namespace Microsoft.Xna.Framework.Net
                     networkPeer.SimulatedLatency = value;
                 }
 #endif
-                
+
 			}
 		}
 
@@ -1037,7 +1037,7 @@ namespace Microsoft.Xna.Framework.Net
 			get {
                 if (networkPeer != null)
                 {
-                    simulatedPacketLoss = networkPeer.SimulatedPacketLoss;                   
+                    simulatedPacketLoss = networkPeer.SimulatedPacketLoss;
                 }
                 return simulatedPacketLoss;
 			}
@@ -1045,7 +1045,7 @@ namespace Microsoft.Xna.Framework.Net
                 if (networkPeer != null) networkPeer.SimulatedPacketLoss = value;
                 simulatedPacketLoss = value;
 			}
-		}			
+		}
 
 		#endregion
 
@@ -1095,7 +1095,7 @@ namespace Microsoft.Xna.Framework.Net
 			gamer = aGamer;
 		}
 
-		public NetworkGamer Gamer { 
+		public NetworkGamer Gamer {
 			get {
 				return gamer;
 			}
@@ -1111,7 +1111,7 @@ namespace Microsoft.Xna.Framework.Net
 			gamer = aGamer;
 		}
 
-		public NetworkGamer Gamer { 
+		public NetworkGamer Gamer {
 			get {
 				return gamer;
 			}
@@ -1134,13 +1134,13 @@ namespace Microsoft.Xna.Framework.Net
 			oldHost = aOldHost;
 		}
 
-		public NetworkGamer NewHost { 
+		public NetworkGamer NewHost {
 			get {
 				return newHost;
 			}
 		}
 
-		public NetworkGamer OldHost { 
+		public NetworkGamer OldHost {
 			get {
 				return oldHost;
 			}
@@ -1156,13 +1156,13 @@ namespace Microsoft.Xna.Framework.Net
 			gamer = aGamer;
 		}
 
-		public SignedInGamer Gamer { 
+		public SignedInGamer Gamer {
 			get {
 				return gamer;
 			}
 		}
 
-		public bool IsCurrentSession { 
+		public bool IsCurrentSession {
 			get {
 				return false;
 			}
@@ -1178,7 +1178,7 @@ namespace Microsoft.Xna.Framework.Net
 			endReason = aEndReason;
 		}
 
-		public NetworkSessionEndReason EndReason { 
+		public NetworkSessionEndReason EndReason {
 			get {
 				return endReason;
 			}

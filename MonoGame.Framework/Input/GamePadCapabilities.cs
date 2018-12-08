@@ -17,7 +17,7 @@ namespace Microsoft.Xna.Framework.Input
 
         /// <summary>
         /// Gets the gamepad display name.
-        /// 
+        ///
         /// This property is not available in XNA.
         /// </summary>
         /// <value>String representing the display name of the gamepad.</value>
@@ -25,7 +25,7 @@ namespace Microsoft.Xna.Framework.Input
 
         /// <summary>
         /// Gets the unique identifier of the gamepad.
-        /// 
+        ///
         /// This property is not available in XNA.
         /// </summary>
         /// <value>String representing the unique identifier of the gamepad.</value>

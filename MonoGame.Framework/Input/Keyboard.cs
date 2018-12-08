@@ -19,7 +19,7 @@ namespace Microsoft.Xna.Framework.Input
 		{
             return PlatformGetState();
 		}
-		
+
         /// <summary>
         /// Returns the current keyboard state for a given player.
         /// </summary>

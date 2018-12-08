@@ -15,7 +15,7 @@ namespace Microsoft.Xna.Framework.GamerServices
     {
         public static DateTime NSDateToDateTime(this NSDate date)
         {
-            DateTime reference = TimeZone.CurrentTimeZone.ToLocalTime( 
+            DateTime reference = TimeZone.CurrentTimeZone.ToLocalTime(
                 new DateTime(2001, 1, 1, 0, 0, 0) );
             return reference.AddSeconds(date.SecondsSinceReferenceDate);
         }
@@ -32,7 +32,7 @@ namespace Microsoft.Xna.Framework.GamerServices
     public class SignedInGamer : Gamer
     {
         private GKLocalPlayer lp;
-		
+
         private AchievementCollection gamerAchievements;
         private FriendCollection friendCollection;
 
@@ -41,15 +41,15 @@ namespace Microsoft.Xna.Framework.GamerServices
         public IAsyncResult BeginAuthentication(AsyncCallback callback, Object asyncState)
         {
             // Go off authenticate
-            AuthenticationDelegate ad = DoAuthentication; 
-			
+            AuthenticationDelegate ad = DoAuthentication;
+
             return ad.BeginInvoke(callback, ad);
         }
 
         public void EndAuthentication(IAsyncResult result)
         {
-            AuthenticationDelegate ad = (AuthenticationDelegate)result.AsyncState; 
-			
+            AuthenticationDelegate ad = (AuthenticationDelegate)result.AsyncState;
+
             ad.EndInvoke(result);
         }
 
@@ -62,7 +62,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                     UIApplication.SharedApplication.BeginInvokeOnMainThread(delegate
                     {
                         lp = GKLocalPlayer.LocalPlayer;
-                    
+
                         if (lp != null)
                         {
                             if (!UIDevice.CurrentDevice.CheckSystemVersion(6, 0))
@@ -112,11 +112,11 @@ namespace Microsoft.Xna.Framework.GamerServices
         {
             // Register to receive the GKPlayerAuthenticationDidChangeNotificationName so we are notified when authentication changes
             NSNotificationCenter.DefaultCenter.AddObserver(new NSString("GKPlayerAuthenticationDidChangeNotificationName"), (notification) =>
-            {   
+            {
                 if (lp != null && lp.Authenticated)
                 {
                     this.Gamertag = lp.Alias;
-                    this.DisplayName = lp.PlayerID;	
+                    this.DisplayName = lp.PlayerID;
                     // Insert code here to handle a successful authentication.
                     Gamer.SignedInGamers.Add(this);
                     // Fire the SignedIn event
@@ -130,14 +130,14 @@ namespace Microsoft.Xna.Framework.GamerServices
                     OnSignedOut(new SignedOutEventArgs(this));
                 }
             });
-			
-            var result = BeginAuthentication(null, null);	
+
+            var result = BeginAuthentication(null, null);
             EndAuthentication(result);
         }
 
         private void AuthenticationCompletedCallback(IAsyncResult result)
         {
-            EndAuthentication(result);	
+            EndAuthentication(result);
         }
 
         #region Methods
@@ -149,7 +149,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                 {
                     friendCollection = new FriendCollection();
                 }
-				
+
                 lp.LoadFriends(delegate (string[] FriendsList, NSError error)
                 {
                     foreach (string Friend in FriendsList)
@@ -158,7 +158,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                     }
                 });
             }
-			
+
             return friendCollection;
         }
 
@@ -166,10 +166,10 @@ namespace Microsoft.Xna.Framework.GamerServices
         {
             if (gamer == null)
                 throw new ArgumentNullException();
-			
+
             if (gamer.IsDisposed)
-                throw new ObjectDisposedException(gamer.ToString());	
-			
+                throw new ObjectDisposedException(gamer.ToString());
+
             bool found = false;
             foreach (FriendGamer f in friendCollection)
             {
@@ -179,7 +179,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                 }
             }
             return found;
-						
+
         }
 
         delegate AchievementCollection GetAchievementsDelegate();
@@ -187,15 +187,15 @@ namespace Microsoft.Xna.Framework.GamerServices
         public IAsyncResult BeginGetAchievements(AsyncCallback callback, Object asyncState)
         {
             // Go off and grab achievements
-            GetAchievementsDelegate gad = GetAchievements; 
-			
+            GetAchievementsDelegate gad = GetAchievements;
+
             return gad.BeginInvoke(callback, gad);
         }
 
         private void GetAchievementCompletedCallback(IAsyncResult result)
         {
             // get the delegate that was used to call that method
-            GetAchievementsDelegate gad = (GetAchievementsDelegate)result.AsyncState; 
+            GetAchievementsDelegate gad = (GetAchievementsDelegate)result.AsyncState;
 
             // get the return value from that method call
             gamerAchievements = gad.EndInvoke(result);
@@ -203,10 +203,10 @@ namespace Microsoft.Xna.Framework.GamerServices
 
         public AchievementCollection EndGetAchievements(IAsyncResult result)
         {
-            GetAchievementsDelegate gad = (GetAchievementsDelegate)result.AsyncState; 
-			
+            GetAchievementsDelegate gad = (GetAchievementsDelegate)result.AsyncState;
+
             gamerAchievements = gad.EndInvoke(result);
-			
+
             return gamerAchievements;
         }
 
@@ -218,7 +218,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                 {
                     gamerAchievements = new AchievementCollection();
                 }
-				
+
                 GKAchievementDescription.LoadAchievementDescriptions(delegate(GKAchievementDescription[] achievements, NSError error)
                 {
                     if (achievements != null)
@@ -235,7 +235,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                         }
                     }
                 });
-				
+
                 GKAchievement.LoadAchievements(delegate(GKAchievement[] achievements, NSError error)
                 {
                     if (achievements != null)
@@ -249,7 +249,7 @@ namespace Microsoft.Xna.Framework.GamerServices
                                     ac.IsEarned = a.Completed;
                                     ac.EarnedDateTime = a.LastReportedDate.NSDateToDateTime();
                                 }
-                            }															
+                            }
                         }
                     }
                 });
@@ -270,27 +270,27 @@ namespace Microsoft.Xna.Framework.GamerServices
             AsyncCallback callback,
             Object state
         )
-        {	
+        {
             // Go off and award the achievement
-            AwardAchievementDelegate aad = DoAwardAchievement; 
-				
+            AwardAchievementDelegate aad = DoAwardAchievement;
+
             return aad.BeginInvoke(achievementId, percentageComplete, callback, aad);
         }
 
         public void EndAwardAchievement(IAsyncResult result)
         {
-            AwardAchievementDelegate aad = (AwardAchievementDelegate)result.AsyncState; 
-			
+            AwardAchievementDelegate aad = (AwardAchievementDelegate)result.AsyncState;
+
             aad.EndInvoke(result);
         }
 
         private void AwardAchievementCompletedCallback(IAsyncResult result)
         {
-            EndAwardAchievement(result);	
+            EndAwardAchievement(result);
         }
 
         public void AwardAchievement(string achievementId)
-        {			
+        {
             AwardAchievement(achievementId, 100.0f);
         }
 
@@ -396,7 +396,7 @@ namespace Microsoft.Xna.Framework.GamerServices
 
         #region Properties
         public GameDefaults GameDefaults
-        { 
+        {
             get
             {
                 throw new NotSupportedException();
@@ -404,7 +404,7 @@ namespace Microsoft.Xna.Framework.GamerServices
         }
 
         public bool IsGuest
-        { 
+        {
             get
             {
                 throw new NotSupportedException();
@@ -412,7 +412,7 @@ namespace Microsoft.Xna.Framework.GamerServices
         }
 
         public bool IsSignedInToLive
-        { 
+        {
             get
             {
                 var SignedIn = ((lp != null) && (lp.Authenticated));
@@ -421,7 +421,7 @@ namespace Microsoft.Xna.Framework.GamerServices
         }
 
         public int PartySize
-        { 
+        {
             get
             {
                 throw new NotSupportedException();
@@ -441,7 +441,7 @@ namespace Microsoft.Xna.Framework.GamerServices
         }
 
         public GamerPresence Presence
-        { 
+        {
             get
             {
                 throw new NotSupportedException();
@@ -467,7 +467,7 @@ namespace Microsoft.Xna.Framework.GamerServices
         //            }
         //        }
         #endregion
-		
+
         protected virtual void OnSignedIn(SignedInEventArgs e)
         {
             EventHelpers.Raise(this, SignedIn, e);
@@ -478,7 +478,7 @@ namespace Microsoft.Xna.Framework.GamerServices
             EventHelpers.Raise(this, SignedOut, e);
         }
 
-		
+
         #region Events
         public static event EventHandler<SignedInEventArgs> SignedIn;
         public static event EventHandler<SignedOutEventArgs> SignedOut;
@@ -489,7 +489,7 @@ namespace Microsoft.Xna.Framework.GamerServices
     {
         public SignedInEventArgs(SignedInGamer gamer)
         {
-			
+
         }
     }
 
@@ -497,7 +497,7 @@ namespace Microsoft.Xna.Framework.GamerServices
     {
         public SignedOutEventArgs(SignedInGamer gamer)
         {
-			
+
         }
     }
 }

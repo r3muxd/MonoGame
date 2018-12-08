@@ -42,7 +42,7 @@ namespace BlankApp.iOS
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            //TODO: Use Content to load your game content here 
+            //TODO: Use Content to load your game content here
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace BlankApp.iOS
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here            
+            // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
@@ -71,4 +71,3 @@ namespace BlankApp.iOS
         }
     }
 }
-

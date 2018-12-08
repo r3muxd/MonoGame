@@ -271,7 +271,7 @@ namespace Lidgren.Network
 				m_sendBufferNumMessages = 0;
 			}
 		}
-		
+
 		// Queue an item for immediate sending on the wire
 		// This method is called from the ISenderChannels
 		internal void QueueSendMessage(NetOutgoingMessage om, int seqNr)

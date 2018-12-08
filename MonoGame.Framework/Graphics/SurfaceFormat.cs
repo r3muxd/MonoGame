@@ -10,11 +10,11 @@ namespace Microsoft.Xna.Framework.Graphics
     public enum SurfaceFormat
     {
         /// <summary>
-        /// Unsigned 32-bit ARGB pixel format for store 8 bits per channel. 
+        /// Unsigned 32-bit ARGB pixel format for store 8 bits per channel.
         /// </summary>
         Color,
         /// <summary>
-        /// Unsigned 16-bit BGR pixel format for store 5 bits for blue, 6 bits for green, and 5 bits for red.   
+        /// Unsigned 16-bit BGR pixel format for store 5 bits for blue, 6 bits for green, and 5 bits for red.
         /// </summary>
         Bgr565,
         /// <summary>
@@ -32,7 +32,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <summary>
         /// DXT3. Texture format with compression. Surface dimensions must be a multiple 4.
         /// </summary>
-        Dxt3, 
+        Dxt3,
         /// <summary>
         /// DXT5. Texture format with compression. Surface dimensions must be a multiple 4.
         /// </summary>
@@ -74,15 +74,15 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
         Vector4,
         /// <summary>
-        /// Float 16-bit R format for store 16 bits to red channel.   
+        /// Float 16-bit R format for store 16 bits to red channel.
         /// </summary>
         HalfSingle,
         /// <summary>
-        /// Float 32-bit RG format for store 16 bits per channel. 
+        /// Float 32-bit RG format for store 16 bits per channel.
         /// </summary>
         HalfVector2,
         /// <summary>
-        /// Float 64-bit ARGB format for store 16 bits per channel. 
+        /// Float 64-bit ARGB format for store 16 bits per channel.
         /// </summary>
         HalfVector4,
         /// <summary>
@@ -99,7 +99,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <summary>
         /// For compatibility with WPF D3DImage.
         /// </summary>
-        Bgra32 = 21,    // B8G8R8A8    
+        Bgra32 = 21,    // B8G8R8A8
 
         /// <summary>
         /// Unsigned 32-bit RGBA sRGB pixel format that supports 8 bits per channel.
@@ -162,4 +162,3 @@ namespace Microsoft.Xna.Framework.Graphics
         #endregion
     }
 }
-

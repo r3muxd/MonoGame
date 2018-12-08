@@ -10,11 +10,11 @@ namespace Microsoft.Xna.Framework
 	public enum CurveTangent
 	{
         /// <summary>
-        /// The tangent which always has a value equal to zero. 
+        /// The tangent which always has a value equal to zero.
         /// </summary>
 		Flat,
         /// <summary>
-        /// The tangent which contains a difference between current tangent value and the tangent value from the previous <see cref="CurveKey"/>. 
+        /// The tangent which contains a difference between current tangent value and the tangent value from the previous <see cref="CurveKey"/>.
         /// </summary>
 		Linear,
         /// <summary>

@@ -21,7 +21,7 @@ namespace Microsoft.Xna.Framework.Graphics
     public class SkinnedEffect : Effect, IEffectMatrices, IEffectLights, IEffectFog
     {
         public const int MaxBones = 72;
-        
+
         #region Effect Parameters
 
         EffectParameter textureParam;
@@ -79,7 +79,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix World
         {
             get { return world; }
-            
+
             set
             {
                 world = value;
@@ -94,7 +94,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix View
         {
             get { return view; }
-            
+
             set
             {
                 view = value;
@@ -109,7 +109,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix Projection
         {
             get { return projection; }
-            
+
             set
             {
                 projection = value;
@@ -124,7 +124,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 DiffuseColor
         {
             get { return diffuseColor; }
-            
+
             set
             {
                 diffuseColor = value;
@@ -139,7 +139,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 EmissiveColor
         {
             get { return emissiveColor; }
-            
+
             set
             {
                 emissiveColor = value;
@@ -174,7 +174,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float Alpha
         {
             get { return alpha; }
-            
+
             set
             {
                 alpha = value;
@@ -189,7 +189,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public bool PreferPerPixelLighting
         {
             get { return preferPerPixelLighting; }
-            
+
             set
             {
                 if (preferPerPixelLighting != value)
@@ -207,7 +207,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 AmbientLightColor
         {
             get { return ambientLightColor; }
-            
+
             set
             {
                 ambientLightColor = value;
@@ -240,7 +240,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public bool FogEnabled
         {
             get { return fogEnabled; }
-            
+
             set
             {
                 if (fogEnabled != value)
@@ -258,7 +258,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float FogStart
         {
             get { return fogStart; }
-            
+
             set
             {
                 fogStart = value;
@@ -273,7 +273,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float FogEnd
         {
             get { return fogEnd; }
-            
+
             set
             {
                 fogEnd = value;
@@ -308,7 +308,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public int WeightsPerVertex
         {
             get { return weightsPerVertex; }
-            
+
             set
             {
                 if ((value != 1) &&
@@ -348,13 +348,13 @@ namespace Microsoft.Xna.Framework.Graphics
                 throw new ArgumentOutOfRangeException("count");
 
             Matrix[] bones = bonesParam.GetValueMatrixArray(count);
-            
+
             // Convert matrices from 43 to 44 format.
             for (int i = 0; i < bones.Length; i++)
             {
                 bones[i].M44 = 1;
             }
-            
+
             return bones;
         }
 
@@ -387,14 +387,14 @@ namespace Microsoft.Xna.Framework.Graphics
 
             SpecularColor = Vector3.One;
             SpecularPower = 16;
-            
+
             Matrix[] identityBones = new Matrix[MaxBones];
-            
+
             for (int i = 0; i < MaxBones; i++)
             {
                 identityBones[i] = Matrix.Identity;
             }
-            
+
             SetBoneTransforms(identityBones);
         }
 
@@ -422,7 +422,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             fogStart = cloneSource.fogStart;
             fogEnd = cloneSource.fogEnd;
-            
+
             weightsPerVertex = cloneSource.weightsPerVertex;
         }
 
@@ -490,7 +490,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             // Recompute the world inverse transpose and eye position?
             dirtyFlags = EffectHelpers.SetLightingMatrices(dirtyFlags, ref world, ref view, worldParam, worldInverseTransposeParam, eyePositionParam);
-            
+
             // Recompute the diffuse/emissive/alpha material color parameters?
             if ((dirtyFlags & EffectDirtyFlags.MaterialColor) != 0)
             {
@@ -501,7 +501,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             // Check if we can use the only-bother-with-the-first-light shader optimization.
             bool newOneLight = !light1.Enabled && !light2.Enabled;
-            
+
             if (oneLight != newOneLight)
             {
                 oneLight = newOneLight;
@@ -512,15 +512,15 @@ namespace Microsoft.Xna.Framework.Graphics
             if ((dirtyFlags & EffectDirtyFlags.ShaderIndex) != 0)
             {
                 int shaderIndex = 0;
-                
+
                 if (!fogEnabled)
                     shaderIndex += 1;
-                
+
                 if (weightsPerVertex == 2)
                     shaderIndex += 2;
                 else if (weightsPerVertex == 4)
                     shaderIndex += 4;
-                
+
                 if (preferPerPixelLighting)
                     shaderIndex += 12;
                 else if (oneLight)

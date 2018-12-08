@@ -20,7 +20,7 @@ namespace Microsoft.Xna.Framework.Graphics
             : base(graphicsDevice, vertexDeclaration, vertexCount, bufferUsage, true)
         {
         }
-		
+
 		public DynamicVertexBuffer(GraphicsDevice graphicsDevice, Type type, int vertexCount, BufferUsage bufferUsage)
             : base(graphicsDevice, VertexDeclaration.FromType(type), vertexCount, bufferUsage, true)
         {
@@ -38,4 +38,3 @@ namespace Microsoft.Xna.Framework.Graphics
         }
     }
 }
-

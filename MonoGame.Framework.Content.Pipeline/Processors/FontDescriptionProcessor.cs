@@ -65,7 +65,7 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Processors
                 throw new FileNotFoundException("Could not find \"" + input.FontName + "\" font file.");
 
 			context.Logger.LogMessage ("Building Font {0}", fontFile);
-            
+
             // Get the platform specific texture profile.
             var texProfile = TextureProfile.ForPlatform(context.TargetPlatform);
 
@@ -110,7 +110,7 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Processors
 						output.Kerning.Add(new Vector3(0, texRect.Width, 0));
 				}
 
-                output.Texture.Faces[0].Add(face);            
+                output.Texture.Faces[0].Add(face);
 			}
 
             if (PremultiplyAlpha)
@@ -155,7 +155,7 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Processors
             }
 
             // Perform the final texture conversion.
-            texProfile.ConvertTexture(context, output.Texture, TextureFormat, true);    
+            texProfile.ConvertTexture(context, output.Texture, TextureFormat, true);
 
             return output;
         }
@@ -176,7 +176,7 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Processors
 			//			}
 			//			else
 			//			{
-			if (!TrueTypeFileExtensions.Contains(fileExtension)) 
+			if (!TrueTypeFileExtensions.Contains(fileExtension))
                 throw new PipelineException("Unknown file extension " + fileExtension);
 
 			importer = new SharpFontImporter();

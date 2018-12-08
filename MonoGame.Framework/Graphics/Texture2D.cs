@@ -21,7 +21,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		internal int width;
 		internal int height;
         internal int ArraySize;
-                
+
         internal float TexelWidth { get; private set; }
         internal float TexelHeight { get; private set; }
 
@@ -48,7 +48,7 @@ namespace Microsoft.Xna.Framework.Graphics
         }
 
         /// <summary>
-        /// Creates a new texture of a given size with a surface format and optional mipmaps 
+        /// Creates a new texture of a given size with a surface format and optional mipmaps
         /// </summary>
         /// <param name="graphicsDevice"></param>
         /// <param name="width"></param>
@@ -73,7 +73,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Texture2D(GraphicsDevice graphicsDevice, int width, int height, bool mipmap, SurfaceFormat format, int arraySize)
             : this(graphicsDevice, width, height, mipmap, format, SurfaceType.Texture, false, arraySize)
         {
-            
+
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace Microsoft.Xna.Framework.Graphics
             : this(graphicsDevice, width, height, mipmap, format, type, false, 1)
         {
         }
-        
+
         protected Texture2D(GraphicsDevice graphicsDevice, int width, int height, bool mipmap, SurfaceFormat format, SurfaceType type, bool shared, int arraySize)
 		{
             if (graphicsDevice == null)
@@ -168,7 +168,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="data">New data for the texture</param>
         /// <param name="startIndex">Start position of data</param>
         /// <param name="elementCount"></param>
-        public void SetData<T>(int level, Rectangle? rect, T[] data, int startIndex, int elementCount) where T : struct 
+        public void SetData<T>(int level, Rectangle? rect, T[] data, int startIndex, int elementCount) where T : struct
         {
             Rectangle checkedRect;
             ValidateParams(level, 0, rect, data, startIndex, elementCount, out checkedRect);
@@ -266,7 +266,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		        throw new ArgumentNullException("data");
 			this.GetData(0, null, data, 0, data.Length);
 		}
-		
+
         /// <summary>
         /// Creates a Texture2D from a stream, supported formats bmp, gif, jpg, png, tif and dds (only for simple textures).
         /// May work with other formats, but will not work with tga files.
@@ -274,7 +274,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="graphicsDevice">The graphics device where the texture will be created.</param>
         /// <param name="stream">The stream from which to read the image data.</param>
         /// <returns>The <see cref="SurfaceFormat.Color"/> texture created from the image stream.</returns>
-        /// <remarks>Note that different image decoders may generate slight differences between platforms, but perceptually 
+        /// <remarks>Note that different image decoders may generate slight differences between platforms, but perceptually
         /// the images should be identical.  This call does not premultiply the image alpha, but areas of zero alpha will
         /// result in black color data.
         /// </remarks>
@@ -316,7 +316,7 @@ namespace Microsoft.Xna.Framework.Graphics
             PlatformSaveAsPng(stream, width, height);
         }
 
-        // This method allows games that use Texture2D.FromStream 
+        // This method allows games that use Texture2D.FromStream
         // to reload their textures after the GL context is lost.
         public void Reload(Stream textureStream)
         {

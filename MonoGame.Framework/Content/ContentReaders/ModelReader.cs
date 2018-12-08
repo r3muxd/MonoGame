@@ -20,7 +20,7 @@ namespace Microsoft.Xna.Framework.Content
 		public ModelReader ()
 		{
 		}
-		
+
 		static int ReadBoneReference(ContentReader reader, uint boneCount)
         {
             uint boneId;
@@ -48,7 +48,7 @@ namespace Microsoft.Xna.Framework.Content
 
             return -1;
         }
-		
+
 		protected internal override Model Read(ContentReader reader, Model existingInstance)
 		{
             // Read the bone names and transforms.
@@ -64,7 +64,7 @@ namespace Microsoft.Xna.Framework.Content
                 var bone = new ModelBone { Transform = matrix, Index = (int)i, Name = name };
                 bones.Add(bone);
             }
-			
+
             // Read the bone hierarchy.
             for (int i = 0; i < boneCount; i++)
             {
@@ -137,9 +137,9 @@ namespace Microsoft.Xna.Framework.Content
 
                     // tag
                     part.Tag = reader.ReadObject<object>();
-					
+
 					parts.Add(part);
-					
+
 					int jj = (int)j;
 					reader.ReadSharedResource<VertexBuffer>(delegate (VertexBuffer v)
 					{
@@ -154,7 +154,7 @@ namespace Microsoft.Xna.Framework.Content
 						parts[jj].Effect = v;
 					});
 
-					
+
                 }
 
                 if (existingInstance != null)
@@ -186,14 +186,13 @@ namespace Microsoft.Xna.Framework.Content
             Model model = new Model(reader.GraphicsDevice, bones, meshes);
 
             model.Root = bones[rootBoneIndex];
-		
+
 			model.BuildHierarchy();
-			
+
 			// Tag?
             model.Tag = reader.ReadObject<object>();
-			
+
 			return model;
 		}
 	}
 }
-

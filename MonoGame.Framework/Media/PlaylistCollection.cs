@@ -13,7 +13,7 @@ namespace Microsoft.Xna.Framework.Media
     {
 		private bool isReadOnly = false;
 		private List<Playlist> innerlist = new List<Playlist>();
-		
+
         public void Dispose()
         {
         }
@@ -22,7 +22,7 @@ namespace Microsoft.Xna.Framework.Media
         {
             return innerlist.GetEnumerator();
         }
-		
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return innerlist.GetEnumerator();
@@ -35,7 +35,7 @@ namespace Microsoft.Xna.Framework.Media
 				return innerlist.Count;
             }
         }
-		
+
 		public bool IsReadOnly
         {
             get { return this.isReadOnly; }
@@ -48,7 +48,7 @@ namespace Microsoft.Xna.Framework.Media
 				return this.innerlist[index];
             }
         }
-		
+
 		public void Add(Playlist item)
         {
             if (item == null)
@@ -71,12 +71,12 @@ namespace Microsoft.Xna.Framework.Media
 
             this.innerlist.Add(item);
         }
-		
+
 		public void Clear()
         {
             innerlist.Clear();
         }
-        
+
         public PlaylistCollection Clone()
         {
             PlaylistCollection plc = new PlaylistCollection();
@@ -84,26 +84,25 @@ namespace Microsoft.Xna.Framework.Media
                 plc.Add(playlist);
             return plc;
         }
-        
+
         public bool Contains(Playlist item)
         {
             return innerlist.Contains(item);
         }
-        
+
         public void CopyTo(Playlist[] array, int arrayIndex)
         {
             innerlist.CopyTo(array, arrayIndex);
         }
-		
+
 		public int IndexOf(Playlist item)
         {
             return innerlist.IndexOf(item);
         }
-        
+
         public bool Remove(Playlist item)
         {
             return innerlist.Remove(item);
         }
     }
 }
-

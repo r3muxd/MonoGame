@@ -97,7 +97,7 @@ namespace Microsoft.Xna.Framework.Graphics
             // - VertexElementFormat has 12 values. --> _format needs 4 bit.
             // - VertexElementUsage has 13 values. --> _usage needs 4 bit.
             // - DirectX 11 has max 32 registers. --> _usageIndex needs 6 bit.
-            // (Note: If these assumptions are correct we get a unique hash code. If these 
+            // (Note: If these assumptions are correct we get a unique hash code. If these
             // assumptions are not correct, we still get a useful hash code because we use XOR.)
             int hashCode = _offset;
             hashCode ^= (int)_format << 9;

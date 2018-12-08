@@ -14,13 +14,13 @@ namespace Microsoft.Xna.Framework.Graphics
         internal int UserOffset;
 
         public bool IsContentLost { get { return false; } }
-		
+
 		public DynamicIndexBuffer(GraphicsDevice graphicsDevice, IndexElementSize indexElementSize, int indexCount, BufferUsage usage) :
 			base(graphicsDevice, indexElementSize, indexCount, usage, true)
 		{
 		}
 
-   		public DynamicIndexBuffer(GraphicsDevice graphicsDevice, Type indexType, int indexCount, BufferUsage usage) :
+		public DynamicIndexBuffer(GraphicsDevice graphicsDevice, Type indexType, int indexCount, BufferUsage usage) :
             base(graphicsDevice, indexType, indexCount, usage, true)
         {
         }
@@ -36,4 +36,3 @@ namespace Microsoft.Xna.Framework.Graphics
         }
     }
 }
-

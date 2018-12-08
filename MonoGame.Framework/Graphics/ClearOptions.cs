@@ -23,7 +23,6 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <summary>
         /// Stencil buffer.
         /// </summary>
-        Stencil = 4        
+        Stencil = 4
     }
 }
-

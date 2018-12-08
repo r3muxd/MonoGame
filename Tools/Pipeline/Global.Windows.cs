@@ -42,4 +42,3 @@ namespace MonoGame.Tools.Pipeline
         }
     }
 }
-

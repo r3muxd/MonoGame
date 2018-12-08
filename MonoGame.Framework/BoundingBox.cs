@@ -18,7 +18,7 @@ namespace Microsoft.Xna.Framework
 
         [DataMember]
         public Vector3 Min;
-      
+
         [DataMember]
         public Vector3 Max;
 
@@ -70,7 +70,7 @@ namespace Microsoft.Xna.Framework
 
         public ContainmentType Contains(BoundingFrustum frustum)
         {
-            //TODO: bad done here need a fix. 
+            //TODO: bad done here need a fix.
             //Because question is not frustum contain box but reverse and this is not the same
             int i;
             ContainmentType contained;
@@ -300,10 +300,10 @@ namespace Microsoft.Xna.Framework
         public Vector3[] GetCorners()
         {
             return new Vector3[] {
-                new Vector3(this.Min.X, this.Max.Y, this.Max.Z), 
+                new Vector3(this.Min.X, this.Max.Y, this.Max.Z),
                 new Vector3(this.Max.X, this.Max.Y, this.Max.Z),
-                new Vector3(this.Max.X, this.Min.Y, this.Max.Z), 
-                new Vector3(this.Min.X, this.Min.Y, this.Max.Z), 
+                new Vector3(this.Max.X, this.Min.Y, this.Max.Z),
+                new Vector3(this.Min.X, this.Min.Y, this.Max.Z),
                 new Vector3(this.Min.X, this.Max.Y, this.Min.Z),
                 new Vector3(this.Max.X, this.Max.Y, this.Min.Z),
                 new Vector3(this.Max.X, this.Min.Y, this.Min.Z),

@@ -132,12 +132,12 @@ namespace Microsoft.Xna.Framework
         #endregion
 
         /// <summary>
-        /// 
+        ///
         /// Compares whether two <see cref="CurveKey"/> instances are not equal.
         /// </summary>
         /// <param name="value1"><see cref="CurveKey"/> instance on the left of the not equal sign.</param>
         /// <param name="value2"><see cref="CurveKey"/> instance on the right of the not equal sign.</param>
-        /// <returns><c>true</c> if the instances are not equal; <c>false</c> otherwise.</returns>	
+        /// <returns><c>true</c> if the instances are not equal; <c>false</c> otherwise.</returns>
         public static bool operator !=(CurveKey value1, CurveKey value2)
         {
             return !(value1 == value2);
@@ -194,7 +194,7 @@ namespace Microsoft.Xna.Framework
         {
             return this._position.GetHashCode() ^ this._value.GetHashCode() ^ this._tangentIn.GetHashCode() ^
                 this._tangentOut.GetHashCode() ^ this._continuity.GetHashCode();
-        } 
+        }
 
         #endregion
     }

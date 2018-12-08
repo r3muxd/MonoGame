@@ -126,7 +126,7 @@ namespace Lidgren.Network
 				m_socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
 			if (reBind)
-				m_socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, (int)1); 
+				m_socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, (int)1);
 
 			m_socket.ReceiveBufferSize = m_configuration.ReceiveBufferSize;
 			m_socket.SendBufferSize = m_configuration.SendBufferSize;
@@ -434,7 +434,7 @@ namespace Lidgren.Network
 					switch (sx.SocketErrorCode)
 					{
 						case SocketError.ConnectionReset:
-							// connection reset by peer, aka connection forcibly closed aka "ICMP port unreachable" 
+							// connection reset by peer, aka connection forcibly closed aka "ICMP port unreachable"
 							// we should shut down the connection; but m_senderRemote seemingly cannot be trusted, so which connection should we shut down?!
 							// So, what to do?
 							LogWarning("ConnectionReset");

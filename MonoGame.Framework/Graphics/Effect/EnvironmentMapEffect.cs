@@ -77,7 +77,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix World
         {
             get { return world; }
-            
+
             set
             {
                 world = value;
@@ -92,7 +92,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix View
         {
             get { return view; }
-            
+
             set
             {
                 view = value;
@@ -107,7 +107,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix Projection
         {
             get { return projection; }
-            
+
             set
             {
                 projection = value;
@@ -122,7 +122,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 DiffuseColor
         {
             get { return diffuseColor; }
-            
+
             set
             {
                 diffuseColor = value;
@@ -137,7 +137,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 EmissiveColor
         {
             get { return emissiveColor; }
-            
+
             set
             {
                 emissiveColor = value;
@@ -152,7 +152,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float Alpha
         {
             get { return alpha; }
-            
+
             set
             {
                 alpha = value;
@@ -167,7 +167,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 AmbientLightColor
         {
             get { return ambientLightColor; }
-            
+
             set
             {
                 ambientLightColor = value;
@@ -200,7 +200,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public bool FogEnabled
         {
             get { return fogEnabled; }
-            
+
             set
             {
                 if (fogEnabled != value)
@@ -218,7 +218,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float FogStart
         {
             get { return fogStart; }
-            
+
             set
             {
                 fogStart = value;
@@ -233,7 +233,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float FogEnd
         {
             get { return fogEnd; }
-            
+
             set
             {
                 fogEnd = value;
@@ -270,12 +270,12 @@ namespace Microsoft.Xna.Framework.Graphics
             get { return environmentMapParam.GetValueTextureCube(); }
             set { environmentMapParam.SetValue(value); }
         }
-        
-        
+
+
         /// <summary>
-        /// Gets or sets the amount of the environment map RGB that will be blended over 
-        /// the base texture. Range 0 to 1, default 1. If set to zero, the RGB channels 
-        /// of the environment map will completely ignored (but the environment map alpha 
+        /// Gets or sets the amount of the environment map RGB that will be blended over
+        /// the base texture. Range 0 to 1, default 1. If set to zero, the RGB channels
+        /// of the environment map will completely ignored (but the environment map alpha
         /// may still be visible if EnvironmentMapSpecular is greater than zero).
         /// </summary>
         public float EnvironmentMapAmount
@@ -286,10 +286,10 @@ namespace Microsoft.Xna.Framework.Graphics
 
 
         /// <summary>
-        /// Gets or sets the amount of the environment map alpha channel that will 
-        /// be added to the base texture. Range 0 to 1, default 0. This can be used 
-        /// to implement cheap specular lighting, by encoding one or more specular 
-        /// highlight patterns into the environment map alpha channel, then setting 
+        /// Gets or sets the amount of the environment map alpha channel that will
+        /// be added to the base texture. Range 0 to 1, default 0. This can be used
+        /// to implement cheap specular lighting, by encoding one or more specular
+        /// highlight patterns into the environment map alpha channel, then setting
         /// EnvironmentMapSpecular to the desired specular light color.
         /// </summary>
         public Vector3 EnvironmentMapSpecular
@@ -299,9 +299,9 @@ namespace Microsoft.Xna.Framework.Graphics
             set
             {
                 environmentMapSpecularParam.SetValue(value);
-                
+
                 bool enabled = (value != Vector3.Zero);
-                
+
                 if (specularEnabled != enabled)
                 {
                     specularEnabled = enabled;
@@ -309,16 +309,16 @@ namespace Microsoft.Xna.Framework.Graphics
                 }
             }
         }
-        
-        
+
+
         /// <summary>
-        /// Gets or sets the Fresnel factor used for the environment map blending. 
-        /// Higher values make the environment map only visible around the silhouette 
-        /// edges of the object, while lower values make it visible everywhere. 
-        /// Setting this property to 0 disables Fresnel entirely, making the 
-        /// environment map equally visible regardless of view angle. The default is 
-        /// 1. Fresnel only affects the environment map RGB (the intensity of which is 
-        /// controlled by EnvironmentMapAmount). The alpha contribution (controlled by 
+        /// Gets or sets the Fresnel factor used for the environment map blending.
+        /// Higher values make the environment map only visible around the silhouette
+        /// edges of the object, while lower values make it visible everywhere.
+        /// Setting this property to 0 disables Fresnel entirely, making the
+        /// environment map equally visible regardless of view angle. The default is
+        /// 1. Fresnel only affects the environment map RGB (the intensity of which is
+        /// controlled by EnvironmentMapAmount). The alpha contribution (controlled by
         /// EnvironmentMapSpecular) is not affected by the Fresnel setting.
         /// </summary>
         public float FresnelFactor
@@ -328,9 +328,9 @@ namespace Microsoft.Xna.Framework.Graphics
             set
             {
                 fresnelFactorParam.SetValue(value);
-                
+
                 bool enabled = (value != 0);
-                
+
                 if (fresnelEnabled != enabled)
                 {
                     fresnelEnabled = enabled;
@@ -463,7 +463,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             // Recompute the world inverse transpose and eye position?
             dirtyFlags = EffectHelpers.SetLightingMatrices(dirtyFlags, ref world, ref view, worldParam, worldInverseTransposeParam, eyePositionParam);
-            
+
             // Recompute the diffuse/emissive/alpha material color parameters?
             if ((dirtyFlags & EffectDirtyFlags.MaterialColor) != 0)
             {
@@ -474,7 +474,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             // Check if we can use the only-bother-with-the-first-light shader optimization.
             bool newOneLight = !light1.Enabled && !light2.Enabled;
-            
+
             if (oneLight != newOneLight)
             {
                 oneLight = newOneLight;
@@ -485,13 +485,13 @@ namespace Microsoft.Xna.Framework.Graphics
             if ((dirtyFlags & EffectDirtyFlags.ShaderIndex) != 0)
             {
                 int shaderIndex = 0;
-                
+
                 if (!fogEnabled)
                     shaderIndex += 1;
-                
+
                 if (fresnelEnabled)
                     shaderIndex += 2;
-                
+
                 if (specularEnabled)
                     shaderIndex += 4;
 

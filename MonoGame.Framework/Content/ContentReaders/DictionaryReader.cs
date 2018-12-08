@@ -13,10 +13,10 @@ namespace Microsoft.Xna.Framework.Content
     {
         ContentTypeReader keyReader;
 		ContentTypeReader valueReader;
-		
+
 		Type keyType;
 		Type valueType;
-		
+
         public DictionaryReader()
         {
         }
@@ -25,7 +25,7 @@ namespace Microsoft.Xna.Framework.Content
         {
 			keyType = typeof(TKey);
 			valueType = typeof(TValue);
-			
+
 			keyReader = manager.GetTypeReader(keyType);
 			valueReader = manager.GetTypeReader(valueType);
         }
@@ -51,7 +51,7 @@ namespace Microsoft.Xna.Framework.Content
 
                 if (ReflectionHelpers.IsValueType(keyType))
                 {
-                	key = input.ReadObject<TKey>(keyReader);
+			key = input.ReadObject<TKey>(keyReader);
 				}
 				else
                 {
@@ -61,7 +61,7 @@ namespace Microsoft.Xna.Framework.Content
 
                 if (ReflectionHelpers.IsValueType(valueType))
 				{
-                	value = input.ReadObject<TValue>(valueReader);
+			value = input.ReadObject<TValue>(valueReader);
 				}
 				else
                 {
@@ -75,4 +75,3 @@ namespace Microsoft.Xna.Framework.Content
         }
     }
 }
-

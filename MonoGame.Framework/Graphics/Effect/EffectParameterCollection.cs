@@ -43,12 +43,12 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             get { return _parameters.Length; }
         }
-		
+
 		public EffectParameter this[int index]
 		{
 			get { return _parameters[index]; }
 		}
-		
+
 		public EffectParameter this[string name]
         {
             get

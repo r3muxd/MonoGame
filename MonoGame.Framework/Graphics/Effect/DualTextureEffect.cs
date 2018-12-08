@@ -61,7 +61,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix World
         {
             get { return world; }
-            
+
             set
             {
                 world = value;
@@ -76,7 +76,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix View
         {
             get { return view; }
-            
+
             set
             {
                 view = value;
@@ -91,7 +91,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Matrix Projection
         {
             get { return projection; }
-            
+
             set
             {
                 projection = value;
@@ -106,7 +106,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public Vector3 DiffuseColor
         {
             get { return diffuseColor; }
-            
+
             set
             {
                 diffuseColor = value;
@@ -121,7 +121,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float Alpha
         {
             get { return alpha; }
-            
+
             set
             {
                 alpha = value;
@@ -136,7 +136,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public bool FogEnabled
         {
             get { return fogEnabled; }
-            
+
             set
             {
                 if (fogEnabled != value)
@@ -154,7 +154,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float FogStart
         {
             get { return fogStart; }
-            
+
             set
             {
                 fogStart = value;
@@ -169,7 +169,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public float FogEnd
         {
             get { return fogEnd; }
-            
+
             set
             {
                 fogEnd = value;
@@ -214,7 +214,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public bool VertexColorEnabled
         {
             get { return vertexColorEnabled; }
-            
+
             set
             {
                 if (vertexColorEnabled != value)
@@ -308,13 +308,13 @@ namespace Microsoft.Xna.Framework.Graphics
             if ((dirtyFlags & EffectDirtyFlags.ShaderIndex) != 0)
             {
                 int shaderIndex = 0;
-                
+
                 if (!fogEnabled)
                     shaderIndex += 1;
-                
+
                 if (vertexColorEnabled)
                     shaderIndex += 2;
-                
+
                 dirtyFlags &= ~EffectDirtyFlags.ShaderIndex;
 
                 CurrentTechnique = Techniques[shaderIndex];

@@ -21,7 +21,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
             return new EffectTechniqueCollection(techniques);
         }
-        
+
         public EffectTechnique this[int index]
         {
             get { return _techniques [index]; }
@@ -29,10 +29,10 @@ namespace Microsoft.Xna.Framework.Graphics
 
         public EffectTechnique this[string name]
         {
-            get 
+            get
             {
                 // TODO: Add a name to technique lookup table.
-				foreach (var technique in _techniques) 
+				foreach (var technique in _techniques)
                 {
 					if (technique.Name == name)
 						return technique;

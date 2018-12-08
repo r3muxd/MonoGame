@@ -28,12 +28,12 @@ namespace Microsoft.Xna.Framework.Media
 	    {
 	        PlatformLoad(progressCallback);
 	    }
-		
+
 		public MediaLibrary(MediaSource mediaSource)
 		{
             throw new NotSupportedException("Initializing from MediaSource is not supported");
 		}
-		
+
 		public void Dispose()
 		{
 		    PlatformDispose();
@@ -41,4 +41,3 @@ namespace Microsoft.Xna.Framework.Media
 		}
 	}
 }
-

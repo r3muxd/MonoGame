@@ -18,7 +18,7 @@ namespace Microsoft.Xna.Framework.Audio
         #region Internal Audio Data
 
         private string _name = string.Empty;
-        
+
         private bool _isDisposed = false;
         private readonly TimeSpan _duration;
 
@@ -349,8 +349,8 @@ namespace Microsoft.Xna.Framework.Audio
         /// <para>Each SoundEffectInstance has its own Volume property that is independent to SoundEffect.MasterVolume. During playback SoundEffectInstance.Volume is multiplied by SoundEffect.MasterVolume.</para>
         /// <para>This property is used to adjust the volume on all current and newly created SoundEffectInstances. The volume of an individual SoundEffectInstance can be adjusted on its own.</para>
         /// </remarks>
-        public static float MasterVolume 
-        { 
+        public static float MasterVolume
+        {
             get { return _masterVolume; }
             set
             {
@@ -359,7 +359,7 @@ namespace Microsoft.Xna.Framework.Audio
 
                 if (_masterVolume == value)
                     return;
-                
+
                 _masterVolume = value;
                 SoundEffectInstancePool.UpdateMasterVolume();
             }
@@ -369,7 +369,7 @@ namespace Microsoft.Xna.Framework.Audio
         /// <summary>
         /// Gets or sets the scale of distance calculations.
         /// </summary>
-        /// <remarks> 
+        /// <remarks>
         /// <para>DistanceScale defaults to 1.0 and must be greater than 0.0.</para>
         /// <para>Higher values reduce the rate of falloff between the sound and listener.</para>
         /// </remarks>

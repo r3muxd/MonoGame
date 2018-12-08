@@ -7,7 +7,7 @@ using SharpDX.MediaFoundation;
 namespace Microsoft.Xna.Framework.Media
 {
     /// <summary>
-    /// This class provides a way for the MediaManager to be initialised exactly once, 
+    /// This class provides a way for the MediaManager to be initialised exactly once,
     /// regardless of how many different places need it, and which is called first.
     /// </summary>
     internal sealed class MediaManagerState

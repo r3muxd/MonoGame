@@ -13,4 +13,3 @@ namespace Microsoft.Xna.Framework.Media
         Paused
     }
 }
-

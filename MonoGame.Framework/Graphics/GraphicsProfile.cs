@@ -14,7 +14,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// </summary>
         Reach,
         /// <summary>
-        /// Use the largest available set of graphic features and capabilities to target devices, that have more enhanced graphic capabilities.        
+        /// Use the largest available set of graphic features and capabilities to target devices, that have more enhanced graphic capabilities.
         /// </summary>
         HiDef
 	}

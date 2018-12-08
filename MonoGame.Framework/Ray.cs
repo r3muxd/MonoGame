@@ -16,7 +16,7 @@ namespace Microsoft.Xna.Framework
 
         [DataMember]
         public Vector3 Direction;
-      
+
         [DataMember]
         public Vector3 Position;
 
@@ -41,13 +41,13 @@ namespace Microsoft.Xna.Framework
             return (obj is Ray) ? this.Equals((Ray)obj) : false;
         }
 
-        
+
         public bool Equals(Ray other)
         {
             return this.Position.Equals(other.Position) && this.Direction.Equals(other.Direction);
         }
 
-        
+
         public override int GetHashCode()
         {
             return Position.GetHashCode() ^ Direction.GetHashCode();
@@ -150,8 +150,8 @@ namespace Microsoft.Xna.Framework
 			{
 				throw new ArgumentNullException("frustum");
 			}
-			
-			return frustum.Intersects(this);			
+
+			return frustum.Intersects(this);
         }
         */
 

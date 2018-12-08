@@ -13,7 +13,7 @@ namespace Microsoft.Xna.Framework.Graphics
 	public sealed class Model
 	{
 		private static Matrix[] sharedDrawBoneMatrices;
-		
+
 		private GraphicsDevice graphicsDevice;
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		}
 
         /// <summary>
-        /// Constructs a model. 
+        /// Constructs a model.
         /// </summary>
         /// <param name="graphicsDevice">A valid reference to <see cref="GraphicsDevice"/>.</param>
         /// <param name="bones">The collection of bones.</param>
@@ -79,25 +79,25 @@ namespace Microsoft.Xna.Framework.Graphics
         internal void BuildHierarchy()
 		{
 			var globalScale = Matrix.CreateScale(0.01f);
-			
+
 			foreach(var node in this.Root.Children)
 			{
 				BuildHierarchy(node, this.Root.Transform * globalScale, 0);
 			}
 		}
-		
+
 		private void BuildHierarchy(ModelBone node, Matrix parentTransform, int level)
 		{
 			node.ModelTransform = node.Transform * parentTransform;
-			
-			foreach (var child in node.Children) 
+
+			foreach (var child in node.Children)
 			{
 				BuildHierarchy(child, node.ModelTransform, level + 1);
 			}
-			
+
 			//string s = string.Empty;
 			//
-			//for (int i = 0; i < level; i++) 
+			//for (int i = 0; i < level; i++)
 			//{
 			//	s += "\t";
 			//}
@@ -111,17 +111,17 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <param name="world">The world transform.</param>
         /// <param name="view">The view transform.</param>
         /// <param name="projection">The projection transform.</param>
-        public void Draw(Matrix world, Matrix view, Matrix projection) 
-		{       
+        public void Draw(Matrix world, Matrix view, Matrix projection)
+		{
             int boneCount = this.Bones.Count;
-			
+
 			if (sharedDrawBoneMatrices == null ||
 				sharedDrawBoneMatrices.Length < boneCount)
 			{
-				sharedDrawBoneMatrices = new Matrix[boneCount];    
+				sharedDrawBoneMatrices = new Matrix[boneCount];
 			}
-			
-			// Look up combined bone matrices for the entire model.            
+
+			// Look up combined bone matrices for the entire model.
 			CopyAbsoluteBoneTransformsTo(sharedDrawBoneMatrices);
 
             // Draw the model.

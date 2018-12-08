@@ -13,9 +13,9 @@ namespace Microsoft.Xna.Framework.Graphics
 		public int MultiSampleCount { get; private set; }
 		
 		public RenderTargetUsage RenderTargetUsage { get; private set; }
-		
+
 		public bool IsContentLost { get { return false; } }
-		
+
 		public event EventHandler<EventArgs> ContentLost;
 
         private bool SuppressEventHandlerWarningsUntilEventsAreProperlyImplemented()
@@ -45,15 +45,15 @@ namespace Microsoft.Xna.Framework.Graphics
 
             if (graphicsDevice != null)
             {
-                graphicsDevice.Adapter.QueryRenderTargetFormat(graphicsDevice.GraphicsProfile, preferredFormat, DepthFormat.None, 0, 
+                graphicsDevice.Adapter.QueryRenderTargetFormat(graphicsDevice.GraphicsProfile, preferredFormat, DepthFormat.None, 0,
                    out selectedFormat, out selectedDepthFormat, out selectedMultiSampleCount);
             }
-            
+
             return selectedFormat;
         }
 
 		public RenderTarget3D(GraphicsDevice graphicsDevice, int width, int height, int depth, bool mipMap, SurfaceFormat preferredFormat, DepthFormat preferredDepthFormat)
-			:this (graphicsDevice, width, height, depth, mipMap, preferredFormat, preferredDepthFormat, 0, RenderTargetUsage.DiscardContents) 
+			:this (graphicsDevice, width, height, depth, mipMap, preferredFormat, preferredDepthFormat, 0, RenderTargetUsage.DiscardContents)
 		{}
 		
 		public RenderTarget3D(GraphicsDevice graphicsDevice, int width, int height, int depth)

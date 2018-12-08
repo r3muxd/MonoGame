@@ -97,18 +97,18 @@ namespace Microsoft.Xna.Framework.Graphics
         /// The x coordinate of the beginning of this viewport.
         /// </summary>
         [DataMember]
-        public int X 
+        public int X
 		{
 			get{ return x;}
 			set{ x = value;}
 		}
 
 		#endregion
-		
+
         /// <summary>
-        /// Gets the aspect ratio of this <see cref="Viewport"/>, which is width / height. 
+        /// Gets the aspect ratio of this <see cref="Viewport"/>, which is width / height.
         /// </summary>
-		public float AspectRatio 
+		public float AspectRatio
 		{
 			get
 			{
@@ -119,19 +119,19 @@ namespace Microsoft.Xna.Framework.Graphics
 				return 0f;
 			}
 		}
-		
+
         /// <summary>
         /// Gets or sets a boundary of this <see cref="Viewport"/>.
         /// </summary>
-		public Rectangle Bounds 
+		public Rectangle Bounds
 		{
             get
             {
                 return new Rectangle(x, y, width, height);
             }
-				
+
 			set
-			{				
+			{
 				x = value.X;
 				y = value.Y;
 				width = value.Width;
@@ -142,7 +142,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <summary>
         /// Returns the subset of the viewport that is guaranteed to be visible on a lower quality display.
         /// </summary>
-		public Rectangle TitleSafeArea 
+		public Rectangle TitleSafeArea
 		{
 			get { return GraphicsDevice.GetTitleSafeArea(x, y, width, height); }
 		}
@@ -242,7 +242,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		    return vector;
 
         }
-		
+
 		private static bool WithinEpsilon(float a, float b)
 		{
 		    float num = a - b;
@@ -260,4 +260,3 @@ namespace Microsoft.Xna.Framework.Graphics
 	    }
     }
 }
-

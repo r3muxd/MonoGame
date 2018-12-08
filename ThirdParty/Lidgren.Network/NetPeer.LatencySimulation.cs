@@ -136,9 +136,9 @@ namespace Lidgren.Network
 				// TODO: refactor this check outta here
 				if (target.Address == IPAddress.Broadcast)
 				{
-					// Some networks do not allow 
+					// Some networks do not allow
 					// a global broadcast so we use the BroadcastAddress from the configuration
-					// this can be resolved to a local broadcast addresss e.g 192.168.x.255                    
+					// this can be resolved to a local broadcast addresss e.g 192.168.x.255
 					target.Address = m_configuration.BroadcastAddress;
 					m_socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.Broadcast, true);
 				}
@@ -159,7 +159,7 @@ namespace Lidgren.Network
 				}
 				if (sx.SocketErrorCode == SocketError.ConnectionReset)
 				{
-					// connection reset by peer, aka connection forcibly closed aka "ICMP port unreachable" 
+					// connection reset by peer, aka connection forcibly closed aka "ICMP port unreachable"
 					connectionReset = true;
 					return false;
 				}
@@ -276,7 +276,7 @@ namespace Lidgren.Network
 				}
 				if (sx.SocketErrorCode == SocketError.ConnectionReset)
 				{
-					// connection reset by peer, aka connection forcibly closed aka "ICMP port unreachable" 
+					// connection reset by peer, aka connection forcibly closed aka "ICMP port unreachable"
 					connectionReset = true;
 					return;
 				}

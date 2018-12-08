@@ -10,11 +10,10 @@ namespace Microsoft.Xna.Framework
     {
         int DrawOrder { get; }
         bool Visible { get; }
-		
+
 		event EventHandler<EventArgs> DrawOrderChanged;
         event EventHandler<EventArgs> VisibleChanged;
 
-        void Draw(GameTime gameTime);      
+        void Draw(GameTime gameTime);
     }
 }
-

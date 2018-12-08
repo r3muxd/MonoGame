@@ -109,7 +109,7 @@ namespace Lidgren.Network
 				NetException.Assert(num == GetAllowedSends());
 			}
 		}
-			
+
 		private void ExecuteSend(float now, NetOutgoingMessage message)
 		{
 			int seqNr = m_sendStart;

@@ -322,12 +322,12 @@ namespace Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler
             {
                 var typeWriter = GetTypeWriter(value.GetType());
 
-                // Because zero means null object, we add one to 
+                // Because zero means null object, we add one to
                 // the index before writing it to the file.
                 var index = typeWriterMap[typeWriter.GetType()];
                 Write7BitEncodedInt(index + 1);
 
-                typeWriter.Write(this, value);                
+                typeWriter.Write(this, value);
             }
         }
 

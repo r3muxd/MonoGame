@@ -545,7 +545,7 @@ namespace Lidgren.Network
 
 			return result;
 		}
-	
+
 		private int calcBitLength(
 			int indx,
 			int[] mag)
@@ -633,7 +633,7 @@ namespace Lidgren.Network
 			return CompareTo((NetBigInteger)obj);
 		}
 
-		
+
 		// unsigned comparison on two arrays - note the arrays may
 		// start with leading zeros.
 		private static int CompareTo(
@@ -961,7 +961,7 @@ namespace Lidgren.Network
 					: -m_magnitude[m_magnitude.Length - 1];
 			}
 		}
-	
+
 		public NetBigInteger Max(
 			NetBigInteger value)
 		{
@@ -1578,7 +1578,7 @@ namespace Lidgren.Network
 
 			return y;
 		}
-		
+
 		private int Remainder(
 			int m)
 		{

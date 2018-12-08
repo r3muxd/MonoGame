@@ -117,7 +117,7 @@ namespace Microsoft.Xna.Framework.Audio
 
             SoundEffectInstance inst = null;
 
-            // Cleanup instances which have finished playing.                    
+            // Cleanup instances which have finished playing.
             for (var x = 0; x < _playingInstances.Count;)
             {
                 inst = _playingInstances[x];

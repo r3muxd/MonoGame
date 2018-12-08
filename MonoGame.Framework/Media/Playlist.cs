@@ -24,7 +24,7 @@ namespace Microsoft.Xna.Framework.Media
         {
         }
 
-		
+
         /*public SongCollection Songs
         {
             get
@@ -33,4 +33,3 @@ namespace Microsoft.Xna.Framework.Media
         }*/
     }
 }
-

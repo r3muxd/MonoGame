@@ -63,7 +63,7 @@ namespace Microsoft.Xna.Framework.Content
 					convertedFormat = SurfaceFormat.Color;
 					break;
 			}
-			
+
             texture = existingInstance ?? new Texture2D(reader.GraphicsDevice, width, height, levelCountOutput > 1, convertedFormat);
 #if OPENGL
             Threading.BlockOnUIThread(() =>
@@ -168,13 +168,13 @@ namespace Microsoft.Xna.Framework.Content
 						    }
 						    break;
 				    }
-				
+
                     texture.SetData(level, null, levelData, 0, levelDataSizeInBytes);
 			    }
 #if OPENGL
             });
 #endif
-        			
+
 			return texture;
 		}
     }

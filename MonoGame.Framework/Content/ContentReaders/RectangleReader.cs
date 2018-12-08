@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Microsoft.Xna.Framework.Content
 {
-	
+
 	internal class RectangleReader : ContentTypeReader<Rectangle>
     {
         public RectangleReader()

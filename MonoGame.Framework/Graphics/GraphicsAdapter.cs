@@ -48,14 +48,14 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             get { return _adapters[0]; }
         }
-        
-        public static ReadOnlyCollection<GraphicsAdapter> Adapters 
+
+        public static ReadOnlyCollection<GraphicsAdapter> Adapters
         {
             get  { return _adapters; }
         }
 
         /// <summary>
-        /// Used to request creation of the reference graphics device, 
+        /// Used to request creation of the reference graphics device,
         /// or the default hardware accelerated device (when set to false).
         /// </summary>
         /// <remarks>
@@ -99,7 +99,7 @@ namespace Microsoft.Xna.Framework.Graphics
         public int Revision { get; private set; }
 
         public int SubSystemId { get; private set; }
-       
+
         public DisplayModeCollection SupportedDisplayModes
         {
             get { return _supportedDisplayModes; }
@@ -149,7 +149,7 @@ namespace Microsoft.Xna.Framework.Graphics
             selectedFormat = format;
             selectedDepthFormat = depthFormat;
             selectedMultiSampleCount = multiSampleCount;
-			
+
             // fallback for unsupported renderTarget surface formats.
             if (selectedFormat == SurfaceFormat.Alpha8 ||
                 selectedFormat == SurfaceFormat.NormalizedByte2 ||

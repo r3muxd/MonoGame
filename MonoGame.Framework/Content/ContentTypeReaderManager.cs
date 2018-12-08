@@ -20,7 +20,7 @@ namespace Microsoft.Xna.Framework.Content
         private Dictionary<Type, ContentTypeReader> _contentReaders;
 
 		private static readonly string _assemblyName;
-		
+
 
 		static ContentTypeReaderManager()
 		{
@@ -151,7 +151,7 @@ namespace Microsoft.Xna.Framework.Content
                                 catch (TargetInvocationException ex)
                                 {
                                     // If you are getting here, the Mono runtime is most likely not able to JIT the type.
-                                    // In particular, MonoTouch needs help instantiating types that are only defined in strings in Xnb files. 
+                                    // In particular, MonoTouch needs help instantiating types that are only defined in strings in Xnb files.
                                     throw new InvalidOperationException(
                                         "Failed to get default constructor for ContentTypeReader. To work around, add a creation function to ContentTypeReaderManager.AddTypeCreator() " +
                                         "with the following failed type string: " + originalReaderTypeString, ex);
@@ -191,13 +191,13 @@ namespace Microsoft.Xna.Framework.Content
 
 		    return contentReaders;
         }
-		
+
 		/// <summary>
 		/// Removes Version, Culture and PublicKeyToken from a type string.
 		/// </summary>
 		/// <remarks>
         /// Supports multiple generic types (e.g. Dictionary&lt;TKey,TValue&gt;) and nested generic types (e.g. List&lt;List&lt;int&gt;&gt;).
-		/// </remarks> 
+		/// </remarks>
 		/// <param name="type">
 		/// A <see cref="System.String"/>
 		/// </param>
@@ -224,7 +224,7 @@ namespace Microsoft.Xna.Framework.Content
 			preparedType = preparedType.Replace(", Microsoft.Xna.Framework.Graphics", string.Format(", {0}", _assemblyName));
             preparedType = preparedType.Replace(", Microsoft.Xna.Framework.Video", string.Format(", {0}", _assemblyName));
             preparedType = preparedType.Replace(", Microsoft.Xna.Framework", string.Format(", {0}", _assemblyName));
-			
+
 			return preparedType;
 		}
 

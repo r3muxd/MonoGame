@@ -307,7 +307,7 @@ namespace Microsoft.Xna.Framework
             return angle;
         }
 
- 	/// <summary>
+	/// <summary>
         /// Determines if value is powered by two.
         /// </summary>
         /// <param name="value">A value.</param>

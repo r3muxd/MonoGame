@@ -19,7 +19,7 @@ namespace Microsoft.Xna.Framework
         {
             if (_list.Count > _listTop)
             {
-                _list[_listTop] = item;                
+                _list[_listTop] = item;
             }
             else
             {
@@ -28,13 +28,13 @@ namespace Microsoft.Xna.Framework
 
             _listTop++;
         }
-		
+
 		public void Sort(IComparer<T> comparison)
 		{
 			_list.Sort(comparison);
 		}
-			
-		
+
+
 		public T GetNewItem()
 		{
 			if (_listTop < _list.Count)
@@ -53,18 +53,18 @@ namespace Microsoft.Xna.Framework
 		{
 			get
 			{
-				if (index >= _listTop) 
+				if (index >= _listTop)
 					throw new IndexOutOfRangeException();
 				return _list[index];
 			}
 			set
 			{
-				if (index >= _listTop) 
+				if (index >= _listTop)
 					throw new IndexOutOfRangeException();
 				_list[index] = value;
 			}
 		}
-		
+
         public void Clear()
         {
             _listTop = 0;
@@ -88,7 +88,7 @@ namespace Microsoft.Xna.Framework
 
         public int Count
         {
-            get 
+            get
             {
                 return _listTop;
             }

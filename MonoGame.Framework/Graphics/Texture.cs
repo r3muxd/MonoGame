@@ -33,7 +33,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		{
 			get { return _format; }
 		}
-		
+
 		public int LevelCount
 		{
 			get { return _levelCount; }
@@ -106,7 +106,7 @@ namespace Microsoft.Xna.Framework.Graphics
                 case SurfaceFormat.Dxt5:
                 case SurfaceFormat.Dxt5SRgb:
                 case SurfaceFormat.RgbPvrtc4Bpp:
-                case SurfaceFormat.RgbaPvrtc4Bpp:                    
+                case SurfaceFormat.RgbaPvrtc4Bpp:
                     pitch = ((width + 3) / 4) * _format.GetSize();
                     break;
 
@@ -124,4 +124,3 @@ namespace Microsoft.Xna.Framework.Graphics
         }
     }
 }
-

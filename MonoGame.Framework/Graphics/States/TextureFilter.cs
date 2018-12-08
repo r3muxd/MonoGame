@@ -20,7 +20,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// <summary>
         /// Use anisotropic filtering.
         /// </summary>
-		Anisotropic,	
+		Anisotropic,
         /// <summary>
         /// Use linear filtering to shrink or expand, and point filtering between mipmap levels (mip).
         /// </summary>

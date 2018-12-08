@@ -61,9 +61,9 @@ namespace Microsoft.Xna.Framework.GamerServices
 
 					profiles = (List<MonoGameLocalGamerProfile>)bin.Deserialize (stream);
 				}
-				
+
 			} catch (IOException) {
-			}	
+			}
 			return profiles;
 		}
 
@@ -77,15 +77,14 @@ namespace Microsoft.Xna.Framework.GamerServices
 					bin.Serialize (stream, profiles);
 				}
 			} catch (IOException) {
-			}	
+			}
 		}
-		
-		internal static string StorageLocation 
+
+		internal static string StorageLocation
 		{
 			get {
 				return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-			}	
+			}
 		}
 	}
 }
-

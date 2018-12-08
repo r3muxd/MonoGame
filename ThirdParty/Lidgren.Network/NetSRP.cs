@@ -107,7 +107,7 @@ namespace Lidgren.Network
 		/// </summary>
 		public static byte[] ComputeClientEphemeral(byte[] clientPrivateEphemeral) // a
 		{
-			// A= g^a (mod N) 
+			// A= g^a (mod N)
 			NetBigInteger a = new NetBigInteger(NetUtility.ToHexString(clientPrivateEphemeral), 16);
 			NetBigInteger retval = g.ModPow(a, N);
 
@@ -122,7 +122,7 @@ namespace Lidgren.Network
 			var b = new NetBigInteger(NetUtility.ToHexString(serverPrivateEphemeral), 16);
 			var v = new NetBigInteger(NetUtility.ToHexString(verifier), 16);
 
-			// B = kv + g^b (mod N) 
+			// B = kv + g^b (mod N)
 			var bb = g.ModPow(b, N);
 			var kv = v.Multiply(k);
 			var B = (kv.Add(bb)).Mod(N);
@@ -189,7 +189,7 @@ namespace Lidgren.Network
 		{
 			var sha = GetHashAlgorithm();
 			var hash = sha.ComputeHash(sessionValue);
-			
+
 			var key = new byte[16];
 			for(int i=0;i<16;i++)
 			{

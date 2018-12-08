@@ -34,7 +34,7 @@ namespace Microsoft.Xna.Framework
                                     / Math.Sqrt(plane.Normal.X * plane.Normal.X + plane.Normal.Y * plane.Normal.Y + plane.Normal.Z * plane.Normal.Z));
         }
     }
-	
+
     [DataContract]
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Plane : IEquatable<Plane>
@@ -179,7 +179,7 @@ namespace Microsoft.Xna.Framework
         public void Normalize()
         {
             float length = Normal.Length();
-            float factor =  1f / length;            
+            float factor =  1f / length;
             Vector3.Multiply(ref Normal, factor, out Normal);
             D = D * factor;
         }
@@ -194,7 +194,7 @@ namespace Microsoft.Xna.Framework
         public static void Normalize(ref Plane value, out Plane result)
         {
             float length = value.Normal.Length();
-            float factor =  1f / length;            
+            float factor =  1f / length;
             Vector3.Multiply(ref value.Normal, factor, out result.Normal);
             result.D = value.D * factor;
         }
@@ -293,4 +293,3 @@ namespace Microsoft.Xna.Framework
         #endregion
     }
 }
-

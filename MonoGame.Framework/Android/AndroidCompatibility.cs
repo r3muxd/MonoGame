@@ -54,7 +54,7 @@ namespace Microsoft.Xna.Framework
             if (NaturalOrientation.Value == Orientation.Landscape)
                 orientation += 270;
 
-            // Round orientation into one of 4 positions, either 0, 90, 180, 270. 
+            // Round orientation into one of 4 positions, either 0, 90, 180, 270.
             int ort = ((orientation + 45) / 90 * 90) % 360;
 
             // Surprisingly 90 degree is landscape right, except on Kindle devices

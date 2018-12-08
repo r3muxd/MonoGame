@@ -37,12 +37,12 @@ namespace Microsoft.Xna.Framework.Content
             {
                 if (ReflectionHelpers.IsValueType(typeof(T)))
 				{
-                	list.Add(input.ReadObject<T>(elementReader));
+			list.Add(input.ReadObject<T>(elementReader));
 				}
 				else
 				{
                     var readerType = input.Read7BitEncodedInt();
-                	list.Add(readerType > 0 ? input.ReadObject<T>(input.TypeReaders[readerType - 1]) : default(T));
+			list.Add(readerType > 0 ? input.ReadObject<T>(input.TypeReaders[readerType - 1]) : default(T));
 				}
             }
             return list;

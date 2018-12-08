@@ -39,7 +39,7 @@ namespace Microsoft.Xna.Framework.Media
         {
             get { return PlatformGetGenre(); }
         }
-        
+
         public bool IsDisposed
         {
             get { return disposed; }
@@ -58,7 +58,7 @@ namespace Microsoft.Xna.Framework.Media
         }
 
 		internal Song(string fileName)
-		{			
+		{
 			_name = fileName;
 
             PlatformInitialize(fileName);
@@ -86,13 +86,13 @@ namespace Microsoft.Xna.Framework.Media
             song._name = name;
             return song;
         }
-		
+
 		public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-        
+
         void Dispose(bool disposing)
         {
             if (!disposed)
@@ -119,18 +119,18 @@ namespace Microsoft.Xna.Framework.Media
 			return ((object)song != null) && (Name == song.Name);
 #endif
 		}
-		
-		
+
+
 		public override bool Equals(Object obj)
 		{
 			if(obj == null)
 			{
 				return false;
 			}
-			
-			return Equals(obj as Song);  
+
+			return Equals(obj as Song);
 		}
-		
+
 		public static bool operator ==(Song song1, Song song2)
 		{
 			if((object)song1 == null)
@@ -140,7 +140,7 @@ namespace Microsoft.Xna.Framework.Media
 
 			return song1.Equals(song2);
 		}
-		
+
 		public static bool operator !=(Song song1, Song song2)
 		{
 		  return ! (song1 == song2);
@@ -149,7 +149,7 @@ namespace Microsoft.Xna.Framework.Media
         public TimeSpan Duration
         {
             get { return PlatformGetDuration(); }
-        }	
+        }
 
         public bool IsProtected
         {
@@ -182,4 +182,3 @@ namespace Microsoft.Xna.Framework.Media
         }
     }
 }
-

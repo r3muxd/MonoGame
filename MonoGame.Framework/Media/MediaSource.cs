@@ -19,7 +19,7 @@ namespace Microsoft.Xna.Framework.Media
 			_name = name;
 			_type = type;
 		}
-				
+
         public Microsoft.Xna.Framework.Media.MediaSourceType MediaSourceType
         {
             get
@@ -35,7 +35,7 @@ namespace Microsoft.Xna.Framework.Media
 				return _name;
             }
         }
-	
+
 		public static IList<MediaSource> GetAvailableMediaSources()
         {
 #if IOS

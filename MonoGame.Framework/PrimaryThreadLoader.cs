@@ -17,7 +17,7 @@ namespace Microsoft.Xna.Framework
     internal static class PrimaryThreadLoader
     {
         private static readonly object ListLockObject = new object();
-        private static readonly List<IPrimaryThreadLoaded> NeedToLoad = new List<IPrimaryThreadLoaded>(); 
+        private static readonly List<IPrimaryThreadLoaded> NeedToLoad = new List<IPrimaryThreadLoaded>();
         private static readonly List<IPrimaryThreadLoaded> RemoveList = new List<IPrimaryThreadLoaded>();
         private static DateTime _lastUpdate = DateTime.UtcNow;
 
