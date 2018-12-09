@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DESKTOP;DESKTOPGL;SUPPORTS_EFX</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PlatformType>DesktopGL</PlatformType>
+    <WindowingService>SDL</WindowingService>
+    <GraphicsService>OpenGL</GraphicsService>
+    <AudioService>OpenAL</AudioService>
+    <SongService>NVorbis</SongService>
+  </PropertyGroup>
+
+  <Import Project="MonoGame.Framework.targets" />
+
+  <!-- Exceptions -->
+  <ItemGroup Condition="'$(PlatformType)' == 'DesktopGL'">
+    <Compile Include="Properties\AssemblyInfo.DesktopGL.cs" />
+
+    <Compile Include="**\*.Desktop.cs" />
+
+    <Compile Include="Audio\Xact\WaveBank.Default.cs" />
+
+    <Compile Remove="Content\ContentReaders\VideoReader.cs" />
+
+    <Compile Include="Graphics\GraphicsAdapter.Legacy.cs" />
+    <Compile Include="Graphics\GraphicsDebug.Default.cs" />
+    <Compile Include="Graphics\OpenGL.Common.cs" />
+    <Compile Remove="Graphics\GraphicsAdapter.cs" />
+    <Compile Remove="Graphics\RenderTarget3D.cs" />
+
+    <Compile Remove="Input\KeyboardInput.cs" />
+    <Compile Remove="Input\MessageBox.cs" />
+
+    <Compile Include="Media\MediaLibrary.Default.cs" />
+    <Compile Include="Media\MediaPlayer.Default.cs" />
+    <Compile Remove="Media\Video.cs" />
+    <Compile Remove="Media\VideoPlayer.cs" />
+
+    <Compile Include="Utilities\ReflectionHelpers.Legacy.cs" />
+
+    <EmbeddedResource Include="MonoGame.bmp">
+      <LogicalName>MonoGame.bmp</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
