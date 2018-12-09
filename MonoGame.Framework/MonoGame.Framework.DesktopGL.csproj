@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PlatformType>DesktopGL</PlatformType>
     <WindowingService>SDL</WindowingService>
     <GraphicsService>OpenGL</GraphicsService>
     <AudioService>OpenAL</AudioService>
@@ -17,7 +16,7 @@
   <Import Project="MonoGame.Framework.targets" />
 
   <!-- Exceptions -->
-  <ItemGroup Condition="'$(PlatformType)' == 'DesktopGL'">
+  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.DesktopGL.cs" />
 
     <Compile Include="**\*.Desktop.cs" />
