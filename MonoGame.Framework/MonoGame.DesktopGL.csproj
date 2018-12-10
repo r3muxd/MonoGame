@@ -13,7 +13,7 @@
     <SongService>NVorbis</SongService>
   </PropertyGroup>
 
-  <Import Project="MonoGame.Framework.targets" />
+  <Import Project="MonoGame.targets" />
 
   <!-- Exceptions -->
   <ItemGroup>
