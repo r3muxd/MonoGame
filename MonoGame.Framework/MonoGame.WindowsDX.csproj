@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net45</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>DESKTOP;WINDOWS;SUPPORTS_EFX</DefineConstants>
+    <DefineConstants>DESKTOP;WINDOWS;WINDOWSDX;SUPPORTS_EFX;XNADESIGNPROVIDED</DefineConstants>
 
     <MonoGamePlatform>WindowsDX</MonoGamePlatform>
     <Services>WinForms;DirectX;XInput;XAudio;MMF</Services>
@@ -16,6 +16,7 @@
     <Compile Include="Properties\AssemblyInfo.WindowsDX.cs" />
 
     <Compile Include="**\*.Desktop.cs" />
+    <Compile Include="Windows\TimerHelper.cs" />
 
     <Compile Include="Audio\Xact\WaveBank.Default.cs" />
 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>DESKTOP;DESKTOPGL;SUPPORTS_EFX</DefineConstants>
+    <DefineConstants>DESKTOP;DESKTOPGL;SUPPORTS_EFX;XNADESIGNPROVIDED</DefineConstants>
 
     <MonoGamePlatform>DesktopGL</MonoGamePlatform>
     <Services>SDL;OpenGL;OpenAL;NVorbis</Services>

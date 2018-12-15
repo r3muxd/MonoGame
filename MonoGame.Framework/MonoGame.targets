@@ -56,7 +56,8 @@
     <Compile Include="WinForms/**/*.cs" />
     <Compile Include="**/*.WinForms.cs" />
 
-    <Reference Include="System.Windows.Forms"/>
+    <Reference Include="System.Windows.Forms" Condition="!$(TargetFramework.StartsWith('netcoreapp'))"/>
+    <FrameworkReference Include="Microsoft.DesktopUI" Condition="$(TargetFramework.StartsWith('netcoreapp'))"/>
   </ItemGroup>
 
   <PropertyGroup Condition="$(Services.Contains(';SDL;'))">
