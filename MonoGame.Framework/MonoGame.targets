@@ -6,6 +6,10 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 
+    <IntermediateOutputPath>bin\$(MonoGamePlatform)\$(Configuration)\$(TargetFramework)</IntermediateOutputPath>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Configuration)\$(TargetFramework)</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
     <!-- Append and prepend a semicolon so we can check for ';service;' instead of 'service'
          and prevent including files where one service is a substring of another -->
     <Services>;$(Services);</Services>
