@@ -5,6 +5,10 @@
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+    <!-- Append and prepend a semicolon so we can check for ';service;' instead of 'service'
+         and prevent including files where one service is a substring of another -->
+    <Services>;$(Services);</Services>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,21 +44,31 @@
 
   <!-- SERVICES -->
 
-  <PropertyGroup Condition="'$(WindowingService)' == 'SDL'">
+  <PropertyGroup Condition="$(Services.Contains(';WinForms;'))">
+    <DefineConstants>$(DefineConstants);WINFORMS</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(Services.Contains(';WinForms;'))">
+    <Compile Include="WinForms/**/*.cs" />
+    <Compile Include="**/*.WinForms.cs" />
+
+    <Reference Include="System.Windows.Forms"/>
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(Services.Contains(';SDL;'))">
     <DefineConstants>$(DefineConstants);SDL</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(WindowingService)' == 'SDL'">
+  <ItemGroup Condition="$(Services.Contains(';SDL;'))">
     <Compile Include="SDL/**/*.cs" />
     <Compile Include="**/*.SDL.cs" />
+
+    <Compile Remove="Input\KeyboardInput.cs" />
+    <Compile Remove="Input\MessageBox.cs" />
 
     <EmbeddedResource Include="..\ThirdParty\SDL_GameControllerDB\gamecontrollerdb.txt">
       <LogicalName>gamecontrollerdb.txt</LogicalName>
     </EmbeddedResource>
-    <None Include="..\ThirdParty\Dependencies\MonoGame.Framework.dll.config">
-      <Link>MonoGame.Framework.dll.config</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="..\ThirdParty\Dependencies\SDL\Windows\x86\SDL2.dll">
       <Link>x86\SDL2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -77,18 +91,28 @@
     </None>
   </ItemGroup>
 
+  <PropertyGroup Condition="$(Services.Contains(';XAudio;'))">
+    <DefineConstants>$(DefineConstants);XAUDIO</DefineConstants>
+  </PropertyGroup>
 
-  <PropertyGroup Condition="'$(AudioService)' == 'OpenAL'">
+  <ItemGroup Condition="$(Services.Contains(';XAudio;'))">
+    <Compile Include="**/*.XAudio.cs" />
+
+    <Compile Include="Audio/Microphone.Default.cs" />
+
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\net40\SharpDX.XAudio2.dll"/>
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(Services.Contains(';OpenAL;'))">
     <DefineConstants>$(DefineConstants);OPENAL</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(AudioService)' == 'OpenAL'">
+  <ItemGroup Condition="$(Services.Contains(';OpenAL;'))">
+    <Compile Include="OpenAL\**\*.cs" />
     <Compile Include="**/*.OpenAL.cs" />
 
-    <None Include="..\ThirdParty\Dependencies\MonoGame.Framework.dll.config">
-      <Link>MonoGame.Framework.dll.config</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Compile Include="Audio\Xact\WaveBank.Default.cs" />
+
     <None Include="..\ThirdParty\Dependencies\openal-soft\Windows\x86\soft_oal.dll">
       <Link>x86\soft_oal.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -111,13 +135,37 @@
     </None>
   </ItemGroup>
 
+  <PropertyGroup Condition="$(Services.Contains(';DirectX;'))">
+    <DefineConstants>$(DefineConstants);DIRECTX</DefineConstants>
+  </PropertyGroup>
 
-  <PropertyGroup Condition="'$(GraphicsService)' == 'OpenGL'">
+  <ItemGroup Condition="$(Services.Contains(';DirectX;'))">
+    <Compile Include="DirectX\**\*.cs" />
+    <Compile Include="**\*.DirectX.cs" />
+
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\SharpDX.Direct2D1.dll"/>
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\SharpDX.Direct3D11.dll"/>
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\SharpDX.DXGI.dll"/>
+
+    <EmbeddedResource Include="Graphics\Effect\Resources\AlphaTestEffect.dx11.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\BasicEffect.dx11.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\DualTextureEffect.dx11.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\EnvironmentMapEffect.dx11.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\SkinnedEffect.dx11.mgfxo" />
+    <EmbeddedResource Include="Graphics\Effect\Resources\SpriteEffect.dx11.mgfxo" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(Services.Contains(';OpenGL;'))">
     <DefineConstants>$(DefineConstants);OPENGL</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(GraphicsService)' == 'OpenGL'">
-    <Compile Include="**\*.OpenGL.cs" /> 
+  <ItemGroup Condition="$(Services.Contains(';OpenGL;'))">
+    <Compile Include="OpenGL\**\*.cs" />
+    <Compile Include="**\*.OpenGL.cs" />
+
+    <Compile Include="Graphics\GraphicsDebug.Default.cs" />
+    <Compile Remove="Graphics\GraphicsAdapter.cs" />
+    <Compile Remove="Graphics\RenderTarget3D.cs" />
 
     <EmbeddedResource Include="Graphics\Effect\Resources\AlphaTestEffect.ogl.mgfxo" />
     <EmbeddedResource Include="Graphics\Effect\Resources\BasicEffect.ogl.mgfxo" />
@@ -127,19 +175,45 @@
     <EmbeddedResource Include="Graphics\Effect\Resources\SpriteEffect.ogl.mgfxo" />
   </ItemGroup>
 
-  <PropertyGroup Condition="'$(SongService)' == 'NVorbis'">
+  <PropertyGroup Condition="$(Services.Contains(';XInput;'))">
+    <DefineConstants>$(DefineConstants);XINPUT</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(Services.Contains(';XInput;'))">
+    <Compile Include="**\*.XInput.cs" />
+
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\net40\SharpDX.XInput.dll"/>
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(Services.Contains(';MMF;'))">
+    <DefineConstants>$(DefineConstants);MEDIAFOUNDATION</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(Services.Contains(';MMF;'))">
+    <Compile Include="**\*.MMF.cs" />
+
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\net40\SharpDX.MediaFoundation.dll"/>
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(Services.Contains(';NVorbis;'))">
     <DefineConstants>$(DefineConstants);NVORBIS</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(SongService)' == 'NVorbis'">
+  <ItemGroup Condition="$(Services.Contains(';NVorbis;'))">
     <Compile Include="**\*.NVorbis.cs" />
+
     <Compile Include="..\ThirdParty\NVorbis\NVorbis\*.cs">
-      <Link>Utilities\NVorbis\%(Filename)%(Extension)</Link>
+      <Link>NVorbis\%(Filename)%(Extension)</Link>
     </Compile>
     <Compile Include="..\ThirdParty\NVorbis\NVorbis\Ogg\*.cs">
-      <Link>Utilities\NVorbis\Ogg\%(Filename)%(Extension)</Link>
+      <Link>NVorbis\Ogg\%(Filename)%(Extension)</Link>
     </Compile>
   </ItemGroup>
 
+  <!-- Shared Dependencies -->
+  <ItemGroup Condition="$(Services.Contains(';DirectX;')) Or
+                        $(Services.Contains(';MMF;'))">
+    <Reference Include="..\ThirdParty\Dependencies\SharpDX\net40\SharpDX.dll"/>
+  </ItemGroup>
 </Project>
 

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DESKTOP;WINDOWS;SUPPORTS_EFX</DefineConstants>
+
+    <MonoGamePlatform>WindowsDX</MonoGamePlatform>
+    <Services>WinForms;DirectX;XInput;XAudio;MMF</Services>
+  </PropertyGroup>
+
+  <Import Project="MonoGame.targets" />
+
+  <!-- Exceptions -->
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.WindowsDX.cs" />
+
+    <Compile Include="**\*.Desktop.cs" />
+
+    <Compile Include="Audio\Xact\WaveBank.Default.cs" />
+
+    <Compile Include="Input\Joystick.Default.cs" />
+    <Compile Include="Input\Keyboard.Win32.cs" />
+
+    <Compile Include="Media\MediaLibrary.Default.cs" />
+
+    <Compile Include="Utilities\ReflectionHelpers.Legacy.cs" />
+  </ItemGroup>
+</Project>
