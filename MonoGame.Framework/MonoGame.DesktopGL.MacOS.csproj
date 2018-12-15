@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- This project type is like DesktopGL, but it includes the Mac VideoPlayer.
+         If you do not need the VideoPlayer you can use the regular DesktopGL project. -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DESKTOP;DESKTOPGL;MONOMAC;SUPPORTS_EFX;XNADESIGNPROVIDED</DefineConstants>
+
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+    <Services>SDL;OpenGL;OpenAL;NVorbis</Services>
+  </PropertyGroup>
+
+  <Import Project="MonoGame.targets" />
+
+  <!-- Exceptions -->
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.Mac.cs" />
+
+    <Compile Include="PrimaryThreadLoader.cs" />
+
+    <Compile Include="**\*.Desktop.cs" />
+
+    <Compile Remove="Content\ContentReaders\VideoReader.cs" />
+
+    <Compile Include="Graphics\GraphicsAdapter.Legacy.cs" />
+    <Compile Include="Graphics\OpenGL.Common.cs" />
+
+    <Compile Include="Media\MediaLibrary.Default.cs" />
+    <Compile Include="Media\MediaPlayer.Default.cs" />
+    <Compile Include="Media\Video.MacOS.cs" />
+    <Compile Include="Media\VideoPlayer.MacOS.cs" />
+
+    <Compile Include="Utilities\ReflectionHelpers.Legacy.cs" />
+
+    <EmbeddedResource Include="MonoGame.bmp">
+      <LogicalName>MonoGame.bmp</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
