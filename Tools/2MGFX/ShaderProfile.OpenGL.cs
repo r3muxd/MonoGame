@@ -10,7 +10,7 @@ using TwoMGFX.TPGParser;
 
 namespace TwoMGFX
 {
-    class OpenGLShaderProfile : ShaderProfile
+    internal class OpenGLShaderProfile : ShaderProfile
     {
         private static readonly Regex GlslPixelShaderRegex = new Regex(@"^ps_(?<major>1|2|3|4|5)_(?<minor>0|1|)$", RegexOptions.Compiled);
         private static readonly Regex GlslVertexShaderRegex = new Regex(@"^vs_(?<major>1|2|3|4|5)_(?<minor>0|1|)$", RegexOptions.Compiled);
@@ -64,7 +64,7 @@ namespace TwoMGFX
 
             return shaderData;
         }
-            
+
         internal override bool Supports(string platform)
         {
             if (platform == "iOS" ||

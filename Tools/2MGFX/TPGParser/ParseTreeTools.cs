@@ -57,6 +57,42 @@ namespace TwoMGFX.TPGParser
 	        }
 
             return new Color(r, g, b, a);
-	    }        
+	    }
+
+        public static void WhitespaceNodes(TokenType type, List<ParseNode> nodes, ref string sourceFile)
+        {
+            for (var i = 0; i < nodes.Count; i++)
+            {
+                var n = nodes[i];
+                if (n.Token.Type != type)
+                {
+                    WhitespaceNodes(type, n.Nodes, ref sourceFile);
+                    continue;
+                }
+
+                // Get the full content of this node.
+                var start = n.Token.StartPos;
+                var end = n.Token.EndPos;
+                var length = end - n.Token.StartPos;
+                WhitespaceRange(ref sourceFile, start, length);
+            }
+        }
+
+	    public static void WhitespaceRange(ref string text, int start, int length)
+	    {
+	        var whitespaced = text.Substring(start, length);
+            // Replace the content of this node with whitespace.
+            for (var c = 0; c < length; c++)
+            {
+                if (!char.IsWhiteSpace(whitespaced[c]))
+                    whitespaced = whitespaced.Replace(whitespaced[c], ' ');
+            }
+
+            // Add the whitespace back to the source file.
+	        var newText = text.Substring(0, start);
+	        newText += whitespaced;
+	        newText += text.Substring(start + length);
+	        text = newText;
+	    }
     }
 }
